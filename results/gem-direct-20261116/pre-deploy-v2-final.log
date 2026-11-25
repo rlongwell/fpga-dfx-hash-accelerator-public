@@ -1,0 +1,27 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; /opt/zybo/hash/start.sh status; df -k / /boo
+t; printf '\nDEMO_CMD_afae69e69414212f_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+6.6.40-dfx-hash-wifi
+Hash service running (PID 2899)
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root             28142899   1751191  24885581   7% /
+/dev/mmcblk0p1          523248    285228    238020  55% /boot
+
+DEMO_CMD_afae69e69414212f_0
+# test ! -e /run/zybo-hash-net.lock && test ! -e /root/hash-gem-bundle-20261116-
+v2.tar.gz && test ! -e /root/hash-before-gem-20261116-v2; printf '\nDEMO_CMD_c5e
+6bc8a16eae023_%s\n' "$?"
+
+DEMO_CMD_c5e6bc8a16eae023_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

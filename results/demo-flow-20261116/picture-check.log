@@ -1,0 +1,154 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'docs/media/sha3-comparison-architecture.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : SHA3-256: compact vs Oxide Quartz — architecture and same-file demonstration
+    encoder         : Lavf60.16.100
+    comment         : Oxide Quartz reference credited; AI-assisted project. Narration: ElevenLabs Jarnathan. Music: Cyber Runner by 2050 / Artlist. Physical GUI capture at 1x.
+  Duration: 00:04:36.00, start: 0.000000, bitrate: 424 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 13.000000
+      Metadata:
+        title           : SHA3-256: compact vs. Oxide Quartz
+    Chapter #0:1: start 13.000000, end 39.000000
+      Metadata:
+        title           : Oxide Quartz: two byte-fed blocks
+    Chapter #0:2: start 39.000000, end 69.000000
+      Metadata:
+        title           : Compact: absorb directly into the state
+    Chapter #0:3: start 69.000000, end 98.000000
+      Metadata:
+        title           : Simpler padding and framing
+    Chapter #0:4: start 98.000000, end 118.000000
+      Metadata:
+        title           : SHA3-256 partition resources
+    Chapter #0:5: start 118.000000, end 134.000000
+      Metadata:
+        title           : The same physical testbench
+    Chapter #0:6: start 134.000000, end 158.000000
+      Metadata:
+        title           : SHA3-256: measured hashing time
+    Chapter #0:7: start 158.000000, end 187.000000
+      Metadata:
+        title           : Why small messages can favor Oxide
+    Chapter #0:8: start 187.000000, end 201.000000
+      Metadata:
+        title           : Sources and credit
+    Chapter #0:9: start 201.000000, end 276.000000
+      Metadata:
+        title           : Same file, both physical SHA3-256 cores
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 142 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 273 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](eng): Data: bin_data (text / 0x74786574), 0 kb/s
+    Metadata:
+      handler_name    : SubtitleHandler
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'docs/media/sha3-comparison-flow.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : SHA3-256: compact vs Oxide Quartz — architecture and physical demonstration
+    encoder         : Lavf60.16.100
+    comment         : Oxide Quartz reference credited; AI-assisted project. Narration: ElevenLabs Jarnathan. Music: Cyber Runner by 2050 / Artlist. Physical operation at 1x; post-completion result holds shortened.
+  Duration: 00:04:12.00, start: 0.000000, bitrate: 432 kb/s
+  Chapters:
+    Chapter #1:0: start 0.000000, end 13.000000
+      Metadata:
+        title           : SHA3-256: compact vs. Oxide Quartz
+    Chapter #1:1: start 13.000000, end 39.000000
+      Metadata:
+        title           : Oxide Quartz: two byte-fed blocks
+    Chapter #1:2: start 39.000000, end 69.000000
+      Metadata:
+        title           : Compact: absorb directly into the state
+    Chapter #1:3: start 69.000000, end 98.000000
+      Metadata:
+        title           : Simpler padding and framing
+    Chapter #1:4: start 98.000000, end 118.000000
+      Metadata:
+        title           : SHA3-256 partition resources
+    Chapter #1:5: start 118.000000, end 134.000000
+      Metadata:
+        title           : The same physical testbench
+    Chapter #1:6: start 134.000000, end 158.000000
+      Metadata:
+        title           : SHA3-256: measured hashing time
+    Chapter #1:7: start 158.000000, end 187.000000
+      Metadata:
+        title           : Why small messages can favor Oxide
+    Chapter #1:8: start 187.000000, end 201.000000
+      Metadata:
+        title           : Sources and credit
+    Chapter #1:9: start 201.000000, end 252.000000
+      Metadata:
+        title           : Same file, both physical SHA3-256 cores
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 149 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 libx264
+  Stream #1:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 274 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+  Stream #1:2[0x3](eng): Data: bin_data (text / 0x74786574), 0 kb/s
+    Metadata:
+      handler_name    : SubtitleHandler
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #1:0 (h264) -> trim:default
+  psnr:default -> Stream #0:0 (wrapped_avframe)
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : SHA3-256: compact vs Oxide Quartz — architecture and same-file demonstration
+    comment         : Oxide Quartz reference credited; AI-assisted project. Narration: ElevenLabs Jarnathan. Music: Cyber Runner by 2050 / Artlist. Physical GUI capture at 1x.
+    encoder         : Lavf60.16.100
+  Chapters:
+    Chapter #0:0: start 0.000000, end 13.000000
+      Metadata:
+        title           : SHA3-256: compact vs. Oxide Quartz
+    Chapter #0:1: start 13.000000, end 39.000000
+      Metadata:
+        title           : Oxide Quartz: two byte-fed blocks
+    Chapter #0:2: start 39.000000, end 69.000000
+      Metadata:
+        title           : Compact: absorb directly into the state
+    Chapter #0:3: start 69.000000, end 98.000000
+      Metadata:
+        title           : Simpler padding and framing
+    Chapter #0:4: start 98.000000, end 118.000000
+      Metadata:
+        title           : SHA3-256 partition resources
+    Chapter #0:5: start 118.000000, end 134.000000
+      Metadata:
+        title           : The same physical testbench
+    Chapter #0:6: start 134.000000, end 158.000000
+      Metadata:
+        title           : SHA3-256: measured hashing time
+    Chapter #0:7: start 158.000000, end 187.000000
+      Metadata:
+        title           : Why small messages can favor Oxide
+    Chapter #0:8: start 187.000000, end 201.000000
+      Metadata:
+        title           : Sources and credit
+    Chapter #0:9: start 201.000000, end 276.000000
+      Metadata:
+        title           : Same file, both physical SHA3-256 cores
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 wrapped_avframe
+frame=    0 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  270 fps= 37 q=-0.0 size=N/A time=00:00:08.96 bitrate=N/A speed=1.23x    frame=  545 fps= 70 q=-0.0 size=N/A time=00:00:18.13 bitrate=N/A speed=2.32x    frame=  804 fps= 97 q=-0.0 size=N/A time=00:00:26.76 bitrate=N/A speed=3.22x    frame= 1014 fps=115 q=-0.0 size=N/A time=00:00:33.76 bitrate=N/A speed=3.83x    frame= 1212 fps=130 q=-0.0 size=N/A time=00:00:40.36 bitrate=N/A speed=4.33x    frame= 1448 fps=148 q=-0.0 size=N/A time=00:00:48.23 bitrate=N/A speed=4.91x    [out#0/null @ 0x5fc25d84f780] video:709kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame= 1512 fps=152 q=-0.0 Lsize=N/A time=00:00:50.36 bitrate=N/A speed=5.07x    
+[Parsed_psnr_8 @ 0x5fc25c0358c0] PSNR y:60.732635 u:63.751407 v:64.080778 average:61.557926 min:50.650614 max:65.232162

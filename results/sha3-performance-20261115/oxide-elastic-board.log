@@ -1,0 +1,24 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-oxide-elastic-manifest-2026111
+5.json /root/sha3-oxide-elastic-partial-20261115.bin.gz && sh /root/profile-vari
+ant-20261115.sh --manifest /root/sha3-oxide-elastic-manifest-20261115.json --lab
+el oxide_elastic --oxide --output /root/sha3-oxide-elastic-20261115.json; printf
+ '\nUART_DONE_331176897762256_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin SHA256 240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7
+tr: read error: No such process
+oxide_elastic sha3 64 {"dma": {"median_ns": 168366, "min_ns": 158658, "max_ns": 213150, "MB_s": 0.38012425311523707}, "local_api": {"median_ns": 371094, "min_ns": 368034, "max_ns": 384066, "MB_s": 0.17246304170910876}, "arm": {"median_ns": 36696, "min_ns": 35802, "max_ns": 39558, "MB_s": 1.7440592980161325}}
+oxide_elastic sha3 136 {"dma": {"median_ns": 161568, "min_ns": 157038, "max_ns": 190728, "MB_s": 0.8417508417508418}, "local_api": {"median_ns": 370392, "min_ns": 367752, "max_ns": 403530, "MB_s": 0.3671785567722845}, "arm": {"median_ns": 47430, "min_ns": 46482, "max_ns": 49968, "MB_s": 2.867383512544803}}
+oxide_elastic sha3 1024 {"dma": {"median_ns": 163176, "min_ns": 160896, "max_ns": 180486, "MB_s": 6.275432661665931}, "local_api": {"median_ns": 376866, "min_ns": 374118, "max_ns": 416868, "MB_s": 2.71714614743702}, "arm": {"median_ns": 112470, "min_ns": 111720, "max_ns": 114702, "MB_s": 9.104650128923268}}
+oxide_elastic sha3 65536 {"dma": {"median_ns": 825468, "min_ns": 822996, "max_ns": 850668, "MB_s": 79.3925385357155}, "local_api": {"median_ns": 1155660, "min_ns": 1141326, "max_ns": 1221768, "MB_s": 56.70872055794957}, "arm": {"median_ns": 5342010, "min_ns": 5302626, "max_ns": 5387232, "MB_s": 12.268041430098409}}
+oxide_elastic sha3 1048576 {"dma": {"median_ns": 10665450, "min_ns": 10658838, "max_ns": 10712970, "MB_s": 98.3152140791059}, "local_api": {"median_ns": 13137954, "min_ns": 13115436, "max_ns": 13183008, "MB_s": 79.812731875907}, "arm": {"median_ns": 84985975, "min_ns": 84779431, "max_ns": 85184550, "MB_s": 12.338224042261091}}
+oxide_elastic sha3 16777216 {"dma": {"median_ns": 169229708, "min_ns": 169203386, "max_ns": 169242644, "MB_s": 99.13871623533144}, "local_api": {"median_ns": 205077956, "min_ns": 205015622, "max_ns": 205201940, "MB_s": 81.80896829301341}, "arm": {"median_ns": 1357223641, "min_ns": 1355189960, "max_ns": 1359414841, "MB_s": 12.361423344820738}}
+REPORT /root/sha3-oxide-elastic-20261115.json passed True
+Hash service started (PID 466); log: /var/log/zybo-hash.log
+
+UART_DONE_331176897762256_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

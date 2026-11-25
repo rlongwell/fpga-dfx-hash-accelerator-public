@@ -1,0 +1,12 @@
+c978771b5c97b3e82af669ef749493c0176a3524f1062272a91d3fc1b672625c  /home/rl/workspace/fpga-dfx-hash-accelerator/rtl/sha3/oxide_compare/axis_bytes_elastic.sv
+d904cf0f7432c7595b0e5dde8eae239636aec14687d0f052ec03d21d1664ef4b  /home/rl/workspace/fpga-dfx-hash-accelerator/rtl/rm/sha3_oxide.sv
+ddec17f72cfc6b64efde72fda45fa898c55e94c4b46ffc6cb9af2012e310dad5  /home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/axi_blocks/axist_if_2k19_pkg.vhd
+4bac15f2cd58fa16e72742d30d07aefc49c61f7bbaca018e146c74af8d61d7fc  /home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/common/utils/calc_pkg.vhd
+09f14f9c96fb5ad8a86c2e1a0908c034bfbda1e9d21a4d35ed39ca7f7155e0d0  /home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/sha3/keccak_pkg.vhd
+14b59bbe2701626197ae1a5053a769a60d9dad4b484b1a520c7cfbfc5d35615b  /home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/sha3/sha3_256.vhd
+6484f4ec0b4064eec2afcc9e7b913c5d3e6b3f672853f7c79bc4102ee9ee87dd  /home/rl/workspace/fpga-dfx-hash-accelerator/rtl/sha3/oxide_compare/sha3_oxide_core.vhd
+3fd9ac17e649908c60259454d4194797e403649249fc632d8248602034e46e9f  /home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/sha3_oxide_elastic_medium.tcl
+7917bce000962ef77f6c5b4a1b8d90783c503c86941be6ae2f7deb961dcfcd3e  /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/static_locked.dcp
+5794347c872b34246f53f8c2545558faf2dfc9c5655e67da39f2c05b9e677c08  /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha3/routed.dcp
+91e857bb49ed250ef4690d9c6b40edb9d16a35fd89cf78212f63bb8f89a9e001  /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha256/routed.dcp
+776ca3038d5fc8d699f4cc4b78e76c512c35fd0ec5c2d0c4d06e2f170c5163c2  /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp

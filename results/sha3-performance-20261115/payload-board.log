@@ -1,0 +1,19 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import json,hashlib,pathlib,shutil,os; P=pathlib.Path; p=P("/root/
+sha3-compact-payload-20261115.json"); v=json.loads(p.read_text()); h=lambda x:ha
+shlib.sha256(x.read_bytes()).hexdigest(); assert all(h((P("/") if x["tree"]=="ro
+otfs" else P("/boot"))/x["path"])==x["sha256"] for x in v["files"]); d=P("/opt/z
+ybo/hash/payload.json"); b=P("/boot/profiles/hash/before-sha3-fast-20261115/payl
+oad.json"); assert not b.exists(); shutil.copy2(d,b); n=d.with_suffix(".compact-
+pending"); assert not n.exists(); shutil.copy2(p,n); os.sync(); n.replace(d); os
+.sync(); print("INSTALLED_PAYLOAD",h(d),"FILES",len(v["files"]))'; printf '\nUAR
+T_DONE_330158568377196_%s\n' "$?"
+INSTALLED_PAYLOAD b365f07f77e113e56baad89cf8a3bd79d5130fc89c6fa6b2e6d8d024982b673d FILES 18
+
+UART_DONE_330158568377196_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

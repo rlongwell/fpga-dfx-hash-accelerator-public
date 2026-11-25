@@ -1,0 +1,25 @@
+test_all_samples_and_identity_are_validated (test_comparison.ComparisonEvidence.test_all_samples_and_identity_are_validated) ... ok
+test_hash_failure_restores_original_manifest (test_comparison.ComparisonRecovery.test_hash_failure_restores_original_manifest) ... ok
+test_restore_failure_does_not_restart_misidentified_service (test_comparison.ComparisonRecovery.test_restore_failure_does_not_restart_misidentified_service) ... ok
+test_switches_away_before_both_cores_and_restore (test_comparison.ComparisonRecovery.test_switches_away_before_both_cores_and_restore) ... ok
+test_bounded_expansion_and_exact_checksum (test_comparison.PayloadBoundaries.test_bounded_expansion_and_exact_checksum) ... ok
+test_never_removes_existing_decode_destination (test_comparison.PayloadBoundaries.test_never_removes_existing_decode_destination) ... ok
+test_busy_raw_input_does_not_stop_service_or_load_driver (test_demo.BoardRecovery.test_busy_raw_input_does_not_stop_service_or_load_driver) ... ok
+test_failure_to_open_device_still_restarts_service (test_demo.BoardRecovery.test_failure_to_open_device_still_restarts_service) ... ok
+test_hash_failure_restores_sha3_and_restarts_service (test_demo.BoardRecovery.test_hash_failure_restores_sha3_and_restarts_service) ... ok
+test_kernel_admission_still_requires_pinned_sources (test_demo.EvidenceValidation.test_kernel_admission_still_requires_pinned_sources) ... ok
+test_reject_digest_or_request_mismatch (test_demo.EvidenceValidation.test_reject_digest_or_request_mismatch) ... ok
+test_reject_missing_hardware_or_timing (test_demo.EvidenceValidation.test_reject_missing_hardware_or_timing) ... ok
+test_valid_result_keeps_timing_scope (test_demo.EvidenceValidation.test_valid_result_keeps_timing_scope) ... ok
+test_wrong_installed_sources_rejected (test_demo.EvidenceValidation.test_wrong_installed_sources_rejected) ... ok
+test_binary_and_empty_uploads_keep_bytes (test_demo.LocalHTTP.test_binary_and_empty_uploads_keep_bytes) ... ok
+test_cross_origin_or_missing_token_rejected (test_demo.LocalHTTP.test_cross_origin_or_missing_token_rejected) ... ok
+test_oversized_upload_rejected_before_body (test_demo.LocalHTTP.test_oversized_upload_rejected_before_body) ... ok
+test_path_traversal_does_not_expose_repository (test_demo.LocalHTTP.test_path_traversal_does_not_expose_repository) ... ok
+test_malformed_settings_and_invalid_theme (test_demo.Settings.test_malformed_settings_and_invalid_theme) ... ok
+test_theme_atomic_preserves_unrelated_settings (test_demo.Settings.test_theme_atomic_preserves_unrelated_settings) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.554s
+
+OK

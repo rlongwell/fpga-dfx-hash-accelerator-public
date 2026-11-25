@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "fixture": "Ten 0.2-second tones, not a generated or recorded voice",
+  "duration": 208,
+  "audio_codec": "aac",
+  "sample_rate": 48000,
+  "channels": 2,
+  "chapters": [
+    {
+      "start": 0,
+      "tone_rms": 149.24,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 10,
+      "tone_rms": 149.73,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 34,
+      "tone_rms": 149.12,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 60,
+      "tone_rms": 149.56,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 82,
+      "tone_rms": 149.76,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 102,
+      "tone_rms": 149.64,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 118,
+      "tone_rms": 149.38,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 140,
+      "tone_rms": 150.04,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 156,
+      "tone_rms": 149.31,
+      "padded_silence_rms": 0.0
+    },
+    {
+      "start": 168,
+      "tone_rms": 149.33,
+      "padded_silence_rms": 0.0
+    }
+  ],
+  "overlong_clip_rejected": true
+}

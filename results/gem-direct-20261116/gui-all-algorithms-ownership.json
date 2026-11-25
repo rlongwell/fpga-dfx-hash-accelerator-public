@@ -1,0 +1,286 @@
+{
+  "id": "504265ecb1510a7689f44e91",
+  "kind": "hash",
+  "state": "passed",
+  "stage": "complete",
+  "progress": 1,
+  "created_utc": "2026-11-16T20:44:27.048656+00:00",
+  "results": [
+    {
+      "digest": "585477f4141ac1ee450236139ea3112dea2c1160140b3b7723a7ab955de8027b",
+      "core_cycles": 23303,
+      "status": "ok",
+      "backend": "physical-fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 4097,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 482160,
+      "reference_hashing_in_timed_region": false,
+      "reference_digest": "585477f4141ac1ee450236139ea3112dea2c1160140b3b7723a7ab955de8027b",
+      "verified": true,
+      "timing_scope": "On-board local API: RAM file read + driver + DMA + core; excludes USB upload and reconfiguration"
+    },
+    {
+      "digest": "63a58dde3d7bb9aabb7c3424a2dc1cbb0ad20e173cf3fad7cf062eb908f4b544",
+      "core_cycles": 29764,
+      "status": "ok",
+      "backend": "physical-fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha256",
+      "algorithm_id": 2,
+      "length": 4097,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 37905648,
+      "local_hash_ns": 482886,
+      "reference_hashing_in_timed_region": false,
+      "reference_digest": "63a58dde3d7bb9aabb7c3424a2dc1cbb0ad20e173cf3fad7cf062eb908f4b544",
+      "verified": true,
+      "timing_scope": "On-board local API: RAM file read + driver + DMA + core; excludes USB upload and reconfiguration"
+    },
+    {
+      "digest": "aebf6aca1ae0526a02dd6b7ef11bbac78e583117ef4d9819ae724def74e9f63e",
+      "core_cycles": 30747,
+      "status": "ok",
+      "backend": "physical-fpga-dma",
+      "transport": "local-device",
+      "algorithm": "blake2s",
+      "algorithm_id": 3,
+      "length": 4097,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 37894926,
+      "local_hash_ns": 491184,
+      "reference_hashing_in_timed_region": false,
+      "reference_digest": "aebf6aca1ae0526a02dd6b7ef11bbac78e583117ef4d9819ae724def74e9f63e",
+      "verified": true,
+      "timing_scope": "On-board local API: RAM file read + driver + DMA + core; excludes USB upload and reconfiguration"
+    }
+  ],
+  "events": [
+    {
+      "event": "board",
+      "board": {
+        "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+        "kernel": "6.6.40-dfx-hash-wifi",
+        "service_pid": 2747,
+        "profile": "hash",
+        "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+        "manifest_sha256": "996274e09476e1e91290a2f8df850311ff45e4be6fdca700fe633e50386dc2c2",
+        "service_sha256": "1a11442d37692bb8f556305fb3bba3e2a74ee6ade1883303f3ace4250959dc38",
+        "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+        "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+        "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+        "dtb_sha256": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7",
+        "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+        "fpga_manager": "operating",
+        "transport": "usb-uart",
+        "baud": 115200
+      },
+      "received_utc": "2026-11-16T20:44:29.161538+00:00"
+    },
+    {
+      "event": "done",
+      "received_utc": "2026-11-16T20:44:29.162332+00:00"
+    },
+    {
+      "event": "board",
+      "board": {
+        "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+        "kernel": "6.6.40-dfx-hash-wifi",
+        "service_pid": 2747,
+        "profile": "hash",
+        "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+        "manifest_sha256": "996274e09476e1e91290a2f8df850311ff45e4be6fdca700fe633e50386dc2c2",
+        "service_sha256": "1a11442d37692bb8f556305fb3bba3e2a74ee6ade1883303f3ace4250959dc38",
+        "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+        "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+        "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+        "dtb_sha256": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7",
+        "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+        "fpga_manager": "operating",
+        "transport": "usb-uart",
+        "baud": 115200
+      },
+      "received_utc": "2026-11-16T20:44:30.137639+00:00"
+    },
+    {
+      "event": "payload_verified",
+      "size": 4097,
+      "sha256": "63a58dde3d7bb9aabb7c3424a2dc1cbb0ad20e173cf3fad7cf062eb908f4b544",
+      "compressed": true,
+      "received_utc": "2026-11-16T20:44:30.153542+00:00"
+    },
+    {
+      "event": "hashing",
+      "algorithm": "sha3",
+      "received_utc": "2026-11-16T20:44:30.249685+00:00"
+    },
+    {
+      "event": "result",
+      "result": {
+        "digest": "585477f4141ac1ee450236139ea3112dea2c1160140b3b7723a7ab955de8027b",
+        "core_cycles": 23303,
+        "status": "ok",
+        "backend": "fpga-dma",
+        "transport": "local-device",
+        "algorithm": "sha3",
+        "algorithm_id": 1,
+        "length": 4097,
+        "dma_transfers": 1,
+        "buffer_size": 1048576,
+        "manager_load_ns": 0,
+        "local_hash_ns": 482160,
+        "reference_hashing_in_timed_region": false
+      },
+      "received_utc": "2026-11-16T20:44:30.281691+00:00"
+    },
+    {
+      "event": "hashing",
+      "algorithm": "sha256",
+      "received_utc": "2026-11-16T20:44:30.281801+00:00"
+    },
+    {
+      "event": "result",
+      "result": {
+        "digest": "63a58dde3d7bb9aabb7c3424a2dc1cbb0ad20e173cf3fad7cf062eb908f4b544",
+        "core_cycles": 29764,
+        "status": "ok",
+        "backend": "fpga-dma",
+        "transport": "local-device",
+        "algorithm": "sha256",
+        "algorithm_id": 2,
+        "length": 4097,
+        "dma_transfers": 1,
+        "buffer_size": 1048576,
+        "manager_load_ns": 37905648,
+        "local_hash_ns": 482886,
+        "reference_hashing_in_timed_region": false
+      },
+      "received_utc": "2026-11-16T20:44:30.393584+00:00"
+    },
+    {
+      "event": "hashing",
+      "algorithm": "blake2s",
+      "received_utc": "2026-11-16T20:44:30.393671+00:00"
+    },
+    {
+      "event": "result",
+      "result": {
+        "digest": "aebf6aca1ae0526a02dd6b7ef11bbac78e583117ef4d9819ae724def74e9f63e",
+        "core_cycles": 30747,
+        "status": "ok",
+        "backend": "fpga-dma",
+        "transport": "local-device",
+        "algorithm": "blake2s",
+        "algorithm_id": 3,
+        "length": 4097,
+        "dma_transfers": 1,
+        "buffer_size": 1048576,
+        "manager_load_ns": 37894926,
+        "local_hash_ns": 491184,
+        "reference_hashing_in_timed_region": false
+      },
+      "received_utc": "2026-11-16T20:44:30.505596+00:00"
+    },
+    {
+      "event": "restoring",
+      "algorithm": "sha3",
+      "received_utc": "2026-11-16T20:44:30.505673+00:00"
+    },
+    {
+      "event": "restored",
+      "result": {
+        "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+        "core_cycles": 27,
+        "status": "ok",
+        "backend": "fpga-dma",
+        "transport": "local-device",
+        "algorithm": "sha3",
+        "algorithm_id": 1,
+        "length": 0,
+        "dma_transfers": 0,
+        "buffer_size": 1048576,
+        "manager_load_ns": 37928724,
+        "local_hash_ns": 161898,
+        "reference_hashing_in_timed_region": true,
+        "verified": true
+      },
+      "received_utc": "2026-11-16T20:44:30.617682+00:00"
+    },
+    {
+      "event": "board",
+      "board": {
+        "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+        "kernel": "6.6.40-dfx-hash-wifi",
+        "service_pid": 2828,
+        "profile": "hash",
+        "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+        "manifest_sha256": "996274e09476e1e91290a2f8df850311ff45e4be6fdca700fe633e50386dc2c2",
+        "service_sha256": "1a11442d37692bb8f556305fb3bba3e2a74ee6ade1883303f3ace4250959dc38",
+        "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+        "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+        "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+        "dtb_sha256": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7",
+        "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+        "fpga_manager": "operating",
+        "transport": "usb-uart",
+        "baud": 115200
+      },
+      "received_utc": "2026-11-16T20:44:31.897608+00:00"
+    },
+    {
+      "event": "done",
+      "received_utc": "2026-11-16T20:44:31.899190+00:00"
+    }
+  ],
+  "algorithms": [
+    "sha3",
+    "sha256",
+    "blake2s"
+  ],
+  "compare_cores": false,
+  "file": {
+    "name": "physical-api-regression.bin",
+    "size": 4097
+  },
+  "demo_source_sha256": {
+    "demo/server.py": "91c1c7885b35f0f79554effef4a7a062c988f7cc8520e8a3290b6a64fb59a28e",
+    "demo/uart.py": "6fc21114ce79554ceee4261d8d63d1a63382aa728e4c4bbbca73aeb8bd8975ef",
+    "demo/board_agent.py": "0d288d18980959131bfd9fe118d1d679153a0009d5e21cd562c9ff4557e866e6"
+  },
+  "input_sha256": "63a58dde3d7bb9aabb7c3424a2dc1cbb0ad20e173cf3fad7cf062eb908f4b544",
+  "compressed_transfer": true,
+  "transfer_bytes": 378,
+  "board": {
+    "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+    "kernel": "6.6.40-dfx-hash-wifi",
+    "service_pid": 2828,
+    "profile": "hash",
+    "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+    "manifest_sha256": "996274e09476e1e91290a2f8df850311ff45e4be6fdca700fe633e50386dc2c2",
+    "service_sha256": "1a11442d37692bb8f556305fb3bba3e2a74ee6ade1883303f3ace4250959dc38",
+    "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+    "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+    "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+    "dtb_sha256": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7",
+    "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+    "fpga_manager": "operating",
+    "transport": "usb-uart",
+    "baud": 115200
+  },
+  "bytes_sent": 378,
+  "upload_seconds": 0.1430999940057518,
+  "upload_verified": true,
+  "decoded_payload_verified": true,
+  "current_algorithm": "blake2s",
+  "current_core": null,
+  "current_core_label": null,
+  "restored_sha3": true,
+  "elapsed_seconds": 6.049525911992532,
+  "completed_utc": "2026-11-16T20:44:33.098513+00:00"
+}

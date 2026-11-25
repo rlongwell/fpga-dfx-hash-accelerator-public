@@ -1,0 +1,122 @@
+{
+  "kind": "physical-size-sweep-batch",
+  "batch": 4,
+  "mode": "ethernet",
+  "core": "oxide",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "partial_sha256": "172af5d484bfc2f81e65e6a0f9fc2e72c84c7e5608f356fae8176b2d4c3f6202",
+  "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+  "board_script_sha256": "7e3674cb08c78fb10af6dc5176759172e1e525ffdc9b9ca07160fd338e018650",
+  "rows": [
+    {
+      "case": {
+        "length": 64,
+        "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+        "session": 4227259859
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 4227259859,
+          "length": 64,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 64,
+          "core_cycles": 552159,
+          "board_ns": 5697666,
+          "pattern_bytes": 0,
+          "digest": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 230,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":4227259859,\"length\":64,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":64,\"core_cycles\":552159,\"board_ns\":5697666,\"pattern_bytes\":0,\"digest\":\"b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":230,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 128,
+        "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+        "session": 4227259860
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 4227259860,
+          "length": 128,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 128,
+          "core_cycles": 19657,
+          "board_ns": 244740,
+          "pattern_bytes": 0,
+          "digest": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 11920,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":4227259860,\"length\":128,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":128,\"core_cycles\":19657,\"board_ns\":244740,\"pattern_bytes\":0,\"digest\":\"c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":11920,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    }
+  ],
+  "state": "passed",
+  "partial_load_ns": 37887265,
+  "recovery": {
+    "digest": "8137a64450eb808d22b15e9b161fb8d9d212c98377efe046282f6b7685d1b37e",
+    "core_cycles": 19176,
+    "status": "ok",
+    "backend": "fpga-dma",
+    "transport": "local-device",
+    "algorithm": "sha3",
+    "algorithm_id": 1,
+    "length": 26,
+    "dma_transfers": 1,
+    "buffer_size": 1048576,
+    "manager_load_ns": 0,
+    "local_hash_ns": 467868,
+    "reference_hashing_in_timed_region": true,
+    "verified": true
+  }
+}

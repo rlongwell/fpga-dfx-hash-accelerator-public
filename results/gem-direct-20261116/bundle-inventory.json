@@ -1,0 +1,20 @@
+{
+  "boot/profiles/hash/SHA256SUMS": "0ee89ff77ee0fa64eae5de6d2eabea68476184947d6c6c10584a8b8c4b9cea3f",
+  "boot/profiles/hash/system.bit": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+  "boot/profiles/hash/system.dtb": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7",
+  "install.py": "b2712adc06ff2f5e4e68369306c08d0b7204c02510a601d1568f4b37f41d309c",
+  "rootfs/lib/firmware/fpga-dfx-hash/net-ce62bea7fd46/blake2s-d20f0a95a187.bin": "d20f0a95a187a2510d4ddc4526581ee1e3f66c9e6c2ba542c3489c6336136390",
+  "rootfs/lib/firmware/fpga-dfx-hash/net-ce62bea7fd46/compact-c04d5b054db9.bin": "c04d5b054db9da9b319ab2617880dac156e56853180a53fce8794fcd738e04b2",
+  "rootfs/lib/firmware/fpga-dfx-hash/net-ce62bea7fd46/oxide-0cd207bfb1dc.bin": "0cd207bfb1dc5bc6be9f02325e14f592c1e2f608113005aa8f6ac3b8eb5da572",
+  "rootfs/lib/firmware/fpga-dfx-hash/net-ce62bea7fd46/sha256-8fd8c01bb458.bin": "8fd8c01bb45899be05a5beaf3b31efebc97d3905bfe67e1ddd2c4b0f8d8fde87",
+  "rootfs/opt/zybo/hash/dfx_manifest.json": "996274e09476e1e91290a2f8df850311ff45e4be6fdca700fe633e50386dc2c2",
+  "rootfs/opt/zybo/hash/net/board_run.py": "91f6a2a6638859d6f42c43fbd25665efa86d2762f8b7d318b1dd43128f8a0bc9",
+  "rootfs/opt/zybo/hash/net/core_variants.json": "04c940d51fe16be7f71213e2ab54582f8cb98a8733ba4ef8bb28920976669132",
+  "rootfs/opt/zybo/hash/net/gem_board": "9de446a2b45467406792632eadbf18b27d8a7a94384160cbf4cab17ee18f2b26",
+  "rootfs/opt/zybo/hash/software/hash_client.py": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+  "rootfs/opt/zybo/hash/software/hash_local.py": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+  "rootfs/opt/zybo/hash/software/hash_receive.py": "442715e3a8edc7fef0bca36be27307aa29d56e93db9031d6892c1f77bebeb7e8",
+  "rootfs/opt/zybo/hash/software/hash_service.py": "e4b6539921b7b4c84101f285dff80a4662c7fd052f99d0760815584d2a17bab3",
+  "rootfs/opt/zybo/hash/start.sh": "62607e08aaea0a35dfeb5305b804994af645222f9a3f2f7e08e485836cb2cee3",
+  "system.dts": "1a4bc1131a6117abbf236578aef1c3c320817b1aa64972aa0181d91bce0a330e"
+}

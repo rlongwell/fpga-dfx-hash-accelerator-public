@@ -1,0 +1,14 @@
+{
+  "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24",
+  "netlist_sha256": "65ec45e7ef3eea96f981bf5f8a09033d4cc06e53aea0c59a084044cf8e4b005a",
+  "evidence": [
+    "web(7 downto 4) => B\"0000\",",
+    "web(3 downto 0) => web(3 downto 0)"
+  ],
+  "diagnosis": "Generated BRAM netlist tied upper four port-B byte write enables to zero; odd 32-bit word writes were lost. Port-B external interface metadata was still 32 bits although memory ports were widened to 64.",
+  "corrected_netlist_sha256": "0c7559016f287e7aac0f9b14ea8bfe6781eeed7956dfe7ab100fccb40e0002a0",
+  "corrected_write_enable_connection": [
+    "web(7 downto 0) => web(7 downto 0)"
+  ],
+  "fix": "64-bit symmetric BRAM-controller ports and explicit 64-bit external port metadata; GP1 32-to-64-bit AXI conversion. Generated memory lane regression passes; physical correction awaiting new image."
+}

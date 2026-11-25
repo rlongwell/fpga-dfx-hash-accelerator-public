@@ -1,0 +1,8 @@
+# Static PC-to-Zybo benchmark link. No router, DNS or Internet required.
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 10.77.78.2
+    netmask 255.255.255.252

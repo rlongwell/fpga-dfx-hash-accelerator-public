@@ -1,0 +1,8 @@
+/opt/zybo/hash/start.sh: line 28: can't open /proc/2967/cmdline: no such file
+{"event": "configuration", "core": "oxide", "mode": "ethernet", "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b", "partial_sha256": "172af5d484bfc2f81e65e6a0f9fc2e72c84c7e5608f356fae8176b2d4c3f6202", "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4", "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470", "partial_load_ns": 37941546, "intermediate_algorithm_id": 2}
+{"event":"ready","mode":"ethernet","session":4007984368,"length":65537,"algorithm_id":1}
+{"event":"result","ok":true,"status":18,"error":0,"ingress_status":0,"accepted":65537,"core_cycles":3602651,"board_ns":36041772,"pattern_bytes":0,"digest":"da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4"}
+{"event":"gem","rx_frames":46,"tx_frames":1430,"rx_fcs_errors":0,"rx_overruns":0,"rsr":2,"tsr":33}
+{"event":"dma_addresses","rx_pointer":2147483760,"tx_pointer":2147484160,"dma_config":2098960,"fpga_ram_base":2147483648}
+Hash service started (PID 3008); log: /var/log/zybo-hash.log
+{"event": "restored", "core": "compact", "ps_api": true, "dma_probe": {"digest": "15ac382c0e3fbc537ab3f77883340fec52229a4074be675c2ee2e163c619284a", "core_cycles": 18498, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 21, "dma_transfers": 1, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 346704, "reference_hashing_in_timed_region": true, "verified": true}}

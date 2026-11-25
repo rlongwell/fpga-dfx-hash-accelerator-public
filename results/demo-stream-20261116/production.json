@@ -1,0 +1,23 @@
+{
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "settings": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "playback_rate": 1.06,
+  "selected_take": 1,
+  "selection_reason": "Both takes transcribe the requested script. Take 1 has clear pauses between the padding and framing paragraphs.",
+  "raw_voice_boundaries_seconds": [
+    0,
+    26.7,
+    50.5,
+    75.9,
+    97.6,
+    111.65
+  ],
+  "new_spoken_speedup": "two point four",
+  "unchanged_physical_job": "e0ac322556182145dce29990",
+  "hardware_tests_this_revision": false
+}

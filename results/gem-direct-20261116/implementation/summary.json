@@ -1,0 +1,122 @@
+{
+  "clock_MHz": 100,
+  "kind": "Vivado routed resources and timing; physical performance measured separately",
+  "configurations": {
+    "compact": {
+      "resources": {
+        "net_system_top": {
+          "LUT": 8237,
+          "FF": 5877,
+          "RAMB36": 65,
+          "RAMB18": 1,
+          "DSP": 0
+        },
+        "u_hash": {
+          "LUT": 4568,
+          "FF": 1774,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        },
+        "u_ingress": {
+          "LUT": 1052,
+          "FF": 1341,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        }
+      },
+      "Setup_slack_ns": 0.02,
+      "Hold_slack_ns": 0.031,
+      "PW_slack_ns": 3.75
+    },
+    "oxide": {
+      "resources": {
+        "net_system_top": {
+          "LUT": 9540,
+          "FF": 8325,
+          "RAMB36": 65,
+          "RAMB18": 1,
+          "DSP": 0
+        },
+        "u_hash": {
+          "LUT": 5871,
+          "FF": 4222,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        },
+        "u_ingress": {
+          "LUT": 1052,
+          "FF": 1341,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        }
+      },
+      "Setup_slack_ns": 0.044,
+      "Hold_slack_ns": 0.031,
+      "PW_slack_ns": 3.75
+    },
+    "sha256": {
+      "resources": {
+        "net_system_top": {
+          "LUT": 5449,
+          "FF": 5352,
+          "RAMB36": 65,
+          "RAMB18": 1,
+          "DSP": 0
+        },
+        "u_hash": {
+          "LUT": 1780,
+          "FF": 1249,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        },
+        "u_ingress": {
+          "LUT": 1052,
+          "FF": 1341,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        }
+      },
+      "Setup_slack_ns": 0.042,
+      "Hold_slack_ns": 0.031,
+      "PW_slack_ns": 3.75
+    },
+    "blake2s": {
+      "resources": {
+        "net_system_top": {
+          "LUT": 7833,
+          "FF": 5769,
+          "RAMB36": 65,
+          "RAMB18": 1,
+          "DSP": 0
+        },
+        "u_hash": {
+          "LUT": 4164,
+          "FF": 1666,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        },
+        "u_ingress": {
+          "LUT": 1052,
+          "FF": 1341,
+          "RAMB36": 0,
+          "RAMB18": 0,
+          "DSP": 0
+        }
+      },
+      "Setup_slack_ns": 0.028,
+      "Hold_slack_ns": 0.031,
+      "PW_slack_ns": 3.75
+    }
+  },
+  "hash_partition_reduction_percent": {
+    "LUT": 22.193834099812637,
+    "FF": 57.98199905258172
+  }
+}

@@ -1,0 +1,121 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# printf "BOARD_MAC:"; cat /sys/class/net/eth0/address; printf '\nDEMO_CMD_365a2
+5a9b035967b_%s\n' "$?"
+BOARD_MAC:de:f6:cd:7b:38:e7
+
+DEMO_CMD_365a25a9b035967b_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# mkdir /root/hash-net-bulk-window-8; printf '\nDEMO_CMD_7bd8522e006afb17_%s\n' 
+"$?"
+
+DEMO_CMD_7bd8522e006afb17_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'from pathlib import Path;Path('"'"'/root/hash-net-bulk-window-8/pa
+ttern-131072.bin'"'"').write_bytes(bytes((i*131+(i>>8))&255 for i in range(13107
+2)))'; printf '\nDEMO_CMD_8e4c8b7f8c78f94d_%s\n' "$?"
+
+DEMO_CMD_8e4c8b7f8c78f94d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'from pathlib import Path;Path('"'"'/root/hash-net-bulk-window-8/pa
+ttern-258048.bin'"'"').write_bytes(bytes((i*131+(i>>8))&255 for i in range(25804
+8)))'; printf '\nDEMO_CMD_b4eb985fe8d1b4b3_%s\n' "$?"
+
+DEMO_CMD_b4eb985fe8d1b4b3_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'ethernet'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--
+length'"'"', '"'"'16777216'"'"', '"'"'--session'"'"', '"'"'486357400'"'"', '"'"'
+--peer-mac'"'"', '"'"'00:d8:61:0a:97:21'"'"']);open('"'"'/root/hash-net-bulk-win
+dow-8/ethernet-smoke.status'"'"',"w").write(str(r.returncode)+"\n")' >/root/hash
+-net-bulk-window-8/ethernet-smoke.log 2>&1 </dev/null & echo JOB_PID:$!; printf 
+'\nDEMO_CMD_a316f021077df861_%s\n' "$?"
+JOB_PID:1308
+
+DEMO_CMD_a316f021077df861_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-bulk-window-8/ethernet-smoke.status ]; then printf "JOB
+_RC:"; cat /root/hash-net-bulk-window-8/ethernet-smoke.status; elif kill -0 1308
+ 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_557
+1fa10ab69da9e_%s\n' "$?"
+JOB_WAIT
+
+DEMO_CMD_5571fa10ab69da9e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-bulk-window-8/ethernet-smoke.status ]; then printf "JOB
+_RC:"; cat /root/hash-net-bulk-window-8/ethernet-smoke.status; elif kill -0 1308
+ 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_63b
+4dc7be8581c8c_%s\n' "$?"
+JOB_WAIT
+
+DEMO_CMD_63b4dc7be8581c8c_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-bulk-window-8/ethernet-smoke.status ]; then printf "JOB
+_RC:"; cat /root/hash-net-bulk-window-8/ethernet-smoke.status; elif kill -0 1308
+ 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_5bf
+204d001c9173e_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_5bf204d001c9173e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-bulk-window-8/ethernet-smoke.log'"'"',"rb").read()
+)).decode())'; printf '\nDEMO_CMD_14a16503e9deed2c_%s\n' "$?"
+LOG_PAYLOAD:H4sIAHQCAAAC/3VUy27rNhDd5ysErVrAaTh8y93eRbvrHwhDcmgL15YESs5tbpB/71B2EucCXdk6MzzzPPPa0jONa7tv2jiNeThcCq7DNLa7ChS6Gs4zxrVC5yltEK1HKiNt2LLyi9gvR5TGVqMFIUmorCCCM8nHgMZKdIFEDhkced8Jpbvcic6BIi/ZM0sRybvOu1BJZyzrgKc71hBId/woW4MYnPDRWE9ORyBB0jtSAJiUz5my1+AAfWc5oAsxCy+osh7pNFO5I1Wd8UFLI6GThihmxA5MdKHrOqdiVBksxs4EQJkJrfQ6JmM6iBw9Z11JfxScv7Jq6JBSECGgx6BS4vpF1EZrJWUQ1lqnIGudgDpQxlmIhgtgZoVSO3HfgNOEqR8XplXOK++FZ+MwrlTOlAZcqcfTYSrDejz3Q2I3+fbw+j7UthCml3Z3m9vd2NqFlqXOea+95RS0ELv2RONhPbZ7sM45CXbXfuWGr9TL5VSZpu/tfi0X2m2bcOFUwe9aKmUq7Z5Zh/HAvkv/bmUIY6R5pXQfqm5bH1/iidhHcxustwyHCcu1AYx576SHHTdn5QaMfXhZ6cqYhgMtNS3CnFSCyFPXzmMMIC3vIihhdLLgBTgvk4EUM/ioTNQdSWECeZIQRG7vazzQmQss//a54LlGArCG4693CAP26hOXfqv6mhEj0zN/X8bb98LtkPy2/ip1HyadsceUapeYcns6T9uM+QVop72yTm5hf8E12Fo8v7+ql3HR1b3ftXk+YM9J9gEX+uTR/u3hL1yOzULleYjU8FgKj6L57Z+/vzWglP/9z+Y0HfbN0zOWJ/739PMlTI9HfvMHf32m3dQVWHlq6X+Oxbz0OA8MbtvRbGnOZQrV7/VjYk0LBqPyMgpSOUSjHGsmO+e9UlpkikZK2aEWTgeyzkRJJAmsipZV6zW+h//Ynga8Vu52murKNXVJ+Ttg/E5jVcnWnkfOqMJrwXGZp7Jlc5oinh4T1eZU44cEqpE1rr6AV80BQ+/iaSTcat1oM5Xl5hEufJv4Tgw/awdAaM/Sr0cVRzyw4VPqYnfLo69tv8mfr8rmXohZaIy0GVld/TD268DnoC902DT93nHevyEPVWcb8vb28B+1mHMn8AUAAA==
+
+DEMO_CMD_14a16503e9deed2c_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

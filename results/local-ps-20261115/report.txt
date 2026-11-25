@@ -1,0 +1,51 @@
+Local PS hashing — physical Zybo Z7-20 acceptance, 2026-11-15
+
+PASS: the existing FPGA/driver already supports direct processing-system input.
+Added software/hash_local.py: a local CLI and LocalHasher Python API for bytes,
+bytearrays, memoryviews, regular files, and exact-length blocking binary streams.
+No RTL, bitstream, device-tree, kernel, or driver rebuild/change was necessary.
+
+Physical board results (not simulation or QEMU):
+- 81/81 hash jobs match independent hashlib references, all three algorithms.
+- 60 memory jobs include empty, hash-block boundaries, 1 MiB DMA boundaries,
+  and 2 MiB + 17 bytes; 3 file and 3 short-read stream jobs pass.
+- 9 CLI jobs cover UTF-8 text, binary files and actual subprocess stdin pipes.
+- 5 explicit selection jobs switch away and back and check physical IDs 1/2/3.
+- A truncated stream after one completed DMA aborts; the same owner recovers.
+- 99 completed DMA submissions across the 81 successful jobs, plus the aborted
+  stream's first submission. Hardware cycle counts are positive for every job.
+- 8 nonzero manager durations retained in successful jobs: 37.644–39.159 ms.
+  This includes firmware retrieval/configuration, not pure PCAP bus timing.
+- TCP service absent during direct tests; API socket creation explicitly forbidden.
+- Concurrent device ownership rejected; running-service busy CLI failed cleanly.
+- A separate final SHA3 empty digest restored the original personality; the
+  restored TCP service then returned another verified empty SHA3 digest.
+
+Host-only results: all 25 software unit tests pass. These use explicit mocked
+hardware and do not establish FPGA operation. No new RTL simulation/QEMU run.
+Packaging: 17 staged runtime/firmware/boot file checksums pass. Modified helper
+source and modified physical evidence are rejected. Historical embedded build
+records and standalone sdcard.img remain unchanged; supplementary physical
+receipt permits the validated helper in future shared-SD assembly.
+
+Deployment through existing USB UART, verified before publication:
+  /opt/zybo/hash/software/hash_local.py
+  SHA-256 2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c
+  /root/board-local-20261115.py
+  SHA-256 cafc54ac5d17f08d472ab1ee370c6818835119509ca9e0e2f6f179187377ac08
+Board report: /root/local-ps-results-20261115.json
+  SHA-256 241a66391554e5b3bd94db3ae67009e479317fa34b3ac1445f45ec9ebba13f76
+Installed manifest/static image and DTB hashes are in physical.json.
+
+Final state: active profile hash; next boot hash; SHA3 personality; service
+running (PID 361). /boot/profile.env SHA-256 before and after:
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc
+Shared SD data/settings retained. Only new helper, test harness and report were
+added; temporary test files were removed. No reboot or full programming needed.
+
+Evidence: physical.json, uart.log, board-run.log, download.log, host-tests.log,
+staging.log, staging-checks.log and ../local_ps_validation.json.
+Usage: ../../docs/local-ps.md (from this report directory).
+Limits: largest tested input 2 MiB + 17 bytes; no sustained speedup claim,
+external Ethernet traffic, files larger than DDR, or hardware reset-fault injection.
+No external equipment is required for direct PS hashing.

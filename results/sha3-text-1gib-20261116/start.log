@@ -1,0 +1,19 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -u /tmp/hash-1gib-20261116-16288d0a.py --variants /tmp/hash-1gib
+-20261116-16288d0a.json --output-dir /root/hash-bench-1gib-20261116-16288d0a > /
+tmp/hash-1gib-20261116-16288d0a.log 2>&1 < /dev/null & echo BENCH_PID=$!; printf
+ '\nDEMO_CMD_c1ccfa2e8279c29b_%s\n' "$?"
+BENCH_PID=222
+
+DEMO_CMD_c1ccfa2e8279c29b_0
+# tail -3 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_d37a4156b835b
+c18_%s\n' "$?"
+
+DEMO_CMD_d37a4156b835bc18_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

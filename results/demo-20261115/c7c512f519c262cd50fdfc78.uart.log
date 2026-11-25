@@ -1,0 +1,54 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /tmp/zybo-demo-agent-10378fb1ca9c8685.py ]; then sha256sum /tmp/zybo-d
+emo-agent-10378fb1ca9c8685.py; fi; printf '\nDEMO_CMD_cd86950a3904f802_%s\n' "$?
+"
+
+DEMO_CMD_cd86950a3904f802_0
+# d=/tmp/zybo-demo-agent-adc0ce7386e4b813d273fffa.py; u=DEMO_UP_f19f2a0f5c6d6b52
+; if [ -e "$d" ] || [ -L "$d" ]; then echo "${u}_EXISTS"; elif s=$(stty -g) && t
+=$(mktemp /tmp/zybo-demo-upload-XXXXXX); then stty raw -echo min 0 time 80; prin
+tf '\n%s_READY\n' "$u"; head -c 4646 > "$t"; stty "$s"; h=$(sha256sum "$t"); if 
+[ "${h%% *}" = 10378fb1ca9c8685078216c693cfb82e1514d5fbe6890fef9efbe0e2c3f6fa34 
+] && mv -nT "$t" "$d" && [ ! -e "$t" ]; then echo "${u}_DONE"; else rm -f "$t"; 
+echo "${u}_FAILED"; fi; else echo "${u}_FAILED"; fi
+
+DEMO_UP_f19f2a0f5c6d6b52_READY
+DEMO_UP_f19f2a0f5c6d6b52_DONE
+# python3 -u /tmp/zybo-demo-agent-adc0ce7386e4b813d273fffa.py --probe
+@ZYBO_DEMO {"event":"board","board":{"model":"Digilent Zybo Z7-20 DFX hash accelerator","kernel":"6.6.40-dfx-hash","service_pid":1815,"profile":"hash","static_sha256":"cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40","manifest_sha256":"0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3","service_sha256":"408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb","client_sha256":"9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260","local_api_sha256":"2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c","profile_env_sha256":"9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc","dtb_sha256":"3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed","profile_status":"Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash","fpga_manager":"operating","transport":"usb-uart","baud":115200}}
+@ZYBO_DEMO {"event":"done"}
+# d=/tmp/zybo-demo-c7c512f519c262cd50fdfc78.payload; u=DEMO_UP_a8fa7198ea102011;
+ if [ -e "$d" ] || [ -L "$d" ]; then echo "${u}_EXISTS"; elif s=$(stty -g) && t=
+$(mktemp /tmp/zybo-demo-upload-XXXXXX); then stty raw -echo min 0 time 80; print
+f '\n%s_READY\n' "$u"; head -c 0 > "$t"; stty "$s"; h=$(sha256sum "$t"); if [ "$
+{h%% *}" = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ] &&
+ mv -nT "$t" "$d" && [ ! -e "$t" ]; then echo "${u}_DONE"; else rm -f "$t"; echo
+ "${u}_FAILED"; fi; else echo "${u}_FAILED"; fi
+
+DEMO_UP_a8fa7198ea102011_READY
+DEMO_UP_a8fa7198ea102011_DONE
+# python3 -u /tmp/zybo-demo-agent-adc0ce7386e4b813d273fffa.py --file /tmp/zybo-d
+emo-c7c512f519c262cd50fdfc78.payload --algorithms sha3 sha256 blake2s
+@ZYBO_DEMO {"event":"board","board":{"model":"Digilent Zybo Z7-20 DFX hash accelerator","kernel":"6.6.40-dfx-hash","service_pid":1815,"profile":"hash","static_sha256":"cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40","manifest_sha256":"0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3","service_sha256":"408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb","client_sha256":"9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260","local_api_sha256":"2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c","profile_env_sha256":"9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc","dtb_sha256":"3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed","profile_status":"Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash","fpga_manager":"operating","transport":"usb-uart","baud":115200}}
+tr: read error: No such process
+@ZYBO_DEMO {"event":"hashing","algorithm":"sha3"}
+@ZYBO_DEMO {"event":"result","result":{"digest":"a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a","core_cycles":27,"status":"ok","backend":"fpga-dma","transport":"local-device","algorithm":"sha3","algorithm_id":1,"length":0,"dma_transfers":0,"buffer_size":1048576,"manager_load_ns":0,"local_hash_ns":149148,"reference_hashing_in_timed_region":false}}
+@ZYBO_DEMO {"event":"hashing","algorithm":"sha256"}
+@ZYBO_DEMO {"event":"result","result":{"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","core_cycles":125,"status":"ok","backend":"fpga-dma","transport":"local-device","algorithm":"sha256","algorithm_id":2,"length":0,"dma_transfers":0,"buffer_size":1048576,"manager_load_ns":38763924,"local_hash_ns":148860,"reference_hashing_in_timed_region":false}}
+@ZYBO_DEMO {"event":"hashing","algorithm":"blake2s"}
+@ZYBO_DEMO {"event":"result","result":{"digest":"69217a3079908094e11121d042354a7c1f55b6482ca1a51e1b250dfd1ed0eef9","core_cycles":84,"status":"ok","backend":"fpga-dma","transport":"local-device","algorithm":"blake2s","algorithm_id":3,"length":0,"dma_transfers":0,"buffer_size":1048576,"manager_load_ns":38144304,"local_hash_ns":148026,"reference_hashing_in_timed_region":false}}
+@ZYBO_DEMO {"event":"restoring","algorithm":"sha3"}
+@ZYBO_DEMO {"event":"restored","result":{"digest":"a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a","core_cycles":27,"status":"ok","backend":"fpga-dma","transport":"local-device","algorithm":"sha3","algorithm_id":1,"length":0,"dma_transfers":0,"buffer_size":1048576,"manager_load_ns":37662408,"local_hash_ns":157326,"reference_hashing_in_timed_region":true,"verified":true}}
+@ZYBO_DEMO {"event":"board","board":{"model":"Digilent Zybo Z7-20 DFX hash accelerator","kernel":"6.6.40-dfx-hash","service_pid":1931,"profile":"hash","static_sha256":"cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40","manifest_sha256":"0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3","service_sha256":"408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb","client_sha256":"9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260","local_api_sha256":"2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c","profile_env_sha256":"9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc","dtb_sha256":"3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed","profile_status":"Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash","fpga_manager":"operating","transport":"usb-uart","baud":115200}}
+@ZYBO_DEMO {"event":"done"}
+# rm -f /tmp/zybo-demo-c7c512f519c262cd50fdfc78.payload /tmp/zybo-demo-agent-adc
+0ce7386e4b813d273fffa.py; printf '\nDEMO_CMD_e80d73a53c5b5730_%s\n' "$?"
+
+DEMO_CMD_e80d73a53c5b5730_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

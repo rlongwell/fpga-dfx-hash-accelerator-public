@@ -1,0 +1,24 @@
+{
+  "kind": "physical-zybo-deployment",
+  "bundle_sha256": "e8e33b24b7c1f89639bcad2e5bc477f241c7412ef70967273a000c13042fb085",
+  "installed_static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "boot_files": {
+    "boot/profiles/hash/SHA256SUMS": "3a1ad97e052d05b84cb65a902bc9b752c359e4f0ac8ed7772f57da7f02c1f89c",
+    "boot/profiles/hash/system.bit": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+    "boot/profiles/hash/system.dtb": "7d1b087b3bef46204530f5ec342592796e6971ac8a10003f19417db8df9244b8"
+  },
+  "saved_profile_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+  "backup": "/root/hash-before-gem-20261116-v2",
+  "original_backup": "/root/hash-before-gem-20261116-v1",
+  "uart_log": "deployment-v2-uart.log",
+  "profile": "hash",
+  "next_boot": "hash",
+  "linux": "6.6.40-dfx-hash-wifi",
+  "persistent_sentinels": {
+    "sha256": "d85ac488f283c230aa27b1ced1f91636bb8d8829e522d5b4e200bb69c6a3f31c",
+    "paths": [
+      "/root/hash-net-persistence-20261116-v1.txt",
+      "/boot/hash-net-persistence-20261116-v1.txt"
+    ]
+  }
+}

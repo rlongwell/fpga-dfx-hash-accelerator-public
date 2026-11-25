@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "started_utc": "2026-11-16T01:10:08.279Z",
+  "mode": "Scripted cursor / real dashboard actions / physical board",
+  "actions": [
+    {
+      "action": "point",
+      "selector": "#connect",
+      "at": 2.054900000035763,
+      "x": 1631.0703125,
+      "y": 642.484375
+    },
+    {
+      "action": "click",
+      "selector": "#connect",
+      "at": 2.215600000023842,
+      "x": 1631.0703125,
+      "y": 642.484375
+    },
+    {
+      "action": "point",
+      "selector": "#sample",
+      "at": 7.054,
+      "x": 717.703125,
+      "y": 499.484375
+    },
+    {
+      "action": "click",
+      "selector": "#sample",
+      "at": 7.214699999988079,
+      "x": 717.703125,
+      "y": 499.484375
+    },
+    {
+      "action": "point",
+      "selector": "#run",
+      "at": 10.053600000023842,
+      "x": 508.6015625,
+      "y": 665.984375
+    },
+    {
+      "action": "click",
+      "selector": "#run",
+      "at": 10.214400000035763,
+      "x": 508.6015625,
+      "y": 665.984375
+    },
+    {
+      "action": "point",
+      "selector": ".verified",
+      "at": 24.01930000001192,
+      "x": 392.40625,
+      "y": 616.734375
+    },
+    {
+      "action": "point",
+      "selector": ".hash-time strong",
+      "at": 28.055300000011922,
+      "x": 331.65625,
+      "y": 671.78125
+    },
+    {
+      "action": "point",
+      "selector": ".digest-row code",
+      "at": 33.0545,
+      "x": 612.75,
+      "y": 749.9765625
+    },
+    {
+      "action": "point",
+      "selector": ".live-footer",
+      "at": 37.0535,
+      "x": 952.5,
+      "y": 920.859375
+    }
+  ],
+  "jobs": [
+    {
+      "id": "7cba0dc3379724a94ef03286",
+      "kind": "probe",
+      "state": "passed",
+      "at": 5.053699999988079
+    },
+    {
+      "id": "12911a9647d8686a24840aef",
+      "kind": "hash",
+      "state": "passed",
+      "at": 16.11660000002384
+    }
+  ],
+  "outcome": "passed",
+  "finished_seconds": 40.00030000001192
+}

@@ -1,0 +1,22 @@
+Command: pr_verify -full_check -file pr_verify_blake2s.rpt /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp routed.dcp
+Sun Nov 15 14:49:18 2026
+
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 435
+  Number of static tiles compared           = 7210
+  Number of static sites compared           = 1035
+  Number of static cells compared           = 5634
+  Number of static routed nodes compared    = 68901
+  Number of static routed pips compared     = 63590
+
+DCP2: routed.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 435
+  Number of static tiles compared           = 7210
+  Number of static sites compared           = 1035
+  Number of static cells compared           = 5634
+  Number of static routed nodes compared    = 68901
+  Number of static routed pips compared     = 63590
+INFO: [Vivado 12-3253] PR_VERIFY: check points /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp and routed.dcp are compatible

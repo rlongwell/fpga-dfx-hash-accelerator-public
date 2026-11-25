@@ -1,0 +1,6 @@
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  build/sha3-profile/compact/full.bit
+b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d  build/sha3-profile/compact/full_pblock_hash_partial.bit.bin
+aaeeec3177b4848a95059f90f04da182e6342aca76835aaa470052c34e137924  build/sha3-profile/compact/routed.dcp
+aa94dbb92cd80aac5acea04a7217ae820e349cdce449b4b7bec9c84db4c10116  build/sha3-profile/oxide-elastic-medium-physopt/full.bit
+240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7  build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin
+4b27c7191b2585143b4b34b436d4e2ad5594c41ea05abcf1c8158fa82adc0ca4  build/sha3-profile/oxide-elastic-medium-physopt/routed.dcp

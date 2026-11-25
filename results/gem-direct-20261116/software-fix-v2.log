@@ -1,0 +1,26 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# mkdir /root/hash-gem-software-v2 /root/hash-net-software-before-v2 && python3 
+-c 'import tarfile;tarfile.open("/root/hash-gem-software-v2.tar.gz").extractall(
+"/root/hash-gem-software-v2")' && (cd /root/hash-gem-software-v2 && sha256sum -c
+ SHA256SUMS); printf '\nDEMO_CMD_0895c05a522f32c6_%s\n' "$?"
+gem_board: OK
+board_run.py: OK
+fsck.fat: OK
+
+DEMO_CMD_0895c05a522f32c6_0
+# cp -a /opt/zybo/hash/net/gem_board /opt/zybo/hash/net/board_run.py /root/hash-
+net-software-before-v2/ && cp -a /root/hash-gem-software-v2/gem_board /root/hash
+-gem-software-v2/board_run.py /opt/zybo/hash/net/ && sha256sum /opt/zybo/hash/ne
+t/gem_board /opt/zybo/hash/net/board_run.py; printf '\nDEMO_CMD_04ae19f9fc779546
+_%s\n' "$?"
+3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4  /opt/zybo/hash/net/gem_board
+3ff4095b0092e4d9be89e860f3379547a3da6f7480b2d6abf333a2182eb9b2be  /opt/zybo/hash/net/board_run.py
+
+DEMO_CMD_04ae19f9fc779546_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

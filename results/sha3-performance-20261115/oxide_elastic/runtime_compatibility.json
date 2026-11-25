@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "running_full_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+  "original_locked_static_full_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "basis": "Both complete variants pass full pr_verify against the same three original configurations; booted compact image independently accepted on board. Benchmark forces SHA256 then loads the explicit Oxide partial. Production manifest remains compact.",
+  "runtime_manifest_sha256": "bdaaafb60f44db68b8bd357376c3ad385dbe1bafcac299d87d2433de66c437ed"
+}

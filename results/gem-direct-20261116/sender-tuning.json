@@ -1,0 +1,67 @@
+{
+  "kind": "physical-zybo-packet-sender-tuning",
+  "rows": [
+    {
+      "case": "results/gem-direct-20261116/window-4",
+      "bytes": 1048593,
+      "MB_per_second": 18.530963686879833,
+      "window": 4,
+      "retries": 1,
+      "rx_overruns": 0,
+      "ready_timer_fixed": false,
+      "verified": true
+    },
+    {
+      "case": "results/gem-direct-20261116/window-8",
+      "bytes": 1048593,
+      "MB_per_second": 30.269556151700503,
+      "window": 8,
+      "retries": 1,
+      "rx_overruns": 0,
+      "ready_timer_fixed": false,
+      "verified": true
+    },
+    {
+      "case": "results/gem-direct-20261116/window-1",
+      "bytes": 1048593,
+      "MB_per_second": 4.75091819832018,
+      "window": 1,
+      "retries": 1,
+      "rx_overruns": 0,
+      "ready_timer_fixed": false,
+      "verified": true
+    },
+    {
+      "case": "results/gem-direct-20261116/bulk-window-16",
+      "bytes": 16777216,
+      "MB_per_second": 46.85700341347912,
+      "window": 16,
+      "retries": 6,
+      "rx_overruns": 6,
+      "ready_timer_fixed": true,
+      "verified": true
+    },
+    {
+      "case": "results/gem-direct-20261116/bulk-window-8",
+      "bytes": 16777216,
+      "MB_per_second": 39.92409441524842,
+      "window": 8,
+      "retries": 0,
+      "rx_overruns": 0,
+      "ready_timer_fixed": true,
+      "verified": true
+    },
+    {
+      "case": "results/gem-direct-20261116/bulk-window-12",
+      "bytes": 16777216,
+      "MB_per_second": 56.46287858365717,
+      "window": 12,
+      "retries": 0,
+      "rx_overruns": 0,
+      "ready_timer_fixed": true,
+      "verified": true
+    }
+  ],
+  "selected_window": 12,
+  "reason": "Best tested 16 MiB rate with zero retransmissions and zero receiver overruns; full interleaved bulk acceptance is separate."
+}

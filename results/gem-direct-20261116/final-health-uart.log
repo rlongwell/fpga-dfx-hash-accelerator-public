@@ -1,0 +1,93 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# test ! -e /root/hash-ownership-v2-final.json && python3 /root/hash-test-owners
+hip-20261116.py > /root/hash-ownership-v2-final.json; printf '\nDEMO_CMD_3e2b12e
+bafa9fc27_%s\n' "$?"
+
+DEMO_CMD_3e2b12ebafa9fc27_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-ownership-v2-final.json'"'"',"rb").read())).decode())'
+; printf '\nDEMO_CMD_401d8edc5940f947_%s\n' "$?"
+LOG_PAYLOAD:H4sIAEQQAAAC/7VRPW8CMQzd+yuiLIDEXUo7tCoTQz+GDt0ROuWCIYG7JLJ9RVfEf29yrVTK0qlDIvvFee/ZPsq982v5IGS0PTmjmyIcPCBZF4ttp3FNcpoeNRHkMsYOUk6A785AFV0G72Y397/BqvPGar89/2MsmD2lfHmUJrStHnSXUoXI6qOvg7KarCLWyCXZLEscolylAGEHhs/ZEDQFn40/sgX0wAohNroXu1DL01RciHSEqnZexZ5t8LeZvTD5dm0MyIJ6mqdTRs22dD71wuPr6ejSXNjwQSOMJvMNhlZksGpCGpv45nnNyUuCAedn8Xjyf31ceMwUdUibq7DzZezloJIph6aLBvyWh/HOvgACIpc8/CBpCJy8DOQ+cNHl5f/lf5EqUwfi6e15IZyPHYsQATVn7tPqdPUJWo/oEmwCAAA=
+
+DEMO_CMD_401d8edc5940f947_0
+# zybo-profile.sh status; uname -r; /opt/zybo/hash/start.sh status; printf '\nDE
+MO_CMD_8cdd0eb141b70ca2_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+6.6.40-dfx-hash-wifi
+Hash service running (PID 7128)
+
+DEMO_CMD_8cdd0eb141b70ca2_0
+# (cd /boot/profiles/hash && sha256sum -c SHA256SUMS) && (cd /boot/profiles/resc
+ue && sha256sum -c SHA256SUMS); printf '\nDEMO_CMD_ebff75dc9fe08dc4_%s\n' "$?"
+system.bit: OK
+system.dtb: OK
+system.dtb: OK
+
+DEMO_CMD_ebff75dc9fe08dc4_0
+# python3 -c 'from pathlib import Path;import hashlib,json;h='"'"'6102e03f31c175
+d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b'"'"';assert hashlib.sha256(Pa
+th("/boot/profiles/hash/system.bit").read_bytes()).hexdigest()==h;assert Path("/
+proc/device-tree/core-forge,static-sha256").read_bytes().rstrip(bytes([0])).deco
+de()==h;assert json.loads(Path("/opt/zybo/hash/dfx_manifest.json").read_text())[
+"static_sha256"]==h'; printf '\nDEMO_CMD_407d07e077351977_%s\n' "$?"
+
+DEMO_CMD_407d07e077351977_0
+# python3 -c 'from pathlib import Path;import hashlib;assert hashlib.sha256(Path
+("/boot/profile.env").read_bytes()).hexdigest()=='"'"'9dc14825fb83ef1fe366b1a2a9
+451395d67a966a0800ad4a4a9289dc612f46fc'"'"';assert all(hashlib.sha256(Path(x).re
+ad_bytes()).hexdigest()=='"'"'d85ac488f283c230aa27b1ced1f91636bb8d8829e522d5b4e2
+00bb69c6a3f31c'"'"' for x in ['"'"'/root/hash-net-persistence-20261116-v1.txt'"'
+"', '"'"'/boot/hash-net-persistence-20261116-v1.txt'"'"'])'; printf '\nDEMO_CMD_
+5dabbcc59daf1acb_%s\n' "$?"
+
+DEMO_CMD_5dabbcc59daf1acb_0
+# python3 -c 'from pathlib import Path;import json,hashlib;m=json.loads(Path("/o
+pt/zybo/hash/dfx_manifest.json").read_text());v=json.loads(Path("/opt/zybo/hash/
+net/core_variants.json").read_text());images=list(m["images"].values())+[v["vari
+ants"]["oxide"]["image"]];assert all(hashlib.sha256((Path("/lib/firmware")/x["fi
+lename"]).read_bytes()).hexdigest()==x["sha256"] for x in images);print("ALL_PAR
+TIAL_CHECKSUMS_PASS")'; printf '\nDEMO_CMD_b9394758a00bae04_%s\n' "$?"
+ALL_PARTIAL_CHECKSUMS_PASS
+
+DEMO_CMD_b9394758a00bae04_0
+# python3 -c 'from pathlib import Path;assert not Path("/run/zybo-hash-net.lock"
+).exists();assert Path("/sys/class/net/eth0/speed").read_text().strip()=="1000";
+assert Path("/sys/class/net/eth0/duplex").read_text().strip()=="full";assert Pat
+h("/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt").stat().st_size==107
+3741824;assert Path("/root/hash-before-gem-20261116-v1/rollback.py").is_file()';
+ printf '\nDEMO_CMD_739876ebecf365fe_%s\n' "$?"
+
+DEMO_CMD_739876ebecf365fe_0
+# ip -4 addr show eth0; dmesg | tail -n 12; printf '\nDEMO_CMD_be8a7de037a5b8ca_
+%s\n' "$?"
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast qlen 1000
+    inet 10.77.78.2/30 scope global eth0
+       valid_lft forever preferred_lft forever
+macb e000b000.ethernet eth0: Link is Down
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+macb e000b000.ethernet eth0: Link is Down
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+macb e000b000.ethernet eth0: Link is Down
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+
+DEMO_CMD_be8a7de037a5b8ca_0
+# dmesg -n 7; printf '\nDEMO_CMD_ca573d681b37b0d2_%s\n' "$?"
+
+DEMO_CMD_ca573d681b37b0d2_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

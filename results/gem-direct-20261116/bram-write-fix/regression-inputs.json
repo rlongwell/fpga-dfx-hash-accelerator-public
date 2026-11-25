@@ -1,0 +1,8 @@
+{
+  "negative_test": "Expected failure on original generated memory; LEGACY_BRAM_A32",
+  "source_sha256": {
+    "build/gem-direct/before-bram-write-fix/system/project/system.gen/sources_1/bd/ps_dma/ip/ps_dma_net_memory_0/ps_dma_net_memory_0_sim_netlist.vhdl": "65ec45e7ef3eea96f981bf5f8a09033d4cc06e53aea0c59a084044cf8e4b005a",
+    "sim/net/bram_lane_test.sv": "fe07a790f30c6a1dbf1a1e69e8bc77c620b36a772035c3a7f0ea24ab4184b4d3",
+    "scripts/test_generated_bram.sh": "537683b698a63c2d97115503059c3ecb1fb495cb00960f0565117008a750d0e9"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "physical-zybo-tcp-compatibility",
+  "rows": [
+    {
+      "digest": "95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199",
+      "core_cycles": 2432762,
+      "status": "ok",
+      "algorithm": "sha3",
+      "length": 1048593,
+      "transfer_and_hash_ns": 24036282,
+      "receive_mode": "direct",
+      "manager_load_ns": 0,
+      "client_transfer_and_result_ns": 25424561,
+      "client_request_ns": 11228024274,
+      "client_transfer_and_result_MB_s": 41.24330799654712,
+      "reference_prepass": true,
+      "reference_hashing_in_timed_region": false,
+      "verified": true
+    },
+    {
+      "digest": "03f4d258f81b7667f7bdd1caa8f97494472a007dc6b8552c080fa97f6e244fcc",
+      "core_cycles": 3886586,
+      "status": "ok",
+      "algorithm": "sha256",
+      "length": 1048593,
+      "transfer_and_hash_ns": 38586127,
+      "receive_mode": "direct",
+      "manager_load_ns": 37959918,
+      "client_transfer_and_result_ns": 38921502,
+      "client_request_ns": 150747798,
+      "client_transfer_and_result_MB_s": 26.941226471681386,
+      "reference_prepass": true,
+      "reference_hashing_in_timed_region": false,
+      "verified": true
+    },
+    {
+      "digest": "b8bed6aacf298003d5e54a3326eddc758d82f887b2b783c42aa44d1be211d0c3",
+      "core_cycles": 3965962,
+      "status": "ok",
+      "algorithm": "blake2s",
+      "length": 1048593,
+      "transfer_and_hash_ns": 39380568,
+      "receive_mode": "direct",
+      "manager_load_ns": 37967892,
+      "client_transfer_and_result_ns": 39972014,
+      "client_request_ns": 151735439,
+      "client_transfer_and_result_MB_s": 26.233179043717936,
+      "reference_prepass": true,
+      "reference_hashing_in_timed_region": false,
+      "verified": true
+    },
+    {
+      "digest": "95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199",
+      "core_cycles": 1938876,
+      "status": "ok",
+      "algorithm": "sha3",
+      "length": 1048593,
+      "transfer_and_hash_ns": 19113583,
+      "receive_mode": "direct",
+      "manager_load_ns": 37907652,
+      "client_transfer_and_result_ns": 20170288,
+      "client_request_ns": 131133936,
+      "client_transfer_and_result_MB_s": 51.98701178684211,
+      "reference_prepass": true,
+      "reference_hashing_in_timed_region": false,
+      "verified": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+{
+  "abi": 65536,
+  "part": "xc7z020clg400-1",
+  "vivado": "2024.2",
+  "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+  "images": {
+    "sha3": {
+      "algorithm_id": 1,
+      "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+      "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+      "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+    },
+    "sha256": {
+      "algorithm_id": 2,
+      "filename": "fpga-dfx-hash/0e14c2e8fc21/sha256-6e6d9cb30cfb.bin",
+      "source": "build/vivado/dfx/sha256/full_pblock_hash_partial.bit.bin",
+      "sha256": "6e6d9cb30cfb79340381ce32a1d38f92cdfefbb282c5da91d472ebefb7bc729e"
+    },
+    "blake2s": {
+      "algorithm_id": 3,
+      "filename": "fpga-dfx-hash/0e14c2e8fc21/blake2s-9a7e9e450789.bin",
+      "source": "build/vivado/dfx/blake2s/full_pblock_hash_partial.bit.bin",
+      "sha256": "9a7e9e450789f0f89f58f2d57c39b6dda5d239b94ee6c79c73196e8a5ed18c31"
+    }
+  }
+}

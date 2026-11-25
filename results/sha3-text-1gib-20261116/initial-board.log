@@ -1,0 +1,37 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; df -k /root /tmp /boot; cat /proc/meminfo | 
+head -5; cat /proc/mounts; sha256sum /boot/profile.env; cat /proc/modules; print
+f '\nDEMO_CMD_c48342fc62d5f079_%s\n' "$?"
+Zybo profile: radar
+Device tree: profiles/radar/system.dtb
+Board: Digilent Zybo Z7 board
+Next boot: hash
+6.6.40-dfx-hash-wifi
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root             28142899    142941  26493831   1% /
+tmpfs                   513628        20    513608   0% /tmp
+/dev/mmcblk0p1          523248    285220    238028  55% /boot
+MemTotal:        1027256 kB
+MemFree:          990368 kB
+MemAvailable:     996184 kB
+Buffers:           13904 kB
+Cached:            10352 kB
+/dev/root / ext4 rw,relatime 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=496732k,nr_inodes=124183,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,gid=5,mode=620,ptmxmode=666 0 0
+tmpfs /dev/shm tmpfs rw,relatime 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,relatime,mode=755 0 0
+sysfs /sys sysfs rw,relatime 0 0
+/dev/mmcblk0p1 /boot vfat rw,nosuid,nodev,noexec,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,flush,errors=remount-ro 0 0
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+
+DEMO_CMD_c48342fc62d5f079_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

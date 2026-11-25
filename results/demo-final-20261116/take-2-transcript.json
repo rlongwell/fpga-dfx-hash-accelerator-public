@@ -1,0 +1,287 @@
+{
+  "input": "docs/media/voiceover-resources-take-2.mp3",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "Resources including zero BRAMs",
+      "start": 0,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 3.34,
+          "text": " The compact hash partition also uses fewer resources.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.22,
+              "word": " The",
+              "probability": 0.9830169081687927
+            },
+            {
+              "start": 0.22,
+              "end": 0.62,
+              "word": " compact",
+              "probability": 0.559556245803833
+            },
+            {
+              "start": 0.62,
+              "end": 0.9,
+              "word": " hash",
+              "probability": 0.9609088897705078
+            },
+            {
+              "start": 0.9,
+              "end": 1.46,
+              "word": " partition",
+              "probability": 0.9914985299110413
+            },
+            {
+              "start": 1.46,
+              "end": 1.82,
+              "word": " also",
+              "probability": 0.996488094329834
+            },
+            {
+              "start": 1.82,
+              "end": 2.3,
+              "word": " uses",
+              "probability": 0.9975607395172119
+            },
+            {
+              "start": 2.3,
+              "end": 2.68,
+              "word": " fewer",
+              "probability": 0.9992966651916504
+            },
+            {
+              "start": 2.68,
+              "end": 3.34,
+              "word": " resources.",
+              "probability": 0.9985809326171875
+            }
+          ]
+        },
+        {
+          "start": 4.04,
+          "end": 9.24,
+          "text": " 21.9% fewer lookup tables and about 58% fewer flip-flops.",
+          "words": [
+            {
+              "start": 4.04,
+              "end": 4.28,
+              "word": " 21",
+              "probability": 0.9436630606651306
+            },
+            {
+              "start": 4.28,
+              "end": 5.02,
+              "word": ".9",
+              "probability": 0.989885538816452
+            },
+            {
+              "start": 5.02,
+              "end": 5.38,
+              "word": "%",
+              "probability": 0.7985729575157166
+            },
+            {
+              "start": 5.38,
+              "end": 5.78,
+              "word": " fewer",
+              "probability": 0.9989487528800964
+            },
+            {
+              "start": 5.78,
+              "end": 6.1,
+              "word": " lookup",
+              "probability": 0.9081124663352966
+            },
+            {
+              "start": 6.1,
+              "end": 6.58,
+              "word": " tables",
+              "probability": 0.9988375306129456
+            },
+            {
+              "start": 6.58,
+              "end": 6.96,
+              "word": " and",
+              "probability": 0.7345408201217651
+            },
+            {
+              "start": 6.96,
+              "end": 7.18,
+              "word": " about",
+              "probability": 0.9885878562927246
+            },
+            {
+              "start": 7.18,
+              "end": 7.82,
+              "word": " 58",
+              "probability": 0.9982498288154602
+            },
+            {
+              "start": 7.82,
+              "end": 8.3,
+              "word": "%",
+              "probability": 0.9913729429244995
+            },
+            {
+              "start": 8.3,
+              "end": 8.64,
+              "word": " fewer",
+              "probability": 0.9998518228530884
+            },
+            {
+              "start": 8.64,
+              "end": 8.9,
+              "word": " flip",
+              "probability": 0.9954400062561035
+            },
+            {
+              "start": 8.9,
+              "end": 9.24,
+              "word": "-flops.",
+              "probability": 0.8879455924034119
+            }
+          ]
+        },
+        {
+          "start": 9.98,
+          "end": 11.92,
+          "text": " Both hash cores use zero brams.",
+          "words": [
+            {
+              "start": 9.98,
+              "end": 10.22,
+              "word": " Both",
+              "probability": 0.9970705509185791
+            },
+            {
+              "start": 10.22,
+              "end": 10.5,
+              "word": " hash",
+              "probability": 0.9826021194458008
+            },
+            {
+              "start": 10.5,
+              "end": 10.76,
+              "word": " cores",
+              "probability": 0.7585905194282532
+            },
+            {
+              "start": 10.76,
+              "end": 11.12,
+              "word": " use",
+              "probability": 0.9946597218513489
+            },
+            {
+              "start": 11.12,
+              "end": 11.58,
+              "word": " zero",
+              "probability": 0.9051421880722046
+            },
+            {
+              "start": 11.58,
+              "end": 11.92,
+              "word": " brams.",
+              "probability": 0.7487255036830902
+            }
+          ]
+        },
+        {
+          "start": 12.64,
+          "end": 14.72,
+          "text": " The replay memory is shared infrastructure,",
+          "words": [
+            {
+              "start": 12.64,
+              "end": 12.76,
+              "word": " The",
+              "probability": 0.9971803426742554
+            },
+            {
+              "start": 12.76,
+              "end": 13.08,
+              "word": " replay",
+              "probability": 0.9349067807197571
+            },
+            {
+              "start": 13.08,
+              "end": 13.44,
+              "word": " memory",
+              "probability": 0.9992075562477112
+            },
+            {
+              "start": 13.44,
+              "end": 13.74,
+              "word": " is",
+              "probability": 0.9988498687744141
+            },
+            {
+              "start": 13.74,
+              "end": 14.1,
+              "word": " shared",
+              "probability": 0.9936766028404236
+            },
+            {
+              "start": 14.1,
+              "end": 14.72,
+              "word": " infrastructure,",
+              "probability": 0.9967130422592163
+            }
+          ]
+        },
+        {
+          "start": 15.12,
+          "end": 17.56,
+          "text": " counted separately from those hash partition totals.",
+          "words": [
+            {
+              "start": 15.12,
+              "end": 15.46,
+              "word": " counted",
+              "probability": 0.9941178560256958
+            },
+            {
+              "start": 15.46,
+              "end": 15.98,
+              "word": " separately",
+              "probability": 0.9976951479911804
+            },
+            {
+              "start": 15.98,
+              "end": 16.3,
+              "word": " from",
+              "probability": 0.9983396530151367
+            },
+            {
+              "start": 16.3,
+              "end": 16.52,
+              "word": " those",
+              "probability": 0.9911256432533264
+            },
+            {
+              "start": 16.52,
+              "end": 16.82,
+              "word": " hash",
+              "probability": 0.9944843649864197
+            },
+            {
+              "start": 16.82,
+              "end": 17.28,
+              "word": " partition",
+              "probability": 0.9407144784927368
+            },
+            {
+              "start": 17.28,
+              "end": 17.56,
+              "word": " totals.",
+              "probability": 0.9972672462463379
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

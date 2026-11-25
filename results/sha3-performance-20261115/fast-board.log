@@ -1,0 +1,30 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-fast-manifest-20261115.json /r
+oot/sha3-fast-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --
+manifest /root/sha3-fast-manifest-20261115.json --label fast --output /root/sha3
+-fast-20261115.json; /opt/zybo/hash/start.sh status; zybo-profile.sh status; pri
+ntf '\nUART_DONE_327081226181955_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-fast-73dc1a4127f4.bin SHA256 73dc1a4127f43d3992a928a59abb42546b6575c06e6e04b6527e3041eb143222
+tr: read error: No such process
+fast sha3 64 {"dma": {"median_ns": 189054, "min_ns": 183780, "max_ns": 214134, "MB_s": 0.33852761644821056}, "local_api": {"median_ns": 406656, "min_ns": 402174, "max_ns": 448614, "MB_s": 0.15738117721120554}, "arm": {"median_ns": 36804, "min_ns": 36636, "max_ns": 38784, "MB_s": 1.7389414194109336}}
+fast sha3 136 {"dma": {"median_ns": 187002, "min_ns": 184260, "max_ns": 227406, "MB_s": 0.7272649490379782}, "local_api": {"median_ns": 400866, "min_ns": 396114, "max_ns": 420768, "MB_s": 0.33926549021368735}, "arm": {"median_ns": 47520, "min_ns": 47010, "max_ns": 49218, "MB_s": 2.861952861952862}}
+fast sha3 1024 {"dma": {"median_ns": 176214, "min_ns": 172152, "max_ns": 196938, "MB_s": 5.811116029373376}, "local_api": {"median_ns": 409098, "min_ns": 391974, "max_ns": 473814, "MB_s": 2.5030677246038846}, "arm": {"median_ns": 113124, "min_ns": 112386, "max_ns": 114150, "MB_s": 9.052013719458294}}
+fast sha3 65536 {"dma": {"median_ns": 455784, "min_ns": 447816, "max_ns": 535254, "MB_s": 143.78740807048953}, "local_api": {"median_ns": 763314, "min_ns": 753402, "max_ns": 844818, "MB_s": 85.85719638313984}, "arm": {"median_ns": 5349930, "min_ns": 5305308, "max_ns": 5363286, "MB_s": 12.249879904970719}}
+fast sha3 1048576 {"dma": {"median_ns": 4575822, "min_ns": 4571322, "max_ns": 4592076, "MB_s": 229.15576698569132}, "local_api": {"median_ns": 7023558, "min_ns": 6998010, "max_ns": 7087578, "MB_s": 149.29413268887365}, "arm": {"median_ns": 84827245, "min_ns": 84736687, "max_ns": 85218181, "MB_s": 12.361311510234714}}
+fast sha3 16777216 {"dma": {"median_ns": 71796763, "min_ns": 71776890, "max_ns": 71812111, "MB_s": 233.67649597238807}, "local_api": {"median_ns": 108696907, "min_ns": 108572096, "max_ns": 108864349, "MB_s": 154.34860533796055}, "arm": {"median_ns": 1354553474, "min_ns": 1354223630, "max_ns": 1355482519, "MB_s": 12.385790832204533}}
+REPORT /root/sha3-fast-20261115.json passed True
+Hash service started (PID 1300); log: /var/log/zybo-hash.log
+Hash service running (PID 1300)
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+
+UART_DONE_327081226181955_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

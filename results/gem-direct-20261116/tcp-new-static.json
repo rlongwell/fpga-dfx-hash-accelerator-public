@@ -1,0 +1,16 @@
+{
+  "digest": "585477f4141ac1ee450236139ea3112dea2c1160140b3b7723a7ab955de8027b",
+  "core_cycles": 290505,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 4097,
+  "transfer_and_hash_ns": 2650236,
+  "receive_mode": "direct",
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 4053405,
+  "client_request_ns": 11205875453,
+  "client_transfer_and_result_MB_s": 1.0107551552336862,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}

@@ -1,0 +1,18 @@
+{"test": "host-veth-protocol", "window": 1, "bytes": 0, "retries": 0, "verified": true}
+Traceback (most recent call last):
+  File "/home/rl/workspace/fpga-dfx-hash-accelerator/software/net/test_sender.py", line 98, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rl/workspace/fpga-dfx-hash-accelerator/software/net/test_sender.py", line 93, in main
+    else:assert report['retries']==0, 'Ready delay must not trigger a data retransmission'
+                ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Ready delay must not trigger a data retransmission
+Traceback (most recent call last):
+  File "/home/rl/workspace/fpga-dfx-hash-accelerator/software/net/test_sender.py", line 98, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rl/workspace/fpga-dfx-hash-accelerator/software/net/test_sender.py", line 24, in main
+    subprocess.run(['unshare','--net',sys.executable,str(Path(__file__).resolve()),
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['unshare', '--net', '/usr/bin/python3', '/home/rl/workspace/fpga-dfx-hash-accelerator/software/net/test_sender.py', '/home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/sender-old-ready-timer', '--isolated']' returned non-zero exit status 1.

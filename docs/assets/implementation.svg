@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="532" viewBox="0 0 1280 532" role="img" aria-labelledby="title desc">
+<title id="title">Routed resource usage for three compatible DFX configurations</title><desc id="desc">Stacked bars show static and reconfigurable partition LUT counts from retained Vivado 2024.2 routed reports. SHA3 uses 7193 total LUTs, SHA-256 3953, and BLAKE2s 6338. All meet 100 MHz setup timing. These are implementation results, not board measurements.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b31"/><stop offset="1" stop-color="#101827"/></linearGradient>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#70d9e9"/></marker>
+  <marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c0a2ff"/></marker>
+</defs>
+<rect width="1280" height="532" rx="20" fill="url(#bg)"/>
+<g font-family="DejaVu Sans,Arial,sans-serif">
+<text x="40" y="48" fill="#70d9e9" font-size="14" font-weight="700" text-anchor="start">IMPLEMENTATION EVIDENCE</text>
+<text x="40" y="88" fill="#f4f8ff" font-size="29" font-weight="700" text-anchor="start">Static infrastructure, reused across every engine.</text>
+<text x="40" y="119" fill="#aabbd1" font-size="16" font-weight="400" text-anchor="start">Vivado 2024.2  /  xc7z020clg400-1  /  Full-system routed results  /  100 MHz</text>
+<rect x="40" y="144" width="15" height="15" rx="3" fill="#486780" stroke="#486780" />
+<text x="64" y="157" fill="#dbe6f5" font-size="14" font-weight="400" text-anchor="start">Static logic</text>
+<rect x="181" y="144" width="15" height="15" rx="3" fill="#70d9e9" stroke="#70d9e9" />
+<text x="205" y="157" fill="#dbe6f5" font-size="14" font-weight="400" text-anchor="start">Reconfigurable engine</text>
+<text x="1000" y="187" fill="#aabbd1" font-size="12" font-weight="700" text-anchor="middle">TOTAL LUTs</text>
+<text x="1163" y="187" fill="#aabbd1" font-size="12" font-weight="700" text-anchor="middle">SETUP SLACK</text>
+<text x="40" y="245" fill="#f4f8ff" font-size="20" font-weight="700" text-anchor="start">SHA3-256</text>
+<rect x="225" y="225" width="700" height="34" rx="4" fill="#1a2940" stroke="#1a2940" />
+<rect x="225" y="225" width="190.48749999999998" height="34" rx="0" fill="#486780" stroke="#486780" />
+<rect x="415.48749999999995" y="225" width="438.9" height="34" rx="0" fill="#70d9e9" stroke="#70d9e9" />
+<text x="320.24375" y="248" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">2,177</text>
+<text x="634.9375" y="248" fill="#112437" font-size="14" font-weight="700" text-anchor="middle">5,016</text>
+<text x="1000" y="249" fill="#f4f8ff" font-size="25" font-weight="700" text-anchor="middle">7,193</text>
+<text x="1163" y="249" fill="#99e6be" font-size="22" font-weight="700" text-anchor="middle">+0.262 ns</text>
+<text x="40" y="331" fill="#f4f8ff" font-size="20" font-weight="700" text-anchor="start">SHA-256</text>
+<rect x="225" y="311" width="700" height="34" rx="4" fill="#1a2940" stroke="#1a2940" />
+<rect x="225" y="311" width="190.48749999999998" height="34" rx="0" fill="#486780" stroke="#486780" />
+<rect x="415.48749999999995" y="311" width="155.39999999999998" height="34" rx="0" fill="#70d9e9" stroke="#70d9e9" />
+<text x="320.24375" y="334" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">2,177</text>
+<text x="493.18749999999994" y="334" fill="#112437" font-size="14" font-weight="700" text-anchor="middle">1,776</text>
+<text x="1000" y="335" fill="#f4f8ff" font-size="25" font-weight="700" text-anchor="middle">3,953</text>
+<text x="1163" y="335" fill="#99e6be" font-size="22" font-weight="700" text-anchor="middle">+0.229 ns</text>
+<text x="40" y="417" fill="#f4f8ff" font-size="20" font-weight="700" text-anchor="start">BLAKE2s-256</text>
+<rect x="225" y="397" width="700" height="34" rx="4" fill="#1a2940" stroke="#1a2940" />
+<rect x="225" y="397" width="190.48749999999998" height="34" rx="0" fill="#486780" stroke="#486780" />
+<rect x="415.48749999999995" y="397" width="364.0875" height="34" rx="0" fill="#70d9e9" stroke="#70d9e9" />
+<text x="320.24375" y="420" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">2,177</text>
+<text x="597.53125" y="420" fill="#112437" font-size="14" font-weight="700" text-anchor="middle">4,161</text>
+<text x="1000" y="421" fill="#f4f8ff" font-size="25" font-weight="700" text-anchor="middle">6,338</text>
+<text x="1163" y="421" fill="#99e6be" font-size="22" font-weight="700" text-anchor="middle">+0.101 ns</text>
+<text x="225.0" y="451" fill="#8fa4bf" font-size="12" font-weight="400" text-anchor="middle">0</text>
+<text x="400.0" y="451" fill="#8fa4bf" font-size="12" font-weight="400" text-anchor="middle">2,000</text>
+<text x="575.0" y="451" fill="#8fa4bf" font-size="12" font-weight="400" text-anchor="middle">4,000</text>
+<text x="750.0" y="451" fill="#8fa4bf" font-size="12" font-weight="400" text-anchor="middle">6,000</text>
+<text x="925.0" y="451" fill="#8fa4bf" font-size="12" font-weight="400" text-anchor="middle">8,000</text>
+<text x="575" y="474" fill="#aabbd1" font-size="13" font-weight="400" text-anchor="middle">Routed LUT count</text>
+<text x="40" y="510" fill="#8fa4bf" font-size="13" font-weight="400" text-anchor="start">Routed implementation · results/dfx_summary.json · all three configurations passed timing and static compatibility checks.</text>
+</g></svg>

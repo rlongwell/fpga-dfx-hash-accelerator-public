@@ -1,0 +1,123 @@
+{
+  "completed_utc": "2026-11-16T21:53:03.364165+00:00",
+  "kind": "read-only-vivado-and-local-software-validation",
+  "tests": "................................................                         [100%]\n48 passed, 6 deselected in 15.47s",
+  "live_captures": {
+    "project-failing": {
+      "checkpoint_sha256": "6609dcfa82b058fbb8b270240ce4b7eafa515e1554aaafcfdd13ac98b0b451a2",
+      "summary": {
+        "setup": {
+          "worst_slack_ns": -0.011,
+          "total_negative_slack_ns": -0.138,
+          "failing_endpoints": 18,
+          "total_endpoints": 20673
+        },
+        "hold": {
+          "worst_slack_ns": 0.016,
+          "total_negative_slack_ns": 0.0,
+          "failing_endpoints": 0,
+          "total_endpoints": 20673
+        }
+      },
+      "dfx_scope": [
+        "u_hash"
+      ],
+      "findings": 54,
+      "coverage": "Detailed evidence: 3658/3672 arc delays measured; 3672/3672 consecutive pin links captured.",
+      "failing_paths_complete": true,
+      "candidate_ids": [
+        "rtl.compare_enable",
+        "vivado.extra_timing",
+        "vivado.net_delay",
+        "vivado.postroute",
+        "vivado.remap"
+      ],
+      "rtl_candidates": [
+        "/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/common/axis_bytes.sv:46-47"
+      ]
+    },
+    "project-passing": {
+      "checkpoint_sha256": "e25f61d7e77a922a261ddc9cd040a320c224d3dc7a3befcadd65af6c3f078001",
+      "summary": {
+        "setup": {
+          "worst_slack_ns": 0.11,
+          "total_negative_slack_ns": 0.0,
+          "failing_endpoints": 0,
+          "total_endpoints": 20673
+        },
+        "hold": {
+          "worst_slack_ns": 0.016,
+          "total_negative_slack_ns": 0.0,
+          "failing_endpoints": 0,
+          "total_endpoints": 20673
+        }
+      },
+      "dfx_scope": [
+        "u_hash"
+      ],
+      "findings": 0,
+      "coverage": "Detailed evidence: 3256/3270 arc delays measured; 3270/3270 consecutive pin links captured.",
+      "failing_paths_complete": true,
+      "candidate_ids": [],
+      "rtl_candidates": []
+    }
+  },
+  "source_sha256": {
+    "src/timinglens/__init__.py": "7a4a5e1e347bdd24d45109c880f3f76733e93510711fd918e37ca039a797a025",
+    "src/timinglens/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/timinglens/analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/analysis/engine.py": "d79f4a7343af5d1b3cfe07afed42ebc0ada86db312af77cd2274b216b7e2d197",
+    "src/timinglens/analysis/fixes.py": "9adf55de3b0c5b72863a90050f7f41a523b232f0e51697a16e31ec0081b1d274",
+    "src/timinglens/analysis/project_fixes.py": "6c9355c307369b7f25f18611eb6cd22aacc7cb9e801bf61ef78b9c50b0eb34ce",
+    "src/timinglens/cli.py": "6e52c253f0c44cd5ba894aa29d9d49c7a7c5bb2972fc0261ed7a0b5cb571b813",
+    "src/timinglens/demo.py": "5b17e58c2ff1728632765fdcccd6f847c02a173ce43663f03824a2e263c9c70d",
+    "src/timinglens/export/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/export/diagnostics.py": "5818b8b1fbc1c74d929c764a250e04d9cb50183f650c77005d081ea105052455",
+    "src/timinglens/export/html.py": "76324565a31ddca00de9ccb345ac077b33126ca37b400dd7999ba2dc165047bd",
+    "src/timinglens/gui/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/gui/app.py": "cd13dee4b131249edf47a3ee870c8a375dc9d0183783b2f7ec8a4bff826f3eb8",
+    "src/timinglens/gui/fix_view.py": "f478fd56f2bd4e5ae0402cf8f01c9c1d9f281c45a547c7adb24465586a2ab44c",
+    "src/timinglens/gui/pages.py": "347953a29e595756d12b0f32ec2a8daaa21002417541017104365a1dd16f8462",
+    "src/timinglens/gui/paths.py": "f37155e3bed580faa252eeb6dd260ee7ef257c5fa6bbac3e75132f5eefaf7f14",
+    "src/timinglens/gui/project_files.py": "b6d5fbd3c28737b34ac8062908897ed7d23aee8ce63028d29de2f630bda318b5",
+    "src/timinglens/gui/source.py": "e68673002c0ea4fecfa65398b389d196f7cebb09a3e99dbca6527fed21424325",
+    "src/timinglens/gui/theme.py": "c59893310b409b51549478f1f4ddc29014d81ce042871b0c690d455487f4dd01",
+    "src/timinglens/gui/widgets.py": "205d3ac32fbef80a2199f70ffe1b231e2ac2fe2b67f049b9c7a6564faeccf3d4",
+    "src/timinglens/inputs.py": "348babb14c67f78802cc14a2101b8343dc5f10e9f1317d7db65f282ec928b612",
+    "src/timinglens/netlist/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/netlist/graph.py": "df41714919e35fd22655e3f377413c05a3163c8aba8a0eb86854f040d2d10d65",
+    "src/timinglens/project.py": "8c338a559c207aa76e59c37a305fc74d55dae4206a5e2a4a461312e8ed005616",
+    "src/timinglens/rtl/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/rtl/correlate.py": "54a469eba4bd8a20c9141dbb401b353360169682882695a496cbf7b201ab85dc",
+    "src/timinglens/rtl/syntax.py": "e13a14e5d8aae188a27714c5999066dd574ad2ee69d3ba3e9cbc8f2d4aa2e53a",
+    "src/timinglens/rules/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/rules/library.py": "442b66fa8d447e8b82798362a1b38054c6b04ed73138108b692a81dcd874de16",
+    "src/timinglens/service.py": "9c37bd64e7c4b37715f46d750443a18ebf85dd78998fbacb8d940388b449375f",
+    "src/timinglens/timing/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/timing/coverage.py": "ed13fe41057137c8af34d8eb638f934059d13eb1374fedb23170a130280a20db",
+    "src/timinglens/timing/io.py": "a997172dd41fa096e34147d984037e8f9a345238bfe9aa175eb57efa980b090a",
+    "src/timinglens/timing/models.py": "facd63b06c27d93d18039c64f9e0c28efef9ec9a25d70709ba730d47805c70fd",
+    "src/timinglens/visualization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/visualization/schematic.py": "95b4cfd7dca6772ea128d1eab813b6c2fe4fb401155c39b5e43712b57d4344db",
+    "src/timinglens/vivado/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/vivado/batch.tcl": "883d9618db8fb199fadef5ffcff27ac239a05a4eb718fe6d16105672f8b51238",
+    "src/timinglens/vivado/decode.py": "6f38d13c88a9bfa9326e92f56a22f69389a7101b328761dd91ac989e22ebc37b",
+    "src/timinglens/vivado/extract.tcl": "58306847fdb7e228d7e648d7a17be05799c188faef9c260f0bd9a9e144c05512",
+    "src/timinglens/vivado/reports.py": "e4d7031b0a34e7670670baefcba24a3b52bb2e8379f50b562db58b25c09c5721",
+    "src/timinglens/vivado/runner.py": "d30ef5de43b0e7007da716f7c2fb8b79bf93bfbd56b8b5a2e0bad0a58b974931",
+    "src/timinglens/vivado/text_import.py": "533d99f23c18e95c72e746e4aa4138099d99ca20aedd4d68826ffa09e3df3acd"
+  },
+  "patch_sha256": "deca508f1d0c4034baefc58665ad230a37d1ba8693471408f676ecc3a6166d74",
+  "limitations": [
+    "No physical timing improvement is attributed to the recommendation engine.",
+    "BD and constraint recommendations are conditional; no RTL/BD/CDC equivalence proof is claimed.",
+    "No automatic timing exceptions or project edits."
+  ],
+  "gui": [
+    "Issue list beside one candidate",
+    "Numbered next steps",
+    "Separate change/evidence/Tcl-and-validation tabs",
+    "Copy Tcl without execution",
+    "Dark and light theme visual QA"
+  ]
+}

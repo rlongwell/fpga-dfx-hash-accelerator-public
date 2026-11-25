@@ -1,0 +1,14 @@
+{
+  "capture_mode": "after_build_hdl_timestamps_and_session_history_audited",
+  "inputs": {
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/static/hash_shell.sv": "bb193cf6ecc1fac5b60390de01b80a42b022948acd409991fa0e27d20ec9f470",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/static/system_top.sv": "4f6bcdab0a8aabb3e9b01f761b7e6dadf5e449f5efd0e183dd714a91ef7f00a1",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/system_bd.tcl": "53324ed245c1e81c9b64ac978c23fa53748037d1e8de1d7a76d43b9101ed5754",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/system.tcl": "4cc182c096f5a6f67bda57c2a81afa8bef995394e635dbaf7911f1a05099739d",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/system_threads.tcl": "8c10aa6e2f684c102d34eded81dfe5f6a5ddcaba157c69d4ac4a6d95e17f5be7",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/system_manifest.py": "06e298cb7c7a47bb518f79594a1f18919a441e3263f9e6c647271df5632d9459",
+    "/opt/amd/xilinx/Vivado/2024.2/data/boards/board_files/zybo-z7-20/A.0/preset.xml": "f1da413772d4be2d6c2a703ceb54502304840e11fe8fd8c2b02dc450c86335e6",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/system/project/system.srcs/sources_1/bd/ps_dma/ps_dma.bd": "8cd5cc9b5ce125a999fdd0290886c9f81fddbb5dc4aba03df9cb59586aee01e3"
+  },
+  "checkpoint_sha256": "921b93402087f138b68ff9b2e9c6d77d3d107555e1b05b8cc77a5e94c9a0c040"
+}

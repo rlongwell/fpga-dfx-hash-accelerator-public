@@ -1,0 +1,11 @@
+a76a3c14-078f-4dca-9223-7474f70d55d4
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 2224)
+4: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noqueue qlen 1000
+    link/ether 9c:ef:d5:f6:04:e5 brd ff:ff:ff:ff:ff:ff
+system.bit: OK
+system.dtb: OK

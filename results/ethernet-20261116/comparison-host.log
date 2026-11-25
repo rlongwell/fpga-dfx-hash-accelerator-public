@@ -1,0 +1,54 @@
+direct oxide 1 13.86564 77.439
+direct compact 2 12.210009 87.939
+direct compact 3 12.22568 87.827
+direct oxide 4 13.618182 78.846
+direct oxide 5 13.732343 78.191
+direct compact 6 12.043424 89.156
+prefetch oxide 1 16.021942 67.017
+prefetch compact 2 15.926205 67.42
+prefetch compact 3 15.750965 68.17
+prefetch oxide 4 15.849027 67.748
+prefetch oxide 5 15.859448 67.704
+prefetch compact 6 15.694273 68.416
+{
+  "direct": {
+    "oxide": {
+      "seconds": 13.732342692,
+      "MB_per_second": 78.19072448763792,
+      "range_seconds": [
+        13.618182113,
+        13.86564004
+      ],
+      "samples": 3
+    },
+    "compact": {
+      "seconds": 12.210009323,
+      "MB_per_second": 87.93947617856378,
+      "range_seconds": [
+        12.043423563,
+        12.225680478
+      ],
+      "samples": 3
+    }
+  },
+  "prefetch": {
+    "oxide": {
+      "seconds": 15.859448378,
+      "MB_per_second": 67.7036047161312,
+      "range_seconds": [
+        15.849027165,
+        16.021941898
+      ],
+      "samples": 3
+    },
+    "compact": {
+      "seconds": 15.750965286,
+      "MB_per_second": 68.16990606628907,
+      "range_seconds": [
+        15.694273287,
+        15.926204873
+      ],
+      "samples": 3
+    }
+  }
+}

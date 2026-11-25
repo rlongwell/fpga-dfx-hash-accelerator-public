@@ -1,0 +1,15 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if ! grep -q " /sys/kernel/debug debugfs " /proc/mounts; then mount -t debugfs
+ none /sys/kernel/debug; fi; cat /sys/kernel/debug/clk/clk_summary | grep -E "fc
+lk|gem"; printf '\nDEMO_CMD_b64de1e54637ffad_%s\n' "$?"
+mount: mounting none on /sys/kernel/debug failed: No such file or directory
+cat: can't open '/sys/kernel/debug/clk/clk_summary': No such file or directory
+
+DEMO_CMD_b64de1e54637ffad_1
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

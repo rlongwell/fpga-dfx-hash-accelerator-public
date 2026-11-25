@@ -1,0 +1,30 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /opt/zybo/hash/software/hash_client.py 127.0.0.1 /dev/null --algorithm
+ sha3 --verify; /opt/zybo/hash/start.sh status; sha256sum /root/hash-bench-1gib-
+20261116-16288d0a/results.json; printf '\nDEMO_CMD_e095ba0283dacf68_%s\n' "$?"
+{
+  "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+  "core_cycles": 27,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 0,
+  "transfer_and_hash_ns": 98052,
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 5273010,
+  "client_request_ns": 51587274,
+  "client_transfer_and_result_MB_s": 0.0,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}
+Hash service running (PID 125)
+c7129fc67dbd8be20b4d617530c44a0c40c79a5bf576f57b2857befa9acd3adc  /root/hash-bench-1gib-20261116-16288d0a/results.json
+
+DEMO_CMD_e095ba0283dacf68_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

@@ -1,0 +1,17 @@
+{
+  "run": "20261116-16288d0a",
+  "script": "/tmp/hash-1gib-20261116-16288d0a.py",
+  "variants": "/tmp/hash-1gib-20261116-16288d0a.json",
+  "log": "/tmp/hash-1gib-20261116-16288d0a.log",
+  "output_dir": "/root/hash-bench-1gib-20261116-16288d0a",
+  "initial_profile": "radar",
+  "saved_next_boot": "hash",
+  "radar_settings_sha256": "b4371d8e8657d8d166891de1d9db17cecc59086fdbb6b7b1c46129582851114a",
+  "pid": 222,
+  "payload_transferred_over_uart": false,
+  "uploaded_bytes": 14096,
+  "capture_date": "2026-11-16",
+  "final_profile": "hash",
+  "final_saved_boot": "hash",
+  "final_profile_reason": "User explicitly requested leaving hash active"
+}

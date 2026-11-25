@@ -1,0 +1,1 @@
+Accepted default-placement compact build; all timing/route/DRC/pr_verify gates passed. The parallel alternate-placement attempt was terminated after acceptance, before completing its route; no failed image was programmed.

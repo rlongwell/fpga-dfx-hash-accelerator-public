@@ -1,0 +1,7 @@
+{
+  "previous": 7,
+  "temporary": 4,
+  "restored": true,
+  "reason": "Prevent informational Ethernet link messages from splitting UART command markers; kernel ring-buffer logging remains enabled",
+  "restored_utc": "2026-11-16T22:58:39.307935+00:00"
+}

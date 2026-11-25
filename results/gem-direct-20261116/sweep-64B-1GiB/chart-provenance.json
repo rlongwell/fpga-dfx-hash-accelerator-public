@@ -1,0 +1,21 @@
+{
+  "kind": "chart-provenance",
+  "generated_utc": "2026-11-16T22:59:37.510906+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "script_sha256": "f6b7d43594cd1619b0e7d3c20c5fcba7b67d27be83f18ff5ba7a2ea02d03521b",
+  "files_sha256": {
+    "plan.json": "235b09da45330b288de4e2985675a72bd3420baecb3073c942341a9ad7c39b56",
+    "results.json": "c9879b2b32fcede53dab5936f2924c5d33e9d0adbac29fb814d0b932d065c66d",
+    "summary.json": "f28dcaf13e34010c675818d9fcdaa95eeea0f0764ee09fa162f142432a14f92d",
+    "samples.csv": "37bb8c2ee39dade26d8f44646635a0f2a1d06e57deb75b54e60a7f3228018626",
+    "summary.csv": "70a85421752040f52f4ba1d0cdda0d7c89ef97677b13b61e59082f6fcbc97a4a",
+    "throughput-and-speedup.png": "890370702f8d639bb93be1680c6d4eb4f0ef91cacdb50f43df5639754cc50353",
+    "throughput-and-speedup.svg": "317fa25473e4e0ee990ded67d0fa4a8ee0c61f95ad4e847004891fb3902cb48a",
+    "latency.png": "23c81d164217159a28455358188f5b86fbc42816d8aad30eb57ef8c0a2109f9a",
+    "latency.svg": "74b1b2ba7d954caa90af8ada9bfd57ec6d9096b380ded9817024dc990b1926c2",
+    "throughput-and-speedup-preview.png": "2c31b8c8240fe36e3545c9d4ee813c3b79842243deaefa8790226df8b18aeceb"
+  },
+  "preview": "Same plotting code and physical data, rendered at 100 dpi; main PNG is 160 dpi and SVG remains vector."
+}

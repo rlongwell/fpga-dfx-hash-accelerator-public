@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><style>svg{width:100%;height:100%;max-width:177.778vh;max-height:56.25vw}
+svg text{font-family:Arial,Helvetica,sans-serif;fill:#eeeeee}
+svg .muted{fill:#b8b8b8}
+svg .ours{fill:#d1d1d1}
+svg .oxide{fill:#9eb6cd}
+svg .warm{fill:#e1c28b}
+svg .line{stroke:#5c5c5c}
+svg .panel{fill:#2e2e2e;stroke:#5c5c5c}
+svg .bg{fill:#242424}
+svg .gridcell{fill:#2e2e2e;stroke:#5c5c5c}
+svg .rate{fill:#424242}
+svg .active{fill:#d1d1d1}
+svg .oxactive{fill:#9eb6cd}
+svg .ink{fill:#242424}
+svg .changed{fill:#2e2e2e;stroke:#e1c28b;stroke-width:3}
+svg .rate-cell{fill:#2e2e2e;stroke:#9eb6cd;stroke-width:2}
+svg .reject-line{stroke:#e1c28b}</style><rect width="1920" height="1080" fill="#242424"/><text x="100" y="75" font-size="23" class="muted">SHA3-256 · COMPACT vs OXIDE QUARTZ</text><text x="100" y="165" font-size="48">A shared stream, then the Quartz core</text><line x1="100" y1="205" x2="1820" y2="205" class="line" stroke-width="3"/><g opacity="1" transform="translate(0 0)"><text x="100" y="270" font-size="36" class="" text-anchor="start">Several sources. One stream interface.</text></g><g opacity="1" transform="translate(0 0)"><rect x="100" y="330" width="460" height="125" rx="12" class="panel"/><text x="330" y="381" font-size="27" class="" text-anchor="middle">Processing system</text><text x="330" y="420" font-size="22" class="muted" text-anchor="middle">PS software → AXI DMA</text></g><g opacity="1" transform="translate(0 0)"><rect x="730" y="330" width="460" height="125" rx="12" class="panel"/><text x="960" y="381" font-size="27" class="" text-anchor="middle">Ethernet ingress</text><text x="960" y="420" font-size="22" class="muted" text-anchor="middle">GEM RX buffers → PL reader</text></g><g opacity="1" transform="translate(0 0)"><rect x="1360" y="330" width="460" height="125" rx="12" class="panel"/><text x="1590" y="381" font-size="27" class="" text-anchor="middle">Block RAM replay</text><text x="1590" y="420" font-size="22" class="muted" text-anchor="middle">FPGA-resident pattern reader</text></g><g opacity="1" transform="translate(0 0)"><line x1="330" y1="455" x2="330" y2="550" class="line" stroke-width="3"/><line x1="330" y1="550" x2="960" y2="550" class="line" stroke-width="3"/></g><g opacity="1" transform="translate(0 0)"><line x1="960" y1="455" x2="960" y2="550" class="line" stroke-width="3"/></g><g opacity="1" transform="translate(0 0)"><line x1="1590" y1="455" x2="1590" y2="550" class="line" stroke-width="3"/><line x1="960" y1="550" x2="1590" y2="550" class="line" stroke-width="3"/></g><g opacity="1" transform="translate(0 0)"><line x1="960" y1="550" x2="960" y2="620" class="line" stroke-width="3"/><rect x="625" y="620" width="670" height="125" rx="12" class="changed"/><text x="960" y="671" font-size="27" class="warm" text-anchor="middle">64-bit AXI Stream</text><text x="960" y="710" font-size="22" class="muted" text-anchor="middle">Data + byte enables + end-of-message</text></g><rect x="1585" y="532.909090909091" width="10" height="10" rx="3" class="active"/><rect x="1585" y="516.5" width="10" height="10" rx="3" class="active"/><g opacity="1" transform="translate(0 0)"><text x="960" y="840" font-size="30" class="muted" text-anchor="middle">The hash core sees the stream, independent of its source.</text></g></svg>

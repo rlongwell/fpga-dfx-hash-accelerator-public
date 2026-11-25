@@ -1,0 +1,851 @@
+
+HOST 2026-11-15T20:09:36Z 'zybo-profile.sh status; /opt/zybo/hash/start.sh status; sha256sum /boot/profile.env /opt/zybo/hash/dfx_manifest.json; cat /sys/kernel/debug/clk/clk_summary | head -35'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; sha256sum /boot/profil
+e.env /opt/zybo/hash/dfx_manifest.json; cat /sys/kernel/debug/clk/clk_summary | 
+head -35; printf '\nUART_DONE_325836588232303_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 361)
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+1fe55e8a0611c00abf3dd5f3db59a7c2997ce5a5c4bd899a9ecc734af92f08b7  /opt/zybo/hash/dfx_manifest.json
+cat: can't open '/sys/kernel/debug/clk/clk_summary': No such file or directory
+
+UART_DONE_325836588232303_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:13:39Z "(trap '/opt/zybo/hash/start.sh start' 0; /opt/zybo/hash/start.sh stop && modprobe hash_accel && python3 /root/sha3-profile-20261115-v2.py --manifest /opt/zybo/hash/dfx_manifest.json --label current --algorithms sha3 sha256 blake2s --output /root/sha3-current-20261115.json); /opt/zybo/hash/start.sh status; devmem 0xf8000170"
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# (trap '/opt/zybo/hash/start.sh start' 0; /opt/zybo/hash/start.sh stop && modpr
+obe hash_accel && python3 /root/sha3-profile-20261115-v2.py --manifest /opt/zybo
+/hash/dfx_manifest.json --label current --algorithms sha3 sha256 blake2s --outpu
+t /root/sha3-current-20261115.json); /opt/zybo/hash/start.sh status; devmem 0xf8
+000170; printf '\nUART_DONE_326079100316750_%s\n' "$?"
+tr: read error: No such process
+current sha3 64 {"dma": {"median_ns": 187896, "min_ns": 183024, "max_ns": 211572, "MB_s": 0.340613956656874}, "local_api": {"median_ns": 397926, "min_ns": 390912, "max_ns": 447552, "MB_s": 0.16083392389539763}, "arm": {"median_ns": 36816, "min_ns": 36084, "max_ns": 38718, "MB_s": 1.7383746197305519}}
+current sha3 136 {"dma": {"median_ns": 190584, "min_ns": 181350, "max_ns": 232032, "MB_s": 0.7135961046047937}, "local_api": {"median_ns": 397374, "min_ns": 393384, "max_ns": 418926, "MB_s": 0.34224685057401844}, "arm": {"median_ns": 47292, "min_ns": 46800, "max_ns": 49644, "MB_s": 2.875750655501988}}
+current sha3 1024 {"dma": {"median_ns": 181578, "min_ns": 171504, "max_ns": 207780, "MB_s": 5.639449713070967}, "local_api": {"median_ns": 402120, "min_ns": 400608, "max_ns": 408852, "MB_s": 2.546503531284194}, "arm": {"median_ns": 112008, "min_ns": 111564, "max_ns": 117054, "MB_s": 9.142204128276552}}
+current sha3 65536 {"dma": {"median_ns": 1019886, "min_ns": 1010460, "max_ns": 1055526, "MB_s": 64.2581621867542}, "local_api": {"median_ns": 1347906, "min_ns": 1326954, "max_ns": 1413156, "MB_s": 48.620601139842094}, "arm": {"median_ns": 5323488, "min_ns": 5282688, "max_ns": 5345862, "MB_s": 12.310725599456596}}
+current sha3 1048576 {"dma": {"median_ns": 13746876, "min_ns": 13743096, "max_ns": 13764553, "MB_s": 76.2774029532237}, "local_api": {"median_ns": 16169598, "min_ns": 16159909, "max_ns": 16233174, "MB_s": 64.84861281028755}, "arm": {"median_ns": 84981979, "min_ns": 84874776, "max_ns": 85072249, "MB_s": 12.338804206948392}}
+current sha3 16777216 {"dma": {"median_ns": 218495691, "min_ns": 218492684, "max_ns": 218505368, "MB_s": 76.78511151965921}, "local_api": {"median_ns": 254320827, "min_ns": 254207288, "max_ns": 254394164, "MB_s": 65.9687065267368}, "arm": {"median_ns": 1358845651, "min_ns": 1355606875, "max_ns": 1359816212, "MB_s": 12.346667914529757}}
+current sha256 64 {"dma": {"median_ns": 188274, "min_ns": 182046, "max_ns": 211374, "MB_s": 0.3399301018728024}, "local_api": {"median_ns": 396930, "min_ns": 393912, "max_ns": 416274, "MB_s": 0.16123749779558108}, "arm": {"median_ns": 27324, "min_ns": 26520, "max_ns": 28440, "MB_s": 2.342263211828429}}
+current sha256 136 {"dma": {"median_ns": 187242, "min_ns": 184128, "max_ns": 216426, "MB_s": 0.7263327672210295}, "local_api": {"median_ns": 405108, "min_ns": 396480, "max_ns": 446868, "MB_s": 0.33571294568362015}, "arm": {"median_ns": 28914, "min_ns": 28104, "max_ns": 30528, "MB_s": 4.70360379055129}}
+current sha256 1024 {"dma": {"median_ns": 176616, "min_ns": 172854, "max_ns": 191010, "MB_s": 5.797889205960955}, "local_api": {"median_ns": 403434, "min_ns": 393174, "max_ns": 423756, "MB_s": 2.538209471685579}, "arm": {"median_ns": 49620, "min_ns": 49074, "max_ns": 51426, "MB_s": 20.63683998387747}}
+current sha256 65536 {"dma": {"median_ns": 1559988, "min_ns": 1556928, "max_ns": 1594104, "MB_s": 42.010579568560786}, "local_api": {"median_ns": 1881324, "min_ns": 1869780, "max_ns": 1929120, "MB_s": 34.835041704671816}, "arm": {"median_ns": 1642176, "min_ns": 1637070, "max_ns": 1693332, "MB_s": 39.90802447484314}}
+current sha256 1048576 {"dma": {"median_ns": 22614241, "min_ns": 22610064, "max_ns": 22638096, "MB_s": 46.36795017794318}, "local_api": {"median_ns": 25050360, "min_ns": 25046148, "max_ns": 25055022, "MB_s": 41.858719794845264}, "arm": {"median_ns": 25773780, "min_ns": 25693704, "max_ns": 26014566, "MB_s": 40.68382674175073}}
+current sha256 16777216 {"dma": {"median_ns": 360345693, "min_ns": 360321766, "max_ns": 360601666, "MB_s": 46.55866942747114}, "local_api": {"median_ns": 395766592, "min_ns": 395680786, "max_ns": 395848156, "MB_s": 42.39169333423676}, "arm": {"median_ns": 410611924, "min_ns": 407957662, "max_ns": 412611034, "MB_s": 40.85905698150159}}
+current blake2s 64 {"dma": {"median_ns": 152862, "min_ns": 149394, "max_ns": 175500, "MB_s": 0.4186782849890751}, "local_api": {"median_ns": 352728, "min_ns": 350196, "max_ns": 369324, "MB_s": 0.18144292485994873}, "arm": {"median_ns": 18030, "min_ns": 17400, "max_ns": 18936, "MB_s": 3.5496394897393233}}
+current blake2s 136 {"dma": {"median_ns": 152052, "min_ns": 149484, "max_ns": 168390, "MB_s": 0.8944308526030569}, "local_api": {"median_ns": 361158, "min_ns": 354138, "max_ns": 390426, "MB_s": 0.37656648890513295}, "arm": {"median_ns": 22794, "min_ns": 21708, "max_ns": 28818, "MB_s": 5.966482407651136}}
+current blake2s 1024 {"dma": {"median_ns": 158430, "min_ns": 154764, "max_ns": 194844, "MB_s": 6.46342233162911}, "local_api": {"median_ns": 357642, "min_ns": 354246, "max_ns": 385656, "MB_s": 2.863198393924651}, "arm": {"median_ns": 46470, "min_ns": 45960, "max_ns": 47826, "MB_s": 22.035721971164193}}
+current blake2s 65536 {"dma": {"median_ns": 1712994, "min_ns": 1708926, "max_ns": 1732668, "MB_s": 38.25816085753949}, "local_api": {"median_ns": 2043348, "min_ns": 2015238, "max_ns": 2065680, "MB_s": 32.072852984415775}, "arm": {"median_ns": 2040108, "min_ns": 2023350, "max_ns": 2106768, "MB_s": 32.12378952486829}}
+current blake2s 1048576 {"dma": {"median_ns": 25223071, "min_ns": 25219800, "max_ns": 25249104, "MB_s": 41.57209881382009}, "local_api": {"median_ns": 27662304, "min_ns": 27641317, "max_ns": 27782898, "MB_s": 37.90631467284865}, "arm": {"median_ns": 33179190, "min_ns": 33130584, "max_ns": 33287106, "MB_s": 31.60342371227266}}
+current blake2s 16777216 {"dma": {"median_ns": 402304558, "min_ns": 402232204, "max_ns": 402491278, "MB_s": 41.70277384727021}, "local_api": {"median_ns": 438117562, "min_ns": 437966164, "max_ns": 438174173, "MB_s": 38.29386779980301}, "arm": {"median_ns": 541042614, "min_ns": 540882587, "max_ns": 542332109, "MB_s": 31.00904728365814}}
+REPORT /root/sha3-current-20261115.json passed True
+Hash service started (PID 1046); log: /var/log/zybo-hash.log
+Hash service running (PID 1046)
+0x00200500
+
+UART_DONE_326079100316750_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:16:00Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-current-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-current-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-current-20261115.json").read_byte
+s())).decode()); print("REPORT_END")'; sha256sum /root/sha3-current-20261115.jso
+n; printf '\nUART_DONE_326220002695163_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+b3dc7943a4a5f7dcbd31820417d002912f0e23bd9ebd35abf06310b0f6ef8536  /root/sha3-current-20261115.json
+
+UART_DONE_326220002695163_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:30:21Z 'python3 /root/stage-sha3-20261115.py /root/sha3-fast-manifest-20261115.json /root/sha3-fast-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --manifest /root/sha3-fast-manifest-20261115.json --label fast --output /root/sha3-fast-20261115.json; /opt/zybo/hash/start.sh status; zybo-profile.sh status'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-fast-manifest-20261115.json /r
+oot/sha3-fast-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --
+manifest /root/sha3-fast-manifest-20261115.json --label fast --output /root/sha3
+-fast-20261115.json; /opt/zybo/hash/start.sh status; zybo-profile.sh status; pri
+ntf '\nUART_DONE_327081226181955_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-fast-73dc1a4127f4.bin SHA256 73dc1a4127f43d3992a928a59abb42546b6575c06e6e04b6527e3041eb143222
+tr: read error: No such process
+fast sha3 64 {"dma": {"median_ns": 189054, "min_ns": 183780, "max_ns": 214134, "MB_s": 0.33852761644821056}, "local_api": {"median_ns": 406656, "min_ns": 402174, "max_ns": 448614, "MB_s": 0.15738117721120554}, "arm": {"median_ns": 36804, "min_ns": 36636, "max_ns": 38784, "MB_s": 1.7389414194109336}}
+fast sha3 136 {"dma": {"median_ns": 187002, "min_ns": 184260, "max_ns": 227406, "MB_s": 0.7272649490379782}, "local_api": {"median_ns": 400866, "min_ns": 396114, "max_ns": 420768, "MB_s": 0.33926549021368735}, "arm": {"median_ns": 47520, "min_ns": 47010, "max_ns": 49218, "MB_s": 2.861952861952862}}
+fast sha3 1024 {"dma": {"median_ns": 176214, "min_ns": 172152, "max_ns": 196938, "MB_s": 5.811116029373376}, "local_api": {"median_ns": 409098, "min_ns": 391974, "max_ns": 473814, "MB_s": 2.5030677246038846}, "arm": {"median_ns": 113124, "min_ns": 112386, "max_ns": 114150, "MB_s": 9.052013719458294}}
+fast sha3 65536 {"dma": {"median_ns": 455784, "min_ns": 447816, "max_ns": 535254, "MB_s": 143.78740807048953}, "local_api": {"median_ns": 763314, "min_ns": 753402, "max_ns": 844818, "MB_s": 85.85719638313984}, "arm": {"median_ns": 5349930, "min_ns": 5305308, "max_ns": 5363286, "MB_s": 12.249879904970719}}
+fast sha3 1048576 {"dma": {"median_ns": 4575822, "min_ns": 4571322, "max_ns": 4592076, "MB_s": 229.15576698569132}, "local_api": {"median_ns": 7023558, "min_ns": 6998010, "max_ns": 7087578, "MB_s": 149.29413268887365}, "arm": {"median_ns": 84827245, "min_ns": 84736687, "max_ns": 85218181, "MB_s": 12.361311510234714}}
+fast sha3 16777216 {"dma": {"median_ns": 71796763, "min_ns": 71776890, "max_ns": 71812111, "MB_s": 233.67649597238807}, "local_api": {"median_ns": 108696907, "min_ns": 108572096, "max_ns": 108864349, "MB_s": 154.34860533796055}, "arm": {"median_ns": 1354553474, "min_ns": 1354223630, "max_ns": 1355482519, "MB_s": 12.385790832204533}}
+REPORT /root/sha3-fast-20261115.json passed True
+Hash service started (PID 1300); log: /var/log/zybo-hash.log
+Hash service running (PID 1300)
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+
+UART_DONE_327081226181955_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:30:55Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-fast-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-fast-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-fast-20261115.json").read_bytes()
+)).decode()); print("REPORT_END")'; sha256sum /root/sha3-fast-20261115.json; pri
+ntf '\nUART_DONE_327115565884395_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+c21f771ff267209f5ebd0dba0af06d8fb4f514c4406a935ed2c274af7e23efe4  /root/sha3-fast-20261115.json
+
+UART_DONE_327115565884395_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:53:07Z 'python3 /root/stage-sha3-20261115.py /root/sha3-oxide-manifest-20261115.json /root/sha3-oxide-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --manifest /root/sha3-oxide-manifest-20261115.json --label oxide --oxide --output /root/sha3-oxide-20261115.json; /opt/zybo/hash/start.sh status'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-oxide-manifest-20261115.json /
+root/sha3-oxide-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh 
+--manifest /root/sha3-oxide-manifest-20261115.json --label oxide --oxide --outpu
+t /root/sha3-oxide-20261115.json; /opt/zybo/hash/start.sh status; printf '\nUART
+_DONE_328446919316508_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-oxide-249fd6305e81.bin SHA256 249fd6305e81d7b27d703ec86c5741c1b1e948261528ca577ec40aa2f02ca0df
+/opt/zybo/hash/start.sh: line 25: can't open /proc/1300/cmdline: no such file
+oxide sha3 64 {"dma": {"median_ns": 151746, "min_ns": 149340, "max_ns": 182364, "MB_s": 0.4217574104095001}, "local_api": {"median_ns": 345108, "min_ns": 344436, "max_ns": 379200, "MB_s": 0.18544919271648297}, "arm": {"median_ns": 35460, "min_ns": 34620, "max_ns": 38070, "MB_s": 1.8048505358150029}}
+oxide sha3 136 {"dma": {"median_ns": 153024, "min_ns": 147900, "max_ns": 190254, "MB_s": 0.8887494772061899}, "local_api": {"median_ns": 348684, "min_ns": 344364, "max_ns": 380472, "MB_s": 0.3900379713436808}, "arm": {"median_ns": 46056, "min_ns": 45198, "max_ns": 47826, "MB_s": 2.952926871634532}}
+oxide sha3 1024 {"dma": {"median_ns": 152910, "min_ns": 151050, "max_ns": 169770, "MB_s": 6.696749722058727}, "local_api": {"median_ns": 360480, "min_ns": 349386, "max_ns": 413940, "MB_s": 2.8406569019085666}, "arm": {"median_ns": 110934, "min_ns": 110466, "max_ns": 113910, "MB_s": 9.230713757729822}}
+oxide sha3 65536 {"dma": {"median_ns": 903276, "min_ns": 892440, "max_ns": 912948, "MB_s": 72.55368237393665}, "local_api": {"median_ns": 1192284, "min_ns": 1182330, "max_ns": 1237602, "MB_s": 54.966769662261676}, "arm": {"median_ns": 5331564, "min_ns": 5307666, "max_ns": 5394936, "MB_s": 12.292077896842278}}
+oxide sha3 1048576 {"dma": {"median_ns": 11963538, "min_ns": 11960515, "max_ns": 11979744, "MB_s": 87.64765072004619}, "local_api": {"median_ns": 14380950, "min_ns": 14368014, "max_ns": 14432700, "MB_s": 72.91423723745649}, "arm": {"median_ns": 84871279, "min_ns": 84797815, "max_ns": 84971988, "MB_s": 12.354898056856195}}
+oxide sha3 16777216 {"dma": {"median_ns": 190148875, "min_ns": 190100690, "max_ns": 190258688, "MB_s": 88.23200242441614}, "local_api": {"median_ns": 225564488, "min_ns": 225484635, "max_ns": 225618050, "MB_s": 74.37880026575814}, "arm": {"median_ns": 1356528949, "min_ns": 1355608387, "max_ns": 1357191854, "MB_s": 12.367753752964692}}
+REPORT /root/sha3-oxide-20261115.json passed True
+Hash service started (PID 1617); log: /var/log/zybo-hash.log
+Hash service running (PID 1617)
+
+UART_DONE_328446919316508_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T20:55:04Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-oxide-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-oxide-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-oxide-20261115.json").read_bytes(
+))).decode()); print("REPORT_END")'; sha256sum /root/sha3-oxide-20261115.json; p
+rintf '\nUART_DONE_328564285277028_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+f96700815766c79e3ceb8e8aebd6ef8d7d217b4c71ec9ae578e8bfd45e7ed7b9  /root/sha3-oxide-20261115.json
+
+UART_DONE_328564285277028_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:04:38Z 'python3 /root/stage-sha3-20261115.py /root/sha3-compact-manifest-20261115.json /root/sha3-compact-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --manifest /root/sha3-compact-manifest-20261115.json --label compact --output /root/sha3-compact-20261115.json; /opt/zybo/hash/start.sh status'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-compact-manifest-20261115.json
+ /root/sha3-compact-partial-20261115.bin.gz && sh /root/profile-variant-20261115
+.sh --manifest /root/sha3-compact-manifest-20261115.json --label compact --outpu
+t /root/sha3-compact-20261115.json; /opt/zybo/hash/start.sh status; printf '\nUA
+RT_DONE_329138633654341_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin SHA256 b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d
+tr: read error: No such process
+compact sha3 64 {"dma": {"median_ns": 187800, "min_ns": 182094, "max_ns": 210996, "MB_s": 0.3407880724174654}, "local_api": {"median_ns": 401328, "min_ns": 393726, "max_ns": 450600, "MB_s": 0.15947055774827573}, "arm": {"median_ns": 36600, "min_ns": 35706, "max_ns": 40290, "MB_s": 1.7486338797814207}}
+compact sha3 136 {"dma": {"median_ns": 184386, "min_ns": 181224, "max_ns": 196914, "MB_s": 0.7375831136854208}, "local_api": {"median_ns": 393054, "min_ns": 391506, "max_ns": 411174, "MB_s": 0.3460084364998194}, "arm": {"median_ns": 47562, "min_ns": 46464, "max_ns": 48012, "MB_s": 2.859425591859047}}
+compact sha3 1024 {"dma": {"median_ns": 179736, "min_ns": 173874, "max_ns": 205338, "MB_s": 5.697244847999288}, "local_api": {"median_ns": 406830, "min_ns": 389394, "max_ns": 439662, "MB_s": 2.5170218518791634}, "arm": {"median_ns": 112428, "min_ns": 111372, "max_ns": 113646, "MB_s": 9.108051375102288}}
+compact sha3 65536 {"dma": {"median_ns": 453432, "min_ns": 445122, "max_ns": 472878, "MB_s": 144.53324864588296}, "local_api": {"median_ns": 766668, "min_ns": 758958, "max_ns": 821172, "MB_s": 85.48159046679919}, "arm": {"median_ns": 5346882, "min_ns": 5304421, "max_ns": 5365230, "MB_s": 12.256862971728196}}
+compact sha3 1048576 {"dma": {"median_ns": 4573374, "min_ns": 4567992, "max_ns": 4581768, "MB_s": 229.27842769911229}, "local_api": {"median_ns": 7044708, "min_ns": 7026036, "max_ns": 7094568, "MB_s": 148.84591384057367}, "arm": {"median_ns": 84836959, "min_ns": 84696427, "max_ns": 85071271, "MB_s": 12.35989611555973}}
+compact sha3 16777216 {"dma": {"median_ns": 71757006, "min_ns": 71687035, "max_ns": 71982325, "MB_s": 233.80596453536538}, "local_api": {"median_ns": 107094823, "min_ns": 106872433, "max_ns": 107298019, "MB_s": 156.65758185155224}, "arm": {"median_ns": 1354126166, "min_ns": 1352678089, "max_ns": 1356291512, "MB_s": 12.389699291875289}}
+REPORT /root/sha3-compact-20261115.json passed True
+Hash service started (PID 1791); log: /var/log/zybo-hash.log
+Hash service running (PID 1791)
+
+UART_DONE_329138633654341_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:07:54Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-compact-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-compact-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-compact-20261115.json").read_byte
+s())).decode()); print("REPORT_END")'; sha256sum /root/sha3-compact-20261115.jso
+n; printf '\nUART_DONE_329333996747369_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+e52084cdecb4ff83b1ff21525e0960bc6eec3b9400199634a939570dd901f082  /root/sha3-compact-20261115.json
+
+UART_DONE_329333996747369_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:19:01Z 'python3 /root/promote-sha3-20261115.py /root/sha3-compact-promoted-manifest-20261115.json /root/sha3-compact-full-20261115.bit.gz --current /root/sha3-current-20261115.json --oxide /root/sha3-oxide-20261115.json --fast /root/sha3-compact-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/promote-sha3-20261115.py /root/sha3-compact-promoted-manifest-20
+261115.json /root/sha3-compact-full-20261115.bit.gz --current /root/sha3-current
+-20261115.json --oxide /root/sha3-oxide-20261115.json --fast /root/sha3-compact-
+20261115.json; printf '\nUART_DONE_330001601261014_%s\n' "$?"
+PROMOTED full bitstream cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40
+PROMOTED manifest 0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3
+ROLLBACK /boot/profiles/hash/before-sha3-fast-20261115
+Reboot the hash profile, then run all three algorithm acceptance tests.
+
+UART_DONE_330001601261014_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:19:23Z 'zybo-profile.sh switch hash'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh switch hash
+system.bit: OK
+system.dtb: OK
+Next boot: hash
+# tr: read error: No such process
+Stopping network: OK
+Stopping klogd: OK
+Stopping syslogd: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+umount: devtmpfs busy - remounted read-only
+EXT4-fs (mmcblk0p2): re-mounted fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 ro. Quota mode: disabled.
+The system is going down NOW!
+Sent SIGTERM to all processes
+Sent SIGKILL to all processes
+Requesting system reboot
+reboot: Restarting system
+
+U-Boot SPL 2024.01 (Nov 11 2026 - 23:29:57 -0600)
+Silicon version:	3
+Trying to boot from MMC1
+spl_load_image_fat_os: error reading image system.dtb, err - -2
+
+
+U-Boot 2024.01 (Nov 11 2026 - 23:29:57 -0600)
+
+CPU:   Zynq 7z020
+Silicon: v3.1
+Model: Digilent Zybo Z7 board
+DRAM:  ECC disabled 1 GiB
+Core:  22 devices, 17 uclasses, devicetree: separate
+Flash: 0 Bytes
+NAND:  0 MiB
+MMC:   mmc@e0100000: 0
+Loading Environment from nowhere... OK
+In:    serial@e0001000
+Out:   serial@e0001000
+Err:   serial@e0001000
+Net:   
+ZYNQ GEM: e000b000, mdio bus e000b000, phyaddr 0, interface rgmii-id
+
+Warning: ethernet@e000b000 (eth0) using random MAC address - 62:74:ca:b4:93:66
+eth0: ethernet@e000b000
+Hit any key to stop autoboot:  2  1  0 
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /boot.scr
+2284 bytes read in 13 ms (170.9 KiB/s)
+## Executing script at 03000000
+18 bytes read in 9 ms (2 KiB/s)
+Requested Zybo profile: hash
+4900920 bytes read in 281 ms (16.6 MiB/s)
+12028 bytes read in 28 ms (418.9 KiB/s)
+Working FDT set to 3000000
+4045670 bytes read in 243 ms (15.9 MiB/s)
+  design filename = "system_top;UserID=0XFFFFFFFF;Version=2024.2"
+  part number = "7z020clg400"
+  date = "2026/11/15"
+  time = "15:01:08"
+  bytes in bitstream = 4045564
+zynq_align_dma_buffer: Align buffer at 1000006a to 10000040(swap 1)
+INFO:post config was not run, please run manually if needed
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Kernel image @ 0x2000000 [ 0x000000 - 0x4ac838 ]
+## Flattened Device Tree blob at 03000000
+   Booting using the fdt blob at 0x3000000
+Working FDT set to 3000000
+   Loading Device Tree to 2fffa000, end 2ffffefb ... OK
+Working FDT set to 2fffa000
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 6.6.40-dfx-hash (rl@msi-ubuntu) (arm-linux-gcc.br_real (Buildroot 2021.11-12449-g1bef613319) 13.3.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT Wed Nov 11 23:24:39 CST 2026
+CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt: Machine model: Digilent Zybo Z7-20 DFX hash accelerator
+Memory policy: Data cache writealloc
+cma: Reserved 32 MiB at 0x3e000000 on node -1
+Zone ranges:
+  Normal   [mem 0x0000000000000000-0x000000002fffffff]
+  HighMem  [mem 0x0000000030000000-0x000000003fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000000000-0x000000003fffffff]
+Initmem setup node 0 [mem 0x0000000000000000-0x000000003fffffff]
+percpu: Embedded 12 pages/cpu s17940 r8192 d23020 u49152
+Kernel command line: console=ttyPS0,115200 root=PARTUUID=4c4b27e1-02 rootfstype=ext4 rw rootwait cma=32M  zybo.profile=hash
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes, linear)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 260608
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 994496K/1048576K available (7168K kernel code, 251K rwdata, 2128K rodata, 1024K init, 147K bss, 21312K reserved, 32768K cma-reserved, 229376K highmem)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+efuse mapped to (ptrval)
+slcr mapped to (ptrval)
+GIC physical location is 0xf8f01000
+L2C: platform modifies aux control register: 0x02060000 -> 0x02460000
+L2C: DT/platform modifies aux control register: 0x02060000 -> 0x02460000
+L2C-310 erratum 769419 enabled
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating enabled, standby mode enabled
+L2C-310 cache controller enabled, 8 ways, 512 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46460001
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+zynq_clock_init: clkc starts at (ptrval)
+Zynq clock init
+sched_clock: 64 bits at 167MHz, resolution 6ns, wraps every 4398046511103ns
+clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x26703d7dd8, max_idle_ns: 440795208065 ns
+Switching to timer-based delay loop, resolution 6ns
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 333.33 BogoMIPS (lpj=1666666)
+CPU: Testing write buffer coherency: ok
+CPU0: Spectre v2: using BPIALL workaround
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x100000 - 0x100060
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+CPU1: Spectre v2: using BPIALL workaround
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated (666.66 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+thermal_sys: Registered thermal governor 'step_wise'
+cpuidle: using governor menu
+platform axi: Fixed dependency cycle(s) with /axi/interrupt-controller@f8f01000
+platform replicator: Fixed dependency cycle(s) with /axi/etb@f8801000
+amba f8801000.etb: Fixed dependency cycle(s) with /replicator
+platform replicator: Fixed dependency cycle(s) with /axi/tpiu@f8803000
+amba f8803000.tpiu: Fixed dependency cycle(s) with /replicator
+platform replicator: Fixed dependency cycle(s) with /axi/funnel@f8804000
+amba f8804000.funnel: Fixed dependency cycle(s) with /axi/ptm@f889d000
+amba f8804000.funnel: Fixed dependency cycle(s) with /axi/ptm@f889c000
+amba f8804000.funnel: Fixed dependency cycle(s) with /replicator
+amba f8804000.funnel: Fixed dependency cycle(s) with /axi/ptm@f889c000
+amba f889c000.ptm: Fixed dependency cycle(s) with /axi/funnel@f8804000
+amba f8804000.funnel: Fixed dependency cycle(s) with /axi/ptm@f889d000
+amba f889d000.ptm: Fixed dependency cycle(s) with /axi/funnel@f8804000
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+e0001000.serial: ttyPS0 at MMIO 0xe0001000 (irq = 26, base_baud = 6249999) is a xuartps
+printk: console [ttyPS0] enabled
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+mc: Linux media interface: v0.10
+videodev: Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+EDAC MC: Ver: 3.0.0
+FPGA manager framework
+Advanced Linux Sound Architecture Driver Initialized.
+vgaarb: loaded
+clocksource: Switched to clocksource arm_global_timer
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes, linear)
+TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+TCP: Hash tables configured (established 8192 bind 8192)
+UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+armv7-pmu f8891000.pmu: hw perfevents: no interrupt-affinity property, guessing.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+workingset: timestamp_bits=30 max_order=18 bucket_order=0
+jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+bounce: pool size: 64 pages
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+zynq-pinctrl 700.pinctrl: zynq pinctrl initialized
+dma-pl330 f8003000.dma-controller: Loaded driver for PL330 DMAC-241330
+dma-pl330 f8003000.dma-controller: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-4 Num_Events-16
+xilinx-vdma 40400000.dma-controller: Please ensure that IP supports buffer length > 23 bits
+xilinx-vdma 40400000.dma-controller: Xilinx AXI DMA Engine Driver Probed!!
+brd: module loaded
+loop: module loaded
+CAN device driver interface
+macb e000b000.ethernet eth0: Cadence GEM rev 0x00020118 at 0xe000b000 irq 40 (62:74:ca:b4:93:66)
+e1000e: Intel(R) PRO/1000 Network Driver
+e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+usbcore: registered new interface driver usb-storage
+i2c_dev: i2c /dev entries driver
+cdns-wdt f8005000.watchdog: Xilinx Watchdog Timer with timeout 10s
+EDAC MC: ECC not enabled
+Xilinx Zynq CpuIdle Driver started
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+ledtrig-cpu: registered to indicate activity on CPUs
+clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 537538477 ns
+timer #0 at (ptrval), irq=43
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+fpga_manager fpga0: Xilinx Zynq FPGA Manager registered
+mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+can: controller area network core
+NET: Registered PF_CAN protocol family
+can: raw protocol
+can: broadcast manager protocol
+can: netlink gateway - max_hops=1
+Registering SWP/SWPB emulation handler
+usb_phy_generic phy0: dummy supplies not allowed for exclusive requests
+of-fpga-region fpga-region: FPGA Region probed
+ci_hdrc ci_hdrc.0: EHCI Host Controller
+ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+mmc0: new high speed SDHC card at address 544c
+mmcblk0: mmc0:544c MSSD0 29.2 GiB
+ mmcblk0: p1 p2
+ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+of_cfs_init
+of_cfs_init: OK
+clk: Disabling unused clocks
+ALSA device list:
+  No soundcards found.
+EXT4-fs (mmcblk0p2): mounted filesystem fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 r/w with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+EXT4-fs (mmcblk0p2): re-mounted fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 r/w. Quota mode: disabled.
+Seeding 256 bits and crediting
+random: crng init done
+Saving 256 bits of creditable seed for next boot
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Starting network: macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+udhcpc: started, v1.36.1
+udhcpc: broadcasting discover
+udhcpc: no lease, forking to background
+OK
+
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+
+hash_accel: loading out-of-tree module taints kernel.
+Hash service started (PID 123); log: /var/log/zybo-hash.log
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:20:11Z 'sh -c \'set -eu; /opt/zybo/hash/start.sh stop; trap "/opt/zybo/hash/start.sh start" EXIT; modprobe hash_accel; python3 /root/board-local-20261115.py --output /root/local-ps-compact-20261115.json\''
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# sh -c 'set -eu; /opt/zybo/hash/start.sh stop; trap "/opt/zybo/hash/start.sh st
+art" EXIT; modprobe hash_accel; python3 /root/board-local-20261115.py --output /
+root/local-ps-compact-20261115.json'; printf '\nUART_DONE_330071751092215_%s\n' 
+"$?"
+tr: read error: No such process
+PASS memory sha3 0 a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a
+PASS memory sha3 1 962f8420917d7fa5479f4a767bf9b9a30a4ab377af26d72dbcff167d6ce3f6f5
+PASS memory sha3 55 0ec32ab142bd2dd2993d2359d82f42e240ed761af42812408e6cdbed1db020d5
+PASS memory sha3 56 736ec12fb2e163865ca1fcc770ea117acf215520fc28d5ed0c5917e246dd8b76
+PASS memory sha3 63 29efb8419f6baa97ef5358f9992246687e8f79a282561d5f51fd1da27fa4afdd
+PASS memory sha3 64 e8e686424d5eb6ab8534b163dfa3a801c689583238b4443d92d4626a6b320cef
+PASS memory sha3 65 ea5bb1c243ff8094c1e22a12443de5955503ade39719c4608b25e4f4785bb12e
+PASS memory sha3 127 aba5f46e2e39f1190fc0eea953aa88e0203dd1e8bc9f3dc5128817eea94f4604
+PASS memory sha3 128 003ed3631fb844e5aadb065521d1cab90c5a5359cffd838246b51b3ebe23cfc2
+PASS memory sha3 129 fe8077efdd5ceeabbdc158395484c5d553489b9718fe4a1f28b6821c358f4aca
+PASS memory sha3 135 3aa81a5b233ce753b2ab56b3c922338134eb11b8dc3d877d0bc8d19751684b76
+PASS memory sha3 136 9f065722983c1b643b3fabbed6e791f6d74f77e6cf5a2d38c07c124465ed5d9f
+PASS memory sha3 137 30efe517346c818828634cb8a3eb3538c14bc2f280132cf0261ed18a7dd85a8b
+PASS memory sha3 4095 259519c9bb315fc9bbade1725d865b1d9b0e11c6a36a96818264e43a0053072e
+PASS memory sha3 4096 88ef3c7cef0993b05b1bb1426a51be7f4df99ce00cefd3f81ce76a8b158f9505
+PASS memory sha3 4097 347b151024f605b1a94643cc61f86bad7909c6ef958ed26a6a4a0110f47d440a
+PASS memory sha3 1048575 be91a44023dbb359023981c20b37c8982e1083f88118bb1ac9325a696d9616d7
+PASS memory sha3 1048576 54ece05de46f22d2258780eb0ac856673dde47876d2cfd044885b8a8bc740020
+PASS memory sha3 1048577 2d32fbe0952e60e9b7acdf2c0303bb39591f0e9fe8f684af251868594e317ac6
+PASS memory sha3 2097169 b14b2a7a8d75706c48ae1f2069f518f8eb79c2497804df4f58740587ad138b46
+PASS file sha3 2097169 b14b2a7a8d75706c48ae1f2069f518f8eb79c2497804df4f58740587ad138b46
+PASS short-reads sha3 4097 347b151024f605b1a94643cc61f86bad7909c6ef958ed26a6a4a0110f47d440a
+PASS memory sha256 0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+PASS memory sha256 1 e7cf46a078fed4fafd0b5e3aff144802b853f8ae459a4f0c14add3314b7cc3a6
+PASS memory sha256 55 2900465fcb533e05a158fd2b3be0e5e3b03740d83060aa3580e0d98a96bf2384
+PASS memory sha256 56 31454ff48ef36af2f08fd511bdc37d9d5855ac23e992e5ff5445cb6b7674a674
+PASS memory sha256 63 5f6401b96532c36de4e65beec0409b69b1d181864c8009b7a04f43e5d56350d1
+PASS memory sha256 64 94eb5de4943613fd048dc93393ab06877405faa39c11f53e9386083339833e7e
+PASS memory sha256 65 fc518669b6eb4b4dd91827ecacef86689c725bd5bab888fd3b26dbb196eec954
+PASS memory sha256 127 0fe729ff19257bd6fec853acc2ea355f6b34b58e6c0f684c3e188fcdfcd9baae
+PASS memory sha256 128 0aedd4856f8eba0963627336ad5144a9a7dbe12498e6066f0165fc97d8ddee4c
+PASS memory sha256 129 4f1757ae4bffbae86d775b831765b75af154d52f7deaa46dd378051a2d3ad57f
+PASS memory sha256 135 04334c8eae2c6af8053fe8b44325a6d5354f0e3baac1881681e425acc58c4ac4
+PASS memory sha256 136 ffaf7a9992cb4e7b6dd67667c96d176e4f228ac4276857f740ed4b6e98cadf7c
+PASS memory sha256 137 bc3e21f61bdc9dd0975ae1a98ead6c60c61ae958fdeb94770ab5d44c487667eb
+PASS memory sha256 4095 14247e71abeac04b1bb56818238f449fe1339e1d9b347ade9224b12460f39d1c
+PASS memory sha256 4096 4e441a3533bb2c10cd5649981d395744213e09a336746b5a3458fee4057205ec
+PASS memory sha256 4097 042a02b55ba342cdd30322331816b6e4bca073f33bdb80149dc74a6f949802f4
+PASS memory sha256 1048575 9140a7d98a999a4a4c700a1736fa24fc01980816379ccd4a1829a014180a1f09
+PASS memory sha256 1048576 3a814d27145f9540c495715da2f85208f3805c323d7da3e9867df2992be4432d
+PASS memory sha256 1048577 dceb11fea27458999b9aa5d4fbea9519d01712ec5b930b228df516f0632b0fba
+PASS memory sha256 2097169 e236ad30ce9a716a2297d1e63cdaef844fbc77e94fdbf0fff7afa46b5b20c53f
+PASS file sha256 2097169 e236ad30ce9a716a2297d1e63cdaef844fbc77e94fdbf0fff7afa46b5b20c53f
+PASS short-reads sha256 4097 042a02b55ba342cdd30322331816b6e4bca073f33bdb80149dc74a6f949802f4
+PASS memory blake2s 0 69217a3079908094e11121d042354a7c1f55b6482ca1a51e1b250dfd1ed0eef9
+PASS memory blake2s 1 b480c25c1e06eea9e9c3e36754715cf0958e4d14b22a8c2a7bc34ebf75208602
+PASS memory blake2s 55 b27d59a6057af55eb60443d9b00dfa4989ce1d875b2e1c161fda2ee8e5c532b6
+PASS memory blake2s 56 c21eb3c7c8c0812ec428b73e38f9fe00ab4aaf79e54df3100629251f656d1ba3
+PASS memory blake2s 63 6200ac9e33d28b2d2ed08ec902fa53ac4da9a0b469607f6526df92696b29b4d4
+PASS memory blake2s 64 ea02c165725b42ba04a1e9eb5a12ad5db75d52297b69d83b8ce11895d144a8f4
+PASS memory blake2s 65 ce85d4e6a3820eaca8d06a596b9c8e2dc1564a1f9ff270df917e1c6aad64a019
+PASS memory blake2s 127 ad597347a2770752f8e1698926d0f1d70cdd55cf6d889175c8aff216c05c7e1e
+PASS memory blake2s 128 26df1814f244df0be714f13c2249100ccfa495f3494ac8ddf9129160d95573d0
+PASS memory blake2s 129 0016263755d41d676ed40f3ffcf3a2bed30b627dc6838d4fe8aaaa99b4c0cae4
+PASS memory blake2s 135 b461568f4075c6922f44770071c559c6161eb297e8262fee027cb0855d248693
+PASS memory blake2s 136 399f54c7faf7ff9f6017ab424b4653b394a8f4d8f5877eedc17fcd573fa3e8bf
+PASS memory blake2s 137 dcb330971cdeb2aad91c15960169f2b60f41b206a7cb3af6f239d9a34975cf55
+PASS memory blake2s 4095 20caea15f8784f27369057fb51751e0ddede15c4f71d4b7754ee11243b82143c
+PASS memory blake2s 4096 b919b606b7f5927aeac240119d47b2e1dd4b5ffa08d40420d8d62fefd5c48bd2
+PASS memory blake2s 4097 4915577e595643b03fdea1f0fd1260abcec466f3bf16ea63f1791e49d5a04903
+PASS memory blake2s 1048575 4b61ba75339284a36cf3315d905111659280cd0dc0a61570d3c7dff77bb62930
+PASS memory blake2s 1048576 43ed3badb3d98ce29a4d8a9a83a814942696068144746ff3342214352c8f6c69
+PASS memory blake2s 1048577 283272cda44365345159ea54e83f05cd8189e0772e99c965a69607aac2d523d5
+PASS memory blake2s 2097169 1246c00aa6006342746927e0eb3cdf4dcbd9e86c13f0be39aaca5e6a46770baa
+PASS file blake2s 2097169 1246c00aa6006342746927e0eb3cdf4dcbd9e86c13f0be39aaca5e6a46770baa
+PASS short-reads blake2s 4097 4915577e595643b03fdea1f0fd1260abcec466f3bf16ea63f1791e49d5a04903
+PASS abort-recovery sha3 9 6bd7f22f719a3c53b327a0bacb3ea1bc85c742de1aa8e0ffca2790cfac3d13e7
+PASS switch-away-and-back sha3 21 a4c31635184a8dcc6df105e197982ba948ce509c852d8c131687a8926959b682
+PASS switch-away-and-back sha256 21 f1a963a70f968377c0fc2f15ca208b50f07b91784821fe15b344cd8d3f9577bd
+PASS switch-away-and-back blake2s 21 f241c6620aa4135ac74e070e7e5b6a684b03976935c1fce2ae907e6bb0260f9e
+PASS switch-away-and-back sha256 21 f1a963a70f968377c0fc2f15ca208b50f07b91784821fe15b344cd8d3f9577bd
+PASS switch-away-and-back sha3 21 a4c31635184a8dcc6df105e197982ba948ce509c852d8c131687a8926959b682
+PASS cli-text sha3 10 27608d53380d8379780afa2347bc2dfcbf3fd418b7a0bd8976b2c70a3f01359a
+PASS cli-file sha3 1048577 2d32fbe0952e60e9b7acdf2c0303bb39591f0e9fe8f684af251868594e317ac6
+PASS cli-stdin sha3 1048577 2d32fbe0952e60e9b7acdf2c0303bb39591f0e9fe8f684af251868594e317ac6
+PASS cli-text sha256 10 bc936f2224eeda035197b3668c30a1e1d4d85492817a33d2b38a3fb0d8caddd6
+PASS cli-file sha256 1048577 dceb11fea27458999b9aa5d4fbea9519d01712ec5b930b228df516f0632b0fba
+PASS cli-stdin sha256 1048577 dceb11fea27458999b9aa5d4fbea9519d01712ec5b930b228df516f0632b0fba
+PASS cli-text blake2s 10 54d11ac25afea0bcddb5d6b22989661903f5596e81f10868c2a1e09333779233
+PASS cli-file blake2s 1048577 283272cda44365345159ea54e83f05cd8189e0772e99c965a69607aac2d523d5
+PASS cli-stdin blake2s 1048577 283272cda44365345159ea54e83f05cd8189e0772e99c965a69607aac2d523d5
+REPORT /root/local-ps-compact-20261115.json jobs 81 passed True
+Hash service started (PID 164); log: /var/log/zybo-hash.log
+
+UART_DONE_330071751092215_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:20:43Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/local-ps-compact-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/local-ps-compact-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/local-ps-compact-20261115.json").read_
+bytes())).decode()); print("REPORT_END")'; sha256sum /root/local-ps-compact-2026
+1115.json; printf '\nUART_DONE_330103469100450_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+b45b7dad2f30e9c8307ec96ee130ca01fc77f8004f10241ed791726b107e6440  /root/local-ps-compact-20261115.json
+
+UART_DONE_330103469100450_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:21:38Z 'python3 -c \'import json,hashlib,pathlib,shutil,os; P=pathlib.Path; p=P("/root/sha3-compact-payload-20261115.json"); v=json.loads(p.read_text()); h=lambda x:hashlib.sha256(x.read_bytes()).hexdigest(); assert all(h((P("/") if x["tree"]=="rootfs" else P("/boot"))/x["path"])==x["sha256"] for x in v["files"]); d=P("/opt/zybo/hash/payload.json"); b=P("/boot/profiles/hash/before-sha3-fast-20261115/payload.json"); assert not b.exists(); shutil.copy2(d,b); n=d.with_suffix(".compact-pending"); assert not n.exists(); shutil.copy2(p,n); os.sync(); n.replace(d); os.sync(); print("INSTALLED_PAYLOAD",h(d),"FILES",len(v["files"]))\''
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import json,hashlib,pathlib,shutil,os; P=pathlib.Path; p=P("/root/
+sha3-compact-payload-20261115.json"); v=json.loads(p.read_text()); h=lambda x:ha
+shlib.sha256(x.read_bytes()).hexdigest(); assert all(h((P("/") if x["tree"]=="ro
+otfs" else P("/boot"))/x["path"])==x["sha256"] for x in v["files"]); d=P("/opt/z
+ybo/hash/payload.json"); b=P("/boot/profiles/hash/before-sha3-fast-20261115/payl
+oad.json"); assert not b.exists(); shutil.copy2(d,b); n=d.with_suffix(".compact-
+pending"); assert not n.exists(); shutil.copy2(p,n); os.sync(); n.replace(d); os
+.sync(); print("INSTALLED_PAYLOAD",h(d),"FILES",len(v["files"]))'; printf '\nUAR
+T_DONE_330158568377196_%s\n' "$?"
+INSTALLED_PAYLOAD b365f07f77e113e56baad89cf8a3bd79d5130fc89c6fa6b2e6d8d024982b673d FILES 18
+
+UART_DONE_330158568377196_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:22:27Z 'zybo-profile.sh status; uname -r; sha256sum /boot/profile.env /boot/profiles/hash/system.bit /boot/profiles/hash/system.dtb /opt/zybo/hash/dfx_manifest.json; /opt/zybo/hash/start.sh status; devmem 0xf8000170; devmem 0xf8000108; df -h / /boot; python3 /opt/zybo/hash/software/hash_client.py 127.0.0.1 /dev/null --algorithm sha3 --verify'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; sha256sum /boot/profile.env /boot/profiles/h
+ash/system.bit /boot/profiles/hash/system.dtb /opt/zybo/hash/dfx_manifest.json; 
+/opt/zybo/hash/start.sh status; devmem 0xf8000170; devmem 0xf8000108; df -h / /b
+oot; python3 /opt/zybo/hash/software/hash_client.py 127.0.0.1 /dev/null --algori
+thm sha3 --verify; printf '\nUART_DONE_330207792891496_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+6.6.40-dfx-hash
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  /boot/profiles/hash/system.bit
+3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed  /boot/profiles/hash/system.dtb
+0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3  /opt/zybo/hash/dfx_manifest.json
+Hash service running (PID 164)
+0x00200500
+0x0001E000
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                26.8G    127.0M     25.3G   0% /
+/dev/mmcblk0p1          511.0M    273.9M    237.1M  54% /boot
+{
+  "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+  "core_cycles": 27,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 0,
+  "transfer_and_hash_ns": 101928,
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 5475324,
+  "client_request_ns": 54681055,
+  "client_transfer_and_result_MB_s": 0.0,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}
+
+UART_DONE_330207792891496_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:26:00Z 'sh /root/profile-variant-20261115.sh --manifest /opt/zybo/hash/dfx_manifest.json --label compact-postboot --output /root/sha3-compact-postboot-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# sh /root/profile-variant-20261115.sh --manifest /opt/zybo/hash/dfx_manifest.js
+on --label compact-postboot --output /root/sha3-compact-postboot-20261115.json; 
+printf '\nUART_DONE_330420044165359_%s\n' "$?"
+tr: read error: No such process
+compact-postboot sha3 64 {"dma": {"median_ns": 187266, "min_ns": 183720, "max_ns": 219390, "MB_s": 0.3417598496256662}, "local_api": {"median_ns": 400836, "min_ns": 395358, "max_ns": 413700, "MB_s": 0.15966629743835384}, "arm": {"median_ns": 36642, "min_ns": 36216, "max_ns": 38922, "MB_s": 1.7466295507887124}}
+compact-postboot sha3 136 {"dma": {"median_ns": 188664, "min_ns": 183108, "max_ns": 253716, "MB_s": 0.720858245346224}, "local_api": {"median_ns": 400470, "min_ns": 396792, "max_ns": 417882, "MB_s": 0.33960096886158764}, "arm": {"median_ns": 47472, "min_ns": 46866, "max_ns": 48606, "MB_s": 2.86484664644422}}
+compact-postboot sha3 1024 {"dma": {"median_ns": 176448, "min_ns": 174246, "max_ns": 196224, "MB_s": 5.803409503083062}, "local_api": {"median_ns": 406518, "min_ns": 401460, "max_ns": 424728, "MB_s": 2.5189536502688687}, "arm": {"median_ns": 113586, "min_ns": 111078, "max_ns": 170358, "MB_s": 9.015195534660961}}
+compact-postboot sha3 65536 {"dma": {"median_ns": 456252, "min_ns": 447654, "max_ns": 483702, "MB_s": 143.63991829076915}, "local_api": {"median_ns": 767052, "min_ns": 758670, "max_ns": 852918, "MB_s": 85.43879684819282}, "arm": {"median_ns": 5329014, "min_ns": 5284530, "max_ns": 5349553, "MB_s": 12.297959810201286}}
+compact-postboot sha3 1048576 {"dma": {"median_ns": 4578462, "min_ns": 4572012, "max_ns": 4594572, "MB_s": 229.02363282691874}, "local_api": {"median_ns": 6995436, "min_ns": 6980076, "max_ns": 7043214, "MB_s": 149.89430251381043}, "arm": {"median_ns": 85025575, "min_ns": 84993414, "max_ns": 85508251, "MB_s": 12.332477610413102}}
+compact-postboot sha3 16777216 {"dma": {"median_ns": 71801928, "min_ns": 71756671, "max_ns": 71963581, "MB_s": 233.65968668696473}, "local_api": {"median_ns": 107610895, "min_ns": 107320255, "max_ns": 107965885, "MB_s": 155.9062955474908}, "arm": {"median_ns": 1359301771, "min_ns": 1355440603, "max_ns": 1359486482, "MB_s": 12.342524932971635}}
+REPORT /root/sha3-compact-postboot-20261115.json passed True
+Hash service started (PID 287); log: /var/log/zybo-hash.log
+
+UART_DONE_330420044165359_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:27:50Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-compact-postboot-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-compact-postboot-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-compact-postboot-20261115.json").
+read_bytes())).decode()); print("REPORT_END")'; sha256sum /root/sha3-compact-pos
+tboot-20261115.json; printf '\nUART_DONE_330530079619314_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+00ec9c5814000fc1893b9a07a9a62a69fcbf8eb962e0af1d55f9a58f36b6e349  /root/sha3-compact-postboot-20261115.json
+
+UART_DONE_330530079619314_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:38:37Z 'python3 /root/stage-sha3-20261115.py /root/sha3-oxide-elastic-manifest-20261115.json /root/sha3-oxide-elastic-partial-20261115.bin.gz && sh /root/profile-variant-20261115.sh --manifest /root/sha3-oxide-elastic-manifest-20261115.json --label oxide_elastic --oxide --output /root/sha3-oxide-elastic-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/stage-sha3-20261115.py /root/sha3-oxide-elastic-manifest-2026111
+5.json /root/sha3-oxide-elastic-partial-20261115.bin.gz && sh /root/profile-vari
+ant-20261115.sh --manifest /root/sha3-oxide-elastic-manifest-20261115.json --lab
+el oxide_elastic --oxide --output /root/sha3-oxide-elastic-20261115.json; printf
+ '\nUART_DONE_331176897762256_%s\n' "$?"
+STAGED /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin SHA256 240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7
+tr: read error: No such process
+oxide_elastic sha3 64 {"dma": {"median_ns": 168366, "min_ns": 158658, "max_ns": 213150, "MB_s": 0.38012425311523707}, "local_api": {"median_ns": 371094, "min_ns": 368034, "max_ns": 384066, "MB_s": 0.17246304170910876}, "arm": {"median_ns": 36696, "min_ns": 35802, "max_ns": 39558, "MB_s": 1.7440592980161325}}
+oxide_elastic sha3 136 {"dma": {"median_ns": 161568, "min_ns": 157038, "max_ns": 190728, "MB_s": 0.8417508417508418}, "local_api": {"median_ns": 370392, "min_ns": 367752, "max_ns": 403530, "MB_s": 0.3671785567722845}, "arm": {"median_ns": 47430, "min_ns": 46482, "max_ns": 49968, "MB_s": 2.867383512544803}}
+oxide_elastic sha3 1024 {"dma": {"median_ns": 163176, "min_ns": 160896, "max_ns": 180486, "MB_s": 6.275432661665931}, "local_api": {"median_ns": 376866, "min_ns": 374118, "max_ns": 416868, "MB_s": 2.71714614743702}, "arm": {"median_ns": 112470, "min_ns": 111720, "max_ns": 114702, "MB_s": 9.104650128923268}}
+oxide_elastic sha3 65536 {"dma": {"median_ns": 825468, "min_ns": 822996, "max_ns": 850668, "MB_s": 79.3925385357155}, "local_api": {"median_ns": 1155660, "min_ns": 1141326, "max_ns": 1221768, "MB_s": 56.70872055794957}, "arm": {"median_ns": 5342010, "min_ns": 5302626, "max_ns": 5387232, "MB_s": 12.268041430098409}}
+oxide_elastic sha3 1048576 {"dma": {"median_ns": 10665450, "min_ns": 10658838, "max_ns": 10712970, "MB_s": 98.3152140791059}, "local_api": {"median_ns": 13137954, "min_ns": 13115436, "max_ns": 13183008, "MB_s": 79.812731875907}, "arm": {"median_ns": 84985975, "min_ns": 84779431, "max_ns": 85184550, "MB_s": 12.338224042261091}}
+oxide_elastic sha3 16777216 {"dma": {"median_ns": 169229708, "min_ns": 169203386, "max_ns": 169242644, "MB_s": 99.13871623533144}, "local_api": {"median_ns": 205077956, "min_ns": 205015622, "max_ns": 205201940, "MB_s": 81.80896829301341}, "arm": {"median_ns": 1357223641, "min_ns": 1355189960, "max_ns": 1359414841, "MB_s": 12.361423344820738}}
+REPORT /root/sha3-oxide-elastic-20261115.json passed True
+Hash service started (PID 466); log: /var/log/zybo-hash.log
+
+UART_DONE_331176897762256_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:39:11Z 'python3 -c \'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b64encode(zlib.compress(pathlib.Path("/root/sha3-oxide-elastic-20261115.json").read_bytes())).decode()); print("REPORT_END")\'; sha256sum /root/sha3-oxide-elastic-20261115.json'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,zlib,pathlib; print("REPORT_BEGIN"); print(base64.b6
+4encode(zlib.compress(pathlib.Path("/root/sha3-oxide-elastic-20261115.json").rea
+d_bytes())).decode()); print("REPORT_END")'; sha256sum /root/sha3-oxide-elastic-
+20261115.json; printf '\nUART_DONE_331211793781511_%s\n' "$?"
+REPORT_BEGIN
+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
+REPORT_END
+3bf4944cf216c9f46fdedc2f28213c22a10c3a56b3ca32aeade57b4101f9da13  /root/sha3-oxide-elastic-20261115.json
+
+UART_DONE_331211793781511_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:39:47Z 'python3 -c \'import pathlib,json,hashlib; P=pathlib.Path; h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest(); b=P("/boot/profiles/hash/before-sha3-fast-20261115"); old=json.loads((b/"backup.json").read_text()); assert all(h(b/n)==v for n,v in old.items()); v=json.loads(P("/opt/zybo/hash/payload.json").read_text()); assert all(h((P("/") if x["tree"]=="rootfs" else P("/boot"))/x["path"])==x["sha256"] for x in v["files"]); assert h(P("/boot/profile.env"))=="9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc"; print("FINAL_AUDIT_PASS",len(v["files"]),"payload files; rollback checksums valid; saved profile unchanged")\''
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import pathlib,json,hashlib; P=pathlib.Path; h=lambda p:hashlib.sh
+a256(p.read_bytes()).hexdigest(); b=P("/boot/profiles/hash/before-sha3-fast-2026
+1115"); old=json.loads((b/"backup.json").read_text()); assert all(h(b/n)==v for 
+n,v in old.items()); v=json.loads(P("/opt/zybo/hash/payload.json").read_text());
+ assert all(h((P("/") if x["tree"]=="rootfs" else P("/boot"))/x["path"])==x["sha
+256"] for x in v["files"]); assert h(P("/boot/profile.env"))=="9dc14825fb83ef1fe
+366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc"; print("FINAL_AUDIT_PASS",len(v
+["files"]),"payload files; rollback checksums valid; saved profile unchanged")';
+ printf '\nUART_DONE_331247778075433_%s\n' "$?"
+FINAL_AUDIT_PASS 18 payload files; rollback checksums valid; saved profile unchanged
+
+UART_DONE_331247778075433_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+HOST 2026-11-15T21:40:26Z 'zybo-profile.sh status; /opt/zybo/hash/start.sh status; python3 /opt/zybo/hash/software/hash_client.py 127.0.0.1 /dev/null --algorithm sha3 --verify; dmesg | tail -n 12'
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; python3 /opt/zybo/hash
+/software/hash_client.py 127.0.0.1 /dev/null --algorithm sha3 --verify; dmesg | 
+tail -n 12; printf '\nUART_DONE_331286148772991_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 466)
+{
+  "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+  "core_cycles": 27,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 0,
+  "transfer_and_hash_ns": 102618,
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 5441820,
+  "client_request_ns": 30578850,
+  "client_transfer_and_result_MB_s": 0.0,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+  with arguments:
+    /sbin/init
+  with environment:
+    HOME=/
+    TERM=linux
+EXT4-fs (mmcblk0p2): re-mounted fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 r/w. Quota mode: disabled.
+random: crng init done
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+hash_accel: loading out-of-tree module taints kernel.
+
+UART_DONE_331286148772991_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

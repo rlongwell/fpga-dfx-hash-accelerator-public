@@ -1,0 +1,50 @@
+[
+  {
+    "digest": "397228bdc77fd9ab9baf12d1b756a058d8749890d07bd345816766512c8bfc70",
+    "core_cycles": 108773289,
+    "status": "ok",
+    "algorithm": "sha3",
+    "length": 67108864,
+    "transfer_and_hash_ns": 1088815397,
+    "receive_mode": "prefetch",
+    "manager_load_ns": 0,
+    "client_transfer_and_result_ns": 1090276888,
+    "client_request_ns": 1094751551,
+    "client_transfer_and_result_MB_s": 61.552129315612895,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  },
+  {
+    "digest": "281e519df3077b557c6b03f5da83c4e8d397219259615dd7c3308f89cae8f2a6",
+    "core_cycles": 164781546,
+    "status": "ok",
+    "algorithm": "sha256",
+    "length": 67108864,
+    "transfer_and_hash_ns": 1648723726,
+    "receive_mode": "prefetch",
+    "manager_load_ns": 37480855,
+    "client_transfer_and_result_ns": 1649097883,
+    "client_request_ns": 1792532720,
+    "client_transfer_and_result_MB_s": 40.694287884183765,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  },
+  {
+    "digest": "17d933e3d0f558d21b69030b155238331dc29b78612f8e30484cb75087c6902c",
+    "core_cycles": 180557110,
+    "status": "ok",
+    "algorithm": "blake2s",
+    "length": 67108864,
+    "transfer_and_hash_ns": 1806529368,
+    "receive_mode": "prefetch",
+    "manager_load_ns": 36592200,
+    "client_transfer_and_result_ns": 1807095576,
+    "client_request_ns": 1954254301,
+    "client_transfer_and_result_MB_s": 37.136311377921274,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "selected_take": 1,
+  "basis": "Both takes preserve the quantitative results in ASR. Take 1 has a narrower measured loudness range (3.2 LU versus 5.9 LU), making the delivery more consistent over continuous music. Selection is based on transcript and signal review, not a claimed subjective listening comparison.",
+  "limitations": "Automated transcription is not a listening test; proper names and binary unit names are imperfectly transcribed in both takes. The unchanged text and visible labels retain Zybo, KiB and MiB.",
+  "takes": [
+    {
+      "take": 1,
+      "duration_seconds": 195.866125,
+      "mean_word_confidence": 0.9387337533380392,
+      "word_count_asr": 417,
+      "loudness_lufs": -17.85,
+      "true_peak_dbtp": -1.4,
+      "loudness_range_lu": 3.2,
+      "quantitative_asr_checks": {
+        "23%": true,
+        "58%": true,
+        "169": true,
+        "72": true,
+        "2.36": true,
+        "1.91": true,
+        "24 rounds": true,
+        "17 lanes": true,
+        "25": true,
+        "seven samples": true,
+        "zero block RAM": true,
+        "zero DSP": true
+      }
+    },
+    {
+      "take": 2,
+      "duration_seconds": 195.7355,
+      "mean_word_confidence": 0.9371083106378095,
+      "word_count_asr": 417,
+      "loudness_lufs": -20.3,
+      "true_peak_dbtp": -1.76,
+      "loudness_range_lu": 5.9,
+      "quantitative_asr_checks": {
+        "23%": true,
+        "58%": true,
+        "169": true,
+        "72": true,
+        "2.36": true,
+        "1.91": true,
+        "24 rounds": true,
+        "17 lanes": true,
+        "25": true,
+        "seven samples": true,
+        "zero block RAM": true,
+        "zero DSP": true
+      }
+    }
+  ]
+}

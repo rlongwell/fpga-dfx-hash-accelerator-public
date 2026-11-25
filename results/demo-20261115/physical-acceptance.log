@@ -1,0 +1,19 @@
+262144 connecting
+262144 uploading
+262144 cancelled
+0 connecting
+0 uploading
+0 hashing
+0 restoring
+0 complete
+137 connecting
+137 uploading
+137 hashing
+137 restoring
+137 complete
+1048593 connecting
+1048593 uploading
+1048593 hashing
+1048593 restoring
+1048593 complete
+PASS: cancellation recovery, empty/boundary/multi-buffer inputs, all engines, SHA3/service restoration.

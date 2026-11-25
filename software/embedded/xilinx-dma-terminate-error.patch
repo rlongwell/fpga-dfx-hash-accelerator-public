@@ -1,0 +1,37 @@
+SPDX-License-Identifier: GPL-2.0-or-later
+Subject: dmaengine: xilinx: preserve descriptors when reset fails
+
+Local derivative of AMD Linux 2024.2 drivers/dma/xilinx/xilinx_dma.c.
+Upstream revision: 2b7f6f70a62a52a467bed030a27c2ada879106e9
+Source: https://github.com/Xilinx/linux-xlnx/blob/2b7f6f70a62a52a467bed030a27c2ada879106e9/drivers/dma/xilinx/xilinx_dma.c
+The upstream file is GPL-2.0-or-later; its copyright/license header is unchanged.
+A successful reset establishes quiescence even if the preceding halt failed.
+A failed reset must be reported before freeing potentially active descriptors.
+
+--- a/drivers/dma/xilinx/xilinx_dma.c
++++ b/drivers/dma/xilinx/xilinx_dma.c
+@@ -2474,7 +2474,7 @@
+  * xilinx_dma_terminate_all - Halt the channel and free descriptors
+  * @dchan: Driver specific DMA Channel pointer
+  *
+- * Return: '0' always.
++ * Return: 0 after a completed reset, or the reset error.
+  */
+ static int xilinx_dma_terminate_all(struct dma_chan *dchan)
+ {
+@@ -2492,7 +2492,14 @@
+ 		}
+ 	}
+ 
+-	xilinx_dma_chan_reset(chan);
++	/* Keep descriptors owned until hardware reset is confirmed complete.
++	 * A client must be able to quarantine a channel that cannot quiesce.
++	 */
++	err = xilinx_dma_chan_reset(chan);
++	if (err) {
++		chan->err = true;
++		return err;
++	}
+ 	/* Remove and free all of the descriptors in the lists */
+ 	chan->terminating = true;
+ 	xilinx_dma_free_descriptors(chan);

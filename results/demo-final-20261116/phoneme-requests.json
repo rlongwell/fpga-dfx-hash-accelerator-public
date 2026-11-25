@@ -1,0 +1,14 @@
+[
+  {
+    "label": "resource-take-1-zero-brams",
+    "path": "docs/media/voiceover-resources-take-1.mp3",
+    "start": 9.8,
+    "duration": 3.5
+  },
+  {
+    "label": "final-zero-brams",
+    "path": "docs/media/sha3-comparison-final.mp4",
+    "start": 229.5,
+    "duration": 3.2
+  }
+]

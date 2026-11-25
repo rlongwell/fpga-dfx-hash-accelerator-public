@@ -1,0 +1,13 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/hash-test-ownership-20261116.py; printf '\nDEMO_CMD_3a93bb1df0a3
+c799_%s\n' "$?"
+{"kind": "physical-ownership-guards", "passed": true, "service_pid": 2747, "service_pid_unchanged": true, "checks": [{"command": ["/opt/zybo/hash/start.sh", "stop"], "rejected": true, "reason": "Ethernet/replay job"}, {"command": ["/usr/bin/python3", "-c", "import sys;sys.path.insert(0,'/opt/zybo/hash/software');from hash_local import LocalHasher;LocalHasher()"], "rejected": true, "reason": "Ethernet/replay job"}, {"command": ["/usr/bin/python3", "/opt/zybo/hash/net/board_run.py", "replay", "--length", "1", "--session", "1", "--pattern", "/not-used"], "rejected": true, "reason": "Another FPGA input operation"}]}
+
+DEMO_CMD_3a93bb1df0a3c799_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

@@ -1,0 +1,42 @@
+{
+  "base_commit": "cd88a8d9bcef8fe1c8de2e3b66f912643bb47551",
+  "paths_relative_to": "repository root",
+  "files": [
+    {
+      "path": "benchmarks/sha3_profile/board_text_1gib.py",
+      "bytes": 13179,
+      "sha256": "f2d5bab2e13b08369dabb46dbaabc22a6ec242cf7d8a7ff87f4ebc60c7598956"
+    },
+    {
+      "path": "benchmarks/sha3_profile/report_text_1gib.py",
+      "bytes": 3605,
+      "sha256": "27b997e773eb98dfe1e9cc7ef424529a0006137da4406cf31678ab1899c19aa6"
+    },
+    {
+      "path": "demo/core_variants.json",
+      "bytes": 917,
+      "sha256": "f25afa4d8232c768c3572580bb70ba36e6e6811fdd20033dedd214448417d2a5"
+    },
+    {
+      "path": "software/hash_local.py",
+      "bytes": 8040,
+      "sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c"
+    },
+    {
+      "path": "software/hash_service.py",
+      "bytes": 8257,
+      "sha256": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb"
+    },
+    {
+      "path": "docs/sha3-1gib.md",
+      "bytes": 3882,
+      "sha256": "a27e95681703a16336e7da2d3d1292a6d16f73aa25e1fc0d38676d4996dfd74e"
+    }
+  ],
+  "board_data_file": {
+    "path": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt",
+    "bytes": 1073741824,
+    "sha256": "125844319f0bd1e7310751e6b8a42cc057ab044944dc4cd5d2b2ecc0b029f5e6",
+    "copied_to_pc": false
+  }
+}

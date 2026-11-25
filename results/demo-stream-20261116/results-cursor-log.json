@@ -1,0 +1,78 @@
+{
+  "version": 4,
+  "comparison": false,
+  "pointer_motion": "Minimum-jerk cubic Bezier; distance-dependent duration; 230 ms hover; actions only",
+  "started_utc": "2026-11-17T02:03:24.890Z",
+  "mode": "Updated results layout / completed physical replay job",
+  "actions": [
+    {
+      "action": "highlight",
+      "selector": "#replay-quartz-metric",
+      "at": 3.6997000000029803,
+      "box": {
+        "left": 205.5,
+        "top": 244.796875,
+        "right": 714.15625,
+        "bottom": 373.296875
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-compact-metric",
+      "at": 6.90009999999404,
+      "box": {
+        "left": 698.15625,
+        "top": 244.796875,
+        "right": 1206.828125,
+        "bottom": 373.296875
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-quartz-metric, #replay-compact-metric",
+      "at": 9.49939999999106,
+      "box": {
+        "left": 205.5,
+        "top": 244.796875,
+        "right": 1206.828125,
+        "bottom": 373.296875
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-throughput-chart",
+      "at": 13.89970000000298,
+      "box": {
+        "left": 229.5,
+        "top": 493.796875,
+        "right": 923.5,
+        "bottom": 865.390625
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-speedup-chart",
+      "at": 27.70020000000298,
+      "box": {
+        "left": 981.5,
+        "top": 493.796875,
+        "right": 1675.5,
+        "bottom": 865.390625
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "id": "e0ac322556182145dce29990",
+      "kind": "replay",
+      "state": "passed",
+      "at": 0,
+      "captured_from_completed_job": true
+    }
+  ],
+  "outcome": "passed",
+  "replay": true,
+  "results_only": true,
+  "results_start_seconds": 0,
+  "finished_seconds": 43.99970000000298
+}

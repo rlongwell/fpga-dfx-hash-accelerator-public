@@ -1,0 +1,12 @@
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/common/axis_bytes.sv: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/rm/sha3_oxide.sv: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/axi_blocks/axist_if_2k19_pkg.vhd: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/common/utils/calc_pkg.vhd: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/sha3/keccak_pkg.vhd: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/reference/oxide/hdl/ip/vhd/sha3/sha3_256.vhd: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/sha3/oxide_compare/sha3_oxide_core.vhd: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/sha3_variant_spread.tcl: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/static_locked.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha3/routed.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha256/routed.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp: OK

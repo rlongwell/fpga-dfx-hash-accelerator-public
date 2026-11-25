@@ -1,0 +1,7 @@
+a76a3c14-078f-4dca-9223-7474f70d55d4
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 2224)

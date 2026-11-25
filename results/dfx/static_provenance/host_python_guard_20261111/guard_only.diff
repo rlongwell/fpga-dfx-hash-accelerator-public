@@ -1,0 +1,30 @@
+--- system.tcl.before
++++ system.tcl.after
+@@ -4,6 +4,9 @@
+     if {[llength $argv] != 2} { error "Usage: system.tcl ROOT bd|ip|synth" }
+     lassign $argv root stage
+     set root [file normalize $root]
++    # Ignore Vivado's bundled Python/PYTHONHOME for host-side manifests.
++    set python /usr/bin/python3
++    if {[info exists ::env(SYSTEM_PYTHON)]} { set python $::env(SYSTEM_PYTHON) }
+     set out [file join $root build vivado system]
+     set project [file join $out project system.xpr]
+     file mkdir $out
+@@ -50,7 +53,7 @@
+             }
+         }
+     } elseif {$stage eq "synth"} {
+-        puts [exec python3 [file join $root scripts vivado system_manifest.py] begin $root]
++        puts [exec $python -I [file join $root scripts vivado system_manifest.py] begin $root]
+         foreach source {hash_shell.sv system_top.sv} {
+             set path [file join $root rtl static $source]
+             if {![file exists $path]} { error "Required RTL is missing: $path" }
+@@ -88,7 +91,7 @@
+         report_utilization -hierarchical -file [file join $out static_utilization.rpt]
+         report_timing_summary -file [file join $out static_synth_timing.rpt]
+         write_hw_platform -fixed -force -file [file join $out system.xsa]
+-        puts [exec python3 [file join $root scripts vivado system_manifest.py] finish $root]
++        puts [exec $python -I [file join $root scripts vivado system_manifest.py] finish $root]
+     } elseif {$stage ne "bd"} {
+         error "Unknown system stage: $stage"
+     }

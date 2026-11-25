@@ -1,0 +1,126 @@
+{
+  "version": 4,
+  "comparison": false,
+  "pointer_motion": "Minimum-jerk cubic Bezier; distance-dependent duration; 230 ms hover; actions only",
+  "started_utc": "2026-11-17T01:04:23.544Z",
+  "mode": "FPGA BRAM replay / real dashboard actions / physical board",
+  "actions": [
+    {
+      "action": "point",
+      "selector": "#replay-check",
+      "at": 1.7782000000029803,
+      "x": 1436.0859375,
+      "y": 732.484375
+    },
+    {
+      "action": "click",
+      "selector": "#replay-check",
+      "at": 2.0889000000059603,
+      "x": 1436.0859375,
+      "y": 732.484375
+    },
+    {
+      "action": "point",
+      "selector": "#replay-start",
+      "at": 8.80029999999702,
+      "x": 1579,
+      "y": 732.484375
+    },
+    {
+      "action": "click",
+      "selector": "#replay-start",
+      "at": 9.111,
+      "x": 1579,
+      "y": 732.484375
+    },
+    {
+      "action": "point",
+      "selector": "#replay-show-results",
+      "at": 328.792599999994,
+      "x": 1579,
+      "y": 732.484375
+    },
+    {
+      "action": "click",
+      "selector": "#replay-show-results",
+      "at": 329.103,
+      "x": 1579,
+      "y": 732.484375
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-quartz-metric",
+      "at": 333.22359999999406,
+      "box": {
+        "left": 213,
+        "top": 293.484375,
+        "right": 721.65625,
+        "bottom": 421.984375
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-compact-metric",
+      "at": 336.42279999999704,
+      "box": {
+        "left": 705.65625,
+        "top": 293.484375,
+        "right": 1214.328125,
+        "bottom": 421.984375
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-verification",
+      "at": 339.023,
+      "box": {
+        "left": 212,
+        "top": 229.984375,
+        "right": 682.390625,
+        "bottom": 265.484375
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-throughput-chart",
+      "at": 343.42320000000296,
+      "box": {
+        "left": 237,
+        "top": 542.484375,
+        "right": 931,
+        "bottom": 914.078125
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#replay-speedup-chart",
+      "at": 357.22240000000596,
+      "box": {
+        "left": 989,
+        "top": 542.484375,
+        "right": 1683,
+        "bottom": 914.078125
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "id": "6fe74615e3fd5b428add2f0c",
+      "kind": "probe",
+      "state": "passed",
+      "at": 4.62520000000298
+    },
+    {
+      "id": "e0ac322556182145dce29990",
+      "kind": "replay",
+      "state": "passed",
+      "at": 326.52170000000297
+    }
+  ],
+  "outcome": "passed",
+  "replay": true,
+  "sweep_started_seconds": 9.53120000000298,
+  "sweep_completed_seconds": 326.58759999999404,
+  "results_start_seconds": 329.52309999999403,
+  "finished_seconds": 373.522700000003
+}

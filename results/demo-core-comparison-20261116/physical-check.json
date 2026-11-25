@@ -1,0 +1,39 @@
+{
+  "kind": "physical-on-board acceptance, not simulation",
+  "job_id": "5437bbfc579c24f2b5bb894e",
+  "kernel": "6.6.40-dfx-hash-wifi",
+  "input_sha256": "341aacac661ccb210720bedaa9ead5d668fe5ea41a73532fc147c71e34040df1",
+  "sha3_256": "b1870b48476671247200e7af392fe66d90bd62786daae75c70baf17843192d23",
+  "cores": [
+    {
+      "core": "oxide",
+      "length": 16777216,
+      "median_ns": 211686890,
+      "minimum_ns": 211450364,
+      "maximum_ns": 211940595,
+      "throughput_MB_s": 79.25486552332079,
+      "partial_sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7",
+      "dma_transfers_per_sample": 16,
+      "all_eight_digests_match_pc": true
+    },
+    {
+      "core": "compact",
+      "length": 16777216,
+      "median_ns": 113815003,
+      "minimum_ns": 113720083,
+      "maximum_ns": 113901967,
+      "throughput_MB_s": 147.40777189102212,
+      "partial_sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d",
+      "dma_transfers_per_sample": 16,
+      "all_eight_digests_match_pc": true
+    }
+  ],
+  "throughput_ratio": 1.8599207874202666,
+  "decoded_bytes": 16777216,
+  "uart_wire_bytes": 65411,
+  "upload_seconds": 5.837581717998546,
+  "timing_scope": "On-board local API: RAM file read + driver + DMA + core; excludes USB upload and reconfiguration",
+  "restored_compact": true,
+  "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+  "radar_settings_sha256": "5bd68aabd57ed45f1fb4e4e9a7f226252ad7095e728754fe514658e1c8882a53"
+}

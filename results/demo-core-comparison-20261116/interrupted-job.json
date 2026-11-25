@@ -1,0 +1,72 @@
+{
+  "id": "e2a19470f4094ff309e65938",
+  "kind": "hash",
+  "state": "cancelled",
+  "stage": "cancelled",
+  "progress": 0,
+  "created_utc": "2026-11-16T08:08:06.069039+00:00",
+  "results": [],
+  "events": [
+    {
+      "event": "board",
+      "board": {
+        "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+        "kernel": "6.6.40-dfx-hash-wifi",
+        "service_pid": 228,
+        "profile": "hash",
+        "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+        "manifest_sha256": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3",
+        "service_sha256": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+        "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+        "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+        "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+        "dtb_sha256": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed",
+        "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+        "fpga_manager": "operating",
+        "transport": "usb-uart",
+        "baud": 115200
+      },
+      "received_utc": "2026-11-16T08:08:08.300125+00:00"
+    },
+    {
+      "event": "done",
+      "received_utc": "2026-11-16T08:08:08.301707+00:00"
+    }
+  ],
+  "algorithms": [
+    "sha3"
+  ],
+  "compare_cores": true,
+  "file": {
+    "name": "sha3-comparison-16777216-bytes.bin",
+    "size": 16777216
+  },
+  "demo_source_sha256": {
+    "demo/server.py": "6b3d9b6770a7023768f08d4aad1b57335658441b5f08418671d492e1daa5d3fd",
+    "demo/uart.py": "6fc21114ce79554ceee4261d8d63d1a63382aa728e4c4bbbca73aeb8bd8975ef",
+    "demo/board_agent.py": "3d45169ded18b4ef70278743ce41dc28e202c5b8d20fa052ce51f4a2a2f675ba"
+  },
+  "input_sha256": "341aacac661ccb210720bedaa9ead5d668fe5ea41a73532fc147c71e34040df1",
+  "compressed_transfer": true,
+  "transfer_bytes": 65411,
+  "board": {
+    "model": "Digilent Zybo Z7-20 DFX hash accelerator",
+    "kernel": "6.6.40-dfx-hash-wifi",
+    "service_pid": 228,
+    "profile": "hash",
+    "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+    "manifest_sha256": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3",
+    "service_sha256": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "client_sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+    "local_api_sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+    "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+    "dtb_sha256": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed",
+    "profile_status": "Zybo profile: hash\nFPGA bitstream: profiles/hash/system.bit\nDevice tree: profiles/hash/system.dtb\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\nNext boot: hash",
+    "fpga_manager": "operating",
+    "transport": "usb-uart",
+    "baud": 115200
+  },
+  "error": "Cancelled before file transfer.",
+  "elapsed_seconds": 3.433481929001573,
+  "completed_utc": "2026-11-16T08:08:09.503121+00:00"
+}

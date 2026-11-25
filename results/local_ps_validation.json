@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Physical local PS API/CLI validation; existing bitstream/kernel/driver unchanged",
+  "kernel_release": "6.6.40-dfx-hash",
+  "static_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "inputs_sha256": {
+    "software/hash_local.py": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+    "software/hash_service.py": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "software/tests/board_local.py": "cafc54ac5d17f08d472ab1ee370c6818835119509ca9e0e2f6f179187377ac08",
+    "software/tests/test_local.py": "2900c5895e987bfc9cd5b93fb62377f124f41cbc7040b14a53fad7a169443c26"
+  },
+  "physical_report": {
+    "path": "results/local-ps-20261115/physical.json",
+    "sha256": "241a66391554e5b3bd94db3ae67009e479317fa34b3ac1445f45ec9ebba13f76"
+  },
+  "host_unit_tests": 25,
+  "physical_jobs": 81,
+  "extra_restore_digest": true,
+  "shared_sd_assembler": {
+    "path": "/home/rl/workspace/zybo-shared-sd/assemble-hash.py",
+    "sha256": "83b2134bfdb116de619979fb6c70b96547d0b0c783caa842e9e8f4476f8ea60a",
+    "staged_payload": "build/local-ps-staging/rootfs/opt/zybo/hash/payload.json"
+  }
+}

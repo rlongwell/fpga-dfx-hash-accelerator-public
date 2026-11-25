@@ -1,0 +1,41 @@
+{
+  "raw_measurement_validation": "passed",
+  "recomputed_summary_matches_retained_summary": true,
+  "measured_replay_hashes": 350,
+  "warmups": 50,
+  "sizes": 25,
+  "measured_trials_per_core_size": 7,
+  "selected_take": 2,
+  "selection_reason": "Complete chapter text and numbers. Clear shah phonemes in both takes; take 2 has the slightly tighter overall pace. A full-pass ASR insertion near measurements was resolved by acoustic phonemes and chapter review.",
+  "voice_model": "Eleven v4",
+  "voice_name": "Jarnathan - Confident and Versatile",
+  "generation_settings_unchanged": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "review_method": "Automated speech recognition, acoustic phoneme recognition, signal analysis and visual frame review; not a claim of subjective human listening.",
+  "movie_sha256": "8b30253351ebfa505beb40223a034db59d7146f09a34242fbc34891f014daa5f",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 3744,
+    "duration": 124.8,
+    "chapters": 9
+  },
+  "final_audio": {
+    "integrated_lufs": -16.02,
+    "true_peak_dbtp": -1.91,
+    "music_present_in_every_second": true,
+    "max_interior_narration_silence_seconds_at_minus_45_dbfs": 0.64,
+    "transcribed_all_nine_chapters": true,
+    "shah_phonemes_confirmed": true
+  },
+  "physical_evidence_original_seal": "all entries pass SHA256SUMS; original directory unchanged",
+  "visual_review": {
+    "actual_movie_frames": 19,
+    "charts_have_separate_x_axis_title_and_unit_ticks": true,
+    "source_sweep_plotter_rendered_and_reviewed": true
+  }
+}

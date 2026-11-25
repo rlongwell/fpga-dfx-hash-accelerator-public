@@ -1,0 +1,19 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "David - Deep, Warm, and Steady",
+  "model": "Eleven Multilingual v2",
+  "settings": {
+    "speed": 1.04,
+    "stability": 0.87,
+    "similarity": 0.64,
+    "style_exaggeration": 0.5,
+    "speaker_boost": true
+  },
+  "before_after_control_check": "PASS, values agree within 1e-6; voice and model names match",
+  "settings_changed": false,
+  "takes_generated_and_downloaded": 2,
+  "selected_take": 1,
+  "script_word_changes": false,
+  "ssml_breaks": 7,
+  "annotations_reference": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-can-i-add-pauses"
+}

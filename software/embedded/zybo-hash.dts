@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+// Extend the pinned upstream Zybo Z7 board, retaining PS Ethernet/PHY/DDR.
+#include "zynq-zybo-z7.dts"
+#include "hash-system.dtsi"
+
+/ {
+    model = "Digilent Zybo Z7-20 DFX hash accelerator";
+    chosen {
+        bootargs = "console=ttyPS0,115200 root=/dev/mmcblk0p2 rw rootwait cma=32M";
+    };
+};
+
+&clkc {
+    assigned-clocks = <&clkc 15>;
+    assigned-clock-rates = <100000000>;
+};

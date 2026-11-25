@@ -1,0 +1,77 @@
+{
+  "kind": "recorded-ui-and-architecture-presentation",
+  "reviewed_utc": "2026-11-16T00:32:47.430507+00:00",
+  "base_commit": "7af2f1d18889c76fb55669d1d84135f372ee2a45",
+  "physical_benchmark_rerun": false,
+  "fresh_physical_gui_request_id": "71e7ca8fa6f26d1a71c1ba2f",
+  "ui_checks": [
+    "neutral GUI labels",
+    "nine presentation scenes reviewed",
+    "dark and light diagrams",
+    "theme persistence across reload",
+    "capture prompt cancellation",
+    "automatic 166-second recording stop",
+    "manual GUI recording stop",
+    "fresh sample SHA3 matched PC digest",
+    "hash profile and service restored"
+  ],
+  "offline_tests": {
+    "command": "python3 -m unittest discover -s demo/tests -v",
+    "passed": 12,
+    "failed": 0
+  },
+  "existing_captures_unchanged": {
+    "sha3_performance_sealed_files": 132,
+    "demo_sealed_files": 15
+  },
+  "video_checks": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 5940,
+    "duration_seconds": 198,
+    "chapters": 10,
+    "audio_tracks": 0,
+    "full_decode_passed": true,
+    "all_presentation_scenes_reviewed": true,
+    "final_live_resource_credit_frames_reviewed": true
+  },
+  "edit": {
+    "comparison_first_seconds": [
+      0,
+      30
+    ],
+    "live_seconds": [
+      0,
+      32
+    ],
+    "comparison_last_seconds": [
+      30,
+      166
+    ],
+    "playback_speed": 1,
+    "live_footer_caption_added": true,
+    "measured_values_replaced": false
+  },
+  "final_sources_and_outputs_sha256": {
+    "demo/web/index.html": "914f0e606f077c5ddf25a90a89beac824c811473925b0dc01c9033cf6e9056da",
+    "demo/web/app.js": "a97fcf773890e1de057cf1cf48970d15f9b7bead932d7fb01e9935984040cd89",
+    "demo/web/style.css": "b29b21eddee01357bbb3b9d59d6efeb13563dcb6d28331c80203a29101cf0141",
+    "demo/web/record.js": "bfaec6d6ca3b4d64c13ba88b60f9a717ccdbadc3e8dba4e3e251c1789f73ad1a",
+    "demo/web/comparison.html": "728f60f987a0edec477283c62808bb497d358f561ad7cc38a3bf781ef3793b74",
+    "demo/web/comparison.css": "ae0bd0bc38f2f2c5cf3f3c79a8b8d19373df2781039fb1eff1e014995ee2e59a",
+    "demo/web/comparison.js": "2dcc370c5ef4a518de19575c7cd60b125e82b8499ce56a32e0d104d62275078f",
+    "demo/render_video.py": "c01669af7295040574e46b06d43bb9361760409a4b53db19121966eaf4388ced",
+    "docs/media/sha3-comparison.mp4": "4f157c166e40cb7024389fb9a472d54f6870d4ed12b1b142b6dd22aa501230e0",
+    "docs/assets/sha3-comparison.png": "279c9cb66402c889ca7e0d25a0cc51d4d34ec52ebb0d01b06b66d1a9a43de344",
+    "docs/assets/sha3-resources.png": "6918c94c2645516117345af278a646d97fd58ddd91fd32e0df839285ec309a42",
+    "docs/assets/hash-lab-neutral.jpg": "c4fb57c0a67631cef184dbde54a04d8720013fa65c854dae6d069c25b3ce3ac5"
+  },
+  "raw_captures_sha256": {
+    "build/demo/video/comparison-raw.webm": "9218a07e94937b600fbe0f100bfe0e0af41db453e5d50f4648264921b6fba0c8",
+    "build/demo/video/live-raw.webm": "0d82c00f89b998d1143acb8147fafc3878332ec0a0a12e790939e13e9634a729"
+  },
+  "capture_scope": "Browser tab only. No desktop, camera or audio capture.",
+  "sources": "docs/demo-video.md maps each claim to primary RTL and retained results."
+}

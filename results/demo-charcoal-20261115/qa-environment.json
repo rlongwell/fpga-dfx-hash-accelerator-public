@@ -1,0 +1,14 @@
+{
+  "python": "3.12",
+  "torch": "2.15.0+cpu",
+  "transformers": "5.23.0",
+  "faster_whisper": "1.2.1",
+  "numpy": "2.5.5",
+  "phoneme_model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "phoneme_model_revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+  "asr_model": "Systran/faster-whisper-small.en",
+  "asr_language": "en",
+  "asr_compute": "CPU int8; beam_size=5; word_timestamps=True; mixed chapters use VAD=False",
+  "voice_generation_count": 1,
+  "generated_takes": 2
+}

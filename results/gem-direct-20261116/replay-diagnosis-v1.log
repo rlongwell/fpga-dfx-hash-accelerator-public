@@ -1,0 +1,74 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# cat /root/hash-net-physical-smoke-v1/replay-smoke.log; ls -l /root/hash-net-ph
+ysical-smoke-v1; ps -o pid,ppid,stat,args; ls /run/zybo-hash*; printf '\nDEMO_CM
+D_935988dec4d8b1f3_%s\n' "$?"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+PermissionError: [Errno 1] Operation not permitted
+total 381
+-rw-r--r--    1 root     root        131072 Jan  1 00:02 [0;0mpattern-131072.bin[m
+-rw-r--r--    1 root     root        258048 Jan  1 00:02 [0;0mpattern-258048.bin[m
+-rw-r--r--    1 root     root           125 Jan  1 00:02 [0;0mreplay-smoke.log[m
+PID   PPID  STAT COMMAND
+    1     0 S    init
+    2     0 SW   [kthreadd]
+    3     2 SW   [pool_workqueue_]
+    4     2 IW<  [kworker/R-rcu_g]
+    5     2 IW<  [kworker/R-rcu_p]
+    6     2 IW<  [kworker/R-slub_]
+    7     2 IW   [kworker/0:0-eve]
+    8     2 IW   [kworker/0:1-rcu]
+   10     2 IW   [kworker/u4:0-ev]
+   11     2 IW<  [kworker/R-mm_pe]
+   12     2 SW   [ksoftirqd/0]
+   13     2 IW   [rcu_preempt]
+   14     2 SW   [migration/0]
+   15     2 SW   [cpuhp/0]
+   16     2 SW   [cpuhp/1]
+   17     2 SW   [migration/1]
+   18     2 SW   [ksoftirqd/1]
+   19     2 IW   [kworker/1:0-mm_]
+   20     2 IW<  [kworker/1:0H-kb]
+   21     2 SW   [kdevtmpfs]
+   22     2 IW<  [kworker/R-inet_]
+   23     2 IW   [kworker/u4:1-ev]
+   24     2 SW   [oom_reaper]
+   25     2 IW<  [kworker/R-write]
+   26     2 IW<  [kworker/R-kbloc]
+   27     2 IW<  [kworker/R-edac-]
+   28     2 SW   [watchdogd]
+   29     2 IW<  [kworker/0:1H-kb]
+   30     2 IW<  [kworker/R-rpcio]
+   31     2 IW<  [kworker/R-xprti]
+   32     2 IW<  [kworker/R-cfg80]
+   33     2 SW   [kswapd0]
+   34     2 IW<  [kworker/R-nfsio]
+   35     2 IW   [kworker/1:1-eve]
+   38     2 IW   [kworker/0:2-pm]
+   39     2 IW<  [kworker/u5:0]
+   40     2 IW<  [kworker/R-sdhci]
+   41     2 SW   [irq/42-mmc0]
+   42     2 IW<  [kworker/R-mld]
+   43     2 IW<  [kworker/R-ipv6_]
+   44     2 IW   [kworker/u4:2]
+   45     2 IW<  [kworker/R-mmc_c]
+   46     2 IW<  [kworker/1:1H-kb]
+   47     2 SW   [jbd2/mmcblk0p2-]
+   48     2 IW<  [kworker/R-ext4-]
+   54     2 IW<  [kworker/0:2H]
+   68     1 S    /sbin/syslogd -n
+   72     1 S    /sbin/klogd -n
+  111     1 S    /usr/bin/python3 /opt/zybo/hash/software/hash_service.py --man
+  119     1 S    {connect-loop} /bin/sh /opt/zybo/wifi/connect-loop
+  311     1 S    -sh
+  315   311 R    ps -o pid,ppid,stat,args
+[0;0m/run/zybo-hash.pid[m
+
+DEMO_CMD_935988dec4d8b1f3_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

@@ -1,0 +1,26 @@
+[
+  {
+    "folder": "results/sha3-performance-20261115",
+    "files_verified": 132
+  },
+  {
+    "folder": "results/demo-20261115",
+    "files_verified": 15
+  },
+  {
+    "folder": "results/demo-recording-20261115",
+    "files_verified": 9
+  },
+  {
+    "folder": "results/demo-recording-v2-20261115",
+    "files_verified": 11
+  },
+  {
+    "folder": "results/demo-audio-v3-20261115",
+    "files_verified": 15
+  },
+  {
+    "folder": "results/demo-neutral-20261115",
+    "files_verified": 12
+  }
+]

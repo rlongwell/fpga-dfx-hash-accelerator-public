@@ -1,0 +1,27 @@
+{
+  "abi": 65536,
+  "part": "xc7z020clg400-1",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "variants": {
+    "compact": {
+      "label": "Compact core",
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/net-6102e03f31c1/compact-bbe4949ff65a.bin",
+        "source": "build/gem-direct/dfx/compact/full_pblock_hash_partial.bit.bin",
+        "sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e"
+      }
+    },
+    "oxide": {
+      "label": "Oxide Quartz",
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/net-6102e03f31c1/oxide-172af5d484bf.bin",
+        "source": "build/gem-direct/dfx/oxide/full_pblock_hash_partial.bit.bin",
+        "sha256": "172af5d484bfc2f81e65e6a0f9fc2e72c84c7e5608f356fae8176b2d4c3f6202"
+      }
+    }
+  },
+  "repeats": 7,
+  "warmup": 1
+}

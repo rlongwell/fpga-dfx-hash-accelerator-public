@@ -1,0 +1,21 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# sh /root/profile-variant-20261115.sh --manifest /opt/zybo/hash/dfx_manifest.js
+on --label compact-postboot --output /root/sha3-compact-postboot-20261115.json; 
+printf '\nUART_DONE_330420044165359_%s\n' "$?"
+tr: read error: No such process
+compact-postboot sha3 64 {"dma": {"median_ns": 187266, "min_ns": 183720, "max_ns": 219390, "MB_s": 0.3417598496256662}, "local_api": {"median_ns": 400836, "min_ns": 395358, "max_ns": 413700, "MB_s": 0.15966629743835384}, "arm": {"median_ns": 36642, "min_ns": 36216, "max_ns": 38922, "MB_s": 1.7466295507887124}}
+compact-postboot sha3 136 {"dma": {"median_ns": 188664, "min_ns": 183108, "max_ns": 253716, "MB_s": 0.720858245346224}, "local_api": {"median_ns": 400470, "min_ns": 396792, "max_ns": 417882, "MB_s": 0.33960096886158764}, "arm": {"median_ns": 47472, "min_ns": 46866, "max_ns": 48606, "MB_s": 2.86484664644422}}
+compact-postboot sha3 1024 {"dma": {"median_ns": 176448, "min_ns": 174246, "max_ns": 196224, "MB_s": 5.803409503083062}, "local_api": {"median_ns": 406518, "min_ns": 401460, "max_ns": 424728, "MB_s": 2.5189536502688687}, "arm": {"median_ns": 113586, "min_ns": 111078, "max_ns": 170358, "MB_s": 9.015195534660961}}
+compact-postboot sha3 65536 {"dma": {"median_ns": 456252, "min_ns": 447654, "max_ns": 483702, "MB_s": 143.63991829076915}, "local_api": {"median_ns": 767052, "min_ns": 758670, "max_ns": 852918, "MB_s": 85.43879684819282}, "arm": {"median_ns": 5329014, "min_ns": 5284530, "max_ns": 5349553, "MB_s": 12.297959810201286}}
+compact-postboot sha3 1048576 {"dma": {"median_ns": 4578462, "min_ns": 4572012, "max_ns": 4594572, "MB_s": 229.02363282691874}, "local_api": {"median_ns": 6995436, "min_ns": 6980076, "max_ns": 7043214, "MB_s": 149.89430251381043}, "arm": {"median_ns": 85025575, "min_ns": 84993414, "max_ns": 85508251, "MB_s": 12.332477610413102}}
+compact-postboot sha3 16777216 {"dma": {"median_ns": 71801928, "min_ns": 71756671, "max_ns": 71963581, "MB_s": 233.65968668696473}, "local_api": {"median_ns": 107610895, "min_ns": 107320255, "max_ns": 107965885, "MB_s": 155.9062955474908}, "arm": {"median_ns": 1359301771, "min_ns": 1355440603, "max_ns": 1359486482, "MB_s": 12.342524932971635}}
+REPORT /root/sha3-compact-postboot-20261115.json passed True
+Hash service started (PID 287); log: /var/log/zybo-hash.log
+
+UART_DONE_330420044165359_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

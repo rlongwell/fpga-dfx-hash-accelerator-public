@@ -1,0 +1,40 @@
+{
+  "kind": "physical-ownership-guards",
+  "passed": true,
+  "service_pid": 2747,
+  "service_pid_unchanged": true,
+  "checks": [
+    {
+      "command": [
+        "/opt/zybo/hash/start.sh",
+        "stop"
+      ],
+      "rejected": true,
+      "reason": "Ethernet/replay job"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-c",
+        "import sys;sys.path.insert(0,'/opt/zybo/hash/software');from hash_local import LocalHasher;LocalHasher()"
+      ],
+      "rejected": true,
+      "reason": "Ethernet/replay job"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/opt/zybo/hash/net/board_run.py",
+        "replay",
+        "--length",
+        "1",
+        "--session",
+        "1",
+        "--pattern",
+        "/not-used"
+      ],
+      "rejected": true,
+      "reason": "Another FPGA input operation"
+    }
+  ]
+}

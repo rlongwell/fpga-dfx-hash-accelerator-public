@@ -1,0 +1,60 @@
+{
+  "generated_utc": "2026-11-12T04:49:14.960374+00:00",
+  "engine": "sha3_wide",
+  "part": "xc7z020clg400-1",
+  "vivado": "2024.2",
+  "analysis_type": "clock reanalysis of unchanged 100 MHz physical route",
+  "analysis_clock_mhz": 80.0,
+  "physical_route_clock_mhz": 100.0,
+  "physical_route_changed": false,
+  "rtl_changed": false,
+  "input_delay_ns": 2.0,
+  "output_delay_ns": 2.0,
+  "hd_clk_src": "BUFGCTRL_X0Y0",
+  "timing": {
+    "setup_wns_ns": 1.762,
+    "hold_whs_ns": 0.137,
+    "register_setup_wns_ns": 2.396,
+    "register_data_path_delay_ns": 9.806,
+    "timing_met": true
+  },
+  "clock_coverage": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 1,
+    "no_output_delay": 0,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "intentional_timing_exception": "aresetn is false-pathed and has no input-delay constraint; all sequential data endpoints are clocked and constrained",
+  "simulation": [
+    {
+      "message_bytes": 65536,
+      "continuous_cycles": 27473,
+      "predicted_core_MB_per_s": 190.837549594147
+    },
+    {
+      "message_bytes": 1048576,
+      "continuous_cycles": 439500,
+      "predicted_core_MB_per_s": 190.86707622298064
+    }
+  ],
+  "sources_sha256": {
+    "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+    "rtl/rm/sha3_wide.sv": "7357332eb622268e6489c6bd422a1b376aa5feb344402929409aa6e70e81b68b",
+    "rtl/sha3/experiments/hash_sha3_wide.sv": "2efea5f3cb0e69bb5d00ac4a43414ed6e532c0579928da5c93fa4f02962f3292"
+  },
+  "checkpoint": "build/engines/sha3_wide_80mhz/clock_reanalysis.dcp",
+  "hardware_tested": false,
+  "caveats": [
+    "This reanalyzes an unchanged route at a slower clock; it is not a separately implemented 80 MHz design or a DFX configuration.",
+    "Core rates are predictions from simulated cycles and timing analysis, not hardware, DMA or Ethernet measurements.",
+    "OOC input/output paths lack physical partition-pin locations; deployed system timing requires its own route."
+  ]
+}

@@ -1,0 +1,2034 @@
+[
+  {
+    "label": "take-1-shah",
+    "path": "docs/media/voiceover-replay-take-1.mp3",
+    "start": 0,
+    "duration": 6,
+    "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+    "phonemes": "ð ɪ s ɛ k s p ɛ ɹ ɪ m ə n t k ə m p ɛɹ z ʃ ɑː θ ɹ i t uː f ɪ f t i s ɪ k s ɪ n ð ə k ɑː m p æ k t k oʊ w ɪ ð ɑː k s aɪ d z k oːɹ t s ɪ m l",
+    "tokens": [
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 0.08,
+        "end": 0.1,
+        "confidence": 0.985
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 0.1,
+        "end": 0.12,
+        "confidence": 0.946
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 0.181,
+        "end": 0.221,
+        "confidence": 0.992
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 0.261,
+        "end": 0.281,
+        "confidence": 0.823
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 0.321,
+        "end": 0.341,
+        "confidence": 0.986
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 0.361,
+        "end": 0.381,
+        "confidence": 0.995
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 0.462,
+        "end": 0.482,
+        "confidence": 0.97
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 0.502,
+        "end": 0.522,
+        "confidence": 0.462
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 0.562,
+        "end": 0.602,
+        "confidence": 0.893
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 0.602,
+        "end": 0.622,
+        "confidence": 0.63
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 0.662,
+        "end": 0.702,
+        "confidence": 0.997
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 0.702,
+        "end": 0.722,
+        "confidence": 0.922
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 0.763,
+        "end": 0.783,
+        "confidence": 0.993
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 0.783,
+        "end": 0.823,
+        "confidence": 0.911
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 0.863,
+        "end": 0.883,
+        "confidence": 0.992
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 0.903,
+        "end": 0.923,
+        "confidence": 0.913
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 0.963,
+        "end": 0.983,
+        "confidence": 0.954
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 1.043,
+        "end": 1.064,
+        "confidence": 0.984
+      },
+      {
+        "id": 94,
+        "label": "ɛɹ",
+        "start": 1.104,
+        "end": 1.124,
+        "confidence": 0.192
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 1.284,
+        "end": 1.304,
+        "confidence": 0.989
+      },
+      {
+        "id": 38,
+        "label": "ʃ",
+        "start": 1.385,
+        "end": 1.405,
+        "confidence": 0.96
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 1.505,
+        "end": 1.525,
+        "confidence": 0.568
+      },
+      {
+        "id": 52,
+        "label": "θ",
+        "start": 1.726,
+        "end": 1.766,
+        "confidence": 0.588
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 1.826,
+        "end": 1.866,
+        "confidence": 0.935
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 1.886,
+        "end": 1.906,
+        "confidence": 0.693
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 2.268,
+        "end": 2.288,
+        "confidence": 0.988
+      },
+      {
+        "id": 46,
+        "label": "uː",
+        "start": 2.348,
+        "end": 2.368,
+        "confidence": 0.901
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 2.448,
+        "end": 2.468,
+        "confidence": 0.984
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 2.488,
+        "end": 2.508,
+        "confidence": 0.962
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 2.569,
+        "end": 2.589,
+        "confidence": 0.978
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 2.609,
+        "end": 2.629,
+        "confidence": 0.967
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 2.649,
+        "end": 2.669,
+        "confidence": 0.957
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 2.749,
+        "end": 2.769,
+        "confidence": 0.993
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 2.87,
+        "end": 2.89,
+        "confidence": 0.949
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.01,
+        "end": 3.03,
+        "confidence": 0.989
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 3.07,
+        "end": 3.09,
+        "confidence": 0.993
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 3.251,
+        "end": 3.271,
+        "confidence": 0.971
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 3.311,
+        "end": 3.351,
+        "confidence": 0.997
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 3.351,
+        "end": 3.371,
+        "confidence": 0.97
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 3.371,
+        "end": 3.391,
+        "confidence": 0.958
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.472,
+        "end": 3.492,
+        "confidence": 0.989
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 3.552,
+        "end": 3.572,
+        "confidence": 0.577
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 3.652,
+        "end": 3.672,
+        "confidence": 0.965
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 3.712,
+        "end": 3.732,
+        "confidence": 0.988
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 3.773,
+        "end": 3.793,
+        "confidence": 0.882
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.873,
+        "end": 3.893,
+        "confidence": 0.989
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 3.913,
+        "end": 3.933,
+        "confidence": 0.986
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.993,
+        "end": 4.013,
+        "confidence": 0.991
+      },
+      {
+        "id": 49,
+        "label": "oʊ",
+        "start": 4.074,
+        "end": 4.094,
+        "confidence": 0.395
+      },
+      {
+        "id": 32,
+        "label": "w",
+        "start": 4.615,
+        "end": 4.635,
+        "confidence": 0.982
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 4.656,
+        "end": 4.676,
+        "confidence": 0.942
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 4.716,
+        "end": 4.736,
+        "confidence": 0.971
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 4.876,
+        "end": 4.896,
+        "confidence": 0.573
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 4.997,
+        "end": 5.037,
+        "confidence": 0.99
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 5.057,
+        "end": 5.077,
+        "confidence": 0.982
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 5.157,
+        "end": 5.177,
+        "confidence": 0.965
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 5.318,
+        "end": 5.338,
+        "confidence": 0.886
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 5.338,
+        "end": 5.358,
+        "confidence": 0.923
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 5.478,
+        "end": 5.498,
+        "confidence": 0.986
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 5.599,
+        "end": 5.619,
+        "confidence": 0.269
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 5.759,
+        "end": 5.779,
+        "confidence": 0.924
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 5.779,
+        "end": 5.799,
+        "confidence": 0.928
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 5.88,
+        "end": 5.9,
+        "confidence": 0.971
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 5.94,
+        "end": 5.96,
+        "confidence": 0.983
+      },
+      {
+        "id": 8,
+        "label": "l",
+        "start": 5.98,
+        "end": 6.0,
+        "confidence": 0.725
+      }
+    ]
+  },
+  {
+    "label": "take-2-shah",
+    "path": "docs/media/voiceover-replay-take-2.mp3",
+    "start": 0,
+    "duration": 6,
+    "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+    "phonemes": "ð ɪ s ɛ k s p ɛ ɹ ɪ m ə n t k ə m p ɛɹ z ʃ ɑː θ ɹ i t uː f ɪ f t i s ɪ k s ɪ n ð ə k ɑː m p æ k t k oʊ w ɪ ð ɑː k s aɪ d z k oːɹ t s",
+    "tokens": [
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 0.14,
+        "end": 0.161,
+        "confidence": 0.986
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 0.181,
+        "end": 0.201,
+        "confidence": 0.968
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 0.261,
+        "end": 0.281,
+        "confidence": 0.993
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 0.321,
+        "end": 0.341,
+        "confidence": 0.775
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 0.381,
+        "end": 0.401,
+        "confidence": 0.983
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 0.421,
+        "end": 0.441,
+        "confidence": 0.995
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 0.502,
+        "end": 0.542,
+        "confidence": 0.913
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 0.562,
+        "end": 0.582,
+        "confidence": 0.744
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 0.642,
+        "end": 0.662,
+        "confidence": 0.979
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 0.682,
+        "end": 0.702,
+        "confidence": 0.701
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 0.763,
+        "end": 0.783,
+        "confidence": 0.997
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 0.783,
+        "end": 0.803,
+        "confidence": 0.902
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 0.843,
+        "end": 0.863,
+        "confidence": 0.995
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 0.863,
+        "end": 0.903,
+        "confidence": 0.577
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 0.943,
+        "end": 0.963,
+        "confidence": 0.992
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 1.003,
+        "end": 1.023,
+        "confidence": 0.899
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 1.043,
+        "end": 1.084,
+        "confidence": 0.955
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 1.124,
+        "end": 1.144,
+        "confidence": 0.984
+      },
+      {
+        "id": 94,
+        "label": "ɛɹ",
+        "start": 1.184,
+        "end": 1.204,
+        "confidence": 0.186
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 1.365,
+        "end": 1.385,
+        "confidence": 0.989
+      },
+      {
+        "id": 38,
+        "label": "ʃ",
+        "start": 1.465,
+        "end": 1.485,
+        "confidence": 0.966
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 1.585,
+        "end": 1.605,
+        "confidence": 0.474
+      },
+      {
+        "id": 52,
+        "label": "θ",
+        "start": 1.806,
+        "end": 1.826,
+        "confidence": 0.884
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 1.906,
+        "end": 1.946,
+        "confidence": 0.975
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 1.987,
+        "end": 2.007,
+        "confidence": 0.786
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 2.448,
+        "end": 2.468,
+        "confidence": 0.986
+      },
+      {
+        "id": 46,
+        "label": "uː",
+        "start": 2.528,
+        "end": 2.548,
+        "confidence": 0.893
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 2.629,
+        "end": 2.649,
+        "confidence": 0.984
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 2.689,
+        "end": 2.709,
+        "confidence": 0.969
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 2.749,
+        "end": 2.769,
+        "confidence": 0.952
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 2.789,
+        "end": 2.829,
+        "confidence": 0.947
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 2.829,
+        "end": 2.849,
+        "confidence": 0.942
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 2.95,
+        "end": 2.97,
+        "confidence": 0.994
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 3.07,
+        "end": 3.09,
+        "confidence": 0.959
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.211,
+        "end": 3.231,
+        "confidence": 0.989
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 3.271,
+        "end": 3.291,
+        "confidence": 0.993
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 3.371,
+        "end": 3.391,
+        "confidence": 0.968
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 3.431,
+        "end": 3.452,
+        "confidence": 0.995
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 3.452,
+        "end": 3.472,
+        "confidence": 0.896
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 3.472,
+        "end": 3.492,
+        "confidence": 0.956
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.572,
+        "end": 3.592,
+        "confidence": 0.991
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 3.652,
+        "end": 3.672,
+        "confidence": 0.518
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 3.753,
+        "end": 3.773,
+        "confidence": 0.969
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 3.813,
+        "end": 3.833,
+        "confidence": 0.99
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 3.873,
+        "end": 3.893,
+        "confidence": 0.878
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 3.973,
+        "end": 3.993,
+        "confidence": 0.986
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 4.033,
+        "end": 4.054,
+        "confidence": 0.987
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 4.114,
+        "end": 4.134,
+        "confidence": 0.988
+      },
+      {
+        "id": 49,
+        "label": "oʊ",
+        "start": 4.194,
+        "end": 4.214,
+        "confidence": 0.331
+      },
+      {
+        "id": 32,
+        "label": "w",
+        "start": 4.796,
+        "end": 4.816,
+        "confidence": 0.98
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 4.836,
+        "end": 4.856,
+        "confidence": 0.957
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 4.916,
+        "end": 4.936,
+        "confidence": 0.835
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 5.057,
+        "end": 5.077,
+        "confidence": 0.625
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 5.177,
+        "end": 5.217,
+        "confidence": 0.989
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 5.237,
+        "end": 5.258,
+        "confidence": 0.989
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 5.338,
+        "end": 5.358,
+        "confidence": 0.964
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 5.478,
+        "end": 5.518,
+        "confidence": 0.818
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 5.518,
+        "end": 5.538,
+        "confidence": 0.958
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 5.639,
+        "end": 5.659,
+        "confidence": 0.987
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 5.759,
+        "end": 5.779,
+        "confidence": 0.249
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 5.92,
+        "end": 5.94,
+        "confidence": 0.901
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 5.94,
+        "end": 5.96,
+        "confidence": 0.942
+      }
+    ]
+  },
+  {
+    "label": "take-1-equal-speed",
+    "path": "docs/media/voiceover-replay-take-1.mp3",
+    "start": 75,
+    "duration": 7,
+    "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+    "phonemes": "ɛ ɾ əl ɪ n t uː ɐ s t ɛ d i ɹ eɪ t ð ə s p iː d ʌ p ɪ z k w oːɹ t s ɪ z t aɪ m d ᵻ v aɪ d ᵻ d b aɪ ð ə k ɑː m p æ k t k oːɹ z t aɪ m w ʌ n m iː n z iː",
+    "tokens": [
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 75.02,
+        "end": 75.04,
+        "confidence": 0.967
+      },
+      {
+        "id": 15,
+        "label": "ɾ",
+        "start": 75.06,
+        "end": 75.08,
+        "confidence": 0.737
+      },
+      {
+        "id": 61,
+        "label": "əl",
+        "start": 75.1,
+        "end": 75.12,
+        "confidence": 0.795
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 75.261,
+        "end": 75.281,
+        "confidence": 0.936
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 75.301,
+        "end": 75.341,
+        "confidence": 0.988
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 75.361,
+        "end": 75.381,
+        "confidence": 0.977
+      },
+      {
+        "id": 46,
+        "label": "uː",
+        "start": 75.421,
+        "end": 75.441,
+        "confidence": 0.428
+      },
+      {
+        "id": 20,
+        "label": "ɐ",
+        "start": 75.481,
+        "end": 75.501,
+        "confidence": 0.8
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 75.582,
+        "end": 75.602,
+        "confidence": 0.994
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 75.742,
+        "end": 75.762,
+        "confidence": 0.991
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 75.782,
+        "end": 75.802,
+        "confidence": 0.96
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 75.862,
+        "end": 75.883,
+        "confidence": 0.875
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 75.903,
+        "end": 75.923,
+        "confidence": 0.974
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 76.023,
+        "end": 76.063,
+        "confidence": 0.985
+      },
+      {
+        "id": 44,
+        "label": "eɪ",
+        "start": 76.083,
+        "end": 76.103,
+        "confidence": 0.944
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 76.244,
+        "end": 76.264,
+        "confidence": 0.876
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 76.825,
+        "end": 76.845,
+        "confidence": 0.991
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 76.845,
+        "end": 76.865,
+        "confidence": 0.972
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 76.926,
+        "end": 76.966,
+        "confidence": 0.801
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 77.066,
+        "end": 77.086,
+        "confidence": 0.983
+      },
+      {
+        "id": 30,
+        "label": "iː",
+        "start": 77.106,
+        "end": 77.126,
+        "confidence": 0.95
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 77.226,
+        "end": 77.246,
+        "confidence": 0.987
+      },
+      {
+        "id": 33,
+        "label": "ʌ",
+        "start": 77.266,
+        "end": 77.287,
+        "confidence": 0.614
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 77.407,
+        "end": 77.447,
+        "confidence": 0.982
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 77.547,
+        "end": 77.567,
+        "confidence": 0.976
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 77.607,
+        "end": 77.628,
+        "confidence": 0.983
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 77.728,
+        "end": 77.748,
+        "confidence": 0.987
+      },
+      {
+        "id": 32,
+        "label": "w",
+        "start": 77.788,
+        "end": 77.808,
+        "confidence": 0.513
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 77.848,
+        "end": 77.868,
+        "confidence": 0.272
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 77.989,
+        "end": 78.009,
+        "confidence": 0.41
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 78.009,
+        "end": 78.029,
+        "confidence": 0.957
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 78.049,
+        "end": 78.069,
+        "confidence": 0.361
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 78.129,
+        "end": 78.149,
+        "confidence": 0.969
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 78.209,
+        "end": 78.229,
+        "confidence": 0.992
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 78.289,
+        "end": 78.309,
+        "confidence": 0.936
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 78.47,
+        "end": 78.51,
+        "confidence": 0.571
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 78.65,
+        "end": 78.67,
+        "confidence": 0.996
+      },
+      {
+        "id": 50,
+        "label": "ᵻ",
+        "start": 78.691,
+        "end": 78.711,
+        "confidence": 0.527
+      },
+      {
+        "id": 25,
+        "label": "v",
+        "start": 78.811,
+        "end": 78.831,
+        "confidence": 0.995
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 78.891,
+        "end": 78.911,
+        "confidence": 0.96
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 79.032,
+        "end": 79.052,
+        "confidence": 0.938
+      },
+      {
+        "id": 50,
+        "label": "ᵻ",
+        "start": 79.052,
+        "end": 79.072,
+        "confidence": 0.744
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 79.132,
+        "end": 79.152,
+        "confidence": 0.99
+      },
+      {
+        "id": 26,
+        "label": "b",
+        "start": 79.212,
+        "end": 79.232,
+        "confidence": 0.984
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 79.232,
+        "end": 79.252,
+        "confidence": 0.947
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 79.332,
+        "end": 79.352,
+        "confidence": 0.991
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 79.352,
+        "end": 79.372,
+        "confidence": 0.918
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 79.453,
+        "end": 79.473,
+        "confidence": 0.988
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 79.553,
+        "end": 79.573,
+        "confidence": 0.607
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 79.633,
+        "end": 79.653,
+        "confidence": 0.975
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 79.693,
+        "end": 79.713,
+        "confidence": 0.99
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 79.754,
+        "end": 79.774,
+        "confidence": 0.872
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 79.854,
+        "end": 79.894,
+        "confidence": 0.991
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 79.894,
+        "end": 79.934,
+        "confidence": 0.501
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 79.994,
+        "end": 80.014,
+        "confidence": 0.988
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 80.054,
+        "end": 80.074,
+        "confidence": 0.278
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 80.215,
+        "end": 80.235,
+        "confidence": 0.89
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 80.295,
+        "end": 80.315,
+        "confidence": 0.992
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 80.375,
+        "end": 80.395,
+        "confidence": 0.92
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 80.556,
+        "end": 80.576,
+        "confidence": 0.992
+      },
+      {
+        "id": 32,
+        "label": "w",
+        "start": 81.138,
+        "end": 81.178,
+        "confidence": 0.982
+      },
+      {
+        "id": 33,
+        "label": "ʌ",
+        "start": 81.198,
+        "end": 81.218,
+        "confidence": 0.825
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 81.378,
+        "end": 81.398,
+        "confidence": 0.998
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 81.559,
+        "end": 81.579,
+        "confidence": 0.996
+      },
+      {
+        "id": 30,
+        "label": "iː",
+        "start": 81.599,
+        "end": 81.619,
+        "confidence": 0.775
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 81.699,
+        "end": 81.739,
+        "confidence": 0.99
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 81.759,
+        "end": 81.779,
+        "confidence": 0.979
+      },
+      {
+        "id": 30,
+        "label": "iː",
+        "start": 81.94,
+        "end": 81.96,
+        "confidence": 0.908
+      }
+    ]
+  },
+  {
+    "label": "take-2-credits",
+    "path": "docs/media/voiceover-replay-take-2.mp3",
+    "start": 122,
+    "duration": 7,
+    "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+    "phonemes": "æ n d ð ə k oːɹ t k ə n t ɹ ɪ b j ɾ ɚ z f ɔːɹ ð ə ɹ ɛ f ɹ ə n s k oːɹ ð ɛ ɹ ʌ n tʃ eɪ n dʒ d s oːɹ s æ n d l aɪ s ə n s ɑːɹ ɹ ᵻ t eɪ n d ɐ l ɔ ŋ s aɪ d ð ə m ɛ ʒ ɚ m ə n t s æ n d s k ɹ ɪ p t s",
+    "tokens": [
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 122.02,
+        "end": 122.04,
+        "confidence": 0.925
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 122.06,
+        "end": 122.08,
+        "confidence": 0.984
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 122.08,
+        "end": 122.1,
+        "confidence": 0.602
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 122.1,
+        "end": 122.12,
+        "confidence": 0.977
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 122.12,
+        "end": 122.14,
+        "confidence": 0.971
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 122.221,
+        "end": 122.241,
+        "confidence": 0.988
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 122.321,
+        "end": 122.341,
+        "confidence": 0.272
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 122.441,
+        "end": 122.481,
+        "confidence": 0.649
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 122.542,
+        "end": 122.562,
+        "confidence": 0.993
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 122.562,
+        "end": 122.602,
+        "confidence": 0.603
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 122.602,
+        "end": 122.642,
+        "confidence": 0.979
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 122.662,
+        "end": 122.682,
+        "confidence": 0.948
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 122.702,
+        "end": 122.742,
+        "confidence": 0.973
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 122.742,
+        "end": 122.762,
+        "confidence": 0.9
+      },
+      {
+        "id": 26,
+        "label": "b",
+        "start": 122.822,
+        "end": 122.842,
+        "confidence": 0.914
+      },
+      {
+        "id": 24,
+        "label": "j",
+        "start": 122.842,
+        "end": 122.883,
+        "confidence": 0.781
+      },
+      {
+        "id": 15,
+        "label": "ɾ",
+        "start": 122.923,
+        "end": 122.943,
+        "confidence": 0.925
+      },
+      {
+        "id": 43,
+        "label": "ɚ",
+        "start": 122.963,
+        "end": 122.983,
+        "confidence": 0.786
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 123.083,
+        "end": 123.103,
+        "confidence": 0.975
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 123.183,
+        "end": 123.203,
+        "confidence": 0.989
+      },
+      {
+        "id": 71,
+        "label": "ɔːɹ",
+        "start": 123.223,
+        "end": 123.244,
+        "confidence": 0.263
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 123.284,
+        "end": 123.304,
+        "confidence": 0.992
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 123.324,
+        "end": 123.344,
+        "confidence": 0.948
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 123.424,
+        "end": 123.444,
+        "confidence": 0.98
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 123.464,
+        "end": 123.484,
+        "confidence": 0.948
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 123.564,
+        "end": 123.585,
+        "confidence": 0.988
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 123.605,
+        "end": 123.645,
+        "confidence": 0.929
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 123.645,
+        "end": 123.665,
+        "confidence": 0.948
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 123.705,
+        "end": 123.725,
+        "confidence": 0.993
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 123.745,
+        "end": 123.765,
+        "confidence": 0.935
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 123.845,
+        "end": 123.865,
+        "confidence": 0.991
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 123.926,
+        "end": 123.946,
+        "confidence": 0.261
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 124.547,
+        "end": 124.587,
+        "confidence": 0.771
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 124.607,
+        "end": 124.628,
+        "confidence": 0.3
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 124.708,
+        "end": 124.728,
+        "confidence": 0.87
+      },
+      {
+        "id": 33,
+        "label": "ʌ",
+        "start": 124.828,
+        "end": 124.848,
+        "confidence": 0.824
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 124.928,
+        "end": 124.948,
+        "confidence": 0.992
+      },
+      {
+        "id": 66,
+        "label": "tʃ",
+        "start": 125.009,
+        "end": 125.029,
+        "confidence": 0.788
+      },
+      {
+        "id": 44,
+        "label": "eɪ",
+        "start": 125.109,
+        "end": 125.129,
+        "confidence": 0.96
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 125.249,
+        "end": 125.269,
+        "confidence": 0.938
+      },
+      {
+        "id": 60,
+        "label": "dʒ",
+        "start": 125.289,
+        "end": 125.309,
+        "confidence": 0.636
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 125.37,
+        "end": 125.41,
+        "confidence": 0.928
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 125.45,
+        "end": 125.49,
+        "confidence": 0.968
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 125.57,
+        "end": 125.59,
+        "confidence": 0.296
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 125.731,
+        "end": 125.751,
+        "confidence": 0.986
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 125.851,
+        "end": 125.871,
+        "confidence": 0.909
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 125.891,
+        "end": 125.931,
+        "confidence": 0.862
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 125.931,
+        "end": 125.951,
+        "confidence": 0.979
+      },
+      {
+        "id": 8,
+        "label": "l",
+        "start": 125.991,
+        "end": 126.011,
+        "confidence": 0.983
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 126.032,
+        "end": 126.052,
+        "confidence": 0.948
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 126.172,
+        "end": 126.192,
+        "confidence": 0.982
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 126.232,
+        "end": 126.252,
+        "confidence": 0.974
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 126.292,
+        "end": 126.312,
+        "confidence": 0.997
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 126.352,
+        "end": 126.372,
+        "confidence": 0.912
+      },
+      {
+        "id": 68,
+        "label": "ɑːɹ",
+        "start": 126.473,
+        "end": 126.493,
+        "confidence": 0.593
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 126.573,
+        "end": 126.613,
+        "confidence": 0.96
+      },
+      {
+        "id": 50,
+        "label": "ᵻ",
+        "start": 126.613,
+        "end": 126.633,
+        "confidence": 0.459
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 126.713,
+        "end": 126.734,
+        "confidence": 0.969
+      },
+      {
+        "id": 44,
+        "label": "eɪ",
+        "start": 126.814,
+        "end": 126.834,
+        "confidence": 0.963
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 127.014,
+        "end": 127.054,
+        "confidence": 0.867
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 127.074,
+        "end": 127.095,
+        "confidence": 0.994
+      },
+      {
+        "id": 20,
+        "label": "ɐ",
+        "start": 127.175,
+        "end": 127.195,
+        "confidence": 0.672
+      },
+      {
+        "id": 8,
+        "label": "l",
+        "start": 127.295,
+        "end": 127.335,
+        "confidence": 0.973
+      },
+      {
+        "id": 40,
+        "label": "ɔ",
+        "start": 127.355,
+        "end": 127.375,
+        "confidence": 0.316
+      },
+      {
+        "id": 42,
+        "label": "ŋ",
+        "start": 127.476,
+        "end": 127.496,
+        "confidence": 0.985
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 127.556,
+        "end": 127.576,
+        "confidence": 0.988
+      },
+      {
+        "id": 37,
+        "label": "aɪ",
+        "start": 127.656,
+        "end": 127.676,
+        "confidence": 0.961
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 127.777,
+        "end": 127.817,
+        "confidence": 0.741
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 127.817,
+        "end": 127.837,
+        "confidence": 0.969
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 127.857,
+        "end": 127.877,
+        "confidence": 0.972
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 127.937,
+        "end": 127.977,
+        "confidence": 0.998
+      },
+      {
+        "id": 14,
+        "label": "ɛ",
+        "start": 127.977,
+        "end": 127.997,
+        "confidence": 0.962
+      },
+      {
+        "id": 65,
+        "label": "ʒ",
+        "start": 128.077,
+        "end": 128.097,
+        "confidence": 0.931
+      },
+      {
+        "id": 43,
+        "label": "ɚ",
+        "start": 128.117,
+        "end": 128.138,
+        "confidence": 0.808
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 128.198,
+        "end": 128.218,
+        "confidence": 0.997
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 128.218,
+        "end": 128.238,
+        "confidence": 0.974
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 128.278,
+        "end": 128.298,
+        "confidence": 0.996
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 128.318,
+        "end": 128.338,
+        "confidence": 0.65
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 128.338,
+        "end": 128.378,
+        "confidence": 0.539
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 128.458,
+        "end": 128.479,
+        "confidence": 0.904
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 128.499,
+        "end": 128.539,
+        "confidence": 0.612
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 128.539,
+        "end": 128.559,
+        "confidence": 0.947
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 128.579,
+        "end": 128.599,
+        "confidence": 0.982
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 128.679,
+        "end": 128.699,
+        "confidence": 0.975
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 128.719,
+        "end": 128.739,
+        "confidence": 0.989
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 128.739,
+        "end": 128.759,
+        "confidence": 0.947
+      },
+      {
+        "id": 18,
+        "label": "p",
+        "start": 128.86,
+        "end": 128.88,
+        "confidence": 0.983
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 128.92,
+        "end": 128.96,
+        "confidence": 0.572
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 128.96,
+        "end": 128.98,
+        "confidence": 0.93
+      }
+    ]
+  }
+]

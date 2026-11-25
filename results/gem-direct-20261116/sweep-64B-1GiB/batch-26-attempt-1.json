@@ -1,0 +1,1180 @@
+{
+  "kind": "physical-size-sweep-batch",
+  "batch": 26,
+  "mode": "ethernet",
+  "core": "compact",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "partial_sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e",
+  "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+  "board_script_sha256": "7e3674cb08c78fb10af6dc5176759172e1e525ffdc9b9ca07160fd338e018650",
+  "rows": [
+    {
+      "case": {
+        "length": 64,
+        "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+        "session": 2467160715
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160715,
+          "length": 64,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 64,
+          "core_cycles": 3568745,
+          "board_ns": 35826583,
+          "pattern_bytes": 0,
+          "digest": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 1426,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160715,\"length\":64,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":64,\"core_cycles\":3568745,\"board_ns\":35826583,\"pattern_bytes\":0,\"digest\":\"b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":1426,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 128,
+        "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+        "session": 2467160716
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160716,
+          "length": 128,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 128,
+          "core_cycles": 17943,
+          "board_ns": 254544,
+          "pattern_bytes": 0,
+          "digest": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 11920,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160716,\"length\":128,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":128,\"core_cycles\":17943,\"board_ns\":254544,\"pattern_bytes\":0,\"digest\":\"c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":11920,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 256,
+        "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+        "session": 2467160717
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160717,
+          "length": 256,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 256,
+          "core_cycles": 33555,
+          "board_ns": 424086,
+          "pattern_bytes": 0,
+          "digest": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 11928,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160717,\"length\":256,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":256,\"core_cycles\":33555,\"board_ns\":424086,\"pattern_bytes\":0,\"digest\":\"27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":11928,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 512,
+        "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+        "session": 2467160718
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160718,
+          "length": 512,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 512,
+          "core_cycles": 26606,
+          "board_ns": 428922,
+          "pattern_bytes": 0,
+          "digest": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 11926,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160718,\"length\":512,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":512,\"core_cycles\":26606,\"board_ns\":428922,\"pattern_bytes\":0,\"digest\":\"d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":11926,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 1024,
+        "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+        "session": 2467160719
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160719,
+          "length": 1024,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 1024,
+          "core_cycles": 26049,
+          "board_ns": 430806,
+          "pattern_bytes": 0,
+          "digest": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1,
+          "tx_frames": 11928,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160719,\"length\":1024,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":1024,\"core_cycles\":26049,\"board_ns\":430806,\"pattern_bytes\":0,\"digest\":\"84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0\"}\n{\"event\":\"gem\",\"rx_frames\":1,\"tx_frames\":11928,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 2048,
+        "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+        "session": 2467160720
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160720,
+          "length": 2048,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 2048,
+          "core_cycles": 28347,
+          "board_ns": 424080,
+          "pattern_bytes": 0,
+          "digest": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 2,
+          "tx_frames": 11928,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483664,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160720,\"length\":2048,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":2048,\"core_cycles\":28347,\"board_ns\":424080,\"pattern_bytes\":0,\"digest\":\"2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0\"}\n{\"event\":\"gem\",\"rx_frames\":2,\"tx_frames\":11928,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483664,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 4096,
+        "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+        "session": 2467160721
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160721,
+          "length": 4096,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 4096,
+          "core_cycles": 24754,
+          "board_ns": 420942,
+          "pattern_bytes": 0,
+          "digest": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 3,
+          "tx_frames": 11928,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483672,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160721,\"length\":4096,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":4096,\"core_cycles\":24754,\"board_ns\":420942,\"pattern_bytes\":0,\"digest\":\"fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876\"}\n{\"event\":\"gem\",\"rx_frames\":3,\"tx_frames\":11928,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483672,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 8192,
+        "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+        "session": 2467160722
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160722,
+          "length": 8192,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 8192,
+          "core_cycles": 21698,
+          "board_ns": 247380,
+          "pattern_bytes": 0,
+          "digest": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 6,
+          "tx_frames": 11918,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483696,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160722,\"length\":8192,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":8192,\"core_cycles\":21698,\"board_ns\":247380,\"pattern_bytes\":0,\"digest\":\"be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845\"}\n{\"event\":\"gem\",\"rx_frames\":6,\"tx_frames\":11918,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483696,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 16384,
+        "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+        "session": 2467160723
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160723,
+          "length": 16384,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 16384,
+          "core_cycles": 31884,
+          "board_ns": 423786,
+          "pattern_bytes": 0,
+          "digest": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 12,
+          "tx_frames": 11928,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483744,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160723,\"length\":16384,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":16384,\"core_cycles\":31884,\"board_ns\":423786,\"pattern_bytes\":0,\"digest\":\"21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b\"}\n{\"event\":\"gem\",\"rx_frames\":12,\"tx_frames\":11928,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483744,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 32768,
+        "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+        "session": 2467160724
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160724,
+          "length": 32768,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 32768,
+          "core_cycles": 65547,
+          "board_ns": 765990,
+          "pattern_bytes": 0,
+          "digest": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 23,
+          "tx_frames": 11938,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483832,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160724,\"length\":32768,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":32768,\"core_cycles\":65547,\"board_ns\":765990,\"pattern_bytes\":0,\"digest\":\"5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8\"}\n{\"event\":\"gem\",\"rx_frames\":23,\"tx_frames\":11938,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483832,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 65536,
+        "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+        "session": 2467160725
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160725,
+          "length": 65536,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 65536,
+          "core_cycles": 144779,
+          "board_ns": 1517064,
+          "pattern_bytes": 0,
+          "digest": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 46,
+          "tx_frames": 11970,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483760,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160725,\"length\":65536,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":65536,\"core_cycles\":144779,\"board_ns\":1517064,\"pattern_bytes\":0,\"digest\":\"4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd\"}\n{\"event\":\"gem\",\"rx_frames\":46,\"tx_frames\":11970,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483760,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 131072,
+        "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+        "session": 2467160726
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160726,
+          "length": 131072,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 131072,
+          "core_cycles": 272593,
+          "board_ns": 2850030,
+          "pattern_bytes": 0,
+          "digest": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 92,
+          "tx_frames": 12020,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 41
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483872,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160726,\"length\":131072,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":131072,\"core_cycles\":272593,\"board_ns\":2850030,\"pattern_bytes\":0,\"digest\":\"93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c\"}\n{\"event\":\"gem\",\"rx_frames\":92,\"tx_frames\":12020,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":41}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483872,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 262144,
+        "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+        "session": 2467160727
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160727,
+          "length": 262144,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 262144,
+          "core_cycles": 545147,
+          "board_ns": 5596986,
+          "pattern_bytes": 0,
+          "digest": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 183,
+          "tx_frames": 12128,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483832,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160727,\"length\":262144,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":262144,\"core_cycles\":545147,\"board_ns\":5596986,\"pattern_bytes\":0,\"digest\":\"0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab\"}\n{\"event\":\"gem\",\"rx_frames\":183,\"tx_frames\":12128,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483832,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 524288,
+        "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+        "session": 2467160728
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160728,
+          "length": 524288,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 524288,
+          "core_cycles": 1099699,
+          "board_ns": 11130114,
+          "pattern_bytes": 0,
+          "digest": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 365,
+          "tx_frames": 12342,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 41
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483752,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160728,\"length\":524288,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":524288,\"core_cycles\":1099699,\"board_ns\":11130114,\"pattern_bytes\":0,\"digest\":\"dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5\"}\n{\"event\":\"gem\",\"rx_frames\":365,\"tx_frames\":12342,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":41}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483752,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 1048576,
+        "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+        "session": 2467160729
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160729,
+          "length": 1048576,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 1048576,
+          "core_cycles": 2104821,
+          "board_ns": 21185167,
+          "pattern_bytes": 0,
+          "digest": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 729,
+          "tx_frames": 12734,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483848,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160729,\"length\":1048576,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":1048576,\"core_cycles\":2104821,\"board_ns\":21185167,\"pattern_bytes\":0,\"digest\":\"fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d\"}\n{\"event\":\"gem\",\"rx_frames\":729,\"tx_frames\":12734,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483848,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 2097152,
+        "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+        "session": 2467160730
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160730,
+          "length": 2097152,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 2097152,
+          "core_cycles": 4135859,
+          "board_ns": 41480220,
+          "pattern_bytes": 0,
+          "digest": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 1457,
+          "tx_frames": 13518,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483784,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160730,\"length\":2097152,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":2097152,\"core_cycles\":4135859,\"board_ns\":41480220,\"pattern_bytes\":0,\"digest\":\"8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b\"}\n{\"event\":\"gem\",\"rx_frames\":1457,\"tx_frames\":13518,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483784,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 4194304,
+        "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+        "session": 2467160731
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160731,
+          "length": 4194304,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 4194304,
+          "core_cycles": 8017318,
+          "board_ns": 80309839,
+          "pattern_bytes": 0,
+          "digest": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 2913,
+          "tx_frames": 15024,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483656,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160731,\"length\":4194304,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":4194304,\"core_cycles\":8017318,\"board_ns\":80309839,\"pattern_bytes\":0,\"digest\":\"729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279\"}\n{\"event\":\"gem\",\"rx_frames\":2913,\"tx_frames\":15024,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483656,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 8388608,
+        "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+        "session": 2467160732
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160732,
+          "length": 8388608,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 8388608,
+          "core_cycles": 16401097,
+          "board_ns": 164053585,
+          "pattern_bytes": 0,
+          "digest": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 5826,
+          "tx_frames": 18276,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483664,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160732,\"length\":8388608,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":8388608,\"core_cycles\":16401097,\"board_ns\":164053585,\"pattern_bytes\":0,\"digest\":\"50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31\"}\n{\"event\":\"gem\",\"rx_frames\":5826,\"tx_frames\":18276,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483664,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 16777216,
+        "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+        "session": 2467160733
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160733,
+          "length": 16777216,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 16777216,
+          "core_cycles": 32792415,
+          "board_ns": 328006006,
+          "pattern_bytes": 0,
+          "digest": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 11651,
+          "tx_frames": 24630,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483672,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160733,\"length\":16777216,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":16777216,\"core_cycles\":32792415,\"board_ns\":328006006,\"pattern_bytes\":0,\"digest\":\"eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f\"}\n{\"event\":\"gem\",\"rx_frames\":11651,\"tx_frames\":24630,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483672,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 33554432,
+        "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+        "session": 2467160734
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160734,
+          "length": 33554432,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 33554432,
+          "core_cycles": 65343862,
+          "board_ns": 653599069,
+          "pattern_bytes": 0,
+          "digest": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 23302,
+          "tx_frames": 37256,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483696,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160734,\"length\":33554432,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":33554432,\"core_cycles\":65343862,\"board_ns\":653599069,\"pattern_bytes\":0,\"digest\":\"806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5\"}\n{\"event\":\"gem\",\"rx_frames\":23302,\"tx_frames\":37256,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483696,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 67108864,
+        "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+        "session": 2467160735
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160735,
+          "length": 67108864,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 67108864,
+          "core_cycles": 131545073,
+          "board_ns": 1315605085,
+          "pattern_bytes": 0,
+          "digest": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 46604,
+          "tx_frames": 62934,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 41
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483744,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160735,\"length\":67108864,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":67108864,\"core_cycles\":131545073,\"board_ns\":1315605085,\"pattern_bytes\":0,\"digest\":\"a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43\"}\n{\"event\":\"gem\",\"rx_frames\":46604,\"tx_frames\":62934,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":41}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483744,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 134217728,
+        "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+        "session": 2467160736
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160736,
+          "length": 134217728,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 134217728,
+          "core_cycles": 263702104,
+          "board_ns": 2637180902,
+          "pattern_bytes": 0,
+          "digest": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 93207,
+          "tx_frames": 114187,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483832,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160736,\"length\":134217728,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":134217728,\"core_cycles\":263702104,\"board_ns\":2637180902,\"pattern_bytes\":0,\"digest\":\"14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76\"}\n{\"event\":\"gem\",\"rx_frames\":93207,\"tx_frames\":114187,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483832,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 268435456,
+        "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+        "session": 2467160737
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160737,
+          "length": 268435456,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 268435456,
+          "core_cycles": 526327538,
+          "board_ns": 5263291132,
+          "pattern_bytes": 0,
+          "digest": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 186414,
+          "tx_frames": 216004,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 0,
+          "rsr": 2,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483760,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160737,\"length\":268435456,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":268435456,\"core_cycles\":526327538,\"board_ns\":5263291132,\"pattern_bytes\":0,\"digest\":\"0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c\"}\n{\"event\":\"gem\",\"rx_frames\":186414,\"tx_frames\":216004,\"rx_fcs_errors\":0,\"rx_overruns\":0,\"rsr\":2,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483760,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 536870912,
+        "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+        "session": 2467160738
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160738,
+          "length": 536870912,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 536870912,
+          "core_cycles": 1039964667,
+          "board_ns": 10399746386,
+          "pattern_bytes": 0,
+          "digest": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 372850,
+          "tx_frames": 415124,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 2,
+          "rsr": 6,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483792,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160738,\"length\":536870912,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":536870912,\"core_cycles\":1039964667,\"board_ns\":10399746386,\"pattern_bytes\":0,\"digest\":\"c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77\"}\n{\"event\":\"gem\",\"rx_frames\":372850,\"tx_frames\":415124,\"rx_fcs_errors\":0,\"rx_overruns\":2,\"rsr\":6,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483792,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    },
+    {
+      "case": {
+        "length": 1073741824,
+        "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+        "session": 2467160739
+      },
+      "events": [
+        {
+          "event": "ready",
+          "mode": "ethernet",
+          "session": 2467160739,
+          "length": 1073741824,
+          "algorithm_id": 1
+        },
+        {
+          "event": "result",
+          "ok": true,
+          "status": 18,
+          "error": 0,
+          "ingress_status": 0,
+          "accepted": 1073741824,
+          "core_cycles": 2091469272,
+          "board_ns": 20914728346,
+          "pattern_bytes": 0,
+          "digest": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13"
+        },
+        {
+          "event": "gem",
+          "rx_frames": 745699,
+          "tx_frames": 822866,
+          "rx_fcs_errors": 0,
+          "rx_overruns": 4,
+          "rsr": 6,
+          "tsr": 33
+        },
+        {
+          "event": "dma_addresses",
+          "rx_pointer": 2147483672,
+          "tx_pointer": 2147484160,
+          "dma_config": 2098960,
+          "fpga_ram_base": 2147483648
+        }
+      ],
+      "stdout": "{\"event\":\"ready\",\"mode\":\"ethernet\",\"session\":2467160739,\"length\":1073741824,\"algorithm_id\":1}\n{\"event\":\"result\",\"ok\":true,\"status\":18,\"error\":0,\"ingress_status\":0,\"accepted\":1073741824,\"core_cycles\":2091469272,\"board_ns\":20914728346,\"pattern_bytes\":0,\"digest\":\"160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13\"}\n{\"event\":\"gem\",\"rx_frames\":745699,\"tx_frames\":822866,\"rx_fcs_errors\":0,\"rx_overruns\":4,\"rsr\":6,\"tsr\":33}\n{\"event\":\"dma_addresses\",\"rx_pointer\":2147483672,\"tx_pointer\":2147484160,\"dma_config\":2098960,\"fpga_ram_base\":2147483648}\n",
+      "stderr": ""
+    }
+  ],
+  "state": "passed",
+  "partial_load_ns": 38038500,
+  "recovery": {
+    "digest": "8137a64450eb808d22b15e9b161fb8d9d212c98377efe046282f6b7685d1b37e",
+    "core_cycles": 18699,
+    "status": "ok",
+    "backend": "fpga-dma",
+    "transport": "local-device",
+    "algorithm": "sha3",
+    "algorithm_id": 1,
+    "length": 26,
+    "dma_transfers": 1,
+    "buffer_size": 1048576,
+    "manager_load_ns": 0,
+    "local_hash_ns": 396378,
+    "reference_hashing_in_timed_region": true,
+    "verified": true
+  }
+}

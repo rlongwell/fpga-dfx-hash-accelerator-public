@@ -1,0 +1,7 @@
+{
+  "encoded_AAC_identical": true,
+  "old_audio": "SHA256=9faf09700538cf264de7b220cf38df929617b374c9a04f047e57dfe88ad63e8f",
+  "new_audio": "SHA256=9faf09700538cf264de7b220cf38df929617b374c9a04f047e57dfe88ad63e8f",
+  "prior_reviewed_export_sha256": "def9415b692deebf8e3ed59e52c3833687d0e4e810bbd65da28c1d846b8783a0",
+  "note": "Picture-only cleanup preserves the exact encoded audio, so final-mix ASR, phoneme and loudness checks still apply."
+}

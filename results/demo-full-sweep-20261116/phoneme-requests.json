@@ -1,0 +1,14 @@
+[
+  {
+    "label": "final-opening-shah",
+    "path": "docs/media/sha3-comparison-full-sweep.mp4",
+    "start": 0,
+    "duration": 7
+  },
+  {
+    "label": "final-BRAM-shah",
+    "path": "docs/media/sha3-comparison-full-sweep.mp4",
+    "start": 98,
+    "duration": 7
+  }
+]

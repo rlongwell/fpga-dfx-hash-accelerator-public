@@ -1,0 +1,4 @@
+{
+  "build/vivado/dfx/loaded_tcl/system.tcl": "scripts/vivado/system.tcl",
+  "build/vivado/dfx/loaded_tcl/dfx.tcl": "scripts/vivado/dfx.tcl"
+}

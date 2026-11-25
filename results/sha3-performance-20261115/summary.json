@@ -1,0 +1,26 @@
+{
+  "current": {
+    "dma_MB_s": 76.78511151965921,
+    "local_api_MB_s": 65.9687065267368,
+    "rp_luts": 5016,
+    "rp_ffs": 1786,
+    "dma_MB_s_per_1000_LUTs": 15.30803658685391,
+    "physical_report": "current-physical.json"
+  },
+  "oxide_elastic": {
+    "dma_MB_s": 99.13871623533144,
+    "local_api_MB_s": 81.80896829301341,
+    "rp_luts": 5856,
+    "rp_ffs": 4222,
+    "dma_MB_s_per_1000_LUTs": 16.92942558663447,
+    "physical_report": "oxide_elastic-physical.json"
+  },
+  "compact": {
+    "dma_MB_s": 233.65968668696473,
+    "local_api_MB_s": 155.9062955474908,
+    "rp_luts": 4531,
+    "rp_ffs": 1774,
+    "dma_MB_s_per_1000_LUTs": 51.56912087551638,
+    "physical_report": "compact-postboot-physical.json"
+  }
+}

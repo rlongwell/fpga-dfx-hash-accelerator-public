@@ -1,0 +1,20 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# rmdir /run/zybo-hash-net.lock && /opt/zybo/hash/start.sh start; printf '\nDEMO
+_CMD_d7268b2bea1a2365_%s\n' "$?"
+Hash service started (PID 378); log: /var/log/zybo-hash.log
+
+DEMO_CMD_d7268b2bea1a2365_0
+# /opt/zybo/hash/start.sh status; sha256sum /boot/profiles/hash/system.bit /boot
+/profile.env; printf '\nDEMO_CMD_3304dfe8ef121275_%s\n' "$?"
+Hash service running (PID 378)
+ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24  /boot/profiles/hash/system.bit
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+
+DEMO_CMD_3304dfe8ef121275_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

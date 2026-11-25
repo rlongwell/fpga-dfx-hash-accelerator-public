@@ -1,0 +1,27 @@
+{
+  "abi": 65536,
+  "part": "xc7z020clg400-1",
+  "vivado": "2024.2",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "images": {
+    "sha3": {
+      "algorithm_id": 1,
+      "filename": "fpga-dfx-hash/net-6102e03f31c1/compact-bbe4949ff65a.bin",
+      "source": "build/gem-direct/dfx/compact/full_pblock_hash_partial.bit.bin",
+      "sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e"
+    },
+    "sha256": {
+      "algorithm_id": 2,
+      "filename": "fpga-dfx-hash/net-6102e03f31c1/sha256-605de04f5778.bin",
+      "source": "build/gem-direct/dfx/sha256/full_pblock_hash_partial.bit.bin",
+      "sha256": "605de04f577826ebeb5aeba158ab52fc04943a2d164ae5b50dde5e7cccceb7ef"
+    },
+    "blake2s": {
+      "algorithm_id": 3,
+      "filename": "fpga-dfx-hash/net-6102e03f31c1/blake2s-df585b7bdc84.bin",
+      "source": "build/gem-direct/dfx/blake2s/full_pblock_hash_partial.bit.bin",
+      "sha256": "df585b7bdc84df6422cc756e890754d6de5b33037430bb65d845f542562a7256"
+    }
+  },
+  "initial_full_bit": "build/gem-direct/dfx/compact/full.bit"
+}

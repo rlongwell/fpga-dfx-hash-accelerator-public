@@ -1,0 +1,267 @@
+{
+  "scope": "Standalone OOC comparisons; not whole-system DFX routing",
+  "interpretation": "Post-placement region dimensions are Vivado estimates, not congested-device percentages. Global routing utilization is separate from local congestion and final route correctness.",
+  "implementations": [
+    {
+      "implementation": "baseline, double_buffer=false",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "2x2",
+          "short": "4x4"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 2.47546,
+      "final_global_horizontal_routing_utilization_percent": 3.60049,
+      "log": "build/vivado/baseline_db_false/vivado.log",
+      "retained_log": "results/congestion_logs/baseline_db_false.log",
+      "log_sha256": "d444233bbd27afcaa62966cf3eef709944955cfae2974a2a7f9cde0bdd084024",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "baseline, double_buffer=true",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "4x4"
+        },
+        "East": {
+          "global": "4x4",
+          "short": "8x8"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 3.37631,
+      "final_global_horizontal_routing_utilization_percent": 4.66312,
+      "log": "build/vivado/baseline_db_true/vivado.log",
+      "retained_log": "results/congestion_logs/baseline_db_true.log",
+      "log_sha256": "10d1eee3e67daf89d02d9556c14110c39ded64549f04c693cc4d3c033f5a3ad9",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "oxide_no_digest, double_buffer=false",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "8x8",
+          "short": "4x4"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 2.23263,
+      "final_global_horizontal_routing_utilization_percent": 3.60953,
+      "log": "build/vivado/oxide_no_digest_db_false/vivado.log",
+      "retained_log": "results/congestion_logs/oxide_no_digest_db_false.log",
+      "log_sha256": "a49f78eae541cf89d46322e628977d529bf117317bc061f26cac9eb7b7ce9c2d",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "oxide_no_digest, double_buffer=true",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "4x4"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "4x4"
+        },
+        "East": {
+          "global": "8x8",
+          "short": "8x8"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "2x2"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 3.40173,
+      "final_global_horizontal_routing_utilization_percent": 4.61528,
+      "log": "build/vivado/oxide_no_digest_db_true/vivado.log",
+      "retained_log": "results/congestion_logs/oxide_no_digest_db_true.log",
+      "log_sha256": "683717774e11c096ff58ec0aa924c11981a9b6bc506add2a66958b9fa82f1afc",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "sha3",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "4x4",
+          "short": "8x8"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 3.07684,
+      "final_global_horizontal_routing_utilization_percent": 4.37906,
+      "log": "build/engines/sha3/vivado.log",
+      "retained_log": "results/congestion_logs/sha3.log",
+      "log_sha256": "1904d643c6e12333b283b33695bd822204bbf26ce77f76780914545450132119",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "sha256",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 0.502382,
+      "final_global_horizontal_routing_utilization_percent": 0.626437,
+      "log": "build/engines/sha256/vivado.log",
+      "retained_log": "results/congestion_logs/sha256.log",
+      "log_sha256": "d92620eda11db0d4dc40a4b7ac657e7cd8c84537736a695a59890e3657dda0b8",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "blake2s",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "1x1",
+          "short": "4x4"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 2.03982,
+      "final_global_horizontal_routing_utilization_percent": 2.59745,
+      "log": "build/engines/blake2s/vivado.log",
+      "retained_log": "results/congestion_logs/blake2s.log",
+      "log_sha256": "ece44d35b1301d8c49cbdca4ba1080e4693f585a3f2adef6e9f648eeb47ebd42",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "sha3_wide",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "2x2",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "8x8",
+          "short": "16x16"
+        },
+        "East": {
+          "global": "8x8",
+          "short": "16x16"
+        },
+        "West": {
+          "global": "4x4",
+          "short": "8x8"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 6.07528,
+      "final_global_horizontal_routing_utilization_percent": 6.65289,
+      "log": "build/engines/sha3_wide/vivado.log",
+      "retained_log": "results/congestion_logs/sha3_wide.log",
+      "log_sha256": "b545dc7a9099458894b09b94578b3d54c86c3237068d4eb205ea51d1d06e2e7e",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    },
+    {
+      "implementation": "sha3_serial",
+      "post_placement_region_sizes": {
+        "North": {
+          "global": "1x1",
+          "short": "2x2"
+        },
+        "South": {
+          "global": "1x1",
+          "short": "1x1"
+        },
+        "East": {
+          "global": "1x1",
+          "short": "4x4"
+        },
+        "West": {
+          "global": "1x1",
+          "short": "1x1"
+        }
+      },
+      "final_global_vertical_routing_utilization_percent": 3.30077,
+      "final_global_horizontal_routing_utilization_percent": 4.35759,
+      "log": "build/engines/sha3_serial/resumed_vivado.log",
+      "retained_log": "results/congestion_logs/sha3_serial.log",
+      "log_sha256": "8f3cd274d4d23431adb7f840ae288b67682b8310b29a8691900674e7ea86a01b",
+      "route_completed_successfully": true,
+      "failed_nets": 0,
+      "node_overlaps": 0
+    }
+  ]
+}

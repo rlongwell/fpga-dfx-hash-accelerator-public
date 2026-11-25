@@ -1,0 +1,21 @@
+{
+  "autocorrelation_peaks_bpm": [
+    [
+      84.72079918032787,
+      0.9112945199012756
+    ],
+    [
+      169.44159836065575,
+      0.8206729292869568
+    ],
+    [
+      113.58173076923077,
+      0.7617151737213135
+    ],
+    [
+      67.99958881578948,
+      0.7523622512817383
+    ]
+  ],
+  "note": "Strong onset autocorrelation at approximately 85 BPM and its 170 BPM double-time grid; 113 BPM is another metrical alias. Repeating arrangement phrases are about 11.294 seconds (8 bars at 170 BPM)."
+}

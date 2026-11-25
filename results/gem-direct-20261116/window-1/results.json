@@ -1,0 +1,74 @@
+{
+  "kind": "physical-zybo-gem-and-replay",
+  "state": "passed",
+  "rows": [
+    {
+      "label": "ethernet-smoke",
+      "mode": "ethernet",
+      "core": "compact",
+      "length": 1048593,
+      "source": "pattern",
+      "verified": true,
+      "pattern_bytes": 131072,
+      "expected": "95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199",
+      "seconds": 0.220713756,
+      "MB_per_second": 4.75091819832018,
+      "configuration": {
+        "event": "configuration",
+        "core": "compact",
+        "mode": "ethernet",
+        "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+        "partial_sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e",
+        "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+        "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470",
+        "partial_load_ns": 37736466,
+        "intermediate_algorithm_id": 2
+      },
+      "board": {
+        "event": "result",
+        "ok": true,
+        "status": 18,
+        "error": 0,
+        "ingress_status": 0,
+        "accepted": 1048593,
+        "core_cycles": 26073892,
+        "board_ns": 260763051,
+        "pattern_bytes": 0,
+        "digest": "95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199"
+      },
+      "client": {
+        "status": "ok",
+        "mode": "gem-to-pl",
+        "session": 2083854328,
+        "length": 1048593,
+        "transfer_ns": 220713756,
+        "MB_per_second": 4.750918198,
+        "packets_sent": 730,
+        "acks": 8733,
+        "retries": 1,
+        "digest": "95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199",
+        "window_frames": 1
+      },
+      "stopped_control_proof": null
+    }
+  ],
+  "pattern_bytes": 131072,
+  "sender_window": 1,
+  "started_utc": "2026-11-16T21:56:54.775881+00:00",
+  "source_sha256": {
+    "benchmarks/sha3_profile/compare_inputs.py": "9cd591a712afcdb023c644c3c60d3246180be369e588afc982ec9d383ff98693",
+    "software/net/gem_send.c": "6ed0efe9ec11e181edad4ee1897d709a75a4162d2e5a8c81e2de8e41ea53a02b",
+    "build/gem-direct/gem_send": "06d27e8d50ccaa76ba22e3a5ac846f39519962bf790f4d9c6bd145f6507f3328"
+  },
+  "pattern_sha256": "3c04e3fee3b0875b2c8a1896a1161255c86d5734abeb73f453b890d976aa290a",
+  "timing": {
+    "ethernet": "PC first data send through FPGA digest reply, no software hash in interval",
+    "replay": "FPGA START through digest, core_cycles at 100 MHz; pattern loading excluded"
+  },
+  "network": {
+    "interface": "enp3s0",
+    "host_mac": "00:d8:61:0a:97:21",
+    "board_mac": "de:f6:cd:7b:38:e7"
+  },
+  "finished_utc": "2026-11-16T21:57:15.267509+00:00"
+}

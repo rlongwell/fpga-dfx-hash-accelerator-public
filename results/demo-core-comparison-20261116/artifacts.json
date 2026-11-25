@@ -1,0 +1,185 @@
+{
+  "base_commit": "808ddce025af8c09605caef61db387fc364b1a51",
+  "files": [
+    {
+      "path": "demo/board_agent.py",
+      "bytes": 10886,
+      "sha256": "3d45169ded18b4ef70278743ce41dc28e202c5b8d20fa052ce51f4a2a2f675ba"
+    },
+    {
+      "path": "demo/core_variants.json",
+      "bytes": 917,
+      "sha256": "f25afa4d8232c768c3572580bb70ba36e6e6811fdd20033dedd214448417d2a5"
+    },
+    {
+      "path": "demo/export_architecture_frames.js",
+      "bytes": 2647,
+      "sha256": "a33f5eb1bae4a9302d5bf360c059a48b3e92b678d894af606d031a9e7749915f"
+    },
+    {
+      "path": "demo/render_video.py",
+      "bytes": 4281,
+      "sha256": "c01669af7295040574e46b06d43bb9361760409a4b53db19121966eaf4388ced"
+    },
+    {
+      "path": "demo/render_video_architecture.py",
+      "bytes": 6783,
+      "sha256": "5ed79e4a12f2060ddb23d6aaf0726540673dd0891be14545493a53fc79e30e65"
+    },
+    {
+      "path": "demo/render_video_charcoal.py",
+      "bytes": 5612,
+      "sha256": "fc720e82a054ed52a6e38a2fd674a3ab4c70a5c975c01dfdc5aaef5f0751fcc4"
+    },
+    {
+      "path": "demo/render_video_v3.py",
+      "bytes": 10893,
+      "sha256": "258eb4157675a24af942c29e33e1068c5b3d0170976eb722d9c6ac5087e8731d"
+    },
+    {
+      "path": "demo/server.py",
+      "bytes": 20691,
+      "sha256": "6b3d9b6770a7023768f08d4aad1b57335658441b5f08418671d492e1daa5d3fd"
+    },
+    {
+      "path": "demo/tests/test_comparison.py",
+      "bytes": 6339,
+      "sha256": "5b2cf02b59401c3a01420dba3ae4491f94cac0bee646a00739b89c87024a8850"
+    },
+    {
+      "path": "demo/tests/test_demo.py",
+      "bytes": 7484,
+      "sha256": "85abc030847678e10b57e45d6cc89a6688916e81a63152400f7c2478cbe0064c"
+    },
+    {
+      "path": "demo/video-architecture-edit.json",
+      "bytes": 14023,
+      "sha256": "b7829b5a0cebc94205c013645720ceecf0fbc31bcdd46e98e2932182ebc779de"
+    },
+    {
+      "path": "demo/web/app.js",
+      "bytes": 18399,
+      "sha256": "0f94a929ccbc0a3e0de30295fff6cb39a39f6f94fc0bec4962e29a00c14103ef"
+    },
+    {
+      "path": "demo/web/comparison.css",
+      "bytes": 2134,
+      "sha256": "63667b0df81ed4bc9c063cf87807a4f0475dd8362f93ba7e7090c29be3427b70"
+    },
+    {
+      "path": "demo/web/comparison.js",
+      "bytes": 15411,
+      "sha256": "b2a47414450e2ba0bc6e17d8c0fd5a4d65ac972d4793309a34206ae5af4be9d6"
+    },
+    {
+      "path": "demo/web/guided-demo.js",
+      "bytes": 7652,
+      "sha256": "85e7a000ad307da5eb88a1e51b1101bab3bfd29ba797b025230fdee24defeb83"
+    },
+    {
+      "path": "demo/web/index.html",
+      "bytes": 16065,
+      "sha256": "7c0b343ba0568f1dd403c64a1a37b04c3b255cb52ac11ffeececbce14dce6b34"
+    },
+    {
+      "path": "demo/web/story-architecture.json",
+      "bytes": 5545,
+      "sha256": "3a22d20c3c481f3d5b26b737c6de8db372175842c7411167f811d8e120e2f395"
+    },
+    {
+      "path": "demo/web/style.css",
+      "bytes": 31685,
+      "sha256": "561cc3b04f5cd953982e4bf25c556fe7b879500e900d985ed2694f92e6d2390f"
+    },
+    {
+      "path": "docs/architecture-comparison.md",
+      "bytes": 2824,
+      "sha256": "d7577cbb58ff5a11633630b2bcfe712e710056ffbe22d687cbfc22563f07326c"
+    },
+    {
+      "path": "docs/assets/sha3-architecture-comparison.svg",
+      "bytes": 6287,
+      "sha256": "935d2e8bc8c5753fb217f127dbd0c076dfbb2269566962087108b5aae8c649bf"
+    },
+    {
+      "path": "docs/demo-architecture-video.md",
+      "bytes": 5167,
+      "sha256": "39049a6780d8b2e981b0837b22c096c35f359e9d02bfe35e3149b15465bd99e5"
+    },
+    {
+      "path": "docs/media/sha3-comparison-architecture.mp4",
+      "bytes": 14655428,
+      "sha256": "3f045c2b802f127929510efedadbf9ec75f49f199ef626c27b7607634d2ddba2"
+    },
+    {
+      "path": "docs/media/sha3-core-comparison-live.webm",
+      "bytes": 1319917,
+      "sha256": "6f2268c94b5e044089c055122cd89ccfb87c0c9e99b50a7f38c74052b013bcda"
+    },
+    {
+      "path": "docs/media/voiceover-architecture-take-1.mp3",
+      "bytes": 2173188,
+      "sha256": "a1dc7ba1383195dc80658d71c6e278649354ce534d1d1042c45b66f891a18128"
+    },
+    {
+      "path": "docs/media/voiceover-architecture-take-2.mp3",
+      "bytes": 2110494,
+      "sha256": "a078bd05dd80d0a4eb1489bf9bc31e95d601381482e0b26afe8cc2277ed2e8e8"
+    },
+    {
+      "path": "docs/media/voiceover-charcoal-take-2.mp3",
+      "bytes": 3056336,
+      "sha256": "b9b281caa7b8fdd87bc3d229f0610d2aad20a5596570454c18744be9f84361f7"
+    },
+    {
+      "path": "docs/media/voiceover-small-messages-take-1.mp3",
+      "bytes": 473348,
+      "sha256": "708e2f1b54e22be425e39830214987b75fc055283ac5e20d402ccc826b2ddf54"
+    },
+    {
+      "path": "docs/voiceover-architecture-elevenlabs.txt",
+      "bytes": 3964,
+      "sha256": "fc43c27cd8edac3cca169107e8f3f2174e8297cc6c191af7b36ec3d43419ff48"
+    },
+    {
+      "path": "docs/voiceover-architecture-updates-elevenlabs.txt",
+      "bytes": 2177,
+      "sha256": "73ed082f468c0b71df17ac97665a01934d0da503cfbcd48ad9b0b6c2301bfdff"
+    },
+    {
+      "path": "docs/voiceover-architecture.txt",
+      "bytes": 3896,
+      "sha256": "b6d9be1d0fc7572945064f3e98c39e814d4c1f94c8987c20a169891cdb3aceb4"
+    },
+    {
+      "path": "reference/oxide/hdl/ip/vhd/sha3/sha3_256.vhd",
+      "bytes": 13826,
+      "sha256": "14b59bbe2701626197ae1a5053a769a60d9dad4b484b1a520c7cfbfc5d35615b"
+    },
+    {
+      "path": "results/demo-core-comparison-20261116/cursor-log.json",
+      "bytes": 2719,
+      "sha256": "482cd6ec2ef71bc0ccae716e5df41c95069650b442162751aba5970a9f675e97"
+    },
+    {
+      "path": "results/demo-core-comparison-20261116/recorded-job.json",
+      "bytes": 29727,
+      "sha256": "54555cdf593a5704f23ad86b4e0422e8303df072835429fe6f56f603a4c77c12"
+    },
+    {
+      "path": "rtl/sha3/experiments/hash_sha3_compact.sv",
+      "bytes": 9113,
+      "sha256": "d912de412ba9d24f4bbbe0744b530e2df45143edb24efedf9045392b4b8198b9"
+    },
+    {
+      "path": "rtl/sha3/oxide_compare/axis_bytes_elastic.sv",
+      "bytes": 2351,
+      "sha256": "c978771b5c97b3e82af669ef749493c0176a3524f1062272a91d3fc1b672625c"
+    }
+  ],
+  "external_music": {
+    "path": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94"
+  },
+  "paths_relative_to": "repository root"
+}

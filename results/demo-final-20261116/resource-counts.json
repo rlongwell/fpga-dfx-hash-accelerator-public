@@ -1,0 +1,19 @@
+{
+  "source": {
+    "path": "results/gem-direct-20261116/implementation-bram64/summary.json",
+    "sha256": "80b1edfc5550f3cedfac7a5176cce27917882d10297bfe5188173fb5110cce20"
+  },
+  "scope": "Reconfigurable hash partition; shared replay/DMA memory excluded.",
+  "counts": {
+    "oxide": {
+      "LUT": 5854,
+      "FF": 4222,
+      "BRAMs": 0
+    },
+    "compact": {
+      "LUT": 4572,
+      "FF": 1774,
+      "BRAMs": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{"event": "case", "batch": 18, "length": 64, "cycles": 3693812}
+{"event": "case", "batch": 18, "length": 128, "cycles": 27570}
+{"event": "case", "batch": 18, "length": 256, "cycles": 12940}
+{"event": "case", "batch": 18, "length": 512, "cycles": 20076}
+{"event": "case", "batch": 18, "length": 1024, "cycles": 19525}
+{"event": "case", "batch": 18, "length": 2048, "cycles": 15962}
+{"event": "case", "batch": 18, "length": 4096, "cycles": 42812}
+{"event": "case", "batch": 18, "length": 8192, "cycles": 42381}
+{"event": "case", "batch": 18, "length": 16384, "cycles": 48681}
+{"event": "case", "batch": 18, "length": 32768, "cycles": 72872}
+{"event": "case", "batch": 18, "length": 65536, "cycles": 166963}
+{"event": "case", "batch": 18, "length": 131072, "cycles": 280286}
+{"event": "case", "batch": 18, "length": 262144, "cycles": 655634}
+{"event": "case", "batch": 18, "length": 524288, "cycles": 1096191}
+{"event": "case", "batch": 18, "length": 1048576, "cycles": 2117166}
+{"event": "case", "batch": 18, "length": 2097152, "cycles": 4633989}
+{"event": "case", "batch": 18, "length": 4194304, "cycles": 8126988}
+{"event": "case", "batch": 18, "length": 8388608, "cycles": 16417182}
+{"event": "case", "batch": 18, "length": 16777216, "cycles": 32250664}
+{"event": "case", "batch": 18, "length": 33554432, "cycles": 63647696}
+{"event": "case", "batch": 18, "length": 67108864, "cycles": 128809470}
+{"event": "case", "batch": 18, "length": 134217728, "cycles": 257321128}
+{"event": "case", "batch": 18, "length": 268435456, "cycles": 521948170}
+{"event": "case", "batch": 18, "length": 536870912, "cycles": 1044242071}
+{"event": "case", "batch": 18, "length": 1073741824, "cycles": 2088885123}
+Hash service started (PID 6390); log: /var/log/zybo-hash.log

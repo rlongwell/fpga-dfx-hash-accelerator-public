@@ -1,0 +1,347 @@
+{
+  "generated_utc": "2026-11-15T20:44:25.876372+00:00",
+  "scope": "Out-of-context routed common-interface engines, including stream adapter; no PS, DMA, DFX pblock or Ethernet",
+  "methodology": "Vivado 2024.2, xc7z020clg400-1, 2 ns IO, BUFGCTRL_X0Y0; synth rebuilt, opt/place/phys_opt/route defaults at 100 MHz. Rows explicitly marked clock reanalysis preserve the physical route and only change clock constraints.",
+  "caveats": [
+    "Core rates combine measured simulation cycles with a timing-closed constrained clock; they are predictions, not hardware measurements.",
+    "Register-slack clock estimates are not frequency-sweep or hardware measurements.",
+    "OOC ports have no physical partition-pin locations; register-to-register timing is the relevant internal metric, while real system timing requires the DFX top-level route.",
+    "Oxide baseline has a byte input interface and no common-interface adapter; compare those boundary differences explicitly.",
+    "Partial-reconfiguration timing, memory bandwidth and Ethernet throughput remain unmeasured."
+  ],
+  "engines": [
+    {
+      "engine": "blake2s",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 4127,
+        "ff": 1665,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.489,
+        "hold_whs_ns": 0.12,
+        "register_setup_wns_ns": 1.356,
+        "register_data_path_delay_ns": 8.33,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 115.68718186024988
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 2506754,
+        "stressed_cycles": 2677399
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 41.83003198558773,
+      "predicted_core_MB_per_s_per_LUT": 0.010135699536124965,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/blake2s.sv": "4944c47e4f542e97f6631ecb6e244212ffba9c2e721ec710effd27fc3641a3ab",
+        "rtl/blake2s/hash_blake2s.sv": "56abd544e2395405c6add2ab27889f8744f60fae6dc58c3043b6ceed527801f0"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "blake2s_pre_prefetch",
+      "historical": true,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 3005,
+        "ff": 1513,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.085,
+        "hold_whs_ns": 0.138,
+        "register_setup_wns_ns": 0.085,
+        "register_data_path_delay_ns": 9.863,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 100.85728693898135
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 2506754,
+        "stressed_cycles": 2677399
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 41.83003198558773,
+      "predicted_core_MB_per_s_per_LUT": 0.013920143755603237,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/blake2s.sv": "4944c47e4f542e97f6631ecb6e244212ffba9c2e721ec710effd27fc3641a3ab",
+        "rtl/blake2s/hash_blake2s.sv": "b9f801deef8d5a6fb54819eb1352688ebd3820456e92dff4cfdc9a8d632a713e"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha256",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 1741,
+        "ff": 1249,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.329,
+        "hold_whs_ns": 0.058,
+        "register_setup_wns_ns": 0.329,
+        "register_data_path_delay_ns": 9.737,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 103.40192327577293
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 2244733,
+        "stressed_cycles": 2415378
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 46.71272708157273,
+      "predicted_core_MB_per_s_per_LUT": 0.026830974774022246,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha256.sv": "069f1d1547ad4285546770ffa55aac7865bb84736b836777e3f17dabe5ff02f4",
+        "rtl/sha256/hash_sha256.sv": "ae179c727d5d83672eea95914e551cb28de2d2e608c78d5b002d9037f72d5d9e"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha256_pre_commit",
+      "historical": true,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 1725,
+        "ff": 1255,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": -0.567,
+        "hold_whs_ns": 0.042,
+        "register_setup_wns_ns": -0.567,
+        "register_data_path_delay_ns": 10.508,
+        "timing_met": false,
+        "register_slack_clock_estimate_mhz": 94.63423866754992
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 2228348,
+        "stressed_cycles": 2398993
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": null,
+      "predicted_core_MB_per_s_per_LUT": null,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha256.sv": "069f1d1547ad4285546770ffa55aac7865bb84736b836777e3f17dabe5ff02f4",
+        "rtl/sha256/hash_sha256.sv": "62695145dba1bcad330dbb3679dfeb8ab6d602856196910dd9733059f1567821"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha3",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 4981,
+        "ff": 1786,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.732,
+        "hold_whs_ns": 0.104,
+        "register_setup_wns_ns": 0.837,
+        "register_data_path_delay_ns": 9.052,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 109.13456291607552
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 1357004,
+        "stressed_cycles": 1522006
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 77.27140082122087,
+      "predicted_core_MB_per_s_per_LUT": 0.015513230439915853,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha3.sv": "63ad3ffbaa203adccce26241d03e77a35a7a19aaefb94a1337edf951cfc5cc67",
+        "rtl/sha3/hash_sha3.sv": "22f9cb990c943cd4e798aec3c38c7f454d9c7d569c053669010a9d7116f6313c"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha3_compact",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 4498,
+        "ff": 1774,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.5,
+        "hold_whs_ns": 0.074,
+        "register_setup_wns_ns": 0.5,
+        "register_data_path_delay_ns": 9.264,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 105.26315789473684
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 439500,
+        "stressed_cycles": 924134
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 238.58384527872582,
+      "predicted_core_MB_per_s_per_LUT": 0.05304220659820494,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha3_compact.sv": "860bcc893d6d5e228222a6c714c6ad25b1bbc113838ccfa4c58cf9b987f99927",
+        "rtl/sha3/experiments/hash_sha3_compact.sv": "d912de412ba9d24f4bbbe0744b530e2df45143edb24efedf9045392b4b8198b9"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha3_fast",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 5664,
+        "ff": 1795,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.324,
+        "hold_whs_ns": 0.139,
+        "register_setup_wns_ns": 0.324,
+        "register_data_path_delay_ns": 9.501,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 103.34849111202976
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 439500,
+        "stressed_cycles": 924134
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 238.58384527872582,
+      "predicted_core_MB_per_s_per_LUT": 0.04212285403932306,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha3_fast.sv": "5bbf83fc943f259e04f299e3dde8d9294e008aca3abbdf74b6bb4e9251d775bf",
+        "rtl/sha3/experiments/hash_sha3_fast.sv": "c85c8cc4699c52750d512e065152840d0ae4c6684f578eeafb87fce418275431"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha3_serial",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 4706,
+        "ff": 3714,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": 0.292,
+        "hold_whs_ns": 0.032,
+        "register_setup_wns_ns": 0.292,
+        "register_data_path_delay_ns": 9.543,
+        "timing_met": true,
+        "register_slack_clock_estimate_mhz": 103.00782859497322
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 6908924,
+        "stressed_cycles": 7073926
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": 15.177124542113939,
+      "predicted_core_MB_per_s_per_LUT": 0.0032250583387407436,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha3_serial.sv": "b3e032a40da2756029c03d1ced7384afe50fb44686b325acb7cab30c018ac059",
+        "rtl/sha3/experiments/hash_sha3_serial.sv": "0f830e915dafadc19e98b3d3a63fc3ad724497818ca871ef50d1eccaa925f086"
+      },
+      "hardware_tested": false
+    },
+    {
+      "engine": "sha3_wide",
+      "historical": false,
+      "analysis_type": "synthesized, placed and routed at constrained clock",
+      "part": "xc7z020clg400-1",
+      "vivado": "2024.2",
+      "clock_period_ns": 10.0,
+      "input_delay_ns": 2.0,
+      "output_delay_ns": 2.0,
+      "routed": {
+        "lut": 5704,
+        "ff": 1795,
+        "bram_tiles": 0,
+        "dsp": 0,
+        "setup_wns_ns": -0.738,
+        "hold_whs_ns": 0.137,
+        "register_setup_wns_ns": -0.104,
+        "register_data_path_delay_ns": 9.806,
+        "timing_met": false,
+        "register_slack_clock_estimate_mhz": 98.97070467141727
+      },
+      "simulation": {
+        "vector_count": 79,
+        "modes": 2,
+        "message_bytes": 1048576,
+        "continuous_cycles": 439500,
+        "stressed_cycles": 924134
+      },
+      "predicted_core_MB_per_s_at_constrained_clock": null,
+      "predicted_core_MB_per_s_per_LUT": null,
+      "sources_sha256": {
+        "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+        "rtl/rm/sha3_wide.sv": "7357332eb622268e6489c6bd422a1b376aa5feb344402929409aa6e70e81b68b",
+        "rtl/sha3/experiments/hash_sha3_wide.sv": "2efea5f3cb0e69bb5d00ac4a43414ed6e532c0579928da5c93fa4f02962f3292"
+      },
+      "hardware_tested": false
+    }
+  ]
+}

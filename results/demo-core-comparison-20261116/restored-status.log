@@ -1,0 +1,20 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; sha256sum /boot/profile.env; /opt/zybo/radar
+/radar-stream --check; ls /tmp/zybo-demo-* 2>/dev/null || true; printf '\nDEMO_C
+MD_641ea3547acb0050_%s\n' "$?"
+Zybo profile: radar
+Device tree: profiles/radar/system.dtb
+Board: Digilent Zybo Z7 board
+Next boot: hash
+6.6.40-dfx-hash-wifi
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+RADAR-READY abi=00010000 mode=0 seq=0 frames=0 dropped=0
+
+DEMO_CMD_641ea3547acb0050_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

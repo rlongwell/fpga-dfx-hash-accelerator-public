@@ -1,0 +1,60 @@
+{
+  "source_revision": "b1746b46eccaeb1ce9bbd4f76501d911ec78fa13",
+  "files": [
+    {
+      "path": "docs/media/sha3-comparison-explained.mp4",
+      "bytes": 12574693,
+      "sha256": "21a36039bc352bac301594d0f6b5e05813ec9eca69395bd3641e0965ef0d786a"
+    },
+    {
+      "path": "docs/media/voiceover-small-messages-take-1.mp3",
+      "bytes": 473348,
+      "sha256": "708e2f1b54e22be425e39830214987b75fc055283ac5e20d402ccc826b2ddf54"
+    },
+    {
+      "path": "docs/media/voiceover-small-messages-take-2.mp3",
+      "bytes": 479617,
+      "sha256": "304342729248e509f23998bad8ed1d4b80ef1ce464676f192ec7ac7816668c89"
+    },
+    {
+      "path": "docs/voiceover-explained.txt",
+      "bytes": 3195,
+      "sha256": "55fdd3b7f3341da318105ac5ed5f4fa30137a2d8f5b8079662c36bfbb47c9ff4"
+    },
+    {
+      "path": "docs/voiceover-explained-elevenlabs.txt",
+      "bytes": 3286,
+      "sha256": "3d6200cc9eab6f0a2309462306e9414c4e0188de15ba7a9069f6465f403ce148"
+    },
+    {
+      "path": "docs/voiceover-small-messages-elevenlabs.txt",
+      "bytes": 458,
+      "sha256": "8a127bb57432313a6ef029b950d8b00fa809d329b3293439861b9b5921d25274"
+    },
+    {
+      "path": "demo/video-explained-edit.json",
+      "bytes": 8849,
+      "sha256": "ce02029b37f3bbc000bc7e8a73600a0d5a70fac48094784373da3f161b9a57e5"
+    },
+    {
+      "path": "demo/web/story-explained.json",
+      "bytes": 4794,
+      "sha256": "2acef354c226a98e895276194a8a10424d327057436d48726da314b7397f871b"
+    },
+    {
+      "path": "demo/web/comparison.js",
+      "bytes": 13664,
+      "sha256": "24ef08f45f7d4cda79a7d26515684c695506d5e697aa14dabaa2bb0b709a4838"
+    },
+    {
+      "path": "demo/export_explanation_frames.js",
+      "bytes": 2491,
+      "sha256": "a82e18fd38b38187aea2e01accb8996100317c4d0c9bb8bc3dc26c33e6a2092d"
+    },
+    {
+      "path": "demo/render_video_explained.py",
+      "bytes": 5787,
+      "sha256": "2e76cb57f57a1d82dd6128484103ed476bebc59a4d51ef48ee0665d112972401"
+    }
+  ]
+}

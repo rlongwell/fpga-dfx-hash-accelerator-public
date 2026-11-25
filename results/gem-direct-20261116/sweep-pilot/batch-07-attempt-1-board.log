@@ -1,0 +1,3 @@
+{"event": "case", "batch": 7, "length": 64, "cycles": 3546392}
+{"event": "case", "batch": 7, "length": 128, "cycles": 32058}
+Hash service started (PID 5321); log: /var/log/zybo-hash.log

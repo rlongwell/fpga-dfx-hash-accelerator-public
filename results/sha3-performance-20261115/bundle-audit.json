@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "files": 18,
+  "payload_sha256": "b365f07f77e113e56baad89cf8a3bd79d5130fc89c6fa6b2e6d8d024982b673d",
+  "physical_acceptance_sha256": "b45b7dad2f30e9c8307ec96ee130ca01fc77f8004f10241ed791726b107e6440",
+  "scope": "Complete staged hash profile; existing kernel and driver, original reporting tools, compact full/partial and matching runtime manifest"
+}

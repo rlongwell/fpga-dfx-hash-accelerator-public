@@ -1,0 +1,1 @@
+Accepted: build/sha3-profile/oxide-spread, AltSpreadLogic_high placement, 100 MHz. All timing/route/DRC/pr_verify gates pass. Original default-placement run was terminated while still congested after the accepted alternate completed. Its intermediate negative slack is not a completed timing result. No failed image was programmed.

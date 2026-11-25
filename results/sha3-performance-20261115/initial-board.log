@@ -1,0 +1,21 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; sha256sum /boot/profil
+e.env /opt/zybo/hash/dfx_manifest.json; cat /sys/kernel/debug/clk/clk_summary | 
+head -35; printf '\nUART_DONE_325836588232303_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 361)
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+1fe55e8a0611c00abf3dd5f3db59a7c2997ce5a5c4bd899a9ecc734af92f08b7  /opt/zybo/hash/dfx_manifest.json
+cat: can't open '/sys/kernel/debug/clk/clk_summary': No such file or directory
+
+UART_DONE_325836588232303_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

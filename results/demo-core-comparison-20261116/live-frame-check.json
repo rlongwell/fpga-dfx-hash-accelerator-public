@@ -1,0 +1,6 @@
+{
+  "frames": 2250,
+  "seconds": 75.0,
+  "identical_to_complete_normalized_live_take": true,
+  "method": "Decoded frame MD5 of final movie from 201s compared with normalized 75s physical source; final mux copies the video stream."
+}

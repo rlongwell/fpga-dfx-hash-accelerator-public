@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "movie_sha256": "67fbca48cf729d57327721a49758e6fae2f502eaff0aad07cba782b04e596506",
+  "movie_bytes": 14160832,
+  "duration_seconds": 252.233333,
+  "frames": 7567,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": 15,
+  "physical_job": "e0ac322556182145dce29990",
+  "new_hardware_tests": false,
+  "software_tests": {
+    "demo": 24,
+    "size_sweep": 7,
+    "passed": true,
+    "interactive_chapter_navigation": "Unloaded state, every chapter boundary forward/backward and end clamping passed in Node VM."
+  },
+  "picture_checks": {
+    "source_overview_shows_three_paths_into_generic_64_bit_stream": true,
+    "Quartz_and_compact_inputs_are_generic_AXI_Stream": true,
+    "refinements_are_separate_before_after_scenes": true,
+    "refinements_identify_earlier_wide_core_comparison": true,
+    "padding_highlights_17_rate_lanes_retains_8_capacity_lanes": true,
+    "bad_word_stops_before_hash_state": true,
+    "real_control_clicks_and_progress_retained": true,
+    "waiting_labeled_32x": true,
+    "results_recaptured_from_same_completed_job": true,
+    "speedup_displays_2_4": true,
+    "both_graphs_have_visible_message_size_units": true,
+    "transition_excludes_startup_overlay_and_old_result_text": true,
+    "matching_resources_and_Oxide_AI_credits_retained": true
+  },
+  "audio_checks": {
+    "method": "Chapter transcription of final AAC; word timestamps and phoneme recognition.",
+    "chapter_transcription": "final-mix-transcript.json",
+    "shah_phoneme_check": "final-mix-phonemes.json",
+    "new_spoken_speedup": "2.4",
+    "music_continuity": "music-continuity.json",
+    "loudness_LUFS": -16.14,
+    "true_peak_dBTP": -1.76,
+    "voice_configuration_unchanged": true,
+    "pitch_preserving_playback_rate": 1.06
+  },
+  "board": "Not accessed for this presentation revision; prior job and evidence retained.",
+  "review_frames": [
+    "final-bram.png",
+    "final-compact.png",
+    "final-credits.png",
+    "final-fast-forward.png",
+    "final-framing-after.png",
+    "final-framing-before.png",
+    "final-padding.png",
+    "final-quartz.png",
+    "final-resources.png",
+    "final-results.png",
+    "final-sources.png",
+    "final-speedup.png",
+    "final-transition-after.png",
+    "final-transition-before.png"
+  ]
+}

@@ -1,0 +1,84 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# devmem 0xe000b004 32; devmem 0xe000b280 32; /opt/zybo/hash/start.sh status; pr
+intf '\nDEMO_CMD_20a168eea8199b78_%s\n' "$?"
+0x010E8542
+0x02500111
+Hash service running (PID 732)
+
+DEMO_CMD_20a168eea8199b78_0
+# nohup python3 /opt/zybo/hash/net/board_run.py ethernet --length 65537 --sessio
+n 12345 --peer-mac 00:d8:61:0a:97:21 >/root/hash-net-diagnose-v1.log 2>&1 </dev/
+null & echo DIAG_PID:$!; printf '\nDEMO_CMD_c5e94f255b28f153_%s\n' "$?"
+DIAG_PID:751
+
+DEMO_CMD_c5e94f255b28f153_0
+# macb e000b000.ethernet eth0: Link is Down
+cat /root/hash-net-diagnose-v1.log; for a in 0xe000b000 0xe000b004 0xe000b014 
+0xe000b018 0xe000b01c 0xe000b108 0xe000b158 0x80000200 0x80000204 0x8000050c 0x8
+0000800 0x80000804 0x80000808 0x8000080c; do echo "$a"; devmem "$a" 32; done; pr
+intf '\nDEMO_CMD_0c477c2908d516d5_%s\n' "$?"
+tr: read error: No such process
+{"event": "configuration", "core": "compact", "mode": "ethernet", "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24", "partial_sha256": "c04d5b054db9da9b319ab2617880dac156e56853180a53fce8794fcd738e04b2", "partial_load_ns": 37793634, "intermediate_algorithm_id": 2}
+{"event":"ready","mode":"ethernet","session":12345,"length":65537,"algorithm_id":1}
+0xe000b000
+0x0000001C
+0xe000b004
+0x000E0422
+0xe000b014
+0x00000001
+0xe000b018
+0x80000000
+0xe000b01c
+0x80000200
+0xe000b108
+0x00000000
+0xe000b158
+0x00000000
+0x80000200
+0x80000800
+0x80000204
+0xC0008040
+0x8000050c
+0x00000000
+0x80000800
+0x0A61D800
+0x80000804
+0x00000000
+0x80000808
+0x9E0C6479
+0x8000080c
+0x00000000
+
+DEMO_CMD_0c477c2908d516d5_0
+# kill -TERM $(pidof gem_board); sleep 3; cat /root/hash-net-diagnose-v1.log; pr
+intf '\nDEMO_CMD_1cdcd6c854a1b2bd_%s\n' "$?"
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+tr: read error: No such process
+{"event": "configuration", "core": "compact", "mode": "ethernet", "static_sha256": "ce62bea7fd46a9ebff130ace3fc5f7be828cd1bdc587ed13ef43966abde31c24", "partial_sha256": "c04d5b054db9da9b319ab2617880dac156e56853180a53fce8794fcd738e04b2", "partial_load_ns": 37793634, "intermediate_algorithm_id": 2}
+{"event":"ready","mode":"ethernet","session":12345,"length":65537,"algorithm_id":1}
+{"event":"result","ok":false,"status":1,"error":0,"ingress_status":0,"accepted":0,"core_cycles":761351000,"board_ns":7613509816,"pattern_bytes":0,"digest":"0000000000000000000000000000000000000000000000000000000000000000"}
+{"event":"gem","rx_frames":0,"tx_frames":0,"rx_fcs_errors":0,"rx_overruns":0,"rsr":0,"tsr":1}
+{"event":"dma_addresses","rx_pointer":2147483648,"tx_pointer":2147484160,"dma_config":2098960,"fpga_ram_base":2147483648}
+Hash service started (PID 791); log: /var/log/zybo-hash.log
+{"event": "restored", "core": "compact", "ps_api": true, "dma_probe": {"digest": "15ac382c0e3fbc537ab3f77883340fec52229a4074be675c2ee2e163c619284a", "core_cycles": 20327, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 21, "dma_transfers": 1, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 451752, "reference_hashing_in_timed_region": true, "verified": true}}
+Traceback (most recent call last):
+  File "/opt/zybo/hash/net/board_run.py", line 144, in <module>
+    main()
+  File "/opt/zybo/hash/net/board_run.py", line 104, in main
+    run(str(BASE/'net/gem_board'), args.mode, str(args.length), str(args.session),
+  File "/opt/zybo/hash/net/board_run.py", line 25, in run
+    return subprocess.run(args, check=True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+subprocess.CalledProcessError: Command '('/opt/zybo/hash/net/gem_board', 'ethernet', '65537', '12345', '-', '00:d8:61:0a:97:21', '0a:99:79:64:0c:9e', '0')' returned non-zero exit status 1.
+
+DEMO_CMD_1cdcd6c854a1b2bd_0
+[1]+  Done(1)                    nohup python3 /opt/zybo/hash/net/board_run.py ethernet --length 65537 --session 12345 --peer-mac 00:d8:61:0a:97:21 1>/root/hash-net-diagnose-v1.log 2>&1 0</dev/null
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

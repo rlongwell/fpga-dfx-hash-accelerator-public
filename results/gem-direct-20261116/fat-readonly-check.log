@@ -1,0 +1,30 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'exec('"'"'import subprocess\nsubprocess.run(["sync"],check=True)\n
+subprocess.run(["umount","/boot"],check=True)\ntry:r=subprocess.run(["/root/hash
+-gem-software-v2/fsck.fat","-n","/dev/mmcblk0p1"])\nfinally:subprocess.run(["mou
+nt","/boot"],check=True)\nprint("FSCK_RC:",r.returncode)'"'"')'; printf '\nDEMO_
+CMD_764075466df83a64_%s\n' "$?"
+Cannot initialize conversion from codepage 850 to ANSI_X3.4-1968: Invalid argument
+Cannot initialize conversion from ANSI_X3.4-1968 to codepage 850: Invalid argument
+Using internal CP850 conversion table
+fsck.fat 4.2 (2021-01-31)
+There are differences between boot sector and its backup.
+This is mostly harmless. Differences: (offset:original/backup)
+  65:01/00
+  Not automatically fixing this.
+Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+ Automatically removing dirty bit.
+
+Leaving filesystem unchanged.
+/dev/mmcblk0p1: 193 files, 71307/130812 clusters
+FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+FSCK_RC: 1
+
+DEMO_CMD_764075466df83a64_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

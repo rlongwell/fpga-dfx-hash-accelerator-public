@@ -1,0 +1,27 @@
+{
+  "status": "complete routed implementations rejected for setup timing; no accepted programming images",
+  "clock_mhz": 100,
+  "original_route_wns_ns": -0.654,
+  "original_route_whs_ns": 0.044,
+  "post_phys_opt_wns_ns": -0.446,
+  "final_recovery_route_wns_ns": -0.446,
+  "final_recovery_route_whs_ns": 0.044,
+  "final_recovery_routing": {
+    "routable": 8363,
+    "fully_routed": 8363,
+    "errors": 0
+  },
+  "final_drc_error_or_critical_warning_count": 0,
+  "detached_shell_exit_status": 143,
+  "termination_note": "Targeted SIGTERM requested after candidate OOC passed. Vivado log and final reports show routing and DRC completed, followed by DFX_BUILD_FAIL on setup timing before shutdown. Shell status 143 is not used to infer timing or incomplete routing.",
+  "source_sha256": {
+    "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+    "rtl/rm/blake2s.sv": "4944c47e4f542e97f6631ecb6e244212ffba9c2e721ec710effd27fc3641a3ab",
+    "rtl/blake2s/hash_blake2s.sv": "b9f801deef8d5a6fb54819eb1352688ebd3820456e92dff4cfdc9a8d632a713e"
+  },
+  "checkpoint_sha256": {
+    "routed.dcp": "0fa54c11bbd93e921424feb0d83dba1b3437117dc149899458aee7669d71cd85",
+    "rm_synth.dcp": "5ad28648a9b3dcb5c87553f7558703faf999c15f48401ccb0fd1cbc29eca5c6d",
+    "routed_before_phys_opt.dcp": "57d265fbef5bdbd851770e9da6b68f552696bc97579ecaa5b7d0b17f96b0cc3a"
+  }
+}

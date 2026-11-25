@@ -1,0 +1,42 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -u /root/hash-clear-fat-dirty-20261116-v2.py; printf '\nDEMO_CMD_30fbd
+1d5497e37c4_%s\n' "$?"
+{"event": "partition_backup", "bytes": 536870912, "sha256": "082014ac1858a3d134874953e218463a8e599c75554669e93a0e61131ca760b4", "path": "/root/hash-fat-before-clean-20261116.img"}
+Cannot initialize conversion from codepage 850 to ANSI_X3.4-1968: Invalid argument
+Cannot initialize conversion from ANSI_X3.4-1968 to codepage 850: Invalid argument
+Using internal CP850 conversion table
+fsck.fat 4.2 (2021-01-31)
+There are differences between boot sector and its backup.
+This is mostly harmless. Differences: (offset:original/backup)
+  65:01/00
+  Not automatically fixing this.
+Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+ Automatically removing dirty bit.
+
+*** Filesystem was changed ***
+Writing changes.
+/dev/mmcblk0p1: 193 files, 71307/130812 clusters
+Cannot initialize conversion from codepage 850 to ANSI_X3.4-1968: Invalid argument
+Cannot initialize conversion from ANSI_X3.4-1968 to codepage 850: Invalid argument
+Using internal CP850 conversion table
+fsck.fat 4.2 (2021-01-31)
+/dev/mmcblk0p1: 193 files, 71307/130812 clusters
+{"event": "partition_byte_comparison", "before_sha256": "082014ac1858a3d134874953e218463a8e599c75554669e93a0e61131ca760b4", "after_sha256": "70a0b1456fa3abc5b01501a5ce560137a5dc9db9706ad2cd5c379bfc9e153988", "changed_bytes": [[65, 1, 0]]}
+
+DEMO_CMD_30fbd1d5497e37c4_0
+# (cd /boot/profiles/hash && sha256sum -c SHA256SUMS) && sha256sum /boot/profile
+.env && /opt/zybo/hash/start.sh status; printf '\nDEMO_CMD_9b803474d97bf299_%s\n
+' "$?"
+system.bit: OK
+system.dtb: OK
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+Hash service running (PID 378)
+
+DEMO_CMD_9b803474d97bf299_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

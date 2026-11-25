@@ -1,0 +1,7 @@
+Tool: 2024.2
+Part: xc7z020clg400-1
+Clock target: 100 MHz
+RMs: sha3 sha256 blake2s
+Initial configuration: sha3
+Completed UTC: 2026-11-12T05:48:22Z
+Hardware tested: no

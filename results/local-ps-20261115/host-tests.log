@@ -1,0 +1,30 @@
+test_all_algorithms_empty_boundaries_and_multiple_buffers (test_local.LocalTests.test_all_algorithms_empty_boundaries_and_multiple_buffers) ... ok
+test_busy_and_missing_device_do_not_fall_back (test_local.LocalTests.test_busy_and_missing_device_do_not_fall_back) ... ok
+test_close_is_idempotent_and_prevents_reuse (test_local.LocalTests.test_close_is_idempotent_and_prevents_reuse) ... ok
+test_file_input_and_bytearray (test_local.LocalTests.test_file_input_and_bytearray) ... ok
+test_hardware_errors_are_propagated_without_fallback (test_local.LocalTests.test_hardware_errors_are_propagated_without_fallback) ... ok
+test_reader_failure_and_invalid_read_counts_abort (test_local.LocalTests.test_reader_failure_and_invalid_read_counts_abort) ... ok
+test_rejected_inputs_do_not_start_job (test_local.LocalTests.test_rejected_inputs_do_not_start_job) ... ok
+test_short_reads_and_trailing_data (test_local.LocalTests.test_short_reads_and_trailing_data) ... ok
+test_truncation_aborts_after_dma_then_recovers (test_local.LocalTests.test_truncation_aborts_after_dma_then_recovers) ... ok
+test_verify_rejects_wrong_hardware_digest (test_local.LocalTests.test_verify_rejects_wrong_hardware_digest) ... ok
+test_changed_partial_checksum_blocks_switch (test_service.HardwareBackendTests.test_changed_partial_checksum_blocks_switch) ... ok
+test_configured_algorithm_id_mismatch_is_rejected (test_service.HardwareBackendTests.test_configured_algorithm_id_mismatch_is_rejected) ... ok
+test_current_algorithm_avoids_reconfiguration (test_service.HardwareBackendTests.test_current_algorithm_avoids_reconfiguration) ... ok
+test_driver_abi_and_buffer_rejected_and_device_closed (test_service.HardwareBackendTests.test_driver_abi_and_buffer_rejected_and_device_closed) ... ok
+test_driver_switch_failure_never_announces_ready (test_service.HardwareBackendTests.test_driver_switch_failure_never_announces_ready) ... ok
+test_manifest_abi_and_part_rejected_before_device_open (test_service.HardwareBackendTests.test_manifest_abi_and_part_rejected_before_device_open) ... ok
+test_manifest_algorithm_id_mismatch_blocks_switch (test_service.HardwareBackendTests.test_manifest_algorithm_id_mismatch_blocks_switch) ... ok
+test_switch_validates_image_and_returns_driver_duration (test_service.HardwareBackendTests.test_switch_validates_image_and_returns_driver_duration) ... ok
+test_command_line_client_over_tcp (test_service.ProtocolTests.test_command_line_client_over_tcp) ... ok
+test_configuration_failure_prevents_ready (test_service.ProtocolTests.test_configuration_failure_prevents_ready) ... ok
+test_ethernet_benchmark_harness_over_localhost (test_service.ProtocolTests.test_ethernet_benchmark_harness_over_localhost) ... ok
+test_files_split_across_many_dma_buffers (test_service.ProtocolTests.test_files_split_across_many_dma_buffers) ... ok
+test_invalid_requests (test_service.ProtocolTests.test_invalid_requests) ... ok
+test_short_file_aborts_and_next_request_can_run (test_service.ProtocolTests.test_short_file_aborts_and_next_request_can_run) ... ok
+test_uapi_struct_sizes_and_commands (test_service.ProtocolTests.test_uapi_struct_sizes_and_commands) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.622s
+
+OK

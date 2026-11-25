@@ -1,0 +1,4 @@
+# Enable the hash service on the isolated PC-to-board Ethernet link.
+# Loopback stays available for on-board clients.
+HASH_LISTEN=0.0.0.0
+HASH_RECEIVE_MODE=direct

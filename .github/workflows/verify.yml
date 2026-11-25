@@ -1,0 +1,38 @@
+name: Offline verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install simulation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential verilator ripgrep curl python3 \
+            libllvm18 libdw1t64 libffi8 libreadline8t64 libtcl8.6 libzstd1 binutils
+      - name: Run RTL, integration, and software verification
+        run: ./test.sh
+      - name: Test local demo validation and recovery
+        run: python3 -m unittest discover -s demo/tests -v 2>&1 | tee build/verification/demo.log
+      - name: Test Ethernet protocol in an isolated host namespace
+        run: |
+          cc -O2 -Wall -Wextra -Werror -o build/gem_send software/net/gem_send.c
+          sudo python3 -u software/net/test_sender.py build/gem_send 2>&1 | tee build/verification/ethernet-protocol.log
+      - name: Preserve verification record and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-verification
+          path: |
+            results/verification.json
+            build/verification/*.log
+          if-no-files-found: warn

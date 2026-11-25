@@ -1,0 +1,37 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# (trap '/opt/zybo/hash/start.sh start' 0; /opt/zybo/hash/start.sh stop && modpr
+obe hash_accel && python3 /root/sha3-profile-20261115-v2.py --manifest /opt/zybo
+/hash/dfx_manifest.json --label current --algorithms sha3 sha256 blake2s --outpu
+t /root/sha3-current-20261115.json); /opt/zybo/hash/start.sh status; devmem 0xf8
+000170; printf '\nUART_DONE_326079100316750_%s\n' "$?"
+tr: read error: No such process
+current sha3 64 {"dma": {"median_ns": 187896, "min_ns": 183024, "max_ns": 211572, "MB_s": 0.340613956656874}, "local_api": {"median_ns": 397926, "min_ns": 390912, "max_ns": 447552, "MB_s": 0.16083392389539763}, "arm": {"median_ns": 36816, "min_ns": 36084, "max_ns": 38718, "MB_s": 1.7383746197305519}}
+current sha3 136 {"dma": {"median_ns": 190584, "min_ns": 181350, "max_ns": 232032, "MB_s": 0.7135961046047937}, "local_api": {"median_ns": 397374, "min_ns": 393384, "max_ns": 418926, "MB_s": 0.34224685057401844}, "arm": {"median_ns": 47292, "min_ns": 46800, "max_ns": 49644, "MB_s": 2.875750655501988}}
+current sha3 1024 {"dma": {"median_ns": 181578, "min_ns": 171504, "max_ns": 207780, "MB_s": 5.639449713070967}, "local_api": {"median_ns": 402120, "min_ns": 400608, "max_ns": 408852, "MB_s": 2.546503531284194}, "arm": {"median_ns": 112008, "min_ns": 111564, "max_ns": 117054, "MB_s": 9.142204128276552}}
+current sha3 65536 {"dma": {"median_ns": 1019886, "min_ns": 1010460, "max_ns": 1055526, "MB_s": 64.2581621867542}, "local_api": {"median_ns": 1347906, "min_ns": 1326954, "max_ns": 1413156, "MB_s": 48.620601139842094}, "arm": {"median_ns": 5323488, "min_ns": 5282688, "max_ns": 5345862, "MB_s": 12.310725599456596}}
+current sha3 1048576 {"dma": {"median_ns": 13746876, "min_ns": 13743096, "max_ns": 13764553, "MB_s": 76.2774029532237}, "local_api": {"median_ns": 16169598, "min_ns": 16159909, "max_ns": 16233174, "MB_s": 64.84861281028755}, "arm": {"median_ns": 84981979, "min_ns": 84874776, "max_ns": 85072249, "MB_s": 12.338804206948392}}
+current sha3 16777216 {"dma": {"median_ns": 218495691, "min_ns": 218492684, "max_ns": 218505368, "MB_s": 76.78511151965921}, "local_api": {"median_ns": 254320827, "min_ns": 254207288, "max_ns": 254394164, "MB_s": 65.9687065267368}, "arm": {"median_ns": 1358845651, "min_ns": 1355606875, "max_ns": 1359816212, "MB_s": 12.346667914529757}}
+current sha256 64 {"dma": {"median_ns": 188274, "min_ns": 182046, "max_ns": 211374, "MB_s": 0.3399301018728024}, "local_api": {"median_ns": 396930, "min_ns": 393912, "max_ns": 416274, "MB_s": 0.16123749779558108}, "arm": {"median_ns": 27324, "min_ns": 26520, "max_ns": 28440, "MB_s": 2.342263211828429}}
+current sha256 136 {"dma": {"median_ns": 187242, "min_ns": 184128, "max_ns": 216426, "MB_s": 0.7263327672210295}, "local_api": {"median_ns": 405108, "min_ns": 396480, "max_ns": 446868, "MB_s": 0.33571294568362015}, "arm": {"median_ns": 28914, "min_ns": 28104, "max_ns": 30528, "MB_s": 4.70360379055129}}
+current sha256 1024 {"dma": {"median_ns": 176616, "min_ns": 172854, "max_ns": 191010, "MB_s": 5.797889205960955}, "local_api": {"median_ns": 403434, "min_ns": 393174, "max_ns": 423756, "MB_s": 2.538209471685579}, "arm": {"median_ns": 49620, "min_ns": 49074, "max_ns": 51426, "MB_s": 20.63683998387747}}
+current sha256 65536 {"dma": {"median_ns": 1559988, "min_ns": 1556928, "max_ns": 1594104, "MB_s": 42.010579568560786}, "local_api": {"median_ns": 1881324, "min_ns": 1869780, "max_ns": 1929120, "MB_s": 34.835041704671816}, "arm": {"median_ns": 1642176, "min_ns": 1637070, "max_ns": 1693332, "MB_s": 39.90802447484314}}
+current sha256 1048576 {"dma": {"median_ns": 22614241, "min_ns": 22610064, "max_ns": 22638096, "MB_s": 46.36795017794318}, "local_api": {"median_ns": 25050360, "min_ns": 25046148, "max_ns": 25055022, "MB_s": 41.858719794845264}, "arm": {"median_ns": 25773780, "min_ns": 25693704, "max_ns": 26014566, "MB_s": 40.68382674175073}}
+current sha256 16777216 {"dma": {"median_ns": 360345693, "min_ns": 360321766, "max_ns": 360601666, "MB_s": 46.55866942747114}, "local_api": {"median_ns": 395766592, "min_ns": 395680786, "max_ns": 395848156, "MB_s": 42.39169333423676}, "arm": {"median_ns": 410611924, "min_ns": 407957662, "max_ns": 412611034, "MB_s": 40.85905698150159}}
+current blake2s 64 {"dma": {"median_ns": 152862, "min_ns": 149394, "max_ns": 175500, "MB_s": 0.4186782849890751}, "local_api": {"median_ns": 352728, "min_ns": 350196, "max_ns": 369324, "MB_s": 0.18144292485994873}, "arm": {"median_ns": 18030, "min_ns": 17400, "max_ns": 18936, "MB_s": 3.5496394897393233}}
+current blake2s 136 {"dma": {"median_ns": 152052, "min_ns": 149484, "max_ns": 168390, "MB_s": 0.8944308526030569}, "local_api": {"median_ns": 361158, "min_ns": 354138, "max_ns": 390426, "MB_s": 0.37656648890513295}, "arm": {"median_ns": 22794, "min_ns": 21708, "max_ns": 28818, "MB_s": 5.966482407651136}}
+current blake2s 1024 {"dma": {"median_ns": 158430, "min_ns": 154764, "max_ns": 194844, "MB_s": 6.46342233162911}, "local_api": {"median_ns": 357642, "min_ns": 354246, "max_ns": 385656, "MB_s": 2.863198393924651}, "arm": {"median_ns": 46470, "min_ns": 45960, "max_ns": 47826, "MB_s": 22.035721971164193}}
+current blake2s 65536 {"dma": {"median_ns": 1712994, "min_ns": 1708926, "max_ns": 1732668, "MB_s": 38.25816085753949}, "local_api": {"median_ns": 2043348, "min_ns": 2015238, "max_ns": 2065680, "MB_s": 32.072852984415775}, "arm": {"median_ns": 2040108, "min_ns": 2023350, "max_ns": 2106768, "MB_s": 32.12378952486829}}
+current blake2s 1048576 {"dma": {"median_ns": 25223071, "min_ns": 25219800, "max_ns": 25249104, "MB_s": 41.57209881382009}, "local_api": {"median_ns": 27662304, "min_ns": 27641317, "max_ns": 27782898, "MB_s": 37.90631467284865}, "arm": {"median_ns": 33179190, "min_ns": 33130584, "max_ns": 33287106, "MB_s": 31.60342371227266}}
+current blake2s 16777216 {"dma": {"median_ns": 402304558, "min_ns": 402232204, "max_ns": 402491278, "MB_s": 41.70277384727021}, "local_api": {"median_ns": 438117562, "min_ns": 437966164, "max_ns": 438174173, "MB_s": 38.29386779980301}, "arm": {"median_ns": 541042614, "min_ns": 540882587, "max_ns": 542332109, "MB_s": 31.00904728365814}}
+REPORT /root/sha3-current-20261115.json passed True
+Hash service started (PID 1046); log: /var/log/zybo-hash.log
+Hash service running (PID 1046)
+0x00200500
+
+UART_DONE_326079100316750_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

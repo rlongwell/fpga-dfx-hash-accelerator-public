@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "docs/media/sha3-comparison-v3.mp4",
+      "bytes": 13631543,
+      "sha256": "22b871eba786a9120123d04db65336e2c6f84ac7c78a3fa95c82e0852f752e61"
+    },
+    {
+      "path": "docs/media/sha3-comparison-v2.mp4",
+      "bytes": 5391181,
+      "sha256": "4fde9d2ac0d50d4fd35b8c760c53ddcd968802ae5a6b18fb9e876c65584f8386"
+    },
+    {
+      "path": "docs/media/voiceover-take-1.mp3",
+      "bytes": 3150794,
+      "sha256": "9eeb9bd214b0c9dc2e5662ad7deae5a4e6af241a01ec2a7dc82a19cf0c68cb75"
+    },
+    {
+      "path": "docs/media/voiceover-take-2.mp3",
+      "bytes": 3148705,
+      "sha256": "e0cec961f195d76e2628c5018d06c20c41371f972fc18ce29780b7670cebf3e2"
+    },
+    {
+      "path": "docs/voiceover-v2.txt",
+      "bytes": 2717,
+      "sha256": "81a356ee69f8a99d42f042a33cb166c0668e27f0a69251ee74bc7b219bc80d84"
+    },
+    {
+      "path": "docs/voiceover-elevenlabs.txt",
+      "bytes": 2873,
+      "sha256": "448f7672bee02f62132b836e03c9772429680387532e30a6bca444cf627495ca"
+    },
+    {
+      "path": "demo/render_video_v3.py",
+      "bytes": 10893,
+      "sha256": "258eb4157675a24af942c29e33e1068c5b3d0170976eb722d9c6ac5087e8731d"
+    },
+    {
+      "path": "demo/video-v3-edit.json",
+      "bytes": 5898,
+      "sha256": "ae7c5eb4c2ff1fba15dcc54bef2a9ed7992feedcb9f2fa1ca8d4f5b2601471ab"
+    }
+  ],
+  "music_source": {
+    "filename": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94",
+    "bytes": 5743886,
+    "stored_in_repository": false
+  },
+  "voice_generation_downloads": [
+    "ElevenLabs_2026-11-16T01_48_05_David - Deep, Warm, and Steady_pvc_sp104_s87_sb64_se50_b_m2.mp3",
+    "ElevenLabs_2026-11-16T01_49_17_David - Deep, Warm, and Steady_pvc_sp104_s87_sb64_se50_b_m2.mp3"
+  ]
+}

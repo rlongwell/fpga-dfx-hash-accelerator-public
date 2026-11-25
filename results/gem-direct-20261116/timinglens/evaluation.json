@@ -1,0 +1,1649 @@
+{
+  "tool": "TimingLens",
+  "tool_source_sha256": {
+    "src/timinglens/service.py": "54830d63f9711202f00ea0efe48352e70235b1b33f5338318ddee5a0784d1bc0",
+    "src/timinglens/cli.py": "ef68df962c6075f0b0483b15dcab13c12a2ca69c962124780c1e8ca64c41a87f",
+    "src/timinglens/__init__.py": "7a4a5e1e347bdd24d45109c880f3f76733e93510711fd918e37ca039a797a025",
+    "src/timinglens/demo.py": "5b17e58c2ff1728632765fdcccd6f847c02a173ce43663f03824a2e263c9c70d",
+    "src/timinglens/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/timinglens/rules/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/rules/library.py": "442b66fa8d447e8b82798362a1b38054c6b04ed73138108b692a81dcd874de16",
+    "src/timinglens/gui/paths.py": "f37155e3bed580faa252eeb6dd260ee7ef257c5fa6bbac3e75132f5eefaf7f14",
+    "src/timinglens/gui/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/gui/app.py": "0da4dfbbc79b032f0fd38d7da2e61db43656a25504d8097ee6da6d46d0c06adf",
+    "src/timinglens/gui/source.py": "e68673002c0ea4fecfa65398b389d196f7cebb09a3e99dbca6527fed21424325",
+    "src/timinglens/gui/pages.py": "ecf9331f0b2de3bbd4beb4661635dec62043809095511fcf544e7254414aeef5",
+    "src/timinglens/gui/theme.py": "7f69d9a9407a7247180f0090eb322e15965cd8143882b809a78b07e266743889",
+    "src/timinglens/gui/widgets.py": "205d3ac32fbef80a2199f70ffe1b231e2ac2fe2b67f049b9c7a6564faeccf3d4",
+    "src/timinglens/vivado/reports.py": "e4d7031b0a34e7670670baefcba24a3b52bb2e8379f50b562db58b25c09c5721",
+    "src/timinglens/vivado/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/vivado/batch.tcl": "883d9618db8fb199fadef5ffcff27ac239a05a4eb718fe6d16105672f8b51238",
+    "src/timinglens/vivado/runner.py": "d30ef5de43b0e7007da716f7c2fb8b79bf93bfbd56b8b5a2e0bad0a58b974931",
+    "src/timinglens/vivado/extract.tcl": "81f84fa124fc66919529ed1d9a20466188cf4cd2a929849f770620cc199a936f",
+    "src/timinglens/vivado/decode.py": "04707fda63ac75ad289f68a7f0433facf7a088d17af1931d877e6794cba8fe25",
+    "src/timinglens/analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/analysis/engine.py": "4309b5ff6d4ce12cfab897cbea367c91c279a256334ee313ca048ddc2a431112",
+    "src/timinglens/export/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/export/html.py": "dc24c70222b4a3a1296f13e9a8eb5b1024bbffd3353688279bfd330c63d30705",
+    "src/timinglens/export/diagnostics.py": "3d5ddcb2cd56043378d82ea0fe9fbc2ee4eff033cc53cbc1ae764b88ab5e633b",
+    "src/timinglens/visualization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/visualization/schematic.py": "95b4cfd7dca6772ea128d1eab813b6c2fe4fb401155c39b5e43712b57d4344db",
+    "src/timinglens/netlist/graph.py": "df41714919e35fd22655e3f377413c05a3163c8aba8a0eb86854f040d2d10d65",
+    "src/timinglens/netlist/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/timing/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/timing/coverage.py": "dbb5dca38c59a39bd615a1a86e38cacf4c787f575cc8cbc7b284a8da291ee128",
+    "src/timinglens/timing/models.py": "facd63b06c27d93d18039c64f9e0c28efef9ec9a25d70709ba730d47805c70fd",
+    "src/timinglens/timing/io.py": "a997172dd41fa096e34147d984037e8f9a345238bfe9aa175eb57efa980b090a",
+    "src/timinglens/rtl/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/timinglens/rtl/correlate.py": "6e9a0c9a2e9be8eb0f7d1fbe6b8ac839904d6610e7d9c2e8d002e178460f7f46",
+    "src/timinglens/rtl/syntax.py": "382e589b2a55bdf73e187a2b9058674421dc76109c1bbbc2a1e481aca0c7f290"
+  },
+  "before_checkpoint_sha256": "6609dcfa82b058fbb8b270240ce4b7eafa515e1554aaafcfdd13ac98b0b451a2",
+  "after_checkpoint_sha256": "6609dcfa82b058fbb8b270240ce4b7eafa515e1554aaafcfdd13ac98b0b451a2",
+  "summary": {
+    "setup": {
+      "worst_slack_ns": -0.011,
+      "total_negative_slack_ns": -0.138,
+      "failing_endpoints": 18,
+      "total_endpoints": 20673
+    },
+    "hold": {
+      "worst_slack_ns": 0.016,
+      "total_negative_slack_ns": 0.0,
+      "failing_endpoints": 0,
+      "total_endpoints": 20673
+    }
+  },
+  "captured_paths": 200,
+  "failing_paths": 18,
+  "coverage": {
+    "P00001": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00002": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00003": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00004": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00005": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00006": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00007": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00008": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00009": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00010": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00011": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00012": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00013": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00014": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00015": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00016": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00017": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00018": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00019": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00020": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00021": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00022": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00023": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00024": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00025": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00026": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00027": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00028": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00029": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00030": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00031": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00032": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00033": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00034": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00035": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00036": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00037": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00038": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00039": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00040": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00041": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00042": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00043": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00044": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00045": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00046": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00047": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00048": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00049": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00050": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00051": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00052": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00053": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00054": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00055": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00056": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00057": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00058": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00059": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00060": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00061": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00062": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00063": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00064": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00065": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00066": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00067": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00068": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00069": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00070": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00071": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00072": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00073": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00074": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00075": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00076": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00077": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00078": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00079": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00080": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00081": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00082": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00083": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00084": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00085": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00086": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00087": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00088": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00089": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00090": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00091": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00092": {
+      "expected_links": 30,
+      "captured_links": 30,
+      "measured_delays": 30,
+      "captured_arcs": 30,
+      "complete": true
+    },
+    "P00093": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00094": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00095": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00096": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00097": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00098": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00099": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00100": {
+      "expected_links": 34,
+      "captured_links": 34,
+      "measured_delays": 34,
+      "captured_arcs": 34,
+      "complete": true
+    },
+    "P00101": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00102": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00103": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00104": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00105": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00106": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00107": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00108": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00109": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00110": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00111": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00112": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00113": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00114": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00115": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00116": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00117": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00118": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00119": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00120": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 1,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00121": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00122": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00123": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00124": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00125": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00126": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00127": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00128": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00129": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00130": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00131": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00132": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00133": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00134": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00135": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00136": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00137": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00138": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00139": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00140": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00141": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00142": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00143": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00144": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00145": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00146": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00147": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00148": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00149": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00150": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00151": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00152": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00153": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00154": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00155": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00156": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00157": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 0,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00158": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00159": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00160": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00161": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00162": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00163": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00164": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00165": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00166": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00167": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00168": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00169": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00170": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00171": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00172": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00173": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00174": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00175": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00176": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00177": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00178": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00179": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00180": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00181": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00182": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00183": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00184": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00185": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00186": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00187": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00188": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00189": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00190": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00191": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00192": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00193": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00194": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00195": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00196": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00197": {
+      "expected_links": 4,
+      "captured_links": 4,
+      "measured_delays": 4,
+      "captured_arcs": 4,
+      "complete": true
+    },
+    "P00198": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    },
+    "P00199": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 1,
+      "captured_arcs": 2,
+      "complete": false
+    },
+    "P00200": {
+      "expected_links": 2,
+      "captured_links": 2,
+      "measured_delays": 2,
+      "captured_arcs": 2,
+      "complete": true
+    }
+  },
+  "warnings": [
+    "Detailed timing evidence is incomplete on 8 paths (P00111, P00112, P00120, P00145, P00146, \u2026). Missing delays are unknown, not zero. Branch rankings may omit the slowest connection; inspect raw Vivado reports.",
+    "Vivado hides resource names in 8 incomplete paths. Those unnamed report rows cannot be safely assigned to individual hardware arcs.",
+    "The setup collection reached the requested limit of 100 paths.",
+    "The hold collection reached the requested limit of 100 paths.",
+    "/home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/system/project/system.gen/sources_1/bd/ps_dma/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v: slang reported 2 parse diagnostics.",
+    "/opt/amd/xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv: slang reported 1 parse diagnostics."
+  ],
+  "groups": [
+    {
+      "id": "G001",
+      "rule": "TL-D",
+      "anchor": "rp_tkeep[7]",
+      "path_ids": [
+        "P00001",
+        "P00002",
+        "P00003",
+        "P00004",
+        "P00005",
+        "P00006",
+        "P00007",
+        "P00008",
+        "P00009",
+        "P00010",
+        "P00011",
+        "P00012",
+        "P00013",
+        "P00014",
+        "P00015",
+        "P00016",
+        "P00017",
+        "P00018"
+      ],
+      "endpoints": 18,
+      "worst_slack_ns": -0.011,
+      "score": 0.11486036831353932,
+      "confidence": "Strong",
+      "modules": [
+        "axis_bytes"
+      ]
+    },
+    {
+      "id": "G002",
+      "rule": "TL-A",
+      "anchor": "u_shell/rp_resetn_INST_0 \u2192 rp_resetn",
+      "path_ids": [
+        "P00001",
+        "P00002",
+        "P00003",
+        "P00004",
+        "P00005",
+        "P00006",
+        "P00007",
+        "P00008",
+        "P00009",
+        "P00010",
+        "P00011",
+        "P00012",
+        "P00013",
+        "P00014",
+        "P00015",
+        "P00016",
+        "P00017",
+        "P00018"
+      ],
+      "endpoints": 18,
+      "worst_slack_ns": -0.011,
+      "score": 0.08988906330180692,
+      "confidence": "Strong",
+      "modules": [
+        "axis_bytes"
+      ]
+    },
+    {
+      "id": "G003",
+      "rule": "TL-E",
+      "anchor": "u_hash/engine/input_buffer/error_reg_i_36 \u2192 u_hash/engine/input_buffer/error_reg_i_31",
+      "path_ids": [
+        "P00001",
+        "P00002",
+        "P00003",
+        "P00004",
+        "P00005",
+        "P00006",
+        "P00007",
+        "P00008",
+        "P00009",
+        "P00010",
+        "P00011",
+        "P00012",
+        "P00013",
+        "P00014",
+        "P00015",
+        "P00016",
+        "P00017",
+        "P00018"
+      ],
+      "endpoints": 18,
+      "worst_slack_ns": -0.011,
+      "score": 0.0843762107803528,
+      "confidence": "Vivado source tag",
+      "modules": [
+        "axis_bytes"
+      ]
+    }
+  ],
+  "worst_path_findings": [
+    {
+      "rule": "TL-A",
+      "path_id": "P00001",
+      "anchors": [
+        "u_shell/rp_resetn_INST_0 \u2192 rp_resetn",
+        "u_shell/rp_tkeep[7]_INST_0 \u2192 rp_tkeep[7]",
+        "u_hash/engine/input_buffer/count_q[3]_i_6 \u2192 u_hash/engine/input_buffer/count_q[3]_i_6_n_0",
+        "u_hash/engine/input_buffer/count_q[3]_i_5 \u2192 u_hash/engine/input_buffer/p_0_in[3]",
+        "u_hash/engine/input_buffer/error_i_45 \u2192 u_hash/engine/input_buffer/error_i_45_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_36 \u2192 u_hash/engine/input_buffer/error_reg_i_36_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_31 \u2192 u_hash/engine/input_buffer/error_reg_i_31_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_26 \u2192 u_hash/engine/input_buffer/error_reg_i_26_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_21 \u2192 u_hash/engine/input_buffer/error_reg_i_21_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_16 \u2192 u_hash/engine/input_buffer/error_reg_i_16_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_11 \u2192 u_hash/engine/input_buffer/error_reg_i_11_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_6 \u2192 u_hash/engine/input_buffer/error_reg_i_6_n_0",
+        "u_hash/engine/input_buffer/error_reg_i_4 \u2192 u_hash/engine/input_buffer/error_reg_i_4_n_0",
+        "u_hash/engine/input_buffer/remaining[63]_i_8 \u2192 u_hash/engine/input_buffer/remaining[63]_i_8_n_0",
+        "u_hash/engine/input_buffer/remaining[63]_i_4 \u2192 u_hash/engine/input_buffer_n_116",
+        "u_hash/engine/input_buffer/remaining[63]_i_1 \u2192 u_hash/engine/input_buffer/remaining[63]_i_1_n_0"
+      ],
+      "evidence": [
+        "16 Vivado logic levels",
+        "3.026 ns logic against a 10.000 ns requirement",
+        "Captured combinational cells \u00b7 CARRY4 \u00d7 8, LUT2 \u00d7 2, LUT4 \u00d7 2, LUT5 \u00d7 3, LUT6 \u00d7 1"
+      ],
+      "portion": 0.31689182113310294,
+      "confidence": "Strong",
+      "module": "axis_bytes"
+    },
+    {
+      "rule": "TL-D",
+      "path_id": "P00001",
+      "anchors": [
+        "rp_tkeep[7]",
+        "rp_resetn",
+        "u_shell/reset_count_reg_n_0_[2]"
+      ],
+      "evidence": [
+        "6.523 ns route delay (68.3%) across 17 captured nets",
+        "Vivado design stage: routed",
+        "rp_tkeep[7] \u2192 u_hash/engine/input_buffer/count_q[3]_i_6/I4: 1.058 ns (SLICE_X49Y55 \u2192 SLICE_X51Y58) \u00b7 4 loads \u00b7 driver DONT_TOUCH",
+        "rp_resetn \u2192 u_shell/rp_tkeep[7]_INST_0/I1: 1.052 ns (SLICE_X49Y58 \u2192 SLICE_X49Y55) \u00b7 179 loads \u00b7 driver DONT_TOUCH",
+        "u_shell/reset_count_reg_n_0_[2] \u2192 u_shell/rp_resetn_INST_0/I1: 0.870 ns (SLICE_X48Y58 \u2192 SLICE_X49Y58) \u00b7 4 loads \u00b7 driver DONT_TOUCH"
+      ],
+      "portion": 0.683108178866897,
+      "confidence": "Strong",
+      "module": "axis_bytes"
+    },
+    {
+      "rule": "TL-E",
+      "path_id": "P00001",
+      "anchors": [
+        "u_hash/engine/input_buffer/error_reg_i_36 \u2192 u_hash/engine/input_buffer/error_reg_i_31",
+        "u_hash/engine/input_buffer/error_reg_i_31 \u2192 u_hash/engine/input_buffer/error_reg_i_26",
+        "u_hash/engine/input_buffer/error_reg_i_26 \u2192 u_hash/engine/input_buffer/error_reg_i_21",
+        "u_hash/engine/input_buffer/error_reg_i_21 \u2192 u_hash/engine/input_buffer/error_reg_i_16",
+        "u_hash/engine/input_buffer/error_reg_i_16 \u2192 u_hash/engine/input_buffer/error_reg_i_11",
+        "u_hash/engine/input_buffer/error_reg_i_11 \u2192 u_hash/engine/input_buffer/error_reg_i_6",
+        "u_hash/engine/input_buffer/error_reg_i_6 \u2192 u_hash/engine/input_buffer/error_reg_i_4"
+      ],
+      "evidence": [
+        "8 consecutive carry primitives: u_hash/engine/input_buffer/error_reg_i_36, u_hash/engine/input_buffer/error_reg_i_31, u_hash/engine/input_buffer/error_reg_i_26, u_hash/engine/input_buffer/error_reg_i_21, u_hash/engine/input_buffer/error_reg_i_16, u_hash/engine/input_buffer/error_reg_i_11, u_hash/engine/input_buffer/error_reg_i_6, u_hash/engine/input_buffer/error_reg_i_4",
+        "1.348 ns summed carry cell delay (14.1% of datapath)"
+      ],
+      "portion": 0.14116661430516286,
+      "confidence": "Vivado source tag",
+      "module": "axis_bytes"
+    }
+  ],
+  "validation": "34 tests passed; 6 optional live-build tests deselected; fresh live DCP extraction; passing DCP and four non-DFX recorded sessions re-imported",
+  "hardware_repair": {
+    "method": "BLAKE2s-only re-placement against unchanged locked static; ExtraTimingOpt placement, Explore physical optimization and routing",
+    "rtl_changed": false,
+    "setup_slack_ns": 0.11,
+    "hold_slack_ns": 0.016,
+    "pr_verify": "full_check compatible",
+    "checkpoint_sha256": "e25f61d7e77a922a261ddc9cd040a320c224d3dc7a3befcadd65af6c3f078001",
+    "original_checkpoint_archive": "build/gem-direct/reimplement-blake2s-ExtraTimingOpt/previous_routed.dcp",
+    "physical_validation": "pending deployment of complete corrected image set"
+  }
+}

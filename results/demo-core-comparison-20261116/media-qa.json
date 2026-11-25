@@ -1,0 +1,38 @@
+{
+  "video": "docs/media/sha3-comparison-architecture.mp4",
+  "full_decode": "passed; ffmpeg error log empty",
+  "integrated_loudness_lufs": -16.05,
+  "true_peak_dbtp": -1.5,
+  "loudness_range_lu": 4.3,
+  "transcribed_chapters": 10,
+  "review_method": "Automated word-timed ASR and acoustic phoneme recognition; visual frame inspection; no human listening claim.",
+  "visually_inspected_final_frames_seconds": [
+    66,
+    199,
+    248
+  ],
+  "live_result_alignment": [
+    {
+      "phrase": "Oxide time on the left",
+      "speech_start_seconds": 242.2,
+      "speech_end_seconds": 243.54,
+      "box_start_seconds": 242
+    },
+    {
+      "phrase": "Compact time on the right",
+      "speech_start_seconds": 246.98,
+      "speech_end_seconds": 248.92,
+      "box_start_seconds": 247
+    },
+    {
+      "phrase": "File identical and digests match",
+      "speech_start_seconds": 252.6,
+      "speech_end_seconds": 257.9,
+      "box_start_seconds": 253
+    }
+  ],
+  "music_in_every_second": true,
+  "live_frames_verified_identical_to_normalized_source": 2250,
+  "browser_chrome_or_automation_cursor_visible_in_reviewed_frames": false,
+  "kept_previous_movies_and_evidence": true
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "physical-zybo-gem-and-replay",
+  "state": "passed",
+  "rows": [
+    {
+      "label": "replay-smoke",
+      "mode": "replay",
+      "core": "compact",
+      "length": 65537,
+      "source": "pattern",
+      "verified": true,
+      "pattern_bytes": 131072,
+      "expected": "da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4",
+      "seconds": 0.00027476,
+      "MB_per_second": 238.5245304993449,
+      "configuration": {
+        "event": "configuration",
+        "core": "compact",
+        "mode": "replay",
+        "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+        "partial_sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e",
+        "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+        "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470",
+        "partial_load_ns": 38924388,
+        "intermediate_algorithm_id": 2
+      },
+      "board": {
+        "event": "result",
+        "ok": true,
+        "status": 18,
+        "error": 0,
+        "ingress_status": 1,
+        "accepted": 65537,
+        "core_cycles": 27476,
+        "board_ns": 302628,
+        "pattern_bytes": 131072,
+        "digest": "da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4"
+      },
+      "client": null,
+      "stopped_control_proof": null
+    },
+    {
+      "label": "ethernet-smoke",
+      "mode": "ethernet",
+      "core": "compact",
+      "length": 65537,
+      "source": "pattern",
+      "verified": true,
+      "pattern_bytes": 131072,
+      "expected": "da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4",
+      "seconds": 0.02273285,
+      "MB_per_second": 2.8829205313016186,
+      "configuration": {
+        "event": "configuration",
+        "core": "compact",
+        "mode": "ethernet",
+        "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+        "partial_sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e",
+        "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+        "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470",
+        "partial_load_ns": 37905504,
+        "intermediate_algorithm_id": 2
+      },
+      "board": {
+        "event": "result",
+        "ok": true,
+        "status": 18,
+        "error": 0,
+        "ingress_status": 0,
+        "accepted": 65537,
+        "core_cycles": 4994538,
+        "board_ns": 49996062,
+        "pattern_bytes": 0,
+        "digest": "da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4"
+      },
+      "client": {
+        "status": "ok",
+        "mode": "gem-to-pl",
+        "session": 56769704,
+        "length": 65537,
+        "transfer_ns": 22732850,
+        "MB_per_second": 2.882920531,
+        "packets_sent": 78,
+        "acks": 859,
+        "retries": 2,
+        "digest": "da96b093d19524e8324c5b3c1b5395cf63d813006024220ad5b23c2e4764aea4"
+      },
+      "stopped_control_proof": null
+    }
+  ],
+  "pattern_bytes": 131072,
+  "started_utc": "2026-11-16T21:50:13.675109+00:00",
+  "source_sha256": {
+    "benchmarks/sha3_profile/compare_inputs.py": "f701bd37d2d4df2bb594fb4f7676657d18170ccb98ebda21d0580f520341dbde",
+    "software/net/gem_send.c": "ef529e846306ab3ed11acc6ad33cad3edfef8f6a1d9443d7cc9a98a3764d20e3",
+    "build/gem-direct/gem_send": "3d7651a7e66822b1dda61fd1a3671a36b7e81235144d3403f46df146fe4162a2"
+  },
+  "pattern_sha256": "3c04e3fee3b0875b2c8a1896a1161255c86d5734abeb73f453b890d976aa290a",
+  "timing": {
+    "ethernet": "PC first data send through FPGA digest reply, no software hash in interval",
+    "replay": "FPGA START through digest, core_cycles at 100 MHz; pattern loading excluded"
+  },
+  "network": {
+    "interface": "enp3s0",
+    "host_mac": "00:d8:61:0a:97:21",
+    "board_mac": "de:f6:cd:7b:38:e7"
+  },
+  "finished_utc": "2026-11-16T21:50:41.430755+00:00"
+}

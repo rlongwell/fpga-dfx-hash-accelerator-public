@@ -1,0 +1,22 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# ps | grep udhcpc; ip link set eth0 up; ip addr replace 10.77.78.2/30 dev eth0;
+ ip addr show eth0; ip route; cat /sys/class/net/eth0/carrier; printf '\nDEMO_CM
+D_f8038a7f879f69a7_%s\n' "$?"
+  410 root     grep udhcpc
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast qlen 1000
+    link/ether be:fa:e4:51:2b:92 brd ff:ff:ff:ff:ff:ff
+    inet 10.77.78.2/30 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::bcfa:e4ff:fe51:2b92/64 scope link 
+       valid_lft forever preferred_lft forever
+10.77.78.0/30 dev eth0 scope link  src 10.77.78.2 
+1
+
+DEMO_CMD_f8038a7f879f69a7_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

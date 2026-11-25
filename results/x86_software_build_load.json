@@ -1,0 +1,69 @@
+{
+  "scope": "x86 software hashes in RAM; no DMA/Ethernet/ARM comparison",
+  "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+  "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+  "load_average_at_start": [
+    16.24853515625,
+    14.95361328125,
+    14.09716796875
+  ],
+  "measurement_context": "Concurrent Vivado routing jobs; no CPU affinity; this is not a peak-performance measurement",
+  "timestamp_utc": "2026-11-12T04:44:58Z",
+  "bytes": 16777216,
+  "repeats": 9,
+  "algorithms": {
+    "sha3": {
+      "samples_ns": [
+        184124020,
+        181625055,
+        176724685,
+        150345347,
+        144787588,
+        148448836,
+        137803361,
+        138124468,
+        143751757
+      ],
+      "median_ns": 148448836,
+      "median_MB_s": 113.01682419389263,
+      "min_ns": 137803361,
+      "max_ns": 184124020
+    },
+    "sha256": {
+      "samples_ns": [
+        115548502,
+        123129493,
+        122528289,
+        128228365,
+        110759963,
+        125443317,
+        135803314,
+        133622744,
+        115113512
+      ],
+      "median_ns": 123129493,
+      "median_MB_s": 136.25668059885538,
+      "min_ns": 110759963,
+      "max_ns": 135803314
+    },
+    "blake2s": {
+      "samples_ns": [
+        109537472,
+        131104334,
+        111245495,
+        110975374,
+        109969206,
+        114126677,
+        110770943,
+        122207737,
+        116670606
+      ],
+      "median_ns": 111245495,
+      "median_MB_s": 150.81254301578684,
+      "min_ns": 109537472,
+      "max_ns": 131104334
+    }
+  }
+}

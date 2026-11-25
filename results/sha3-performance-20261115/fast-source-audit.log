@@ -1,0 +1,8 @@
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/common/axis_bytes.sv: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/rm/sha3_fast.sv: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/rtl/sha3/experiments/hash_sha3_fast.sv: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/scripts/vivado/sha3_variant.tcl: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/static_locked.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha3/routed.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/sha256/routed.dcp: OK
+/home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/blake2s/routed.dcp: OK

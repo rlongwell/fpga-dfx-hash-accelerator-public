@@ -1,0 +1,153 @@
+{
+  "scope": "Presentation revision; no new physical benchmark or RTL change.",
+  "prior_edition_commit": "55fbfe0cf38e2c249e519c6406352db0d281353c",
+  "physical_job": "e0ac322556182145dce29990",
+  "edit_inputs": {
+    "main": {
+      "path": "docs/media/voiceover-charcoal-take-2.mp3",
+      "sha256": "b9b281caa7b8fdd87bc3d229f0610d2aad20a5596570454c18744be9f84361f7"
+    },
+    "updates": {
+      "path": "docs/media/voiceover-architecture-take-2.mp3",
+      "sha256": "a078bd05dd80d0a4eb1489bf9bc31e95d601381482e0b26afe8cc2277ed2e8e8"
+    },
+    "architecture": {
+      "path": "docs/media/sha3-stream-architecture.mp4",
+      "sha256": "9fbd75da0e4f9509c040fb1a83ca6f32e09b3ded4911d9da44bbaf599952799b"
+    },
+    "replay_movie": {
+      "path": "docs/media/sha3-comparison-replay.mp4",
+      "sha256": "8b30253351ebfa505beb40223a034db59d7146f09a34242fbc34891f014daa5f"
+    },
+    "replay_voice": {
+      "path": "docs/media/voiceover-replay-take-2.mp3",
+      "sha256": "0d1a53ab40c2543e134061c0d8bd51ef0dbe6e09d2acf181d068b65c348b6504"
+    },
+    "bridge": {
+      "path": "docs/media/voiceover-sweep-live-take-1.mp3",
+      "sha256": "eda4be9e253ae3896e42cbe3439a2cd5b9b8f1b8caabe95b147e1bd1cd748149"
+    },
+    "live": {
+      "path": "docs/media/sha3-replay-sweep-live.webm",
+      "sha256": "90d80b307ee150dab73a7cbbad8c0486367e925eef87174f324cbd1f787a9ac6"
+    },
+    "job": {
+      "path": "results/demo-full-sweep-20261116/recorded-job.json",
+      "sha256": "edae42978f5b0619b78af8032015612a741a124f5ab8077de0c2a59e390ef765"
+    },
+    "receipt": {
+      "path": "results/demo-full-sweep-20261116/cursor-log.json",
+      "sha256": "18b1c7c39ca9119790688f4369f526ba44b2de626ae2cc4f2cc7546537cac22b"
+    },
+    "results": {
+      "path": "results/demo-full-sweep-20261116/results.json",
+      "sha256": "d058c14005420f7b99a93f347368695cf721ddfd841c15c52031becad2b5198b"
+    },
+    "sweep_plan": {
+      "path": "results/demo-full-sweep-20261116/plan.json",
+      "sha256": "d19089f0cc1e64c27c439f95b5c5fc3cc5a824bd61f605c8e9469a55092dcad8"
+    },
+    "resources": {
+      "path": "results/gem-direct-20261116/implementation-bram64/summary.json",
+      "sha256": "80b1edfc5550f3cedfac7a5176cce27917882d10297bfe5188173fb5110cce20"
+    },
+    "results_live": {
+      "path": "docs/media/sha3-replay-results-rounded.webm",
+      "sha256": "3fc2c2096ab40bcd94959d33b876c7d06e2b90a70fdff6c6e9c6b5df776cdf49"
+    },
+    "results_receipt": {
+      "path": "results/demo-stream-20261116/results-cursor-log.json",
+      "sha256": "24ec135bae847ad222f02d912347ca8cd96e1fa183b51acd1cad33750e2b9dc0"
+    },
+    "revised": {
+      "path": "docs/media/voiceover-stream-refinements-take-1.mp3",
+      "sha256": "b585d48a82f0ed366d2bc8fed421c3e5b9d406ff4441094b5a4ab72ca9a36fd6"
+    }
+  },
+  "music_external": {
+    "path": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94"
+  },
+  "source_dependencies": [
+    {
+      "path": "demo/web/comparison.js",
+      "sha256": "88db532d5e54ed6dcdd73e41e944b7b17e7d1b68d26f0e901b58c8a4363873c8"
+    },
+    {
+      "path": "demo/web/comparison.css",
+      "sha256": "33d86a77d7679f24accf5098a1d3dc7403d5801621c477db48a0ebef1ae6c39c"
+    },
+    {
+      "path": "demo/web/story-stream.json",
+      "sha256": "9bb0b2c7be65146b1b80d9b096109451798f80c40069379c52215db9e1261318"
+    },
+    {
+      "path": "demo/web/replay.js",
+      "sha256": "aa680a9fce61540040a587358c040b964c07593a49c5eafa18cac338df24e7d0"
+    },
+    {
+      "path": "demo/export_stream_frames.js",
+      "sha256": "1c2fc8a0a5db974307772f23941ffa3a1f1126f439beeea1ab5e4ce2b51cdce7"
+    },
+    {
+      "path": "demo/render_stream_diagrams.py",
+      "sha256": "0e01f757049947bc2a67bf302f7688c38e1e612c8cc2bad09cfb5ab067c30187"
+    },
+    {
+      "path": "demo/render_video_full_sweep.py",
+      "sha256": "ef8866aaac5d9c31e90dae1e028d8a61f1ba006d32bbfef1978f4bcaf722e892"
+    },
+    {
+      "path": "demo/video-stream-edit.json",
+      "sha256": "910a2698951bb92f4f6445bdaae2f381ca935368f666df4efbb4b280e0c50c2b"
+    },
+    {
+      "path": "docs/voiceover-stream-demo.txt",
+      "sha256": "d67f6e6bfe13d17c90b5dd9745e9d27fe55a371a02cf987c15b105095bb5c002"
+    },
+    {
+      "path": "docs/voiceover-stream-demo-elevenlabs.txt",
+      "sha256": "34f572193c7a6a31fd5859164c78cbf8f84d0f24fe60224a0866d411823a5167"
+    },
+    {
+      "path": "docs/voiceover-stream-refinements-elevenlabs.txt",
+      "sha256": "05d408cad4c09009b5cf9611cb623c77f7eb7bb38ebcd6c169675c0d5af4902b"
+    },
+    {
+      "path": "docs/media/voiceover-stream-refinements-take-2.mp3",
+      "sha256": "3955446ad357cb6e02d0abb09a88c60d9df09e73345e498d2ce48c17f5bc647e"
+    },
+    {
+      "path": "rtl/net/net_system_top.sv",
+      "sha256": "8d9dfb7c7c1bc3864a9771cfcd2484d22e096a0550ae85789918b9fa8069a02f"
+    },
+    {
+      "path": "rtl/net/gem_ingress.sv",
+      "sha256": "93762d5247236e76f9840e1002515c45a74f4ad9f29562b22aec9bceac95632b"
+    },
+    {
+      "path": "rtl/sha3/experiments/hash_sha3_compact.sv",
+      "sha256": "d912de412ba9d24f4bbbe0744b530e2df45143edb24efedf9045392b4b8198b9"
+    },
+    {
+      "path": "rtl/sha3/experiments/hash_sha3_wide.sv",
+      "sha256": "2efea5f3cb0e69bb5d00ac4a43414ed6e532c0579928da5c93fa4f02962f3292"
+    },
+    {
+      "path": "results/demo-full-sweep-20261116/SHA256SUMS",
+      "sha256": "12023772c6b868ea4750c9b19e9235b9c6d35ff08fb64951851a564afde4ed3f"
+    },
+    {
+      "path": "results/demo-full-sweep-20261116/validation.json",
+      "sha256": "0516545b5c64b351a6e43cb9e8fddf67f740e2c0bb0ec7f6174feecc3b1e9b8f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "0c4cce172298562fcc873641de7db97633e6c870c47e3910240a7a35b3e132b4"
+    }
+  ],
+  "output": {
+    "path": "docs/media/sha3-comparison-stream.mp4",
+    "sha256": "67fbca48cf729d57327721a49758e6fae2f502eaff0aad07cba782b04e596506"
+  }
+}

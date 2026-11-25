@@ -1,0 +1,31 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import gzip,base64;print("JSON_PAYLOAD:"+base64.b64encode(gzip.com
+press(open("/root/hash-network-results-20261116-v1.json","rb").read())).decode()
+)'; printf '\nDEMO_CMD_4f72a558e8c4d300_%s\n' "$?"
+JSON_PAYLOAD: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
+
+DEMO_CMD_4f72a558e8c4d300_0
+# /opt/zybo/hash/start.sh status; cat /etc/default/zybo-hash; cat /sys/class/net
+/eth0/phydev/phy_id; ls -l /sys/bus/mdio_bus/devices; cat /sys/class/net/eth0/de
+vice/power/control; sha256sum /boot/profile.env; cat /sys/class/net/eth0/address
+; printf '\nDEMO_CMD_ee052646c0b71275_%s\n' "$?"
+Hash service running (PID 634)
+# Enable the hash service on the isolated PC-to-board Ethernet link.
+# Loopback stays available for on-board clients.
+HASH_LISTEN=0.0.0.0
+HASH_RECEIVE_MODE=direct
+0x001cc916
+total 0
+lrwxrwxrwx    1 root     root             0 Jan  1 00:50 [1;36me000b000.ethernet-ffffffff:00[m -> [1;34m../../../devices/soc0/axi/e000b000.ethernet/net/eth0/e000b000.ethernet-ffffffff/e000b000.ethernet-ffffffff:00[m
+auto
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+be:fa:e4:51:2b:92
+
+DEMO_CMD_ee052646c0b71275_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

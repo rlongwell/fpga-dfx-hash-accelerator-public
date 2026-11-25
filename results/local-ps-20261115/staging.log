@@ -1,0 +1,3 @@
+Hash profile staged: /home/rl/workspace/fpga-dfx-hash-accelerator/build/local-ps-staging/rootfs/opt/zybo/hash
+Boot payload: /home/rl/workspace/fpga-dfx-hash-accelerator/build/local-ps-staging/boot/profiles/hash
+Run depmod -b ROOTFS_STAGE 6.6.40-dfx-hash after assembling all profiles.

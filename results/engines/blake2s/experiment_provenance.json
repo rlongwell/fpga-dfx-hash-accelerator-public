@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-12T05:33:24Z",
+  "candidate_sha256": "56abd544e2395405c6add2ab27889f8744f60fae6dc58c3043b6ceed527801f0",
+  "production_sha256": "b9f801deef8d5a6fb54819eb1352688ebd3820456e92dff4cfdc9a8d632a713e",
+  "vivado": "2024.2",
+  "part": "xc7z020clg400-1",
+  "clock_mhz": 100,
+  "methodology": "Unmodified scripts/vivado/engine.tcl: 2 ns input/output budgets, OOC, flatten rebuilt, opt/place/phys_opt/route",
+  "promoted": false,
+  "inputs_sha256": {
+    "rtl/common/axis_bytes.sv": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4",
+    "rtl/rm/blake2s.sv": "4944c47e4f542e97f6631ecb6e244212ffba9c2e721ec710effd27fc3641a3ab",
+    "rtl/static/hash_shell.sv": "bb193cf6ecc1fac5b60390de01b80a42b022948acd409991fa0e27d20ec9f470",
+    "scripts/vivado/engine.tcl": "cc4208875b2b71f4760395d2d5738f734a18da87a9c619f65f2c1eab1d03ad9f",
+    "scripts/test_engines.sh": "47d927d659dd36a179ed9957936552c1f7ace85fa837a659fe6da8251b3dff0b",
+    "scripts/test_integration.sh": "5911ab715930a8f245e2934b489579cff503b9840240c672025826fd5db32d0a",
+    "sim/engines/test_engine.cpp": "9f1c6dcbc3364c4e0c13b393c68e38d659514dbd0ac1ac07bbe13a5eb5b96862",
+    "sim/engines/generate_vectors.py": "92190517b8e17babe3ab6702e74f77efbaa8045457187788843c57f68d4e5624",
+    "sim/static/hash_integration.sv": "795b070fd587049ba5cf16c845142d7591d921daaf8d71b07431a7e335d7d44a",
+    "sim/static/shell_test.cpp": "29d21a7f4035e153c8d8c1d93d667ab7e4477606dbd0705ed7f77c9a3926450a",
+    "rtl/blake2s/hash_blake2s.sv": "56abd544e2395405c6add2ab27889f8744f60fae6dc58c3043b6ceed527801f0"
+  }
+}

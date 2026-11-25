@@ -1,0 +1,2 @@
+{"algorithm": "blake2s", "vectors": 79, "bytes": 1194167, "seed": "0xDF02026"}
+PASS integrated shell + real RM: 79 hashlib vectors, 5 hashlib-checked recoveries (abort, invalid keep, overlength, isolation, global reset), random DMA splits, AXIL skew/backpressure, byte-order and file TLAST monitoring

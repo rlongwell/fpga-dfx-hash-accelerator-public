@@ -1,0 +1,1008 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_c3e3ef7f5ce4
+5217_%s\n' "$?"
+{"event": "generation_started", "monotonic_seconds": 281.974413709, "file": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt", "bytes": 1073741824}
+{"event": "generating", "monotonic_seconds": 288.211755537, "bytes": 67108864, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 294.469855614, "bytes": 134217728, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 300.741995414, "bytes": 201326592, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 306.958687522, "bytes": 268435456, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 313.155689333, "bytes": 335544320, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 319.298713218, "bytes": 402653184, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+
+DEMO_CMD_c3e3ef7f5ce45217_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_119362c56ee5
+df08_%s\n' "$?"
+{"event": "generation_started", "monotonic_seconds": 281.974413709, "file": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt", "bytes": 1073741824}
+{"event": "generating", "monotonic_seconds": 288.211755537, "bytes": 67108864, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 294.469855614, "bytes": 134217728, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 300.741995414, "bytes": 201326592, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 306.958687522, "bytes": 268435456, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 313.155689333, "bytes": 335544320, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 319.298713218, "bytes": 402653184, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+
+DEMO_CMD_119362c56ee5df08_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_b469ed48edab
+6ae7_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 294.469855614, "bytes": 134217728, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 300.741995414, "bytes": 201326592, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 306.958687522, "bytes": 268435456, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 313.155689333, "bytes": 335544320, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 319.298713218, "bytes": 402653184, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+
+DEMO_CMD_b469ed48edab6ae7_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_a49393f621b0
+b262_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 306.958687522, "bytes": 268435456, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 313.155689333, "bytes": 335544320, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 319.298713218, "bytes": 402653184, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+
+DEMO_CMD_a49393f621b0b262_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_1e81fa30b779
+924f_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+
+DEMO_CMD_1e81fa30b779924f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_89bc11e455c9
+c8ce_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+
+DEMO_CMD_89bc11e455c9c8ce_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_f77b0f13425e
+03f3_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+
+DEMO_CMD_f77b0f13425e03f3_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_beb6cf9faff0
+d45b_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+
+DEMO_CMD_beb6cf9faff0d45b_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_41ca0a88fcf9
+68f9_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+
+DEMO_CMD_41ca0a88fcf968f9_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_ff57bab7fa3a
+4067_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+
+DEMO_CMD_ff57bab7fa3a4067_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_6e2c6429220f
+d233_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+
+DEMO_CMD_6e2c6429220fd233_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_564b6e6b35c7
+684f_%s\n' "$?"
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+
+DEMO_CMD_564b6e6b35c7684f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_05e1902c82b2
+dc3e_%s\n' "$?"
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 732.182520004, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4485700315, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44857242680, "reference_hashing_in_timed_region": false, "file_read_ns": 33839503250, "dma_calls_ns": 10890894712, "other_local_api_ns": 126844718, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 4, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37639062}
+{"event": "trial_started", "monotonic_seconds": 733.117428115, "trial": 5, "core": "oxide", "bytes": 1073741824}
+
+DEMO_CMD_05e1902c82b2dc3e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_ede6e3755539
+7c3d_%s\n' "$?"
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 732.182520004, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4485700315, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44857242680, "reference_hashing_in_timed_region": false, "file_read_ns": 33839503250, "dma_calls_ns": 10890894712, "other_local_api_ns": 126844718, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 4, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37639062}
+{"event": "trial_started", "monotonic_seconds": 733.117428115, "trial": 5, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 778.821240689, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483952592, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44839728013, "reference_hashing_in_timed_region": false, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "other_local_api_ns": 125714557, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 5, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37511448}
+{"event": "trial_started", "monotonic_seconds": 779.753134352, "trial": 6, "core": "compact", "bytes": 1073741824}
+
+DEMO_CMD_ede6e37555397c3d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_0c90a2440f9b
+2a8b_%s\n' "$?"
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 732.182520004, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4485700315, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44857242680, "reference_hashing_in_timed_region": false, "file_read_ns": 33839503250, "dma_calls_ns": 10890894712, "other_local_api_ns": 126844718, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 4, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37639062}
+{"event": "trial_started", "monotonic_seconds": 733.117428115, "trial": 5, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 778.821240689, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483952592, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44839728013, "reference_hashing_in_timed_region": false, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "other_local_api_ns": 125714557, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 5, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37511448}
+{"event": "trial_started", "monotonic_seconds": 779.753134352, "trial": 6, "core": "compact", "bytes": 1073741824}
+
+DEMO_CMD_0c90a2440f9b2a8b_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# tail -25 /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_179286d98f74
+f07a_%s\n' "$?"
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 732.182520004, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4485700315, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44857242680, "reference_hashing_in_timed_region": false, "file_read_ns": 33839503250, "dma_calls_ns": 10890894712, "other_local_api_ns": 126844718, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 4, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37639062}
+{"event": "trial_started", "monotonic_seconds": 733.117428115, "trial": 5, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 778.821240689, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483952592, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44839728013, "reference_hashing_in_timed_region": false, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "other_local_api_ns": 125714557, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 5, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37511448}
+{"event": "trial_started", "monotonic_seconds": 779.753134352, "trial": 6, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 825.471547219, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4484402035, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44844235933, "reference_hashing_in_timed_region": false, "file_read_ns": 40058795135, "dma_calls_ns": 4658352368, "other_local_api_ns": 127088430, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 6, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37667376}
+{"event": "done", "monotonic_seconds": 826.811696672, "summary": {"oxide": {"local_hash_ns": 44839728013, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "min_ns": 44830792903, "max_ns": 44857242680, "MB_per_second": 23.946216259132957}, "compact": {"local_hash_ns": 44824386577, "file_read_ns": 40017076669, "dma_calls_ns": 4658352368, "min_ns": 44820124057, "max_ns": 44844235933, "MB_per_second": 23.95441200640884}}, "report": "/root/hash-bench-1gib-20261116-16288d0a/results.json"}
+
+DEMO_CMD_179286d98f74f07a_0
+# cat /root/hash-bench-1gib-20261116-16288d0a/results.json; printf '\nDEMO_CMD_6
+0bc676e1c098419_%s\n' "$?"
+{
+  "state": "passed",
+  "file": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt",
+  "kernel": "6.6.40-dfx-hash-wifi",
+  "source_sha256": "f2d5bab2e13b08369dabb46dbaabc22a6ec242cf7d8a7ff87f4ebc60c7598956",
+  "variants_sha256": "f25afa4d8232c768c3572580bb70ba36e6e6811fdd20033dedd214448417d2a5",
+  "installed_checksums": {
+    "dfx_manifest.json": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3",
+    "software/hash_service.py": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "software/hash_local.py": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c"
+  },
+  "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+  "profile_env_before": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+  "samples": [
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4483055257,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44830792903,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 33793332737,
+      "dma_calls_ns": 10890254125,
+      "other_local_api_ns": 147206041,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "oxide",
+      "trial": 1,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+        "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+        "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 37334850
+    },
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4481987167,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44820124057,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 40013506488,
+      "dma_calls_ns": 4660538521,
+      "other_local_api_ns": 146079048,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "compact",
+      "trial": 2,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin",
+        "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin",
+        "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 38256156
+    },
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4482413332,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44824386577,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 40017076669,
+      "dma_calls_ns": 4657931105,
+      "other_local_api_ns": 149378803,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "compact",
+      "trial": 3,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin",
+        "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin",
+        "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 38362536
+    },
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4485700315,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44857242680,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 33839503250,
+      "dma_calls_ns": 10890894712,
+      "other_local_api_ns": 126844718,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "oxide",
+      "trial": 4,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+        "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+        "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 37639062
+    },
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4483952592,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44839728013,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 33823367306,
+      "dma_calls_ns": 10890646150,
+      "other_local_api_ns": 125714557,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "oxide",
+      "trial": 5,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+        "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+        "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 37511448
+    },
+    {
+      "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+      "core_cycles": 4484402035,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1073741824,
+      "dma_transfers": 1024,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 44844235933,
+      "reference_hashing_in_timed_region": false,
+      "file_read_ns": 40058795135,
+      "dma_calls_ns": 4658352368,
+      "other_local_api_ns": 127088430,
+      "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read",
+      "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration",
+      "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute",
+      "core": "compact",
+      "trial": 6,
+      "image": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin",
+        "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin",
+        "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"
+      },
+      "verified": true,
+      "intermediate_algorithm_id": 2,
+      "partial_load_ns": 37667376
+    }
+  ],
+  "warmups": [
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 35245728,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 352754679,
+      "reference_hashing_in_timed_region": false,
+      "core": "oxide",
+      "trial": 1
+    },
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 71119789,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 711418069,
+      "reference_hashing_in_timed_region": false,
+      "core": "compact",
+      "trial": 2
+    },
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 71391305,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 714152449,
+      "reference_hashing_in_timed_region": false,
+      "core": "compact",
+      "trial": 3
+    },
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 71995743,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 720192446,
+      "reference_hashing_in_timed_region": false,
+      "core": "oxide",
+      "trial": 4
+    },
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 71974210,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 719937961,
+      "reference_hashing_in_timed_region": false,
+      "core": "oxide",
+      "trial": 5
+    },
+    {
+      "digest": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+      "core_cycles": 71406417,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 16777216,
+      "dma_transfers": 16,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 714257455,
+      "reference_hashing_in_timed_region": false,
+      "core": "compact",
+      "trial": 6
+    }
+  ],
+  "order": [
+    "oxide",
+    "compact",
+    "compact",
+    "oxide",
+    "oxide",
+    "compact"
+  ],
+  "repeats_per_core": 3,
+  "warmup_bytes": 16777216,
+  "generation": {
+    "bytes": 1073741824,
+    "sha256": "125844319f0bd1e7310751e6b8a42cc057ab044944dc4cd5d2b2ecc0b029f5e6",
+    "elapsed_ns": 100481992635,
+    "generator": "os.urandom; uniform 64-character ASCII alphabet; 127 characters then LF",
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+    "line_bytes": 128,
+    "lines": 8388608
+  },
+  "reference": {
+    "bytes": 1073741824,
+    "sha3_256": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+    "sha256": "125844319f0bd1e7310751e6b8a42cc057ab044944dc4cd5d2b2ecc0b029f5e6",
+    "warmup_prefix_sha3_256": "d25f807b3a05c52124033e901e84c352fea652c952f001cdfa85f06ebfc33169",
+    "elapsed_ns": 161316042522,
+    "timing_scope": "Reference readback, text validation, SHA-256 and SHA3; outside all FPGA timings"
+  },
+  "restored_compact": {
+    "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+    "core_cycles": 27,
+    "status": "ok",
+    "backend": "fpga-dma",
+    "transport": "local-device",
+    "algorithm": "sha3",
+    "algorithm_id": 1,
+    "length": 0,
+    "dma_transfers": 0,
+    "buffer_size": 1048576,
+    "manager_load_ns": 0,
+    "local_hash_ns": 111684,
+    "reference_hashing_in_timed_region": true,
+    "verified": true,
+    "partial_load_ns": 38103757
+  },
+  "summary": {
+    "oxide": {
+      "local_hash_ns": 44839728013,
+      "file_read_ns": 33823367306,
+      "dma_calls_ns": 10890646150,
+      "min_ns": 44830792903,
+      "max_ns": 44857242680,
+      "MB_per_second": 23.946216259132957
+    },
+    "compact": {
+      "local_hash_ns": 44824386577,
+      "file_read_ns": 40017076669,
+      "dma_calls_ns": 4658352368,
+      "min_ns": 44820124057,
+      "max_ns": 44844235933,
+      "MB_per_second": 23.95441200640884
+    }
+  },
+  "profile_env_after": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+  "service_status": "Hash service running (PID 387)"
+}
+
+DEMO_CMD_60bc676e1c098419_0
+# sha256sum /root/hash-bench-1gib-20261116-16288d0a/results.json; printf '\nDEMO
+_CMD_19d6285a21bb6c82_%s\n' "$?"
+c7129fc67dbd8be20b4d617530c44a0c40c79a5bf576f57b2857befa9acd3adc  /root/hash-bench-1gib-20261116-16288d0a/results.json
+
+DEMO_CMD_19d6285a21bb6c82_0
+# cat /tmp/hash-1gib-20261116-16288d0a.log; printf '\nDEMO_CMD_8f6b19853e8b8b23_
+%s\n' "$?"
+{"event": "generation_started", "monotonic_seconds": 281.974413709, "file": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt", "bytes": 1073741824}
+{"event": "generating", "monotonic_seconds": 288.211755537, "bytes": 67108864, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 294.469855614, "bytes": 134217728, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 300.741995414, "bytes": 201326592, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 306.958687522, "bytes": 268435456, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 313.155689333, "bytes": 335544320, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 319.298713218, "bytes": 402653184, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 325.47291929, "bytes": 469762048, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 331.674752517, "bytes": 536870912, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 337.815694762, "bytes": 603979776, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 343.924782623, "bytes": 671088640, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 350.070501096, "bytes": 738197504, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 356.211573355, "bytes": 805306368, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 362.272123537, "bytes": 872415232, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 368.415963602, "bytes": 939524096, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 374.665886212, "bytes": 1006632960, "total": 1073741824}
+{"event": "generating", "monotonic_seconds": 380.944447267, "bytes": 1073741824, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 395.797519978, "bytes": 67108864, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 405.823056254, "bytes": 134217728, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 415.857507359, "bytes": 201326592, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 425.866860285, "bytes": 268435456, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 435.853263024, "bytes": 335544320, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 445.833163293, "bytes": 402653184, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 455.816092182, "bytes": 469762048, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 465.802446238, "bytes": 536870912, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 475.783882651, "bytes": 603979776, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 485.771296984, "bytes": 671088640, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 495.758055637, "bytes": 738197504, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 505.735749952, "bytes": 805306368, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 515.725270976, "bytes": 872415232, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 525.710730761, "bytes": 939524096, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 535.702854482, "bytes": 1006632960, "total": 1073741824}
+{"event": "software_reference", "monotonic_seconds": 545.691676283, "bytes": 1073741824, "total": 1073741824}
+tr: read error: No such process
+{"event": "trial_started", "monotonic_seconds": 546.525485917, "trial": 1, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 592.214328005, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483055257, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44830792903, "reference_hashing_in_timed_region": false, "file_read_ns": 33793332737, "dma_calls_ns": 10890254125, "other_local_api_ns": 147206041, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 1, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37334850}
+{"event": "trial_started", "monotonic_seconds": 593.213239155, "trial": 2, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 638.899948303, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4481987167, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44820124057, "reference_hashing_in_timed_region": false, "file_read_ns": 40013506488, "dma_calls_ns": 4660538521, "other_local_api_ns": 146079048, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 2, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38256156}
+{"event": "trial_started", "monotonic_seconds": 639.833169466, "trial": 3, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 685.5187604, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4482413332, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44824386577, "reference_hashing_in_timed_region": false, "file_read_ns": 40017076669, "dma_calls_ns": 4657931105, "other_local_api_ns": 149378803, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 3, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 38362536}
+{"event": "trial_started", "monotonic_seconds": 686.456764962, "trial": 4, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 732.182520004, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4485700315, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44857242680, "reference_hashing_in_timed_region": false, "file_read_ns": 33839503250, "dma_calls_ns": 10890894712, "other_local_api_ns": 126844718, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 4, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37639062}
+{"event": "trial_started", "monotonic_seconds": 733.117428115, "trial": 5, "core": "oxide", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 778.821240689, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4483952592, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44839728013, "reference_hashing_in_timed_region": false, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "other_local_api_ns": 125714557, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "oxide", "trial": 5, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin", "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin", "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37511448}
+{"event": "trial_started", "monotonic_seconds": 779.753134352, "trial": 6, "core": "compact", "bytes": 1073741824}
+{"event": "trial_complete", "monotonic_seconds": 825.471547219, "digest": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5", "core_cycles": 4484402035, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 1073741824, "dma_transfers": 1024, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 44844235933, "reference_hashing_in_timed_region": false, "file_read_ns": 40058795135, "dma_calls_ns": 4658352368, "other_local_api_ns": 127088430, "cache_policy": "File-scoped POSIX_FADV_DONTNEED before trial; POSIX_FADV_SEQUENTIAL during read", "timing_scope": "SD file read + local API + driver + DMA + core; excludes generation, software reference and reconfiguration", "dma_timing_scope": "Sum of synchronous DMA transfer call durations; includes driver and hardware backpressure, excludes SD read calls; not pure core compute", "core": "compact", "trial": 6, "image": {"algorithm_id": 1, "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin", "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin", "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"}, "verified": true, "intermediate_algorithm_id": 2, "partial_load_ns": 37667376}
+{"event": "done", "monotonic_seconds": 826.811696672, "summary": {"oxide": {"local_hash_ns": 44839728013, "file_read_ns": 33823367306, "dma_calls_ns": 10890646150, "min_ns": 44830792903, "max_ns": 44857242680, "MB_per_second": 23.946216259132957}, "compact": {"local_hash_ns": 44824386577, "file_read_ns": 40017076669, "dma_calls_ns": 4658352368, "min_ns": 44820124057, "max_ns": 44844235933, "MB_per_second": 23.95441200640884}}, "report": "/root/hash-bench-1gib-20261116-16288d0a/results.json"}
+
+DEMO_CMD_8f6b19853e8b8b23_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

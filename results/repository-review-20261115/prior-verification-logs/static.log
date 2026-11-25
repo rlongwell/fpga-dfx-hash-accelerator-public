@@ -1,0 +1,1 @@
+PASS static shell: 13 file sizes, 5 recoveries, arbitrary DMA splits, AXIL skew/backpressure, WSTRB, invalid access, abort, reset, isolation

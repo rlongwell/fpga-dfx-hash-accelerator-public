@@ -1,0 +1,53 @@
+{
+  "variant": "oxide",
+  "clock_mhz": 100,
+  "part": "xc7z020clg400-1",
+  "build_directory": "build/sha3-profile/oxide-spread",
+  "placement_directive": "AltSpreadLogic_high",
+  "timing": {
+    "wns_ns": 0.088,
+    "tns_ns": 0.0,
+    "whs_ns": 0.044,
+    "ths_ns": 0.0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0
+  },
+  "routing": {
+    "errors": 0,
+    "routable": 13334,
+    "routed": 13334
+  },
+  "total": {
+    "luts": 8033,
+    "logic_luts": 7930,
+    "lutram": 2,
+    "srls": 101,
+    "ffs": 6716,
+    "ramb36": 1,
+    "ramb18": 1,
+    "dsps": 0
+  },
+  "rp": {
+    "luts": 5856,
+    "logic_luts": 5856,
+    "lutram": 0,
+    "srls": 0,
+    "ffs": 4221,
+    "ramb36": 0,
+    "ramb18": 0,
+    "dsps": 0
+  },
+  "full_bit": {
+    "source": "build/sha3-profile/oxide-spread/full.bit",
+    "sha256": "9d88b62d4d48cc53bc9daadbc2baadc4dc177febf536bd348993261f3283e06e"
+  },
+  "partial": {
+    "algorithm_id": 1,
+    "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide-249fd6305e81.bin",
+    "source": "build/sha3-profile/oxide-spread/full_pblock_hash_partial.bit.bin",
+    "sha256": "249fd6305e81d7b27d703ec86c5741c1b1e948261528ca577ec40aa2f02ca0df"
+  },
+  "base_static_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "scope": "Routed variant against original locked static; full pr_verify against all three accepted configurations",
+  "physical_tested": false
+}

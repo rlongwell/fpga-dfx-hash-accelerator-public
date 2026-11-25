@@ -1,0 +1,97 @@
+{
+  "kind": "architecture-first-demo-with-scripted-real-ui-actions",
+  "reviewed_utc": "2026-11-16T01:16:35.753347+00:00",
+  "base_commit": "c97a85562a308d9b01551fd9de15663fe81288ef",
+  "physical_benchmark_rerun": false,
+  "fresh_physical_gui_request_id": "12911a9647d8686a24840aef",
+  "physical_checks": {
+    "sample_sha3_software_match": true,
+    "physical_dma_transfers": 1,
+    "local_hash_ns": 506370,
+    "hardware_elapsed_cycles": 26925,
+    "already_loaded_compact": true,
+    "verified_empty_sha3_restore": true,
+    "service_restarted": true,
+    "active_and_next_profile": "hash",
+    "boot_assets_and_profile_env_unchanged": true
+  },
+  "offline_tests": {
+    "demo_unittests_passed": 12,
+    "source_audit_passed": true,
+    "voiceover_alignment_fixture_passed": true,
+    "overlong_narration_rejected": true
+  },
+  "previous_sealed_evidence_unchanged": {
+    "sha3-performance-20261115": 132,
+    "demo-20261115": 15,
+    "demo-recording-20261115": 9
+  },
+  "video": {
+    "codec": "h264",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "duration_seconds": 208,
+    "frames": 6240,
+    "chapters": 10,
+    "audio_tracks": 0,
+    "full_decode_passed": true
+  },
+  "visual_review": {
+    "all_nine_architecture_chapters": true,
+    "chapter_boundary_and_final_frame": true,
+    "real_cursor_clicks_and_digest": true,
+    "debugging_notice_absent_from_capture": true,
+    "codex_cursor_absent_from_capture": true,
+    "native_capture_cursor_disabled": true,
+    "automation_overlay_computed_display_during_capture": "none",
+    "real_app_results_unmodified": true
+  },
+  "edit": {
+    "architecture_seconds": [
+      0,
+      168
+    ],
+    "live_seconds": [
+      0,
+      40
+    ],
+    "live_start_in_movie_seconds": 168,
+    "playback_speed": 1,
+    "live_footer_added": true,
+    "static_tail_repeat_under_one_second": true
+  },
+  "narration": {
+    "provided": false,
+    "script": "docs/voiceover-v2.txt",
+    "timing": "docs/voiceover-v2.md",
+    "audio_pipeline_fixture_is_not_narration": true
+  },
+  "capture_scope": "Selected browser tab only. No browser chrome, desktop, camera or microphone.",
+  "source_and_output_sha256": {
+    "demo/web/index.html": "820fa91e613f1f589ac1af6a2009f67f83a08b9dab6a2bf16930ebbb463d5d01",
+    "demo/web/app.js": "04a0d35145611a921b0fae44bf3544853ab92b449c5625c83ce76f84c760d8cf",
+    "demo/web/style.css": "9c4c65536699e4bfa98a71ead357269f2077e7aa2db73f511ca35c78898ec3c5",
+    "demo/web/comparison.js": "69a8d7b059638ebbea1520a522a3443cfbdcb3bc2cc686fe3157bcc9aae5158c",
+    "demo/web/comparison.css": "c7033f1b2b29d6dd318350826ff8c9a65ac8ad2edf33df45244dc6ef784cf32b",
+    "demo/web/comparison.html": "728f60f987a0edec477283c62808bb497d358f561ad7cc38a3bf781ef3793b74",
+    "demo/web/record.js": "499478484443d1f673f8e03c18939e42c0490f42ae610c83e44d90fe6494c2f6",
+    "demo/web/guided-demo.js": "48d1f6a19c938aadcd05d009aaa339b025bfe8dd62fc0529837da393fdb19865",
+    "demo/web/story-v2.json": "fc6ebde35a05bf7f93b2404b484496f69699ebad9e5a4101ac6743a153fe4432",
+    "demo/web/assets/presentation-pointer.svg": "d024c3617f9e9ef93929375fb877acf17bc7d982a6a42faabfa6a773b67a590b",
+    "demo/web/assets/lucide/SOURCE.json": "3d8e8b0325f87fd16a054159e141d0c49fdb79d540efc4a74d03298fbd1d466d",
+    "demo/render_video_v2.py": "fa0aa3dd796375e626a197ac3fcf86d097c93eba79f0895a3d0b1552746ad496",
+    "demo/add_voiceover.py": "5af8573d3332fd7aca9b94b8f9f6dd62b3688660d44ceb7a3e5477c2bcaae3c1",
+    "docs/media/sha3-comparison-v2.mp4": "4fde9d2ac0d50d4fd35b8c760c53ddcd968802ae5a6b18fb9e876c65584f8386",
+    "docs/voiceover-v2.txt": "639424c0ef6c5cc6cfd47698e2fbe3a8554dd08fa7fb9814fd58cdde5de154f6",
+    "docs/voiceover-v2.md": "d913ab37a2b54175cc26379f80fd18f1e2ae25629b99fbcb0b3447ace1236fd7",
+    "docs/assets/sha3-comparison-v2.png": "2b1f72cbe0c1d539915486d84955d9eeb8342a21acd296c7af8e8308b6fbfe20",
+    "docs/assets/sha3-live-v2.png": "845512d40c94c93db3505b7f6cc50d4de9c04f7fcfac198aeee0303619ba007b"
+  },
+  "raw_captures_sha256": {
+    "build/demo/video-v2/comparison-raw.webm": "50e7d904928d07972fb6c31bbc9a793d2a43676699612080458c487867213776",
+    "build/demo/video-v2/live-raw.webm": "538d4a1a37ccdf708a1527fff17f7906fb9ee373ea709099e7d8e3e143baad84"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "physical-final-health",
+  "passed": true,
+  "checked_utc": "2026-11-16T22:58:40.444821+00:00",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "active_profile": "hash",
+  "next_boot": "hash",
+  "status": "zybo-profile.sh status; uname -r; /opt/zybo/hash/start.sh status; printf '\\nDE\r\r\nMO_CMD_8cdd0eb141b70ca2_%s\\n' \"$?\"\r\nZybo profile: hash\r\nFPGA bitstream: profiles/hash/system.bit\r\nDevice tree: profiles/hash/system.dtb\r\nBoard: Digilent Zybo Z7-20 DFX hash accelerator\r\nNext boot: hash\r\n6.6.40-dfx-hash-wifi\r\nHash service running (PID 7128)\r\n\r\n",
+  "network": "ip -4 addr show eth0; dmesg | tail -n 12; printf '\\nDEMO_CMD_be8a7de037a5b8ca_\r\r\n%s\\n' \"$?\"\r\n2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast qlen 1000\r\n    inet 10.77.78.2/30 scope global eth0\r\n       valid_lft forever preferred_lft forever\r\nmacb e000b000.ethernet eth0: Link is Down\r\nmacb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)\r\nmacb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode\r\nmacb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off\r\nmacb e000b000.ethernet eth0: Link is Down\r\nmacb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)\r\nmacb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode\r\nmacb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off\r\nmacb e000b000.ethernet eth0: Link is Down\r\nmacb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)\r\nmacb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode\r\nmacb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off\r\n\r\n",
+  "ownership_guards": true,
+  "partial_checksums": true,
+  "sd_sentinels_preserved": true,
+  "saved_profile_preserved": true,
+  "rescue_checksums": true,
+  "original_backup": "/root/hash-before-gem-20261116-v1",
+  "uart_log": "final-health-uart.log"
+}

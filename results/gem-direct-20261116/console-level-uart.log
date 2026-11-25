@@ -1,0 +1,14 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'from pathlib import Path;p=Path("/proc/sys/kernel/printk");v=int(p
+.read_text().split()[0]);print("CONSOLE_LEVEL:"+str(v));p.write_text(str(min(v,4
+)))'; printf '\nDEMO_CMD_0f4ee67365d12c0e_%s\n' "$?"
+CONSOLE_LEVEL:7
+
+DEMO_CMD_0f4ee67365d12c0e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

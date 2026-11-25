@@ -1,0 +1,55 @@
+{
+  "variant": "oxide_elastic",
+  "clock_mhz": 100,
+  "part": "xc7z020clg400-1",
+  "build_directory": "build/sha3-profile/oxide-elastic-medium-physopt",
+  "placement_directive": "AltSpreadLogic_medium",
+  "post_route_physical_optimization": "AggressiveExplore",
+  "native_core_placements_retained": 0,
+  "timing": {
+    "wns_ns": 0.045,
+    "tns_ns": 0.0,
+    "whs_ns": 0.044,
+    "ths_ns": 0.0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0
+  },
+  "routing": {
+    "errors": 0,
+    "routable": 13345,
+    "routed": 13345
+  },
+  "total": {
+    "luts": 8033,
+    "logic_luts": 7930,
+    "lutram": 2,
+    "srls": 101,
+    "ffs": 6717,
+    "ramb36": 1,
+    "ramb18": 1,
+    "dsps": 0
+  },
+  "rp": {
+    "luts": 5856,
+    "logic_luts": 5856,
+    "lutram": 0,
+    "srls": 0,
+    "ffs": 4222,
+    "ramb36": 0,
+    "ramb18": 0,
+    "dsps": 0
+  },
+  "full_bit": {
+    "source": "build/sha3-profile/oxide-elastic-medium-physopt/full.bit",
+    "sha256": "aa94dbb92cd80aac5acea04a7217ae820e349cdce449b4b7bec9c84db4c10116"
+  },
+  "partial": {
+    "algorithm_id": 1,
+    "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+    "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+    "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+  },
+  "base_static_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "scope": "Routed variant against original locked static; full pr_verify against all three accepted configurations",
+  "physical_tested": false
+}

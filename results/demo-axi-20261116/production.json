@@ -1,0 +1,21 @@
+{
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "settings": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "playback_rate": 1.06,
+  "generated_text": "A sixty-four-bit acksee stream feeds each core. In the Quartz integration, a local adapter feeds one byte per clock into two full block buffers. One fills while the other feeds the hash state. Twenty-four permutation rounds produce the result, which is copied into a separate digest register.",
+  "selected_take": 1,
+  "selection_reason": "Take 1 matches the requested paragraph and the acoustic recognizer reports æ k s i.",
+  "new_raw_voice_cut_seconds": [
+    0,
+    18.3
+  ],
+  "opening_chapter_seconds": 17.8,
+  "removed_seconds": 7.7,
+  "hardware_tests_this_revision": false,
+  "unchanged_physical_job": "e0ac322556182145dce29990"
+}

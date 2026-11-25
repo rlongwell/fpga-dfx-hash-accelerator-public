@@ -1,0 +1,45 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; python3 /opt/zybo/hash
+/software/hash_client.py 127.0.0.1 /dev/null --algorithm sha3 --verify; dmesg | 
+tail -n 12; printf '\nUART_DONE_331286148772991_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 466)
+{
+  "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+  "core_cycles": 27,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 0,
+  "transfer_and_hash_ns": 102618,
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 5441820,
+  "client_request_ns": 30578850,
+  "client_transfer_and_result_MB_s": 0.0,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+  with arguments:
+    /sbin/init
+  with environment:
+    HOME=/
+    TERM=linux
+EXT4-fs (mmcblk0p2): re-mounted fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 r/w. Quota mode: disabled.
+random: crng init done
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+hash_accel: loading out-of-tree module taints kernel.
+
+UART_DONE_331286148772991_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

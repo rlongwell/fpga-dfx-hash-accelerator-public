@@ -1,0 +1,18 @@
+{
+  "selected_take": 2,
+  "basis": "Both takes pass content transcription and opening phoneme checks. Take 2 has clearer phrase pauses for the progressive reveals. This is automated content, timing and acoustic review, not a claim of human listening.",
+  "takes": [
+    {
+      "take": 1,
+      "lufs": "-25.95",
+      "true_peak_dbtp": "-3.73",
+      "lra": "3.30"
+    },
+    {
+      "take": 2,
+      "lufs": "-26.20",
+      "true_peak_dbtp": "-1.67",
+      "lra": "3.80"
+    }
+  ]
+}

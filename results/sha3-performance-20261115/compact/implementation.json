@@ -1,0 +1,53 @@
+{
+  "variant": "compact",
+  "clock_mhz": 100,
+  "part": "xc7z020clg400-1",
+  "build_directory": "build/sha3-profile/compact",
+  "placement_directive": "Default",
+  "timing": {
+    "wns_ns": 0.212,
+    "tns_ns": 0.0,
+    "whs_ns": 0.044,
+    "ths_ns": 0.0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0
+  },
+  "routing": {
+    "errors": 0,
+    "routable": 8921,
+    "routed": 8921
+  },
+  "total": {
+    "luts": 6708,
+    "logic_luts": 6605,
+    "lutram": 2,
+    "srls": 101,
+    "ffs": 4269,
+    "ramb36": 1,
+    "ramb18": 1,
+    "dsps": 0
+  },
+  "rp": {
+    "luts": 4531,
+    "logic_luts": 4531,
+    "lutram": 0,
+    "srls": 0,
+    "ffs": 1774,
+    "ramb36": 0,
+    "ramb18": 0,
+    "dsps": 0
+  },
+  "full_bit": {
+    "source": "build/sha3-profile/compact/full.bit",
+    "sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40"
+  },
+  "partial": {
+    "algorithm_id": 1,
+    "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin",
+    "source": "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin",
+    "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"
+  },
+  "base_static_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "scope": "Routed variant against original locked static; full pr_verify against all three accepted configurations",
+  "physical_tested": false
+}

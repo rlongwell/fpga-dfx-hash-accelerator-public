@@ -1,0 +1,13 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# test ! -d /run/zybo-hash-net.lock && /opt/zybo/hash/start.sh status; printf '\
+nDEMO_CMD_7cbb586ecd4619b5_%s\n' "$?"
+Hash service stopped
+
+DEMO_CMD_7cbb586ecd4619b5_1
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

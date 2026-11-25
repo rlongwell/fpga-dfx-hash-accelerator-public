@@ -1,0 +1,14 @@
+[
+  {
+    "label": "take-1-acksee",
+    "path": "docs/media/voiceover-axi-take-1.mp3",
+    "start": 0,
+    "duration": 4.5
+  },
+  {
+    "label": "take-2-acksee",
+    "path": "docs/media/voiceover-axi-take-2.mp3",
+    "start": 0,
+    "duration": 4.5
+  }
+]

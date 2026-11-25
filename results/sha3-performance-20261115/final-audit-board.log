@@ -1,0 +1,19 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import pathlib,json,hashlib; P=pathlib.Path; h=lambda p:hashlib.sh
+a256(p.read_bytes()).hexdigest(); b=P("/boot/profiles/hash/before-sha3-fast-2026
+1115"); old=json.loads((b/"backup.json").read_text()); assert all(h(b/n)==v for 
+n,v in old.items()); v=json.loads(P("/opt/zybo/hash/payload.json").read_text());
+ assert all(h((P("/") if x["tree"]=="rootfs" else P("/boot"))/x["path"])==x["sha
+256"] for x in v["files"]); assert h(P("/boot/profile.env"))=="9dc14825fb83ef1fe
+366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc"; print("FINAL_AUDIT_PASS",len(v
+["files"]),"payload files; rollback checksums valid; saved profile unchanged")';
+ printf '\nUART_DONE_331247778075433_%s\n' "$?"
+FINAL_AUDIT_PASS 18 payload files; rollback checksums valid; saved profile unchanged
+
+UART_DONE_331247778075433_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

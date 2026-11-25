@@ -1,0 +1,13 @@
+{
+  "old_duration_seconds": 252.23333333333332,
+  "new_duration_seconds": 244.5333333333,
+  "frames": 7336,
+  "architecture_frames": 2963,
+  "chapter_count": 15,
+  "source_enumeration_removed": true,
+  "spoken_source_uses_acksee": true,
+  "later_bram_experiment_retained": true,
+  "unchanged_physical_job": "e0ac322556182145dce29990",
+  "existing_2_4_gain_retained": true,
+  "music_edits_contiguous": true
+}

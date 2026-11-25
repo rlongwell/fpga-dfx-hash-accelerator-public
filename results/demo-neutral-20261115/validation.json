@@ -1,0 +1,89 @@
+{
+  "result": "PASS",
+  "video": {
+    "seconds": 202,
+    "frames": 6060,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "chapters": 10,
+    "codec": "H.264",
+    "full_decode": "No errors"
+  },
+  "audio": {
+    "channels": 2,
+    "sample_rate": 48000,
+    "codec": "AAC",
+    "integrated_lufs": -16.04,
+    "true_peak_dbtp": -1.68,
+    "music_in_every_one_second_interval": true
+  },
+  "narration": {
+    "neutral_first_person_check": "PASS, excluding the letter I in the spoken API acronym",
+    "explicit_pronunciation": "ess, aitch, ay three",
+    "source_asr_words_preserved": 425,
+    "final_asr_checks": {
+      "23%": true,
+      "58%": true,
+      "169": true,
+      "72": true,
+      "2.36": true,
+      "1.91": true,
+      "zero block RAM": true,
+      "zero DSP": true,
+      "AI assistance": true,
+      "USB upload is excluded": true,
+      "separate from the benchmark": true,
+      "ready for another file": true
+    },
+    "limits": "ASR normalizes S H A to SHA3 and sometimes mislabels binary units; written input and on-screen labels are retained. This is automated content review, not a human listening assessment."
+  },
+  "picture": {
+    "reviewed_seconds": [
+      3,
+      17,
+      38,
+      58,
+      80,
+      99,
+      118,
+      137,
+      151,
+      167,
+      186,
+      200
+    ],
+    "debugging_banner_visible": false,
+    "codex_cursor_visible": false,
+    "custom_scripted_pointer_visible": true,
+    "physical_segment_start": 160,
+    "physical_duration_at_1x": 40,
+    "final_still_added_seconds": 2,
+    "same_time_live_frame_ssim": 0.999769,
+    "live_frames_compared": 1200
+  },
+  "previous_seals_verified": [
+    {
+      "folder": "results/sha3-performance-20261115",
+      "files_verified": 132
+    },
+    {
+      "folder": "results/demo-20261115",
+      "files_verified": 15
+    },
+    {
+      "folder": "results/demo-recording-20261115",
+      "files_verified": 9
+    },
+    {
+      "folder": "results/demo-recording-v2-20261115",
+      "files_verified": 11
+    },
+    {
+      "folder": "results/demo-audio-v3-20261115",
+      "files_verified": 15
+    }
+  ],
+  "previous_v3_external_artifacts_unchanged": true,
+  "board_work": "None; existing physical capture and benchmark are reused without changing their values."
+}

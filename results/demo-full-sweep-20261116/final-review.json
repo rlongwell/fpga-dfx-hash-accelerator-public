@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "movie_sha256": "85ebaa1ab284ad970a399aee6289a3260ebefdf826ce64e5ce0c9e69a6673f6a",
+  "movie_bytes": 13207736,
+  "duration_seconds": 243.767,
+  "frames": 7313,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": 14,
+  "physical_job": "e0ac322556182145dce29990",
+  "software_tests": {
+    "demo": 24,
+    "size_sweep": 7,
+    "passed": true
+  },
+  "picture_checks": {
+    "architecture_and_replay_explanation_retained": true,
+    "real_control_clicks_and_progress_retained": true,
+    "waiting_labeled_32x": true,
+    "results_recaptured_from_same_completed_job": true,
+    "requested_intro_verification_recording_and_units_copy_removed": true,
+    "transition_has_no_old_result_text": true,
+    "capture_startup_overlay_frames_excluded": true,
+    "both_graphs_have_visible_message_size_units": true,
+    "focus_boxes_match_spoken_sections": true,
+    "matching_routed_resources_and_Oxide_AI_credits_visible": true
+  },
+  "audio_checks": {
+    "reviewed_encoded_AAC_unchanged_after_visual_cleanup": true,
+    "chapter_transcription": "final-mix-transcript.json",
+    "shah_phoneme_check": "final-mix-phonemes.json",
+    "music_continuity": "music-continuity.json",
+    "loudness_LUFS": -16.16,
+    "true_peak_dBTP": -1.72
+  },
+  "board": {
+    "profile": "hash",
+    "next_profile": "hash",
+    "service_running": true,
+    "same_boot_id": true
+  },
+  "review_frames": [
+    "final-compact.png",
+    "final-credits.png",
+    "final-fast-forward.png",
+    "final-quartz.png",
+    "final-resources.png",
+    "final-speedup.png",
+    "final-start-first.png",
+    "final-start.png",
+    "final-throughput.png",
+    "final-transition-after.png",
+    "final-transition-before.png"
+  ]
+}

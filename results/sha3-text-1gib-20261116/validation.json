@@ -1,0 +1,16 @@
+{
+  "physical_samples": 6,
+  "physical_warmups": 6,
+  "all_software_digests_match": true,
+  "report_sha256": "c7129fc67dbd8be20b4d617530c44a0c40c79a5bf576f57b2857befa9acd3adc",
+  "source_matches_deployed_program": true,
+  "variants_match_deployed_config": true,
+  "software_reference_location": "Zybo ARM Linux hashlib; separate pass outside FPGA timers",
+  "generator_smoke_check": "Host 8192-byte generation/reference check passed: exact size, 127-character lines, full and prefix SHA3 digests",
+  "final_profile": "hash",
+  "final_service": "running",
+  "radar_settings_sha256": "b4371d8e8657d8d166891de1d9db17cecc59086fdbb6b7b1c46129582851114a",
+  "saved_profile_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc",
+  "payload_transferred_over_uart": false,
+  "file_retained_on_sd": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt"
+}

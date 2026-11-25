@@ -1,0 +1,24 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# chmod 700 /root/gem-board-preflight-9de446a2; /root/gem-board-preflight-9de446
+a2; rc=$?; echo PREFLIGHT_RC:$rc; test "$rc" -eq 2; printf '\nDEMO_CMD_1a2e5c419
+4648d43_%s\n' "$?"
+matching direct-GEM device tree is required
+PREFLIGHT_RC:2
+
+DEMO_CMD_1a2e5c4194648d43_0
+# /opt/zybo/hash/start.sh status; sha256sum /boot/profile.env; ip -4 addr show e
+th0; printf '\nDEMO_CMD_f355f583a93b687f_%s\n' "$?"
+Hash service running (PID 634)
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast qlen 1000
+    inet 10.77.78.2/30 scope global eth0
+       valid_lft forever preferred_lft forever
+
+DEMO_CMD_f355f583a93b687f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

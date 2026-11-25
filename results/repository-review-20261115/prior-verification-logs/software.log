@@ -1,0 +1,20 @@
+test_changed_partial_checksum_blocks_switch (test_service.HardwareBackendTests.test_changed_partial_checksum_blocks_switch) ... ok
+test_configured_algorithm_id_mismatch_is_rejected (test_service.HardwareBackendTests.test_configured_algorithm_id_mismatch_is_rejected) ... ok
+test_current_algorithm_avoids_reconfiguration (test_service.HardwareBackendTests.test_current_algorithm_avoids_reconfiguration) ... ok
+test_driver_abi_and_buffer_rejected_and_device_closed (test_service.HardwareBackendTests.test_driver_abi_and_buffer_rejected_and_device_closed) ... ok
+test_driver_switch_failure_never_announces_ready (test_service.HardwareBackendTests.test_driver_switch_failure_never_announces_ready) ... ok
+test_manifest_abi_and_part_rejected_before_device_open (test_service.HardwareBackendTests.test_manifest_abi_and_part_rejected_before_device_open) ... ok
+test_manifest_algorithm_id_mismatch_blocks_switch (test_service.HardwareBackendTests.test_manifest_algorithm_id_mismatch_blocks_switch) ... ok
+test_switch_validates_image_and_returns_driver_duration (test_service.HardwareBackendTests.test_switch_validates_image_and_returns_driver_duration) ... ok
+test_command_line_client_over_tcp (test_service.ProtocolTests.test_command_line_client_over_tcp) ... ok
+test_configuration_failure_prevents_ready (test_service.ProtocolTests.test_configuration_failure_prevents_ready) ... ok
+test_ethernet_benchmark_harness_over_localhost (test_service.ProtocolTests.test_ethernet_benchmark_harness_over_localhost) ... ok
+test_files_split_across_many_dma_buffers (test_service.ProtocolTests.test_files_split_across_many_dma_buffers) ... ok
+test_invalid_requests (test_service.ProtocolTests.test_invalid_requests) ... ok
+test_short_file_aborts_and_next_request_can_run (test_service.ProtocolTests.test_short_file_aborts_and_next_request_can_run) ... ok
+test_uapi_struct_sizes_and_commands (test_service.ProtocolTests.test_uapi_struct_sizes_and_commands) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.682s
+
+OK

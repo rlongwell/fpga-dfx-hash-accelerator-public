@@ -1,0 +1,328 @@
+{
+  "input": "docs/media/voiceover-axi-take-1.mp3",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "Corrected stream input",
+      "start": 0,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.92,
+          "text": " A 64-bit AXI stream feeds each core.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.2,
+              "word": " A",
+              "probability": 0.9159144759178162
+            },
+            {
+              "start": 0.2,
+              "end": 0.72,
+              "word": " 64",
+              "probability": 0.976883590221405
+            },
+            {
+              "start": 0.72,
+              "end": 0.96,
+              "word": "-bit",
+              "probability": 0.9352400898933411
+            },
+            {
+              "start": 0.96,
+              "end": 1.48,
+              "word": " AXI",
+              "probability": 0.5025194436311722
+            },
+            {
+              "start": 1.48,
+              "end": 1.76,
+              "word": " stream",
+              "probability": 0.8144769668579102
+            },
+            {
+              "start": 1.76,
+              "end": 2.22,
+              "word": " feeds",
+              "probability": 0.9976688027381897
+            },
+            {
+              "start": 2.22,
+              "end": 2.58,
+              "word": " each",
+              "probability": 0.9989216327667236
+            },
+            {
+              "start": 2.58,
+              "end": 2.92,
+              "word": " core.",
+              "probability": 0.9735487103462219
+            }
+          ]
+        },
+        {
+          "start": 3.44,
+          "end": 9.18,
+          "text": " In the quartz integration, a local adapter feeds one byte per clock into two full block buffers.",
+          "words": [
+            {
+              "start": 3.44,
+              "end": 3.58,
+              "word": " In",
+              "probability": 0.9959540367126465
+            },
+            {
+              "start": 3.58,
+              "end": 3.74,
+              "word": " the",
+              "probability": 0.9975699782371521
+            },
+            {
+              "start": 3.74,
+              "end": 3.92,
+              "word": " quartz",
+              "probability": 0.4108460545539856
+            },
+            {
+              "start": 3.92,
+              "end": 4.5,
+              "word": " integration,",
+              "probability": 0.9943597912788391
+            },
+            {
+              "start": 5.04,
+              "end": 5.1,
+              "word": " a",
+              "probability": 0.9950020909309387
+            },
+            {
+              "start": 5.1,
+              "end": 5.38,
+              "word": " local",
+              "probability": 0.996100664138794
+            },
+            {
+              "start": 5.38,
+              "end": 5.82,
+              "word": " adapter",
+              "probability": 0.9580822587013245
+            },
+            {
+              "start": 5.82,
+              "end": 6.2,
+              "word": " feeds",
+              "probability": 0.9971519708633423
+            },
+            {
+              "start": 6.2,
+              "end": 6.58,
+              "word": " one",
+              "probability": 0.6169993877410889
+            },
+            {
+              "start": 6.58,
+              "end": 6.82,
+              "word": " byte",
+              "probability": 0.9580718874931335
+            },
+            {
+              "start": 6.82,
+              "end": 7.06,
+              "word": " per",
+              "probability": 0.943731427192688
+            },
+            {
+              "start": 7.06,
+              "end": 7.36,
+              "word": " clock",
+              "probability": 0.9804133772850037
+            },
+            {
+              "start": 7.36,
+              "end": 7.7,
+              "word": " into",
+              "probability": 0.9917430281639099
+            },
+            {
+              "start": 7.7,
+              "end": 8.1,
+              "word": " two",
+              "probability": 0.9569154381752014
+            },
+            {
+              "start": 8.1,
+              "end": 8.48,
+              "word": " full",
+              "probability": 0.9915790557861328
+            },
+            {
+              "start": 8.48,
+              "end": 8.76,
+              "word": " block",
+              "probability": 0.4745327830314636
+            },
+            {
+              "start": 8.76,
+              "end": 9.18,
+              "word": " buffers.",
+              "probability": 0.9978159666061401
+            }
+          ]
+        },
+        {
+          "start": 9.72,
+          "end": 12.28,
+          "text": " One fills, while the other feeds the hash state.",
+          "words": [
+            {
+              "start": 9.72,
+              "end": 10.06,
+              "word": " One",
+              "probability": 0.9960412979125977
+            },
+            {
+              "start": 10.06,
+              "end": 10.4,
+              "word": " fills,",
+              "probability": 0.9980006814002991
+            },
+            {
+              "start": 10.6,
+              "end": 10.8,
+              "word": " while",
+              "probability": 0.9978760480880737
+            },
+            {
+              "start": 10.8,
+              "end": 10.94,
+              "word": " the",
+              "probability": 0.9978474378585815
+            },
+            {
+              "start": 10.94,
+              "end": 11.22,
+              "word": " other",
+              "probability": 0.9993317723274231
+            },
+            {
+              "start": 11.22,
+              "end": 11.54,
+              "word": " feeds",
+              "probability": 0.9935718774795532
+            },
+            {
+              "start": 11.54,
+              "end": 11.76,
+              "word": " the",
+              "probability": 0.999232292175293
+            },
+            {
+              "start": 11.76,
+              "end": 11.96,
+              "word": " hash",
+              "probability": 0.979889988899231
+            },
+            {
+              "start": 11.96,
+              "end": 12.28,
+              "word": " state.",
+              "probability": 0.9682871699333191
+            }
+          ]
+        },
+        {
+          "start": 12.88,
+          "end": 18.1,
+          "text": " 24 permutation rounds produce the result, which is copied into a separate digest register.",
+          "words": [
+            {
+              "start": 12.88,
+              "end": 13.24,
+              "word": " 24",
+              "probability": 0.5471031665802002
+            },
+            {
+              "start": 13.24,
+              "end": 13.9,
+              "word": " permutation",
+              "probability": 0.990092933177948
+            },
+            {
+              "start": 13.9,
+              "end": 14.32,
+              "word": " rounds",
+              "probability": 0.9918439984321594
+            },
+            {
+              "start": 14.32,
+              "end": 14.72,
+              "word": " produce",
+              "probability": 0.9949750900268555
+            },
+            {
+              "start": 14.72,
+              "end": 14.94,
+              "word": " the",
+              "probability": 0.9984606504440308
+            },
+            {
+              "start": 14.94,
+              "end": 15.32,
+              "word": " result,",
+              "probability": 0.9974295496940613
+            },
+            {
+              "start": 15.66,
+              "end": 15.74,
+              "word": " which",
+              "probability": 0.9987965822219849
+            },
+            {
+              "start": 15.74,
+              "end": 15.9,
+              "word": " is",
+              "probability": 0.9989476799964905
+            },
+            {
+              "start": 15.9,
+              "end": 16.22,
+              "word": " copied",
+              "probability": 0.99953293800354
+            },
+            {
+              "start": 16.22,
+              "end": 16.56,
+              "word": " into",
+              "probability": 0.9944000840187073
+            },
+            {
+              "start": 16.56,
+              "end": 16.82,
+              "word": " a",
+              "probability": 0.9963790774345398
+            },
+            {
+              "start": 16.82,
+              "end": 17.12,
+              "word": " separate",
+              "probability": 0.9973092079162598
+            },
+            {
+              "start": 17.12,
+              "end": 17.56,
+              "word": " digest",
+              "probability": 0.8889281749725342
+            },
+            {
+              "start": 17.56,
+              "end": 18.1,
+              "word": " register.",
+              "probability": 0.9985454082489014
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

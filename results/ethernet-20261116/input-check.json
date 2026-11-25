@@ -1,0 +1,8 @@
+{
+  "bytes": 1073741824,
+  "sha256": "125844319f0bd1e7310751e6b8a42cc057ab044944dc4cd5d2b2ecc0b029f5e6",
+  "sha3_256": "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5",
+  "download_seconds": 46.398692395,
+  "source": "Original board-generated 1 GiB file, copied over Ethernet before benchmarking",
+  "transport": "enp3s0 10.77.78.1 -> eth0 10.77.78.2"
+}

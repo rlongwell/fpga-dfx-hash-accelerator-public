@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "movie_sha256": "95ecadcc25e81e9328585d11bd0d00996762d03337cc0c4ba49def69d1f700b3",
+  "movie_bytes": 13748462,
+  "duration_seconds": 247.766667,
+  "frames": 7433,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": 15,
+  "physical_job": "e0ac322556182145dce29990",
+  "new_hardware_tests": false,
+  "BRAMs": {
+    "Oxide Quartz": 0,
+    "Compact": 0
+  },
+  "picture_checks": {
+    "single_BRAM_row_no_primitive_sizes": true,
+    "zero_counts_match_routed_hash_partitions": true,
+    "row_reveal_follows_spoken_sentence": true,
+    "shared_replay_memory_separately_labeled": true,
+    "LUT_FF_savings_retained": true,
+    "credits_retained": true,
+    "prefix_parts_identical": "picture-prefix-check.json"
+  },
+  "audio_checks": {
+    "tail_transcription": "final-tail-transcript.json",
+    "source_take_transcription": "take-1-transcript.json",
+    "phoneme_check": "bram-phonemes.json",
+    "pronunciation": "b ɹ æ m z",
+    "recognition_note": "Final mixed-audio Whisper transcription normalizes brams to brands; the acoustic recognizer confirms b-r-ae-m-z in both source and final mix. The recognition output is retained verbatim.",
+    "narration_before_resource_chapter_identical": "narration-prefix-check.json",
+    "loudness_LUFS": -16.13,
+    "true_peak_dBTP": -1.74,
+    "continuous_music": true,
+    "voice_settings_unchanged": true,
+    "pitch_preserving_playback_rate": 1.06
+  },
+  "code_checks": [
+    "Python compilation",
+    "Source checksums and zero-BRAM assertions",
+    "Rendered resource SVG inspected",
+    "Frame count and music continuity"
+  ],
+  "review_frames": [
+    "final-credits.png",
+    "final-resources-before-bram.png",
+    "final-resources-complete.png",
+    "final-resources-zero-bram.png"
+  ]
+}

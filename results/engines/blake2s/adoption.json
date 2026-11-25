@@ -1,0 +1,69 @@
+{
+  "adopted_utc": "2026-11-12T05:42:33Z",
+  "status": "Identical-source experiment measurement adopted after production promotion",
+  "rerouted_for_adoption": false,
+  "resimulated_for_adoption": false,
+  "experiment": "build/experiments/blake2s_prefetch/evaluation",
+  "experiment_receipt_sha256": "3d8927dd49d89ed3222444bcd382dd49acdc419dc026b1be513fb16b967dc4b3",
+  "methodology": "Exact byte-identical production engine.tcl, same Vivado 2024.2 xc7z020clg400-1, 100 MHz and 2 ns IO budgets",
+  "input_path_mapping": [
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/rtl/common/axis_bytes.sv",
+      "production": "rtl/common/axis_bytes.sv",
+      "sha256": "d32447f0000b5a4cdfa4137d5cdfcedc413ec6b3d633425903569adf59d218b4"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/rtl/rm/blake2s.sv",
+      "production": "rtl/rm/blake2s.sv",
+      "sha256": "4944c47e4f542e97f6631ecb6e244212ffba9c2e721ec710effd27fc3641a3ab"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/rtl/static/hash_shell.sv",
+      "production": "rtl/static/hash_shell.sv",
+      "sha256": "bb193cf6ecc1fac5b60390de01b80a42b022948acd409991fa0e27d20ec9f470"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/scripts/vivado/engine.tcl",
+      "production": "scripts/vivado/engine.tcl",
+      "sha256": "cc4208875b2b71f4760395d2d5738f734a18da87a9c619f65f2c1eab1d03ad9f"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/scripts/test_engines.sh",
+      "production": "scripts/test_engines.sh",
+      "sha256": "47d927d659dd36a179ed9957936552c1f7ace85fa837a659fe6da8251b3dff0b"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/scripts/test_integration.sh",
+      "production": "scripts/test_integration.sh",
+      "sha256": "5911ab715930a8f245e2934b489579cff503b9840240c672025826fd5db32d0a"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/sim/engines/test_engine.cpp",
+      "production": "sim/engines/test_engine.cpp",
+      "sha256": "9f1c6dcbc3364c4e0c13b393c68e38d659514dbd0ac1ac07bbe13a5eb5b96862"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/sim/engines/generate_vectors.py",
+      "production": "sim/engines/generate_vectors.py",
+      "sha256": "92190517b8e17babe3ab6702e74f77efbaa8045457187788843c57f68d4e5624"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/sim/static/hash_integration.sv",
+      "production": "sim/static/hash_integration.sv",
+      "sha256": "795b070fd587049ba5cf16c845142d7591d921daaf8d71b07431a7e335d7d44a"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/sim/static/shell_test.cpp",
+      "production": "sim/static/shell_test.cpp",
+      "sha256": "29d21a7f4035e153c8d8c1d93d667ab7e4477606dbd0705ed7f77c9a3926450a"
+    },
+    {
+      "experiment": "build/experiments/blake2s_prefetch/evaluation/rtl/blake2s/hash_blake2s.sv",
+      "production": "rtl/blake2s/hash_blake2s.sv",
+      "sha256": "56abd544e2395405c6add2ab27889f8744f60fae6dc58c3043b6ceed527801f0"
+    }
+  ],
+  "historical_baseline": "results/engines/blake2s_pre_prefetch",
+  "hardware_tested": false,
+  "origin_report_paths_preserved": true
+}

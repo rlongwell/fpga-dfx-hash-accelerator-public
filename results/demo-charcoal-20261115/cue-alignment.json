@@ -1,0 +1,182 @@
+{
+  "method": "Reveal times matched to selected-take word timestamps; 0.5 s visual fade/settle. No recurring lane counters. Brief packets travel only during the explained input transfers.",
+  "cues": [
+    {
+      "point": "Byte input",
+      "display_reveal_start": 17.2,
+      "spoken_phrase_start": 17.279,
+      "lead_seconds": 0.079
+    },
+    {
+      "point": "Two block buffers",
+      "display_reveal_start": 19.3,
+      "spoken_phrase_start": 19.449,
+      "lead_seconds": 0.149
+    },
+    {
+      "point": "Previous block processing",
+      "display_reveal_start": 21.6,
+      "spoken_phrase_start": 21.713,
+      "lead_seconds": 0.113
+    },
+    {
+      "point": "Full-rate adapter throughput",
+      "display_reveal_start": 26,
+      "spoken_phrase_start": 25.958,
+      "lead_seconds": -0.042
+    },
+    {
+      "point": "Eight-byte DMA input",
+      "display_reveal_start": 35.3,
+      "spoken_phrase_start": 35.317,
+      "lead_seconds": 0.017
+    },
+    {
+      "point": "One-beat buffer",
+      "display_reveal_start": 38.1,
+      "spoken_phrase_start": 38.147,
+      "lead_seconds": 0.047
+    },
+    {
+      "point": "Direct state absorption",
+      "display_reveal_start": 40,
+      "spoken_phrase_start": 40.223,
+      "lead_seconds": 0.223
+    },
+    {
+      "point": "Removing block buffers",
+      "display_reveal_start": 41.6,
+      "spoken_phrase_start": 41.619,
+      "lead_seconds": 0.019
+    },
+    {
+      "point": "State-backed digest",
+      "display_reveal_start": 43.5,
+      "spoken_phrase_start": 43.713,
+      "lead_seconds": 0.213
+    },
+    {
+      "point": "Separate cycles",
+      "display_reveal_start": 46.2,
+      "spoken_phrase_start": 46.317,
+      "lead_seconds": 0.117
+    },
+    {
+      "point": "24 permutation rounds",
+      "display_reveal_start": 48.8,
+      "spoken_phrase_start": 48.713,
+      "lead_seconds": -0.087
+    },
+    {
+      "point": "Rate-only padding",
+      "display_reveal_start": 56.1,
+      "spoken_phrase_start": 56.175,
+      "lead_seconds": 0.075
+    },
+    {
+      "point": "Registered framing errors",
+      "display_reveal_start": 62.2,
+      "spoken_phrase_start": 62.27,
+      "lead_seconds": 0.07
+    },
+    {
+      "point": "Standalone result",
+      "display_reveal_start": 66,
+      "spoken_phrase_start": 65.987,
+      "lead_seconds": -0.013
+    },
+    {
+      "point": "LUT result",
+      "display_reveal_start": 76.1,
+      "spoken_phrase_start": 76.374,
+      "lead_seconds": 0.274
+    },
+    {
+      "point": "Flip-flop result",
+      "display_reveal_start": 79.2,
+      "spoken_phrase_start": 79.317,
+      "lead_seconds": 0.117
+    },
+    {
+      "point": "Adapter scope",
+      "display_reveal_start": 81.4,
+      "spoken_phrase_start": 81.543,
+      "lead_seconds": 0.143
+    },
+    {
+      "point": "Zero BRAM / DSP",
+      "display_reveal_start": 87.3,
+      "spoken_phrase_start": 87.43,
+      "lead_seconds": 0.13
+    },
+    {
+      "point": "Quartz hashing time",
+      "display_reveal_start": 114.2,
+      "spoken_phrase_start": 114.387,
+      "lead_seconds": 0.187
+    },
+    {
+      "point": "Compact hashing time",
+      "display_reveal_start": 117.9,
+      "spoken_phrase_start": 117.953,
+      "lead_seconds": 0.053
+    },
+    {
+      "point": "DMA speedup",
+      "display_reveal_start": 120.2,
+      "spoken_phrase_start": 120.255,
+      "lead_seconds": 0.055
+    },
+    {
+      "point": "PS API comparison",
+      "display_reveal_start": 123.5,
+      "spoken_phrase_start": 123.67,
+      "lead_seconds": 0.17
+    },
+    {
+      "point": "Copying and request overhead",
+      "display_reveal_start": 127.9,
+      "spoken_phrase_start": 127.991,
+      "lead_seconds": 0.091
+    },
+    {
+      "point": "AI assistance credit",
+      "display_reveal_start": 155.5,
+      "spoken_phrase_start": 155.481,
+      "lead_seconds": -0.019
+    }
+  ],
+  "live": {
+    "pointer_clicks_seconds": [
+      2.0481,
+      7.7682,
+      10.1894
+    ],
+    "pointer_fades_at": 17,
+    "digest_box_seconds": [
+      23.1007,
+      26.2
+    ],
+    "hash_time_box_seconds": [
+      27.401,
+      31.5
+    ],
+    "physical_capture_seconds": 40,
+    "physical_speed": 1,
+    "final_hold_seconds": 2
+  },
+  "music_anchors": [
+    {
+      "time": 73.41,
+      "purpose": "Build under the resource counts"
+    },
+    {
+      "time": 113.28,
+      "purpose": "Arrangement change as the Oxide Quartz timing is introduced"
+    },
+    {
+      "time": 181.04,
+      "purpose": "Lift into the physical digest reveal at 183.4 s"
+    }
+  ]
+}

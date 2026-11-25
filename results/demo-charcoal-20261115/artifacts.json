@@ -1,0 +1,133 @@
+{
+  "files": [
+    {
+      "path": "docs/media/sha3-comparison-charcoal.mp4",
+      "bytes": 11453210,
+      "sha256": "4c358d8ebc7a256cf9ffcff97318e51668fc96dee82041ca2a77afa385091d5b"
+    },
+    {
+      "path": "docs/media/sha3-comparison-charcoal-source.mp4",
+      "bytes": 3880800,
+      "sha256": "46ff278b39089ea140dab4984a400749f26008971e76d8ad3020a38150532afb"
+    },
+    {
+      "path": "docs/media/voiceover-charcoal-take-1.mp3",
+      "bytes": 3026661,
+      "sha256": "537e20906cd576cdc0f1313d6dfc53c807e4af568714a5ba0b9549ba20df87ce"
+    },
+    {
+      "path": "docs/media/voiceover-charcoal-take-2.mp3",
+      "bytes": 3056336,
+      "sha256": "b9b281caa7b8fdd87bc3d229f0610d2aad20a5596570454c18744be9f84361f7"
+    },
+    {
+      "path": "docs/voiceover-charcoal.txt",
+      "bytes": 2980,
+      "sha256": "3bbeb384761c55cd36666adc3abb61650f6a205168a9570d28be2e71772fddd0"
+    },
+    {
+      "path": "docs/voiceover-charcoal-elevenlabs.txt",
+      "bytes": 3071,
+      "sha256": "29199811f5da3bc0a65554ed7055c9dc78c676d554a86db4f22913ea21630079"
+    },
+    {
+      "path": "demo/video-charcoal-edit.json",
+      "bytes": 7827,
+      "sha256": "ac02cde5bedf438ba8c668dab690087c61e8c54f703fe673716fd27f2232da62"
+    },
+    {
+      "path": "demo/web/story-charcoal.json",
+      "bytes": 4574,
+      "sha256": "56f0420f67ec0b3396fd8e8639aedbb2dd009e907c76ffe9fcd504b36ea6dadf"
+    },
+    {
+      "path": "demo/assemble_video_charcoal.py",
+      "bytes": 5366,
+      "sha256": "cd8b72fa8adfffa27ab20e73ae7ac0605a1bd7e5ec61750962ee2cddfb09e6aa"
+    },
+    {
+      "path": "demo/render_video_charcoal.py",
+      "bytes": 5612,
+      "sha256": "fc720e82a054ed52a6e38a2fd674a3ab4c70a5c975c01dfdc5aaef5f0751fcc4"
+    },
+    {
+      "path": "demo/render_video_neutral.py",
+      "bytes": 5213,
+      "sha256": "698bf928652688f81eec3b2f6162188a9c50ef39714dd96cfe7c0e6aab036371"
+    },
+    {
+      "path": "demo/render_video_v3.py",
+      "bytes": 10893,
+      "sha256": "258eb4157675a24af942c29e33e1068c5b3d0170976eb722d9c6ac5087e8731d"
+    },
+    {
+      "path": "demo/check_voice_phonemes.py",
+      "bytes": 2277,
+      "sha256": "b9031e872f0d001688f16206730d7abfd4b79eddba45e7bc9a9f0242df1c97c9"
+    },
+    {
+      "path": "demo/transcribe_video.py",
+      "bytes": 1595,
+      "sha256": "a1972d06d26b5bd2eef11fe26f762a29702c5df52a51f0a219a2b97d9db77f26"
+    },
+    {
+      "path": "demo/web/app.js",
+      "bytes": 16360,
+      "sha256": "fb807214a81f8e3f911f496d12638f46376bcadbd25c72de6a6081fc22c2d2bf"
+    },
+    {
+      "path": "demo/web/comparison.js",
+      "bytes": 13380,
+      "sha256": "72bf653d799ac03600072d06f7c76ba565b2f192b36af90871b6a0a3802230aa"
+    },
+    {
+      "path": "demo/web/comparison.css",
+      "bytes": 2067,
+      "sha256": "17d7c84178ff0b95a840c20de9c7fd2c87d8f1a643bdfd5d0f03c25c6364fc73"
+    },
+    {
+      "path": "demo/web/comparison.html",
+      "bytes": 1020,
+      "sha256": "e489e96be42ec53ce034a09b3d2a2fc51bebe89e1ef0b770994fc970edc49073"
+    },
+    {
+      "path": "demo/web/guided-demo.js",
+      "bytes": 7250,
+      "sha256": "2b8438b7208a843120601ebe991a6451ce7a67678ff1c2a3ba324163ea0d4b56"
+    },
+    {
+      "path": "demo/web/style.css",
+      "bytes": 31106,
+      "sha256": "f908946d506c52b00e86996d21b666b74cb3aa8025566c16b12e5c3b1e3d3705"
+    },
+    {
+      "path": "demo/web/index.html",
+      "bytes": 15707,
+      "sha256": "2d5e3ac680f0ea28b4fcfeea797e13b835a4a0e2b7d3004dda42e09ca70ca2bf"
+    },
+    {
+      "path": "demo/web/assets/presentation-pointer.svg",
+      "bytes": 356,
+      "sha256": "d67f08f9dc651d6bdfc2e9deb31edf7ac5cab121238122074a8a744010b8eaa0"
+    }
+  ],
+  "local_raw_captures": [
+    {
+      "path": "build/demo/video-v6/presentation-final.webm",
+      "bytes": 5964340,
+      "sha256": "f334e5683809b6ed8803feaf7e0886f9f89689282f43ce63c13202f4a2c33c77"
+    },
+    {
+      "path": "build/demo/video-v6/live-final.webm",
+      "bytes": 673354,
+      "sha256": "57fedbb6d83b8750f3fad862e0c5b38d3255175cf44a434256927a4af9d01794"
+    }
+  ],
+  "music_source": {
+    "filename": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94",
+    "artist": "2050",
+    "provider": "Artlist",
+    "standalone_source_committed": false
+  }
+}

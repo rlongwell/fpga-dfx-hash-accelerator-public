@@ -1,0 +1,36 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import tarfile,hashlib;from pathlib import Path;a=Path("/root/hash
+-gem-software-ownership-v3.tar.gz");assert hashlib.sha256(a.read_bytes()).hexdig
+est()=="c1a9e1f974a15069f193a74d77f70aa122aa9a51c494218e0624f379d08880d9";p=Path
+('"'"'/root/hash-gem-ownership-v3'"'"');p.mkdir();tarfile.open(a).extractall(p)'
+; printf '\nDEMO_CMD_6383d143c3675b25_%s\n' "$?"
+
+DEMO_CMD_6383d143c3675b25_0
+# python3 -c 'from pathlib import Path;import json,hashlib,shutil;s=Path('"'"'/r
+oot/hash-gem-ownership-v3'"'"');b=Path("/root/hash-before-ownership-v3");b.mkdir
+();files=json.loads((s/"inventory.json").read_text());assert not Path("/run/zybo
+-hash-net.lock").exists();assert all(hashlib.sha256((s/n).read_bytes()).hexdiges
+t()==h for n,h in files.items());[( (b/n).parent.mkdir(parents=True,exist_ok=Tru
+e),shutil.copy2(Path("/opt/zybo/hash")/n,b/n)) for n in files];print(files)'; pr
+intf '\nDEMO_CMD_2004ba3f1375de31_%s\n' "$?"
+{'start.sh': '619ae53f5a4b8d4a5bfa4e6da8437d2b3a89841ee74e103c4c2ee1318010fe07', 'software/hash_service.py': '1a11442d37692bb8f556305fb3bba3e2a74ee6ade1883303f3ace4250959dc38', 'net/board_run.py': '419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470'}
+
+DEMO_CMD_2004ba3f1375de31_0
+# python3 -c 'from pathlib import Path;import json,hashlib,shutil,subprocess;s=P
+ath('"'"'/root/hash-gem-ownership-v3'"'"');d=Path("/opt/zybo/hash");files=json.l
+oads((s/"inventory.json").read_text());subprocess.run([str(d/"start.sh"),"stop"]
+,check=True);exec('"'"'try:\n for n,h in files.items():\n  shutil.copy2(s/n,d/n)
+\n  assert hashlib.sha256((d/n).read_bytes()).hexdigest()==h\nfinally:\n subproc
+ess.run([str(d/"start.sh"),"start"],check=True)'"'"')'; printf '\nDEMO_CMD_cd199
+c2c2eaba3fa_%s\n' "$?"
+tr: read error: No such process
+Hash service started (PID 2704); log: /var/log/zybo-hash.log
+
+DEMO_CMD_cd199c2c2eaba3fa_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

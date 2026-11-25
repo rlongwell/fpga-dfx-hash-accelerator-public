@@ -1,0 +1,106 @@
+{
+  "profile": "hash",
+  "kernel_release": "6.6.40-dfx-hash",
+  "module_vermagic": "6.6.40-dfx-hash SMP preempt mod_unload modversions ARMv7 p2v8",
+  "runtime": "Python 3.11+; HASH_LISTEN defaults to 127.0.0.1; TCP port 9237",
+  "files": [
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/dfx_manifest.json",
+      "sha256": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3"
+    },
+    {
+      "tree": "rootfs",
+      "path": "lib/modules/6.6.40-dfx-hash/extra/hash_accel.ko",
+      "sha256": "9ea345248c2eea122699e2d71d0044d6da92199eefd7ada2e34552f04587764e"
+    },
+    {
+      "tree": "boot",
+      "path": "profiles/hash/system.bit",
+      "sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40"
+    },
+    {
+      "tree": "boot",
+      "path": "profiles/hash/system.dtb",
+      "sha256": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/software/hash_client.py",
+      "sha256": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/software/hash_service.py",
+      "sha256": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/board.py",
+      "sha256": "c62705e5d318639b5fdce237cb6fa23a9718a8698cfb53a7bfad9db3e7b403e1"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/engine_results.py",
+      "sha256": "204cf617d114bd71d57a0c56e8707cad539099b41812f3861e43a8019a20aec6"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/ethernet.py",
+      "sha256": "d6d368abaa1d55ef4e8db2738b130cf7a30225855885c80f335b8c9fdbac5dd9"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/report.py",
+      "sha256": "2e022c646782e3dc9a0ead0c96b07b939147cc96618becf4e6e04bcf9e9a24be"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/x86_hashes.py",
+      "sha256": "b030294afc950e85494f7fcf1450f0748106e7fc0bfe2073bb0ed249346b0c23"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/clock_results.py",
+      "sha256": "4c771433955bb6b69c01f2ea933ff9f5ac889c2f34305fa101af9bda9e47b4ee"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/benchmarks/congestion.py",
+      "sha256": "da3e9ec69428601fad2055cc96d2638c8756dd8431f33066bce500bd22fd6414"
+    },
+    {
+      "tree": "rootfs",
+      "path": "opt/zybo/hash/software/hash_local.py",
+      "sha256": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c"
+    },
+    {
+      "tree": "rootfs",
+      "path": "lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-40c211039831.bin",
+      "sha256": "40c211039831c426096e4b2f41d624527d15da329583f35b9fc0529114a4893b"
+    },
+    {
+      "tree": "rootfs",
+      "path": "lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha256-6e6d9cb30cfb.bin",
+      "sha256": "6e6d9cb30cfb79340381ce32a1d38f92cdfefbb282c5da91d472ebefb7bc729e"
+    },
+    {
+      "tree": "rootfs",
+      "path": "lib/firmware/fpga-dfx-hash/0e14c2e8fc21/blake2s-9a7e9e450789.bin",
+      "sha256": "9a7e9e450789f0f89f58f2d57c39b6dda5d239b94ee6c79c73196e8a5ed18c31"
+    },
+    {
+      "tree": "rootfs",
+      "path": "lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-compact-b805fd136735.bin",
+      "sha256": "b805fd13673576e6c2840e472858f79f6ee5810909d109c2aa8f86ba7b8f464d"
+    }
+  ],
+  "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+  "hardware_tested": true,
+  "variant": "sha3-compact",
+  "physical_validation": {
+    "scope": "PS local API, DMA, DFX, all three hashes after boot",
+    "path": "results/sha3-performance-20261115/promoted-local-physical.json",
+    "sha256": "b45b7dad2f30e9c8307ec96ee130ca01fc77f8004f10241ed791726b107e6440"
+  }
+}

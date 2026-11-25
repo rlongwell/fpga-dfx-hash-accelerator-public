@@ -1,0 +1,6 @@
+/opt/zybo/hash/start.sh: line 28: can't open /proc/996/cmdline: no such file
+{"event": "configuration", "core": "sha256", "mode": "replay", "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b", "partial_sha256": "605de04f577826ebeb5aeba158ab52fc04943a2d164ae5b50dde5e7cccceb7ef", "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4", "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470", "partial_load_ns": 37738092, "intermediate_algorithm_id": 1}
+{"event":"ready","mode":"replay","session":3201730145,"length":65,"algorithm_id":2}
+{"event":"result","ok":true,"status":18,"error":0,"ingress_status":1,"accepted":65,"core_cycles":263,"board_ns":203010,"pattern_bytes":131072,"digest":"7978b7d18ecfdd9652aba9457bdd4f51dca470d6edfdd08055e2c244b5ae00cf"}
+Hash service started (PID 1031); log: /var/log/zybo-hash.log
+{"event": "restored", "core": "compact", "ps_api": true, "dma_probe": {"digest": "15ac382c0e3fbc537ab3f77883340fec52229a4074be675c2ee2e163c619284a", "core_cycles": 19169, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 21, "dma_transfers": 1, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 423240, "reference_hashing_in_timed_region": true, "verified": true}}

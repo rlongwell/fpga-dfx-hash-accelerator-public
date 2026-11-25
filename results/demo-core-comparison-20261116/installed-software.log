@@ -1,0 +1,22 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# uname -a; cat /proc/modules; modinfo hash_accel; sha256sum /opt/zybo/hash/soft
+ware/hash_service.py /opt/zybo/hash/software/hash_client.py /opt/zybo/hash/softw
+are/hash_local.py /opt/zybo/hash/dfx_manifest.json /boot/profile.env; printf '\n
+DEMO_CMD_417266c7a4db178f_%s\n' "$?"
+Linux zybo 6.6.40-dfx-hash-wifi #5 SMP PREEMPT Mon Nov 16 01:48:06 CST 2026 armv7l GNU/Linux
+hash_accel 16384 1 - Live 0xbf000000 (O)
+-sh: modinfo: not found
+408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb  /opt/zybo/hash/software/hash_service.py
+9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260  /opt/zybo/hash/software/hash_client.py
+2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c  /opt/zybo/hash/software/hash_local.py
+0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3  /opt/zybo/hash/dfx_manifest.json
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+
+DEMO_CMD_417266c7a4db178f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

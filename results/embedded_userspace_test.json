@@ -1,0 +1,50 @@
+{
+  "python": "3.11.11",
+  "machine": "armv7l",
+  "openssl": "OpenSSL 3.2.4 11 Feb 2025",
+  "protocol_test_groups": 4,
+  "hashes": [
+    "sha3_256",
+    "sha256",
+    "blake2s"
+  ],
+  "imports": [
+    "fcntl",
+    "mmap",
+    "socket",
+    "ssl",
+    "struct"
+  ],
+  "ioctl_execution": false,
+  "hardware_tested": false,
+  "scope": "ARM userspace under QEMU; host Linux syscalls, no emulated Zybo hardware",
+  "qemu": {
+    "url": "https://security.ubuntu.com/ubuntu/pool/universe/q/qemu/qemu-user-static_8.2.2+ds-0ubuntu1.18_amd64.deb",
+    "version": "1:8.2.2+ds-0ubuntu1.18",
+    "sha256": "5bb397f66063efa349f6fd5cb3b68cd96f29edd0994e4ba5115cf0859a716bf0"
+  },
+  "emulated_cpu": "cortex-a9",
+  "uapi_values": [
+    16,
+    48,
+    144,
+    2148550656,
+    1074284545,
+    1074022402,
+    2150647811,
+    3230681092,
+    18437
+  ],
+  "elapsed_seconds": 9.737025737762451,
+  "source_sha256": {
+    "software/embedded/smoke.py": "6aaf0f24da9846da6d75b230baa72761ba368e4ef17452213a217fd2f039cded",
+    "software/hash_service.py": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "software/tests/test_service.py": "b2b7ceab8c94eee798b2c6bffe9060060c94514151bfcd80c7136b34d90009bc",
+    "software/linux/hash_accel.h": "4ad766b664013df1cf82af5402497f5b00ef7fd76ad5cba651e68fd65f7ad2cc"
+  },
+  "binary_sha256": {
+    "build/embedded/tools/qemu/usr/bin/qemu-arm-static": "47a63bcbdf3030cf42230a0521dae38ff9d62ba1268d5cafc7d8ccf7da7c761c",
+    "build/embedded/uapi_arm": "29cd72712d7078fccef65558c41227bf179a84f3417ba2a8465477121780f759",
+    "build/embedded/rootfs/target/usr/bin/python3": "e961ed4bc9d4ad13ff54f403ae6517805ad2a6ac6b3dbcb285d6dd56555edb27"
+  }
+}

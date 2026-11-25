@@ -1,0 +1,3 @@
+PASS: all 17 staged runtime/firmware/boot checksums match payload.json
+PASS: changed unvalidated helper is rejected
+PASS: changed physical evidence is rejected

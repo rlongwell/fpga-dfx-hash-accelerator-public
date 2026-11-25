@@ -1,0 +1,26 @@
+{
+  "tool": "dosfstools 4.2",
+  "source_sha256": "64926eebf90092dca21b14259a5301b7b98e7b1943e8a201c7d726084809b527",
+  "events": [
+    {
+      "event": "partition_backup",
+      "bytes": 536870912,
+      "sha256": "082014ac1858a3d134874953e218463a8e599c75554669e93a0e61131ca760b4",
+      "path": "/root/hash-fat-before-clean-20261116.img"
+    },
+    {
+      "event": "partition_byte_comparison",
+      "before_sha256": "082014ac1858a3d134874953e218463a8e599c75554669e93a0e61131ca760b4",
+      "after_sha256": "70a0b1456fa3abc5b01501a5ce560137a5dc9db9706ad2cd5c379bfc9e153988",
+      "changed_bytes": [
+        [
+          65,
+          1,
+          0
+        ]
+      ]
+    }
+  ],
+  "final_readonly_check": "passed",
+  "only_change": "offset 65: 0x01 to 0x00"
+}

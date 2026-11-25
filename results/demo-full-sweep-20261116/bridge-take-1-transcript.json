@@ -1,0 +1,448 @@
+{
+  "input": "docs/media/voiceover-sweep-live-take-1.mp3",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "Live sweep bridge",
+      "start": 0,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.96,
+          "text": " Now run that experiment in HashLab.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.26,
+              "word": " Now",
+              "probability": 0.9857617616653442
+            },
+            {
+              "start": 0.26,
+              "end": 0.52,
+              "word": " run",
+              "probability": 0.9118524193763733
+            },
+            {
+              "start": 0.52,
+              "end": 0.7,
+              "word": " that",
+              "probability": 0.9905051589012146
+            },
+            {
+              "start": 0.7,
+              "end": 1.12,
+              "word": " experiment",
+              "probability": 0.9983797073364258
+            },
+            {
+              "start": 1.12,
+              "end": 1.48,
+              "word": " in",
+              "probability": 0.9971940517425537
+            },
+            {
+              "start": 1.48,
+              "end": 1.96,
+              "word": " HashLab.",
+              "probability": 0.7475751638412476
+            }
+          ]
+        },
+        {
+          "start": 2.48,
+          "end": 4.98,
+          "text": " Check the connected board, then start the sweep.",
+          "words": [
+            {
+              "start": 2.48,
+              "end": 2.72,
+              "word": " Check",
+              "probability": 0.995978593826294
+            },
+            {
+              "start": 2.72,
+              "end": 2.92,
+              "word": " the",
+              "probability": 0.9978556036949158
+            },
+            {
+              "start": 2.92,
+              "end": 3.24,
+              "word": " connected",
+              "probability": 0.9232079386711121
+            },
+            {
+              "start": 3.24,
+              "end": 3.62,
+              "word": " board,",
+              "probability": 0.9948295950889587
+            },
+            {
+              "start": 3.96,
+              "end": 4.22,
+              "word": " then",
+              "probability": 0.9929800629615784
+            },
+            {
+              "start": 4.22,
+              "end": 4.58,
+              "word": " start",
+              "probability": 0.9816338419914246
+            },
+            {
+              "start": 4.58,
+              "end": 4.78,
+              "word": " the",
+              "probability": 0.9960851669311523
+            },
+            {
+              "start": 4.78,
+              "end": 4.98,
+              "word": " sweep.",
+              "probability": 0.9720166921615601
+            }
+          ]
+        },
+        {
+          "start": 5.62,
+          "end": 7.8,
+          "text": " Each progress bar counts completed hashes",
+          "words": [
+            {
+              "start": 5.62,
+              "end": 5.78,
+              "word": " Each",
+              "probability": 0.9974877834320068
+            },
+            {
+              "start": 5.78,
+              "end": 6.22,
+              "word": " progress",
+              "probability": 0.9760333299636841
+            },
+            {
+              "start": 6.22,
+              "end": 6.58,
+              "word": " bar",
+              "probability": 0.9976724982261658
+            },
+            {
+              "start": 6.58,
+              "end": 6.9,
+              "word": " counts",
+              "probability": 0.9947876930236816
+            },
+            {
+              "start": 6.9,
+              "end": 7.44,
+              "word": " completed",
+              "probability": 0.9983959794044495
+            },
+            {
+              "start": 7.44,
+              "end": 7.8,
+              "word": " hashes",
+              "probability": 0.9972176551818848
+            }
+          ]
+        },
+        {
+          "start": 7.8,
+          "end": 9.06,
+          "text": " for one implementation.",
+          "words": [
+            {
+              "start": 7.8,
+              "end": 8.16,
+              "word": " for",
+              "probability": 0.9961937665939331
+            },
+            {
+              "start": 8.16,
+              "end": 8.46,
+              "word": " one",
+              "probability": 0.9527748227119446
+            },
+            {
+              "start": 8.46,
+              "end": 9.06,
+              "word": " implementation.",
+              "probability": 0.9973639845848083
+            }
+          ]
+        },
+        {
+          "start": 9.76,
+          "end": 12.36,
+          "text": " The cores take turns on the same FPGA.",
+          "words": [
+            {
+              "start": 9.76,
+              "end": 9.88,
+              "word": " The",
+              "probability": 0.9954410791397095
+            },
+            {
+              "start": 9.88,
+              "end": 10.1,
+              "word": " cores",
+              "probability": 0.9865645170211792
+            },
+            {
+              "start": 10.1,
+              "end": 10.4,
+              "word": " take",
+              "probability": 0.9969815611839294
+            },
+            {
+              "start": 10.4,
+              "end": 10.82,
+              "word": " turns",
+              "probability": 0.9990039467811584
+            },
+            {
+              "start": 10.82,
+              "end": 11.02,
+              "word": " on",
+              "probability": 0.9955428242683411
+            },
+            {
+              "start": 11.02,
+              "end": 11.16,
+              "word": " the",
+              "probability": 0.9978237152099609
+            },
+            {
+              "start": 11.16,
+              "end": 11.48,
+              "word": " same",
+              "probability": 0.9992978572845459
+            },
+            {
+              "start": 11.48,
+              "end": 12.36,
+              "word": " FPGA.",
+              "probability": 0.9736968676249186
+            }
+          ]
+        },
+        {
+          "start": 12.76,
+          "end": 13.88,
+          "text": " They aren't running in parallel.",
+          "words": [
+            {
+              "start": 12.76,
+              "end": 12.86,
+              "word": " They",
+              "probability": 0.9931893348693848
+            },
+            {
+              "start": 12.86,
+              "end": 13.12,
+              "word": " aren't",
+              "probability": 0.9956705272197723
+            },
+            {
+              "start": 13.12,
+              "end": 13.42,
+              "word": " running",
+              "probability": 0.998552143573761
+            },
+            {
+              "start": 13.42,
+              "end": 13.6,
+              "word": " in",
+              "probability": 0.9987377524375916
+            },
+            {
+              "start": 13.6,
+              "end": 13.88,
+              "word": " parallel.",
+              "probability": 0.9971104860305786
+            }
+          ]
+        },
+        {
+          "start": 14.58,
+          "end": 16.4,
+          "text": " This part of the recording is sped up,",
+          "words": [
+            {
+              "start": 14.58,
+              "end": 14.76,
+              "word": " This",
+              "probability": 0.9974128603935242
+            },
+            {
+              "start": 14.76,
+              "end": 14.98,
+              "word": " part",
+              "probability": 0.9995818734169006
+            },
+            {
+              "start": 14.98,
+              "end": 15.1,
+              "word": " of",
+              "probability": 0.999002993106842
+            },
+            {
+              "start": 15.1,
+              "end": 15.2,
+              "word": " the",
+              "probability": 0.9972223043441772
+            },
+            {
+              "start": 15.2,
+              "end": 15.56,
+              "word": " recording",
+              "probability": 0.9994341731071472
+            },
+            {
+              "start": 15.56,
+              "end": 15.82,
+              "word": " is",
+              "probability": 0.9993378520011902
+            },
+            {
+              "start": 15.82,
+              "end": 16.12,
+              "word": " sped",
+              "probability": 0.9994063377380371
+            },
+            {
+              "start": 16.12,
+              "end": 16.4,
+              "word": " up,",
+              "probability": 0.9797857403755188
+            }
+          ]
+        },
+        {
+          "start": 16.52,
+          "end": 17.96,
+          "text": " while the measurements still come",
+          "words": [
+            {
+              "start": 16.52,
+              "end": 16.74,
+              "word": " while",
+              "probability": 0.9970458149909973
+            },
+            {
+              "start": 16.74,
+              "end": 16.9,
+              "word": " the",
+              "probability": 0.9912182688713074
+            },
+            {
+              "start": 16.9,
+              "end": 17.26,
+              "word": " measurements",
+              "probability": 0.9917975664138794
+            },
+            {
+              "start": 17.26,
+              "end": 17.68,
+              "word": " still",
+              "probability": 0.9989882111549377
+            },
+            {
+              "start": 17.68,
+              "end": 17.96,
+              "word": " come",
+              "probability": 0.9936502575874329
+            }
+          ]
+        },
+        {
+          "start": 17.96,
+          "end": 19.4,
+          "text": " from the hardware cycle counter.",
+          "words": [
+            {
+              "start": 17.96,
+              "end": 18.16,
+              "word": " from",
+              "probability": 0.9981887936592102
+            },
+            {
+              "start": 18.16,
+              "end": 18.34,
+              "word": " the",
+              "probability": 0.9967250227928162
+            },
+            {
+              "start": 18.34,
+              "end": 18.64,
+              "word": " hardware",
+              "probability": 0.9738403558731079
+            },
+            {
+              "start": 18.64,
+              "end": 18.98,
+              "word": " cycle",
+              "probability": 0.9943943023681641
+            },
+            {
+              "start": 18.98,
+              "end": 19.4,
+              "word": " counter.",
+              "probability": 0.9958055019378662
+            }
+          ]
+        },
+        {
+          "start": 19.94,
+          "end": 21.98,
+          "text": " When the sweep finishes, open the results.",
+          "words": [
+            {
+              "start": 19.94,
+              "end": 20.08,
+              "word": " When",
+              "probability": 0.9986233711242676
+            },
+            {
+              "start": 20.08,
+              "end": 20.2,
+              "word": " the",
+              "probability": 0.9987032413482666
+            },
+            {
+              "start": 20.2,
+              "end": 20.4,
+              "word": " sweep",
+              "probability": 0.9977117776870728
+            },
+            {
+              "start": 20.4,
+              "end": 20.9,
+              "word": " finishes,",
+              "probability": 0.9992290735244751
+            },
+            {
+              "start": 21.34,
+              "end": 21.52,
+              "word": " open",
+              "probability": 0.9959880709648132
+            },
+            {
+              "start": 21.52,
+              "end": 21.66,
+              "word": " the",
+              "probability": 0.997112512588501
+            },
+            {
+              "start": 21.66,
+              "end": 21.98,
+              "word": " results.",
+              "probability": 0.9950714111328125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

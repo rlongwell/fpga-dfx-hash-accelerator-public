@@ -1,0 +1,81 @@
+{
+  "duration_seconds": 252,
+  "frames": 7560,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "chapters": 10,
+  "integrated_loudness_lufs": -16.04,
+  "true_peak_dbtp": -1.52,
+  "continuous_music": true,
+  "closing_results_pauses": [
+    {
+      "start": 2.25188,
+      "end": 2.59844,
+      "seconds": 0.34656
+    },
+    {
+      "start": 4.06027,
+      "end": 4.413,
+      "seconds": 0.35273
+    },
+    {
+      "start": 6.20858,
+      "end": 6.52513,
+      "seconds": 0.31655
+    },
+    {
+      "start": 7.89602,
+      "end": 8.0996,
+      "seconds": 0.20358
+    },
+    {
+      "start": 11.5017,
+      "end": 11.7641,
+      "seconds": 0.2624
+    },
+    {
+      "start": 13.9827,
+      "end": 14.3164,
+      "seconds": 0.3337
+    }
+  ],
+  "maximum_interior_results_pause_seconds": 0.35273,
+  "silence_method": "Narration stem from 232.4 seconds; ffmpeg silencedetect -40dB, minimum 0.15s; excludes paragraph edges.",
+  "prefix_frames_identical": 6030,
+  "retained_live_frames_checked_before_final_fade": 1512,
+  "retained_live_psnr_average_db": 61.557926,
+  "retained_live_psnr_minimum_db": 50.650614,
+  "picture_method": "Decoded master frame MD5 before 201s; frame-aligned PSNR against precisely selected source ranges afterward, excluding only the final 18-frame fade.",
+  "live_operation_retained_contiguously_seconds": 31.1,
+  "actual_hash_job_completed_seconds": 30.56079999999702,
+  "highlight_alignment": [
+    {
+      "target": "Quartz time",
+      "speech_seconds": 235.1,
+      "box_seconds": 235
+    },
+    {
+      "target": "Compact time",
+      "speech_seconds": 236.84,
+      "box_seconds": 236.7
+    },
+    {
+      "target": "Matching digests",
+      "speech_seconds": 238.94,
+      "box_seconds": 238.9
+    },
+    {
+      "target": "Architecture summary",
+      "speech_seconds": 244.18,
+      "box_seconds": 244.1
+    }
+  ],
+  "board_accessed_for_edit": false,
+  "voice_regenerated": false,
+  "review": "Automated transcription and acoustic phonemes from encoded closing audio; signal analysis and inspected result frames.",
+  "full_decode_exit_code": 0,
+  "renderer_python_compile": "passed"
+}

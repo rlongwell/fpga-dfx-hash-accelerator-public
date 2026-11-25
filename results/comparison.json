@@ -1,0 +1,137 @@
+{
+  "scope": "Routed OOC resources; simulation-based core performance at 100 MHz; no hardware measurements",
+  "implementations": [
+    {
+      "name": "Oxide original, single buffer",
+      "lut": 4504,
+      "ff": 2989,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.617,
+      "cycles": 78084,
+      "rate": 83.93012653040316,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 780.84
+    },
+    {
+      "name": "Oxide original, double buffer",
+      "lut": 5406,
+      "ff": 4075,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 1.018,
+      "cycles": 65578,
+      "rate": 99.93595413095855,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 655.78
+    },
+    {
+      "name": "Oxide without digest register, single buffer",
+      "lut": 4369,
+      "ff": 2724,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.743,
+      "cycles": 78084,
+      "rate": 83.93012653040316,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 780.84
+    },
+    {
+      "name": "Oxide without digest register, double buffer",
+      "lut": 5223,
+      "ff": 3820,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.787,
+      "cycles": 65578,
+      "rate": 99.93595413095855,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 655.78
+    },
+    {
+      "name": "BLAKE2s-256",
+      "lut": 4127,
+      "ff": 1665,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.489,
+      "cycles": 156674,
+      "rate": 41.82953138363736,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 1566.74
+    },
+    {
+      "name": "SHA-256",
+      "lut": 1741,
+      "ff": 1249,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.329,
+      "cycles": 140413,
+      "rate": 46.67374103537422,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 1404.13
+    },
+    {
+      "name": "SHA3 direct byte absorption",
+      "lut": 4981,
+      "ff": 1786,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.732,
+      "cycles": 84817,
+      "rate": 77.26752891519389,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 848.17
+    },
+    {
+      "name": "SHA3 wide, compact padding",
+      "lut": 4498,
+      "ff": 1774,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.5,
+      "cycles": 27473,
+      "rate": 238.54693699268373,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 274.73
+    },
+    {
+      "name": "SHA3 wide, registered framing",
+      "lut": 5664,
+      "ff": 1795,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.324,
+      "cycles": 27473,
+      "rate": 238.54693699268373,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 274.73
+    },
+    {
+      "name": "SHA3 shared lane/row rounds",
+      "lut": 4706,
+      "ff": 3714,
+      "bram": 0,
+      "dsp": 0,
+      "slack": 0.292,
+      "cycles": 431857,
+      "rate": 15.175393706713102,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": 4318.57
+    },
+    {
+      "name": "SHA3 wide absorption",
+      "lut": 5704,
+      "ff": 1795,
+      "bram": 0,
+      "dsp": 0,
+      "slack": -0.738,
+      "cycles": 27473,
+      "rate": null,
+      "message_bytes": 65536,
+      "predicted_latency_us_at_100MHz": null
+    }
+  ]
+}

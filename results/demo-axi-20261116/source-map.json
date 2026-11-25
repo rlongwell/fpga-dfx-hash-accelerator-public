@@ -1,0 +1,133 @@
+{
+  "scope": "Presentation-only revision; no hardware operations.",
+  "prior_edition_commit": "83d351ec96deec0fcdb53fc14e1d0b3464c7463c",
+  "physical_job": "e0ac322556182145dce29990",
+  "edit_inputs": {
+    "main": {
+      "path": "docs/media/voiceover-charcoal-take-2.mp3",
+      "sha256": "b9b281caa7b8fdd87bc3d229f0610d2aad20a5596570454c18744be9f84361f7"
+    },
+    "updates": {
+      "path": "docs/media/voiceover-architecture-take-2.mp3",
+      "sha256": "a078bd05dd80d0a4eb1489bf9bc31e95d601381482e0b26afe8cc2277ed2e8e8"
+    },
+    "music": {
+      "path": "2050 - Cyber Runner.mp3",
+      "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94"
+    },
+    "architecture": {
+      "path": "docs/media/sha3-axi-architecture.mp4",
+      "sha256": "416e56cf0165927a07f9cd18857b72816efa24e46443434386f54cb1a01229e6"
+    },
+    "replay_movie": {
+      "path": "docs/media/sha3-comparison-replay.mp4",
+      "sha256": "8b30253351ebfa505beb40223a034db59d7146f09a34242fbc34891f014daa5f"
+    },
+    "replay_voice": {
+      "path": "docs/media/voiceover-replay-take-2.mp3",
+      "sha256": "0d1a53ab40c2543e134061c0d8bd51ef0dbe6e09d2acf181d068b65c348b6504"
+    },
+    "bridge": {
+      "path": "docs/media/voiceover-sweep-live-take-1.mp3",
+      "sha256": "eda4be9e253ae3896e42cbe3439a2cd5b9b8f1b8caabe95b147e1bd1cd748149"
+    },
+    "live": {
+      "path": "docs/media/sha3-replay-sweep-live.webm",
+      "sha256": "90d80b307ee150dab73a7cbbad8c0486367e925eef87174f324cbd1f787a9ac6"
+    },
+    "job": {
+      "path": "results/demo-full-sweep-20261116/recorded-job.json",
+      "sha256": "edae42978f5b0619b78af8032015612a741a124f5ab8077de0c2a59e390ef765"
+    },
+    "receipt": {
+      "path": "results/demo-full-sweep-20261116/cursor-log.json",
+      "sha256": "18b1c7c39ca9119790688f4369f526ba44b2de626ae2cc4f2cc7546537cac22b"
+    },
+    "results": {
+      "path": "results/demo-full-sweep-20261116/results.json",
+      "sha256": "d058c14005420f7b99a93f347368695cf721ddfd841c15c52031becad2b5198b"
+    },
+    "sweep_plan": {
+      "path": "results/demo-full-sweep-20261116/plan.json",
+      "sha256": "d19089f0cc1e64c27c439f95b5c5fc3cc5a824bd61f605c8e9469a55092dcad8"
+    },
+    "resources": {
+      "path": "results/gem-direct-20261116/implementation-bram64/summary.json",
+      "sha256": "80b1edfc5550f3cedfac7a5176cce27917882d10297bfe5188173fb5110cce20"
+    },
+    "results_live": {
+      "path": "docs/media/sha3-replay-results-rounded.webm",
+      "sha256": "3fc2c2096ab40bcd94959d33b876c7d06e2b90a70fdff6c6e9c6b5df776cdf49"
+    },
+    "results_receipt": {
+      "path": "results/demo-stream-20261116/results-cursor-log.json",
+      "sha256": "24ec135bae847ad222f02d912347ca8cd96e1fa183b51acd1cad33750e2b9dc0"
+    },
+    "revised": {
+      "path": "docs/media/voiceover-stream-refinements-take-1.mp3",
+      "sha256": "b585d48a82f0ed366d2bc8fed421c3e5b9d406ff4441094b5a4ab72ca9a36fd6"
+    },
+    "axi": {
+      "path": "docs/media/voiceover-axi-take-1.mp3",
+      "sha256": "9834aacb51c099110918c76254237429ce7faf7d436699dd81fe0b90ca7f919c"
+    }
+  },
+  "source_dependencies": [
+    {
+      "path": "demo/web/comparison.js",
+      "sha256": "25b396f53ab08591d411b430a30dd02ea28b68f03666e8ce1e59a988e9731c06"
+    },
+    {
+      "path": "demo/web/comparison.css",
+      "sha256": "33d86a77d7679f24accf5098a1d3dc7403d5801621c477db48a0ebef1ae6c39c"
+    },
+    {
+      "path": "demo/web/story-axi.json",
+      "sha256": "f98b6777efc0baaa123dc25d85de81e3fe96e33331ac7a2ef469d91c069baea5"
+    },
+    {
+      "path": "demo/export_stream_frames.js",
+      "sha256": "3b8191a600fbd66028e0f5e999727f2928ea37f015a35a37aa30fb1c72b9f881"
+    },
+    {
+      "path": "demo/render_stream_diagrams.py",
+      "sha256": "54060d40f7491e4f34e5cc0002c33083453345393bc250505f8f8a7749d7fac3"
+    },
+    {
+      "path": "demo/render_video_full_sweep.py",
+      "sha256": "ef8866aaac5d9c31e90dae1e028d8a61f1ba006d32bbfef1978f4bcaf722e892"
+    },
+    {
+      "path": "demo/video-axi-edit.json",
+      "sha256": "0af8a1a8eeef1615cfe864d3d561f013a75acf902d3e9b2d44fd5341e764e6e6"
+    },
+    {
+      "path": "docs/voiceover-axi-demo.txt",
+      "sha256": "5c3a5d766c0be4e1eee3d98486b9800c6f7d7bd2f8755ed13b60a0b62dc5cded"
+    },
+    {
+      "path": "docs/voiceover-axi-demo-elevenlabs.txt",
+      "sha256": "70e14f0ab3335e8527f28c91e38f8aa474474aa60a22aa93c7db465bce978e4f"
+    },
+    {
+      "path": "docs/voiceover-axi-opening-elevenlabs.txt",
+      "sha256": "bee238dc094646bf9bbb990fe8ee15f118845333e7a9981e3942c36b88a8355a"
+    },
+    {
+      "path": "docs/media/voiceover-axi-take-2.mp3",
+      "sha256": "87744c1fc968e2aed88e953dfbc7cfd41a585306cc421be802d31adca43d0b60"
+    },
+    {
+      "path": "results/demo-full-sweep-20261116/validation.json",
+      "sha256": "0516545b5c64b351a6e43cb9e8fddf67f740e2c0bb0ec7f6174feecc3b1e9b8f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "0c4cce172298562fcc873641de7db97633e6c870c47e3910240a7a35b3e132b4"
+    }
+  ],
+  "output": {
+    "path": "docs/media/sha3-comparison-axi.mp4",
+    "sha256": "d92fb81c805d57b5a179789e37306cbee119362a56b22c271833221fa1b4e563"
+  }
+}

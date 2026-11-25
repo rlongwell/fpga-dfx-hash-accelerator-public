@@ -1,0 +1,36 @@
+{
+  "kind": "clean-staged-source-checkout-validation",
+  "hardware_rerun": false,
+  "build_directory_present": false,
+  "evidence_audit": {
+    "passed": true,
+    "kind": "offline-audit-of-retained-evidence",
+    "hardware_rerun": false,
+    "sealed_files": 132,
+    "physical_reports_checked": 6,
+    "measurement_rows_recomputed": 48,
+    "source_files_checked": 17,
+    "build_artifacts_checked": false,
+    "build_paths_not_checked": [
+      "build/sha3-profile/compact/full.bit",
+      "build/sha3-profile/compact/full_pblock_hash_partial.bit.bin",
+      "build/sha3-profile/compact/routed.dcp",
+      "build/sha3-profile/oxide-elastic-medium-physopt/full.bit",
+      "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+      "build/sha3-profile/oxide-elastic-medium-physopt/routed.dcp",
+      "build/sha3-profile/oxide-elastic-medium/routed.dcp",
+      "build/sha3-profile/oxide-elastic-medium/sources.sha256",
+      "build/vivado/dfx/blake2s/routed.dcp",
+      "build/vivado/dfx/sha256/routed.dcp",
+      "build/vivado/dfx/sha3/routed.dcp",
+      "build/vivado/dfx/static_locked.dcp"
+    ],
+    "dma_speedup_vs_oxide": 2.356896433198841,
+    "LUT_reduction_percent": 22.626366120218577,
+    "FF_reduction_percent": 57.98199905258172
+  },
+  "audit_unit_tests": {
+    "passed": true,
+    "output": "test_inflated_throughput_is_rejected (test_audit.EvidenceAuditTests.test_inflated_throughput_is_rejected) ... ok\ntest_missing_samples_are_rejected (test_audit.EvidenceAuditTests.test_missing_samples_are_rejected) ... ok\ntest_recorded_samples_agree (test_audit.EvidenceAuditTests.test_recorded_samples_agree) ... ok\ntest_source_mapping_cannot_escape_checkout (test_audit.EvidenceAuditTests.test_source_mapping_cannot_escape_checkout) ... ok\ntest_wrong_digest_is_rejected (test_audit.EvidenceAuditTests.test_wrong_digest_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+  }
+}

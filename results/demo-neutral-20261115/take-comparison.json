@@ -1,0 +1,22 @@
+{
+  "selected_take": 1,
+  "basis": "Both takes retain the content. Take 1 provides clear paragraph boundaries and a slightly shorter delivery for this edit. Choice is based on transcript, timing and signal measurements, not a claimed human listening comparison.",
+  "takes": [
+    {
+      "take": 1,
+      "duration_seconds": 176.2743125,
+      "integrated_lufs": -26.12,
+      "loudness_range_lu": 3.6,
+      "true_peak_dbtp": -2.96,
+      "asr_word_count": 425
+    },
+    {
+      "take": 2,
+      "duration_seconds": 177.711,
+      "integrated_lufs": -26.13,
+      "loudness_range_lu": 3.4,
+      "true_peak_dbtp": -3.8,
+      "asr_word_count": 425
+    }
+  ]
+}

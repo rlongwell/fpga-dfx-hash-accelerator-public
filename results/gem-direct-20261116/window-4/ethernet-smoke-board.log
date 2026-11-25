@@ -1,0 +1,7 @@
+{"event": "configuration", "core": "compact", "mode": "ethernet", "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b", "partial_sha256": "bbe4949ff65aab708c568e74c1e0e287e311ad38ffef84171a8960fb7bcf080e", "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4", "wrapper_sha256": "419aedb0bba8ab3dda560c4544322b0666731f44d1e9135761c587ecd53a2470", "partial_load_ns": 37706299, "intermediate_algorithm_id": 2}
+{"event":"ready","mode":"ethernet","session":1004499070,"length":1048593,"algorithm_id":1}
+{"event":"result","ok":true,"status":18,"error":0,"ingress_status":0,"accepted":1048593,"core_cycles":6278790,"board_ns":62822118,"pattern_bytes":0,"digest":"95c7014bc1cf9e78d5033d557a166f94fce20679de4525d24cac304d03ed3199"}
+{"event":"gem","rx_frames":733,"tx_frames":2472,"rx_fcs_errors":0,"rx_overruns":0,"rsr":2,"tsr":33}
+{"event":"dma_addresses","rx_pointer":2147483880,"tx_pointer":2147484160,"dma_config":2098960,"fpga_ram_base":2147483648}
+Hash service started (PID 1124); log: /var/log/zybo-hash.log
+{"event": "restored", "core": "compact", "ps_api": true, "dma_probe": {"digest": "15ac382c0e3fbc537ab3f77883340fec52229a4074be675c2ee2e163c619284a", "core_cycles": 26920, "status": "ok", "backend": "fpga-dma", "transport": "local-device", "algorithm": "sha3", "algorithm_id": 1, "length": 21, "dma_transfers": 1, "buffer_size": 1048576, "manager_load_ns": 0, "local_hash_ns": 431304, "reference_hashing_in_timed_region": true, "verified": true}}

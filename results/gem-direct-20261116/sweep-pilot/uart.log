@@ -1,0 +1,323 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# printf "BOARD_MAC:"; cat /sys/class/net/eth0/address; printf '\nDEMO_CMD_4da39
+c4ca2d07f02_%s\n' "$?"
+BOARD_MAC:de:f6:cd:7b:38:e7
+
+DEMO_CMD_4da39c4ca2d07f02_0
+# mkdir /root/hash-sweep-sweep-pilot; printf '\nDEMO_CMD_edc8b7181a23f539_%s\n' 
+"$?"
+
+DEMO_CMD_edc8b7181a23f539_0
+# python3 -c 'from pathlib import Path;Path('"'"'/root/hash-sweep-sweep-pilot/pa
+ttern.bin'"'"').write_bytes(bytes((i*131+(i>>8))&255 for i in range(131072)))'; 
+printf '\nDEMO_CMD_11f230b2d4b65289_%s\n' "$?"
+
+DEMO_CMD_11f230b2d4b65289_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import hashlib;assert hashlib.sha256(open('"'"'/root/hash-sweep-sw
+eep-pilot/plan.json'"'"',"rb").read()).hexdigest()=='"'"'fd57cd74b26e6b69434dfcc
+11bea3423d32b078306349706b405df2b980c3dd3'"'"''; printf '\nDEMO_CMD_91adb28354c3
+d914_%s\n' "$?"
+
+DEMO_CMD_91adb28354c3d914_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'replay'"'"', '"
+'"'--core'"'"', '"'"'oxide'"'"', '"'"'--batch'"'"', '"'"'0'"'"', '"'"'--plan'"'"
+', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'/r
+oot/hash-sweep-sweep-pilot/batch-00-attempt-1.json'"'"']);open('"'"'/root/hash-s
+weep-sweep-pilot/batch-00-attempt-1.status'"'"',"w").write(str(r.returncode)+"\n
+")' >/root/hash-sweep-sweep-pilot/batch-00-attempt-1.log 2>&1 </dev/null & echo 
+JOB_PID:$!; printf '\nDEMO_CMD_cc075265e6caa760_%s\n' "$?"
+JOB_PID:5071
+
+DEMO_CMD_cc075265e6caa760_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-00-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-00-attempt-1.status; fi; print
+f '\nDEMO_CMD_08e2f4a8db5188b4_%s\n' "$?"
+
+DEMO_CMD_08e2f4a8db5188b4_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-00-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-00-attempt-1.status; fi; print
+f '\nDEMO_CMD_e1672163141c5197_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_e1672163141c5197_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""replay""\'"", ""\'""--core""\'"", ""\'""oxide""\'"", ""\'""--batch""\'"", ""\'""0""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-00-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-00-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-00-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-00-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_e6e60271259f3f2c_%s\n' "$?"
+LOG_PAYLOAD:H4sIAKgJAAAC/6tWSi1LzStRslJQSk4sTlXSUVBKSixJzgAKGADZOal56SUgjpkJkJdcmZyTWgzkGZqZ1XJVE6nV0MgCQ69HYnGGQnFqUVlmcqpCcUliUUlqioJGgKeLgqmBpZmmtUJOfrqVgn5ZYpE+kKVfVZmUr5sB1KMH5HEBAAyVMbC0AAAA
+
+DEMO_CMD_e6e60271259f3f2c_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-00-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_b22c76622b0df288_%s\n' "$?"
+LOG_PAYLOAD:H4sIAKgJAAAC/9VW227jNhB9z1cYek4AXsRbfqUqBF6GthBbEiQlu26Qf++Qkm0pTZttU3TRF0M8Q87tDI/5erfbFU9NG4rHXdEfzmPj7fFhbH6Dh/EbQP/g7OQPxX3aNn8+7khenboA6dAA/dGe5x2+GzLWfW/QmKFxslPj6/FgmZDJJilhQHjk1FMlgvbOCsmsckCii1SB1obw0kRDjKIcNMOdkREPWhmt3Oy2t8PU2OPKL1XMRhFKXbroWdQUpABpSTS4BMW8Lr0CIYmOXMhoQVMlHQul51Eywma/Bzj2MKzcciO0K5lg1DAB4KO1hgqvnDFGcY+HqbTeCEcti2AlwzBBCEO9xyixXFrX2SHUox+aflo5V8ClKr0j2isdHSU2yuAFJqbQg2JAQTARY/DGGW+JopLEwLkGQrUUZHY+dN9G9PYLfu92r/k3cWHHxMVljcgR2v2UCJTl/Q2F7z34CfIAuNIKz7iUNFCgXijDCOUCuRJeYu08CmudFjoILRUzICj3QUaiqVDK8WLld4RxbLoW3ZaMKSaMFnSxvl22FfAC7XRLfl3AzT5PmQ3nlfuPB/Avg282fNgLxO1x3w3NdDjVTeoIvdre7j/NcHw+Tts0uie0TMMzbJPDK/GciqZ6g8MwdMPlfl3Rpt2j67G+ndom7D30M33vSkmXsfZnf4R8SsqNdZ7INpsUNWRr7e00wdDW7jzNpzklim22hGYP4/SvTM2tycvXr9cBGafQPecor9Xc66p4rOZxqIr7Kk/BAqUxyNjCPsIr9quFc0SxUdWGacToW9W+C5H4zP66J0QyjdVCXjqgcZUpwwXB7y1RaUeKstBziboiJe1AUqorFQmYqai2BCTDTEC1tD1n+NW+VwXWXKxbjeWkVs+ELBP/I4JCmf4TRfHUOE0DilwAUqKSOQqMeo0iWgopDAlYFpSoohoTQy0lhHPlAjP434B694misJ+pKOxjRdk0438uKe9r+RuaonRJ/rmmfHlu/gNNYWtNSZ36CaIyh/1UVTIZP6YqX+38Z6pyt1CRi87XrbfjiNO2edcdO7tMEldaCzX/t2H/fPcCw/mqQ6uR0ZQrK8tSEHCa6MCYowKMo5JGp4MJjDJvNFcKIlaGLzUWpVNSi0AdV7Dk/H7GdUmXKb/dsnQLF8xZ/wTz8zn2e/sQTvZimgbbjn035OyOXXpYB3hp/DXSdVrSBnwV8j8YFslY4KvEsEtGGK3OYSIMq4tcuOcY0zMW3/EJJWVq4WI72dbu0XhrMbn4TznWBzseZrwk+FK+HBuwawO0HvIGnMu6aeupOUGoB9jP0njTpQJZamKTRSShd4n5t7vfAQh4kvJvDAAA
+
+DEMO_CMD_b22c76622b0df288_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'replay'"'"', '"
+'"'--core'"'"', '"'"'compact'"'"', '"'"'--batch'"'"', '"'"'1'"'"', '"'"'--plan'"
+'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'
+/root/hash-sweep-sweep-pilot/batch-01-attempt-1.json'"'"']);open('"'"'/root/hash
+-sweep-sweep-pilot/batch-01-attempt-1.status'"'"',"w").write(str(r.returncode)+"
+\n")' >/root/hash-sweep-sweep-pilot/batch-01-attempt-1.log 2>&1 </dev/null & ech
+o JOB_PID:$!; printf '\nDEMO_CMD_17fe8635186d1c1f_%s\n' "$?"
+JOB_PID:5103
+
+DEMO_CMD_17fe8635186d1c1f_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-01-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-01-attempt-1.status; fi; print
+f '\nDEMO_CMD_a0cc964e15f1cfda_%s\n' "$?"
+
+DEMO_CMD_a0cc964e15f1cfda_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-01-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-01-attempt-1.status; fi; print
+f '\nDEMO_CMD_a0eff4a3ab1167b6_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_a0eff4a3ab1167b6_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""replay""\'"", ""\'""--core""\'"", ""\'""compact""\'"", ""\'""--batch""\'"", ""\'""1""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-01-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-01-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-01-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-01-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_1aaa264236e8fb2a_%s\n' "$?"
+LOG_PAYLOAD:H4sIALMJAAAC/6tWSi1LzStRslJQSk4sTlXSUVBKSixJzgAKGALZOal56SUgjpkJkJdcmZyTWgzkmRjXclUTqdPQyAJZq6llLZdHYnGGQnFqUVlmcqpCcUliUUlqioJGgKeLgqmhkbmmtUJOfrqVgn5ZYpE+kKVfVZmUr5sB1KMH5HEBALhO6QayAAAA
+
+DEMO_CMD_1aaa264236e8fb2a_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-01-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_d8d77182e5110158_%s\n' "$?"
+LOG_PAYLOAD:H4sIALMJAAAC/9VW227jNhB9z1cYek4A3i/5laoQeBnaQmxJkJRs3SD/3qEk21KabRaboou+GNQhObczPJ7Xu92ueKqbWDzuiu5wHurgjg9D/Sc8DN8AugfvxnAo7vOxefm4o9PXqY2QL/XQHd15PhHafsJCe+pcGGdwGN1Yh2o4OCZV3lWUMCA8cRqoltEE76RiTnsgySeqwRhLuLDJEqspB8PwZGIkgNHWaD+b7Vw/1u64sus9CIvXkpLOeU1MkMqAFoECAWY0cEpd5CYlSEZQTZ2xCl1qHxIxBGa7Bzh20K/MciuNF0wyapkECMk5S2XQ3lqreQg8UeWClZ46lsApZkSIUloa0H9KYile6/pYDaGvu3FlHINSGKHHYLVJnhKXVAySaqXRgmZAQTKZUgzW2+CIphhx5NwAoUZJMhvv228DWvsN17vd6/Sb2XBDZuPyjcgRmv2YKVTi/obCHx2EEaYW8MLJwLhSNFKgQWrLCOUSuZJBYe485doaaaI0SjMLkvIQFdaPSq09L1Z2BxiGum3QrGBMM2mN5Mvu2+VYAS/QjLfg1wnc9uc+c/G8Mv9xC/6j882BD2uBuDvu274eD6eqzhWh1723+08jHJ6P4zaM9gl3xv4ZtsHhk3jOSVOzwaHv2x5hskHrZo+mh+p2axtwCNDN9L1LJT/HKpzDEfItsc1/bshmjoIIu42kc+MIfVP58zhdppwSzTZHYr2HYfxXmuZW42X1+7U/hjG2z5OX13IudVk8lnM3lMV9OTXBAuUumLCFfIRX5JcL5YhincoN0YjRt7J55yLTOdlrnxCZWCwX7vIFg18TY/hBcL3lKZ/IXhZ2Ll5XnOTwclgXJiabExPltv55Y65/uVR9CvCrZS8LTLlYVxqzyZWe+Vj6/UfkhDLzHT0J1HpDI0pcBCJQxzwFRoNBCRVSSUsipgUCNdRgYKikhHCufWQW/xlQ7T7RE/Er9UR8rCebYvzPBeV9LltFkfb7isLwX/7nFeXLbfMfKIpYK0ou1C+QlNntVlOQlXeaMnHxY5ry1cJ/pil3CxNTztNj69wwYK9tZrpj65ZG4jgLUmvlPOZAaF+gP19VaNUxhnLtlBCSgDfERMY8lWA9VTR5E21klAVruNaQMDOc0lhSXisjI/VcwxLzuw5nSl9e1O2N5Te4YN6FJ5iH59Tt3UM8ucvW2Ltm6Np+iu7Y5rE6wksdrp6uzZIP4ETI/7axCMYCXwWGqQVBb9XkJkG/esaFf8YRF0dYnOIzSoSR+nLn5Bq3x81bicnFfo6xOrjhMONCSmKWB4qlR4vQBJgOYFtWdVON9Qli1cN+FsabKhXIUp3qSUIyepeZf7v7C/dLO2VtDAAA
+
+DEMO_CMD_d8d77182e5110158_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'replay'"'"', '"
+'"'--core'"'"', '"'"'compact'"'"', '"'"'--batch'"'"', '"'"'2'"'"', '"'"'--plan'"
+'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'
+/root/hash-sweep-sweep-pilot/batch-02-attempt-1.json'"'"']);open('"'"'/root/hash
+-sweep-sweep-pilot/batch-02-attempt-1.status'"'"',"w").write(str(r.returncode)+"
+\n")' >/root/hash-sweep-sweep-pilot/batch-02-attempt-1.log 2>&1 </dev/null & ech
+o JOB_PID:$!; printf '\nDEMO_CMD_f12b891f77d1a40d_%s\n' "$?"
+JOB_PID:5134
+
+DEMO_CMD_f12b891f77d1a40d_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-02-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-02-attempt-1.status; fi; print
+f '\nDEMO_CMD_69901caca8eba310_%s\n' "$?"
+
+DEMO_CMD_69901caca8eba310_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-02-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-02-attempt-1.status; fi; print
+f '\nDEMO_CMD_1fc6738af8f5c637_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_1fc6738af8f5c637_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""replay""\'"", ""\'""--core""\'"", ""\'""compact""\'"", ""\'""--batch""\'"", ""\'""2""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-02-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-02-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-02-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-02-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_453aaec081662299_%s\n' "$?"
+LOG_PAYLOAD:H4sIAL4JAAAC/6tWSi1LzStRslJQSk4sTlXSUVBKSixJzgAKGAHZOal56SUgjpkJkJdcmZyTWgzkmRjXclUTqdPQyAJZq6llLZdHYnGGQnFqUVlmcqpCcUliUUlqioJGgKeLgqmhqYWmtUJOfrqVgn5ZYpE+kKVfVZmUr5sB1KMH5HEBANvSzl6yAAAA
+
+DEMO_CMD_453aaec081662299_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-02-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_bb950e5fdb31c327_%s\n' "$?"
+LOG_PAYLOAD:H4sIAL4JAAAC/9VW227jNhB9z1cYek4ADine8itVYfAytIXYkiAp2bpB/r1DSb4ozTaLTdFFXwxqhpwZnjM8nte7zaZ4qptYPG6Kbn8a6uAOD0P9Jz4M3xC7B+/GsC/u87Z5+bjh09exjZgP9dgd3GneEdp+soX22LkwzsZhdGMdtsPecamyVwHjyEQSEEDLaIJ3UnGnPbLkE2g0xjJR2mSZ1SDQcNqZOAtotDXaz2E714+1O9zE9R5LS8eSks55zUyQyqAuAyBDbjQKABeFSQmTKUGDM1ZRSu1DYobhHHePhw77m7DCSuNLLjlYLhFDcs6CDNpba7UIQSRQLljpwfGETnFThiilhUD5UyoX8FrXx+0Q+robb4JTUYoq9FSsNskDc0nFIEErTRE0R0DJZUoxWG+DYxqo4iiEQQZGSTYH79tvA0X7jdabzev0m9lwQ2bj/E2WAza7MVOoyvurFf/oMIw4tYAvnQxcKAUREILUljMQkriSQdHdRcrYGmmiNEpzixJEiIrwA6m1F8VN3AGHoW4bCltyrrm0RsrF+3beVuALNuO1+NsLXP1zn7l4ugn/cQv+Y/LVhg+xILs77Nq+HvfHbZ0RgYvv7f7TCofnw7guo30iz9g/47o4ehLP+dJgVnbs+7YnM1tZ62ZHoYft9dS64BCwm+l7d5X8HLfhFA6YT5Vi5ZwbspniKaHEupLOjSP2zdafxukwCGCar7bEeofD+K80zRXjZfX7pT+GMbbPU5bXaoa6Kh6ruRuq4r6ammAx5S6YbAv5ZL4hv1ooJyvhVK2IJhu8Vc27FJnOKV77RJaJxWrhLh8w9DUxRh+M1mue8o6cZWHnnPWGk1yeINOZiXxiZqJa458dM/7VgvpU4Fdhrwq6cnGLNN0mIz3zsfT7j8gJcPMdPQlgvYFIEheRlaRjHpBDMCShpVTSskjXwpI01FBhpKSMCaF95Jb+GUjtPtET9Sv1RH2sJysw/ueC8v4ua0WR9ruKorm25c8rypfb5j9QFHWrKBmoXyApc9q1phAra02ZufgxTfkq8J9pyt3CxHTn6bF1bhio11Yz3aF1SyMJbRlIqecxB0P7gv3pokI3HWNAaKfKUjL0hpnIuQeJ1oOC5E20kQMP1gitMdHNaErjSXmtjIzghcal5ncdDrZUy9hwfWP5DS4278ITzsNz6nbuIR7d2TX2rhm6tp+qO7R5rI74UodLpkuz5A00EYq/ORbBWMwXgeGL8BSUbTulSdjfPOPCP9OISyMsTfHZykoj9fnM0TVuR84rxOwcP9e43bthP9sJSlOenT2h1mMTcNpAbbmtm+1YHzFue9zNwnhVpYJYqlM9SUi23mXm3+7+Ami81zRtDAAA
+
+DEMO_CMD_bb950e5fdb31c327_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'replay'"'"', '"
+'"'--core'"'"', '"'"'oxide'"'"', '"'"'--batch'"'"', '"'"'3'"'"', '"'"'--plan'"'"
+', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'/r
+oot/hash-sweep-sweep-pilot/batch-03-attempt-1.json'"'"']);open('"'"'/root/hash-s
+weep-sweep-pilot/batch-03-attempt-1.status'"'"',"w").write(str(r.returncode)+"\n
+")' >/root/hash-sweep-sweep-pilot/batch-03-attempt-1.log 2>&1 </dev/null & echo 
+JOB_PID:$!; printf '\nDEMO_CMD_493d1ed6b2e606a1_%s\n' "$?"
+JOB_PID:5165
+
+DEMO_CMD_493d1ed6b2e606a1_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-03-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-03-attempt-1.status; fi; print
+f '\nDEMO_CMD_6194f0208a31f78f_%s\n' "$?"
+
+DEMO_CMD_6194f0208a31f78f_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-03-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-03-attempt-1.status; fi; print
+f '\nDEMO_CMD_aea81e34b0b428ab_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_aea81e34b0b428ab_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""replay""\'"", ""\'""--core""\'"", ""\'""oxide""\'"", ""\'""--batch""\'"", ""\'""3""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-03-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-03-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-03-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-03-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_ade5bcfa6a9dc932_%s\n' "$?"
+LOG_PAYLOAD:H4sIAMkJAAAC/6tWSi1LzStRslJQSk4sTlXSUVBKSixJzgAKGAPZOal56SUgjpkJkJdcmZyTWgzkGZqZ1XJVE6nV0MgCQ69HYnGGQnFqUVlmcqpCcUliUUlqioJGgKeLgqmhhaWmtUJOfrqVgn5ZYpE+kKVfVZmUr5sB1KMH5HEBAHYx5Eu0AAAA
+
+DEMO_CMD_ade5bcfa6a9dc932_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-03-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_e4f86cb57f0eefd7_%s\n' "$?"
+LOG_PAYLOAD:H4sIAMkJAAAC/9VW227jNhB9z1cYek4AXsRbfqUqBF6GthBbEiQlu26Qf++Qkm0pTZttU3TRF0OcGc7tDI/n9W63K56aNhSPu6I/nMfG2+PD2PwGD+M3gP7B2ckfivtkNn8+7ng+nboA6dIA/dGeZwvfDVnWfW9QmUXjZKfG1+PBMiGTTlLCgPDIqadKBO2dFZJZ5YBEF6kCrQ3hpYmGGEU5aIaWkREPWhmt3Oy2t8PU2OPKL1XMRhFKXbroWdQUpABpSTR4BMW8Lr0CIYmOXMhoQVMlHQul51Eywma/Bzj2MKzcciO0K5lg1DAB4KO1hgqvnDFGcY+XqbTeCEcti2AlwzBBCEO9xyixXFrX2SHUox+aflo5V8ClKr0j2isdHSU2yuAFJqbQg2JAQTARY/DGGW+JopLEwLkGQrUUZHY+dN9G9PYLfu92r/k3YWHHhMXljJIjtPspASjL+5sUvvfgJ8gD4EorPONS0kCBeqEMI5QLxEp4ibXzKKx1WuggtFTMgKDcBxmJpkIpx4uV3xHGseladFsyppgwWqhF+3YxK+AF2umW/LqAm36eMhvOK/cfD+BfBt8YfNgLlNvjvhua6XCqm9QRetW93X+a4fh8nLZpdE+omYZn2CaHT+I5FU31Rg7D0A0oJhtp0+7R9Vjfbm0T9h76Gb53paTHWPuzP0K+JeVGO09kO6fBDGMbbW+nCYa2dudpvs0pUVuT0OxhnP6Vqbk1efn69Tog4xS65xzltZp7XRWP1TwOVXFf5SlYRGkMsmxBH8Ur9KsFc5Rio6oN0iijb1X7LkTCM/vrnlCSYawW8NIFjacMGR4Ifm+BShYpygLPJeoKlGSBoFRXKLLTDEW1BSApZgCqpe05w6/2vSqw5mLdaiwntXoGZJn4HyEUyvSfMIqnxmkakOQCkBKZzFFg1Gsk0VJIYUjAsqBEFtWYGHIpIZwrF5jB/wbku08YRf9MRtEfM8qmGf9zSnlfy9/gFC4o+eec8uW5+Q84Ra85JXXqJ5DKHPZTVslg/BirfLXzn7HK3QJFLjo/t96OI07bZq87dnaZJK60ooLJedUB373AcL7y0GpkNOXKyrIUBJwmOjDmqADjqKTR6WACo8wbzZWCiJXhpsaidEpqEajjCpac38+4VnKZ49srS69wkTnrn2Ben2O/tw/hZC+qabDt2HdDzu7YpcU6wEvjr5Gu05IMcCvkf1AslLGIrxTDlndXYLQ6h4kwrB5y4Z5jTGss7vFJSkr8B7zcOdnW7lF5a/GlvpxjfbDj4dp6diEAbD16hNZDNsC5rJu2npoThHqA/UyNN14qEKUmNplEkvQuIf929zsv7UmabwwAAA==
+
+DEMO_CMD_e4f86cb57f0eefd7_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'ethernet'"'"', 
+'"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--batch'"'"', '"'"'4'"'"', '"'"'--plan'"
+'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'
+/root/hash-sweep-sweep-pilot/batch-04-attempt-1.json'"'"']);open('"'"'/root/hash
+-sweep-sweep-pilot/batch-04-attempt-1.status'"'"',"w").write(str(r.returncode)+"
+\n")' >/root/hash-sweep-sweep-pilot/batch-04-attempt-1.log 2>&1 </dev/null & ech
+o JOB_PID:$!; printf '\nDEMO_CMD_4ee4e817f6bddcc3_%s\n' "$?"
+JOB_PID:5196
+
+DEMO_CMD_4ee4e817f6bddcc3_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-04-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-04-attempt-1.status; fi; print
+f '\nDEMO_CMD_28eadde17a98b481_%s\n' "$?"
+
+DEMO_CMD_28eadde17a98b481_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-04-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-04-attempt-1.status; fi; print
+f '\nDEMO_CMD_da823677c95cec18_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_da823677c95cec18_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""ethernet""\'"", ""\'""--core""\'"", ""\'""oxide""\'"", ""\'""--batch""\'"", ""\'""4""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-04-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-04-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-04-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-04-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_445518fc90a2cf55_%s\n' "$?"
+LOG_PAYLOAD:H4sIANkJAAAC/43LsQrCMBSF4T1PcclUQQ0JprZ1ddDNV0ivl0YILSQh0Ja+u7ebo9v5DvyrpEJjlh1IdInkEWTvMno+LrwDjUPeUe/CGQMllrVG23YT65+1Ns1vrtvaXjfxcMlDolg+SJCyi5neUL2ed7DGmMMNwjR0oIqLipda5n46eW7OLPEF99GJzLkAAAA=
+
+DEMO_CMD_445518fc90a2cf55_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-04-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_03342c83ab47e125_%s\n' "$?"
+LOG_PAYLOAD:H4sIANkJAAAC/+1Y227bOBB9z1cEfk4AXsRbfmW1EHgZ2kJsyZDkNGmQf98hJSuSk7ZB00V3F/sSiDPk3A+Pmeer6+vNfd2Ezd315rh76mtv97d9/RVu+y8Ax1tnB7/b3KRt4+fddZFXhzZAOgTDDroGhnGPb7ssbR9rVGdRP9ih9lW/s0zIpJOUMCA8cuqpEkF7Z4VkVjkg0UWqQGtDeGGiIUZRDprhzsiIB62MVm40e7TdUNv9wi5VzEYRCl246FnUFKQAaUk0uATFvC68AiGJjlzIaEFTJR0LhedRMsJGuzvYH6FbmOVGaFcwwahhAsBHaw0VXjljjOIeD1NpvRGOWhbBSoZughCGeo9eYjEVr7VdqHrf1cdhYVwBl6rwjmivdHSU2CiDFxiYQguKAQXBRIzBG2e8JYpKEgPnGgjVUpDReNd+6dHaH/h9ff2c/6Ze2D714rxGyR6a7ZBaKHMPJyk8HsEPkEfAFVZ4xqWkgQL1QhlGKBfYK+El5s6jsNZpoYPQUjEDgnIfZCSaCqUc3yzs9tD3ddukiWFMMWG0MJP25bxtAw/QDK/BLxN41afIOrDhaWH+WyP4XferDe9WA+V2v227etgdqjrVhM66l5sfxtif9hdhtPeoGboTrINDUJxS2lSv5NB1bYdispLWzRZN99V8aq223sNxbOBFKgmOlX/ye0inBM7wRQ3GsWyyVholpVypj3YYsLSVexrgrd9Qb6EffsnYfLzGWzisC9w9VrGzhxwfXWmGhYZx8uaU76tc77eZobZ9QN2peUfXpwaxtacs4/zjaYSDrWwIqa0Y36XzY1s3WPjkhxaq0FwKeZna5Z4Cr4Z1e9CFb5tYb9MeYrS52BCPW1thgSo33hRnX4V+zWP6+nMGbD+E9pRTeC7HdMrNXTnCs9zclBmVWXSGZZZOaETFAo3lhEGU4uCWK+ShjL6UzYWThK9sr71HSYZVOYEpHdC4yi3FBcHvNXAm4RkuZ68LkKBoAkk5QyPJJmiUa0BM9kYY5AA/i4Nyc5kyjnvOd57ylCauh8U6zXa5nugptMUcnyV9qg1LFvIX55ceV5N59j0NWzr6OpDlYgxnTR7DcjF8STMNX7keuYW1QmMYm+WQYdRpyMabYYLTR6iNMv0NbvPUOE0D0m0AUiCnOgqMeo10XggpDAkECbdAPtfYEWR1QjhXLjCDv1KQeb/PbZL8Vm67gPb75fiXk9tlLmt2o0YK9S1yYwXOGfkpbvv02Pzt3Ebxl+n/7PbPYrd8283slib3N9Db6HbNbyNMVvQ2geOH7PZZJPwcu43T/R/nt6tpCHOz88V/tBhfWL91962d7jOutFZMivH5Bz5V4WlmxMXtpSlXVhaFIOA00YExRwUYRyWNTgcTGGXeaK4URGwqvl5ZlE5JLQJ1XMEU85u7Fl+ok2a+txMbTDJn/T2M/1RIFbnFap1VQ2eb/th2Obp9m/7dEOCh9rOnGSVpA76U+RvFRF2TeKY6do4o9Sa7idAtbs6NO8WYnvb111RhSgot5iwOtrFbVL6WmJztpxirne13o7yQSsuJiLD0aBEaD3kD4rGqm2qoDxCqDrYjRb/y4wa7VMc6k1mSXqXOv1z9BfyG1jKFEQAA
+
+DEMO_CMD_03342c83ab47e125_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'ethernet'"'"', 
+'"'"'--core'"'"', '"'"'compact'"'"', '"'"'--batch'"'"', '"'"'5'"'"', '"'"'--plan
+'"'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'
+"'/root/hash-sweep-sweep-pilot/batch-05-attempt-1.json'"'"']);open('"'"'/root/ha
+sh-sweep-sweep-pilot/batch-05-attempt-1.status'"'"',"w").write(str(r.returncode)
++"\n")' >/root/hash-sweep-sweep-pilot/batch-05-attempt-1.log 2>&1 </dev/null & e
+cho JOB_PID:$!; printf '\nDEMO_CMD_88483b6ff3bfd789_%s\n' "$?"
+JOB_PID:5229
+
+DEMO_CMD_88483b6ff3bfd789_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-05-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-05-attempt-1.status; fi; print
+f '\nDEMO_CMD_8de5344db822eae9_%s\n' "$?"
+
+DEMO_CMD_8de5344db822eae9_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-05-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-05-attempt-1.status; fi; print
+f '\nDEMO_CMD_740e65a0401dcb5f_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_740e65a0401dcb5f_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""ethernet""\'"", ""\'""--core""\'"", ""\'""compact""\'"", ""\'""--batch""\'"", ""\'""5""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-05-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-05-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-05-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-05-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_e4ca748523cf743b_%s\n' "$?"
+LOG_PAYLOAD:H4sIAOkJAAAC/43LsQrCMBSF4T1PccmkoA2mpqR17aCbr5BeL40QWkhCoC19d6+bo9v5DvybpEJTlh1IdInkCeTgMno+DO9A05i/aK4sXDBQYunWaNvuYvuzvmj7m9e2bvQu7i55SBTLGwlSdjHTCw7PRw9GG3O8QZjHDlRxUfFS6zLMZ89NxRIfsSr4XLkAAAA=
+
+DEMO_CMD_e4ca748523cf743b_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-05-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_8ffcdf313441b824_%s\n' "$?"
+LOG_PAYLOAD:H4sIAOkJAAAC/+1Y2W7bOBR9z1cEfk4ALuKWXxkNBC6XthBbEiS5bVrk3+eSkmzJaadBOzvmxZDuJe9+eER/ubu/3z3XTdg93e+6w8tQe3t8HOrP8Dh8BOgenR39YfeQlk2PT/civ53aAGkTjAfoGxinNb7ts9S3p876WTiMdqx9NRwsEzJpJSUMCI+ceqpE0N5ZIZlVDkh0kSrQ2hBemGiIUZSDZrgyMuJBK6OVm8x2th9re1zZdQ4Kg9uiFNY6RbQXUoMqPAUCTCvglNrAdYwQdUEVtdpIdKmcj0QTmOwe4NhBvzLLjdCuYIJRwwSAj9YaKrxyxhjFveeRSuuNcNSyCFYyXfgghKEe/cdYzOVrbR+qwfd1N66MY1ASI3QYrNLRUWKjDF5QJRVaUAwoCCZiDN444y1RFCMOnGsgVEtBJuN9+3FAa7/g8/39l/ybumGH1I3lHSVHaPZjaqIsHq5S+NSBHyEPgSus8IxLSQMF6oUyjFAusFfCS8ydx1RbLXQQWipmQFDug8T6UaGU47uV3QGGoW4bNFswppgwWtJZ+7os28EHaMZr8OsErvoUWQ82vKzMf2sIf9f9ZsFXq4Fye9y3fT0eTlWdakIvuteH78Y4nI83YbTPqBn7M2yDQ1CcU9pUb+TQ922PYrKR1s0eTQ/VZddWbb2HbmrgTSoJkJV/8UdIu5gRTJvNgmksm6TllMiCbi13dhyxtJV7GeGt31DvYRj/kLF5f433cNoWuP9Uxd6ecnzbBo9rDdNvdvmhyvV+mxlq2w+oOzdf0Q2pQWzrKcs4f38a4WQrG0JqK8Z367xr6wYLn/zQQhWaSyFvU7tdU+DRsG0PuvBtE+t9WkNMOu02C2K3txUWqHLTSbH4KvQ1j/np1wtghzG055zCl3JKp9w9lRM8y91DmVGZRQsss3RGIypWaCxnDKIUB7fcIA9l9LVsbpwkfGV77TNKMqzKGUxpg8a33FJ8Ifi8Bc4sXOCyeF2BBEUzSMoLNFC2QKPcAmK2N8EgB/izOCh3tynjuOd8L1Oe0sT3cf3O9LziMtFzaKs5XiRDqg1LFvIT57ceN5O5+J6HLW29DmS5GsOLJo9huRq+pJmHr9yO3MpaoTGM3XrIMOo0ZNPJMMPpPdS2AfqG2zw1TtOAdBuAFMipjgKjXiOdF0IKQwJBwi2QzzV2BFmdEM6VC8zgVwoy73e4jf293Ma+zm23596/mdxuc9myG8cxYt8iN/x+Q1z/ELf99Nj8+dyGX6b/s9s/jN3Ymt2mE/ovp7fJ7ZbfJphs6G0Gx3fZ7WeR8IPslqf7P85vd/MQ5mbng7+zGF/Y3nWPrV0+1pVRhdTFdP0Dn6rwcmHE1emlKVdWFoUg4DTRgTFHBRhHJY1OBxMYZd5orhREbCreXlmUTkktAnVcwRzzzVlLjWbzReJ62ic2mGXO+meY/lZIFXnEai2qsbfN0LV9ju7Ypj8cAnyo/cXTBSVpAd6U+RvFTF2z+EJ1bD5Ecm+ymwj96uTcuTNe/fFqX39OFaak0EIte062sXtUXktMFvspxupgh8NMJVj2hWiw9GgRGg95AeKxqptqrE8Qqh72E0Vf+XGHXapjncksSe9S51/vfgM7R6P4hxEAAA==
+
+DEMO_CMD_8ffcdf313441b824_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'ethernet'"'"', 
+'"'"'--core'"'"', '"'"'compact'"'"', '"'"'--batch'"'"', '"'"'6'"'"', '"'"'--plan
+'"'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'
+"'/root/hash-sweep-sweep-pilot/batch-06-attempt-1.json'"'"']);open('"'"'/root/ha
+sh-sweep-sweep-pilot/batch-06-attempt-1.status'"'"',"w").write(str(r.returncode)
++"\n")' >/root/hash-sweep-sweep-pilot/batch-06-attempt-1.log 2>&1 </dev/null & e
+cho JOB_PID:$!; printf '\nDEMO_CMD_528becd273e729ed_%s\n' "$?"
+JOB_PID:5262
+
+DEMO_CMD_528becd273e729ed_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-06-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-06-attempt-1.status; fi; print
+f '\nDEMO_CMD_2c88410f02737fbc_%s\n' "$?"
+
+DEMO_CMD_2c88410f02737fbc_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-06-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-06-attempt-1.status; fi; print
+f '\nDEMO_CMD_885fec650b9a714e_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_885fec650b9a714e_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""ethernet""\'"", ""\'""--core""\'"", ""\'""compact""\'"", ""\'""--batch""\'"", ""\'""6""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-06-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-06-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-06-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-06-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_9c0c643cd5c22108_%s\n' "$?"
+LOG_PAYLOAD:H4sIAPkJAAAC/6tWSi1LzStRslJQSk4sTlXSUVBKSixJzgAKmAHZOal56SVgjgmQl1yZnJNaDOSZWxqYWZrVclUTqdvQyAJZu5GJobFBLZdHYnGGQnFqUVlmcqpCcUliUUlqioJGgKeLgqmRhYWmtUJOfrqVgn5ZYpE+kKVfVZmUr5sB1KMH5HEBAPNQz3S5AAAA
+
+DEMO_CMD_9c0c643cd5c22108_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-06-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_29b346c9fcefe979_%s\n' "$?"
+LOG_PAYLOAD:H4sIAPoJAAAC/+1Y227bRhB991cYeraBvV/yK2VB7GVWIiyRBEkncQP/e2eXlETKSWM0LdIWfRHImd25nz1cfbm7v989NW3cfbjf9YeXsQnu+Dg2v8Hj+Amgf/RuCofdQ142P364V+Xt1EXIm2A6wNDCNK8J3VCkoTv1LizCcXJTE+rx4JhUWasoYUB44jRQLaMJ3knFnPZAkk9UgzGWcGGTJVZTDobhysRIAKOt0X4227thatxxZdd7EBa3JSWd85qYIJUBLQIFAsxo4JS6yE1KkIygmjpjFbrUPiRiCMx2D3DsYViZ5VYaL5hk1DIJEJJzlsqgvbVW8xB4osoFKz11LIFTzIgQpbQ0oP+UxFK+zg2xHsPQ9NPKOAalMEKPwWqTPCUuqRgk1UqjBc2AgmQypRist8ERTTHiyLkBQo2SZDY+dJ9GtPYLPt/ffym/uRtuzN04v6PkCO1+Kk0UD1cpfO4hTFCGwAsnA+NK0UiBBqktI5RL7JUMCnPnKdfWSBOlUZpZkJSHqLB+VGrt+W5ld4RxbLoWzQrGNJPWKL5oX8/LdvAR2uka/DqBqz5HNoCLLyvz3xrCP3S/WfDVaqDcHffd0EyHU93kmtCL7vXhuzGOz8ebMLon1EzDM2yDQ1A857Sp2chhGLoBxWQjbdo9mh7ry66t2oUA/dzAm1QyIOvwEo6Qd2lLlFWbBfNYtllriCLGbNW9myYsbe1fJnjrNzZ7GKe/ZGzeX+M9nLYFHj7XaXCnEh/daKaVhjPxZlcY61Lvt5mhtvuIuuf2K7oxN4htPRUZ5+9PI55c7WLMbcX4bp33XdNi4bMfKrQwXEl1m9rtGoFHw7Y96CJ0bWr2eQ2x+bTbLEj93tVYoNrPJ8XZlzDXPJanXy+AHafYPZcUvlRzOtXuQzXDs9o9VAWVRXSGZZEuaETFCo3VgkGU4uBWG+ShjL5W7Y2TjK9ir3tCSYFVtYApbzD4VlqKLwSft8BZhGe4nL2uQIKiBSTVBRooO0Oj2gJisTfDoAT4oziodrcp47iXfC9TntPE92n1nme72k70Etpqjs+SMdeGZQvlifNbj5vJPPtehi1vvQ5ktRrDi6aMYbUavqxZhq/ajtzKmjAYxm49ZBh1HrL5ZFjg9B5qo8x8g9sCtd7QiHQbgQjkVE+B0WCQzoVU0pJIkHAF8rnBjiCrE8K59pFZ/EpB5v0Ot4mfy23i69y2Kce/nNxuc9myGxOUk2+RG5OC3+x+L7f98Nj87dxG8cuU/M9u/yx2E2t2y5P7E+htdrvltxkmG3pbwPFddvtRJPw5dpun+z/Ob3fLEJZml4O/dxhf3N51j51bzjOu8fJJNZ+vfxByFV4ujLg6vQzl2ikhJAFviImMeSrBeqpo8ibayCgL1nCtIWFT8fbKkvJaGRmp5xqWmG/OWmrw42XRXM7tzAaLzLvwBPPfCrkij1its2oaXDv23VCiO3b5D4cIH5tw8XRBSV6AN2X+RrFQ1yK+UB1bDpHSm+ImwbA6OXf+Ga/+eLVvfssVpkQYqc97Tq51e1ReS0zO9nOM9cGNh0vp9ZlKsPRoEdoAZQHisW7aempOEOsB9jNFX/lxh11qUlPILEvvcudf734HkW/ctYcRAAA=
+
+DEMO_CMD_29b346c9fcefe979_0
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'-u'"'"', '"'"'/root/ha
+sh-sweep-sweep-pilot/sweep_board.py'"'"', '"'"'--mode'"'"', '"'"'ethernet'"'"', 
+'"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--batch'"'"', '"'"'7'"'"', '"'"'--plan'"
+'"', '"'"'/root/hash-sweep-sweep-pilot/plan.json'"'"', '"'"'--output'"'"', '"'"'
+/root/hash-sweep-sweep-pilot/batch-07-attempt-1.json'"'"']);open('"'"'/root/hash
+-sweep-sweep-pilot/batch-07-attempt-1.status'"'"',"w").write(str(r.returncode)+"
+\n")' >/root/hash-sweep-sweep-pilot/batch-07-attempt-1.log 2>&1 </dev/null & ech
+o JOB_PID:$!; printf '\nDEMO_CMD_dbd8808a638a8a80_%s\n' "$?"
+JOB_PID:5295
+
+DEMO_CMD_dbd8808a638a8a80_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-07-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-07-attempt-1.status; fi; print
+f '\nDEMO_CMD_78e5e4e3a525ceb0_%s\n' "$?"
+
+DEMO_CMD_78e5e4e3a525ceb0_0
+# if [ -f /root/hash-sweep-sweep-pilot/batch-07-attempt-1.status ]; then printf 
+"JOB_RC:"; cat /root/hash-sweep-sweep-pilot/batch-07-attempt-1.status; fi; print
+f '\nDEMO_CMD_4847c0c280825dd8_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_4847c0c280825dd8_0
+[1]+  Done                       nohup python3 -c "import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.getpid() else None;r=subprocess.run([""\'""python3""\'"", ""\'""-u""\'"", ""\'""/root/hash-sweep-sweep-pilot/sweep_board.py""\'"", ""\'""--mode""\'"", ""\'""ethernet""\'"", ""\'""--core""\'"", ""\'""oxide""\'"", ""\'""--batch""\'"", ""\'""7""\'"", ""\'""--plan""\'"", ""\'""/root/hash-sweep-sweep-pilot/plan.json""\'"", ""\'""--output""\'"", ""\'""/root/hash-sweep-sweep-pilot/batch-07-attempt-1.json""\'""]);open(""\'""/root/hash-sweep-sweep-pilot/batch-07-attempt-1.status""\'"",\"w\").write(str(r.returncode)+\"\n\")" 1>/root/hash-sweep-sweep-pilot/batch-07-attempt-1.log 2>&1 0</dev/null
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-07-attempt-1.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_b3116ee2475670d0_%s\n' "$?"
+LOG_PAYLOAD:H4sIAAoKAAAC/43LsQrCMBSF4T1PccmkoMYmTa11ddDNV7iNl0YILSQhUEvf3evo5na+A/8iqdCYZQfSYSK5A9ljdp6PE+9A45C/aGqWm12gxDK2bsxZr2L5M690+9Pro21XccPkIVEsL0eQMsZMT9g87lewRlfbC4Rp6EAVjIqXes/9tPfcHFjiA8ZqBze6AAAA
+
+DEMO_CMD_b3116ee2475670d0_0
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-sweep-sweep-pilot/batch-07-attempt-1.json'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_e32f0b6a7cad18f4_%s\n' "$?"
+LOG_PAYLOAD:H4sIAAoKAAAC/+1Y247bNhB9369Y+HkX4P2SX6kKgZehLawtGZI2ySbYf++QkmzJmzRB0iJt0RdDnCHnfngkf767v989NW3cvbvfnQ8vQxPc8XFoPsHj8AHg/OjdGA67h7xtenx3r8vq1EXIh2A8QN/COO0JXV+k3ccG1UU0jG5sQj0cHJMq6xQlDAhPnAaqZTTBO6mY0x5I8olqMMYSLmyyxGrKwTDcmRgJYLQ12k9mz64fG3dc2aWauSSjMMKnwJKhoCQoR5LFJWgWjAgapCImcamSA0O18iyKwJNihE12D3A8Q78yy600XjDJqGUSICTnLJVBe2ut5gEPU+WClZ46lsAphm6ilJaGgF6SmIvXuT7WQ+ib87gyroErLYInJmiTPCUuqRgkBqbRgmZAQTKZUgzW2+CIpoqkyLkBQo2SZDLedx8GtPYbPt/ffy6/uRduyL1Y1ig5QrsfcwuVeLhK4eMZwghlBLxwMjCuFI0UaJDaMkK5xF7JoDB3nqRz3kgTpVGaWZCUh6gSMVRq7fluZXeAYWi6Fs0KxjSTFgOeta/Lth28h3a8Br9O4KrPkfXg4svK/NdG8E/dbzZ8sRood8d91zfj4VQ3uSb0ont9+GaMw/PxJozuCTVj/wzb4BAUzzltajZy6PuuRzHZSJt2j6aH+nJqq3YhwHlq4E0qGY51eAlHyKe4FIpbttkxzWU7qy0RRm/0ZzeOWNzav4zw1nNs9jCMf8ngfH+V93Dalrj/WKfenUp8dKMZ1xpB2ZtjYahLyd+mhtruPeqe2y/ohtyjrbWxyDj//jziydUuxtxZDPDW+blrWqx89kOFFoYrqW5zu90j8HbY9gddhK5NzT7vIdbYmw3pvHc1Vqj202Wx+BLmmsf89PsFs8MYu+eSwudqSqfavasmhFa7h6oAs4gWZBbpDEhUrABZzTBEKc5utQEfyuhr1d44yRAr9ronlBRkVTOe8gGDq9JSXBB83mJnFi6IWbyucIKiBSfVBR2TcEJHtcXEbHFCQgnxZ6FQ7W6TxokvGV8GPSeK63G9zuNdbYd6jm01yotkyOXJ+8fyxPmty81wLs7nectHrzNZrSbxoimTWK3mL2vm+au2U7eyJgyGsVvPGUad52y6HWZEfQ/BUWa+wnCBWm9oRNKNQAQyq6fAaDBI6kIqaUkkSLsCWd1gS5DbCeFc+8gsvqsg/36D4dSvZTj1ZYbblONfTnG3udxwHCPSfI3hBFOSix/it58em7+f3/D91PxPcP8sglNrgsuT+wsYbnJ7Q3EFJhuCm8HxTXr7WST8IL2V6f6P89vdPISl2eXiPzuML26/eI+dW97YtTHSTrDBuQm5Ci8XRlzdXoZy7ZQQkoA3xETGPJVgPVU0eRNtZJQFa7jWkLCp+A3LkvJaGRmp5xrmmG/uWmrJ8rVwve0zG8wy78ITTH8t5Io8YrUW1di7djh3fYnu2OU/HSK8b8LF0wUleQN+L/M3ipm6ZvGF6th8iZTeFDcJ+tXNufPPKeUP/OZTrjDFdzqplzMn17o9Kq8lJov9HGN9cMNhLr3hhC7KHqvWQxugbEA81k1bj80JYt3DfqLoKz/usEtNagqZZeld7vzr3R+cLe5wixEAAA==
+
+DEMO_CMD_e32f0b6a7cad18f4_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

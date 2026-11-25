@@ -1,0 +1,445 @@
+{
+  "input": "docs/media/sha3-comparison-final.mp4",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "Matched routed hash-partition resources",
+      "start": 220.2333333333,
+      "segments": [
+        {
+          "start": 220.2333333333,
+          "end": 223.59333333330002,
+          "text": " The compact hash partition also uses fewer resources,",
+          "words": [
+            {
+              "start": 220.2333333333,
+              "end": 220.5733333333,
+              "word": " The",
+              "probability": 0.9772272706031799
+            },
+            {
+              "start": 220.5733333333,
+              "end": 220.9533333333,
+              "word": " compact",
+              "probability": 0.5539632439613342
+            },
+            {
+              "start": 220.9533333333,
+              "end": 221.2333333333,
+              "word": " hash",
+              "probability": 0.9280574321746826
+            },
+            {
+              "start": 221.2333333333,
+              "end": 221.75333333330002,
+              "word": " partition",
+              "probability": 0.9868367910385132
+            },
+            {
+              "start": 221.75333333330002,
+              "end": 222.1133333333,
+              "word": " also",
+              "probability": 0.992948055267334
+            },
+            {
+              "start": 222.1133333333,
+              "end": 222.5733333333,
+              "word": " uses",
+              "probability": 0.9965360164642334
+            },
+            {
+              "start": 222.5733333333,
+              "end": 222.9533333333,
+              "word": " fewer",
+              "probability": 0.9986552000045776
+            },
+            {
+              "start": 222.9533333333,
+              "end": 223.59333333330002,
+              "word": " resources,",
+              "probability": 0.9983951449394226
+            }
+          ]
+        },
+        {
+          "start": 224.19333333330002,
+          "end": 229.0533333333,
+          "text": " 21.9% fewer lookup tables and about 58% fewer flip-flops.",
+          "words": [
+            {
+              "start": 224.19333333330002,
+              "end": 224.4533333333,
+              "word": " 21",
+              "probability": 0.9870579838752747
+            },
+            {
+              "start": 224.4533333333,
+              "end": 225.13333333330002,
+              "word": ".9",
+              "probability": 0.9864903092384338
+            },
+            {
+              "start": 225.13333333330002,
+              "end": 225.4533333333,
+              "word": "%",
+              "probability": 0.8423385620117188
+            },
+            {
+              "start": 225.4533333333,
+              "end": 225.85333333330001,
+              "word": " fewer",
+              "probability": 0.9993009567260742
+            },
+            {
+              "start": 225.85333333330001,
+              "end": 226.13333333330002,
+              "word": " lookup",
+              "probability": 0.8517826199531555
+            },
+            {
+              "start": 226.13333333330002,
+              "end": 226.59333333330002,
+              "word": " tables",
+              "probability": 0.998397171497345
+            },
+            {
+              "start": 226.59333333330002,
+              "end": 226.9333333333,
+              "word": " and",
+              "probability": 0.3890291750431061
+            },
+            {
+              "start": 226.9333333333,
+              "end": 227.1133333333,
+              "word": " about",
+              "probability": 0.9776495695114136
+            },
+            {
+              "start": 227.1133333333,
+              "end": 227.6733333333,
+              "word": " 58",
+              "probability": 0.9976769089698792
+            },
+            {
+              "start": 227.6733333333,
+              "end": 228.1533333333,
+              "word": "%",
+              "probability": 0.9920845031738281
+            },
+            {
+              "start": 228.1533333333,
+              "end": 228.47333333330002,
+              "word": " fewer",
+              "probability": 0.9997462630271912
+            },
+            {
+              "start": 228.47333333330002,
+              "end": 228.7333333333,
+              "word": " flip",
+              "probability": 0.9957643747329712
+            },
+            {
+              "start": 228.7333333333,
+              "end": 229.0533333333,
+              "word": "-flops.",
+              "probability": 0.8970732092857361
+            }
+          ]
+        },
+        {
+          "start": 229.7733333333,
+          "end": 231.5733333333,
+          "text": " Both hash cores use zero brands.",
+          "words": [
+            {
+              "start": 229.7733333333,
+              "end": 229.9533333333,
+              "word": " Both",
+              "probability": 0.9959226846694946
+            },
+            {
+              "start": 229.9533333333,
+              "end": 230.2333333333,
+              "word": " hash",
+              "probability": 0.9717938303947449
+            },
+            {
+              "start": 230.2333333333,
+              "end": 230.47333333330002,
+              "word": " cores",
+              "probability": 0.7410988807678223
+            },
+            {
+              "start": 230.47333333330002,
+              "end": 230.8333333333,
+              "word": " use",
+              "probability": 0.9914985299110413
+            },
+            {
+              "start": 230.8333333333,
+              "end": 231.2333333333,
+              "word": " zero",
+              "probability": 0.8985781669616699
+            },
+            {
+              "start": 231.2333333333,
+              "end": 231.5733333333,
+              "word": " brands.",
+              "probability": 0.23683543503284454
+            }
+          ]
+        },
+        {
+          "start": 232.1733333333,
+          "end": 234.13333333330002,
+          "text": " The replay memory is shared infrastructure,",
+          "words": [
+            {
+              "start": 232.1733333333,
+              "end": 232.25333333330002,
+              "word": " The",
+              "probability": 0.9965129494667053
+            },
+            {
+              "start": 232.25333333330002,
+              "end": 232.53333333330002,
+              "word": " replay",
+              "probability": 0.8452135920524597
+            },
+            {
+              "start": 232.53333333330002,
+              "end": 232.91333333330002,
+              "word": " memory",
+              "probability": 0.9979764819145203
+            },
+            {
+              "start": 232.91333333330002,
+              "end": 233.2133333333,
+              "word": " is",
+              "probability": 0.9980502128601074
+            },
+            {
+              "start": 233.2133333333,
+              "end": 233.5533333333,
+              "word": " shared",
+              "probability": 0.9937845468521118
+            },
+            {
+              "start": 233.5533333333,
+              "end": 234.13333333330002,
+              "word": " infrastructure,",
+              "probability": 0.9940352439880371
+            }
+          ]
+        },
+        {
+          "start": 234.4933333333,
+          "end": 236.8333333333,
+          "text": " counted separately from those hash partition totals.",
+          "words": [
+            {
+              "start": 234.4933333333,
+              "end": 234.81333333330002,
+              "word": " counted",
+              "probability": 0.9963041543960571
+            },
+            {
+              "start": 234.81333333330002,
+              "end": 235.2733333333,
+              "word": " separately",
+              "probability": 0.9961643218994141
+            },
+            {
+              "start": 235.2733333333,
+              "end": 235.6133333333,
+              "word": " from",
+              "probability": 0.9979674220085144
+            },
+            {
+              "start": 235.6133333333,
+              "end": 235.81333333330002,
+              "word": " those",
+              "probability": 0.9860769510269165
+            },
+            {
+              "start": 235.81333333330002,
+              "end": 236.1133333333,
+              "word": " hash",
+              "probability": 0.9884626269340515
+            },
+            {
+              "start": 236.1133333333,
+              "end": 236.53333333330002,
+              "word": " partition",
+              "probability": 0.9594725370407104
+            },
+            {
+              "start": 236.53333333330002,
+              "end": 236.8333333333,
+              "word": " totals.",
+              "probability": 0.9965116381645203
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oxide Quartz attribution and project credits",
+      "start": 237.3333333333,
+      "segments": [
+        {
+          "start": 237.3333333333,
+          "end": 240.4733333333,
+          "text": " Credit to Oxide and the Quartz contributors for the Reference Core.",
+          "words": [
+            {
+              "start": 237.3333333333,
+              "end": 237.8133333333,
+              "word": " Credit",
+              "probability": 0.5730819702148438
+            },
+            {
+              "start": 237.8133333333,
+              "end": 238.0133333333,
+              "word": " to",
+              "probability": 0.9951802492141724
+            },
+            {
+              "start": 238.0133333333,
+              "end": 238.4733333333,
+              "word": " Oxide",
+              "probability": 0.7848785817623138
+            },
+            {
+              "start": 238.4733333333,
+              "end": 238.6533333333,
+              "word": " and",
+              "probability": 0.9785065054893494
+            },
+            {
+              "start": 238.6533333333,
+              "end": 238.8333333333,
+              "word": " the",
+              "probability": 0.9640970230102539
+            },
+            {
+              "start": 238.8333333333,
+              "end": 239.0133333333,
+              "word": " Quartz",
+              "probability": 0.8896868228912354
+            },
+            {
+              "start": 239.0133333333,
+              "end": 239.4333333333,
+              "word": " contributors",
+              "probability": 0.5831102132797241
+            },
+            {
+              "start": 239.4333333333,
+              "end": 239.7733333333,
+              "word": " for",
+              "probability": 0.9941887855529785
+            },
+            {
+              "start": 239.7733333333,
+              "end": 239.8933333333,
+              "word": " the",
+              "probability": 0.9947636127471924
+            },
+            {
+              "start": 239.8933333333,
+              "end": 240.2133333333,
+              "word": " Reference",
+              "probability": 0.5788880586624146
+            },
+            {
+              "start": 240.2133333333,
+              "end": 240.4733333333,
+              "word": " Core.",
+              "probability": 0.5860918760299683
+            }
+          ]
+        },
+        {
+          "start": 240.9933333333,
+          "end": 245.0133333333,
+          "text": " Their unchanged source and license are retained alongside the measurements and scripts.",
+          "words": [
+            {
+              "start": 240.9933333333,
+              "end": 241.1133333333,
+              "word": " Their",
+              "probability": 0.9895346760749817
+            },
+            {
+              "start": 241.1133333333,
+              "end": 241.63333333330002,
+              "word": " unchanged",
+              "probability": 0.9824612736701965
+            },
+            {
+              "start": 241.63333333330002,
+              "end": 242.0133333333,
+              "word": " source",
+              "probability": 0.9105807542800903
+            },
+            {
+              "start": 242.0133333333,
+              "end": 242.2733333333,
+              "word": " and",
+              "probability": 0.995574951171875
+            },
+            {
+              "start": 242.2733333333,
+              "end": 242.5933333333,
+              "word": " license",
+              "probability": 0.9749521017074585
+            },
+            {
+              "start": 242.5933333333,
+              "end": 242.85333333330001,
+              "word": " are",
+              "probability": 0.99598628282547
+            },
+            {
+              "start": 242.85333333330001,
+              "end": 243.3133333333,
+              "word": " retained",
+              "probability": 0.9986315369606018
+            },
+            {
+              "start": 243.3133333333,
+              "end": 243.7133333333,
+              "word": " alongside",
+              "probability": 0.9350696206092834
+            },
+            {
+              "start": 243.7133333333,
+              "end": 244.13333333330002,
+              "word": " the",
+              "probability": 0.9932010769844055
+            },
+            {
+              "start": 244.13333333330002,
+              "end": 244.41333333330002,
+              "word": " measurements",
+              "probability": 0.920600950717926
+            },
+            {
+              "start": 244.41333333330002,
+              "end": 244.7133333333,
+              "word": " and",
+              "probability": 0.9974331259727478
+            },
+            {
+              "start": 244.7133333333,
+              "end": 245.0133333333,
+              "word": " scripts.",
+              "probability": 0.9953150749206543
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

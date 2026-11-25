@@ -1,0 +1,12 @@
+# Preserve captured tool/console output, including its original whitespace.
+results/**/*.rpt -text -whitespace
+results/**/*.log -text -whitespace
+# The dated physical capture is sealed with SHA-256; never normalize its bytes.
+results/sha3-performance-20261115/** -text
+results/demo-core-comparison-20261116/** -text
+results/demo-flow-20261116/** -text
+results/sha3-text-1gib-20261116/** -text
+results/demo-full-sweep-20261116/** -text
+results/demo-stream-20261116/** -text
+results/demo-axi-20261116/** -text
+results/demo-final-20261116/** -text

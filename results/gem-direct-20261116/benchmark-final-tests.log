@@ -1,0 +1,23 @@
+test_inflated_throughput_is_rejected (test_audit.EvidenceAuditTests.test_inflated_throughput_is_rejected) ... ok
+test_missing_samples_are_rejected (test_audit.EvidenceAuditTests.test_missing_samples_are_rejected) ... ok
+test_recorded_samples_agree (test_audit.EvidenceAuditTests.test_recorded_samples_agree) ... ok
+test_source_mapping_cannot_escape_checkout (test_audit.EvidenceAuditTests.test_source_mapping_cannot_escape_checkout) ... ok
+test_wrong_digest_is_rejected (test_audit.EvidenceAuditTests.test_wrong_digest_is_rejected) ... ok
+test_interleaved_console_message_retries_read_only (test_input_uart.SerialRecords.test_interleaved_console_message_retries_read_only) ... ok
+test_invalid_gzip_crc_is_not_accepted (test_input_uart.SerialRecords.test_invalid_gzip_crc_is_not_accepted) ... ok
+test_job_id_ignores_wrapped_echo (test_input_uart.SerialRecords.test_job_id_ignores_wrapped_echo) ... ok
+test_missing_or_ambiguous_record_fails (test_input_uart.SerialRecords.test_missing_or_ambiguous_record_fails) ... ok
+test_retries_are_bounded_and_ambiguous_records_rejected (test_input_uart.SerialRecords.test_retries_are_bounded_and_ambiguous_records_rejected) ... ok
+test_wait_is_not_a_completed_job (test_input_uart.SerialRecords.test_wait_is_not_a_completed_job) ... ok
+test_zero_and_negative_return_codes (test_input_uart.SerialRecords.test_zero_and_negative_return_codes) ... ok
+test_25_sizes_700_measured_100_warmups (test_size_sweep.SizeSweepPlan.test_25_sizes_700_measured_100_warmups) ... ok
+test_core_order_alternates (test_size_sweep.SizeSweepPlan.test_core_order_alternates) ... ok
+test_prefix_digests_across_pattern_wrap (test_size_sweep.SizeSweepPlan.test_prefix_digests_across_pattern_wrap) ... ok
+test_session_wrap_is_rejected (test_size_sweep.SizeSweepPlan.test_session_wrap_is_rejected) ... ok
+test_missing_duplicate_and_mismatched_timer_rejected (test_size_sweep.SweepSummary.test_missing_duplicate_and_mismatched_timer_rejected) ... ok
+test_uses_all_repetitions_and_excludes_warmup (test_size_sweep.SweepSummary.test_uses_all_repetitions_and_excludes_warmup) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.011s
+
+OK

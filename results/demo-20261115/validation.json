@@ -1,0 +1,45 @@
+{
+  "reviewed_utc": "2026-11-15T23:53:50.070762+00:00",
+  "passed": true,
+  "source_sha256": {
+    "demo/board_agent.py": "95d9173b3c8eff351a97eced580817385218c2cba6cea68f416088a6472b196e",
+    "demo/server.py": "43b24c5ccc5cbcb98af733698470d45f7c91e9308e1210e74c279e7bff58e53a",
+    "demo/tests/board_smoke.py": "ef53666e8f9598cf27d030187d205671ba5bd2d5862eef3f583c2bc466728cf6",
+    "demo/tests/test_demo.py": "1678b2c2056e4c9797d394a79c8cf84587318a61e8aeabc7cacec2ee893450d6",
+    "demo/uart.py": "6fc21114ce79554ceee4261d8d63d1a63382aa728e4c4bbbca73aeb8bd8975ef",
+    "demo/web/app.js": "083c1151d5a840b9ec0958e9ebdd9f73d1b995b1733e0f99eea315c717cb437b",
+    "demo/web/index.html": "138ed1233f3bc13543dfe72639fc70e219aeefc46ee6b8ff5c724806a22fbdde",
+    "demo/web/style.css": "b68b9c367266df3a09f71362fcdaaa7adb124b38bda3d4b3425417d06fb00968",
+    "dashboard.sh": "016c3e8f1749318e76742e4f8cd473aa491188e9ccd92e3db953ef7b0c8ff252"
+  },
+  "offline_tests": 12,
+  "physical_acceptance": "physical-acceptance.json",
+  "gui_hardware_receipts": [
+    "gui-file-picker.json",
+    "gui-sample.json"
+  ],
+  "ui_checks": [
+    "File chooser selected real README; all three FPGA digests matched PC references",
+    "Sample file hashed on all three engines; screenshot shows actual returned single-run times",
+    "Theme toggle retained chosen file; light preference restored after reload; dark restored before handoff",
+    "Desktop 1440px and narrow 390px layouts inspected",
+    "Absorption, permutation and padding scenes inspected; pause and step controls work",
+    "Presentation keyboard navigation and Escape exit work",
+    "DMA and local-API chart values match the retained benchmark",
+    "JSON receipt downloaded through Export evidence",
+    "No browser console warnings or errors observed"
+  ],
+  "board_final": {
+    "profile": "hash",
+    "engine": "sha3",
+    "service_running": true,
+    "profile_env_sha256": "9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc"
+  },
+  "notes": [
+    "Physical acceptance includes one cancelled upload, then 9 valid digests across empty, 137-byte and 1 MiB + 17-byte files.",
+    "Two GUI receipts add 6 valid digests and verify final backend source hashes.",
+    "Five successful jobs each additionally restore and verify an empty SHA3 digest.",
+    "Live API timings exclude USB upload and reconfiguration; recorded throughput is a separate historical dataset.",
+    "No new RTL, bitstreams, device tree, boot selection, kernel or production API changes."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "settings": {
+    "Stability": 0.5,
+    "Similarity": 0.75,
+    "Clone strength": 0.0
+  },
+  "settings_changed": false,
+  "before_after_check": "PASS",
+  "pronunciation_input": "ess, aitch, ay three",
+  "plain_text_spelling": "S. H. A. three",
+  "pause_controls": "Punctuation; no SSML break tags",
+  "reference": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices",
+  "downloads": [
+    {
+      "file": "ElevenLabs_2026-11-16T02_23_41_Jarnathan - Confident and Versatile_pvc_s50_sim75_v4.mp3",
+      "sha256": "dc1940394003fd8391a9200a76a88f61070794e26417f7ad539d0665f23ff9c4"
+    },
+    {
+      "file": "ElevenLabs_2026-11-16T02_23_41_Jarnathan - Confident and Versatile_pvc_s50_sim75_v4 (1).mp3",
+      "sha256": "10d42cffe6b3e095b0a134e2f41c9afab5737c7e62d82d518f8f02ad6cb8767a"
+    }
+  ]
+}

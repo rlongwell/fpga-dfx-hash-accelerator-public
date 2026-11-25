@@ -1,0 +1,132 @@
+{
+  "kind": "physical-zybo-input-comparison",
+  "completed_utc": "2026-11-16T22:29:45.912668+00:00",
+  "cases": 84,
+  "modes": {
+    "replay": {
+      "oxide": {
+        "samples": 3,
+        "median_seconds": 10.73741926,
+        "MB_per_second": 99.99999050051065,
+        "seconds": [
+          10.73741926,
+          10.73741926,
+          10.73741926
+        ],
+        "hardware_cycles": [
+          1073741926,
+          1073741926,
+          1073741926
+        ],
+        "digests": [
+          "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13"
+        ],
+        "retries": null
+      },
+      "compact": {
+        "samples": 3,
+        "median_seconds": 4.50024163,
+        "MB_per_second": 238.59648265153265,
+        "seconds": [
+          4.50024163,
+          4.50024163,
+          4.50024163
+        ],
+        "hardware_cycles": [
+          450024163,
+          450024163,
+          450024163
+        ],
+        "digests": [
+          "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13"
+        ],
+        "retries": null
+      },
+      "compact_speedup": 2.385965053169823
+    },
+    "ethernet": {
+      "oxide": {
+        "samples": 3,
+        "median_seconds": 21.875107919,
+        "MB_per_second": 49.085098367326594,
+        "seconds": [
+          21.934777177,
+          21.692540605,
+          21.875107919
+        ],
+        "hardware_cycles": [
+          2197429256,
+          2172351976,
+          2191611777
+        ],
+        "digests": [
+          "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5"
+        ],
+        "retries": [
+          0,
+          0,
+          0
+        ]
+      },
+      "compact": {
+        "samples": 3,
+        "median_seconds": 20.769240541,
+        "MB_per_second": 51.69865609098008,
+        "seconds": [
+          20.858893434,
+          20.769240541,
+          20.715624912
+        ],
+        "hardware_cycles": [
+          2089640976,
+          2080680526,
+          2072985304
+        ],
+        "digests": [
+          "e8af7302ce25e585e530bbc336c6e3c05e7396e6b5320f86aeb33fbe193727b5"
+        ],
+        "retries": [
+          0,
+          4,
+          1
+        ]
+      },
+      "compact_speedup": 1.0532454412965626
+    }
+  },
+  "physical_source": "acceptance-final/results.json",
+  "source_sha256": "034d5ae787601660af23fd0ab89bc8f01aa5ff9968caab9621fae82ec64e580f",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "network": {
+    "interface": "enp3s0",
+    "host_mac": "00:d8:61:0a:97:21",
+    "board_mac": "de:f6:cd:7b:38:e7"
+  },
+  "stopped_control_verified": true,
+  "resources_source_sha256": "80b1edfc5550f3cedfac7a5176cce27917882d10297bfe5188173fb5110cce20",
+  "hash_partition_resources": {
+    "oxide": {
+      "LUT": 5854,
+      "FF": 4222,
+      "RAMB36": 0,
+      "RAMB18": 0,
+      "DSP": 0
+    },
+    "compact": {
+      "LUT": 4572,
+      "FF": 1774,
+      "RAMB36": 0,
+      "RAMB18": 0,
+      "DSP": 0
+    }
+  },
+  "resource_reduction_percent": {
+    "LUT": 21.89955585924155,
+    "FF": 57.98199905258172
+  },
+  "scopes": {
+    "replay": "1 GiB of repeated 128 KiB FPGA-resident test data; FPGA START-to-digest at 100 MHz; pattern loading and software hashing excluded.",
+    "ethernet": "Same stored 1 GiB random-text file; PC first data send through FPGA digest reply; file reads and transport included; setup/DFX/reference hashing excluded.",
+    "resources": "Vivado routed hash-partition LUT/FF counts, same new static shell and clock; not whole-device percentages."
+  }
+}

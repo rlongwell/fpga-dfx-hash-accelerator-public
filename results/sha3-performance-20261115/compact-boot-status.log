@@ -1,0 +1,45 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; sha256sum /boot/profile.env /boot/profiles/h
+ash/system.bit /boot/profiles/hash/system.dtb /opt/zybo/hash/dfx_manifest.json; 
+/opt/zybo/hash/start.sh status; devmem 0xf8000170; devmem 0xf8000108; df -h / /b
+oot; python3 /opt/zybo/hash/software/hash_client.py 127.0.0.1 /dev/null --algori
+thm sha3 --verify; printf '\nUART_DONE_330207792891496_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+6.6.40-dfx-hash
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  /boot/profiles/hash/system.bit
+3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed  /boot/profiles/hash/system.dtb
+0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3  /opt/zybo/hash/dfx_manifest.json
+Hash service running (PID 164)
+0x00200500
+0x0001E000
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                26.8G    127.0M     25.3G   0% /
+/dev/mmcblk0p1          511.0M    273.9M    237.1M  54% /boot
+{
+  "digest": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+  "core_cycles": 27,
+  "status": "ok",
+  "algorithm": "sha3",
+  "length": 0,
+  "transfer_and_hash_ns": 101928,
+  "manager_load_ns": 0,
+  "client_transfer_and_result_ns": 5475324,
+  "client_request_ns": 54681055,
+  "client_transfer_and_result_MB_s": 0.0,
+  "reference_prepass": true,
+  "reference_hashing_in_timed_region": false,
+  "verified": true
+}
+
+UART_DONE_330207792891496_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

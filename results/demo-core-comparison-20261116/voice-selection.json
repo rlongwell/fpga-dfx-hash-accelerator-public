@@ -1,0 +1,21 @@
+{
+  "selected_take": 2,
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "settings": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "playback_rate": 1.06,
+  "take_1_duration": 134.76575,
+  "take_2_duration": 130.847375,
+  "decision": "Both paragraph-localized transcripts contain all intended clauses and resource counts. Take 2 provides the more concise read and clean boundaries for aligned cuts. Acoustic check confirms one-word sha. Automated transcription/signal review, not human listening.",
+  "new_sections": [
+    "Quartz architecture",
+    "Compact changes",
+    "Padding and framing",
+    "Physical core comparison"
+  ],
+  "sha_pronunciation": "ʃ ɑː"
+}

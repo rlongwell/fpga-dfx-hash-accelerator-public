@@ -1,0 +1,125 @@
+{
+  "version": 4,
+  "comparison": true,
+  "pointer_motion": "Minimum-jerk cubic Bezier; distance-dependent duration; 230 ms hover; actions only",
+  "started_utc": "2026-11-16T08:09:21.921Z",
+  "mode": "Scripted cursor / real dashboard actions / physical board",
+  "actions": [
+    {
+      "action": "point",
+      "selector": "#connect",
+      "at": 1.760199999999255,
+      "x": 1623.5703125,
+      "y": 687.984375
+    },
+    {
+      "action": "click",
+      "selector": "#connect",
+      "at": 2.0715,
+      "x": 1623.5703125,
+      "y": 687.984375
+    },
+    {
+      "action": "point",
+      "selector": "#comparison-sample",
+      "at": 7.5565,
+      "x": 590.46875,
+      "y": 499.484375
+    },
+    {
+      "action": "click",
+      "selector": "#comparison-sample",
+      "at": 7.895199999999255,
+      "x": 590.46875,
+      "y": 499.484375
+    },
+    {
+      "action": "point",
+      "selector": "#compare-cores",
+      "at": 9.976,
+      "x": 247,
+      "y": 615.234375
+    },
+    {
+      "action": "click",
+      "selector": "#compare-cores",
+      "at": 10.28679999999702,
+      "x": 247,
+      "y": 615.234375
+    },
+    {
+      "action": "point",
+      "selector": "#run",
+      "at": 13.895699999999255,
+      "x": 501.1015625,
+      "y": 711.484375
+    },
+    {
+      "action": "click",
+      "selector": "#run",
+      "at": 14.20679999999702,
+      "x": 501.1015625,
+      "y": 711.484375
+    },
+    {
+      "action": "highlight",
+      "selector": "[data-core=\"oxide\"] .hash-time",
+      "at": 41.001,
+      "box": {
+        "left": 248.5,
+        "top": 342.984375,
+        "right": 937.5,
+        "bottom": 434.078125
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "[data-core=\"compact\"] .hash-time",
+      "at": 45.99979999999702,
+      "box": {
+        "left": 967.5,
+        "top": 342.984375,
+        "right": 1656.5,
+        "bottom": 434.078125
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": ".digest-row",
+      "at": 51.99969999999926,
+      "box": {
+        "left": 248.5,
+        "top": 434.078125,
+        "right": 1656.5,
+        "bottom": 502.265625
+      }
+    },
+    {
+      "action": "highlight",
+      "selector": "#comparison-summary",
+      "at": 60.99959999999776,
+      "box": {
+        "left": 232.5,
+        "top": 619.453125,
+        "right": 1672.5,
+        "bottom": 676.953125
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "id": "ab376def57d06253cab39a98",
+      "kind": "probe",
+      "state": "passed",
+      "at": 5.4217999999970194
+    },
+    {
+      "id": "5437bbfc579c24f2b5bb894e",
+      "kind": "hash",
+      "state": "passed",
+      "at": 30.56079999999702
+    }
+  ],
+  "outcome": "passed",
+  "finished_seconds": 74.9995
+}

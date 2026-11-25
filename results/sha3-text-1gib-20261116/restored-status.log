@@ -1,0 +1,24 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; /opt/zybo/radar/radar-stream --check; sha256
+sum /boot/profile.env /root/hash-bench-1gib-20261116-16288d0a/results.json; pyth
+on3 -c 'import os,json; p='"'"'/root/hash-bench-1gib-20261116-16288d0a/random-1g
+ib.txt'"'"'; s=os.stat(p); print(json.dumps(dict(path=p,bytes=s.st_size,mode=oct
+(s.st_mode & 511))))'; printf '\nDEMO_CMD_025e805a2879fc97_%s\n' "$?"
+Zybo profile: radar
+Device tree: profiles/radar/system.dtb
+Board: Digilent Zybo Z7 board
+Next boot: hash
+6.6.40-dfx-hash-wifi
+RADAR-READY abi=00010000 mode=0 seq=0 frames=0 dropped=0
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+c7129fc67dbd8be20b4d617530c44a0c40c79a5bf576f57b2857befa9acd3adc  /root/hash-bench-1gib-20261116-16288d0a/results.json
+{"path": "/root/hash-bench-1gib-20261116-16288d0a/random-1gib.txt", "bytes": 1073741824, "mode": "0o444"}
+
+DEMO_CMD_025e805a2879fc97_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

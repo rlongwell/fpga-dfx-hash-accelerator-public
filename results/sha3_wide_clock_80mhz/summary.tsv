@@ -1,0 +1,11 @@
+engine	sha3_wide
+analysis_type	clock reanalysis of unchanged 100 MHz physical route
+part	xc7z020clg400-1
+vivado	2024.2
+period_ns	12.5
+input_delay_ns	2.0
+output_delay_ns	2.0
+setup_wns_ns	1.762
+hold_whs_ns	0.137
+register_setup_wns_ns	2.396
+register_data_path_delay_ns	9.806

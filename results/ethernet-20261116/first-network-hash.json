@@ -1,0 +1,47 @@
+[
+  {
+    "digest": "d968751128cfec8780ddfe859f11bdcd8b84e1f2175a1093fa9e776ad7fac6b1",
+    "core_cycles": 2104178,
+    "status": "ok",
+    "algorithm": "sha3",
+    "length": 1048576,
+    "transfer_and_hash_ns": 20892342,
+    "manager_load_ns": 0,
+    "client_transfer_and_result_ns": 21438164,
+    "client_request_ns": 25508065,
+    "client_transfer_and_result_MB_s": 48.91165120296682,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  },
+  {
+    "digest": "b1870b48476671247200e7af392fe66d90bd62786daae75c70baf17843192d23",
+    "core_cycles": 19767494,
+    "status": "ok",
+    "algorithm": "sha3",
+    "length": 16777216,
+    "transfer_and_hash_ns": 197559632,
+    "manager_load_ns": 0,
+    "client_transfer_and_result_ns": 198386526,
+    "client_request_ns": 201508434,
+    "client_transfer_and_result_MB_s": 84.56832395966246,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  },
+  {
+    "digest": "397228bdc77fd9ab9baf12d1b756a058d8749890d07bd345816766512c8bfc70",
+    "core_cycles": 78742605,
+    "status": "ok",
+    "algorithm": "sha3",
+    "length": 67108864,
+    "transfer_and_hash_ns": 787288886,
+    "manager_load_ns": 0,
+    "client_transfer_and_result_ns": 787667844,
+    "client_request_ns": 791094388,
+    "client_transfer_and_result_MB_s": 85.19944607514027,
+    "reference_prepass": true,
+    "reference_hashing_in_timed_region": false,
+    "verified": true
+  }
+]

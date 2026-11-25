@@ -1,0 +1,102 @@
+{
+  "completed_utc": "2026-11-12T05:38:51Z",
+  "part": "xc7z020clg400-1",
+  "vivado": "2024.2",
+  "clock_mhz": 100,
+  "input_delay_ns": 2.0,
+  "output_delay_ns": 2.0,
+  "scope": "Isolated OOC common-interface engine using unchanged production engine.tcl; no static shell/DMA/DFX pblock in implementation",
+  "candidate_sha256": "56abd544e2395405c6add2ab27889f8744f60fae6dc58c3043b6ceed527801f0",
+  "production_source_unchanged": true,
+  "promoted": false,
+  "hardware_tested": false,
+  "routed": {
+    "lut": 4127,
+    "ff": 1665,
+    "bram_tiles": 0,
+    "dsp": 0,
+    "setup_wns_ns": 0.489,
+    "hold_whs_ns": 0.12,
+    "register_setup_wns_ns": 1.356,
+    "register_data_path_delay_ns": 8.33
+  },
+  "routing": {
+    "routable": 4836,
+    "routed": 4836,
+    "errors": 0
+  },
+  "coverage": {
+    "no_clock": [
+      0,
+      0
+    ],
+    "unconstrained_internal_endpoints": [
+      0,
+      0
+    ]
+  },
+  "pulse_width": [
+    {
+      "failing_endpoints": 0,
+      "slack_ns": 4.5
+    }
+  ],
+  "drc_errors_or_critical_warnings": 0,
+  "drc_warnings": [
+    "ZPS7-1 PS7 block required (expected for OOC engine)"
+  ],
+  "simulation": {
+    "vectors": 79,
+    "traffic_modes": 2,
+    "framing_errors": 5,
+    "abort_cases": 2,
+    "integration_vectors": 79,
+    "integration_recoveries": 5,
+    "all_cycles_match_baseline": true,
+    "message_bytes": 1048576,
+    "continuous_cycles": 2506754,
+    "stressed_cycles": 2677399
+  },
+  "baseline": {
+    "source_sha256": "b9f801deef8d5a6fb54819eb1352688ebd3820456e92dff4cfdc9a8d632a713e",
+    "reports": "results/engines/blake2s",
+    "lut": 3005,
+    "ff": 1513,
+    "setup_wns_ns": 0.085,
+    "hold_whs_ns": 0.138,
+    "register_setup_wns_ns": 0.085,
+    "register_data_path_delay_ns": 9.863
+  },
+  "difference_from_baseline": {
+    "lut": 1122,
+    "ff": 152,
+    "register_setup_slack_ns": 1.271
+  },
+  "critical_register_path": {
+    "source": "engine/scheduled_word_reg[3][0]/C",
+    "destination": "engine/v_reg[14][15]/D",
+    "logic_levels": 11,
+    "data_logic_ns": 2.797,
+    "data_route_ns": 5.533
+  },
+  "provenance": "provenance.json",
+  "reports": "build/engines/blake2s",
+  "engine_log": "build/sim/blake2s/results.log",
+  "integration_log": "build/sim/integration-blake2s/test.log",
+  "artifacts_sha256": {
+    "build/engines/blake2s/summary.tsv": "27f253d6496bef1d6f977d728bb7706d442c939997381af95fd1e13365c2308c",
+    "build/engines/blake2s/routed.dcp": "e1d3a6960ad68cc8e71aa10b8a5d8b44cb87555c2ec1f67fa19708c6db496c59",
+    "build/engines/blake2s/synthesized.dcp": "b20619eb0ad3a3e0da6a2e5012521977c47c01900a421869d118b254a93e8b80",
+    "build/engines/blake2s/routed_timing.rpt": "8893e84a2d15b618d138fe5b61fc848dc004727b8a4b54b4b4bdcbd1f0136c12",
+    "build/engines/blake2s/routed_register_timing.rpt": "9115e982fa8a5fccde3d89d1f16b00790253a70e4b79e7653ee207f07f146826",
+    "build/engines/blake2s/route_status.rpt": "d9bc60b3fab0b2336ced6974073593046bf1b4df283baebf86f9904609df9f4a",
+    "build/engines/blake2s/routed_drc.rpt": "66704c3231e9bea5ebd653c3c83899420dafecdc5fafd249759e233980374d99",
+    "build/engines/blake2s/routed_utilization.rpt": "bac0384264b75e9f7d6243e7f0e580a9946c31228d5132b103fd27ba6c81a85b",
+    "build/engines/blake2s/synthesis_utilization.rpt": "0d1cfcd6692c7a7e48ff9167751720359071d975425fd1d62bfe87071679bd1c",
+    "build/engines/blake2s/synthesis_timing.rpt": "5f35c3370d638b65a4f05f702ca907462e67144c681dba9670044bd8c2a52789",
+    "build/engines/blake2s/congestion.rpt": "317ad80aab8de293fa052cb867936aa538e8a373799fc7787e2c8b2e2c742daa",
+    "build/sim/blake2s/results.log": "fc4d59c32f609f8039967254b5d15171eff20dff01af8e05b4bf6c46609ada76",
+    "build/sim/integration-blake2s/test.log": "a4ec1d1bdd63b560403500060da3c4ac1bd62fc99a0930dd0aaf96bc053fcbb4",
+    "provenance.json": "0a54dba8ab24fe89357c0396606e5abb1b83c12a9fa2da6dc1deff90ba5ab410"
+  }
+}

@@ -1,0 +1,17 @@
+test_failure_to_open_device_still_restarts_service (test_demo.BoardRecovery.test_failure_to_open_device_still_restarts_service) ... ok
+test_hash_failure_restores_sha3_and_restarts_service (test_demo.BoardRecovery.test_hash_failure_restores_sha3_and_restarts_service) ... ok
+test_reject_digest_or_request_mismatch (test_demo.EvidenceValidation.test_reject_digest_or_request_mismatch) ... ok
+test_reject_missing_hardware_or_timing (test_demo.EvidenceValidation.test_reject_missing_hardware_or_timing) ... ok
+test_valid_result_keeps_timing_scope (test_demo.EvidenceValidation.test_valid_result_keeps_timing_scope) ... ok
+test_wrong_installed_sources_rejected (test_demo.EvidenceValidation.test_wrong_installed_sources_rejected) ... ok
+test_binary_and_empty_uploads_keep_bytes (test_demo.LocalHTTP.test_binary_and_empty_uploads_keep_bytes) ... ok
+test_cross_origin_or_missing_token_rejected (test_demo.LocalHTTP.test_cross_origin_or_missing_token_rejected) ... ok
+test_oversized_upload_rejected_before_body (test_demo.LocalHTTP.test_oversized_upload_rejected_before_body) ... ok
+test_path_traversal_does_not_expose_repository (test_demo.LocalHTTP.test_path_traversal_does_not_expose_repository) ... ok
+test_malformed_settings_and_invalid_theme (test_demo.Settings.test_malformed_settings_and_invalid_theme) ... ok
+test_theme_atomic_preserves_unrelated_settings (test_demo.Settings.test_theme_atomic_preserves_unrelated_settings) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.541s
+
+OK

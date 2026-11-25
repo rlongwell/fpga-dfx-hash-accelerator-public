@@ -1,0 +1,25 @@
+{
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "settings": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "playback_rate": 1.06,
+  "selected_take": 1,
+  "selection_reason": "Complete paragraph and zero brams sentence confirmed by word-timed transcription; natural pauses align with resource reveals.",
+  "raw_voice_cut_seconds": [
+    0,
+    17.7
+  ],
+  "resources_start_seconds": 220.2333333333,
+  "resources_duration_seconds": 17.1,
+  "BRAM_display": {
+    "Oxide Quartz": 0,
+    "Compact": 0
+  },
+  "BRAM_primitive_sizes_displayed": false,
+  "shared_replay_memory_separate": true,
+  "new_hardware_tests": false
+}

@@ -1,0 +1,42 @@
+{
+  "duration_seconds": 217,
+  "frames": 6510,
+  "fps": 30,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "chapter_count": 10,
+  "new_explanation_window": [
+    132,
+    161
+  ],
+  "full_decode_passed": true,
+  "retained_video_ssim": 0.999804,
+  "retained_video_comparison_frames": 5640,
+  "physical_segment_seconds": 40,
+  "physical_capture_rate": 1,
+  "final_hold_seconds": 2,
+  "no_board_access_in_this_edit": true,
+  "voice_content_checks": {
+    "64 bytes": true,
+    "software and dma setup dominate": true,
+    "very little data to accelerate": true,
+    "lower median": true,
+    "sample ranges overlap": true,
+    "variation can outweigh": true,
+    "higher bulk throughput": true,
+    "lower latency": true,
+    "region and image size are unchanged": true,
+    "performance weren't measured": true
+  },
+  "music_in_every_second": true,
+  "integrated_lufs": -16.06,
+  "true_peak_dbtp": -1.66,
+  "visual_review": "17-frame contact sheet plus full-resolution setup, ranges, throughput/latency, scope and live-result frames. All removed captions remain absent; no browser chrome or assistant cursor.",
+  "syntax_checks": [
+    "Python py_compile for both renderers passed",
+    "Node --check for presentation and SVG exporter passed"
+  ],
+  "prior_media_preserved": true
+}

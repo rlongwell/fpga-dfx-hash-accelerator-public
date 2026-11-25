@@ -1,0 +1,29 @@
+{
+  "oxide": {
+    "file_seconds": 44.839728013,
+    "range_seconds": [
+      44.830792903,
+      44.85724268
+    ],
+    "MB_per_second": 23.946216259132957,
+    "dma_call_seconds": 10.89064615,
+    "file_read_seconds": 33.823367306,
+    "all_digests_verified": true,
+    "samples": 3
+  },
+  "compact": {
+    "file_seconds": 44.824386577,
+    "range_seconds": [
+      44.820124057,
+      44.844235933
+    ],
+    "MB_per_second": 23.95441200640884,
+    "dma_call_seconds": 4.658352368,
+    "file_read_seconds": 40.017076669,
+    "all_digests_verified": true,
+    "samples": 3
+  },
+  "file_throughput_ratio": 1.0003422564628663,
+  "dma_call_ratio": 2.3378751304456924,
+  "file_time_ranges_overlap": true
+}

@@ -1,0 +1,15 @@
+{
+  "project": "Lucide",
+  "upstream_commit": "55782beff3a0133df79c417eb68f96e8f19e2404",
+  "upstream_repository": "https://github.com/lucide-icons/lucide",
+  "files": {
+    "mouse-pointer-2.svg": {
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/mouse-pointer-2.svg",
+      "sha256": "a87128b1d33024c22ab598d1ce313081ce8942efd1a70274215bcc53421b7c7e"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/LICENSE",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    }
+  }
+}

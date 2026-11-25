@@ -1,0 +1,175 @@
+{
+  "kind": "physical-sha3-size-sweep-plan",
+  "algorithm": "SHA3-256",
+  "clock_MHz": 100,
+  "max_power": 7,
+  "repetitions": 1,
+  "interface": "enp3s0",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "host_mac": "00:d8:61:0a:97:21",
+  "board_mac": "de:f6:cd:7b:38:e7",
+  "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+  "board_script_sha256": "7e3674cb08c78fb10af6dc5176759172e1e525ffdc9b9ca07160fd338e018650",
+  "source_sha256": {
+    "benchmarks/sha3_profile/sweep_inputs.py": "08b3162c04d21f1ae52be1aca6bf84bb5eb2d609e73f231a98fbc54b5d185952",
+    "benchmarks/sha3_profile/sweep_board.py": "7e3674cb08c78fb10af6dc5176759172e1e525ffdc9b9ca07160fd338e018650",
+    "benchmarks/sha3_profile/compare_inputs.py": "cafa712088fb39e45dc0b6bb7096d373101ca7e05407e696408850ced1097db1",
+    "software/net/gem_send.c": "961c7e2a5cb8eb0b8f70a6db5cb0493468315d323ab0d5587f9a26ac8926809a",
+    "build/gem-direct/gem_send": "702d1e4ac88318d22a9e91fd0398130f277483b5a90617698b5ac936fa915b96"
+  },
+  "pattern_bytes": 131072,
+  "pattern_sha256": "3c04e3fee3b0875b2c8a1896a1161255c86d5734abeb73f453b890d976aa290a",
+  "sender_window": 12,
+  "batches": [
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259851
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259852
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259853
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259854
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259855
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259856
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259857
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259858
+        }
+      ]
+    },
+    {
+      "mode": "ethernet",
+      "core": "oxide",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259859
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259860
+        }
+      ]
+    },
+    {
+      "mode": "ethernet",
+      "core": "compact",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259861
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259862
+        }
+      ]
+    },
+    {
+      "mode": "ethernet",
+      "core": "compact",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259863
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259864
+        }
+      ]
+    },
+    {
+      "mode": "ethernet",
+      "core": "oxide",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 4227259865
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 4227259866
+        }
+      ]
+    }
+  ],
+  "timing": {
+    "replay": "FPGA START-to-digest cycles / 100 MHz; pattern loading excluded",
+    "ethernet": "PC first data send through FPGA digest reply; file access and transport included"
+  },
+  "warmup": "One full round per core/mode, excluded; seven measured rounds by default",
+  "ordering": "Ascending powers of two in each batch; core order alternates between rounds"
+}

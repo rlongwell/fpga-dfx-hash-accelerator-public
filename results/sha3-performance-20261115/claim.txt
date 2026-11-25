@@ -1,0 +1,1 @@
+On a physical Zybo Z7-20 at 100 MHz, our compact SHA3-256 implementation delivered 2.36× the DMA throughput of the pinned, double-buffered Oxide implementation with a full-rate adapter, while using 22.6% fewer LUTs and 58.0% fewer flip-flops in the hash partition. The comparison uses 16 MiB messages and the median of seven timed repetitions after warmup.

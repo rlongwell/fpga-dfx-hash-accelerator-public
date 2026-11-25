@@ -1,0 +1,5 @@
+** Note: 1244720ns+0: ALL PASS cases=40 DB=true SOURCE_GAPS=true; init/async reset recovery passed
+   Process :baseline_tb:stimulus at /home/rl/workspace/fpga-dfx-hash-accelerator/sim/baseline/baseline_tb.vhd:29
+** Note: 1244720ns+0: FINISH called
+   Procedure FINISH [] at lib/std.19/env-body.vhd:48
+   Process :baseline_tb:stimulus at /home/rl/workspace/fpga-dfx-hash-accelerator/sim/baseline/baseline_tb.vhd:147

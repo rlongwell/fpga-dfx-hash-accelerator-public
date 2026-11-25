@@ -1,0 +1,39 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# ps -o pid,ppid,stat,args | tail -n 12; ls -ld /run/zybo-hash*; cat /root/hash-
+net-physical-smoke-v2/replay-smoke.status; dmesg | tail -n 12; printf '\nDEMO_CM
+D_87956a0b70a81221_%s\n' "$?"
+   45     2 IW<  [kworker/R-mmc_c]
+   46     2 IW<  [kworker/1:1H-kb]
+   47     2 SW   [jbd2/mmcblk0p2-]
+   48     2 IW<  [kworker/R-ext4-]
+   54     2 IW<  [kworker/0:2H]
+   68     1 S    /sbin/syslogd -n
+   72     1 S    /sbin/klogd -n
+  119     1 S    {connect-loop} /bin/sh /opt/zybo/wifi/connect-loop
+  360     1 S    -sh
+  361     2 IW<  [kworker/1:2H-kb]
+  363   360 R    ps -o pid,ppid,stat,args
+  364   360 S    tail -n 12
+drwxr-xr-x    2 root     root            40 Jan  1 00:07 [1;34m/run/zybo-hash-net.lock[m
+-7
+    HOME=/
+    TERM=linux
+EXT4-fs (mmcblk0p2): re-mounted fd0fbc00-8275-4bf9-ab5a-1fc14a98b076 r/w. Quota mode: disabled.
+FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+random: crng init done
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+hash_accel: loading out-of-tree module taints kernel.
+macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+8<--- cut here ---
+Unhandled fault: external abort on non-linefetch (0x1818) at 0xb638c001
+[b638c001] *pgd=3dcfa831
+
+DEMO_CMD_87956a0b70a81221_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

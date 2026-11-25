@@ -1,0 +1,42 @@
+{
+  "version": 14,
+  "duration": 98.76666666666667,
+  "chapters": [
+    {
+      "start": 0,
+      "duration": 13,
+      "scene": 0,
+      "title": "SHA3-256: compact vs. Oxide Quartz",
+      "narration": "This demo compares SHA3-256: the compact core in this project, and Oxide\u2019s Quartz implementation. Here\u2019s how the input architecture changes speed and resource use."
+    },
+    {
+      "start": 13,
+      "duration": 17.8,
+      "scene": 2,
+      "title": "AXI Stream into the Quartz core",
+      "narration": "A sixty-four-bit AXI stream feeds each core. In the Quartz integration, a local adapter feeds one byte per clock into two full block buffers. One fills while the other feeds the hash state. Twenty-four permutation rounds produce the result, which is copied into a separate digest register."
+    },
+    {
+      "start": 30.8,
+      "duration": 22.8,
+      "scene": 3,
+      "title": "Compact: absorb directly into the state",
+      "narration": "The compact core uses that same stream interface. It captures up to eight bytes at a time, then absorbs them directly into the hash state with an aligned exclusive-or. The two full block buffers disappear. The digest comes directly from the held state, so that separate register disappears too. Capture and absorption still take separate cycles. The twenty-four-round permutation is unchanged."
+    },
+    {
+      "start": 53.6,
+      "duration": 24.3,
+      "scene": 4,
+      "title": "Refinement 1: padding selection",
+      "narration": "Two smaller changes simplify the compact core further. First, padding. Compare this project's earlier wide core with the compact version. Previously, a variable index selected from all twenty-five state lanes. The compact version decodes the destination locally, across only the seventeen rate lanes that padding can touch. The eight capacity lanes remain in the hash state; padding leaves them alone."
+    },
+    {
+      "start": 77.9,
+      "duration": 20.866666666666667,
+      "scene": 9,
+      "title": "Refinement 2: validate before absorption",
+      "narration": "Second, input validation. The earlier design checked the byte mask and end-of-message flag on the state-update control path. The compact core records that check while capturing the input. On the next cycle, a bad word is rejected before absorption. These changes reduce surrounding logic. They preserve the hash algorithm and the simulated cycle count."
+    }
+  ],
+  "presentation_style": "One generic AXI Stream input; upstream sources introduced only in the later replay experiment."
+}

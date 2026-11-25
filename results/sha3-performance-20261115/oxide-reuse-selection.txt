@@ -1,0 +1,1 @@
+Placement reuse was rejected before place_design by conflicting packed LUT locations. No timing acceptance, images or board programming resulted. Kept as a failed placement experiment; post-route optimization of the completed medium-spreading route is the active recovery.

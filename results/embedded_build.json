@@ -1,0 +1,117 @@
+{
+  "built_utc": "2026-11-12T05:49:37Z",
+  "hardware_tested": false,
+  "kernel_release": "6.6.40-dfx-hash",
+  "sources": {
+    "linux": {
+      "url": "https://codeload.github.com/Xilinx/linux-xlnx/tar.gz/2b7f6f70a62a52a467bed030a27c2ada879106e9",
+      "revision": "2b7f6f70a62a52a467bed030a27c2ada879106e9",
+      "ref": "xlnx_rebase_v6.6_LTS_2024.2",
+      "archive": "linux.tar.gz",
+      "sha256": "acc0dbd745328782dc67bac8c42cb02a93b9f06cd042177b92d0765af9c5dcfc",
+      "directory": "linux-xlnx-2b7f6f70a62a52a467bed030a27c2ada879106e9"
+    },
+    "uboot": {
+      "url": "https://codeload.github.com/Xilinx/u-boot-xlnx/tar.gz/7f6ec94aac7eacfec07bd45c83a6d17df4b7d383",
+      "revision": "7f6ec94aac7eacfec07bd45c83a6d17df4b7d383",
+      "ref": "xlnx_rebase_v2024.01_2024.2",
+      "archive": "uboot.tar.gz",
+      "sha256": "7926e64d7a37a44737517449617e00a6f38f5ad2a380479f30835fe2dce57b52",
+      "directory": "u-boot-xlnx-7f6ec94aac7eacfec07bd45c83a6d17df4b7d383"
+    },
+    "buildroot": {
+      "url": "https://buildroot.org/downloads/buildroot-2024.02.12.tar.xz",
+      "version": "2024.02.12",
+      "archive": "buildroot.tar.xz",
+      "sha256": "0b3aee04a6ca267343c821c6f1784d3254d649961970b13602fd19328455b4cd",
+      "directory": "buildroot-2024.02.12"
+    },
+    "toolchain": {
+      "url": "https://toolchains.bootlin.com/downloads/releases/toolchains/armv7-eabihf/tarballs/armv7-eabihf--glibc--stable-2024.05-1.tar.xz",
+      "version": "armv7-eabihf--glibc--stable-2024.05-1",
+      "archive": "toolchain.tar.xz",
+      "sha256": "608263bc9dc3eadf0962ddb1165f1c2291001190f9927dee47d464e26374462c",
+      "directory": "armv7-eabihf--glibc--stable-2024.05-1"
+    }
+  },
+  "scope": "Cross-built kernel/module/device tree, U-Boot SPL and SD image; not boot-tested",
+  "validation": {
+    "cross_compiled": true,
+    "board_boot_tested": false,
+    "userspace_qemu_record": "results/embedded_userspace_test.json"
+  },
+  "inputs_sha256": {
+    "build/vivado/system/system.xsa": "f2ecfa7bb2e47cbb45fa826d3baadf202e90f1dc6f4d2d69ddeb105cda60426e",
+    "results/dfx_manifest.json": "1fe55e8a0611c00abf3dd5f3db59a7c2997ce5a5c4bd899a9ecc734af92f08b7",
+    "build/embedded/kernel/.config": "f455233f2a33041020826f39a999bbe527b7eef3157bd9c4c4f23b18d31858f2",
+    "build/embedded/uboot/.config": "6a2ce7534cba93bb81b06c94ad7284571882398eddf7b3c8ff20f2f96590b896",
+    "build/embedded/rootfs/.config": "2c406a92d66975f311193cfd9c8a3929fbcda9fef80bce4530fdd080e06b05dd",
+    "build.sh": "bfa08367c9a25612e887e2b6ce0eab5bddc8c8dbc3a8865d335b6ba587afe808",
+    "scripts/build_embedded.sh": "4a0544c0049005d3ef71110fd9da764c770b27e2edfcf75bed4fc531944f9965",
+    "software/embedded/smoke.py": "6aaf0f24da9846da6d75b230baa72761ba368e4ef17452213a217fd2f039cded",
+    "software/embedded/build.py": "51f771b2b7036c590c251721904d668c83b0321cebecd22c330f032b71e524ec",
+    "software/embedded/boot.cmd": "33d84b289fd1a0c176bab96c39ae96aa03f47ffa328f86537b0c3ccbc20c4c96",
+    "software/embedded/buildroot.defconfig": "4400934e1f5e6fc2435a45f0a832d2082c8d9ffcbf78caf72fe0169548c2ff21",
+    "software/embedded/xilinx-dma-terminate-error.patch": "77eeb41a39810fb5293dbfd74445e65b8ddaca1023b3b4c7e360e1d8d7ba929d",
+    "software/embedded/sources.json": "74802eff08502982bec8103c2f74ee8eee4226a76b7fc8174f5afa04b42cbcc3",
+    "software/embedded/genimage.cfg": "c024af4c452c3e572bdc57419a4e936d006864783495fda2c615cc96edefc14f",
+    "software/embedded/zybo-hash.dts": "ee9f1d2c176166a9671d8b329d11779d5ec84deb4e316fea743aa910c80fad75",
+    "software/linux/Makefile": "5fefdfe5a043bf021b5645b2a788dc28aecb107ca36b15a61f1a77716e6b8f20",
+    "software/linux/COPYING": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "software/linux/hash_accel.h": "4ad766b664013df1cf82af5402497f5b00ef7fd76ad5cba651e68fd65f7ad2cc",
+    "software/linux/hash-system.dtsi": "9d71cbcf74d9632350e5616e1bfb42a87d8fbdae1a1ca3458920b58b82149ae2",
+    "software/linux/hash_accel.c": "06bed806a353f918ae71c29a47b5fa83b6a1920046d5804de511eeabf5620f76",
+    "software/hash_client.py": "9664a11ef6ca22735dff43c23e3cd9537135d8e787b9394e603d2fe5451f2260",
+    "software/hash_service.py": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "benchmarks/board.py": "c62705e5d318639b5fdce237cb6fa23a9718a8698cfb53a7bfad9db3e7b403e1",
+    "benchmarks/engine_results.py": "204cf617d114bd71d57a0c56e8707cad539099b41812f3861e43a8019a20aec6",
+    "benchmarks/ethernet.py": "d6d368abaa1d55ef4e8db2738b130cf7a30225855885c80f335b8c9fdbac5dd9",
+    "benchmarks/report.py": "2e022c646782e3dc9a0ead0c96b07b939147cc96618becf4e6e04bcf9e9a24be",
+    "benchmarks/x86_hashes.py": "b030294afc950e85494f7fcf1450f0748106e7fc0bfe2073bb0ed249346b0c23",
+    "benchmarks/clock_results.py": "4c771433955bb6b69c01f2ea933ff9f5ac889c2f34305fa101af9bda9e47b4ee",
+    "benchmarks/congestion.py": "da3e9ec69428601fad2055cc96d2638c8756dd8431f33066bce500bd22fd6414",
+    "build/embedded/sources/linux-xlnx-2b7f6f70a62a52a467bed030a27c2ada879106e9/drivers/dma/xilinx/xilinx_dma.c": "d17e7eb2ee498f33f5314e0de6dba0f5ca2913fb4e82554d9d90d1dfa71f73a6",
+    "build/embedded/hardware/ps7_init_gpl.c": "a2d357676b4d0455cd208cc2f1f167bdc47b53426a42b3da25a2b9448cf3ea71",
+    "build/embedded/hardware/ps7_init_gpl.h": "4ebdb319e8ea340afe1a7c22d0bb1c25b4ad34dc9701ba36933af6ec08ebfe80",
+    "build/embedded/hardware/uboot_inputs.json": "644eb39165a6a14476ff847655b56389b0c872344b9aadd934696f8965749f12",
+    "build/embedded/module/hash_accel.ko": "9ea345248c2eea122699e2d71d0044d6da92199eefd7ada2e34552f04587764e"
+  },
+  "artifacts": {
+    "build/embedded/images/sdcard.img": {
+      "bytes": 336592896,
+      "sha256": "14d94e68008c7b83a27095a6934d7d34f5e20a39ded9156b238e229f5fe225bf"
+    },
+    "build/embedded/images/rootfs.ext4": {
+      "bytes": 268435456,
+      "sha256": "69a639a5d30f35e905de9ca5ed11026b5d01e4eed657d2debc2aeb3b388754a6"
+    },
+    "build/embedded/images/u-boot.img": {
+      "bytes": 1052364,
+      "sha256": "7a8f032a5b007aab5da4d7a8e3bf0cee207b9eb79687fd3475639b385bb927b8"
+    },
+    "build/embedded/images/BOOT.BIN": {
+      "bytes": 138720,
+      "sha256": "cbe2d75b6aee92c208eaa416fd8776d7924d5bac5914f604e1b14559abd2f99d"
+    },
+    "build/embedded/images/system.dtb": {
+      "bytes": 12028,
+      "sha256": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed"
+    },
+    "build/embedded/images/zImage": {
+      "bytes": 4900920,
+      "sha256": "bb9cf497c47384937ee9b17ad7ea6f1fbe4e1f39020f9cb681c59be9d1a5cd6d"
+    },
+    "build/embedded/images/boot.scr": {
+      "bytes": 671,
+      "sha256": "4914eacc29c679461c21ee0855948de07bd35ebf3e68ab732fa34197e7245c7a"
+    },
+    "build/embedded/images/boot.vfat": {
+      "bytes": 67108864,
+      "sha256": "d1bed2fc6b92a049513f1cd0f1c1f1dee2b6dc85383fd414a64033a41ffeacf3"
+    },
+    "build/embedded/images/system.bit": {
+      "bytes": 4045670,
+      "sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9"
+    }
+  }
+}

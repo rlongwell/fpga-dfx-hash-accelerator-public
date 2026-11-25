@@ -1,0 +1,7 @@
+{
+  "synthesis_sha256": "d9f0b2a9d1436a920cb209789f6e1f107b80f273e940ecbfe8745264e411691a",
+  "unchanged_rtl": true,
+  "change": "Apply BEL constraints before LOC, per Vivado diagnostic",
+  "failed_script": "oxide-reuse-before-fix.tcl",
+  "resume_script": "oxide-reuse-resume.tcl"
+}

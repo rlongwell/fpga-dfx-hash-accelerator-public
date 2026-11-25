@@ -1,0 +1,717 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed Nov 11 23:36:49 2026
+| Host         : msi-ubuntu running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_timing -from [all_registers -clock core_clk] -to [all_registers -clock core_clk] -max_paths 10 -file routed_register_timing.rpt
+| Design       : hash_rm
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.356ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[3][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[14][15]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.330ns  (logic 2.797ns (33.579%)  route 5.533ns (66.421%))
+  Logic Levels:           11  (CARRY4=6 LUT4=1 LUT5=3 LUT6=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.492ns = ( 11.492 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X41Y7          FDRE                                         r  engine/scheduled_word_reg[3][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y7          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[3][0]/Q
+                         net (fo=2, routed)           1.791     3.913    engine/scheduled_word_reg[3]_12[0]
+    SLICE_X26Y26         LUT5 (Prop_lut5_I1_O)        0.150     4.063 r  engine/v[3][3]_i_5/O
+                         net (fo=2, routed)           0.806     4.869    engine/v[3][3]_i_5_n_0
+    SLICE_X26Y26         LUT6 (Prop_lut6_I0_O)        0.328     5.197 r  engine/v[3][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.197    engine/v[3][3]_i_8_n_0
+    SLICE_X26Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.730 r  engine/v_reg[3][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.730    engine/v_reg[3][3]_i_2_n_0
+    SLICE_X26Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.847 r  engine/v_reg[3][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.847    engine/v_reg[3][7]_i_2_n_0
+    SLICE_X26Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.964 r  engine/v_reg[3][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.964    engine/v_reg[3][11]_i_2_n_0
+    SLICE_X26Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.081 r  engine/v_reg[3][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.081    engine/v_reg[3][15]_i_2_n_0
+    SLICE_X26Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.198 r  engine/v_reg[3][19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.198    engine/v_reg[3][19]_i_2_n_0
+    SLICE_X26Y31         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315     6.513 r  engine/v_reg[3][23]_i_2/O[3]
+                         net (fo=3, routed)           1.307     7.820    engine/mix_a[3]_20[23]
+    SLICE_X39Y39         LUT5 (Prop_lut5_I3_O)        0.307     8.127 f  engine/v[15][15]_i_2/O
+                         net (fo=2, routed)           0.537     8.664    engine/v[15][15]_i_2_n_0
+    SLICE_X38Y39         LUT4 (Prop_lut4_I3_O)        0.124     8.788 r  engine/v[14][15]_i_2/O
+                         net (fo=1, routed)           0.606     9.394    engine/v[14][15]_i_2_n_0
+    SLICE_X38Y39         LUT5 (Prop_lut5_I1_O)        0.116     9.510 r  engine/v[14][15]_i_1/O
+                         net (fo=1, routed)           0.485     9.996    engine/v[14][15]_i_1_n_0
+    SLICE_X38Y38         FDRE                                         r  engine/v_reg[14][15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.492    11.492    engine/aclk
+    SLICE_X38Y38         FDRE                                         r  engine/v_reg[14][15]/C
+                         clock pessimism              0.115    11.607    
+                         clock uncertainty           -0.035    11.572    
+    SLICE_X38Y38         FDRE (Setup_fdre_C_D)       -0.220    11.352    engine/v_reg[14][15]
+  -------------------------------------------------------------------
+                         required time                         11.352    
+                         arrival time                          -9.996    
+  -------------------------------------------------------------------
+                         slack                                  1.356    
+
+Slack (MET) :             1.622ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[6][0]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.302ns  (logic 2.825ns (34.030%)  route 5.477ns (65.970%))
+  Logic Levels:           10  (CARRY4=5 LUT3=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.072ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.479ns = ( 11.479 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.965 r  engine/v_reg[0][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.965    engine/v_reg[0][11]_i_2_n_0
+    SLICE_X28Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.079 r  engine/v_reg[0][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.079    engine/v_reg[0][15]_i_2_n_0
+    SLICE_X28Y30         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.301 r  engine/v_reg[0][19]_i_2/O[0]
+                         net (fo=4, routed)           0.727     7.029    engine/mix_a[0]_24[16]
+    SLICE_X23Y27         LUT5 (Prop_lut5_I0_O)        0.299     7.328 f  engine/v[8][0]_i_2/O
+                         net (fo=7, routed)           1.500     8.827    engine/v[8][0]_i_2_n_0
+    SLICE_X43Y24         LUT3 (Prop_lut3_I1_O)        0.153     8.980 r  engine/v[6][0]_i_3/O
+                         net (fo=4, routed)           0.660     9.641    engine/v[6][0]_i_3_n_0
+    SLICE_X44Y26         LUT4 (Prop_lut4_I1_O)        0.327     9.968 r  engine/v[6][0]_i_1/O
+                         net (fo=1, routed)           0.000     9.968    engine/v[6][0]_i_1_n_0
+    SLICE_X44Y26         FDRE                                         r  engine/v_reg[6][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.479    11.479    engine/aclk
+    SLICE_X44Y26         FDRE                                         r  engine/v_reg[6][0]/C
+                         clock pessimism              0.115    11.594    
+                         clock uncertainty           -0.035    11.559    
+    SLICE_X44Y26         FDRE (Setup_fdre_C_D)        0.031    11.590    engine/v_reg[6][0]
+  -------------------------------------------------------------------
+                         required time                         11.590    
+                         arrival time                          -9.968    
+  -------------------------------------------------------------------
+                         slack                                  1.622    
+
+Slack (MET) :             1.662ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[5][16]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.264ns  (logic 2.821ns (34.136%)  route 5.443ns (65.864%))
+  Logic Levels:           12  (CARRY4=7 LUT3=1 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.068ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.483ns = ( 11.483 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.965 r  engine/v_reg[0][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.965    engine/v_reg[0][11]_i_2_n_0
+    SLICE_X28Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.079 r  engine/v_reg[0][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.079    engine/v_reg[0][15]_i_2_n_0
+    SLICE_X28Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.193 r  engine/v_reg[0][19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.193    engine/v_reg[0][19]_i_2_n_0
+    SLICE_X28Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.307 r  engine/v_reg[0][23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.307    engine/v_reg[0][23]_i_2_n_0
+    SLICE_X28Y32         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.529 r  engine/v_reg[0][27]_i_2/O[0]
+                         net (fo=5, routed)           0.784     7.314    engine/mix_a[0]_24[24]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I2_O)        0.299     7.613 r  engine/v[6][16]_i_3/O
+                         net (fo=8, routed)           1.451     9.064    engine/v[6][16]_i_3_n_0
+    SLICE_X46Y33         LUT6 (Prop_lut6_I5_O)        0.124     9.188 f  engine/v[5][16]_i_2/O
+                         net (fo=1, routed)           0.618     9.806    engine/v[5][16]_i_2_n_0
+    SLICE_X44Y30         LUT3 (Prop_lut3_I2_O)        0.124     9.930 r  engine/v[5][16]_i_1/O
+                         net (fo=1, routed)           0.000     9.930    engine/v[5][16]_i_1_n_0
+    SLICE_X44Y30         FDRE                                         r  engine/v_reg[5][16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.483    11.483    engine/aclk
+    SLICE_X44Y30         FDRE                                         r  engine/v_reg[5][16]/C
+                         clock pessimism              0.115    11.598    
+                         clock uncertainty           -0.035    11.563    
+    SLICE_X44Y30         FDRE (Setup_fdre_C_D)        0.029    11.592    engine/v_reg[5][16]
+  -------------------------------------------------------------------
+                         required time                         11.592    
+                         arrival time                          -9.930    
+  -------------------------------------------------------------------
+                         slack                                  1.662    
+
+Slack (MET) :             1.664ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[3][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[14][21]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.193ns  (logic 3.046ns (37.176%)  route 5.147ns (62.824%))
+  Logic Levels:           13  (CARRY4=8 LUT4=1 LUT5=3 LUT6=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.491ns = ( 11.491 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X41Y7          FDRE                                         r  engine/scheduled_word_reg[3][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y7          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[3][0]/Q
+                         net (fo=2, routed)           1.791     3.913    engine/scheduled_word_reg[3]_12[0]
+    SLICE_X26Y26         LUT5 (Prop_lut5_I1_O)        0.150     4.063 r  engine/v[3][3]_i_5/O
+                         net (fo=2, routed)           0.806     4.869    engine/v[3][3]_i_5_n_0
+    SLICE_X26Y26         LUT6 (Prop_lut6_I0_O)        0.328     5.197 r  engine/v[3][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.197    engine/v[3][3]_i_8_n_0
+    SLICE_X26Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.730 r  engine/v_reg[3][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.730    engine/v_reg[3][3]_i_2_n_0
+    SLICE_X26Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.847 r  engine/v_reg[3][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.847    engine/v_reg[3][7]_i_2_n_0
+    SLICE_X26Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.964 r  engine/v_reg[3][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.964    engine/v_reg[3][11]_i_2_n_0
+    SLICE_X26Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.081 r  engine/v_reg[3][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.081    engine/v_reg[3][15]_i_2_n_0
+    SLICE_X26Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.198 r  engine/v_reg[3][19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.198    engine/v_reg[3][19]_i_2_n_0
+    SLICE_X26Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.315 r  engine/v_reg[3][23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.315    engine/v_reg[3][23]_i_2_n_0
+    SLICE_X26Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.432 r  engine/v_reg[3][27]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.432    engine/v_reg[3][27]_i_2_n_0
+    SLICE_X26Y33         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     6.755 r  engine/v_reg[3][31]_i_2/O[1]
+                         net (fo=3, routed)           1.013     7.768    engine/mix_a[3]_20[29]
+    SLICE_X35Y39         LUT5 (Prop_lut5_I3_O)        0.306     8.074 f  engine/v[15][21]_i_2/O
+                         net (fo=2, routed)           0.610     8.685    engine/v[15][21]_i_2_n_0
+    SLICE_X41Y38         LUT4 (Prop_lut4_I3_O)        0.124     8.809 r  engine/v[14][21]_i_2/O
+                         net (fo=1, routed)           0.548     9.356    engine/v[14][21]_i_2_n_0
+    SLICE_X41Y37         LUT5 (Prop_lut5_I1_O)        0.124     9.480 r  engine/v[14][21]_i_1/O
+                         net (fo=1, routed)           0.379     9.859    engine/v[14][21]_i_1_n_0
+    SLICE_X41Y37         FDRE                                         r  engine/v_reg[14][21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.491    11.491    engine/aclk
+    SLICE_X41Y37         FDRE                                         r  engine/v_reg[14][21]/C
+                         clock pessimism              0.115    11.606    
+                         clock uncertainty           -0.035    11.571    
+    SLICE_X41Y37         FDRE (Setup_fdre_C_D)       -0.047    11.524    engine/v_reg[14][21]
+  -------------------------------------------------------------------
+                         required time                         11.524    
+                         arrival time                          -9.859    
+  -------------------------------------------------------------------
+                         slack                                  1.664    
+
+Slack (MET) :             1.748ns  (required time - arrival time)
+  Source:                 engine/round_index_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/scheduled_word_reg[2][31]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.243ns  (logic 1.196ns (14.510%)  route 7.047ns (85.490%))
+  Logic Levels:           3  (LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.055ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.580ns = ( 11.580 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.750ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.750     1.750    engine/aclk
+    SLICE_X23Y11         FDRE                                         r  engine/round_index_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y11         FDRE (Prop_fdre_C_Q)         0.419     2.169 r  engine/round_index_reg[1]/Q
+                         net (fo=129, routed)         2.590     4.759    engine/round_index_reg_n_0_[1]
+    SLICE_X34Y18         LUT5 (Prop_lut5_I0_O)        0.325     5.084 r  engine/scheduled_word[2][31]_i_11/O
+                         net (fo=32, routed)          3.889     8.973    engine/scheduled_word[2][31]_i_11_n_0
+    SLICE_X14Y43         LUT6 (Prop_lut6_I2_O)        0.328     9.301 r  engine/scheduled_word[2][31]_i_3/O
+                         net (fo=1, routed)           0.567     9.869    engine/scheduled_word[2][31]_i_3_n_0
+    SLICE_X14Y43         LUT5 (Prop_lut5_I2_O)        0.124     9.993 r  engine/scheduled_word[2][31]_i_1/O
+                         net (fo=1, routed)           0.000     9.993    engine/scheduled_word[2][31]_i_1_n_0
+    SLICE_X14Y43         FDRE                                         r  engine/scheduled_word_reg[2][31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.580    11.580    engine/aclk
+    SLICE_X14Y43         FDRE                                         r  engine/scheduled_word_reg[2][31]/C
+                         clock pessimism              0.115    11.695    
+                         clock uncertainty           -0.035    11.660    
+    SLICE_X14Y43         FDRE (Setup_fdre_C_D)        0.081    11.741    engine/scheduled_word_reg[2][31]
+  -------------------------------------------------------------------
+                         required time                         11.741    
+                         arrival time                          -9.993    
+  -------------------------------------------------------------------
+                         slack                                  1.748    
+
+Slack (MET) :             1.761ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[11][0]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.159ns  (logic 2.825ns (34.625%)  route 5.334ns (65.375%))
+  Logic Levels:           10  (CARRY4=5 LUT3=1 LUT5=3 LUT6=1)
+  Clock Path Skew:        -0.074ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.477ns = ( 11.477 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.965 r  engine/v_reg[0][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.965    engine/v_reg[0][11]_i_2_n_0
+    SLICE_X28Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.079 r  engine/v_reg[0][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.079    engine/v_reg[0][15]_i_2_n_0
+    SLICE_X28Y30         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.301 r  engine/v_reg[0][19]_i_2/O[0]
+                         net (fo=4, routed)           0.727     7.029    engine/mix_a[0]_24[16]
+    SLICE_X23Y27         LUT5 (Prop_lut5_I0_O)        0.299     7.328 f  engine/v[8][0]_i_2/O
+                         net (fo=7, routed)           1.500     8.827    engine/v[8][0]_i_2_n_0
+    SLICE_X43Y24         LUT3 (Prop_lut3_I1_O)        0.153     8.980 r  engine/v[6][0]_i_3/O
+                         net (fo=4, routed)           0.518     9.498    engine/v[6][0]_i_3_n_0
+    SLICE_X45Y25         LUT5 (Prop_lut5_I0_O)        0.327     9.825 r  engine/v[11][0]_i_1/O
+                         net (fo=1, routed)           0.000     9.825    engine/v[11][0]_i_1_n_0
+    SLICE_X45Y25         FDRE                                         r  engine/v_reg[11][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.477    11.477    engine/aclk
+    SLICE_X45Y25         FDRE                                         r  engine/v_reg[11][0]/C
+                         clock pessimism              0.115    11.592    
+                         clock uncertainty           -0.035    11.557    
+    SLICE_X45Y25         FDRE (Setup_fdre_C_D)        0.029    11.586    engine/v_reg[11][0]
+  -------------------------------------------------------------------
+                         required time                         11.586    
+                         arrival time                          -9.825    
+  -------------------------------------------------------------------
+                         slack                                  1.761    
+
+Slack (MET) :             1.780ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[7][24]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.154ns  (logic 2.595ns (31.823%)  route 5.559ns (68.177%))
+  Logic Levels:           8  (CARRY4=3 LUT2=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.490ns = ( 11.490 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.073 r  engine/v_reg[0][11]_i_2/O[0]
+                         net (fo=3, routed)           0.583     6.656    engine/mix_a[0]_24[8]
+    SLICE_X23Y26         LUT5 (Prop_lut5_I0_O)        0.299     6.955 f  engine/v[12][24]_i_4/O
+                         net (fo=3, routed)           1.551     8.506    engine/v[12][24]_i_4_n_0
+    SLICE_X34Y34         LUT2 (Prop_lut2_I1_O)        0.150     8.656 r  engine/v[5][24]_i_2/O
+                         net (fo=8, routed)           0.836     9.492    engine/v[5][24]_i_2_n_0
+    SLICE_X40Y36         LUT4 (Prop_lut4_I3_O)        0.328     9.820 r  engine/v[7][24]_i_1/O
+                         net (fo=1, routed)           0.000     9.820    engine/v[7][24]_i_1_n_0
+    SLICE_X40Y36         FDRE                                         r  engine/v_reg[7][24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.490    11.490    engine/aclk
+    SLICE_X40Y36         FDRE                                         r  engine/v_reg[7][24]/C
+                         clock pessimism              0.115    11.605    
+                         clock uncertainty           -0.035    11.570    
+    SLICE_X40Y36         FDRE (Setup_fdre_C_D)        0.031    11.601    engine/v_reg[7][24]
+  -------------------------------------------------------------------
+                         required time                         11.601    
+                         arrival time                          -9.820    
+  -------------------------------------------------------------------
+                         slack                                  1.780    
+
+Slack (MET) :             1.784ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[6][6]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.143ns  (logic 2.963ns (36.385%)  route 5.180ns (63.615%))
+  Logic Levels:           11  (CARRY4=6 LUT3=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.068ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.483ns = ( 11.483 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.965 r  engine/v_reg[0][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.965    engine/v_reg[0][11]_i_2_n_0
+    SLICE_X28Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.079 r  engine/v_reg[0][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.079    engine/v_reg[0][15]_i_2_n_0
+    SLICE_X28Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.193 r  engine/v_reg[0][19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.193    engine/v_reg[0][19]_i_2_n_0
+    SLICE_X28Y31         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     6.432 r  engine/v_reg[0][23]_i_2/O[2]
+                         net (fo=3, routed)           0.626     7.058    engine/mix_a[0]_24[22]
+    SLICE_X25Y34         LUT5 (Prop_lut5_I0_O)        0.302     7.360 f  engine/v[8][6]_i_2/O
+                         net (fo=6, routed)           1.140     8.501    engine/v[8][6]_i_2_n_0
+    SLICE_X33Y31         LUT3 (Prop_lut3_I2_O)        0.152     8.653 r  engine/v[6][6]_i_3/O
+                         net (fo=5, routed)           0.825     9.477    engine/v[6][6]_i_3_n_0
+    SLICE_X44Y30         LUT4 (Prop_lut4_I1_O)        0.332     9.809 r  engine/v[6][6]_i_1/O
+                         net (fo=1, routed)           0.000     9.809    engine/v[6][6]_i_1_n_0
+    SLICE_X44Y30         FDRE                                         r  engine/v_reg[6][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.483    11.483    engine/aclk
+    SLICE_X44Y30         FDRE                                         r  engine/v_reg[6][6]/C
+                         clock pessimism              0.115    11.598    
+                         clock uncertainty           -0.035    11.563    
+    SLICE_X44Y30         FDRE (Setup_fdre_C_D)        0.031    11.594    engine/v_reg[6][6]
+  -------------------------------------------------------------------
+                         required time                         11.594    
+                         arrival time                          -9.809    
+  -------------------------------------------------------------------
+                         slack                                  1.784    
+
+Slack (MET) :             1.790ns  (required time - arrival time)
+  Source:                 engine/scheduled_word_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/v_reg[11][6]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.137ns  (logic 2.963ns (36.412%)  route 5.174ns (63.588%))
+  Logic Levels:           11  (CARRY4=6 LUT3=1 LUT5=3 LUT6=1)
+  Clock Path Skew:        -0.068ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.483ns = ( 11.483 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.666ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.666     1.666    engine/aclk
+    SLICE_X40Y8          FDRE                                         r  engine/scheduled_word_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y8          FDRE (Prop_fdre_C_Q)         0.456     2.122 r  engine/scheduled_word_reg[0][0]/Q
+                         net (fo=2, routed)           1.727     3.849    engine/scheduled_word_reg[0]_15[0]
+    SLICE_X28Y26         LUT5 (Prop_lut5_I1_O)        0.150     3.999 r  engine/v[0][3]_i_5/O
+                         net (fo=2, routed)           0.863     4.861    engine/v[0][3]_i_5_n_0
+    SLICE_X28Y26         LUT6 (Prop_lut6_I0_O)        0.326     5.187 r  engine/v[0][3]_i_8/O
+                         net (fo=1, routed)           0.000     5.187    engine/v[0][3]_i_8_n_0
+    SLICE_X28Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.737 r  engine/v_reg[0][3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.737    engine/v_reg[0][3]_i_2_n_0
+    SLICE_X28Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.851 r  engine/v_reg[0][7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.851    engine/v_reg[0][7]_i_2_n_0
+    SLICE_X28Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.965 r  engine/v_reg[0][11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     5.965    engine/v_reg[0][11]_i_2_n_0
+    SLICE_X28Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.079 r  engine/v_reg[0][15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.079    engine/v_reg[0][15]_i_2_n_0
+    SLICE_X28Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.193 r  engine/v_reg[0][19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.193    engine/v_reg[0][19]_i_2_n_0
+    SLICE_X28Y31         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     6.432 r  engine/v_reg[0][23]_i_2/O[2]
+                         net (fo=3, routed)           0.626     7.058    engine/mix_a[0]_24[22]
+    SLICE_X25Y34         LUT5 (Prop_lut5_I0_O)        0.302     7.360 f  engine/v[8][6]_i_2/O
+                         net (fo=6, routed)           1.140     8.501    engine/v[8][6]_i_2_n_0
+    SLICE_X33Y31         LUT3 (Prop_lut3_I2_O)        0.152     8.653 r  engine/v[6][6]_i_3/O
+                         net (fo=5, routed)           0.819     9.471    engine/v[6][6]_i_3_n_0
+    SLICE_X40Y28         LUT5 (Prop_lut5_I0_O)        0.332     9.803 r  engine/v[11][6]_i_1/O
+                         net (fo=1, routed)           0.000     9.803    engine/v[11][6]_i_1_n_0
+    SLICE_X40Y28         FDRE                                         r  engine/v_reg[11][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.483    11.483    engine/aclk
+    SLICE_X40Y28         FDRE                                         r  engine/v_reg[11][6]/C
+                         clock pessimism              0.115    11.598    
+                         clock uncertainty           -0.035    11.563    
+    SLICE_X40Y28         FDRE (Setup_fdre_C_D)        0.031    11.594    engine/v_reg[11][6]
+  -------------------------------------------------------------------
+                         required time                         11.594    
+                         arrival time                          -9.803    
+  -------------------------------------------------------------------
+                         slack                                  1.790    
+
+Slack (MET) :             1.791ns  (required time - arrival time)
+  Source:                 engine/round_index_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            engine/scheduled_word_reg[2][29]/D
+                            (rising edge-triggered cell FDRE clocked by core_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             core_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (core_clk rise@10.000ns - core_clk rise@0.000ns)
+  Data Path Delay:        8.195ns  (logic 1.218ns (14.863%)  route 6.977ns (85.137%))
+  Logic Levels:           3  (LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.579ns = ( 11.579 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.750ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.750     1.750    engine/aclk
+    SLICE_X23Y11         FDRE                                         r  engine/round_index_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y11         FDRE (Prop_fdre_C_Q)         0.419     2.169 f  engine/round_index_reg[1]/Q
+                         net (fo=129, routed)         2.580     4.749    engine/round_index_reg_n_0_[1]
+    SLICE_X34Y18         LUT5 (Prop_lut5_I4_O)        0.327     5.076 r  engine/scheduled_word[2][31]_i_13/O
+                         net (fo=32, routed)          3.733     8.810    engine/scheduled_word[2][31]_i_13_n_0
+    SLICE_X18Y42         LUT6 (Prop_lut6_I4_O)        0.348     9.158 r  engine/scheduled_word[2][29]_i_3/O
+                         net (fo=1, routed)           0.663     9.821    engine/scheduled_word[2][29]_i_3_n_0
+    SLICE_X18Y42         LUT5 (Prop_lut5_I2_O)        0.124     9.945 r  engine/scheduled_word[2][29]_i_1/O
+                         net (fo=1, routed)           0.000     9.945    engine/scheduled_word[2][29]_i_1_n_0
+    SLICE_X18Y42         FDRE                                         r  engine/scheduled_word_reg[2][29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_clk rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  aclk (IN)
+                         net (fo=1664, unset)         1.579    11.579    engine/aclk
+    SLICE_X18Y42         FDRE                                         r  engine/scheduled_word_reg[2][29]/C
+                         clock pessimism              0.115    11.694    
+                         clock uncertainty           -0.035    11.659    
+    SLICE_X18Y42         FDRE (Setup_fdre_C_D)        0.077    11.736    engine/scheduled_word_reg[2][29]
+  -------------------------------------------------------------------
+                         required time                         11.736    
+                         arrival time                          -9.945    
+  -------------------------------------------------------------------
+                         slack                                  1.791    
+
+
+
+

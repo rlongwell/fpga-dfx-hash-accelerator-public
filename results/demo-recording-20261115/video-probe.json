@@ -1,0 +1,246 @@
+{
+    "streams": [
+        {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1920,
+            "height": 1080,
+            "coded_width": 1920,
+            "coded_height": 1080,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p",
+            "level": 40,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 3041280,
+            "duration": "198.000000",
+            "bit_rate": "146306",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "5940",
+            "extradata_size": 51,
+            "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0
+            },
+            "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "vendor_id": "[0][0][0][0]",
+                "encoder": "Lavc60.31.102 libx264"
+            }
+        },
+        {
+            "index": 1,
+            "codec_name": "bin_data",
+            "codec_long_name": "binary data",
+            "codec_type": "data",
+            "codec_tag_string": "text",
+            "codec_tag": "0x74786574",
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/1000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 198000,
+            "duration": "198.000000",
+            "bit_rate": "14",
+            "nb_frames": "10",
+            "extradata_size": 63,
+            "disposition": {
+                "default": 0,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0
+            },
+            "tags": {
+                "language": "eng",
+                "handler_name": "SubtitleHandler"
+            }
+        }
+    ],
+    "chapters": [
+        {
+            "id": 0,
+            "time_base": "1/1000",
+            "start": 0,
+            "start_time": "0.000000",
+            "end": 12000,
+            "end_time": "12.000000",
+            "tags": {
+                "title": "Scope and result"
+            }
+        },
+        {
+            "id": 1,
+            "time_base": "1/1000",
+            "start": 12000,
+            "start_time": "12.000000",
+            "end": 30000,
+            "end_time": "30.000000",
+            "tags": {
+                "title": "Shared physical testbench"
+            }
+        },
+        {
+            "id": 2,
+            "time_base": "1/1000",
+            "start": 30000,
+            "start_time": "30.000000",
+            "end": 62000,
+            "end_time": "62.000000",
+            "tags": {
+                "title": "Live GUI hardware verification"
+            }
+        },
+        {
+            "id": 3,
+            "time_base": "1/1000",
+            "start": 62000,
+            "start_time": "62.000000",
+            "end": 84000,
+            "end_time": "84.000000",
+            "tags": {
+                "title": "Quartz double buffering"
+            }
+        },
+        {
+            "id": 4,
+            "time_base": "1/1000",
+            "start": 84000,
+            "start_time": "84.000000",
+            "end": 106000,
+            "end_time": "106.000000",
+            "tags": {
+                "title": "Compact direct absorption"
+            }
+        },
+        {
+            "id": 5,
+            "time_base": "1/1000",
+            "start": 106000,
+            "start_time": "106.000000",
+            "end": 126000,
+            "end_time": "126.000000",
+            "tags": {
+                "title": "Padding and framing"
+            }
+        },
+        {
+            "id": 6,
+            "time_base": "1/1000",
+            "start": 126000,
+            "start_time": "126.000000",
+            "end": 144000,
+            "end_time": "144.000000",
+            "tags": {
+                "title": "Routed resource usage"
+            }
+        },
+        {
+            "id": 7,
+            "time_base": "1/1000",
+            "start": 144000,
+            "start_time": "144.000000",
+            "end": 166000,
+            "end_time": "166.000000",
+            "tags": {
+                "title": "Physical hashing time"
+            }
+        },
+        {
+            "id": 8,
+            "time_base": "1/1000",
+            "start": 166000,
+            "start_time": "166.000000",
+            "end": 182000,
+            "end_time": "182.000000",
+            "tags": {
+                "title": "Workload and resource limits"
+            }
+        },
+        {
+            "id": 9,
+            "time_base": "1/1000",
+            "start": 182000,
+            "start_time": "182.000000",
+            "end": 198000,
+            "end_time": "198.000000",
+            "tags": {
+                "title": "Sources and credit"
+            }
+        }
+    ],
+    "format": {
+        "filename": "docs/media/sha3-comparison.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "198.000000",
+        "size": "3694556",
+        "bit_rate": "149274",
+        "probe_score": 100,
+        "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "title": "SHA3 architecture comparison on Zybo Z7-20",
+            "encoder": "Lavf60.16.100",
+            "comment": "Captioned tab captures; recorded physical benchmark and separate live GUI check."
+        }
+    }
+}

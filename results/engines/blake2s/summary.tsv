@@ -1,0 +1,10 @@
+engine	blake2s
+part	xc7z020clg400-1
+vivado	2024.2
+period_ns	10.0
+input_delay_ns	2.0
+output_delay_ns	2.0
+setup_wns_ns	0.489
+hold_whs_ns	0.120
+register_setup_wns_ns	1.356
+register_data_path_delay_ns	8.330

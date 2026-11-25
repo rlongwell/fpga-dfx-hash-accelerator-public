@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "docs/media/sha3-comparison-neutral.mp4",
+      "bytes": 13166504,
+      "sha256": "74154c9b9910712b0fa2ea8e14cb46ed3e4808f6a46feb9e504d6360e4825bce"
+    },
+    {
+      "path": "docs/media/voiceover-neutral-take-1.mp3",
+      "bytes": 2837325,
+      "sha256": "dc1940394003fd8391a9200a76a88f61070794e26417f7ad539d0665f23ff9c4"
+    },
+    {
+      "path": "docs/media/voiceover-neutral-take-2.mp3",
+      "bytes": 2860313,
+      "sha256": "10d42cffe6b3e095b0a134e2f41c9afab5737c7e62d82d518f8f02ad6cb8767a"
+    },
+    {
+      "path": "docs/voiceover-neutral.txt",
+      "bytes": 2823,
+      "sha256": "f2a43eb5ab01c1ca981177a08ab08ff4a2467514ac102bee1fac49a5b59149a6"
+    },
+    {
+      "path": "docs/voiceover-neutral-elevenlabs.txt",
+      "bytes": 2835,
+      "sha256": "013681a0e8992908fc53f3738716dfa59462129dcd7bfaf421abf3e0cfe652a9"
+    },
+    {
+      "path": "demo/render_video_neutral.py",
+      "bytes": 5213,
+      "sha256": "698bf928652688f81eec3b2f6162188a9c50ef39714dd96cfe7c0e6aab036371"
+    },
+    {
+      "path": "demo/render_video_v3.py",
+      "bytes": 10893,
+      "sha256": "258eb4157675a24af942c29e33e1068c5b3d0170976eb722d9c6ac5087e8731d"
+    },
+    {
+      "path": "demo/video-neutral-edit.json",
+      "bytes": 6327,
+      "sha256": "211f47332516a6fc92592c7033be4cb3d9229797b197230c934823a4a4b3b19a"
+    },
+    {
+      "path": "docs/media/sha3-comparison-v2.mp4",
+      "bytes": 5391181,
+      "sha256": "4fde9d2ac0d50d4fd35b8c760c53ddcd968802ae5a6b18fb9e876c65584f8386"
+    }
+  ],
+  "music_source": {
+    "filename": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94",
+    "stored_in_repository": false
+  }
+}

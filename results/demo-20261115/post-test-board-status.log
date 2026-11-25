@@ -1,0 +1,21 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; sha256sum /boot/profil
+e.env /boot/profiles/hash/system.bit /boot/profiles/hash/system.dtb; find /tmp -
+maxdepth 1 -name "zybo-demo-*"; printf '\nUART_DONE_339025842450396_%s\n' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 2158)
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  /boot/profiles/hash/system.bit
+3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed  /boot/profiles/hash/system.dtb
+
+UART_DONE_339025842450396_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

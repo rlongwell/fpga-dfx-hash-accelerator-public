@@ -1,0 +1,27 @@
+/opt/zybo/hash/start.sh: line 28: can't open /proc/5947/cmdline: no such file
+{"event": "case", "batch": 11, "length": 64, "cycles": 166}
+{"event": "case", "batch": 11, "length": 128, "cycles": 166}
+{"event": "case", "batch": 11, "length": 256, "cycles": 302}
+{"event": "case", "batch": 11, "length": 512, "cycles": 574}
+{"event": "case", "batch": 11, "length": 1024, "cycles": 1118}
+{"event": "case", "batch": 11, "length": 2048, "cycles": 2206}
+{"event": "case", "batch": 11, "length": 4096, "cycles": 4246}
+{"event": "case", "batch": 11, "length": 8192, "cycles": 8326}
+{"event": "case", "batch": 11, "length": 16384, "cycles": 16486}
+{"event": "case", "batch": 11, "length": 32768, "cycles": 32806}
+{"event": "case", "batch": 11, "length": 65536, "cycles": 65582}
+{"event": "case", "batch": 11, "length": 131072, "cycles": 131134}
+{"event": "case", "batch": 11, "length": 262144, "cycles": 262238}
+{"event": "case", "batch": 11, "length": 524288, "cycles": 524446}
+{"event": "case", "batch": 11, "length": 1048576, "cycles": 1048726}
+{"event": "case", "batch": 11, "length": 2097152, "cycles": 2097286}
+{"event": "case", "batch": 11, "length": 4194304, "cycles": 4194406}
+{"event": "case", "batch": 11, "length": 8388608, "cycles": 8388646}
+{"event": "case", "batch": 11, "length": 16777216, "cycles": 16777262}
+{"event": "case", "batch": 11, "length": 33554432, "cycles": 33554494}
+{"event": "case", "batch": 11, "length": 67108864, "cycles": 67108958}
+{"event": "case", "batch": 11, "length": 134217728, "cycles": 134217886}
+{"event": "case", "batch": 11, "length": 268435456, "cycles": 268435606}
+{"event": "case", "batch": 11, "length": 536870912, "cycles": 536871046}
+{"event": "case", "batch": 11, "length": 1073741824, "cycles": 1073741926}
+Hash service started (PID 6003); log: /var/log/zybo-hash.log

@@ -1,0 +1,348 @@
+{
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 1920,
+      "height": 1080,
+      "coded_width": 1920,
+      "coded_height": 1080,
+      "closed_captions": 0,
+      "film_grain": 0,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9",
+      "pix_fmt": "yuv420p",
+      "level": 40,
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "refs": 1,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 3805696,
+      "duration": "247.766667",
+      "bit_rate": "160200",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "7433",
+      "extradata_size": 48,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]",
+        "encoder": "Lavc60.31.102 libx264"
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "initial_padding": 0,
+      "id": "0x2",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 11892768,
+      "duration": "247.766000",
+      "bit_rate": "274758",
+      "nb_frames": "11616",
+      "extradata_size": 5,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    },
+    {
+      "index": 2,
+      "codec_name": "bin_data",
+      "codec_long_name": "binary data",
+      "codec_type": "data",
+      "codec_tag_string": "text",
+      "codec_tag": "0x74786574",
+      "id": "0x3",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/1000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 247767,
+      "duration": "247.767000",
+      "bit_rate": "24",
+      "nb_frames": "15",
+      "extradata_size": 63,
+      "disposition": {
+        "default": 0,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0
+      },
+      "tags": {
+        "language": "eng",
+        "handler_name": "SubtitleHandler"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": 0,
+      "time_base": "1/1000",
+      "start": 0,
+      "start_time": "0.000000",
+      "end": 13000,
+      "end_time": "13.000000",
+      "tags": {
+        "title": "SHA3-256: compact vs. Oxide Quartz"
+      }
+    },
+    {
+      "id": 1,
+      "time_base": "1/1000",
+      "start": 13000,
+      "start_time": "13.000000",
+      "end": 30800,
+      "end_time": "30.800000",
+      "tags": {
+        "title": "AXI Stream into the Quartz core"
+      }
+    },
+    {
+      "id": 2,
+      "time_base": "1/1000",
+      "start": 30800,
+      "start_time": "30.800000",
+      "end": 53600,
+      "end_time": "53.600000",
+      "tags": {
+        "title": "Compact: absorb directly into the state"
+      }
+    },
+    {
+      "id": 3,
+      "time_base": "1/1000",
+      "start": 53600,
+      "start_time": "53.600000",
+      "end": 77900,
+      "end_time": "77.900000",
+      "tags": {
+        "title": "Refinement 1: padding selection"
+      }
+    },
+    {
+      "id": 4,
+      "time_base": "1/1000",
+      "start": 77900,
+      "start_time": "77.900000",
+      "end": 98767,
+      "end_time": "98.767000",
+      "tags": {
+        "title": "Refinement 2: validate before absorption"
+      }
+    },
+    {
+      "id": 5,
+      "time_base": "1/1000",
+      "start": 98767,
+      "start_time": "98.767000",
+      "end": 113900,
+      "end_time": "113.900000",
+      "tags": {
+        "title": "SHA3-256: compact vs Oxide Quartz"
+      }
+    },
+    {
+      "id": 6,
+      "time_base": "1/1000",
+      "start": 113900,
+      "start_time": "113.900000",
+      "end": 128433,
+      "end_time": "128.433000",
+      "tags": {
+        "title": "Replay a small FPGA-resident pattern"
+      }
+    },
+    {
+      "id": 7,
+      "time_base": "1/1000",
+      "start": 128433,
+      "start_time": "128.433000",
+      "end": 140100,
+      "end_time": "140.100000",
+      "tags": {
+        "title": "Hardware START through digest completion"
+      }
+    },
+    {
+      "id": 8,
+      "time_base": "1/1000",
+      "start": 140100,
+      "start_time": "140.100000",
+      "end": 157467,
+      "end_time": "157.467000",
+      "tags": {
+        "title": "25 sizes and 350 measured replay hashes"
+      }
+    },
+    {
+      "id": 9,
+      "time_base": "1/1000",
+      "start": 157467,
+      "start_time": "157.467000",
+      "end": 178433,
+      "end_time": "178.433000",
+      "tags": {
+        "title": "Start the real GUI sweep; 32x fast-forward"
+      }
+    },
+    {
+      "id": 10,
+      "time_base": "1/1000",
+      "start": 178433,
+      "start_time": "178.433000",
+      "end": 192400,
+      "end_time": "192.400000",
+      "tags": {
+        "title": "1 GiB: 10.737 seconds versus 4.500"
+      }
+    },
+    {
+      "id": 11,
+      "time_base": "1/1000",
+      "start": 192400,
+      "start_time": "192.400000",
+      "end": 206167,
+      "end_time": "206.167000",
+      "tags": {
+        "title": "Throughput with explicit message-size units"
+      }
+    },
+    {
+      "id": 12,
+      "time_base": "1/1000",
+      "start": 206167,
+      "start_time": "206.167000",
+      "end": 220233,
+      "end_time": "220.233000",
+      "tags": {
+        "title": "Compact / Quartz throughput ratio"
+      }
+    },
+    {
+      "id": 13,
+      "time_base": "1/1000",
+      "start": 220233,
+      "start_time": "220.233000",
+      "end": 237333,
+      "end_time": "237.333000",
+      "tags": {
+        "title": "Matched routed hash-partition resources"
+      }
+    },
+    {
+      "id": 14,
+      "time_base": "1/1000",
+      "start": 237333,
+      "start_time": "237.333000",
+      "end": 247767,
+      "end_time": "247.767000",
+      "tags": {
+        "title": "Oxide Quartz attribution and project credits"
+      }
+    }
+  ],
+  "format": {
+    "filename": "docs/media/sha3-comparison-final.mp4",
+    "nb_streams": 3,
+    "nb_programs": 0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "format_long_name": "QuickTime / MOV",
+    "start_time": "0.000000",
+    "duration": "247.767000",
+    "size": "13748462",
+    "bit_rate": "443915",
+    "probe_score": 100,
+    "tags": {
+      "major_brand": "isom",
+      "minor_version": "512",
+      "compatible_brands": "isomiso2avc1mp41",
+      "title": "SHA3-256: architecture and live FPGA memory sweep",
+      "encoder": "Lavf60.16.100",
+      "comment": "Oxide Quartz reference credited; AI-assisted project. New physical BRAM replay sweep. Waiting accelerated only where labeled. Narration: ElevenLabs Jarnathan. Music: Cyber Runner by 2050 / Artlist."
+    }
+  }
+}

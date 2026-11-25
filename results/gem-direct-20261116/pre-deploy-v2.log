@@ -1,0 +1,26 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; /opt/zybo/hash/start.sh status; df -h / /boot; sha256s
+um /boot/profile.env; cat /sys/class/net/eth0/speed; cat /sys/class/net/eth0/dup
+lex; test ! -e /run/zybo-hash-net.lock; printf '\nDEMO_CMD_ca7ee805d0e669ef_%s\n
+' "$?"
+Zybo profile: hash
+FPGA bitstream: profiles/hash/system.bit
+Device tree: profiles/hash/system.dtb
+Board: Digilent Zybo Z7-20 DFX hash accelerator
+Next boot: hash
+Hash service running (PID 2899)
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                26.8G      1.7G     23.7G   7% /
+/dev/mmcblk0p1          511.0M    278.5M    232.4M  55% /boot
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+1000
+full
+
+DEMO_CMD_ca7ee805d0e669ef_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

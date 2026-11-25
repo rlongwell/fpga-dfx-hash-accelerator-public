@@ -1,0 +1,79 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# mkdir /root/hash-before-runtime-guard-20261116 /root/hash-runtime-guard-202611
+16 && tar -xzf /root/hash-runtime-guard-20261116.tar.gz -C /root/hash-runtime-gu
+ard-20261116 && (cd /root/hash-runtime-guard-20261116 && sha256sum -c SHA256SUMS
+); printf '\nDEMO_CMD_e5b98f197a50340f_%s\n' "$?"
+tar: invalid option -- 'z'
+BusyBox v1.36.1 (2026-11-11 23:25:41 CST) multi-call binary.
+
+Usage: tar c|x|t [-ahvokO] [-f TARFILE] [-C DIR] [-T FILE] [-X FILE] [LONGOPT]... [FILE]...
+
+Create, extract, or list files from a tar file
+
+	c	Create
+	x	Extract
+	t	List
+	-f FILE	Name of TARFILE ('-' for stdin/out)
+	-C DIR	Change to DIR before operation
+	-v	Verbose
+	-O	Extract to stdout
+	-o	Don't restore user:group
+	-k	Don't replace existing files
+	-a	(De)compress based on extension
+	-h	Follow symlinks
+	-T FILE	File with names to include
+	-X FILE	File with glob patterns to exclude
+	--exclude PATTERN	Glob pattern to exclude
+	--overwrite		Replace existing files
+	--strip-components NUM	NUM of leading components to strip
+	--no-recursion		Don't descend in directories
+	--numeric-owner		Use numeric user:group
+	--no-same-permissions	Don't restore access permissions
+	--to-command COMMAND	Pipe files to COMMAND
+
+DEMO_CMD_e5b98f197a50340f_1
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import tarfile;tarfile.open("/root/hash-runtime-guard-20261116.tar
+.gz").extractall("/root/hash-runtime-guard-20261116")' && (cd /root/hash-runtime
+-guard-20261116 && sha256sum -c SHA256SUMS); printf '\nDEMO_CMD_fb01eef5be618400
+_%s\n' "$?"
+start.sh: OK
+software/hash_service.py: OK
+software/hash_receive.py: OK
+
+DEMO_CMD_fb01eef5be618400_0
+# cp -a /opt/zybo/hash/start.sh /root/hash-before-runtime-guard-20261116/start.s
+h && cp -a /opt/zybo/hash/software/hash_service.py /root/hash-before-runtime-gua
+rd-20261116/hash_service.py && cp -a /opt/zybo/hash/software/hash_receive.py /ro
+ot/hash-before-runtime-guard-20261116/hash_receive.py; printf '\nDEMO_CMD_0cd97f
+44f94370f1_%s\n' "$?"
+
+DEMO_CMD_0cd97f44f94370f1_0
+# /opt/zybo/hash/start.sh stop && cp -a /root/hash-runtime-guard-20261116/start.
+sh /opt/zybo/hash/start.sh && cp -a /root/hash-runtime-guard-20261116/software/*
+.py /opt/zybo/hash/software/ && /opt/zybo/hash/start.sh start; printf '\nDEMO_CM
+D_bfb466973be19576_%s\n' "$?"
+tr: read error: No such process
+Hash service started (PID 747); log: /var/log/zybo-hash.log
+
+DEMO_CMD_bfb466973be19576_0
+# sha256sum /opt/zybo/hash/software/hash_service.py /boot/profiles/hash/system.b
+it /boot/profile.env; printf '\nDEMO_CMD_5aff0e0afbecad16_%s\n' "$?"
+e4b6539921b7b4c84101f285dff80a4662c7fd052f99d0760815584d2a17bab3  /opt/zybo/hash/software/hash_service.py
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  /boot/profiles/hash/system.bit
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+
+DEMO_CMD_5aff0e0afbecad16_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

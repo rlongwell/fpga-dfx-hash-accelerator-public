@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "kind": "offline-audit-of-retained-evidence",
+  "hardware_rerun": false,
+  "sealed_files": 132,
+  "physical_reports_checked": 6,
+  "measurement_rows_recomputed": 48,
+  "source_files_checked": 29,
+  "build_artifacts_checked": true,
+  "build_paths_not_checked": [],
+  "dma_speedup_vs_oxide": 2.356896433198841,
+  "LUT_reduction_percent": 22.626366120218577,
+  "FF_reduction_percent": 57.98199905258172
+}

@@ -1,0 +1,2151 @@
+{
+  "kind": "physical-sha3-size-sweep-plan",
+  "algorithm": "SHA3-256",
+  "clock_MHz": 100,
+  "max_power": 30,
+  "repetitions": 7,
+  "interface": "fpga-bram-replay",
+  "static_sha256": "6102e03f31c175d8cba562a7be0fbf17e8890349f909713e8231cf20ce87987b",
+  "board_mac": "82:97:31:ce:3d:42",
+  "host_mac": "00:d8:61:0a:97:21",
+  "helper_sha256": "3958b42521925eecfaa915c7b99973cc3f16ac95b1a2fea6284cd5591cc56ff4",
+  "board_script_sha256": "7e3674cb08c78fb10af6dc5176759172e1e525ffdc9b9ca07160fd338e018650",
+  "pattern_bytes": 131072,
+  "pattern_sha256": "3c04e3fee3b0875b2c8a1896a1161255c86d5734abeb73f453b890d976aa290a",
+  "batches": [
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422610
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422611
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422612
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422613
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422614
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422615
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422616
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422617
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422618
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422619
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422620
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422621
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422622
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422623
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422624
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422625
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422626
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422627
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422628
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422629
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422630
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422631
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422632
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422633
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422634
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 0,
+      "warmup": true,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422635
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422636
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422637
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422638
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422639
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422640
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422641
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422642
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422643
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422644
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422645
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422646
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422647
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422648
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422649
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422650
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422651
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422652
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422653
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422654
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422655
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422656
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422657
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422658
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422659
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422660
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422661
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422662
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422663
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422664
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422665
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422666
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422667
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422668
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422669
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422670
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422671
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422672
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422673
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422674
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422675
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422676
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422677
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422678
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422679
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422680
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422681
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422682
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422683
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422684
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 1,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422685
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422686
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422687
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422688
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422689
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422690
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422691
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422692
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422693
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422694
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422695
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422696
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422697
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422698
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422699
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422700
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422701
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422702
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422703
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422704
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422705
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422706
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422707
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422708
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422709
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 2,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422710
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422711
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422712
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422713
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422714
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422715
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422716
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422717
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422718
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422719
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422720
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422721
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422722
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422723
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422724
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422725
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422726
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422727
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422728
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422729
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422730
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422731
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422732
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422733
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422734
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 2,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422735
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422736
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422737
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422738
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422739
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422740
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422741
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422742
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422743
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422744
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422745
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422746
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422747
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422748
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422749
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422750
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422751
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422752
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422753
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422754
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422755
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422756
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422757
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422758
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422759
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 3,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422760
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422761
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422762
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422763
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422764
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422765
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422766
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422767
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422768
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422769
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422770
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422771
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422772
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422773
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422774
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422775
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422776
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422777
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422778
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422779
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422780
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422781
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422782
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422783
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422784
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 3,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422785
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422786
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422787
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422788
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422789
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422790
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422791
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422792
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422793
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422794
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422795
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422796
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422797
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422798
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422799
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422800
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422801
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422802
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422803
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422804
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422805
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422806
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422807
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422808
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422809
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 4,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422810
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422811
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422812
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422813
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422814
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422815
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422816
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422817
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422818
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422819
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422820
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422821
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422822
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422823
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422824
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422825
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422826
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422827
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422828
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422829
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422830
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422831
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422832
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422833
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422834
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 4,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422835
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422836
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422837
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422838
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422839
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422840
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422841
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422842
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422843
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422844
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422845
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422846
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422847
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422848
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422849
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422850
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422851
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422852
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422853
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422854
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422855
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422856
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422857
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422858
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422859
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 5,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422860
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422861
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422862
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422863
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422864
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422865
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422866
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422867
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422868
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422869
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422870
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422871
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422872
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422873
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422874
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422875
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422876
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422877
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422878
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422879
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422880
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422881
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422882
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422883
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422884
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 5,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422885
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422886
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422887
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422888
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422889
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422890
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422891
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422892
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422893
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422894
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422895
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422896
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422897
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422898
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422899
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422900
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422901
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422902
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422903
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422904
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422905
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422906
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422907
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422908
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422909
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 6,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422910
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422911
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422912
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422913
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422914
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422915
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422916
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422917
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422918
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422919
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422920
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422921
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422922
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422923
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422924
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422925
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422926
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422927
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422928
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422929
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422930
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422931
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422932
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422933
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422934
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 6,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422935
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422936
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422937
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422938
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422939
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422940
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422941
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422942
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422943
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422944
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422945
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422946
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422947
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422948
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422949
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422950
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422951
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422952
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422953
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422954
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422955
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422956
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422957
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422958
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422959
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "compact",
+      "trial": 7,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422960
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422961
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422962
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422963
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422964
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422965
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422966
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422967
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422968
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422969
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422970
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422971
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422972
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422973
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422974
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689422975
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689422976
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689422977
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689422978
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689422979
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689422980
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689422981
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689422982
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689422983
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689422984
+        }
+      ]
+    },
+    {
+      "mode": "replay",
+      "core": "oxide",
+      "trial": 7,
+      "warmup": false,
+      "cases": [
+        {
+          "length": 64,
+          "expected": "b4a5c23661d1e1c57920135f315c6ecf3f5aab858d586729e513cd6f081577b3",
+          "session": 1689422985
+        },
+        {
+          "length": 128,
+          "expected": "c19b81d74cde04ffdb1e21c8a91456590d072e43f186f0f1600337bd2975d071",
+          "session": 1689422986
+        },
+        {
+          "length": 256,
+          "expected": "27aab833d8b3c19d1dddbf6f746f91d73425de37b9c6f32497759d0c866e4faf",
+          "session": 1689422987
+        },
+        {
+          "length": 512,
+          "expected": "d72855f3528d80b60c140d2589d0304004ed3d983afb9f6b8e0e860d4dad4810",
+          "session": 1689422988
+        },
+        {
+          "length": 1024,
+          "expected": "84e1d3965d80cacb155953eda7441531256289b1ea69a31eac9ab2a4f61a00d0",
+          "session": 1689422989
+        },
+        {
+          "length": 2048,
+          "expected": "2eb7e315504de527619c5b8e198189cc190ac66187b97ecd37a18f36b3e4b0d0",
+          "session": 1689422990
+        },
+        {
+          "length": 4096,
+          "expected": "fc91990c459fd355ab3da4ed57ca491d2b892580fe0e0aa5dc524c6ca56b4876",
+          "session": 1689422991
+        },
+        {
+          "length": 8192,
+          "expected": "be97d510684dfc2f68ff98528a8e94ea8eb07a3c6dd2815b1189e55ba682d845",
+          "session": 1689422992
+        },
+        {
+          "length": 16384,
+          "expected": "21f4e50a7e0d5e316d926e99587dc3cfdc4c51dd45b68e692e8056ad55e5d04b",
+          "session": 1689422993
+        },
+        {
+          "length": 32768,
+          "expected": "5046de64ea5dc16ea48a0b4c3b79d311860754687c85f1bceb8e0e924c3e0bc8",
+          "session": 1689422994
+        },
+        {
+          "length": 65536,
+          "expected": "4b8242b9837131329db31807ea40bfa4a1f9ce051eb8256482a47b6aa7d912bd",
+          "session": 1689422995
+        },
+        {
+          "length": 131072,
+          "expected": "93fb1b2c5aed59f75bbb66430801c77c1872f8d9240a217482a4061bd152156c",
+          "session": 1689422996
+        },
+        {
+          "length": 262144,
+          "expected": "0d9289a437bc7b412049abf11a7e151484181bbec988c05d3008cc2b9bab5cab",
+          "session": 1689422997
+        },
+        {
+          "length": 524288,
+          "expected": "dc72f014f50463ceb9172b81e58db85da55dc648df530b5c7afa3ffd1bf34bd5",
+          "session": 1689422998
+        },
+        {
+          "length": 1048576,
+          "expected": "fd440b4bc20ac8d89bb288479f38a33aabfd67813a859e844466eab5733c2e1d",
+          "session": 1689422999
+        },
+        {
+          "length": 2097152,
+          "expected": "8e1e34e618c4b7833ded1c04ee6f88b222b2c674ca5fca5ee168497a5484f21b",
+          "session": 1689423000
+        },
+        {
+          "length": 4194304,
+          "expected": "729d98a406c3759ee4f63ca956c31929e7547540175160d8a970a12315619279",
+          "session": 1689423001
+        },
+        {
+          "length": 8388608,
+          "expected": "50de84df2ee86744c7cbe1fe3ddc584f6594a13943a5e8e2163a7e6704977d31",
+          "session": 1689423002
+        },
+        {
+          "length": 16777216,
+          "expected": "eafd3d1cbcf478acb12603f13054d61801782d51dcf18c35c49e205be8e21b0f",
+          "session": 1689423003
+        },
+        {
+          "length": 33554432,
+          "expected": "806fa9925c2a5c50703be4f3a4cb95852955f38385f476acec18ce3a34ad74f5",
+          "session": 1689423004
+        },
+        {
+          "length": 67108864,
+          "expected": "a3bccbb7aa641a9c613e5a053a1e4b20196de7445f871cfb60c9ddc3d7e11e43",
+          "session": 1689423005
+        },
+        {
+          "length": 134217728,
+          "expected": "14bbdccf775ec0f37f62044e2aa0eee7e0599e82dca24b338888e731ba07ac76",
+          "session": 1689423006
+        },
+        {
+          "length": 268435456,
+          "expected": "0d2a5c610250f51c8daa010a40f94a3853a323d47a7f2b78dc590485025d587c",
+          "session": 1689423007
+        },
+        {
+          "length": 536870912,
+          "expected": "c4ec56c5801cdc0dcf5f03586dc99a9c310f2952f72a3601fbb4b77484034f77",
+          "session": 1689423008
+        },
+        {
+          "length": 1073741824,
+          "expected": "160d628e26bf5db7e1c8aaa27c773f031bd5d8af11d6757f2e17a79115ae1e13",
+          "session": 1689423009
+        }
+      ]
+    }
+  ],
+  "warmup": "One full round per core, excluded; seven measured rounds",
+  "ordering": "Ascending sizes per batch; core order alternates between rounds",
+  "timing": {
+    "replay": "FPGA START-to-digest cycles / 100 MHz; pattern loading excluded"
+  },
+  "transport": "ssh-wired"
+}

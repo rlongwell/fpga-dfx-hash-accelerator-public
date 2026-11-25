@@ -1,0 +1,1165 @@
+{
+  "label": "oxide_elastic",
+  "kind": "physical-zybo-performance",
+  "manifest": {
+    "abi": 65536,
+    "part": "xc7z020clg400-1",
+    "vivado": "2024.2",
+    "static_sha256": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+    "images": {
+      "sha3": {
+        "algorithm_id": 1,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin",
+        "source": "build/sha3-profile/oxide-elastic-medium-physopt/full_pblock_hash_partial.bit.bin",
+        "sha256": "240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7"
+      },
+      "sha256": {
+        "algorithm_id": 2,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/sha256-6e6d9cb30cfb.bin",
+        "source": "build/vivado/dfx/sha256/full_pblock_hash_partial.bit.bin",
+        "sha256": "6e6d9cb30cfb79340381ce32a1d38f92cdfefbb282c5da91d472ebefb7bc729e"
+      },
+      "blake2s": {
+        "algorithm_id": 3,
+        "filename": "fpga-dfx-hash/0e14c2e8fc21/blake2s-9a7e9e450789.bin",
+        "source": "build/vivado/dfx/blake2s/full_pblock_hash_partial.bit.bin",
+        "sha256": "9a7e9e450789f0f89f58f2d57c39b6dda5d239b94ee6c79c73196e8a5ed18c31"
+      }
+    }
+  },
+  "manifest_sha256": "bdaaafb60f44db68b8bd357376c3ad385dbe1bafcac299d87d2433de66c437ed",
+  "timestamp_utc": "1970-01-01T00:19:07Z",
+  "kernel": "6.6.40-dfx-hash",
+  "python": "3.11.11",
+  "cpuinfo": "processor\t: 0\nmodel name\t: ARMv7 Processor rev 0 (v7l)\nBogoMIPS\t: 333.33\nFeatures\t: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 \nCPU implementer\t: 0x41\nCPU architecture: 7\nCPU variant\t: 0x3\nCPU part\t: 0xc09\nCPU revision\t: 0\n\nprocessor\t: 1\nmodel name\t: ARMv7 Processor rev 0 (v7l)\nBogoMIPS\t: 333.33\nFeatures\t: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 \nCPU implementer\t: 0x41\nCPU architecture: 7\nCPU variant\t: 0x3\nCPU part\t: 0xc09\nCPU revision\t: 0\n\nHardware\t: Xilinx Zynq Platform\nRevision\t: 0003\nSerial\t\t: 0000000000000000\n",
+  "repeats": 7,
+  "bench_source_sha256": "24fa14f5aa79114802c69929e31c9bf28823e72b1245981b2a317c507047776b",
+  "warmup_per_method": 1,
+  "algorithms": {
+    "sha3": [
+      {
+        "bytes": 64,
+        "digest": "c8ad478f4e1dd9d47dfc3b985708d92db1f8db48fe9cddd459e63c321f490402",
+        "samples": {
+          "dma": [
+            {
+              "ns": 190974,
+              "core_cycles": 6219
+            },
+            {
+              "ns": 171984,
+              "core_cycles": 6047
+            },
+            {
+              "ns": 213150,
+              "core_cycles": 5647
+            },
+            {
+              "ns": 168366,
+              "core_cycles": 5976
+            },
+            {
+              "ns": 161148,
+              "core_cycles": 5722
+            },
+            {
+              "ns": 158658,
+              "core_cycles": 5679
+            },
+            {
+              "ns": 161520,
+              "core_cycles": 5648
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 384066,
+              "core_cycles": 10111
+            },
+            {
+              "ns": 374580,
+              "core_cycles": 9734
+            },
+            {
+              "ns": 369384,
+              "core_cycles": 9707
+            },
+            {
+              "ns": 368412,
+              "core_cycles": 9976
+            },
+            {
+              "ns": 372072,
+              "core_cycles": 9963
+            },
+            {
+              "ns": 368034,
+              "core_cycles": 9784
+            },
+            {
+              "ns": 371094,
+              "core_cycles": 9823
+            }
+          ],
+          "arm": [
+            {
+              "ns": 39558,
+              "core_cycles": null
+            },
+            {
+              "ns": 38172,
+              "core_cycles": null
+            },
+            {
+              "ns": 36384,
+              "core_cycles": null
+            },
+            {
+              "ns": 36972,
+              "core_cycles": null
+            },
+            {
+              "ns": 35802,
+              "core_cycles": null
+            },
+            {
+              "ns": 36408,
+              "core_cycles": null
+            },
+            {
+              "ns": 36696,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 168366,
+            "min_ns": 158658,
+            "max_ns": 213150,
+            "MB_s": 0.38012425311523707
+          },
+          "local_api": {
+            "median_ns": 371094,
+            "min_ns": 368034,
+            "max_ns": 384066,
+            "MB_s": 0.17246304170910876
+          },
+          "arm": {
+            "median_ns": 36696,
+            "min_ns": 35802,
+            "max_ns": 39558,
+            "MB_s": 1.7440592980161325
+          }
+        }
+      },
+      {
+        "bytes": 136,
+        "digest": "cf3ccff92480a29160c2d38317c430e14749bfee1788106957dfe73f8c4930e5",
+        "samples": {
+          "dma": [
+            {
+              "ns": 190728,
+              "core_cycles": 6354
+            },
+            {
+              "ns": 169470,
+              "core_cycles": 6221
+            },
+            {
+              "ns": 167760,
+              "core_cycles": 6058
+            },
+            {
+              "ns": 161568,
+              "core_cycles": 5832
+            },
+            {
+              "ns": 157716,
+              "core_cycles": 5677
+            },
+            {
+              "ns": 159360,
+              "core_cycles": 5820
+            },
+            {
+              "ns": 157038,
+              "core_cycles": 5770
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 386520,
+              "core_cycles": 10411
+            },
+            {
+              "ns": 403530,
+              "core_cycles": 13247
+            },
+            {
+              "ns": 375540,
+              "core_cycles": 10133
+            },
+            {
+              "ns": 369654,
+              "core_cycles": 9955
+            },
+            {
+              "ns": 370392,
+              "core_cycles": 10065
+            },
+            {
+              "ns": 368658,
+              "core_cycles": 10072
+            },
+            {
+              "ns": 367752,
+              "core_cycles": 10019
+            }
+          ],
+          "arm": [
+            {
+              "ns": 49968,
+              "core_cycles": null
+            },
+            {
+              "ns": 48534,
+              "core_cycles": null
+            },
+            {
+              "ns": 47340,
+              "core_cycles": null
+            },
+            {
+              "ns": 46482,
+              "core_cycles": null
+            },
+            {
+              "ns": 47430,
+              "core_cycles": null
+            },
+            {
+              "ns": 47562,
+              "core_cycles": null
+            },
+            {
+              "ns": 46560,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 161568,
+            "min_ns": 157038,
+            "max_ns": 190728,
+            "MB_s": 0.8417508417508418
+          },
+          "local_api": {
+            "median_ns": 370392,
+            "min_ns": 367752,
+            "max_ns": 403530,
+            "MB_s": 0.3671785567722845
+          },
+          "arm": {
+            "median_ns": 47430,
+            "min_ns": 46482,
+            "max_ns": 49968,
+            "MB_s": 2.867383512544803
+          }
+        }
+      },
+      {
+        "bytes": 1024,
+        "digest": "b6c70631c6ff932b9f380d9cde8750eb9bea393817a9aea410c2119eb7b9b870",
+        "samples": {
+          "dma": [
+            {
+              "ns": 180486,
+              "core_cycles": 7418
+            },
+            {
+              "ns": 167916,
+              "core_cycles": 7016
+            },
+            {
+              "ns": 163176,
+              "core_cycles": 6926
+            },
+            {
+              "ns": 164052,
+              "core_cycles": 6859
+            },
+            {
+              "ns": 162132,
+              "core_cycles": 6698
+            },
+            {
+              "ns": 162336,
+              "core_cycles": 6713
+            },
+            {
+              "ns": 160896,
+              "core_cycles": 6735
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 410496,
+              "core_cycles": 11906
+            },
+            {
+              "ns": 416868,
+              "core_cycles": 14470
+            },
+            {
+              "ns": 382656,
+              "core_cycles": 11274
+            },
+            {
+              "ns": 374322,
+              "core_cycles": 11211
+            },
+            {
+              "ns": 376134,
+              "core_cycles": 11355
+            },
+            {
+              "ns": 376866,
+              "core_cycles": 11228
+            },
+            {
+              "ns": 374118,
+              "core_cycles": 11221
+            }
+          ],
+          "arm": [
+            {
+              "ns": 114702,
+              "core_cycles": null
+            },
+            {
+              "ns": 112782,
+              "core_cycles": null
+            },
+            {
+              "ns": 113046,
+              "core_cycles": null
+            },
+            {
+              "ns": 112470,
+              "core_cycles": null
+            },
+            {
+              "ns": 111720,
+              "core_cycles": null
+            },
+            {
+              "ns": 111942,
+              "core_cycles": null
+            },
+            {
+              "ns": 112038,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 163176,
+            "min_ns": 160896,
+            "max_ns": 180486,
+            "MB_s": 6.275432661665931
+          },
+          "local_api": {
+            "median_ns": 376866,
+            "min_ns": 374118,
+            "max_ns": 416868,
+            "MB_s": 2.71714614743702
+          },
+          "arm": {
+            "median_ns": 112470,
+            "min_ns": 111720,
+            "max_ns": 114702,
+            "MB_s": 9.104650128923268
+          }
+        }
+      },
+      {
+        "bytes": 65536,
+        "digest": "bbf9ee3fe69e96f0399d3aeafbb073de5b3ad525c8b3a85b29a36ae5f9829e91",
+        "samples": {
+          "dma": [
+            {
+              "ns": 850668,
+              "core_cycles": 71982
+            },
+            {
+              "ns": 840492,
+              "core_cycles": 72039
+            },
+            {
+              "ns": 824934,
+              "core_cycles": 71371
+            },
+            {
+              "ns": 826638,
+              "core_cycles": 71374
+            },
+            {
+              "ns": 825468,
+              "core_cycles": 71380
+            },
+            {
+              "ns": 823668,
+              "core_cycles": 71363
+            },
+            {
+              "ns": 822996,
+              "core_cycles": 71335
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 1221768,
+              "core_cycles": 89845
+            },
+            {
+              "ns": 1166910,
+              "core_cycles": 85779
+            },
+            {
+              "ns": 1152720,
+              "core_cycles": 84917
+            },
+            {
+              "ns": 1156572,
+              "core_cycles": 85438
+            },
+            {
+              "ns": 1155660,
+              "core_cycles": 84900
+            },
+            {
+              "ns": 1145791,
+              "core_cycles": 84548
+            },
+            {
+              "ns": 1141326,
+              "core_cycles": 84450
+            }
+          ],
+          "arm": [
+            {
+              "ns": 5352204,
+              "core_cycles": null
+            },
+            {
+              "ns": 5387232,
+              "core_cycles": null
+            },
+            {
+              "ns": 5342010,
+              "core_cycles": null
+            },
+            {
+              "ns": 5348772,
+              "core_cycles": null
+            },
+            {
+              "ns": 5302626,
+              "core_cycles": null
+            },
+            {
+              "ns": 5336718,
+              "core_cycles": null
+            },
+            {
+              "ns": 5319240,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 825468,
+            "min_ns": 822996,
+            "max_ns": 850668,
+            "MB_s": 79.3925385357155
+          },
+          "local_api": {
+            "median_ns": 1155660,
+            "min_ns": 1141326,
+            "max_ns": 1221768,
+            "MB_s": 56.70872055794957
+          },
+          "arm": {
+            "median_ns": 5342010,
+            "min_ns": 5302626,
+            "max_ns": 5387232,
+            "MB_s": 12.268041430098409
+          }
+        }
+      },
+      {
+        "bytes": 1048576,
+        "digest": "d968751128cfec8780ddfe859f11bdcd8b84e1f2175a1093fa9e776ad7fac6b1",
+        "samples": {
+          "dma": [
+            {
+              "ns": 10712970,
+              "core_cycles": 1055304
+            },
+            {
+              "ns": 10670472,
+              "core_cycles": 1054985
+            },
+            {
+              "ns": 10659354,
+              "core_cycles": 1054638
+            },
+            {
+              "ns": 10658838,
+              "core_cycles": 1054536
+            },
+            {
+              "ns": 10662547,
+              "core_cycles": 1054558
+            },
+            {
+              "ns": 10667304,
+              "core_cycles": 1054535
+            },
+            {
+              "ns": 10665450,
+              "core_cycles": 1054424
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 13144614,
+              "core_cycles": 1271735
+            },
+            {
+              "ns": 13118676,
+              "core_cycles": 1269526
+            },
+            {
+              "ns": 13137954,
+              "core_cycles": 1270456
+            },
+            {
+              "ns": 13183008,
+              "core_cycles": 1269805
+            },
+            {
+              "ns": 13145779,
+              "core_cycles": 1270997
+            },
+            {
+              "ns": 13131288,
+              "core_cycles": 1269508
+            },
+            {
+              "ns": 13115436,
+              "core_cycles": 1269226
+            }
+          ],
+          "arm": [
+            {
+              "ns": 85050505,
+              "core_cycles": null
+            },
+            {
+              "ns": 85184550,
+              "core_cycles": null
+            },
+            {
+              "ns": 85061917,
+              "core_cycles": null
+            },
+            {
+              "ns": 84985975,
+              "core_cycles": null
+            },
+            {
+              "ns": 84779431,
+              "core_cycles": null
+            },
+            {
+              "ns": 84886303,
+              "core_cycles": null
+            },
+            {
+              "ns": 84942685,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 10665450,
+            "min_ns": 10658838,
+            "max_ns": 10712970,
+            "MB_s": 98.3152140791059
+          },
+          "local_api": {
+            "median_ns": 13137954,
+            "min_ns": 13115436,
+            "max_ns": 13183008,
+            "MB_s": 79.812731875907
+          },
+          "arm": {
+            "median_ns": 84985975,
+            "min_ns": 84779431,
+            "max_ns": 85184550,
+            "MB_s": 12.338224042261091
+          }
+        }
+      },
+      {
+        "bytes": 16777216,
+        "digest": "b1870b48476671247200e7af392fe66d90bd62786daae75c70baf17843192d23",
+        "samples": {
+          "dma": [
+            {
+              "ns": 169242644,
+              "core_cycles": 16911800
+            },
+            {
+              "ns": 169233919,
+              "core_cycles": 16911129
+            },
+            {
+              "ns": 169222334,
+              "core_cycles": 16910261
+            },
+            {
+              "ns": 169230626,
+              "core_cycles": 16910895
+            },
+            {
+              "ns": 169224745,
+              "core_cycles": 16910363
+            },
+            {
+              "ns": 169203386,
+              "core_cycles": 16909161
+            },
+            {
+              "ns": 169229708,
+              "core_cycles": 16910788
+            }
+          ],
+          "local_api": [
+            {
+              "ns": 205167224,
+              "core_cycles": 20475919
+            },
+            {
+              "ns": 205051982,
+              "core_cycles": 20463903
+            },
+            {
+              "ns": 205027952,
+              "core_cycles": 20459217
+            },
+            {
+              "ns": 205201940,
+              "core_cycles": 20478542
+            },
+            {
+              "ns": 205077956,
+              "core_cycles": 20466064
+            },
+            {
+              "ns": 205140452,
+              "core_cycles": 20471234
+            },
+            {
+              "ns": 205015622,
+              "core_cycles": 20457707
+            }
+          ],
+          "arm": [
+            {
+              "ns": 1355593004,
+              "core_cycles": null
+            },
+            {
+              "ns": 1358949571,
+              "core_cycles": null
+            },
+            {
+              "ns": 1355189960,
+              "core_cycles": null
+            },
+            {
+              "ns": 1357223641,
+              "core_cycles": null
+            },
+            {
+              "ns": 1355815292,
+              "core_cycles": null
+            },
+            {
+              "ns": 1359414841,
+              "core_cycles": null
+            },
+            {
+              "ns": 1358415740,
+              "core_cycles": null
+            }
+          ]
+        },
+        "summary": {
+          "dma": {
+            "median_ns": 169229708,
+            "min_ns": 169203386,
+            "max_ns": 169242644,
+            "MB_s": 99.13871623533144
+          },
+          "local_api": {
+            "median_ns": 205077956,
+            "min_ns": 205015622,
+            "max_ns": 205201940,
+            "MB_s": 81.80896829301341
+          },
+          "arm": {
+            "median_ns": 1357223641,
+            "min_ns": 1355189960,
+            "max_ns": 1359414841,
+            "MB_s": 12.361423344820738
+          }
+        }
+      }
+    ]
+  },
+  "correctness": [
+    {
+      "bytes": 1,
+      "digest": "5d53469f20fef4f8eab52b88044ede69c77a6a68a60728609fc4a65ff531e7d0",
+      "core_cycles": 18908,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 383418,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 7,
+      "digest": "59b1add388b7d625d2797894a4d88c7554a796a5a3d8ae232bf5f86bd72d5756",
+      "core_cycles": 13431,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 7,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 296382,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 8,
+      "digest": "eb4d0f2add0f6d0b26f0c65dbe71fe617cc6b43fb403649e82cc8bab41195f4e",
+      "core_cycles": 13107,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 8,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 279054,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 9,
+      "digest": "5257e34d7bb964f59ae4a46b3ba5921e04a550c2b1e04f268b297e358eab1362",
+      "core_cycles": 12644,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 9,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 269406,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 55,
+      "digest": "a91a138e3374d2d8fa4791b83a93a311a06a2926ef70153428cf6e1b239c10d4",
+      "core_cycles": 12847,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 55,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 270882,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 56,
+      "digest": "d192f5964dc70118fcac64bf0eb838009b816d344f67b04e8e78d5bde783e54a",
+      "core_cycles": 12482,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 56,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 265842,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 63,
+      "digest": "ba7af58d214bb604bcaad40ad55cca7d9815e7535f1c9837be8fb8fee2519560",
+      "core_cycles": 12569,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 63,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 262686,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 64,
+      "digest": "c8ad478f4e1dd9d47dfc3b985708d92db1f8db48fe9cddd459e63c321f490402",
+      "core_cycles": 13066,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 64,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 274794,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 65,
+      "digest": "9a11f135d2231be8ee824d1e9d3204018870defc2f469f34ef5969b4815cec3c",
+      "core_cycles": 10142,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 65,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 215712,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 127,
+      "digest": "c66018e60c774d770cc6539d42c023fa974c29e3fe2db5925f226b9cc5cf8b05",
+      "core_cycles": 9690,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 127,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 211122,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 128,
+      "digest": "bec3ebfba06834f224543cca2a427cb9329147be93e19aeb0e33a7119c7f63ef",
+      "core_cycles": 9637,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 128,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 207270,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 129,
+      "digest": "0f41a20921bcbc39ee382dfb54daf2db373ce6b178833111e22f45266124f3cc",
+      "core_cycles": 10045,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 129,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 216042,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 135,
+      "digest": "fded8fd9d6551c601eeb3b7c6bc5e5cfd8aad1d015b7e9aaa9c9b9475231d5e2",
+      "core_cycles": 9485,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 135,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 205860,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 136,
+      "digest": "cf3ccff92480a29160c2d38317c430e14749bfee1788106957dfe73f8c4930e5",
+      "core_cycles": 9644,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 136,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 209016,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 137,
+      "digest": "ce9d7dc90913ee5d92745019479a5352c6d6279bef18ed07dc0a83ee8084daca",
+      "core_cycles": 9726,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 137,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 208278,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 271,
+      "digest": "d409bcbb54825556454a757a1f629135ba49c0467dcf6b4e0aa69e9718dd31e6",
+      "core_cycles": 10296,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 271,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 219072,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 272,
+      "digest": "0b21ec4a8eff6d179e09ba9fe0ab08515b24e0923fbf419f5c30a38e64577db5",
+      "core_cycles": 10203,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 272,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 212370,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 273,
+      "digest": "6e7f5de2677213044468ef21d3c8c57bb10cc5957e4f99d038db65ac3151e9c1",
+      "core_cycles": 10363,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 273,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 214152,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 4095,
+      "digest": "f7a1e2fc722a19d97024f7fefe24d402774c5e624b515045e00e4e02ca52bcc4",
+      "core_cycles": 15147,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 4095,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 277008,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 4096,
+      "digest": "eeb3b4cee65cffa2a31365e3e7c38701109cbbf44ec146e098431e87ca70ec83",
+      "core_cycles": 14833,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 4096,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 267294,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 4097,
+      "digest": "4ecc933eb91a1728b4a491233ba975b6709c014f53c5b8bd7047b41140303625",
+      "core_cycles": 16548,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 4097,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 287478,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 1048575,
+      "digest": "400374aa361867bfc6620284e7147252f70a1c789b9060fd5b0ab67d3390a851",
+      "core_cycles": 1406048,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1048575,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 14266962,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 1048576,
+      "digest": "d968751128cfec8780ddfe859f11bdcd8b84e1f2175a1093fa9e776ad7fac6b1",
+      "core_cycles": 1300161,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1048576,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 13207201,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 1048577,
+      "digest": "bda1ee9d57d2d9dd10d152a3373c82aaeaec57f854e33a3b1df89cc3e7718d1a",
+      "core_cycles": 1303145,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 1048577,
+      "dma_transfers": 2,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 13199838,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "bytes": 2097169,
+      "digest": "397b51d40d05a9fa7f5877c5ea751d3e1d97953f798a69db8db497189033700d",
+      "core_cycles": 2589336,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 2097169,
+      "dma_transfers": 3,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 26059638,
+      "reference_hashing_in_timed_region": false
+    },
+    {
+      "case": "short-reads",
+      "bytes": 4099,
+      "digest": "1654154c4bbeeb646dc7f45ee9c4b46349e2679a64be7f5dbb9a8872e9252a19",
+      "core_cycles": 642152,
+      "status": "ok",
+      "backend": "fpga-dma",
+      "transport": "local-device",
+      "algorithm": "sha3",
+      "algorithm_id": 1,
+      "length": 4099,
+      "dma_transfers": 1,
+      "buffer_size": 1048576,
+      "manager_load_ns": 0,
+      "local_hash_ns": 6599040,
+      "reference_hashing_in_timed_region": false
+    }
+  ],
+  "timing_scope": "Wall time includes Python/ioctl costs. DMA reuses prefilled coherent DDR; local API includes PS copies. Reference hashing outside hardware timing. ARM uses preallocated RAM. No Ethernet or disk I/O in timed regions.",
+  "core_counter_scope": "100 MHz static shell START-to-result cycles, including starvation and DMA/software gaps; not compute-only cycles.",
+  "environment": "Normal board scheduling; no CPU affinity, governor change or thermal stabilization.",
+  "buffer_size": 1048576,
+  "initial_manager_load_ns": 37697310,
+  "abort_rejected": true,
+  "return_manager_load_ns": 37724046,
+  "passed": true
+}

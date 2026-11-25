@@ -1,0 +1,18 @@
+{
+  "kind": "physical-recorded-sweep-validation",
+  "passed": true,
+  "recorded_job": "e0ac322556182145dce29990",
+  "transport": "ssh-wired",
+  "sizes": 25,
+  "total_hashes": 400,
+  "measured_hashes": 350,
+  "warmups": 50,
+  "all_size_medians_identical_to_original": true,
+  "verified_reconfiguration_batches": 16,
+  "verified_PS_DMA_recoveries": 16,
+  "final_profile": "hash",
+  "boot_id": "a76a3c14-078f-4dca-9223-7474f70d55d4",
+  "no_reboot": true,
+  "wifi": "down",
+  "sample_order": "Alternating core order each round; warmup excluded"
+}

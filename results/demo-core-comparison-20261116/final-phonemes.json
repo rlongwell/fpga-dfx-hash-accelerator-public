@@ -1,0 +1,307 @@
+[
+  {
+    "label": "Final encoded live sha",
+    "path": "docs/media/sha3-comparison-architecture.mp4",
+    "start": 201.2,
+    "duration": 4.5,
+    "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+    "phonemes": "n aʊ ɹ ʌ n b oʊ θ ʃ ɑː θ ɹ iː t uː f ɪ f t i s ɪ k s k oːɹ z f ɹ ʌ m ð ə s eɪ m d æ ʃ b oːɹ d",
+    "tokens": [
+      {
+        "id": 4,
+        "label": "n",
+        "start": 201.622,
+        "end": 201.662,
+        "confidence": 0.996
+      },
+      {
+        "id": 53,
+        "label": "aʊ",
+        "start": 201.682,
+        "end": 201.702,
+        "confidence": 0.859
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 201.863,
+        "end": 201.883,
+        "confidence": 0.979
+      },
+      {
+        "id": 33,
+        "label": "ʌ",
+        "start": 201.923,
+        "end": 201.943,
+        "confidence": 0.753
+      },
+      {
+        "id": 4,
+        "label": "n",
+        "start": 202.004,
+        "end": 202.044,
+        "confidence": 0.961
+      },
+      {
+        "id": 26,
+        "label": "b",
+        "start": 202.164,
+        "end": 202.184,
+        "confidence": 0.985
+      },
+      {
+        "id": 49,
+        "label": "oʊ",
+        "start": 202.225,
+        "end": 202.245,
+        "confidence": 0.806
+      },
+      {
+        "id": 52,
+        "label": "θ",
+        "start": 202.385,
+        "end": 202.405,
+        "confidence": 0.899
+      },
+      {
+        "id": 38,
+        "label": "ʃ",
+        "start": 202.506,
+        "end": 202.526,
+        "confidence": 0.978
+      },
+      {
+        "id": 41,
+        "label": "ɑː",
+        "start": 202.626,
+        "end": 202.646,
+        "confidence": 0.706
+      },
+      {
+        "id": 52,
+        "label": "θ",
+        "start": 202.807,
+        "end": 202.827,
+        "confidence": 0.956
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 202.887,
+        "end": 202.928,
+        "confidence": 0.992
+      },
+      {
+        "id": 30,
+        "label": "iː",
+        "start": 202.928,
+        "end": 202.948,
+        "confidence": 0.875
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 203.108,
+        "end": 203.129,
+        "confidence": 0.983
+      },
+      {
+        "id": 46,
+        "label": "uː",
+        "start": 203.189,
+        "end": 203.209,
+        "confidence": 0.945
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 203.329,
+        "end": 203.35,
+        "confidence": 0.992
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 203.37,
+        "end": 203.39,
+        "confidence": 0.961
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 203.43,
+        "end": 203.45,
+        "confidence": 0.973
+      },
+      {
+        "id": 6,
+        "label": "t",
+        "start": 203.47,
+        "end": 203.49,
+        "confidence": 0.978
+      },
+      {
+        "id": 10,
+        "label": "i",
+        "start": 203.49,
+        "end": 203.51,
+        "confidence": 0.96
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 203.591,
+        "end": 203.611,
+        "confidence": 0.991
+      },
+      {
+        "id": 17,
+        "label": "ɪ",
+        "start": 203.671,
+        "end": 203.691,
+        "confidence": 0.956
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 203.751,
+        "end": 203.771,
+        "confidence": 0.99
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 203.771,
+        "end": 203.812,
+        "confidence": 0.937
+      },
+      {
+        "id": 11,
+        "label": "k",
+        "start": 203.872,
+        "end": 203.892,
+        "confidence": 0.994
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 203.952,
+        "end": 203.972,
+        "confidence": 0.279
+      },
+      {
+        "id": 21,
+        "label": "z",
+        "start": 204.133,
+        "end": 204.153,
+        "confidence": 0.981
+      },
+      {
+        "id": 23,
+        "label": "f",
+        "start": 204.213,
+        "end": 204.233,
+        "confidence": 0.99
+      },
+      {
+        "id": 27,
+        "label": "ɹ",
+        "start": 204.233,
+        "end": 204.254,
+        "confidence": 0.951
+      },
+      {
+        "id": 33,
+        "label": "ʌ",
+        "start": 204.254,
+        "end": 204.294,
+        "confidence": 0.324
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 204.314,
+        "end": 204.334,
+        "confidence": 0.989
+      },
+      {
+        "id": 22,
+        "label": "ð",
+        "start": 204.354,
+        "end": 204.374,
+        "confidence": 0.988
+      },
+      {
+        "id": 7,
+        "label": "ə",
+        "start": 204.374,
+        "end": 204.394,
+        "confidence": 0.979
+      },
+      {
+        "id": 5,
+        "label": "s",
+        "start": 204.454,
+        "end": 204.475,
+        "confidence": 0.988
+      },
+      {
+        "id": 44,
+        "label": "eɪ",
+        "start": 204.595,
+        "end": 204.615,
+        "confidence": 0.969
+      },
+      {
+        "id": 13,
+        "label": "m",
+        "start": 204.736,
+        "end": 204.756,
+        "confidence": 0.989
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 204.816,
+        "end": 204.836,
+        "confidence": 0.996
+      },
+      {
+        "id": 36,
+        "label": "æ",
+        "start": 204.876,
+        "end": 204.896,
+        "confidence": 0.896
+      },
+      {
+        "id": 38,
+        "label": "ʃ",
+        "start": 205.017,
+        "end": 205.037,
+        "confidence": 0.983
+      },
+      {
+        "id": 26,
+        "label": "b",
+        "start": 205.097,
+        "end": 205.117,
+        "confidence": 0.963
+      },
+      {
+        "id": 77,
+        "label": "oːɹ",
+        "start": 205.158,
+        "end": 205.178,
+        "confidence": 0.257
+      },
+      {
+        "id": 12,
+        "label": "d",
+        "start": 205.318,
+        "end": 205.338,
+        "confidence": 0.986
+      }
+    ]
+  }
+]

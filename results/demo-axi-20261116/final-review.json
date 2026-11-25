@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "movie_sha256": "d92fb81c805d57b5a179789e37306cbee119362a56b22c271833221fa1b4e563",
+  "movie_bytes": 13622243,
+  "duration_seconds": 244.533333,
+  "frames": 7336,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": 15,
+  "physical_job": "e0ac322556182145dce29990",
+  "new_hardware_tests": false,
+  "picture_checks": {
+    "one_generic_AXI_Stream_input": true,
+    "source_enumeration_removed": true,
+    "narration_led_reveals": true,
+    "BRAM_experiment_retained_later": true,
+    "refinements_sweep_results_and_credits_retained": true,
+    "gain_2_4_and_axes_visible": true,
+    "charcoal_theme_no_browser_chrome": true
+  },
+  "audio_checks": {
+    "chapter_transcription": "final-mix-transcript.json",
+    "acksee_phonemes": "ɐ s ɪ k s t i f ɔːɹ b ɪ t æ k s i s t ɹ iː m f iː d z iː tʃ k ɔːɹ ɪ n ð ə k oːɹ t s æ",
+    "shah_retained": true,
+    "source_list_absent_from_opening": true,
+    "loudness_LUFS": -16.13,
+    "true_peak_dBTP": -1.71,
+    "continuous_music": true,
+    "voice_settings_unchanged": true,
+    "pitch_preserving_playback_rate": 1.06
+  },
+  "code_checks": [
+    "JavaScript syntax",
+    "Five-chapter navigation boundaries",
+    "Generic-input scene excludes upstream sources",
+    "Timeline frame counts and contiguous music edits",
+    "Every edit input checksum verified by renderer"
+  ],
+  "review_frames": [
+    "final-bram.png",
+    "final-compact.png",
+    "final-credits.png",
+    "final-framing.png",
+    "final-input.png",
+    "final-padding.png",
+    "final-quartz.png",
+    "final-results.png",
+    "final-speedup.png"
+  ]
+}

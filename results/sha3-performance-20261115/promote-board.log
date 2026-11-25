@@ -1,0 +1,17 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 /root/promote-sha3-20261115.py /root/sha3-compact-promoted-manifest-20
+261115.json /root/sha3-compact-full-20261115.bit.gz --current /root/sha3-current
+-20261115.json --oxide /root/sha3-oxide-20261115.json --fast /root/sha3-compact-
+20261115.json; printf '\nUART_DONE_330001601261014_%s\n' "$?"
+PROMOTED full bitstream cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40
+PROMOTED manifest 0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3
+ROLLBACK /boot/profiles/hash/before-sha3-fast-20261115
+Reboot the hash profile, then run all three algorithm acceptance tests.
+
+UART_DONE_330001601261014_0
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

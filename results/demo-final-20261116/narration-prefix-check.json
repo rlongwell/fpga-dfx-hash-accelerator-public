@@ -1,0 +1,7 @@
+{
+  "method": "FFmpeg float PCM hash before the resource chapter, prior and revised narration stems.",
+  "end_seconds": 220.2333333333,
+  "prior_sha256": "ad890bb96a476abfcd14f0c78ce14fc71b2042967e1e1010f6ea4417eff3fc0e",
+  "new_sha256": "ad890bb96a476abfcd14f0c78ce14fc71b2042967e1e1010f6ea4417eff3fc0e",
+  "identical": true
+}

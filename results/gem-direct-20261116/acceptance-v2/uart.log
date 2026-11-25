@@ -1,0 +1,1179 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# printf "BOARD_MAC:"; cat /sys/class/net/eth0/address; printf '\nDEMO_CMD_61f51
+814471bd195_%s\n' "$?"
+BOARD_MAC:de:f6:cd:7b:38:e7
+
+DEMO_CMD_61f51814471bd195_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# mkdir /root/hash-net-acceptance-v2; printf '\nDEMO_CMD_9b77d1f8e637864b_%s\n' 
+"$?"
+
+DEMO_CMD_9b77d1f8e637864b_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'from pathlib import Path;Path('"'"'/root/hash-net-acceptance-v2/pa
+ttern-131072.bin'"'"').write_bytes(bytes((i*131+(i>>8))&255 for i in range(13107
+2)))'; printf '\nDEMO_CMD_741cd9ad9c39aa94_%s\n' "$?"
+
+DEMO_CMD_741cd9ad9c39aa94_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'from pathlib import Path;Path('"'"'/root/hash-net-acceptance-v2/pa
+ttern-258048.bin'"'"').write_bytes(bytes((i*131+(i>>8))&255 for i in range(25804
+8)))'; printf '\nDEMO_CMD_8bd446efc6bda5ae_%s\n' "$?"
+
+DEMO_CMD_8bd446efc6bda5ae_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'1032209'"'"', '"'"'--session'"'"', '"'"'4104813361'"'"', '"'"'--
+pattern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-258048.bin'"'"']);open('
+"'"'/root/hash-net-acceptance-v2/replay-maximum-pattern.status'"'"',"w").write(s
+tr(r.returncode)+"\n")' >/root/hash-net-acceptance-v2/replay-maximum-pattern.log
+ 2>&1 </dev/null & echo JOB_PID:$!; printf '\nDEMO_CMD_26f54420e1544691_%s\n' "$
+?"
+JOB_PID:249
+
+DEMO_CMD_26f54420e1544691_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-maximum-pattern.status ]; then pri
+ntf "JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-maximum-pattern.status; e
+lif kill -0 249 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf 
+'\nDEMO_CMD_6c99c6df224c4f90_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_6c99c6df224c4f90_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-maximum-pattern.log'"'"',"rb"
+).read())).decode())'; printf '\nDEMO_CMD_362bc883b760a9bb_%s\n' "$?"
+LOG_PAYLOAD:H4sIALMAAAAC/3VUy3LkNgy8+ytUPCVV8prvx+S6h+SWP1CBJDijWo2kojTe8rr87wHH41n7kJsIgE2gu6FXhs847+zQsbTMZTxeKuzjMrO+BSq+J84rpL2Fzku+hiquE7y0yLZTfRq2E0hjW8oKLpGrokQSzmSfIhgrwUXkJRbh0PvAlQ4l8OCEQi+pskie0LvgXWygK9R9hOkTaoyoA10q1gBEx30y1qPTSSBH6R0qISArXwoWr4UT4IOlB11MhXuODfWE04r1E6gKxkctjRRBGsRUAIIwycUQglMpqSIspGCiAFkQrPQ6ZWOCSPR6KbqB/qywfkXVIgDmyGMED1HlTPPzpI3WSsrIrbVOiaJ1FhiEMs6KZGgAQlYgteOfCZgWyMO8EaxyTiuijZLjvGM9Yx5hxwGm41LH/XQexkxl8u3h9UNSUgkyiXRT7S4a23DbmsYHLbj2QikrejbhfNxP7CA4tclDz74ii6/A22UiQ7DlBzvs9YL91QcXalT4nmGtS2UH3lOrR6rdhnuWYFPCdcf86aVmtCG9pAmphFgionsWF6jvs2sdfJCEtsJOk89DfNlbpTSe2u9ZHo+4tbZi0iH5KDUpFo11iSNxjUbagAW8NWQNx6UlpYwktZQLBr3mMkLJEiR7e/gbtlO3YX0eE3bUdaVOuz/+/ed7J536869uWo6H7ukZ6hN9Pf16icvjia58o9Nvftp+bDsNlf9njdZtgHWk4JW7juUzDGtdYqt7vc/TMWEgKS9pDlViMsqRn4pz3pMTeMFEU8gAmjsdaVKTJKJEYVWy5Giv4eP5O7mdoCVSt7VtgnRNQjpHSD9wbg5iZT3CI3XUwnuFeVuXeu1mWhJMjxkbNy15N0hLkv/Vl+C7HwWFPpzVSXGb9QpbsG63inihvaUdGn81BpopaS3a7wZmOFLi9xrw/tbH0Gh/jzV/cNk31gkF54TXJHlvGOdhH2lVhorHq+M/GH/GOpaxufAaeXt7+A8rJVGtCgUAAA==
+
+DEMO_CMD_362bc883b760a9bb_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'ethernet'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--
+length'"'"', '"'"'1048593'"'"', '"'"'--session'"'"', '"'"'544458836'"'"', '"'"'-
+-peer-mac'"'"', '"'"'00:d8:61:0a:97:21'"'"']);open('"'"'/root/hash-net-acceptanc
+e-v2/ethernet-stopped-control.status'"'"',"w").write(str(r.returncode)+"\n")' >/
+root/hash-net-acceptance-v2/ethernet-stopped-control.log 2>&1 </dev/null & echo 
+JOB_PID:$!; printf '\nDEMO_CMD_4f2c32ce523e47ef_%s\n' "$?"
+JOB_PID:284
+
+DEMO_CMD_4f2c32ce523e47ef_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if grep -q '"event":"ready"' /root/hash-net-acceptance-v2/ethernet-stopped-con
+trol.log; then printf "CONTROL_PID:"; pidof gem_board; fi; printf '\nDEMO_CMD_d8
+a7e0a4a6e53996_%s\n' "$?"
+
+DEMO_CMD_d8a7e0a4a6e53996_0
+# 
+# exit
+macb e000b000.ethernet eth0: Link is Down
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if grep -q '"event":"ready"' /root/hash-net-acceptance-v2/ethernet-stopped-con
+trol.log; then printf "CONTROL_PID:"; pidof gem_board; fi; printf '\nDEMO_CMD_e9
+880608fd6cc894_%s\n' "$?"
+CONTROL_PID:302
+
+DEMO_CMD_e9880608fd6cc894_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# kill -STOP 302; printf '\nDEMO_CMD_a2f28cfa1493831a_%s\n' "$?"
+
+DEMO_CMD_a2f28cfa1493831a_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# grep State /proc/302/status; printf '\nDEMO_CMD_f805a5a37fc1acf2_%s\n' "$?"
+State:	T (stopped)
+
+DEMO_CMD_f805a5a37fc1acf2_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# grep State /proc/302/status; printf '\nDEMO_CMD_852494b3ef37f727_%s\n' "$?"
+State:	T (stopped)
+
+DEMO_CMD_852494b3ef37f727_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# kill -CONT 302; printf '\nDEMO_CMD_30dde667c02df45e_%s\n' "$?"
+
+DEMO_CMD_30dde667c02df45e_0
+# 
+# exit
+macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/ethernet-stopped-control.status ]; then p
+rintf "JOB_RC:"; cat /root/hash-net-acceptance-v2/ethernet-stopped-control.statu
+s; elif kill -0 284 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; pri
+ntf '\nDEMO_CMD_b8e4907632fb0a7a_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_b8e4907632fb0a7a_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/ethernet-stopped-control.log'"'"',"r
+b").read())).decode())'; printf '\nDEMO_CMD_5be6d6d2967dba94_%s\n' "$?"
+LOG_PAYLOAD:H4sIAMQAAAAC/3VUyY7jNhC991cIuiQB1GPui+c6h+SWPxCKZNEWRpYESu6kZ9D/nqLci3uAnGy9Kr56tR7mZTv8eA7z4Qzr+bBuULYv6/nYjMOEjXDHJsL029bMC07NYSlzPAgrD/GSqsOxmeZmvcZzk4cRH362+ITT1h6bNs5THk7XAtswT21XgYI3w2WBuFXoMqcdwu2MZcIdIwHbEPv1DEKbajScCWQySx651cnFANoIsAFZDplbdM4zqXz2zFsu0QnyzIJFdNY7GyrpQkkNMN6xhoDK06NsNECwzEVtHFoVOTIUzqLkHJJ0OWN2ilsOzhsKaEPMzDGsrGccFyx3pNJrF5TQgnuhEWMG8FxHG7z3VsYoMzcQvQ4cREYwwqmYtPY8UvScVSX9p8DymVVxD5gCCwEcBJkS5c+i0kpJIQIzxljJs1KJo+dSW8OjpgSIWYJQlt0XYJwh9dNKtNJ6Ybw3ZBymDcsF0wAb9jCe5jJs50s/JHITLx9NbQtCem67177dta1dcV1rn4+kSmnnpOnaEafTdm6PnCmnvezaz9T8M/N6HSvR/L09buWK3T4IV1LKXddiKXNpj6wjrSfyXfs3K0EQIy4bprtIddb6+BxHJBflmOZWat+1YYZyy9/U/J2W1nZUnI0KMPXhecMbZRpOuFZdnrrHuAqRRsqjdUkzKallFrgx2ascUTBjfUKlhU5CRYiSqcQkJsm9b++TPOGFMiz/9rnApUbizFH47QMQWjLDbj5x7fe0b4oImZ/o+1rFC0XASgWhKm/1V8r7OOkCPaRU60Sk+9tl3ptMT7myykka5j3wL7jiNXp9f1tfwpmvg9+1eTlBTzL7ACu+8xjlXh7+pMPRrFiehojNfkAwNb///de3Rgr7x9dmnE/H5vAE5UD/9lvzWG/NF/q6vxikd6O+pf85FsvawzIQuI9Hs6ukcxSq38/3jjUt19QCJyJDmUOkDtPOZGtpJqViGaMWQnhQzKqAxuooEAVyI6OhrXUK3sK/z0/DvTHu9TTVmWvqlNJ3gPgdp7ole3UeSVGFtwLTusxlVzPOEcbHhLU21fi+A9VIOy4/gbed4wS9LU8j+GuuO23Gsr56hCvdJroTw49agX30bd3mC0xwIsPHqrPuVUdfy37DFF1Mr7padWLBKeJupPXqh6nfBjoHfcHTvtNvFaf5G/JQF21HXl4e/gO8hCWsPQYAAA==
+
+DEMO_CMD_5be6d6d2967dba94_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'0'"'"', '"'"'--session'"'"', '"'"'4145051307'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-compact-0.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-0.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_4350c7d6d0535558_%s\n' "$?"
+JOB_PID:339
+
+DEMO_CMD_4350c7d6d0535558_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-0.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-0.status; elif kill -0 
+339 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+64652b1b1157e523_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_64652b1b1157e523_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-0.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_f3536ce90329940f_%s\n' "$?"
+LOG_PAYLOAD:H4sIAMwAAAAC/3VUy47jNhC8z1cQuiQBPGu+STnXHJJb/kBokk1bWFkSKHqC2cX8e5oar3fmsDepulX9qtJxWevx22tYjhfYLsetQqlftsuJTeOMTPoTizD/Vtmy4syOa1niUUl3jNfUEk5sXth2ixeWxwmfvnf4gnPtTqyLy5zH861AHZe5OzSg4HvgukKsDbouaYcKrhO8NoTK1zEO2wWksS1kBZfIVVYiCmeSjwGMleAC8hyycOh9z5Xuc897JxR6SZlZ8oje9d6FRrrSSCNMH1hDQN3TR9kagOC4j8Z6dDoK5Ci9QyUEJOVzxuy1cAJ8b6mgCzFzz7GxXnBasXwgVb3xQUsjRS8NYswAvTDRhb7vnYpRZWEh9iYIkBnBSq9jMqYXkarnrBvpfwXWz6xa9IAp8BDAQ1Ap0fw8aqO1kjJwa61TImudBPZCGWdFNDQAMSuQ2vGPC5gWSMO8Ea1y1hvBOQXHuWK5Yhqh4gDTeSljvVyHMVGafPt5UroSJDrS/WqPo3Ubblu78UkLbbgRirtDN+F8rpfuxA/dZ07xmXK7TSSFbvnanWq54WFXwI1aFP7QYSlL2TnG+Uy52/CIEm2MuFZMe7yJa4ivcUIKSqofFijvs0qulZAHWkKlQechvNaWJJTgjuA0nnFrvYDLOdrsSVWYnLWGFKedscCtSNbKbDynKyXUKpB0wMvkOehAqNdKQ/f29Dc5iG1YXsaIbHcSJvb7v//8xZRVf/zJpuV8YscXKEd62k333Ez3hd4+WocmrTRP+oVr1m2AdSRwXxjr0hUG8mVoed8f87BOGIjKy8hR5RCNciSf7Jz3SmmeMRopZQ+aOx3QOhMlokRhVbQkYE8D3cs/9sqEF0rdXdquwNrd6D1A/IpzE0yX1zM8U0cNrgXmbV3K3s20RJieE7bdtOBDFS1IclefwHf5CYJ+CIlJcZ91p81YtntGuJFNyTLjt7YBwbUnF7S/C8xwpsBP1Te5730Mbe13J2hhfEsvSCw4R9yDJLhhnIc6kjOGgudd4D82/oJlzGOT3o68vT39D2m712JGBQAA
+
+DEMO_CMD_f3536ce90329940f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'1'"'"', '"'"'--session'"'"', '"'"'741608176'"'"', '"'"'--pattern
+'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/ro
+ot/hash-net-acceptance-v2/replay-compact-1.status'"'"',"w").write(str(r.returnco
+de)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-1.log 2>&1 </dev/null & 
+echo JOB_PID:$!; printf '\nDEMO_CMD_0446cfe2358eaec1_%s\n' "$?"
+JOB_PID:374
+
+DEMO_CMD_0446cfe2358eaec1_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-1.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-1.status; elif kill -0 
+374 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+5f0252e8c294a883_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_5f0252e8c294a883_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-1.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_10a92acbeb86bc6c_%s\n' "$?"
+LOG_PAYLOAD:H4sIANMAAAAC/3VUy3LkNgy8+ytUOiVV8prvx+S6h+SWP1CBJKhRrUZSURpveV3+94DyeNY+5CaiwSbQaOi1xWec9/bUtHGZ8zhcC+zjMrddDRR8By4rxL2GLks6QgXXCV5qZNspP/bbGYQ2FTKcCWQySx651cnFANoIsAFZDplbdM4zqXz2zFsu0QnKzIJFdNY7GyrpCmUfYfrEGgIqT5ey0QDBMhe1cWhV5MhQOIuSc0jS5YzZKW45OG/oQRtiZo5hZT3jtGL5RCq9dkEJLbgXGjFmAM91tMF7b2WMMnMD0evAQWQEI5yKSWvPI72es6qkPwusX1kV94ApsBDAQZApUf8sKq2UFCIwY4yVPCuVOHoutTU8amqAmCUIZdlnAaYFUj9vRCutVUYYReA471gumEbYsYdpWMq4ny/9mChNvD28foyUpgSJhnSb2n1o7YbbVmd8soob5rg1XTvhPOzn9sS79isl/8q4XSdyQrv8aE97uWJ3GOBKFXLXtVjKUtoT66jGgXK3/o4SbYy47piOQ/VWH1/ihAQK37VhgfLeqtDkAyJbYac+5z687DWJS86s6No0DrjVWjQJpown69DMVXYIQYvgHFMKExofrQUDxoGhe84wn6MCo3PWkqNNrH17+Bu2c7NheR4jNlRqofKaP/7953sjvfvzr2ZahlPz9Azlib6efr2E5fFMV77R6bcodRu2nfpJ/7M069bDOlLwEKxp0wX6tSyh5r3e+2lariFKJyJDmUPU0pJ7srXOSamox6iFEB4UsyqgsToKRIHcyGjIv07Bx/N3XRvumLG3Ja1TaOrc6Bwg/sC5+qXN6wCPVFEN7wXmbV3KUc20RJgeE1ZtKnh3RQXJ7fJL8N19nEIfRmoEv/V60GYs2y0jXGlLaWPGX1UBzpSjJag/F5hhIOC36Vl3q6Ovst8WQXrFXFdVJxacIx4gGa4f534faTH6gsPh7w/Fn7GMeazWOyJvbw//AaitiKX4BAAA
+
+DEMO_CMD_10a92acbeb86bc6c_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'135'"'"', '"'"'--session'"'"', '"'"'2684557093'"'"', '"'"'--patt
+ern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'
+/root/hash-net-acceptance-v2/replay-compact-135.status'"'"',"w").write(str(r.ret
+urncode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-135.log 2>&1 </dev/
+null & echo JOB_PID:$!; printf '\nDEMO_CMD_fb10763c7659a7a0_%s\n' "$?"
+JOB_PID:409
+
+DEMO_CMD_fb10763c7659a7a0_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-135.status ]; then printf 
+"JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-135.status; elif kill
+ -0 409 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_
+CMD_af7f676401fd1e84_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_af7f676401fd1e84_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-135.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_6af6329abf79cb2d_%s\n' "$?"
+LOG_PAYLOAD:H4sIANoAAAAC/3VUy3LkNgy8+ytUOiVV4zXBNyfXPSS3/IEKJMEZ1cqSipK95XX53wOOx7P2ITcRAJtAd0OvPT3TvPfHrk/LXMbTU8V9XOb+0AKV3hOPK6a9hR6XfAlVWid8aZFt5/o0bGeUxraUBSFJqKIggTPZp4jGSnSRRIkFHHkfhNKhBBEcKPKSK4sUibwL3sUGumLdR5w+ocZIOvClYg1idMInYz05nYAESe9IAWBWvhQqXoMD9MHygy6mIryghnqmaaX6CVQF46OWRkKQhigVxAAmuRhCcColVcBiCiYCykJopdcpGxMg8eul6Ab6s+L6FVVDQMpRxIgeo8qZ5xdJG62VlFFYa52ConUGCqCMs5AMD8DICqV24jMB04J5mDeGVc56wW1ycpx3qo+UR9xpwOm01HE/Pw5j5jL5dvf6ISmrhJlFuqp2E63faNuaxkdpvTbGiaAO/UTzaT/3R27p0H9Fha+g29PEZuiXH/1xr090uHjgiZsEf+ip1qX2R3HgNk9cuw23LMOmROtO+fpKM9iQXtJEnLacjwvW93mlsN7KAxOx87DzEF/2VgQKhONwHk+0tW40lmwgFzLSpYwRkpZASmfWCpSQQmBJ1pKFrJhhEEaBizIawZr4gP3b3d+4nbuN6vOYqONmKzfY/fHvP987rdSff3XTcjp2D89YH/jr4ddLXO7PfOUbn37T0lZi23me/D+bs24DriMHL5R1fX7EYa1LbHWvt3m6Hgwm5WUSpEpMRjm2UHHOe6W0KJSMlDKgFk5Hss4kSSQJrEqWTew1fjx/47UDr1jf7qZS15Tjc8T0g+Zmmr6sJ7znjlp4rzhv61Iv3UxLwuk+U+OmJW++aEm2vPoSfLcgcOjDTJ2E66wX2EJ1u1bEJ15VXpvxV2MAhPa8Ce0PgzOeOPHb+eJw7WNotF+3QUvBbmusMwrNiS5JttwwzsM+8nYMlU4Xk38w/kx1LGMz3yXy9nb3H4H/7tf9BAAA
+
+DEMO_CMD_6af6329abf79cb2d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'136'"'"', '"'"'--session'"'"', '"'"'1838972624'"'"', '"'"'--patt
+ern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'
+/root/hash-net-acceptance-v2/replay-compact-136.status'"'"',"w").write(str(r.ret
+urncode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-136.log 2>&1 </dev/
+null & echo JOB_PID:$!; printf '\nDEMO_CMD_7a59f4c457539fd0_%s\n' "$?"
+JOB_PID:444
+
+DEMO_CMD_7a59f4c457539fd0_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-136.status ]; then printf 
+"JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-136.status; elif kill
+ -0 444 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_
+CMD_7a4cc4e7d92dd938_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_7a4cc4e7d92dd938_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-136.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_517d6eb63874f828_%s\n' "$?"
+LOG_PAYLOAD:H4sIAOEAAAAC/3VUy27jOBC85ysIXXYWcMZ8P7zXOeze9g+EJtm0hZElgZKzyAzy79tUnExymJtU1Sqyu6t0nJft+OM5zscLrJfjukHdvq6XExuHCZn0J5Zg+mNj84ITOy51Tket1DFdcys4sWlm6y1dWBlGfPjZ4RNOW3diXZqnMpxvFbZhnrpDAyq+EtcF0tag65x3qOIywnND6PhtSP16AWlso6zgErkqSiThTPYpgrESXEReYhEOvQ9c6VACD04o9JIqi+QJvQvexSa6UEsDjB9UY0Qd6KNiDUB03CdjPTqdBHKU3qESArLypWDxWjgBPlg60MVUuOfYVC84Llg/iKpgfNTSSBGkQUwFIAiTXAwhOJWSKsJCCiYKkAXBSq9TNiaIRKeXopvofxWWz6paBMAceYzgIaqcqX+etNFaSRm5tdYpUbTOAoNQxlmRDDVAygqkdvzjAMYZcj+tJKucI05oIodpw3rFPMCGPYznuQ7b5doPmcrky6+V0pYg05LuW3tfWrfiurYdn4RXPjhppT50I07n7UKYsofus6r4LLreRjJDN3/vTlu94WH3wG1tcocOa51rd+IHuuaZatf+nSXZlHDZMN9PaQbr03MakWhvDl2cob72K7m0geQW2KjZqY/PWysSSnAnD10ezri223Daf8pkA5Wi1l7korPhJWVfrAMLVoPHoDXtL+ekQORgivfeAidYhu7l4W9KEVuxPg0J2Z4mzOzLv/98Y9r6P/9i43w+seMT1CM97cF7bMH7Sm8f40O9btRP/k1ylrWHZSBwHxnr8hV6ymZsdT/f+2GdMJCUl4mjKjEZ5chCxTnvldK8YDJSygCaOx3ROpMkokRhVbJkYq/h7fj3uTIRTND3pLY9sLY5eo+QvuPUTNOV5QyPdKMGbxWmdZnrfptxTjA+ZmyzaeS7LxpJllefwFcLCoLezMSkuPe6yxas670i3iiqFJvhR5uA4NpTEtofBiY4E/HL+fxwv0ffxv6KaWWtbERFUsEp4U6S5fph6reB0tFXPO8mf5v4E9ahDM18O/Ly8vA/7YkXCkoFAAA=
+
+DEMO_CMD_517d6eb63874f828_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'137'"'"', '"'"'--session'"'"', '"'"'1520716821'"'"', '"'"'--patt
+ern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'
+/root/hash-net-acceptance-v2/replay-compact-137.status'"'"',"w").write(str(r.ret
+urncode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-137.log 2>&1 </dev/
+null & echo JOB_PID:$!; printf '\nDEMO_CMD_1293f70ab1e7604a_%s\n' "$?"
+JOB_PID:479
+
+DEMO_CMD_1293f70ab1e7604a_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-137.status ]; then printf 
+"JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-137.status; elif kill
+ -0 479 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_
+CMD_f3f6157bc17ed31f_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_f3f6157bc17ed31f_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-137.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_8159d4258f25627d_%s\n' "$?"
+LOG_PAYLOAD:H4sIAOgAAAAC/3VUy27cMAy85ysMn1rAafR+bK89tLf+gUFJlNeo1zZkb4o0yL+X2my2yaEn20NqRHKGfm7xEee9PTRtXOY8DucC+7jMbVeBgq+B0wpxr9BpSReo4DrBU0W2nfJjvx1BaFNDhjOBTGbJI7c6uRhAGwE2IMshc4vOeSaVz555yyU6QZlZsIjOemdDJV2h7CNM71hDQOXpUDYaIFjmojYOrYocGQpnUXIOSbqcMTvFLQfnDV1oQ8zMMaysR5xWLO9IpdcuKKEF90IjxgzguY42eO+tjFFmbiB6HTiIjGCEUzFp7Xmk23NWlfR3gfUjq+IeMAUWAjgIMiXqn0WllZJCBGaMsZJnpRJHz6W2hkdNDRCzBKEsez+AaYHUzxvRSms5U95RcJx3LCdMI+zYwzQsZdyPp35MlCZe7p7fJCWVIJFIV9VuorUbblvV+MC1YJYbJ3jXTjgP+5Ewabv2Iyv/SLqdJzJDu/xqD3s5Y3fxwJmK5K5rsZSltAfWUZkD5W79LUq0MeK6Y7reUg3Wx6c4IYWd6dqwQHntV3AtOSEr7NTs3IenvSZxyZkVXZvGAbdaTYiY0fiQRLTWM0aqqQCKHp6pRPrmbKOVwEzWNP8okOQWXiihGGcutS9332E7NhuWxzFiQ8UWKrD59PPHt0Yz+flrMy3DoXl4hPJAbw9/nsJyf6QjX+jr31jqSmw79ZP+sznr1sM6EngZWdOmE/RrWULNe77107RcQ5RORIYyh6ilJQtla52TUrGMkaoXHhSzKqCxmhpCgdzIaMjETsHb9be5NtxpJ66bWnVoqnL0HSD+wrmaps3rAPdUUYX3AvO2LuVSzbREmO4T1tnU4M0XNUiWlx/AVwtygt7M1Ah+7fVCm7Fs14xwplWltRn/1AmQtR1tQv3DwAwDBf45n3XXOvo69us2KCN1DRSSv+Ac8RIky/Xj3O8jbUdfcLiY/G3ij1jGPFbzXZCXl7u/qdlSuv0EAAA=
+
+DEMO_CMD_8159d4258f25627d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'65537'"'"', '"'"'--session'"'"', '"'"'169677616'"'"', '"'"'--pat
+tern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"
+'/root/hash-net-acceptance-v2/replay-compact-65537.status'"'"',"w").write(str(r.
+returncode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-65537.log 2>&1 <
+/dev/null & echo JOB_PID:$!; printf '\nDEMO_CMD_5a1f931e2962a6d1_%s\n' "$?"
+JOB_PID:514
+
+DEMO_CMD_5a1f931e2962a6d1_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-65537.status ]; then print
+f "JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-65537.status; elif 
+kill -0 514 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nD
+EMO_CMD_c60daab2e6084d29_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_c60daab2e6084d29_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-65537.log'"'"',"rb").
+read())).decode())'; printf '\nDEMO_CMD_027a696d702cec80_%s\n' "$?"
+LOG_PAYLOAD:H4sIAO8AAAAC/3VUy3KcQAy8+ysoTkkVjuf92FxzSG75A0ozo2GpsEANrFOOy/8ezXq9sQ+5gSRarVaL5xYfcd7bQ9PGZc7jcC6wj8vcdjVQ8DVxWiHuNXRa0iVUcJ3gqUa2nepjvx1BaFNThjOBTGbJI7c6uRhAGwE2IMshc4vOeSaVz555yyU6QZVZsIjOemdDBV2h7CNM71BDQOXpo2w0QLDMRW0cWhU5MhTOouQcknQ5Y3aKWw7OG2poQ8zMMayoR5xWLO9ApdcuKKEF90IjxgzguY42eO+tjFFmbiB6HTiIjGCEUzFp7Xmk7jmrCvq7wPoRVXEPmAILARwEmRLNz6LSSkkhAjPGWMmzUomj51Jbw6OmAQhZglCWvRdgWiD180aw0lrrtbKUHOcdywnTCDv2MA1LGffjqR8TlYmXu+e3ldKWINGSrlu7La3dcNvqjg/ceGOJgOnaCedhP7YHo7W0XfsRln9E3c4TuaFdfrWHvZyxu5jgTCy561osZSntgXXEc6Darb9lCTZGXHdMtz7VY318ihNSgbDKEpWwQHmdWnrnHCGtsNPIcx+e9lrHJWdWdG0aB9wqpQTeBOZl4l4LhU4KFXWQkQdNO47ZyOS4ZMwwoYRgkHQQMgqkdgoQVPty9x22Y7NheRwjNsS4EMvm088f3xot3eevzbQMh+bhEcoDPT38eQrL/ZE++UJv/7Sph7HtNFL6z/2sWw/rSMGLbk2bTtCvZQm17vk2T9NyDVE6ERnKHCIpRUbK1jonpWIZoxZCeFDMqoDGahoFBXIjoyErOwVv7W/SNtwpK6/3WpfR1PXRe4D4C+dqnTavA9wToxreC8zbupQLm2mJMN0nrNrU5M0cNUnGlx+Cr0bkFHrzVCP4ddYLbMayXSvCmQ6Wjmf8UxXgTDm6h/qfgRkGSvzzP+uuPPoq+/UmlNVSdFV1QsE54iVJvuvHud9HupG+4HCx+pvij1jGPFYHXiIvL3d/AeFeZ1wDBQAA
+
+DEMO_CMD_027a696d702cec80_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'compact'"'"', '"'"'--le
+ngth'"'"', '"'"'1048593'"'"', '"'"'--session'"'"', '"'"'4166404633'"'"', '"'"'--
+pattern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('
+"'"'/root/hash-net-acceptance-v2/replay-compact-1048593.status'"'"',"w").write(s
+tr(r.returncode)+"\n")' >/root/hash-net-acceptance-v2/replay-compact-1048593.log
+ 2>&1 </dev/null & echo JOB_PID:$!; printf '\nDEMO_CMD_f691e5d78cbce08c_%s\n' "$
+?"
+JOB_PID:549
+
+DEMO_CMD_f691e5d78cbce08c_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-compact-1048593.status ]; then pri
+ntf "JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-compact-1048593.status; e
+lif kill -0 549 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf 
+'\nDEMO_CMD_cc9a7ee26e680ec3_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_cc9a7ee26e680ec3_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-compact-1048593.log'"'"',"rb"
+).read())).decode())'; printf '\nDEMO_CMD_ec28f963aa3d2a36_%s\n' "$?"
+LOG_PAYLOAD:H4sIAPYAAAAC/3VUy3LkNgy8+ytUOiVV8prvx+S6h+SWP1CBJKhRrUZSURpveV3+94DyeNY+5CY2wCaAbui1xWec9/bUtHGZ8zhcC+zjMrddBQq+By4rxL1ClyUdUMF1gpeKbDvlx347g9CmhgxnApnMkkdudXIxgDYCbECWQ+YWnfNMKp8985ZLdIIys2ARnfXOhkq6QtlHmD6xhoDK06VsNECwzEVtHFoVOTIUzqLkHJJ0OWN2ilsOzht60IaYmWNYWc84rVg+kUqvXVBCC+6FRowZwHMdbfDeWxmjzNxA9DpwEBnBCKdi0trzSK/nrCrpzwLrV1bFPWAKLARwEGRK1D+LSislhQjMGGMlz0oljp5LbQ2PmhogZglCWfZ5ANMCqZ83opXWOC+co+A471gumEbYsYdpWMq4ny/9mChNvD28fkhKKkEikW6q3UVrN9y2qvFJcWMUU0bKrp1wHvZze+JMOe0J+MrMvxJv14kM0S4/2tNertgdPrhSodx1LZaylPbEOip1oNytv0eJNkZcd0yfXqpG6+NLnJBSFKnCbNeGBcp774ok8lp1NJWdOp/78LLXTC45s6Jr0zjgVsvypB3jKkQylEfrkmZSkmAWqM/sVY4omLE+odJCJ6EiRMlUYhKT5N63bw9/w3ZuNizPY8SGqi5UafPHv/98b7SVf/7VTMtwap6eoTzR19Ovl7A8nunKNzr9nk/dj22nptL/rNG69bCOBB6za9p0gX4tS6h5r/d+mpZrKtCJyFDmELW05KdsrXNSKpYxaiGEB8WsCmisjgJRIDcyGnK0U/Dx/H24DXdSi9vaVkGaKiGdA8QfOFcHtXkd4JEqqvBeYN7WpRzVTEuE6TFhnU0N3g1Sg+R/+QV89yMn6MNZjeC3Xg/ajGW7ZYQr7S3t0PirTuDwhTX1dwMzDBT4vQasu9XR17HfVkMpZWp6QWLBOeIRJO/149zvI61KX3A4HP8x8WcsYx6rCw/k7e3hP/p/RmYKBQAA
+
+DEMO_CMD_ec28f963aa3d2a36_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'1'"'"', '"'"'--session'"'"', '"'"'162740850'"'"', '"'"'--pattern'"
+'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/root
+/hash-net-acceptance-v2/replay-oxide-1.status'"'"',"w").write(str(r.returncode)+
+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-1.log 2>&1 </dev/null & echo J
+OB_PID:$!; printf '\nDEMO_CMD_1e754a8e9ce62dc2_%s\n' "$?"
+JOB_PID:584
+
+DEMO_CMD_1e754a8e9ce62dc2_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-1.status ]; then printf "JOB
+_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-1.status; elif kill -0 584 
+2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_331e
+e24c156829da_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_331ee24c156829da_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-1.log'"'"',"rb").read()
+)).decode())'; printf '\nDEMO_CMD_12afe1226a5563ed_%s\n' "$?"
+LOG_PAYLOAD:H4sIAP0AAAAC/1VUy27bMBC85ysEnVrAafh+uNce2lv/QFiSS1moLAmUnDYN8u9dKo6b3MSZ5XAfs3pu8RGnrT02bZynPPSXAtswT+2hAgUrMf8ZElbgPKcdKLiM8FSRdaPo2K0nENpUynAmkMkseeRWJxcDaCPABmQ5ZG7ROc+k8tkzb7lEJygyCxbRWe9sqKILlG2A8Z0qtwKyTsqpkKPIjqPRaIBlT0e0IjoVLWrDXJbaZEDHrQkiqSizEUxU1ROOC5Z3otJrF5TQgnuhEWMG8FxHG7z3Vka6yg1ErwMHkRGMoEeS1p7HSG9kVUV/F1g+qiruAVNgIYCDIFOi+llUWikpRGDGGCt5Vipx9Fxqa3jUziIpSxDKsvcNGGdI3bSSrHRKS6Y9kcO0YTljGmDDDsZ+LsN2OndDojDxcvf8NlCaEiQa0nVqt6G1K65rnfCRG2EVc5od2hGnfjsRdGg/SvKPiutl3Ehi/tUet3LBw26AC2XI3aHFUubSHklumHqKXbsbS7Ix4rJh2g/VWV18iiNW0phDG2Yor7VyQf0njQU2KnTqwtO2R0nOrDi0aehxrclo6pgynryTMavsEIIWwTmmFCY0PloLBowDQ/ecYWQVBUbnrCVHm1j7cvcd1lOzYnkcIjaUa6H8mk8/f3xryEmfvzbj3B+bh0coD/T18PcpzPcnuvKFTv+7Utdh3aig9H5n4nxeIG77NNcOloHAvWNNm87QLWUONe75Vg+ZXEOUTkSGMoeopSX7ZGudk1JRjVELITwoZlVAYzUZHwVyI6MhAzsFb8/fGttw8rO/bmkdQ1MHR+cA8RdO1TBtXnq4p4wqvBWY1mUuezbjHGG8T1h7U8mbLSpJdpcfwFf7cYLenNQIfq11l81Y1mtEuORcV2b4WzvAmXK0BfXvAhP0RPx3PTtc8+hq218xxblTlShIKjhF3ElyXDdM3TbQZnQF+93gbx1/xDLkoXpvR15e7v4BCruT+vcEAAA=
+
+DEMO_CMD_12afe1226a5563ed_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'135'"'"', '"'"'--session'"'"', '"'"'4090811163'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-oxide-135.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-135.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_6e18d14519426739_%s\n' "$?"
+JOB_PID:619
+
+DEMO_CMD_6e18d14519426739_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-135.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-135.status; elif kill -0 
+619 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+2bd5ae51033b6f1d_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_2bd5ae51033b6f1d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-135.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_dd60cd0482090bce_%s\n' "$?"
+LOG_PAYLOAD:H4sIAAQBAAAC/1VUy3LcOAy8+ytUOm2q5Jjvx+x1D8lt/0AFkqBGFY2kojTeOC7/+4LKeGLfhgDUALob89riM857e2rauMx5HK4F9nGZ264GCtbE8nNMWAOXJR2BgusELzWy7VQd++0MQpuaMpwJZDJLHrnVycUA2giwAVkOmVt0zjOpfPbMWy7RCarMgkV01jsbKugKZR9h+oDKrYCsk3Iq5Ciy42g0GmDZ0xOtiE5Fi9owl6U2GdBxa4JIKspsBBMV9YzTiuUDqPTaBSW04F5oxJgBPNfRBu+9lZE+5Qai14GDyAhGUJOktecxUo+sKuh/BdbPqIp7wBRYCOAgyJRofxaVVkoKEZgxxkqelUocPZfaGh61s0jIEoSy7CMB0wKpnzeCldYr6i8oOc47lgumEXbsYRqWMu7nSz8mKhNvD6/vgpJKkEikm2p30doNt60qfFLMM8c5N7JrJ5yH/dyeaKSu/YzKP4Nu12knlOVHe9rLFbvDA1cakruuxVKW0p5YR2MOVLv19yzBxojrjunWpdqrjy9xwpo2pmvDAuX3woI7oqsjJnbadu7Dy35USc4shdM44FbHUZCT5imjFjYmCDwqwVGqRGRxyQRjkKMxaHiSRDFnWnIbRNCMRHEe2reHb7Cdmw3L8xixoWkLTdj89e/3fxqj5Je/m2kZTs3TM5Qn+vX06yUsj2f65Cu9/vBSb2LbaaH08XDiclkh7oekWw/rSMGDs6ZNF+jXsoRa93rfh5yuIUonIkOZQ9TSkoeytc5JqVjGqIUQHhSzKqCxmtyPAknBaMjFTsF7+zuxDXfCs9upViGaKh29A8QfOFfXtHkd4JEmquG9wLytSzmmmZYI02PCyk1N3o1Rk+R5+Sn424OcQu9uagS/7XrAZizbrSJcc653M/6qDHCmHJ1C/YuBGQZK/LF+nf2Yo6+0386B7km6rrJOKDhHPJLkuX6c+32k8+gLDofL3xl/xjLmsbrviLy9PfwPTj2TQ/wEAAA=
+
+DEMO_CMD_dd60cd0482090bce_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'136'"'"', '"'"'--session'"'"', '"'"'3327451882'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-oxide-136.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-136.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_229c2c45aae4f8b8_%s\n' "$?"
+JOB_PID:654
+
+DEMO_CMD_229c2c45aae4f8b8_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-136.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-136.status; elif kill -0 
+654 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+7d80091eaa2d85dd_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_7d80091eaa2d85dd_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-136.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_6dca0640b062c11d_%s\n' "$?"
+LOG_PAYLOAD:H4sIAAwBAAAC/1VUy3LkNgy8+ytUOiVV4zXfj8k1h+SWP1CBIDijWo2kojROvC7/e8DZsde+iQDYBLobeu3pmea9P3Y9LnMZT9cK+7jM/aEFKrXE8t+YqQUuS74FKq0TvLTItnM1DtsZlHUt5aRQJHTREqW3OWAC6xT4RKKkIj2FEIU2sUQRvdQUFFcWJZCCj8GnBrpC3UeYPqFKr6DYbIJJBVUJkpwlB6JEPpJXGAx6sk6Eoq0rQEF6l1Q2qItTQjXUM00r1U+gOtqQjLJKRmWJsABEadGnGKPXyFelA4w2SVCFwCl+JFsbJSK/UUwD/bfC+hXVyAiUk0gJAiSdM88v0FhjtFJJOOe8lsWYLClKbb2TaIMnRtagjBefCZgWyMO8MawOxnijPSfHead6oTzCTgNMp6WO+/kyjJnL1NvD67ugrBJkFumu2odo/Ubb1hQ+aq28sTIEdegnmk/7uT9K7Q79V1T5FXS7TjujLN/7416vdLh54MpNynDoqdal9kdx4DZPXLsNH1mGRaR1p3x/pdlrwBeciNNacBNpgfpzYCUD831gJnaedh7Sy96qpJbCc2EeT7S1doQkgSyz1JiMCTIXk60omENxHhw4A4GiMSxgzqhB5mhLCIG9w2EV+7eHv2A7dxvV5xGp424rd9j99s/ff3bOh9//6KbldOyenqE+8dfTj5e0PJ75yjc+/eKl7cS280D58+LgclkB95uk2wDryMEbZ12fLzCsdUmt7vVjHna6BdRBoSBdElrt2UPF+xC0NqIQWqVUBCO8SeS8ZfeTIuk0OnZxMPD+/AexnQxG2vuqNiG6Jh2fE+B3mptr+rKe4JE7auG9wrytS711My0I02Omxk1LfhijJdnz+kvwpwclh97d1Cl5n/UGW6hu94p0LaXtzfijMSCFCbwK7RcDM5w48cv64nDvY2i039fBGGFaeSVGoRnplmTPDeM87COvx1DpdHP5O+PPVMcyNvfdIm9vD/8DwIEJYfwEAAA=
+
+DEMO_CMD_6dca0640b062c11d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'137'"'"', '"'"'--session'"'"', '"'"'762374218'"'"', '"'"'--pattern
+'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/ro
+ot/hash-net-acceptance-v2/replay-oxide-137.status'"'"',"w").write(str(r.returnco
+de)+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-137.log 2>&1 </dev/null & 
+echo JOB_PID:$!; printf '\nDEMO_CMD_4279e8fe03b533ac_%s\n' "$?"
+JOB_PID:689
+
+DEMO_CMD_4279e8fe03b533ac_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-137.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-137.status; elif kill -0 
+689 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+6706d2657ff81974_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_6706d2657ff81974_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-137.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_624f4a4894059464_%s\n' "$?"
+LOG_PAYLOAD:H4sIABMBAAAC/1VUy27cMAy85ysMn1pg0+j92F57aG/9A4OSKK9Rr23I3rRpkH8v5Wy2ycnWkB6RnKGfW3zEaWuPTRvnKQ/9pcA2zFN7qEDBGpj/DAkrcJ7TDhRcRniqyLpRduzWEwhtashwJpDJLHnkVicXA2gjwAZkOWRu0TnPpPLZM2+5RCcoMwsW0VnvbKikC5RtgPEdK7cCsk7KqZCjyI6j0WiAZU9HtCI6FS1qw1yW2mRAx60JIqkosxFMVNYTjguWd6TSaxeU0IJ7oRFjBvBcRxu891ZG+pQbiF4HDiIjGEGXJK09j5HuyKqS/i6wfGRV3AOmwEIAB0GmRP2zqLRSUojAjDFW8qxU4ui51NbwqJ1FYpYglGXvBzDOkLppJVrpqFArPAWHacNyxjTAhh2M/VyG7XTuhkRp4uXu+U1QUgkSiXRV7SZau+K6VoWP1ghpleDu0I449dupPXJpD+1HUv6Rc72MG5HMv9rjVi542C1woRorDZYyl/bIDlRlT7lrd4sSbYy4bJiut1R3dfEpjkhhycShDTOU134F01KYAw1io2anLjxtNYtLziwlpqHHtZYTImY0PiQRrfWMkWoqgKKHZyqRvjnbaCUwkzXNn7xCcgsvlFCMM5fal7vvsJ6aFcvjELGhagtV2Hz6+eNbQ/b8/LUZ5/7YPDxCeaC3h79PYb4/0Sdf6PR/LnUl1o0aSu/3Js7nBeK2K7p2sAwE7jNr2nSGbilzqHnPt37I6BqidCIylDlELS1ZKFvrnJSKZYxUvfCgmFUBjdXUEArkRkZDJnYK3q6/Dbbh3jh13dQqRFOlo3OA+Aunapo2Lz3cU0UV3gpM6zKXvZpxjjDeJ6yzqcGbMWqQLC8/gK8W5AS9uakR/NrrTpuxrNeMcMm5rs3wt06AM+VoE+ofBiboKfDf+exwraOrY3/FFC25rk0Vkr/gFHEPkue6Yeq2gbajK9jvJn+b+COWIQ/VfTvy8nL3D9qWSWH7BAAA
+
+DEMO_CMD_624f4a4894059464_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'65537'"'"', '"'"'--session'"'"', '"'"'2730135589'"'"', '"'"'--patt
+ern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'
+/root/hash-net-acceptance-v2/replay-oxide-65537.status'"'"',"w").write(str(r.ret
+urncode)+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-65537.log 2>&1 </dev/
+null & echo JOB_PID:$!; printf '\nDEMO_CMD_a4ca3345dc6ff878_%s\n' "$?"
+JOB_PID:724
+
+DEMO_CMD_a4ca3345dc6ff878_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-65537.status ]; then printf 
+"JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-65537.status; elif kill
+ -0 724 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_
+CMD_56c62ff577286c13_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_56c62ff577286c13_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-65537.log'"'"',"rb").re
+ad())).decode())'; printf '\nDEMO_CMD_824a8881dd8a3a6a_%s\n' "$?"
+LOG_PAYLOAD:H4sIABoBAAAC/1VUy27cMAy85ysMn1pg0+j92F57aG/9A4OSKK8Rr23I3rRpkH8v5W62yc0aUiOSM/RLi084be2xaeM85aG/FNiGeWoPFShYA/PvIWEFznPagYLLCM8VWTfKjt16AqFNDRnOBDKZJY/c6uRiAG0E2IAsh8wtOueZVD575i2X6ARlZsEiOuudDZV0gbINML5j5VZA1kk5FXIU2XE0Gg2w7OmIVkSnokVtmMtSmwzouDVBJBVlNoKJynrCccHyjlR67YISWnAvNGLMAJ7raIP33spIV7mB6HXgIDKCEfRI0trzGOmNrCrprwLLR1bFPWAKLARwEGRK1D+LSislhQjMGGMlz0oljp5LbQ2P2lkkZglCWfZ+AOMMqZtWopVOGqWEoeAwbVjOmAbYsIOxn8uwnc7dkChNvN69vAlKKkEika6q3URrV1zXqvBRWMmoBO38oR1x6rdTezRaS3toP/Lyj7TrZdyIZ35sj1u54GF3wYXK5O7QYilzaY/sQIX2lLt2tyjRxojLhun2TrVYF5/jiOuOOXFowwzlX9vWcyGJc4GNep668LzVPC45s5SYhh7XWlICbwLzMnGvhUInhYo6yMiDJpFjNjI5LhkzTCghGCQdhCTjKGsUIKj29e47rKdmxfI0RGyo4kJVNp9+/vjWWOU+f23GuT82D09QHujr4c9zmO9PdOULnf7Ppm7GulFL6f36xPm8QNx2YdcOloHAfW5Nm87QLWUONe/l1g/5XUOUTkSGModIkyInZWudk1KxjFELITwoZlVAYzW1ggK5kdGQl52Ct+dvo22440pfF7aK0VT56BwgPuJUvdPmpYd7qqjCW4FpXeayVzPOEcb7hHU2NXgzRw2S8+UH8J8TOUFvnmoEv/a602Ys6zUjXHKu2zP8qRPgTDlaiPqjgQl6CvxfAHa41tHVsV+XQnHOanpBYsEp4h4k33XD1G0DLUlXsN+9/jbxJyxDHqoDd+T19e4vDYqrPgIFAAA=
+
+DEMO_CMD_824a8881dd8a3a6a_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'oxide'"'"', '"'"'--leng
+th'"'"', '"'"'1048593'"'"', '"'"'--session'"'"', '"'"'3957258143'"'"', '"'"'--pa
+ttern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'
+"'/root/hash-net-acceptance-v2/replay-oxide-1048593.status'"'"',"w").write(str(r
+.returncode)+"\n")' >/root/hash-net-acceptance-v2/replay-oxide-1048593.log 2>&1 
+</dev/null & echo JOB_PID:$!; printf '\nDEMO_CMD_c4647c8c85b09178_%s\n' "$?"
+JOB_PID:759
+
+DEMO_CMD_c4647c8c85b09178_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-oxide-1048593.status ]; then print
+f "JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-oxide-1048593.status; elif 
+kill -0 759 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nD
+EMO_CMD_7522186c6f02b99d_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_7522186c6f02b99d_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-oxide-1048593.log'"'"',"rb").
+read())).decode())'; printf '\nDEMO_CMD_7cd48f007d6f21aa_%s\n' "$?"
+LOG_PAYLOAD:H4sIACEBAAAC/1VUy3LcOAy8+ytUOu1WjWO+H7PXHDa3/IEKJEGNKhpJRWmcOC7/e0B5PBnfxAbYBBoNvbb4jNPWHps2zlMe+kuBbZin9lCBgjUw/xoSVuA8px0ouIzwUpF1o+zYrScQ2tSQ4Uwgk1nyyK1OLgbQRoANyHLI3KJznknls2fecolOUGYWLKKz3tlQSRco2wDjHSu3ArJOyqmQo8iOo9FogGVPR7QiOhUtasNcltpkQMetCSKpKLMRTFTWE44LljtS6bULSmjBvdCIMQN4rqMN3nsrI13lBqLXgYPICEbQI0lrz2OkN7KqpD8LLJ9ZFfeAKbAQwEGQKVH/LCqtlBQiMGOMlTwrlTh6LrU1PGpnkZglCGXZvQDjDKmbVqKVTgkrjKLgMG1YzpgG2LCDsZ/LsJ3O3ZAoTbw9vH4MlKYEiYZ0ndptaO2K61onfCQBrNCOK3loR5z67dQeOVNOewI+M/PPxOtl3Ihp/tEet3LBw+6DCxXK3aHFUubSHtmBSu0pd+1uUaKNEZcN091L1WZdfIkjru8oNXpowwzlvXmCvPVcHEiXjXqfuvCy7bmSM0twGnpca2Gepse4CpEs5dG6pJmUNDIL3JjsVY4omLE+odJCJ6EiRMlUYhKT5N63bw//w3pqVizPQ8SG6i5Ua/PP929fG+vkv/8149wfm6dnKE/09fT7JcyPJ7ryhU5/Faobsm7UVrpfozifF4jbPuC1g2UgcFevadMZuqXMoea93voh32sq0InIUOYQtbTkqGytc1IqljFqIYQHxawKaKymXUCB3MhoyNNOwcfzN3kb7qW318WtI2nqEOkcIP7AqXqozUsPj1RRhbcC07rMZa9mnCOMjwmrNjV4s0gN0gbIT+C7IzlBH95qBL/2utNmLOs1I1xyrls0/K4K7M6wpv5wYIKeAn8XgR2udXRV9ndMKUP/mENVnVhwirgHyX3dMHXbQMvSFex3z38o/oxlyEP14Y68vT38ASYz9M4KBQAA
+
+DEMO_CMD_7cd48f007d6f21aa_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'0'"'"', '"'"'--session'"'"', '"'"'3629618467'"'"', '"'"'--pattern
+'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/ro
+ot/hash-net-acceptance-v2/replay-sha256-0.status'"'"',"w").write(str(r.returncod
+e)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-0.log 2>&1 </dev/null & ec
+ho JOB_PID:$!; printf '\nDEMO_CMD_de04fc44a2185bba_%s\n' "$?"
+JOB_PID:794
+
+DEMO_CMD_de04fc44a2185bba_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-0.status ]; then printf "JO
+B_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-0.status; elif kill -0 79
+4 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_ae
+7a03c0d1cae4d4_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_ae7a03c0d1cae4d4_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-0.log'"'"',"rb").read(
+))).decode())'; printf '\nDEMO_CMD_164f5f33c3eda2e2_%s\n' "$?"
+LOG_PAYLOAD:H4sIACgBAAAC/1VUy27bSBC8+ysInnYBOZ73Q3vNYXPLHxA9Mz0UEYokhpQDx/C/p4ehFVsnsapV6u6q5muLzzht7blp4zzlob8V2IZ5ak8VKFiJ9QJCm4pc57QjBZcRXiqyblQeu6OEKMOZQCaz5JFbnVwMoI0AG5DlkLlF5zyTymfPvOUSnaDKLFhEZ72zoYouULYBxo+qTCdkKmtrnTAYMGjAAFw7CFrkyJRXEkTiRgHqoFlKqNFG+mCwmKvqBccFywdR6bULSmjBvdCIMQN4rqMN3nsrY5SZG4heBw4iIxjhVExaex6jNjmrKvqzwPJZVXEPmAILAag5mRLNz6LSSkkhAjPGWMmzUomj51Jbw6N2FkmZBlCWfVzAOEPqppVkpbXKSG+IHKYNyxXTABt2MPZzGbbLtRsSlfG3h9d3R8klSGTS4drdtHbFda0Wn6UR3nCnjD21I079dmnP7NR+1hSfJdfbuJHG/KM9b+WGpz0BN2qRu1OLpcxl1ximnmrX7s6SLHmxbJh2vmariy9xxEoKfWrDDOXPsIIbK6hmgY0mnbrwsu1VkjMrTm0aelxrMygDLVYJ73KktCkPlDAVnfcmBy+UsICKozLKBy9VBOW19zxYp0VwWrdvD//DemlWLM9DxIZ6LdRf88/3b18bx92//zXj3J+bp2coT/Tt6ddLmB8v9JMv9PR3K/Ue1o0GSh+vJs7XBeK227l2sAwE7htr2nSFbilzqHWv93malmuI0onIUOYQtbSUn0yJd1IqljFqIYQHxawKaKyOAlEgNzIaSrBT8P7398U23GmnjjOtNjTVOHoOEH/gVBPT5qWHR+qowluBaV3msnczzhHGx4R1N5W8x+J4J8hP4JE/gt6T1Ah+zLrLZizrURFuOdebGX7VDXCmHJ1Bfb3ABD0Rf2PPTkcfXV37cQpKW1WHKkgqOEXcSUpcN0zdNtBpdAX7PeHvG3/GMuShZm9H3t4efgPcWhXW+QQAAA==
+
+DEMO_CMD_164f5f33c3eda2e2_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'1'"'"', '"'"'--session'"'"', '"'"'3780313684'"'"', '"'"'--pattern
+'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/ro
+ot/hash-net-acceptance-v2/replay-sha256-1.status'"'"',"w").write(str(r.returncod
+e)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-1.log 2>&1 </dev/null & ec
+ho JOB_PID:$!; printf '\nDEMO_CMD_670e1980621cd754_%s\n' "$?"
+JOB_PID:829
+
+DEMO_CMD_670e1980621cd754_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-1.status ]; then printf "JO
+B_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-1.status; elif kill -0 82
+9 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_61
+9cf3edc909d242_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_619cf3edc909d242_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-1.log'"'"',"rb").read(
+))).decode())'; printf '\nDEMO_CMD_2193ad2893181140_%s\n' "$?"
+LOG_PAYLOAD:H4sIAC8BAAAC/1VUy27bSBC8+ysInnYBOp73Q3vNYXPLHxA9Mz0UEYokhpQDx/C/p4eRFVsnsbtVqqqu5muLzzjv7alp4zLncbgW2MdlbrtaKFgb2xmENrVyWdJRKbhO8FIr207jsb+NUMtwJpDJLHnkVicXA2gjwAZkOWRu0TnPpPLZM2+5RCdoMgsW0VnvbKigK5R9hOkjKtMJmcraWicMBgwaMADXDoIWOTLllQSRuFGAOmiWEmq0kT4YLOaKesZpxfIBVHrtghJacC80YswAnutog/feyhhl5gai14GDyAhGOBWT1p7HqE3OqoL+LLB+RlXcA6bAQgAiJ1Mi/SwqrZQUIjBjjJU8K5U4ei61NTxqZ5GQSYCy7KMB0wKpnzeClU54aZig5jjvWC6YRtixh2lYyrifL/2YaIy/Pby+b5S2BImWdNvafWnthttWV3yS1jHJpXGqayech/3cnnjXfsYUnyG367QTxvKjPe3lit2RgCtR5K5rsZSltCfWEcmBZrf+3iVY2sW6Yzoearb6+BInrE1hujYsUP6IFURJE6UVdlI69+FlP6YkZ1Z0bRoH3CoZg1Kx4GPOQVrwzkcgl9GEQLpAREtJ40lSV1rprHGac5DMcAsZqNO+PfwP27nZsDyPERviWohf88/3b18bp+W//zXTMpyap2coT/Tt6ddLWB7P9JMv9PTXlXoP206C0serictlhbgf69x6WEcqHo41bbpAv5Yl1LnXu56m5RoiLToyJNJRk6ggMyXeSRKaMWohhAfFrAporI4CUSA3MhpKsFPw/vd3YxvuGHnb3JfU1MXRc4D4A+eamDavAzwSo1reC8zbupSDzbREmB4TVm9q8x6L2ztBfire8kel9yQ1gt+0HrAZy3abCNec682Mv6oDnClHZ1BfLzDDQI2/sWfdjUdfbb+dgiSxrquuEwrOEY8mJa4f534f6TT6gsOR8HfHn7GMeazZOypvbw+/AZ1hCGr5BAAA
+
+DEMO_CMD_2193ad2893181140_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'55'"'"', '"'"'--session'"'"', '"'"'35976852'"'"', '"'"'--pattern'
+"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/roo
+t/hash-net-acceptance-v2/replay-sha256-55.status'"'"',"w").write(str(r.returncod
+e)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-55.log 2>&1 </dev/null & e
+cho JOB_PID:$!; printf '\nDEMO_CMD_c3eb5e230d3521f1_%s\n' "$?"
+JOB_PID:864
+
+DEMO_CMD_c3eb5e230d3521f1_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-55.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-55.status; elif kill -0 
+864 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+a25b421a2d546f2b_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_a25b421a2d546f2b_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-55.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_ba867547628add34_%s\n' "$?"
+LOG_PAYLOAD:H4sIADYBAAAC/1VUy27sNgzd5ysMr1pg0uhFPabbLtpd/8CgJGrGuB7bkD0pcoP8e6nJJDcxvLBI+pg859CvPT3TvPfHrk/LXMbTteI+LnN/aIFKLbGdUYFtkcuSb5FK64QvLbLtXJ6GewmnrBSKhC5aJukg+xQRrEIXSZRYpCPvg9AmlCCCk5q84sqiRCLvgnexga5Y9xGnr6gCMglTwDmvLEWKgBRRgscIqiRhgtGosrQGCSKInAnIJb4oOioN9UzTSvULqA7go1GgZFBAlApikJBcDCE4nZIu0mIKECWqQmiVNykDBJkS2FJMA/2v4vod1ciAlKOIEbk5nTPPL5IBY7RSUVhrnZbFmCwpSA3OygTeESPzAMaJrwRMC+Zh3hhWOxeMsYqT47xTvVAecacBp9NSx/18GcbMZfLt4fVDUVYJM4t0V+1TtH6jbWsSHzUEZz2oQz/RfNrP/RHg0H+HVN8Rt+u0M8Tyoz/u9UqHmwGu3KH0h55qXWp/FAfu8cS12/CZZViWYt0pv3+keWtIL2miltXcQlywvg+rhDGeQVbcedJ5iC/7e5UUjgvzeKKtdQNZADKtEIMtRhPwjeBVjMy+z94IdDIJpckZ67O1gklPrI4FKZNJ/dvD37idu43q85io42YrN9j99u8/f3Vs09//7KbldOyenrE+8dPTz5e4PJ75lT/49IuWtg/bzgPlr1uTlsuKab/JuQ24jhy8Udb1+YLDWpfY6l4/5+l6CZi0V0mQLjGBduyfwo73WhtRKIFSKqARzkSyDpIiUiStTpYd7A1+fP6T2E4GK+G+pk2HrinH54jpB83NMX1ZT/jIHbXwXnHe1qXeupmWhNNjpsZNS3764v5P0N+Cd/9x6MNLnZL3WW+whep2r4jXUtrOjD8bA1IYz2vQfi8444kTv2wvDvc+hkb7e8xoba0/NNYZheZEtyRbbhjnYR95NYZKp5vDPxh/pjqWsZnvFnl7e/gfL0if7/kEAAA=
+
+DEMO_CMD_ba867547628add34_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'56'"'"', '"'"'--session'"'"', '"'"'1364453166'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-sha256-56.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-56.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_fb724455ec6e4634_%s\n' "$?"
+JOB_PID:900
+
+DEMO_CMD_fb724455ec6e4634_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-56.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-56.status; elif kill -0 
+900 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+1cfb7259705fb7ad_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_1cfb7259705fb7ad_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-56.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_654cceb9b1b3488c_%s\n' "$?"
+LOG_PAYLOAD:H4sIADwBAAAC/1VUy27cMAy85ysMn1pg0+j92F57aG/9A4OSKK9Rr23I3hRpkH8v5Ww2iU8SSY/JmaGfW3zEaWuPTRvnKQ/9pcA2zFN7qIGCNbGeQGhTI+c57ZGCywhPNbJuVB67awmlDGcCmcySR251cjGANgJsQJZD5had80wqnz3zlkt0giqzYBGd9c6GCrpA2QYYP6IynZCprK11wmDAoAEDcO0gaJEjU15JEIkbBaiDZimhRhvpwWAxV9QTjguWD6DSaxeU0IJ7oRFjBvBcRxu891bGKDM3EL0OHERGMMKpmLT2PEZtclYV9G+B5TOq4h4wBRYCUHMyJZqfRaWVkkIEZoyxkmelEkfPpbaGR+0sEjINoCz7SMA4Q+qmlWCldcwzLik5TBuWM6YBNuxg7OcybKdzNyQq4y93z2+KkkqQSKSrajfR2hXXtUp85NIopSU35tCOOPXbqT1qOn8GFZ8x18u4Ecj8pz1u5YKH3QIX6pG7Q4ulzKU9sgN12VPt2t2yBEtiLBum149Ud3XxKY5IWWHEoQ0zlNdxufFSE8gCG806deFpq1VccmapMA09rrUb5jQPkQUrpeQuJK5SIJ5cwuihCkVeRI5WCK+TJCcq0gK1kUooSX5sX+5+wnpqViyPQ8SGmi3UYPPl968fDZni6/dmnPtj8/AI5YFOD/+ewnx/ole+0e2dlroR60YDpY97E+fzAnHbBV07WAYK7pQ1bTpDt5Q51Lrn2zxNyzVE6URkKHOIWlpyUCbPOykVyxi1oFFAMasCGqsjjSeQGxkNedgpePv8jdiGO0lsNzeVmqoc3QPEPzhVz7R56eGeOqrhrcC0LnPZuxnnCON9wspNTd58cf0ryE/BqwMp9OalRvDrrDtsxrJeK8Il57o1w7/KAGfK0SLUHwxM0FPi3fjscO2jq7Rfl8F4I9Shsk4oOEXck2S5bpi6baDl6Ar2u8ffGH/EMuShmm+PvLzc/QfP7a/K+wQAAA==
+
+DEMO_CMD_654cceb9b1b3488c_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'63'"'"', '"'"'--session'"'"', '"'"'2740405641'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-sha256-63.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-63.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_11ef8fe1e50cc6da_%s\n' "$?"
+JOB_PID:936
+
+DEMO_CMD_11ef8fe1e50cc6da_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-63.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-63.status; elif kill -0 
+936 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+80b1f18a4ba65de5_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_80b1f18a4ba65de5_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-63.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_a48a95cd35b6fb57_%s\n' "$?"
+LOG_PAYLOAD:H4sIAEMBAAAC/1VUy47bRhC871cQvMQBtNa8H8rVh+SWPyB6ZnokwhRJDEcbrI399/TQWnlXJ7G6UezuquJxWevxx2tYjhfYLsetQqlft8upm8YZO+FOXYT5j9otK87dcS1LPHqhj/GaWsOpm5duu8VLl8cJn372+IJz7U9dH5c5j+dbgTouc39oQMFW2C4gtGnIdUk7UnCd4LUh9PY6xuHeQiXDmUAms+SRW51cDKCNABuQ5ZC5Rec8k8pnz7zlEp2gzixYRGe9s6GRrrTRCNNHVqYTMpW1tU4YDBg0YACuHQQtcmTKKwkicaMAddAsJdRoI/0wWMyN9YLTiuUDqfTaBSW04HQfxJgBPNfRBu+9lTHKzA1ErwMHkRGMcComrT2PUZucVSP9r8D6mVVxD5gCCwFoOJkS7c+i0kpJIQIzxljJs1KJo+dSW8OjdhaJmRZQln08wLRAGuaNaCUt7pjTVBzniuWKaYSKA0znpYz1ch3GRG387beipBIkEumu2kO0fsNtaxKfhFVMMW0UP/QTzud66U9GHvrPpOIz53abKpEs3/tTLTc87Ba40YzcHXosZSn9iR1oyjP1bsOjSrQkxlox/XpJc9cQX+OEVBUNCQuUX+sKrpUluhUq7ToP4bW2Li45s+LQp/GMW5tGJid0ZD7rjFZql9FrLZRLKuQoqNe7ZgMVlTCRnGijlxCl9yJZxpXs357+pgx1G5aXMWK3ZwlT9+Xff7513rA//+qm5Xzqji9QjvRvj91zi91XevoYHtq10kLpY27icl0h1l3QbYB1JHA/WdenKwyUzND6fj726XquaTwnIkOZQ9TSkoNyk15KxTJGLYTwoJhVAY3VUSAK5EZGQx52Ct5f/zhsx51h7B7UpkPXlKPnAPE7zs0zfV7P8EwTNbgWmLd1Kfs00xJhek7YbtOKD1/cvwryE3h3IEHvXuoEv++602Ys270j3HJuqRl/tAtwphwFoX1gYIYzFX4bv82+zzG0s9/DoLxl6tCuTiw4R9yLZLlhnIc6UjiGgufd4+8Xf8Ey5rGZb0fe3p7+B5xyw8xIBQAA
+
+DEMO_CMD_a48a95cd35b6fb57_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'64'"'"', '"'"'--session'"'"', '"'"'2366494129'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-sha256-64.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-64.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_11072fe504f3b367_%s\n' "$?"
+JOB_PID:972
+
+DEMO_CMD_11072fe504f3b367_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-64.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-64.status; elif kill -0 
+972 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD_
+3a75f9b5aa67a7bd_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_3a75f9b5aa67a7bd_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-64.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_398e167f7e07f575_%s\n' "$?"
+LOG_PAYLOAD:H4sIAEoBAAAC/1VUy3LcOAy8+ytUOm2q5DXfj8k1h+S2f6ACSVCjikZSURqnHJf/fUFlPLF1kgCoCXQ3+NriM857e2rauMx5HK4F9nGZ264GCtbEdgahTY1clnRECq4TvNTItlN57G8llDKcCWQySx651cnFANoIsAFZDplbdM4zqXz2zFsu0QmqzIJFdNY7GyroCmUfYfqIynRCprK21gmDAYMGDMC1g6BFjkx5JUEkbhSgDpqlhBptpAeDxVxRzzitWD6ASq9dUEIL7oVGjBnAcx1t8N5bGaPM3ED0OnAQGcEIp2LS2vMYtclZVdBfBdbPqIp7wBRYCEDNyZRofhaVVkoKEZgxxkqelUocPZfaGh61s0jINICy7CMB0wKpnzeCldYa76Wi5DjvWC6YRtixh2lYyrifL/2YqIy/Pby+K0oqQSKRbqrdRWs33LYq8UlIY4g4LnzXTjgP+7k9GdW1n0HFZ8ztOu0EsvxsT3u5YndY4Eo9cte1WMpS2hPrqMuBarf+niVYEmPdMf05pLqrjy9xQsoKI7s2LFD+jCulcppqVthp1rkPL3ut4pIzK7o2jQNutRtPPrIuWimIxEx8e5ZlorGistyTC7IVyRkPIfIkDXqnY47oQZKuLvj27eE7bOdmw/I8Rmyo2UINNv/89+Nb47358rWZluHUPD1DeaK3p98vYXk80y//0tdfWupGbDsNlD7uTVwuK8T9EHTrYR0peFDWtOkC/VqWUOte7/M0LdcQpRORocwhamnJQZk874gRljFqIYQHxawKaKyOAlEgNzIa8rBT8H78ndiGO2H5bVGrDk1Vjr4DxJ84V8+0eR3gkTqq4b3AvK1LObqZlgjTY8LKTU3efXG7FeSn4M2BFHr3UiP4bdYDNmPZbhXhmnPdmvF3ZYAzktuaesHADAMl/hqfdbc++kr7bRkU47YmChIKzhGPJFmuH+d+H2k5+oLD4fF3xp+xjHms5jsib28P/wOB0P1x+wQAAA==
+
+DEMO_CMD_398e167f7e07f575_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'65'"'"', '"'"'--session'"'"', '"'"'3201730145'"'"', '"'"'--patter
+n'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"'/r
+oot/hash-net-acceptance-v2/replay-sha256-65.status'"'"',"w").write(str(r.returnc
+ode)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-65.log 2>&1 </dev/null &
+ echo JOB_PID:$!; printf '\nDEMO_CMD_8804cd7b6ce6ab7e_%s\n' "$?"
+JOB_PID:1007
+
+DEMO_CMD_8804cd7b6ce6ab7e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-65.status ]; then printf "J
+OB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-65.status; elif kill -0 
+1007 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDEMO_CMD
+_731bb40a981814aa_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_731bb40a981814aa_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-65.log'"'"',"rb").read
+())).decode())'; printf '\nDEMO_CMD_cb7af34d0587ed4e_%s\n' "$?"
+LOG_PAYLOAD:H4sIAFEBAAAC/1VUy47kNgy8z1cYviQBerb1fnSuOSS3/IFBSVS3sW7bkNUTzC7m30N5enpnfJJJokSyqnRc1nr88RqW4wW2y3GrUOq37XLqpnHGTrhTF2H+rXbLinN3XMsSj96bY7ymVnDq5qXbbvHS5XHCp589vuBc+1PXx2XO4/lWoI7L3B9aoGBLbBcQ2rTIdUl7pOA6wWuL0O11jMO9hFKGM4FMZskjtzq5GEAbATYgyyFzi855JpXPnnnLJTpBlVmwiM56Z0MDXWmiEabPqEwnZCpra50wGDBowABcOwha5MiUVxJE4kYB6qBZSqjRRvowWMwN9YLTiuUTqPTaBSW04F5oxJgBPNfRBu+9lTHKzA1ErwMHkRGMcComrT2PUZucVQP9r8D6FVVxD5gCCwGoOZkSzc+i0kpJIQIzxljJs1KJo+dSW8OjdhYJmQZQln1ewLRAGuaNYKW10jEvKDnOFcsV0wgVB5jOSxnr5TqMicr42y9GiSVIRNKdtQdp/Ybb1ig+ScG4lYwrfegnnM/10p8Mnb+Ciq+Y222qBLJ870+13PCwS+BGPXJ36LGUpfQndqAuz1S7DY8swRIZa8X0fklT1xBf44SUFUYe+rBAeR9XMOqKQFaoNOs8hNfaqrjkzIpDn8Yzbq0b660LNnFH5KXkjRYQwCttQ0okFp4i0EaTwURp5pjWKKJQqqmHsZj7t6e/yUPdhuVljNjtXsLU/f7vP391nEn+x5/dtJxP3fEFypFOu++em+++0d9n99CwlSZKn40Tl+sKse6MbgOsIwX3nXV9usJA1gyt7udjoK7nGqJ0IjKUOUQtLUkok+idlIpljFoI4UExqwIaq6NAFMiNjIZE7BR8XP/YbMc9N/7u1EZE16ij/wDxO85NNH1ez/BMHbVwLTBv61L2bqYlwvScsC2nJR/CuD8L8kvwLkEKfYipE/w+6w6bsWz3inDLudlm/NE2wJly5IT2wsAMZ0r8Uj473PsY2trfY0pIoVqiIKHgHHFPkuaGcR7qSO4YCp53kX9s/AXLmMemvj3y9vb0P+XWdoJJBQAA
+
+DEMO_CMD_cb7af34d0587ed4e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# nohup python3 -c 'import os,subprocess;os.setpgid(0,0) if os.getpgrp()!=os.get
+pid() else None;r=subprocess.run(['"'"'python3'"'"', '"'"'/opt/zybo/hash/net/boa
+rd_run.py'"'"', '"'"'replay'"'"', '"'"'--core'"'"', '"'"'sha256'"'"', '"'"'--len
+gth'"'"', '"'"'65537'"'"', '"'"'--session'"'"', '"'"'4084716035'"'"', '"'"'--pat
+tern'"'"', '"'"'/root/hash-net-acceptance-v2/pattern-131072.bin'"'"']);open('"'"
+'/root/hash-net-acceptance-v2/replay-sha256-65537.status'"'"',"w").write(str(r.r
+eturncode)+"\n")' >/root/hash-net-acceptance-v2/replay-sha256-65537.log 2>&1 </d
+ev/null & echo JOB_PID:$!; printf '\nDEMO_CMD_e1e868fa6edf26e7_%s\n' "$?"
+JOB_PID:1042
+
+DEMO_CMD_e1e868fa6edf26e7_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ -f /root/hash-net-acceptance-v2/replay-sha256-65537.status ]; then printf
+ "JOB_RC:"; cat /root/hash-net-acceptance-v2/replay-sha256-65537.status; elif ki
+ll -0 1042 2>/dev/null; then echo JOB_WAIT; else echo JOB_GONE; fi; printf '\nDE
+MO_CMD_edd640d8aafc35d3_%s\n' "$?"
+JOB_RC:0
+
+DEMO_CMD_edd640d8aafc35d3_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import os,signal;exec('"'"'try:os.killpg(1042,signal.SIGTERM)\nexc
+ept ProcessLookupError:pass'"'"')'; printf '\nDEMO_CMD_d759290636e3e951_%s\n' "$
+?"
+
+DEMO_CMD_d759290636e3e951_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# if [ ! -d /run/zybo-hash-net.lock ]; then echo CLEANUP_DONE; fi; printf '\nDEM
+O_CMD_538d1f23d652a96a_%s\n' "$?"
+CLEANUP_DONE
+
+DEMO_CMD_538d1f23d652a96a_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# python3 -c 'import base64,gzip;print("LOG_PAYLOAD:"+base64.b64encode(gzip.comp
+ress(open('"'"'/root/hash-net-acceptance-v2/replay-sha256-65537.log'"'"',"rb").r
+ead())).decode())'; printf '\nDEMO_CMD_768ff23b279a753e_%s\n' "$?"
+LOG_PAYLOAD:H4sIAFwBAAAC/1VUy27bSBC8+ysInjYAvZ73Q7nmkNz2D4iemR6KCEUSQ8qBY/jft4eRFVsnqbpV7K6q5muLzzjv7alp4zLncbgW2MdlbrsKFKyF7QxCm4pclnQgBdcJXiqy7dQe+1sLlQxnApnMkkdudXIxgDYCbECWQ+YWnfNMKp8985ZLdII6s2ARnfXOhkq6QtlHmD6yMp2QqaytdcJgwKABA3DtIGiRI1NeSRCJGwWog2YpoUYb6YPBYq6sZ5xWLB9IpdcuKKEF90IjxgzguY42eO+tjFFmbiB6HTiIjGCEUzFp7XmM2uSsKumvAutnVsU9YAosBKDhZEq0P4tKKyWFCMwYYyXPSiWOnkttDY/aWSRmWkBZ9lGAaYHUzxvRSseE0sxTcZx3LBdMI+zYwzQsZdzPl35M1MbfHl7fHSWXIJFJN9fuprUbblu1+KSYU5YbJnXXTjgP+7k9Ga2l7drPvOIz7XadduJZfranvVyxO1JwpTG561osZSntiXU06EC9W3+vEi35se6Y7s+pGevjS5ywNiimuOrasED5szev9kiCVthp67kPL/vRKTmzomvTOOBWhwpZZuuUYj5knbzBCCSYsUbbHLNzDnwURknveZAco+DGgzcZUMaskmrfHr7Ddm42LM9jxIZmLjRn889/P741nFz78rWZluHUPD1DeaJvT79fwvJ4pv/8S7/+ylOPY9tpq/TxhOJyWSHuh7dbD+tI4CFd06YL9GtZQu17vS/UtFxDlE5EhjKHSGJRmDLF30mpWMaohRAeFLMqoLE6CkSB3MhoKM5Owfvj7+o23JPbt5utfjTVQfodIP7EucanzesAjzRRhfcC87Yu5ZhmWiJMjwmrOLV4z8ftBSE/gbcwEvQeq0bw264Hbcay3TrCNed6QOPvqgBnytFN1HcNzDBQ4e8NsO42R19l/4NRXrSqhYLEgnPEo0jR68e530e6k77gcMT9XfFnLGMeawgP5O3t4X+PFSTaBgUAAA==
+
+DEMO_CMD_768ff23b279a753e_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

@@ -1,0 +1,15 @@
+{
+  "voice": "Jarnathan - Confident and Versatile",
+  "model": "Eleven v4",
+  "observed_generation_controls": {
+    "stability": 0.62,
+    "similarity": 0.75,
+    "clone_strength": 0
+  },
+  "voice_controls_modified": false,
+  "script": "At sixty-four bytes, software and D M A setup dominate the request. The wider input path has very little data to accelerate. Quartz had the lower median here, but the sample ranges overlap. Request overhead and run-to-run variation can outweigh the streaming gain. Higher bulk throughput doesn’t guarantee lower latency for a tiny request. The reserved region and image size are unchanged. Power and Oxide production-system performance weren’t measured.",
+  "selected_take": 1,
+  "selection_basis": "Both complete transcripts match the intended content; take 1 has sentence pauses that fit the planned progressive reveals. No claim of human listening review.",
+  "postproduction_rate": 1.06,
+  "original_other_chapter_narration_reused": true
+}

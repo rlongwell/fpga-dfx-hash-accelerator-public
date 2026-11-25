@@ -1,0 +1,12 @@
+{
+  "kind": "physical-register-readback",
+  "evidence": "compact-boot-status.log",
+  "fclk0_control_address": "0xf8000170",
+  "fclk0_control": "0x00200500",
+  "io_pll_control_address": "0xf8000108",
+  "io_pll_control": "0x0001E000",
+  "scope": "Read after compact full-image boot; same PS configuration and 100 MHz FPGA clock as the original profile",
+  "wall_clock_synchronized": false,
+  "chronology_source": "Host UTC in uart.log",
+  "duration_clock": "Python time.perf_counter_ns"
+}

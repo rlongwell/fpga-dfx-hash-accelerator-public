@@ -1,0 +1,4414 @@
+{
+  "input": "docs/media/sha3-comparison-stream.mp4",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "SHA3-256: compact vs. Oxide Quartz",
+      "start": 0,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 7.18,
+          "text": " This demo compares SHA-3-256, the compact core in this project, and Oxide's quartz implementation.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.78,
+              "word": " This",
+              "probability": 0.9740782380104065
+            },
+            {
+              "start": 0.78,
+              "end": 1.1,
+              "word": " demo",
+              "probability": 0.9941938519477844
+            },
+            {
+              "start": 1.1,
+              "end": 1.6,
+              "word": " compares",
+              "probability": 0.991726279258728
+            },
+            {
+              "start": 1.6,
+              "end": 1.86,
+              "word": " SHA",
+              "probability": 0.8882314562797546
+            },
+            {
+              "start": 1.86,
+              "end": 2.24,
+              "word": "-3",
+              "probability": 0.8939615488052368
+            },
+            {
+              "start": 2.24,
+              "end": 2.9,
+              "word": "-256,",
+              "probability": 0.6856319010257721
+            },
+            {
+              "start": 3.56,
+              "end": 3.66,
+              "word": " the",
+              "probability": 0.9917743802070618
+            },
+            {
+              "start": 3.66,
+              "end": 4.04,
+              "word": " compact",
+              "probability": 0.9399973750114441
+            },
+            {
+              "start": 4.04,
+              "end": 4.36,
+              "word": " core",
+              "probability": 0.9878908395767212
+            },
+            {
+              "start": 4.36,
+              "end": 4.54,
+              "word": " in",
+              "probability": 0.9685105681419373
+            },
+            {
+              "start": 4.54,
+              "end": 4.66,
+              "word": " this",
+              "probability": 0.9946558475494385
+            },
+            {
+              "start": 4.66,
+              "end": 5.04,
+              "word": " project,",
+              "probability": 0.998595654964447
+            },
+            {
+              "start": 5.54,
+              "end": 5.68,
+              "word": " and",
+              "probability": 0.9967691898345947
+            },
+            {
+              "start": 5.68,
+              "end": 6.42,
+              "word": " Oxide's",
+              "probability": 0.7847157120704651
+            },
+            {
+              "start": 6.42,
+              "end": 6.56,
+              "word": " quartz",
+              "probability": 0.7027294635772705
+            },
+            {
+              "start": 6.56,
+              "end": 7.18,
+              "word": " implementation.",
+              "probability": 0.9937847852706909
+            }
+          ]
+        },
+        {
+          "start": 8.08,
+          "end": 11.24,
+          "text": " Here's how the input architecture changes speed and resource use.",
+          "words": [
+            {
+              "start": 8.08,
+              "end": 8.26,
+              "word": " Here's",
+              "probability": 0.9813773930072784
+            },
+            {
+              "start": 8.26,
+              "end": 8.38,
+              "word": " how",
+              "probability": 0.9984498023986816
+            },
+            {
+              "start": 8.38,
+              "end": 8.5,
+              "word": " the",
+              "probability": 0.992517352104187
+            },
+            {
+              "start": 8.5,
+              "end": 8.84,
+              "word": " input",
+              "probability": 0.9731470942497253
+            },
+            {
+              "start": 8.84,
+              "end": 9.4,
+              "word": " architecture",
+              "probability": 0.9981514811515808
+            },
+            {
+              "start": 9.4,
+              "end": 9.9,
+              "word": " changes",
+              "probability": 0.9981992840766907
+            },
+            {
+              "start": 9.9,
+              "end": 10.28,
+              "word": " speed",
+              "probability": 0.9954343438148499
+            },
+            {
+              "start": 10.28,
+              "end": 10.56,
+              "word": " and",
+              "probability": 0.9973589777946472
+            },
+            {
+              "start": 10.56,
+              "end": 10.92,
+              "word": " resource",
+              "probability": 0.9986479878425598
+            },
+            {
+              "start": 10.92,
+              "end": 11.24,
+              "word": " use.",
+              "probability": 0.9926636219024658
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A shared stream, then the Quartz core",
+      "start": 13,
+      "segments": [
+        {
+          "start": 13.0,
+          "end": 18.16,
+          "text": " Start at the input. Both cores receive the same 64-bit AXI stream.",
+          "words": [
+            {
+              "start": 13.0,
+              "end": 13.5,
+              "word": " Start",
+              "probability": 0.9532811045646667
+            },
+            {
+              "start": 13.5,
+              "end": 13.7,
+              "word": " at",
+              "probability": 0.9966877102851868
+            },
+            {
+              "start": 13.7,
+              "end": 13.84,
+              "word": " the",
+              "probability": 0.9977043271064758
+            },
+            {
+              "start": 13.84,
+              "end": 14.22,
+              "word": " input.",
+              "probability": 0.9484456181526184
+            },
+            {
+              "start": 15.0,
+              "end": 15.08,
+              "word": " Both",
+              "probability": 0.9961434602737427
+            },
+            {
+              "start": 15.08,
+              "end": 15.36,
+              "word": " cores",
+              "probability": 0.9823342561721802
+            },
+            {
+              "start": 15.36,
+              "end": 15.76,
+              "word": " receive",
+              "probability": 0.9402843713760376
+            },
+            {
+              "start": 15.76,
+              "end": 16.0,
+              "word": " the",
+              "probability": 0.9978931546211243
+            },
+            {
+              "start": 16.0,
+              "end": 16.28,
+              "word": " same",
+              "probability": 0.9996223449707031
+            },
+            {
+              "start": 16.28,
+              "end": 16.9,
+              "word": " 64",
+              "probability": 0.991913914680481
+            },
+            {
+              "start": 16.9,
+              "end": 17.16,
+              "word": "-bit",
+              "probability": 0.9445055425167084
+            },
+            {
+              "start": 17.16,
+              "end": 17.86,
+              "word": " AXI",
+              "probability": 0.9849579930305481
+            },
+            {
+              "start": 17.86,
+              "end": 18.16,
+              "word": " stream.",
+              "probability": 0.9744501709938049
+            }
+          ]
+        },
+        {
+          "start": 18.68,
+          "end": 23.84,
+          "text": " That stream can come from the processing system, Ethernet ingress, or the block RAM replay reader.",
+          "words": [
+            {
+              "start": 18.68,
+              "end": 18.86,
+              "word": " That",
+              "probability": 0.9928827285766602
+            },
+            {
+              "start": 18.86,
+              "end": 19.18,
+              "word": " stream",
+              "probability": 0.9980775117874146
+            },
+            {
+              "start": 19.18,
+              "end": 19.4,
+              "word": " can",
+              "probability": 0.9966301321983337
+            },
+            {
+              "start": 19.4,
+              "end": 19.6,
+              "word": " come",
+              "probability": 0.9977522492408752
+            },
+            {
+              "start": 19.6,
+              "end": 19.78,
+              "word": " from",
+              "probability": 0.9980125427246094
+            },
+            {
+              "start": 19.78,
+              "end": 19.94,
+              "word": " the",
+              "probability": 0.9929783940315247
+            },
+            {
+              "start": 19.94,
+              "end": 20.3,
+              "word": " processing",
+              "probability": 0.895885705947876
+            },
+            {
+              "start": 20.3,
+              "end": 20.8,
+              "word": " system,",
+              "probability": 0.99828040599823
+            },
+            {
+              "start": 21.18,
+              "end": 21.46,
+              "word": " Ethernet",
+              "probability": 0.8849197030067444
+            },
+            {
+              "start": 21.46,
+              "end": 21.92,
+              "word": " ingress,",
+              "probability": 0.9466837048530579
+            },
+            {
+              "start": 22.34,
+              "end": 22.439999999999998,
+              "word": " or",
+              "probability": 0.9965338706970215
+            },
+            {
+              "start": 22.439999999999998,
+              "end": 22.64,
+              "word": " the",
+              "probability": 0.9863895773887634
+            },
+            {
+              "start": 22.64,
+              "end": 22.880000000000003,
+              "word": " block",
+              "probability": 0.5843004584312439
+            },
+            {
+              "start": 22.880000000000003,
+              "end": 23.119999999999997,
+              "word": " RAM",
+              "probability": 0.7658272981643677
+            },
+            {
+              "start": 23.119999999999997,
+              "end": 23.46,
+              "word": " replay",
+              "probability": 0.8374161124229431
+            },
+            {
+              "start": 23.46,
+              "end": 23.84,
+              "word": " reader.",
+              "probability": 0.9795630574226379
+            }
+          ]
+        },
+        {
+          "start": 24.34,
+          "end": 29.76,
+          "text": " In the Quartz integration, a local adapter feeds one byte per clock into two full block buffers.",
+          "words": [
+            {
+              "start": 24.34,
+              "end": 24.439999999999998,
+              "word": " In",
+              "probability": 0.9963611960411072
+            },
+            {
+              "start": 24.439999999999998,
+              "end": 24.58,
+              "word": " the",
+              "probability": 0.996364176273346
+            },
+            {
+              "start": 24.58,
+              "end": 24.78,
+              "word": " Quartz",
+              "probability": 0.5290857553482056
+            },
+            {
+              "start": 24.78,
+              "end": 25.259999999999998,
+              "word": " integration,",
+              "probability": 0.8879708051681519
+            },
+            {
+              "start": 25.72,
+              "end": 25.82,
+              "word": " a",
+              "probability": 0.9952548742294312
+            },
+            {
+              "start": 25.82,
+              "end": 26.04,
+              "word": " local",
+              "probability": 0.9895786643028259
+            },
+            {
+              "start": 26.04,
+              "end": 26.46,
+              "word": " adapter",
+              "probability": 0.9710663557052612
+            },
+            {
+              "start": 26.46,
+              "end": 26.84,
+              "word": " feeds",
+              "probability": 0.9964481592178345
+            },
+            {
+              "start": 26.84,
+              "end": 27.22,
+              "word": " one",
+              "probability": 0.5449327230453491
+            },
+            {
+              "start": 27.22,
+              "end": 27.439999999999998,
+              "word": " byte",
+              "probability": 0.992752194404602
+            },
+            {
+              "start": 27.439999999999998,
+              "end": 27.68,
+              "word": " per",
+              "probability": 0.9861307740211487
+            },
+            {
+              "start": 27.68,
+              "end": 28.02,
+              "word": " clock",
+              "probability": 0.9833061099052429
+            },
+            {
+              "start": 28.02,
+              "end": 28.36,
+              "word": " into",
+              "probability": 0.9926484227180481
+            },
+            {
+              "start": 28.36,
+              "end": 28.72,
+              "word": " two",
+              "probability": 0.9539126753807068
+            },
+            {
+              "start": 28.72,
+              "end": 29.08,
+              "word": " full",
+              "probability": 0.9904617667198181
+            },
+            {
+              "start": 29.08,
+              "end": 29.38,
+              "word": " block",
+              "probability": 0.7532773613929749
+            },
+            {
+              "start": 29.38,
+              "end": 29.76,
+              "word": " buffers.",
+              "probability": 0.9939523339271545
+            }
+          ]
+        },
+        {
+          "start": 30.26,
+          "end": 32.58,
+          "text": " One fills, while the other feeds the hash state.",
+          "words": [
+            {
+              "start": 30.26,
+              "end": 30.52,
+              "word": " One",
+              "probability": 0.9964985847473145
+            },
+            {
+              "start": 30.52,
+              "end": 30.84,
+              "word": " fills,",
+              "probability": 0.998927652835846
+            },
+            {
+              "start": 31.04,
+              "end": 31.22,
+              "word": " while",
+              "probability": 0.9974215030670166
+            },
+            {
+              "start": 31.22,
+              "end": 31.34,
+              "word": " the",
+              "probability": 0.9965981841087341
+            },
+            {
+              "start": 31.34,
+              "end": 31.6,
+              "word": " other",
+              "probability": 0.9992247819900513
+            },
+            {
+              "start": 31.6,
+              "end": 31.92,
+              "word": " feeds",
+              "probability": 0.9880642294883728
+            },
+            {
+              "start": 31.92,
+              "end": 32.120000000000005,
+              "word": " the",
+              "probability": 0.9985170960426331
+            },
+            {
+              "start": 32.120000000000005,
+              "end": 32.28,
+              "word": " hash",
+              "probability": 0.954591691493988
+            },
+            {
+              "start": 32.28,
+              "end": 32.58,
+              "word": " state.",
+              "probability": 0.9178324937820435
+            }
+          ]
+        },
+        {
+          "start": 33.14,
+          "end": 38.0,
+          "text": " 24 permutation rounds produce the result, which is copied into a separate digest register.",
+          "words": [
+            {
+              "start": 33.14,
+              "end": 33.480000000000004,
+              "word": " 24",
+              "probability": 0.49280667304992676
+            },
+            {
+              "start": 33.480000000000004,
+              "end": 34.120000000000005,
+              "word": " permutation",
+              "probability": 0.9846496284008026
+            },
+            {
+              "start": 34.120000000000005,
+              "end": 34.46,
+              "word": " rounds",
+              "probability": 0.9908977150917053
+            },
+            {
+              "start": 34.46,
+              "end": 34.82,
+              "word": " produce",
+              "probability": 0.9924813508987427
+            },
+            {
+              "start": 34.82,
+              "end": 35.04,
+              "word": " the",
+              "probability": 0.9984695315361023
+            },
+            {
+              "start": 35.04,
+              "end": 35.379999999999995,
+              "word": " result,",
+              "probability": 0.9975252747535706
+            },
+            {
+              "start": 35.72,
+              "end": 35.82,
+              "word": " which",
+              "probability": 0.9983161687850952
+            },
+            {
+              "start": 35.82,
+              "end": 35.94,
+              "word": " is",
+              "probability": 0.9986572265625
+            },
+            {
+              "start": 35.94,
+              "end": 36.239999999999995,
+              "word": " copied",
+              "probability": 0.9992548823356628
+            },
+            {
+              "start": 36.239999999999995,
+              "end": 36.58,
+              "word": " into",
+              "probability": 0.9940484762191772
+            },
+            {
+              "start": 36.58,
+              "end": 36.82,
+              "word": " a",
+              "probability": 0.9956725835800171
+            },
+            {
+              "start": 36.82,
+              "end": 37.1,
+              "word": " separate",
+              "probability": 0.9990196228027344
+            },
+            {
+              "start": 37.1,
+              "end": 37.5,
+              "word": " digest",
+              "probability": 0.8310034871101379
+            },
+            {
+              "start": 37.5,
+              "end": 38.0,
+              "word": " register.",
+              "probability": 0.9989307522773743
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compact: absorb directly into the state",
+      "start": 38.5,
+      "segments": [
+        {
+          "start": 38.5,
+          "end": 41.38,
+          "text": " The compact core uses that same stream interface.",
+          "words": [
+            {
+              "start": 38.5,
+              "end": 38.94,
+              "word": " The",
+              "probability": 0.9742740988731384
+            },
+            {
+              "start": 38.94,
+              "end": 39.3,
+              "word": " compact",
+              "probability": 0.42388319969177246
+            },
+            {
+              "start": 39.3,
+              "end": 39.64,
+              "word": " core",
+              "probability": 0.9202771782875061
+            },
+            {
+              "start": 39.64,
+              "end": 39.94,
+              "word": " uses",
+              "probability": 0.9956492781639099
+            },
+            {
+              "start": 39.94,
+              "end": 40.22,
+              "word": " that",
+              "probability": 0.9846704006195068
+            },
+            {
+              "start": 40.22,
+              "end": 40.58,
+              "word": " same",
+              "probability": 0.9964908957481384
+            },
+            {
+              "start": 40.58,
+              "end": 40.9,
+              "word": " stream",
+              "probability": 0.9381694197654724
+            },
+            {
+              "start": 40.9,
+              "end": 41.38,
+              "word": " interface.",
+              "probability": 0.9976510405540466
+            }
+          ]
+        },
+        {
+          "start": 41.94,
+          "end": 47.96,
+          "text": " It captures up to 8 bytes at a time, then absorbs them directly into the hash state with an aligned exclusive OR.",
+          "words": [
+            {
+              "start": 41.94,
+              "end": 42.04,
+              "word": " It",
+              "probability": 0.9910479187965393
+            },
+            {
+              "start": 42.04,
+              "end": 42.36,
+              "word": " captures",
+              "probability": 0.9990838766098022
+            },
+            {
+              "start": 42.36,
+              "end": 42.56,
+              "word": " up",
+              "probability": 0.9925794005393982
+            },
+            {
+              "start": 42.56,
+              "end": 42.72,
+              "word": " to",
+              "probability": 0.9986281394958496
+            },
+            {
+              "start": 42.72,
+              "end": 42.96,
+              "word": " 8",
+              "probability": 0.6988623142242432
+            },
+            {
+              "start": 42.96,
+              "end": 43.18,
+              "word": " bytes",
+              "probability": 0.9921497106552124
+            },
+            {
+              "start": 43.18,
+              "end": 43.38,
+              "word": " at",
+              "probability": 0.997703492641449
+            },
+            {
+              "start": 43.38,
+              "end": 43.5,
+              "word": " a",
+              "probability": 0.9883834719657898
+            },
+            {
+              "start": 43.5,
+              "end": 43.8,
+              "word": " time,",
+              "probability": 0.9997490048408508
+            },
+            {
+              "start": 44.019999999999996,
+              "end": 44.28,
+              "word": " then",
+              "probability": 0.9907480478286743
+            },
+            {
+              "start": 44.28,
+              "end": 44.74,
+              "word": " absorbs",
+              "probability": 0.9847137331962585
+            },
+            {
+              "start": 44.74,
+              "end": 45.019999999999996,
+              "word": " them",
+              "probability": 0.9981505274772644
+            },
+            {
+              "start": 45.019999999999996,
+              "end": 45.36,
+              "word": " directly",
+              "probability": 0.9975340366363525
+            },
+            {
+              "start": 45.36,
+              "end": 45.78,
+              "word": " into",
+              "probability": 0.9937356114387512
+            },
+            {
+              "start": 45.78,
+              "end": 45.92,
+              "word": " the",
+              "probability": 0.9944396018981934
+            },
+            {
+              "start": 45.92,
+              "end": 46.12,
+              "word": " hash",
+              "probability": 0.8698992133140564
+            },
+            {
+              "start": 46.12,
+              "end": 46.4,
+              "word": " state",
+              "probability": 0.9028869271278381
+            },
+            {
+              "start": 46.4,
+              "end": 46.64,
+              "word": " with",
+              "probability": 0.9822516441345215
+            },
+            {
+              "start": 46.64,
+              "end": 46.74,
+              "word": " an",
+              "probability": 0.9959661960601807
+            },
+            {
+              "start": 46.74,
+              "end": 47.12,
+              "word": " aligned",
+              "probability": 0.968278706073761
+            },
+            {
+              "start": 47.12,
+              "end": 47.6,
+              "word": " exclusive",
+              "probability": 0.772920548915863
+            },
+            {
+              "start": 47.6,
+              "end": 47.96,
+              "word": " OR.",
+              "probability": 0.7161450386047363
+            }
+          ]
+        },
+        {
+          "start": 48.44,
+          "end": 50.2,
+          "text": " The two full block buffers disappear.",
+          "words": [
+            {
+              "start": 48.44,
+              "end": 48.58,
+              "word": " The",
+              "probability": 0.9955499172210693
+            },
+            {
+              "start": 48.58,
+              "end": 48.78,
+              "word": " two",
+              "probability": 0.9401326179504395
+            },
+            {
+              "start": 48.78,
+              "end": 49.06,
+              "word": " full",
+              "probability": 0.9645917415618896
+            },
+            {
+              "start": 49.06,
+              "end": 49.34,
+              "word": " block",
+              "probability": 0.8579699397087097
+            },
+            {
+              "start": 49.34,
+              "end": 49.68,
+              "word": " buffers",
+              "probability": 0.8893647789955139
+            },
+            {
+              "start": 49.68,
+              "end": 50.2,
+              "word": " disappear.",
+              "probability": 0.995513379573822
+            }
+          ]
+        },
+        {
+          "start": 50.74,
+          "end": 55.14,
+          "text": " The digest comes directly from the held state, so that separate register disappears too.",
+          "words": [
+            {
+              "start": 50.74,
+              "end": 50.9,
+              "word": " The",
+              "probability": 0.9962174296379089
+            },
+            {
+              "start": 50.9,
+              "end": 51.26,
+              "word": " digest",
+              "probability": 0.9050687551498413
+            },
+            {
+              "start": 51.26,
+              "end": 51.62,
+              "word": " comes",
+              "probability": 0.9942980408668518
+            },
+            {
+              "start": 51.62,
+              "end": 52.019999999999996,
+              "word": " directly",
+              "probability": 0.9928038716316223
+            },
+            {
+              "start": 52.019999999999996,
+              "end": 52.36,
+              "word": " from",
+              "probability": 0.9974275231361389
+            },
+            {
+              "start": 52.36,
+              "end": 52.480000000000004,
+              "word": " the",
+              "probability": 0.9975770115852356
+            },
+            {
+              "start": 52.480000000000004,
+              "end": 52.66,
+              "word": " held",
+              "probability": 0.9051070213317871
+            },
+            {
+              "start": 52.66,
+              "end": 52.980000000000004,
+              "word": " state,",
+              "probability": 0.9882043600082397
+            },
+            {
+              "start": 53.22,
+              "end": 53.42,
+              "word": " so",
+              "probability": 0.9942797422409058
+            },
+            {
+              "start": 53.42,
+              "end": 53.62,
+              "word": " that",
+              "probability": 0.9958254098892212
+            },
+            {
+              "start": 53.62,
+              "end": 53.92,
+              "word": " separate",
+              "probability": 0.987138569355011
+            },
+            {
+              "start": 53.92,
+              "end": 54.32,
+              "word": " register",
+              "probability": 0.9985893368721008
+            },
+            {
+              "start": 54.32,
+              "end": 54.760000000000005,
+              "word": " disappears",
+              "probability": 0.9984933137893677
+            },
+            {
+              "start": 54.760000000000005,
+              "end": 55.14,
+              "word": " too.",
+              "probability": 0.801421046257019
+            }
+          ]
+        },
+        {
+          "start": 55.9,
+          "end": 58.04,
+          "text": " Capture and absorption still take separate cycles.",
+          "words": [
+            {
+              "start": 55.9,
+              "end": 55.92,
+              "word": " Capture",
+              "probability": 0.9897980690002441
+            },
+            {
+              "start": 55.92,
+              "end": 56.18,
+              "word": " and",
+              "probability": 0.989228367805481
+            },
+            {
+              "start": 56.18,
+              "end": 56.620000000000005,
+              "word": " absorption",
+              "probability": 0.9682700037956238
+            },
+            {
+              "start": 56.620000000000005,
+              "end": 57.04,
+              "word": " still",
+              "probability": 0.996178150177002
+            },
+            {
+              "start": 57.04,
+              "end": 57.32,
+              "word": " take",
+              "probability": 0.8500110507011414
+            },
+            {
+              "start": 57.32,
+              "end": 57.66,
+              "word": " separate",
+              "probability": 0.9954206347465515
+            },
+            {
+              "start": 57.66,
+              "end": 58.04,
+              "word": " cycles.",
+              "probability": 0.9997581839561462
+            }
+          ]
+        },
+        {
+          "start": 58.54,
+          "end": 60.7,
+          "text": " The 24-round permutation is unchanged.",
+          "words": [
+            {
+              "start": 58.54,
+              "end": 58.64,
+              "word": " The",
+              "probability": 0.9935046434402466
+            },
+            {
+              "start": 58.64,
+              "end": 59.04,
+              "word": " 24",
+              "probability": 0.986710250377655
+            },
+            {
+              "start": 59.04,
+              "end": 59.28,
+              "word": "-round",
+              "probability": 0.7536258697509766
+            },
+            {
+              "start": 59.28,
+              "end": 59.92,
+              "word": " permutation",
+              "probability": 0.9988196194171906
+            },
+            {
+              "start": 59.92,
+              "end": 60.239999999999995,
+              "word": " is",
+              "probability": 0.9986293315887451
+            },
+            {
+              "start": 60.239999999999995,
+              "end": 60.7,
+              "word": " unchanged.",
+              "probability": 0.9994866847991943
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Refinement 1: padding selection",
+      "start": 61.3,
+      "segments": [
+        {
+          "start": 61.3,
+          "end": 64.6,
+          "text": " Two smaller changes simplify the compact core further.",
+          "words": [
+            {
+              "start": 61.3,
+              "end": 61.919999999999995,
+              "word": " Two",
+              "probability": 0.9513352513313293
+            },
+            {
+              "start": 61.919999999999995,
+              "end": 62.379999999999995,
+              "word": " smaller",
+              "probability": 0.9963752627372742
+            },
+            {
+              "start": 62.379999999999995,
+              "end": 62.779999999999994,
+              "word": " changes",
+              "probability": 0.9993390440940857
+            },
+            {
+              "start": 62.779999999999994,
+              "end": 63.26,
+              "word": " simplify",
+              "probability": 0.994140088558197
+            },
+            {
+              "start": 63.26,
+              "end": 63.519999999999996,
+              "word": " the",
+              "probability": 0.997619092464447
+            },
+            {
+              "start": 63.519999999999996,
+              "end": 63.839999999999996,
+              "word": " compact",
+              "probability": 0.593011200428009
+            },
+            {
+              "start": 63.839999999999996,
+              "end": 64.16,
+              "word": " core",
+              "probability": 0.9549170136451721
+            },
+            {
+              "start": 64.16,
+              "end": 64.6,
+              "word": " further.",
+              "probability": 0.9956756234169006
+            }
+          ]
+        },
+        {
+          "start": 65.22,
+          "end": 66.08,
+          "text": " First, padding.",
+          "words": [
+            {
+              "start": 65.22,
+              "end": 65.42,
+              "word": " First,",
+              "probability": 0.990656316280365
+            },
+            {
+              "start": 65.97999999999999,
+              "end": 66.08,
+              "word": " padding.",
+              "probability": 0.9893338084220886
+            }
+          ]
+        },
+        {
+          "start": 66.66,
+          "end": 69.8,
+          "text": " Compare this project's earlier wide core with the compact version.",
+          "words": [
+            {
+              "start": 66.66,
+              "end": 66.92,
+              "word": " Compare",
+              "probability": 0.9965500831604004
+            },
+            {
+              "start": 66.92,
+              "end": 67.16,
+              "word": " this",
+              "probability": 0.9920017719268799
+            },
+            {
+              "start": 67.16,
+              "end": 67.66,
+              "word": " project's",
+              "probability": 0.9787077307701111
+            },
+            {
+              "start": 67.66,
+              "end": 68.0,
+              "word": " earlier",
+              "probability": 0.9963830709457397
+            },
+            {
+              "start": 68.0,
+              "end": 68.38,
+              "word": " wide",
+              "probability": 0.857864499092102
+            },
+            {
+              "start": 68.38,
+              "end": 68.66,
+              "word": " core",
+              "probability": 0.7807539105415344
+            },
+            {
+              "start": 68.66,
+              "end": 68.92,
+              "word": " with",
+              "probability": 0.9956249594688416
+            },
+            {
+              "start": 68.92,
+              "end": 69.08,
+              "word": " the",
+              "probability": 0.9969152212142944
+            },
+            {
+              "start": 69.08,
+              "end": 69.39999999999999,
+              "word": " compact",
+              "probability": 0.9728902578353882
+            },
+            {
+              "start": 69.39999999999999,
+              "end": 69.8,
+              "word": " version.",
+              "probability": 0.9995761513710022
+            }
+          ]
+        },
+        {
+          "start": 70.3,
+          "end": 74.17999999999999,
+          "text": " Previously, a variable index selected from all 25 state lanes.",
+          "words": [
+            {
+              "start": 70.3,
+              "end": 70.72,
+              "word": " Previously,",
+              "probability": 0.9976156949996948
+            },
+            {
+              "start": 71.0,
+              "end": 71.14,
+              "word": " a",
+              "probability": 0.9981104135513306
+            },
+            {
+              "start": 71.14,
+              "end": 71.52,
+              "word": " variable",
+              "probability": 0.9882578253746033
+            },
+            {
+              "start": 71.52,
+              "end": 71.94,
+              "word": " index",
+              "probability": 0.9928963780403137
+            },
+            {
+              "start": 71.94,
+              "end": 72.34,
+              "word": " selected",
+              "probability": 0.9782195091247559
+            },
+            {
+              "start": 72.34,
+              "end": 72.64,
+              "word": " from",
+              "probability": 0.9979763627052307
+            },
+            {
+              "start": 72.64,
+              "end": 72.94,
+              "word": " all",
+              "probability": 0.9967650175094604
+            },
+            {
+              "start": 72.94,
+              "end": 73.56,
+              "word": " 25",
+              "probability": 0.9612224102020264
+            },
+            {
+              "start": 73.56,
+              "end": 73.89999999999999,
+              "word": " state",
+              "probability": 0.9644886255264282
+            },
+            {
+              "start": 73.89999999999999,
+              "end": 74.17999999999999,
+              "word": " lanes.",
+              "probability": 0.9833268523216248
+            }
+          ]
+        },
+        {
+          "start": 74.7,
+          "end": 77.38,
+          "text": " The compact version decodes the destination locally,",
+          "words": [
+            {
+              "start": 74.7,
+              "end": 74.82,
+              "word": " The",
+              "probability": 0.997437596321106
+            },
+            {
+              "start": 74.82,
+              "end": 75.2,
+              "word": " compact",
+              "probability": 0.9966638684272766
+            },
+            {
+              "start": 75.2,
+              "end": 75.6,
+              "word": " version",
+              "probability": 0.9985637068748474
+            },
+            {
+              "start": 75.6,
+              "end": 76.12,
+              "word": " decodes",
+              "probability": 0.9910151362419128
+            },
+            {
+              "start": 76.12,
+              "end": 76.32,
+              "word": " the",
+              "probability": 0.9982715845108032
+            },
+            {
+              "start": 76.32,
+              "end": 76.74,
+              "word": " destination",
+              "probability": 0.9972661733627319
+            },
+            {
+              "start": 76.74,
+              "end": 77.38,
+              "word": " locally,",
+              "probability": 0.996161699295044
+            }
+          ]
+        },
+        {
+          "start": 77.58,
+          "end": 80.62,
+          "text": " across only the 17 rate lanes that padding can touch.",
+          "words": [
+            {
+              "start": 77.58,
+              "end": 77.88,
+              "word": " across",
+              "probability": 0.9958242177963257
+            },
+            {
+              "start": 77.88,
+              "end": 78.28,
+              "word": " only",
+              "probability": 0.9973438382148743
+            },
+            {
+              "start": 78.28,
+              "end": 78.5,
+              "word": " the",
+              "probability": 0.9942865967750549
+            },
+            {
+              "start": 78.5,
+              "end": 78.97999999999999,
+              "word": " 17",
+              "probability": 0.9918357133865356
+            },
+            {
+              "start": 78.97999999999999,
+              "end": 79.28,
+              "word": " rate",
+              "probability": 0.8683805465698242
+            },
+            {
+              "start": 79.28,
+              "end": 79.58,
+              "word": " lanes",
+              "probability": 0.984575629234314
+            },
+            {
+              "start": 79.58,
+              "end": 79.8,
+              "word": " that",
+              "probability": 0.9932565689086914
+            },
+            {
+              "start": 79.8,
+              "end": 80.12,
+              "word": " padding",
+              "probability": 0.9980833530426025
+            },
+            {
+              "start": 80.12,
+              "end": 80.36,
+              "word": " can",
+              "probability": 0.9980427026748657
+            },
+            {
+              "start": 80.36,
+              "end": 80.62,
+              "word": " touch.",
+              "probability": 0.9995825886726379
+            }
+          ]
+        },
+        {
+          "start": 81.14,
+          "end": 83.6,
+          "text": " The eight capacity lanes remain in the hash state.",
+          "words": [
+            {
+              "start": 81.14,
+              "end": 81.24,
+              "word": " The",
+              "probability": 0.9967389702796936
+            },
+            {
+              "start": 81.24,
+              "end": 81.47999999999999,
+              "word": " eight",
+              "probability": 0.6278793811798096
+            },
+            {
+              "start": 81.47999999999999,
+              "end": 81.92,
+              "word": " capacity",
+              "probability": 0.9877205491065979
+            },
+            {
+              "start": 81.92,
+              "end": 82.4,
+              "word": " lanes",
+              "probability": 0.9977031350135803
+            },
+            {
+              "start": 82.4,
+              "end": 82.75999999999999,
+              "word": " remain",
+              "probability": 0.9973128437995911
+            },
+            {
+              "start": 82.75999999999999,
+              "end": 83.0,
+              "word": " in",
+              "probability": 0.9985672235488892
+            },
+            {
+              "start": 83.0,
+              "end": 83.1,
+              "word": " the",
+              "probability": 0.998913049697876
+            },
+            {
+              "start": 83.1,
+              "end": 83.3,
+              "word": " hash",
+              "probability": 0.915766716003418
+            },
+            {
+              "start": 83.3,
+              "end": 83.6,
+              "word": " state.",
+              "probability": 0.9531520009040833
+            }
+          ]
+        },
+        {
+          "start": 84.16,
+          "end": 85.02,
+          "text": " Padding leaves them alone.",
+          "words": [
+            {
+              "start": 84.16,
+              "end": 84.3,
+              "word": " Padding",
+              "probability": 0.9442291855812073
+            },
+            {
+              "start": 84.3,
+              "end": 84.58,
+              "word": " leaves",
+              "probability": 0.9959461092948914
+            },
+            {
+              "start": 84.58,
+              "end": 84.74,
+              "word": " them",
+              "probability": 0.9989909529685974
+            },
+            {
+              "start": 84.74,
+              "end": 85.02,
+              "word": " alone.",
+              "probability": 0.9992096424102783
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Refinement 2: validate before absorption",
+      "start": 85.6,
+      "segments": [
+        {
+          "start": 85.6,
+          "end": 87.5,
+          "text": " Second, input validation.",
+          "words": [
+            {
+              "start": 85.6,
+              "end": 86.28,
+              "word": " Second,",
+              "probability": 0.9244595766067505
+            },
+            {
+              "start": 86.75999999999999,
+              "end": 86.97999999999999,
+              "word": " input",
+              "probability": 0.8812329769134521
+            },
+            {
+              "start": 86.97999999999999,
+              "end": 87.5,
+              "word": " validation.",
+              "probability": 0.9861572980880737
+            }
+          ]
+        },
+        {
+          "start": 88.14,
+          "end": 92.5,
+          "text": " The earlier design checked the byte mask and end of message flag on the state update control",
+          "words": [
+            {
+              "start": 88.14,
+              "end": 88.22,
+              "word": " The",
+              "probability": 0.9884495735168457
+            },
+            {
+              "start": 88.22,
+              "end": 88.5,
+              "word": " earlier",
+              "probability": 0.9947723746299744
+            },
+            {
+              "start": 88.5,
+              "end": 88.91999999999999,
+              "word": " design",
+              "probability": 0.9862906336784363
+            },
+            {
+              "start": 88.91999999999999,
+              "end": 89.22,
+              "word": " checked",
+              "probability": 0.9410064816474915
+            },
+            {
+              "start": 89.22,
+              "end": 89.41999999999999,
+              "word": " the",
+              "probability": 0.9958659410476685
+            },
+            {
+              "start": 89.41999999999999,
+              "end": 89.6,
+              "word": " byte",
+              "probability": 0.8447542190551758
+            },
+            {
+              "start": 89.6,
+              "end": 89.88,
+              "word": " mask",
+              "probability": 0.8369750380516052
+            },
+            {
+              "start": 89.88,
+              "end": 90.17999999999999,
+              "word": " and",
+              "probability": 0.9886377453804016
+            },
+            {
+              "start": 90.17999999999999,
+              "end": 90.38,
+              "word": " end",
+              "probability": 0.9370244145393372
+            },
+            {
+              "start": 90.38,
+              "end": 90.5,
+              "word": " of",
+              "probability": 0.521332859992981
+            },
+            {
+              "start": 90.5,
+              "end": 90.82,
+              "word": " message",
+              "probability": 0.9982934594154358
+            },
+            {
+              "start": 90.82,
+              "end": 91.16,
+              "word": " flag",
+              "probability": 0.9899039268493652
+            },
+            {
+              "start": 91.16,
+              "end": 91.39999999999999,
+              "word": " on",
+              "probability": 0.9904189705848694
+            },
+            {
+              "start": 91.39999999999999,
+              "end": 91.52,
+              "word": " the",
+              "probability": 0.9963625073432922
+            },
+            {
+              "start": 91.52,
+              "end": 91.75999999999999,
+              "word": " state",
+              "probability": 0.8519197702407837
+            },
+            {
+              "start": 91.75999999999999,
+              "end": 92.08,
+              "word": " update",
+              "probability": 0.9565671682357788
+            },
+            {
+              "start": 92.08,
+              "end": 92.5,
+              "word": " control",
+              "probability": 0.9896255135536194
+            }
+          ]
+        },
+        {
+          "start": 92.5,
+          "end": 92.83999999999999,
+          "text": " path.",
+          "words": [
+            {
+              "start": 92.5,
+              "end": 92.83999999999999,
+              "word": " path.",
+              "probability": 0.9942348599433899
+            }
+          ]
+        },
+        {
+          "start": 93.32,
+          "end": 96.39999999999999,
+          "text": " The compact core records that check while capturing the input.",
+          "words": [
+            {
+              "start": 93.32,
+              "end": 93.39999999999999,
+              "word": " The",
+              "probability": 0.9951366782188416
+            },
+            {
+              "start": 93.39999999999999,
+              "end": 93.75999999999999,
+              "word": " compact",
+              "probability": 0.823064923286438
+            },
+            {
+              "start": 93.75999999999999,
+              "end": 94.1,
+              "word": " core",
+              "probability": 0.9173944592475891
+            },
+            {
+              "start": 94.1,
+              "end": 94.56,
+              "word": " records",
+              "probability": 0.9925123453140259
+            },
+            {
+              "start": 94.56,
+              "end": 94.8,
+              "word": " that",
+              "probability": 0.9920468330383301
+            },
+            {
+              "start": 94.8,
+              "end": 95.08,
+              "word": " check",
+              "probability": 0.9979842901229858
+            },
+            {
+              "start": 95.08,
+              "end": 95.41999999999999,
+              "word": " while",
+              "probability": 0.9920294284820557
+            },
+            {
+              "start": 95.41999999999999,
+              "end": 95.88,
+              "word": " capturing",
+              "probability": 0.998958945274353
+            },
+            {
+              "start": 95.88,
+              "end": 96.1,
+              "word": " the",
+              "probability": 0.9981303811073303
+            },
+            {
+              "start": 96.1,
+              "end": 96.39999999999999,
+              "word": " input.",
+              "probability": 0.9982365369796753
+            }
+          ]
+        },
+        {
+          "start": 96.83999999999999,
+          "end": 100.11999999999999,
+          "text": " On the next cycle, a bad word is rejected before absorption.",
+          "words": [
+            {
+              "start": 96.83999999999999,
+              "end": 96.96,
+              "word": " On",
+              "probability": 0.9949577450752258
+            },
+            {
+              "start": 96.96,
+              "end": 97.06,
+              "word": " the",
+              "probability": 0.9989836812019348
+            },
+            {
+              "start": 97.06,
+              "end": 97.25999999999999,
+              "word": " next",
+              "probability": 0.9994691014289856
+            },
+            {
+              "start": 97.25999999999999,
+              "end": 97.58,
+              "word": " cycle,",
+              "probability": 0.998999297618866
+            },
+            {
+              "start": 97.88,
+              "end": 97.97999999999999,
+              "word": " a",
+              "probability": 0.9968199729919434
+            },
+            {
+              "start": 97.97999999999999,
+              "end": 98.22,
+              "word": " bad",
+              "probability": 0.9454637169837952
+            },
+            {
+              "start": 98.22,
+              "end": 98.46,
+              "word": " word",
+              "probability": 0.9979032278060913
+            },
+            {
+              "start": 98.46,
+              "end": 98.66,
+              "word": " is",
+              "probability": 0.9986571073532104
+            },
+            {
+              "start": 98.66,
+              "end": 99.08,
+              "word": " rejected",
+              "probability": 0.9988462924957275
+            },
+            {
+              "start": 99.08,
+              "end": 99.6,
+              "word": " before",
+              "probability": 0.998468816280365
+            },
+            {
+              "start": 99.6,
+              "end": 100.11999999999999,
+              "word": " absorption.",
+              "probability": 0.9906394481658936
+            }
+          ]
+        },
+        {
+          "start": 100.69999999999999,
+          "end": 102.53999999999999,
+          "text": " These changes reduce surrounding logic.",
+          "words": [
+            {
+              "start": 100.69999999999999,
+              "end": 100.83999999999999,
+              "word": " These",
+              "probability": 0.9966360330581665
+            },
+            {
+              "start": 100.83999999999999,
+              "end": 101.17999999999999,
+              "word": " changes",
+              "probability": 0.99887615442276
+            },
+            {
+              "start": 101.17999999999999,
+              "end": 101.61999999999999,
+              "word": " reduce",
+              "probability": 0.9581424593925476
+            },
+            {
+              "start": 101.61999999999999,
+              "end": 102.1,
+              "word": " surrounding",
+              "probability": 0.9941058158874512
+            },
+            {
+              "start": 102.1,
+              "end": 102.53999999999999,
+              "word": " logic.",
+              "probability": 0.9979835748672485
+            }
+          ]
+        },
+        {
+          "start": 102.97999999999999,
+          "end": 105.96,
+          "text": " They preserve the hash algorithm and the simulated cycle count.",
+          "words": [
+            {
+              "start": 102.97999999999999,
+              "end": 103.1,
+              "word": " They",
+              "probability": 0.9901384115219116
+            },
+            {
+              "start": 103.1,
+              "end": 103.44,
+              "word": " preserve",
+              "probability": 0.9915938377380371
+            },
+            {
+              "start": 103.44,
+              "end": 103.66,
+              "word": " the",
+              "probability": 0.9992935657501221
+            },
+            {
+              "start": 103.66,
+              "end": 103.88,
+              "word": " hash",
+              "probability": 0.9844908118247986
+            },
+            {
+              "start": 103.88,
+              "end": 104.33999999999999,
+              "word": " algorithm",
+              "probability": 0.9953595995903015
+            },
+            {
+              "start": 104.33999999999999,
+              "end": 104.78,
+              "word": " and",
+              "probability": 0.9782716631889343
+            },
+            {
+              "start": 104.78,
+              "end": 104.94,
+              "word": " the",
+              "probability": 0.9947648048400879
+            },
+            {
+              "start": 104.94,
+              "end": 105.3,
+              "word": " simulated",
+              "probability": 0.9987930059432983
+            },
+            {
+              "start": 105.3,
+              "end": 105.67999999999999,
+              "word": " cycle",
+              "probability": 0.9989206790924072
+            },
+            {
+              "start": 105.67999999999999,
+              "end": 105.96,
+              "word": " count.",
+              "probability": 0.9970532655715942
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SHA3-256: compact vs Oxide Quartz",
+      "start": 106.46666666666667,
+      "segments": [
+        {
+          "start": 106.46666666666667,
+          "end": 113.14666666666668,
+          "text": " This experiment compares SHA-3 256 in the compact core with Oxide's quartz implementation.",
+          "words": [
+            {
+              "start": 106.46666666666667,
+              "end": 107.22666666666667,
+              "word": " This",
+              "probability": 0.9752947688102722
+            },
+            {
+              "start": 107.22666666666667,
+              "end": 107.68666666666667,
+              "word": " experiment",
+              "probability": 0.9945273995399475
+            },
+            {
+              "start": 107.68666666666667,
+              "end": 108.26666666666667,
+              "word": " compares",
+              "probability": 0.9894958138465881
+            },
+            {
+              "start": 108.26666666666667,
+              "end": 108.54666666666667,
+              "word": " SHA",
+              "probability": 0.929551899433136
+            },
+            {
+              "start": 108.54666666666667,
+              "end": 108.96666666666667,
+              "word": "-3",
+              "probability": 0.8855803310871124
+            },
+            {
+              "start": 108.96666666666667,
+              "end": 109.64666666666668,
+              "word": " 256",
+              "probability": 0.3890310525894165
+            },
+            {
+              "start": 109.64666666666668,
+              "end": 110.22666666666667,
+              "word": " in",
+              "probability": 0.9759740233421326
+            },
+            {
+              "start": 110.22666666666667,
+              "end": 110.34666666666666,
+              "word": " the",
+              "probability": 0.993598222732544
+            },
+            {
+              "start": 110.34666666666666,
+              "end": 110.66666666666667,
+              "word": " compact",
+              "probability": 0.7351487874984741
+            },
+            {
+              "start": 110.66666666666667,
+              "end": 111.04666666666667,
+              "word": " core",
+              "probability": 0.9719364047050476
+            },
+            {
+              "start": 111.04666666666667,
+              "end": 111.60666666666667,
+              "word": " with",
+              "probability": 0.9176931977272034
+            },
+            {
+              "start": 111.60666666666667,
+              "end": 112.34666666666666,
+              "word": " Oxide's",
+              "probability": 0.7811917861302694
+            },
+            {
+              "start": 112.34666666666666,
+              "end": 112.50666666666667,
+              "word": " quartz",
+              "probability": 0.5186856389045715
+            },
+            {
+              "start": 112.50666666666667,
+              "end": 113.14666666666668,
+              "word": " implementation.",
+              "probability": 0.9869639277458191
+            }
+          ]
+        },
+        {
+          "start": 113.90666666666667,
+          "end": 117.82666666666667,
+          "text": " The input comes from block RAM, memory built into the FPGA.",
+          "words": [
+            {
+              "start": 113.90666666666667,
+              "end": 113.98666666666666,
+              "word": " The",
+              "probability": 0.9943811297416687
+            },
+            {
+              "start": 113.98666666666666,
+              "end": 114.28666666666666,
+              "word": " input",
+              "probability": 0.9973854422569275
+            },
+            {
+              "start": 114.28666666666666,
+              "end": 114.62666666666667,
+              "word": " comes",
+              "probability": 0.9967143535614014
+            },
+            {
+              "start": 114.62666666666667,
+              "end": 114.90666666666667,
+              "word": " from",
+              "probability": 0.9984499216079712
+            },
+            {
+              "start": 114.90666666666667,
+              "end": 115.14666666666668,
+              "word": " block",
+              "probability": 0.7053390741348267
+            },
+            {
+              "start": 115.14666666666668,
+              "end": 115.40666666666667,
+              "word": " RAM,",
+              "probability": 0.4806772470474243
+            },
+            {
+              "start": 116.26666666666667,
+              "end": 116.26666666666667,
+              "word": " memory",
+              "probability": 0.973209798336029
+            },
+            {
+              "start": 116.26666666666667,
+              "end": 116.54666666666667,
+              "word": " built",
+              "probability": 0.9936289191246033
+            },
+            {
+              "start": 116.54666666666667,
+              "end": 116.94666666666667,
+              "word": " into",
+              "probability": 0.782631516456604
+            },
+            {
+              "start": 116.94666666666667,
+              "end": 117.10666666666667,
+              "word": " the",
+              "probability": 0.9953097701072693
+            },
+            {
+              "start": 117.10666666666667,
+              "end": 117.82666666666667,
+              "word": " FPGA.",
+              "probability": 0.9847470919291178
+            }
+          ]
+        },
+        {
+          "start": 118.24666666666667,
+          "end": 121.14666666666668,
+          "text": " That lets the comparison focus on the hardware hashing path.",
+          "words": [
+            {
+              "start": 118.24666666666667,
+              "end": 118.50666666666666,
+              "word": " That",
+              "probability": 0.9914065599441528
+            },
+            {
+              "start": 118.50666666666666,
+              "end": 118.70666666666666,
+              "word": " lets",
+              "probability": 0.9273316860198975
+            },
+            {
+              "start": 118.70666666666666,
+              "end": 118.86666666666667,
+              "word": " the",
+              "probability": 0.9967170357704163
+            },
+            {
+              "start": 118.86666666666667,
+              "end": 119.20666666666666,
+              "word": " comparison",
+              "probability": 0.9886142015457153
+            },
+            {
+              "start": 119.20666666666666,
+              "end": 119.60666666666667,
+              "word": " focus",
+              "probability": 0.9974763989448547
+            },
+            {
+              "start": 119.60666666666667,
+              "end": 119.94666666666667,
+              "word": " on",
+              "probability": 0.9981301426887512
+            },
+            {
+              "start": 119.94666666666667,
+              "end": 120.08666666666667,
+              "word": " the",
+              "probability": 0.9943438768386841
+            },
+            {
+              "start": 120.08666666666667,
+              "end": 120.48666666666666,
+              "word": " hardware",
+              "probability": 0.9763556718826294
+            },
+            {
+              "start": 120.48666666666666,
+              "end": 120.82666666666667,
+              "word": " hashing",
+              "probability": 0.9953643083572388
+            },
+            {
+              "start": 120.82666666666667,
+              "end": 121.14666666666668,
+              "word": " path.",
+              "probability": 0.9935789108276367
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Replay a small FPGA-resident pattern",
+      "start": 121.6,
+      "segments": [
+        {
+          "start": 121.6,
+          "end": 124.22,
+          "text": " A small, repeatable pattern is loaded once.",
+          "words": [
+            {
+              "start": 121.6,
+              "end": 122.0,
+              "word": " A",
+              "probability": 0.9263343811035156
+            },
+            {
+              "start": 122.0,
+              "end": 122.38,
+              "word": " small,",
+              "probability": 0.9974815249443054
+            },
+            {
+              "start": 122.5,
+              "end": 123.03999999999999,
+              "word": " repeatable",
+              "probability": 0.9968330562114716
+            },
+            {
+              "start": 123.03999999999999,
+              "end": 123.33999999999999,
+              "word": " pattern",
+              "probability": 0.9874961376190186
+            },
+            {
+              "start": 123.33999999999999,
+              "end": 123.58,
+              "word": " is",
+              "probability": 0.9975806474685669
+            },
+            {
+              "start": 123.58,
+              "end": 123.83999999999999,
+              "word": " loaded",
+              "probability": 0.9968578815460205
+            },
+            {
+              "start": 123.83999999999999,
+              "end": 124.22,
+              "word": " once.",
+              "probability": 0.9956414699554443
+            }
+          ]
+        },
+        {
+          "start": 124.82,
+          "end": 128.57999999999998,
+          "text": " The FPGA reads it, returns to the beginning, and keeps the stream moving.",
+          "words": [
+            {
+              "start": 124.82,
+              "end": 124.89999999999999,
+              "word": " The",
+              "probability": 0.9946862459182739
+            },
+            {
+              "start": 124.89999999999999,
+              "end": 125.58,
+              "word": " FPGA",
+              "probability": 0.9721662799517313
+            },
+            {
+              "start": 125.58,
+              "end": 125.83999999999999,
+              "word": " reads",
+              "probability": 0.9948933124542236
+            },
+            {
+              "start": 125.83999999999999,
+              "end": 126.14,
+              "word": " it,",
+              "probability": 0.9975453019142151
+            },
+            {
+              "start": 126.28,
+              "end": 126.6,
+              "word": " returns",
+              "probability": 0.9976092576980591
+            },
+            {
+              "start": 126.6,
+              "end": 126.83999999999999,
+              "word": " to",
+              "probability": 0.9953159093856812
+            },
+            {
+              "start": 126.83999999999999,
+              "end": 126.91999999999999,
+              "word": " the",
+              "probability": 0.9961813688278198
+            },
+            {
+              "start": 126.91999999999999,
+              "end": 127.17999999999999,
+              "word": " beginning,",
+              "probability": 0.9952915906906128
+            },
+            {
+              "start": 127.5,
+              "end": 127.64,
+              "word": " and",
+              "probability": 0.9977607727050781
+            },
+            {
+              "start": 127.64,
+              "end": 127.83999999999999,
+              "word": " keeps",
+              "probability": 0.9960343241691589
+            },
+            {
+              "start": 127.83999999999999,
+              "end": 128.04,
+              "word": " the",
+              "probability": 0.9984038472175598
+            },
+            {
+              "start": 128.04,
+              "end": 128.26,
+              "word": " stream",
+              "probability": 0.993602454662323
+            },
+            {
+              "start": 128.26,
+              "end": 128.57999999999998,
+              "word": " moving.",
+              "probability": 0.9981122016906738
+            }
+          ]
+        },
+        {
+          "start": 129.07999999999998,
+          "end": 131.44,
+          "text": " The hash state continues across every pass.",
+          "words": [
+            {
+              "start": 129.07999999999998,
+              "end": 129.22,
+              "word": " The",
+              "probability": 0.9946341514587402
+            },
+            {
+              "start": 129.22,
+              "end": 129.44,
+              "word": " hash",
+              "probability": 0.9273815155029297
+            },
+            {
+              "start": 129.44,
+              "end": 129.72,
+              "word": " state",
+              "probability": 0.9218384027481079
+            },
+            {
+              "start": 129.72,
+              "end": 130.22,
+              "word": " continues",
+              "probability": 0.997171938419342
+            },
+            {
+              "start": 130.22,
+              "end": 130.66,
+              "word": " across",
+              "probability": 0.9974914789199829
+            },
+            {
+              "start": 130.66,
+              "end": 131.1,
+              "word": " every",
+              "probability": 0.9983178377151489
+            },
+            {
+              "start": 131.1,
+              "end": 131.44,
+              "word": " pass.",
+              "probability": 0.9853245615959167
+            }
+          ]
+        },
+        {
+          "start": 131.98,
+          "end": 135.74,
+          "text": " A small memory can therefore supply one large, continuous message.",
+          "words": [
+            {
+              "start": 131.98,
+              "end": 132.1,
+              "word": " A",
+              "probability": 0.9964163303375244
+            },
+            {
+              "start": 132.1,
+              "end": 132.4,
+              "word": " small",
+              "probability": 0.998816967010498
+            },
+            {
+              "start": 132.4,
+              "end": 132.76,
+              "word": " memory",
+              "probability": 0.997661828994751
+            },
+            {
+              "start": 132.76,
+              "end": 133.01999999999998,
+              "word": " can",
+              "probability": 0.9968042373657227
+            },
+            {
+              "start": 133.01999999999998,
+              "end": 133.38,
+              "word": " therefore",
+              "probability": 0.8957942724227905
+            },
+            {
+              "start": 133.38,
+              "end": 133.78,
+              "word": " supply",
+              "probability": 0.9966802597045898
+            },
+            {
+              "start": 133.78,
+              "end": 134.2,
+              "word": " one",
+              "probability": 0.9926642775535583
+            },
+            {
+              "start": 134.2,
+              "end": 134.68,
+              "word": " large,",
+              "probability": 0.9324764013290405
+            },
+            {
+              "start": 134.79999999999998,
+              "end": 135.26,
+              "word": " continuous",
+              "probability": 0.9980407357215881
+            },
+            {
+              "start": 135.26,
+              "end": 135.74,
+              "word": " message.",
+              "probability": 0.9980648159980774
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hardware START through digest completion",
+      "start": 136.13333333333333,
+      "segments": [
+        {
+          "start": 136.13333333333333,
+          "end": 140.09333333333333,
+          "text": " The hardware timer starts with the hash job and stops when the digest is ready.",
+          "words": [
+            {
+              "start": 136.13333333333333,
+              "end": 136.43333333333334,
+              "word": " The",
+              "probability": 0.9704473614692688
+            },
+            {
+              "start": 136.43333333333334,
+              "end": 136.73333333333332,
+              "word": " hardware",
+              "probability": 0.968656063079834
+            },
+            {
+              "start": 136.73333333333332,
+              "end": 137.07333333333332,
+              "word": " timer",
+              "probability": 0.9938322305679321
+            },
+            {
+              "start": 137.07333333333332,
+              "end": 137.41333333333333,
+              "word": " starts",
+              "probability": 0.9981793165206909
+            },
+            {
+              "start": 137.41333333333333,
+              "end": 137.67333333333332,
+              "word": " with",
+              "probability": 0.9974347949028015
+            },
+            {
+              "start": 137.67333333333332,
+              "end": 137.81333333333333,
+              "word": " the",
+              "probability": 0.9599804878234863
+            },
+            {
+              "start": 137.81333333333333,
+              "end": 138.01333333333332,
+              "word": " hash",
+              "probability": 0.8290664553642273
+            },
+            {
+              "start": 138.01333333333332,
+              "end": 138.2733333333333,
+              "word": " job",
+              "probability": 0.910861611366272
+            },
+            {
+              "start": 138.2733333333333,
+              "end": 138.59333333333333,
+              "word": " and",
+              "probability": 0.8795440196990967
+            },
+            {
+              "start": 138.59333333333333,
+              "end": 138.91333333333333,
+              "word": " stops",
+              "probability": 0.99861741065979
+            },
+            {
+              "start": 138.91333333333333,
+              "end": 139.19333333333333,
+              "word": " when",
+              "probability": 0.9960871934890747
+            },
+            {
+              "start": 139.19333333333333,
+              "end": 139.33333333333331,
+              "word": " the",
+              "probability": 0.9981710910797119
+            },
+            {
+              "start": 139.33333333333331,
+              "end": 139.59333333333333,
+              "word": " digest",
+              "probability": 0.9622266292572021
+            },
+            {
+              "start": 139.59333333333333,
+              "end": 139.83333333333331,
+              "word": " is",
+              "probability": 0.998024582862854
+            },
+            {
+              "start": 139.83333333333331,
+              "end": 140.09333333333333,
+              "word": " ready.",
+              "probability": 0.9994526505470276
+            }
+          ]
+        },
+        {
+          "start": 140.71333333333334,
+          "end": 142.93333333333334,
+          "text": " Loading the pattern happens before timing begins.",
+          "words": [
+            {
+              "start": 140.71333333333334,
+              "end": 140.83333333333331,
+              "word": " Loading",
+              "probability": 0.9862087965011597
+            },
+            {
+              "start": 140.83333333333331,
+              "end": 141.03333333333333,
+              "word": " the",
+              "probability": 0.9986760020256042
+            },
+            {
+              "start": 141.03333333333333,
+              "end": 141.33333333333331,
+              "word": " pattern",
+              "probability": 0.9963235855102539
+            },
+            {
+              "start": 141.33333333333331,
+              "end": 141.67333333333332,
+              "word": " happens",
+              "probability": 0.9946388602256775
+            },
+            {
+              "start": 141.67333333333332,
+              "end": 142.17333333333332,
+              "word": " before",
+              "probability": 0.9922322034835815
+            },
+            {
+              "start": 142.17333333333332,
+              "end": 142.51333333333332,
+              "word": " timing",
+              "probability": 0.9725531935691833
+            },
+            {
+              "start": 142.51333333333332,
+              "end": 142.93333333333334,
+              "word": " begins.",
+              "probability": 0.997215986251831
+            }
+          ]
+        },
+        {
+          "start": 143.59333333333333,
+          "end": 147.53333333333333,
+          "text": " The measurement includes the memory reader, framing, and the selected hash core.",
+          "words": [
+            {
+              "start": 143.59333333333333,
+              "end": 143.69333333333333,
+              "word": " The",
+              "probability": 0.9971513152122498
+            },
+            {
+              "start": 143.69333333333333,
+              "end": 143.99333333333334,
+              "word": " measurement",
+              "probability": 0.9964756369590759
+            },
+            {
+              "start": 143.99333333333334,
+              "end": 144.47333333333333,
+              "word": " includes",
+              "probability": 0.9945154786109924
+            },
+            {
+              "start": 144.47333333333333,
+              "end": 144.71333333333334,
+              "word": " the",
+              "probability": 0.9949291944503784
+            },
+            {
+              "start": 144.71333333333334,
+              "end": 144.97333333333333,
+              "word": " memory",
+              "probability": 0.8840135335922241
+            },
+            {
+              "start": 144.97333333333333,
+              "end": 145.33333333333331,
+              "word": " reader,",
+              "probability": 0.994907557964325
+            },
+            {
+              "start": 145.67333333333332,
+              "end": 145.91333333333333,
+              "word": " framing,",
+              "probability": 0.9899531006813049
+            },
+            {
+              "start": 146.33333333333331,
+              "end": 146.49333333333334,
+              "word": " and",
+              "probability": 0.9978910088539124
+            },
+            {
+              "start": 146.49333333333334,
+              "end": 146.63333333333333,
+              "word": " the",
+              "probability": 0.997491717338562
+            },
+            {
+              "start": 146.63333333333333,
+              "end": 146.95333333333332,
+              "word": " selected",
+              "probability": 0.9980853796005249
+            },
+            {
+              "start": 146.95333333333332,
+              "end": 147.31333333333333,
+              "word": " hash",
+              "probability": 0.9674031138420105
+            },
+            {
+              "start": 147.31333333333333,
+              "end": 147.53333333333333,
+              "word": " core.",
+              "probability": 0.7271676063537598
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25 sizes and 350 measured replay hashes",
+      "start": 147.8,
+      "segments": [
+        {
+          "start": 147.8,
+          "end": 152.32000000000002,
+          "text": " Both cores use the same board, the same memory path, and a 100 MHz clock.",
+          "words": [
+            {
+              "start": 147.8,
+              "end": 148.24,
+              "word": " Both",
+              "probability": 0.9089352488517761
+            },
+            {
+              "start": 148.24,
+              "end": 148.54000000000002,
+              "word": " cores",
+              "probability": 0.9890915155410767
+            },
+            {
+              "start": 148.54000000000002,
+              "end": 148.78,
+              "word": " use",
+              "probability": 0.98576420545578
+            },
+            {
+              "start": 148.78,
+              "end": 149.0,
+              "word": " the",
+              "probability": 0.9958938360214233
+            },
+            {
+              "start": 149.0,
+              "end": 149.24,
+              "word": " same",
+              "probability": 0.998630166053772
+            },
+            {
+              "start": 149.24,
+              "end": 149.54000000000002,
+              "word": " board,",
+              "probability": 0.9960179924964905
+            },
+            {
+              "start": 149.92000000000002,
+              "end": 149.94,
+              "word": " the",
+              "probability": 0.9919387698173523
+            },
+            {
+              "start": 149.94,
+              "end": 150.20000000000002,
+              "word": " same",
+              "probability": 0.9988492727279663
+            },
+            {
+              "start": 150.20000000000002,
+              "end": 150.5,
+              "word": " memory",
+              "probability": 0.9992208480834961
+            },
+            {
+              "start": 150.5,
+              "end": 150.8,
+              "word": " path,",
+              "probability": 0.9852613806724548
+            },
+            {
+              "start": 151.08,
+              "end": 151.16000000000003,
+              "word": " and",
+              "probability": 0.9964106678962708
+            },
+            {
+              "start": 151.16000000000003,
+              "end": 151.28,
+              "word": " a",
+              "probability": 0.7203444242477417
+            },
+            {
+              "start": 151.28,
+              "end": 151.54000000000002,
+              "word": " 100",
+              "probability": 0.860704779624939
+            },
+            {
+              "start": 151.54000000000002,
+              "end": 151.92000000000002,
+              "word": " MHz",
+              "probability": 0.554314136505127
+            },
+            {
+              "start": 151.92000000000002,
+              "end": 152.32000000000002,
+              "word": " clock.",
+              "probability": 0.9952129125595093
+            }
+          ]
+        },
+        {
+          "start": 152.96,
+          "end": 157.66000000000003,
+          "text": " Messages start at 64 bytes and double at each step, across 25 sizes.",
+          "words": [
+            {
+              "start": 152.96,
+              "end": 153.08,
+              "word": " Messages",
+              "probability": 0.9718513488769531
+            },
+            {
+              "start": 153.08,
+              "end": 153.52,
+              "word": " start",
+              "probability": 0.9960826635360718
+            },
+            {
+              "start": 153.52,
+              "end": 153.74,
+              "word": " at",
+              "probability": 0.9985042810440063
+            },
+            {
+              "start": 153.74,
+              "end": 154.3,
+              "word": " 64",
+              "probability": 0.9966237545013428
+            },
+            {
+              "start": 154.3,
+              "end": 154.60000000000002,
+              "word": " bytes",
+              "probability": 0.9673702120780945
+            },
+            {
+              "start": 154.60000000000002,
+              "end": 154.98000000000002,
+              "word": " and",
+              "probability": 0.8234237432479858
+            },
+            {
+              "start": 154.98000000000002,
+              "end": 155.24,
+              "word": " double",
+              "probability": 0.9905529022216797
+            },
+            {
+              "start": 155.24,
+              "end": 155.52,
+              "word": " at",
+              "probability": 0.9752655625343323
+            },
+            {
+              "start": 155.52,
+              "end": 155.74,
+              "word": " each",
+              "probability": 0.998889148235321
+            },
+            {
+              "start": 155.74,
+              "end": 156.08,
+              "word": " step,",
+              "probability": 0.9968129992485046
+            },
+            {
+              "start": 156.54000000000002,
+              "end": 156.56,
+              "word": " across",
+              "probability": 0.9965073466300964
+            },
+            {
+              "start": 156.56,
+              "end": 157.16000000000003,
+              "word": " 25",
+              "probability": 0.9839255809783936
+            },
+            {
+              "start": 157.16000000000003,
+              "end": 157.66000000000003,
+              "word": " sizes.",
+              "probability": 0.9980375170707703
+            }
+          ]
+        },
+        {
+          "start": 158.36,
+          "end": 160.96,
+          "text": " Seven measured runs follow warm-up at every size.",
+          "words": [
+            {
+              "start": 158.36,
+              "end": 158.56,
+              "word": " Seven",
+              "probability": 0.5268679261207581
+            },
+            {
+              "start": 158.56,
+              "end": 158.9,
+              "word": " measured",
+              "probability": 0.9808448553085327
+            },
+            {
+              "start": 158.9,
+              "end": 159.20000000000002,
+              "word": " runs",
+              "probability": 0.9957466721534729
+            },
+            {
+              "start": 159.20000000000002,
+              "end": 159.60000000000002,
+              "word": " follow",
+              "probability": 0.9907768964767456
+            },
+            {
+              "start": 159.60000000000002,
+              "end": 159.9,
+              "word": " warm",
+              "probability": 0.9609628319740295
+            },
+            {
+              "start": 159.9,
+              "end": 160.08,
+              "word": "-up",
+              "probability": 0.7649347186088562
+            },
+            {
+              "start": 160.08,
+              "end": 160.26000000000002,
+              "word": " at",
+              "probability": 0.98911452293396
+            },
+            {
+              "start": 160.26000000000002,
+              "end": 160.56,
+              "word": " every",
+              "probability": 0.9978971481323242
+            },
+            {
+              "start": 160.56,
+              "end": 160.96,
+              "word": " size.",
+              "probability": 0.9980379939079285
+            }
+          ]
+        },
+        {
+          "start": 161.48000000000002,
+          "end": 164.70000000000002,
+          "text": " That's 350 measured hashes in this replay experiment.",
+          "words": [
+            {
+              "start": 161.48000000000002,
+              "end": 161.72,
+              "word": " That's",
+              "probability": 0.9891866147518158
+            },
+            {
+              "start": 161.72,
+              "end": 162.34,
+              "word": " 350",
+              "probability": 0.9805573225021362
+            },
+            {
+              "start": 162.34,
+              "end": 163.18,
+              "word": " measured",
+              "probability": 0.9915220737457275
+            },
+            {
+              "start": 163.18,
+              "end": 163.54000000000002,
+              "word": " hashes",
+              "probability": 0.9963381290435791
+            },
+            {
+              "start": 163.54000000000002,
+              "end": 163.82000000000002,
+              "word": " in",
+              "probability": 0.9977061748504639
+            },
+            {
+              "start": 163.82000000000002,
+              "end": 163.94,
+              "word": " this",
+              "probability": 0.9976314306259155
+            },
+            {
+              "start": 163.94,
+              "end": 164.28,
+              "word": " replay",
+              "probability": 0.890377402305603
+            },
+            {
+              "start": 164.28,
+              "end": 164.70000000000002,
+              "word": " experiment.",
+              "probability": 0.9980127811431885
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Start the real GUI sweep; 32x fast-forward",
+      "start": 165.16666666666666,
+      "segments": [
+        {
+          "start": 165.16666666666666,
+          "end": 169.92666666666665,
+          "text": " Now run that experiment in HashLab, check the connected board, then start the sweep.",
+          "words": [
+            {
+              "start": 165.16666666666666,
+              "end": 165.44666666666666,
+              "word": " Now",
+              "probability": 0.9800065159797668
+            },
+            {
+              "start": 165.44666666666666,
+              "end": 165.70666666666665,
+              "word": " run",
+              "probability": 0.9119802713394165
+            },
+            {
+              "start": 165.70666666666665,
+              "end": 165.88666666666666,
+              "word": " that",
+              "probability": 0.9767782688140869
+            },
+            {
+              "start": 165.88666666666666,
+              "end": 166.26666666666665,
+              "word": " experiment",
+              "probability": 0.9976189732551575
+            },
+            {
+              "start": 166.26666666666665,
+              "end": 166.60666666666665,
+              "word": " in",
+              "probability": 0.9969915151596069
+            },
+            {
+              "start": 166.60666666666665,
+              "end": 167.06666666666666,
+              "word": " HashLab,",
+              "probability": 0.7422411441802979
+            },
+            {
+              "start": 167.54666666666665,
+              "end": 167.78666666666666,
+              "word": " check",
+              "probability": 0.9829771518707275
+            },
+            {
+              "start": 167.78666666666666,
+              "end": 167.96666666666667,
+              "word": " the",
+              "probability": 0.9955145716667175
+            },
+            {
+              "start": 167.96666666666667,
+              "end": 168.24666666666667,
+              "word": " connected",
+              "probability": 0.923035740852356
+            },
+            {
+              "start": 168.24666666666667,
+              "end": 168.62666666666667,
+              "word": " board,",
+              "probability": 0.9952971339225769
+            },
+            {
+              "start": 169.00666666666666,
+              "end": 169.20666666666665,
+              "word": " then",
+              "probability": 0.9853847622871399
+            },
+            {
+              "start": 169.20666666666665,
+              "end": 169.54666666666665,
+              "word": " start",
+              "probability": 0.9829970598220825
+            },
+            {
+              "start": 169.54666666666665,
+              "end": 169.72666666666666,
+              "word": " the",
+              "probability": 0.9935663342475891
+            },
+            {
+              "start": 169.72666666666666,
+              "end": 169.92666666666665,
+              "word": " sweep.",
+              "probability": 0.9703773856163025
+            }
+          ]
+        },
+        {
+          "start": 170.50666666666666,
+          "end": 173.78666666666666,
+          "text": " Each progress bar counts completed hashes for one implementation.",
+          "words": [
+            {
+              "start": 170.50666666666666,
+              "end": 170.68666666666667,
+              "word": " Each",
+              "probability": 0.9967429041862488
+            },
+            {
+              "start": 170.68666666666667,
+              "end": 171.08666666666664,
+              "word": " progress",
+              "probability": 0.9754973649978638
+            },
+            {
+              "start": 171.08666666666664,
+              "end": 171.40666666666667,
+              "word": " bar",
+              "probability": 0.996439516544342
+            },
+            {
+              "start": 171.40666666666667,
+              "end": 171.72666666666666,
+              "word": " counts",
+              "probability": 0.9885750412940979
+            },
+            {
+              "start": 171.72666666666666,
+              "end": 172.22666666666666,
+              "word": " completed",
+              "probability": 0.9974034428596497
+            },
+            {
+              "start": 172.22666666666666,
+              "end": 172.58666666666664,
+              "word": " hashes",
+              "probability": 0.9970244765281677
+            },
+            {
+              "start": 172.58666666666664,
+              "end": 172.92666666666665,
+              "word": " for",
+              "probability": 0.9963288903236389
+            },
+            {
+              "start": 172.92666666666665,
+              "end": 173.20666666666665,
+              "word": " one",
+              "probability": 0.951564610004425
+            },
+            {
+              "start": 173.20666666666665,
+              "end": 173.78666666666666,
+              "word": " implementation.",
+              "probability": 0.9952952265739441
+            }
+          ]
+        },
+        {
+          "start": 174.42666666666665,
+          "end": 178.34666666666666,
+          "text": " The cores take turns on the same FPGA. They aren't running in parallel.",
+          "words": [
+            {
+              "start": 174.42666666666665,
+              "end": 174.52666666666664,
+              "word": " The",
+              "probability": 0.9936642646789551
+            },
+            {
+              "start": 174.52666666666664,
+              "end": 174.74666666666667,
+              "word": " cores",
+              "probability": 0.9877383708953857
+            },
+            {
+              "start": 174.74666666666667,
+              "end": 175.02666666666664,
+              "word": " take",
+              "probability": 0.9952291250228882
+            },
+            {
+              "start": 175.02666666666664,
+              "end": 175.42666666666665,
+              "word": " turns",
+              "probability": 0.9990647435188293
+            },
+            {
+              "start": 175.42666666666665,
+              "end": 175.60666666666665,
+              "word": " on",
+              "probability": 0.995152473449707
+            },
+            {
+              "start": 175.60666666666665,
+              "end": 175.76666666666665,
+              "word": " the",
+              "probability": 0.9969292283058167
+            },
+            {
+              "start": 175.76666666666665,
+              "end": 176.04666666666665,
+              "word": " same",
+              "probability": 0.9992283582687378
+            },
+            {
+              "start": 176.04666666666665,
+              "end": 176.90666666666667,
+              "word": " FPGA.",
+              "probability": 0.9678260882695516
+            },
+            {
+              "start": 177.26666666666665,
+              "end": 177.34666666666666,
+              "word": " They",
+              "probability": 0.9894892573356628
+            },
+            {
+              "start": 177.34666666666666,
+              "end": 177.60666666666665,
+              "word": " aren't",
+              "probability": 0.9939607977867126
+            },
+            {
+              "start": 177.60666666666665,
+              "end": 177.86666666666665,
+              "word": " running",
+              "probability": 0.9979531764984131
+            },
+            {
+              "start": 177.86666666666665,
+              "end": 178.04666666666665,
+              "word": " in",
+              "probability": 0.9983786344528198
+            },
+            {
+              "start": 178.04666666666665,
+              "end": 178.34666666666666,
+              "word": " parallel.",
+              "probability": 0.9970055222511292
+            }
+          ]
+        },
+        {
+          "start": 179.00666666666666,
+          "end": 182.14666666666665,
+          "text": " This part of the recording is sped up, while the measurements still come",
+          "words": [
+            {
+              "start": 179.00666666666666,
+              "end": 179.12666666666667,
+              "word": " This",
+              "probability": 0.9964381456375122
+            },
+            {
+              "start": 179.12666666666667,
+              "end": 179.34666666666666,
+              "word": " part",
+              "probability": 0.999573290348053
+            },
+            {
+              "start": 179.34666666666666,
+              "end": 179.46666666666667,
+              "word": " of",
+              "probability": 0.9985116124153137
+            },
+            {
+              "start": 179.46666666666667,
+              "end": 179.54666666666665,
+              "word": " the",
+              "probability": 0.9960078001022339
+            },
+            {
+              "start": 179.54666666666665,
+              "end": 179.88666666666666,
+              "word": " recording",
+              "probability": 0.9993951320648193
+            },
+            {
+              "start": 179.88666666666666,
+              "end": 180.14666666666665,
+              "word": " is",
+              "probability": 0.9991363883018494
+            },
+            {
+              "start": 180.14666666666665,
+              "end": 180.42666666666665,
+              "word": " sped",
+              "probability": 0.9989877343177795
+            },
+            {
+              "start": 180.42666666666665,
+              "end": 180.66666666666666,
+              "word": " up,",
+              "probability": 0.982352077960968
+            },
+            {
+              "start": 180.84666666666666,
+              "end": 181.02666666666664,
+              "word": " while",
+              "probability": 0.9959048628807068
+            },
+            {
+              "start": 181.02666666666664,
+              "end": 181.16666666666666,
+              "word": " the",
+              "probability": 0.9943453073501587
+            },
+            {
+              "start": 181.16666666666666,
+              "end": 181.50666666666666,
+              "word": " measurements",
+              "probability": 0.9927330017089844
+            },
+            {
+              "start": 181.50666666666666,
+              "end": 181.88666666666666,
+              "word": " still",
+              "probability": 0.9977623224258423
+            },
+            {
+              "start": 181.88666666666666,
+              "end": 182.14666666666665,
+              "word": " come",
+              "probability": 0.9916607737541199
+            }
+          ]
+        },
+        {
+          "start": 182.14666666666665,
+          "end": 185.94666666666666,
+          "text": " from the hardware cycle counter. When the sweep finishes, open the results.",
+          "words": [
+            {
+              "start": 182.14666666666665,
+              "end": 182.36666666666665,
+              "word": " from",
+              "probability": 0.9975569248199463
+            },
+            {
+              "start": 182.36666666666665,
+              "end": 182.52666666666664,
+              "word": " the",
+              "probability": 0.9961528182029724
+            },
+            {
+              "start": 182.52666666666664,
+              "end": 182.82666666666665,
+              "word": " hardware",
+              "probability": 0.9783505201339722
+            },
+            {
+              "start": 182.82666666666665,
+              "end": 183.10666666666665,
+              "word": " cycle",
+              "probability": 0.9926093220710754
+            },
+            {
+              "start": 183.10666666666665,
+              "end": 183.52666666666664,
+              "word": " counter.",
+              "probability": 0.9907065033912659
+            },
+            {
+              "start": 184.02666666666664,
+              "end": 184.14666666666665,
+              "word": " When",
+              "probability": 0.9980683922767639
+            },
+            {
+              "start": 184.14666666666665,
+              "end": 184.26666666666665,
+              "word": " the",
+              "probability": 0.9983087778091431
+            },
+            {
+              "start": 184.26666666666665,
+              "end": 184.46666666666667,
+              "word": " sweep",
+              "probability": 0.9973914623260498
+            },
+            {
+              "start": 184.46666666666667,
+              "end": 184.94666666666666,
+              "word": " finishes,",
+              "probability": 0.9991002082824707
+            },
+            {
+              "start": 185.36666666666665,
+              "end": 185.50666666666666,
+              "word": " open",
+              "probability": 0.9967947602272034
+            },
+            {
+              "start": 185.50666666666666,
+              "end": 185.66666666666666,
+              "word": " the",
+              "probability": 0.9965599179267883
+            },
+            {
+              "start": 185.66666666666666,
+              "end": 185.94666666666666,
+              "word": " results.",
+              "probability": 0.9851223230361938
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1 GiB: 10.737 seconds versus 4.500",
+      "start": 186.13333333333333,
+      "segments": [
+        {
+          "start": 186.13333333333333,
+          "end": 189.71333333333334,
+          "text": " For the largest message, about 1,074 megabytes,",
+          "words": [
+            {
+              "start": 186.13333333333333,
+              "end": 186.5533333333333,
+              "word": " For",
+              "probability": 0.9460393190383911
+            },
+            {
+              "start": 186.5533333333333,
+              "end": 186.69333333333333,
+              "word": " the",
+              "probability": 0.9973727464675903
+            },
+            {
+              "start": 186.69333333333333,
+              "end": 186.97333333333333,
+              "word": " largest",
+              "probability": 0.9950464963912964
+            },
+            {
+              "start": 186.97333333333333,
+              "end": 187.43333333333334,
+              "word": " message,",
+              "probability": 0.9727713465690613
+            },
+            {
+              "start": 187.7733333333333,
+              "end": 187.89333333333332,
+              "word": " about",
+              "probability": 0.976892352104187
+            },
+            {
+              "start": 187.89333333333332,
+              "end": 188.15333333333334,
+              "word": " 1",
+              "probability": 0.44258028268814087
+            },
+            {
+              "start": 188.15333333333334,
+              "end": 189.21333333333334,
+              "word": ",074",
+              "probability": 0.9789377649625143
+            },
+            {
+              "start": 189.21333333333334,
+              "end": 189.71333333333334,
+              "word": " megabytes,",
+              "probability": 0.6596081852912903
+            }
+          ]
+        },
+        {
+          "start": 190.21333333333334,
+          "end": 192.65333333333334,
+          "text": " Quartz takes 10.737 seconds.",
+          "words": [
+            {
+              "start": 190.21333333333334,
+              "end": 190.23333333333332,
+              "word": " Quartz",
+              "probability": 0.44971945881843567
+            },
+            {
+              "start": 190.23333333333332,
+              "end": 190.5533333333333,
+              "word": " takes",
+              "probability": 0.988098680973053
+            },
+            {
+              "start": 190.5533333333333,
+              "end": 190.99333333333334,
+              "word": " 10",
+              "probability": 0.9948838353157043
+            },
+            {
+              "start": 190.99333333333334,
+              "end": 192.11333333333332,
+              "word": ".737",
+              "probability": 0.982166588306427
+            },
+            {
+              "start": 192.11333333333332,
+              "end": 192.65333333333334,
+              "word": " seconds.",
+              "probability": 0.9935357570648193
+            }
+          ]
+        },
+        {
+          "start": 193.13333333333333,
+          "end": 195.13333333333333,
+          "text": " The compact core takes 4.5.",
+          "words": [
+            {
+              "start": 193.13333333333333,
+              "end": 193.25333333333333,
+              "word": " The",
+              "probability": 0.9917154908180237
+            },
+            {
+              "start": 193.25333333333333,
+              "end": 193.59333333333333,
+              "word": " compact",
+              "probability": 0.6023331880569458
+            },
+            {
+              "start": 193.59333333333333,
+              "end": 193.93333333333334,
+              "word": " core",
+              "probability": 0.9710062146186829
+            },
+            {
+              "start": 193.93333333333334,
+              "end": 194.21333333333334,
+              "word": " takes",
+              "probability": 0.9878922700881958
+            },
+            {
+              "start": 194.21333333333334,
+              "end": 194.57333333333332,
+              "word": " 4",
+              "probability": 0.9947893619537354
+            },
+            {
+              "start": 194.57333333333332,
+              "end": 195.13333333333333,
+              "word": ".5.",
+              "probability": 0.9983659982681274
+            }
+          ]
+        },
+        {
+          "start": 195.5533333333333,
+          "end": 196.93333333333334,
+          "text": " The input is identical.",
+          "words": [
+            {
+              "start": 195.5533333333333,
+              "end": 195.79333333333332,
+              "word": " The",
+              "probability": 0.9959851503372192
+            },
+            {
+              "start": 195.79333333333332,
+              "end": 196.15333333333334,
+              "word": " input",
+              "probability": 0.9971492886543274
+            },
+            {
+              "start": 196.15333333333334,
+              "end": 196.45333333333332,
+              "word": " is",
+              "probability": 0.9980820417404175
+            },
+            {
+              "start": 196.45333333333332,
+              "end": 196.93333333333334,
+              "word": " identical.",
+              "probability": 0.9962587356567383
+            }
+          ]
+        },
+        {
+          "start": 197.61333333333332,
+          "end": 199.75333333333333,
+          "text": " Both implementations produce the same digest.",
+          "words": [
+            {
+              "start": 197.61333333333332,
+              "end": 197.75333333333333,
+              "word": " Both",
+              "probability": 0.997019350528717
+            },
+            {
+              "start": 197.75333333333333,
+              "end": 198.31333333333333,
+              "word": " implementations",
+              "probability": 0.9967014193534851
+            },
+            {
+              "start": 198.31333333333333,
+              "end": 198.83333333333331,
+              "word": " produce",
+              "probability": 0.9923161268234253
+            },
+            {
+              "start": 198.83333333333331,
+              "end": 199.07333333333332,
+              "word": " the",
+              "probability": 0.9987145662307739
+            },
+            {
+              "start": 199.07333333333332,
+              "end": 199.39333333333332,
+              "word": " same",
+              "probability": 0.9995675683021545
+            },
+            {
+              "start": 199.39333333333332,
+              "end": 199.75333333333333,
+              "word": " digest.",
+              "probability": 0.9936314225196838
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Throughput with explicit message-size units",
+      "start": 200.1,
+      "segments": [
+        {
+          "start": 200.1,
+          "end": 202.48,
+          "text": " Now follow the throughput as the messages grow.",
+          "words": [
+            {
+              "start": 200.1,
+              "end": 200.46,
+              "word": " Now",
+              "probability": 0.9647943377494812
+            },
+            {
+              "start": 200.46,
+              "end": 200.78,
+              "word": " follow",
+              "probability": 0.8794429302215576
+            },
+            {
+              "start": 200.78,
+              "end": 200.98,
+              "word": " the",
+              "probability": 0.9936355352401733
+            },
+            {
+              "start": 200.98,
+              "end": 201.32,
+              "word": " throughput",
+              "probability": 0.980395495891571
+            },
+            {
+              "start": 201.32,
+              "end": 201.62,
+              "word": " as",
+              "probability": 0.9883425831794739
+            },
+            {
+              "start": 201.62,
+              "end": 201.76,
+              "word": " the",
+              "probability": 0.9959766268730164
+            },
+            {
+              "start": 201.76,
+              "end": 202.06,
+              "word": " messages",
+              "probability": 0.9972867965698242
+            },
+            {
+              "start": 202.06,
+              "end": 202.48,
+              "word": " grow.",
+              "probability": 0.9961088299751282
+            }
+          ]
+        },
+        {
+          "start": 203.12,
+          "end": 206.1,
+          "text": " Oxide's quartz settles at about 100 megabytes per second.",
+          "words": [
+            {
+              "start": 203.12,
+              "end": 203.64,
+              "word": " Oxide's",
+              "probability": 0.8314692775408427
+            },
+            {
+              "start": 203.64,
+              "end": 203.78,
+              "word": " quartz",
+              "probability": 0.9056299924850464
+            },
+            {
+              "start": 203.78,
+              "end": 204.14,
+              "word": " settles",
+              "probability": 0.9933995008468628
+            },
+            {
+              "start": 204.14,
+              "end": 204.42,
+              "word": " at",
+              "probability": 0.9865326881408691
+            },
+            {
+              "start": 204.42,
+              "end": 204.62,
+              "word": " about",
+              "probability": 0.9801274538040161
+            },
+            {
+              "start": 204.62,
+              "end": 205.18,
+              "word": " 100",
+              "probability": 0.989406168460846
+            },
+            {
+              "start": 205.18,
+              "end": 205.62,
+              "word": " megabytes",
+              "probability": 0.703213095664978
+            },
+            {
+              "start": 205.62,
+              "end": 205.82,
+              "word": " per",
+              "probability": 0.9823657870292664
+            },
+            {
+              "start": 205.82,
+              "end": 206.1,
+              "word": " second.",
+              "probability": 0.9965845346450806
+            }
+          ]
+        },
+        {
+          "start": 206.57999999999998,
+          "end": 209.57999999999998,
+          "text": " The compact core reaches 238.6.",
+          "words": [
+            {
+              "start": 206.57999999999998,
+              "end": 206.7,
+              "word": " The",
+              "probability": 0.9950815439224243
+            },
+            {
+              "start": 206.7,
+              "end": 207.06,
+              "word": " compact",
+              "probability": 0.9240689277648926
+            },
+            {
+              "start": 207.06,
+              "end": 207.42,
+              "word": " core",
+              "probability": 0.9900082349777222
+            },
+            {
+              "start": 207.42,
+              "end": 207.78,
+              "word": " reaches",
+              "probability": 0.9980568289756775
+            },
+            {
+              "start": 207.78,
+              "end": 208.74,
+              "word": " 238",
+              "probability": 0.9936023354530334
+            },
+            {
+              "start": 208.74,
+              "end": 209.57999999999998,
+              "word": ".6.",
+              "probability": 0.9976274073123932
+            }
+          ]
+        },
+        {
+          "start": 210.18,
+          "end": 213.66,
+          "text": " Once the messages are large, both curves settle into a steady rate.",
+          "words": [
+            {
+              "start": 210.18,
+              "end": 210.38,
+              "word": " Once",
+              "probability": 0.9978251457214355
+            },
+            {
+              "start": 210.38,
+              "end": 210.54,
+              "word": " the",
+              "probability": 0.9978298544883728
+            },
+            {
+              "start": 210.54,
+              "end": 210.82,
+              "word": " messages",
+              "probability": 0.9939741492271423
+            },
+            {
+              "start": 210.82,
+              "end": 211.04,
+              "word": " are",
+              "probability": 0.9992689490318298
+            },
+            {
+              "start": 211.04,
+              "end": 211.44,
+              "word": " large,",
+              "probability": 0.9984951019287109
+            },
+            {
+              "start": 211.82,
+              "end": 211.95999999999998,
+              "word": " both",
+              "probability": 0.9973801970481873
+            },
+            {
+              "start": 211.95999999999998,
+              "end": 212.34,
+              "word": " curves",
+              "probability": 0.9846685528755188
+            },
+            {
+              "start": 212.34,
+              "end": 212.68,
+              "word": " settle",
+              "probability": 0.9977310299873352
+            },
+            {
+              "start": 212.68,
+              "end": 212.92,
+              "word": " into",
+              "probability": 0.9484843611717224
+            },
+            {
+              "start": 212.92,
+              "end": 213.06,
+              "word": " a",
+              "probability": 0.9980593323707581
+            },
+            {
+              "start": 213.06,
+              "end": 213.32,
+              "word": " steady",
+              "probability": 0.9989168643951416
+            },
+            {
+              "start": 213.32,
+              "end": 213.66,
+              "word": " rate.",
+              "probability": 0.9988964796066284
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compact / Quartz throughput ratio",
+      "start": 213.86666666666665,
+      "segments": [
+        {
+          "start": 213.86666666666665,
+          "end": 217.64666666666665,
+          "text": " The speed up is quartz's time divided by the compact core's time.",
+          "words": [
+            {
+              "start": 213.86666666666665,
+              "end": 214.30666666666664,
+              "word": " The",
+              "probability": 0.9441235065460205
+            },
+            {
+              "start": 214.30666666666664,
+              "end": 214.54666666666665,
+              "word": " speed",
+              "probability": 0.9521146416664124
+            },
+            {
+              "start": 214.54666666666665,
+              "end": 214.72666666666666,
+              "word": " up",
+              "probability": 0.5607741475105286
+            },
+            {
+              "start": 214.72666666666666,
+              "end": 215.00666666666663,
+              "word": " is",
+              "probability": 0.9940693378448486
+            },
+            {
+              "start": 215.00666666666663,
+              "end": 215.44666666666666,
+              "word": " quartz's",
+              "probability": 0.6507715284824371
+            },
+            {
+              "start": 215.44666666666666,
+              "end": 215.74666666666664,
+              "word": " time",
+              "probability": 0.9942131638526917
+            },
+            {
+              "start": 215.74666666666664,
+              "end": 216.20666666666665,
+              "word": " divided",
+              "probability": 0.9673275947570801
+            },
+            {
+              "start": 216.20666666666665,
+              "end": 216.46666666666664,
+              "word": " by",
+              "probability": 0.9981977343559265
+            },
+            {
+              "start": 216.46666666666664,
+              "end": 216.58666666666664,
+              "word": " the",
+              "probability": 0.9854318499565125
+            },
+            {
+              "start": 216.58666666666664,
+              "end": 217.04666666666665,
+              "word": " compact",
+              "probability": 0.9364686608314514
+            },
+            {
+              "start": 217.04666666666665,
+              "end": 217.36666666666665,
+              "word": " core's",
+              "probability": 0.9696999192237854
+            },
+            {
+              "start": 217.36666666666665,
+              "end": 217.64666666666665,
+              "word": " time.",
+              "probability": 0.9979109168052673
+            }
+          ]
+        },
+        {
+          "start": 218.24666666666664,
+          "end": 219.42666666666665,
+          "text": " One means equal speed.",
+          "words": [
+            {
+              "start": 218.24666666666664,
+              "end": 218.36666666666665,
+              "word": " One",
+              "probability": 0.4348197281360626
+            },
+            {
+              "start": 218.36666666666665,
+              "end": 218.70666666666665,
+              "word": " means",
+              "probability": 0.9891157746315002
+            },
+            {
+              "start": 218.70666666666665,
+              "end": 219.08666666666664,
+              "word": " equal",
+              "probability": 0.9915804266929626
+            },
+            {
+              "start": 219.08666666666664,
+              "end": 219.42666666666665,
+              "word": " speed.",
+              "probability": 0.9981011748313904
+            }
+          ]
+        },
+        {
+          "start": 219.90666666666664,
+          "end": 224.08666666666664,
+          "text": " For large messages, the compact core reaches about 2.4 times the throughput.",
+          "words": [
+            {
+              "start": 219.90666666666664,
+              "end": 220.04666666666665,
+              "word": " For",
+              "probability": 0.9963502883911133
+            },
+            {
+              "start": 220.04666666666665,
+              "end": 220.28666666666663,
+              "word": " large",
+              "probability": 0.9909985065460205
+            },
+            {
+              "start": 220.28666666666663,
+              "end": 220.72666666666666,
+              "word": " messages,",
+              "probability": 0.9947040677070618
+            },
+            {
+              "start": 221.08666666666664,
+              "end": 221.16666666666666,
+              "word": " the",
+              "probability": 0.995815098285675
+            },
+            {
+              "start": 221.16666666666666,
+              "end": 221.50666666666663,
+              "word": " compact",
+              "probability": 0.9645212292671204
+            },
+            {
+              "start": 221.50666666666663,
+              "end": 221.82666666666665,
+              "word": " core",
+              "probability": 0.9953333735466003
+            },
+            {
+              "start": 221.82666666666665,
+              "end": 222.12666666666664,
+              "word": " reaches",
+              "probability": 0.9979982972145081
+            },
+            {
+              "start": 222.12666666666664,
+              "end": 222.42666666666665,
+              "word": " about",
+              "probability": 0.9914517998695374
+            },
+            {
+              "start": 222.42666666666665,
+              "end": 222.72666666666663,
+              "word": " 2",
+              "probability": 0.9845630526542664
+            },
+            {
+              "start": 222.72666666666663,
+              "end": 223.30666666666664,
+              "word": ".4",
+              "probability": 0.9920141696929932
+            },
+            {
+              "start": 223.30666666666664,
+              "end": 223.58666666666664,
+              "word": " times",
+              "probability": 0.9787219166755676
+            },
+            {
+              "start": 223.58666666666664,
+              "end": 223.80666666666664,
+              "word": " the",
+              "probability": 0.9966337084770203
+            },
+            {
+              "start": 223.80666666666664,
+              "end": 224.08666666666664,
+              "word": " throughput.",
+              "probability": 0.989388644695282
+            }
+          ]
+        },
+        {
+          "start": 224.56666666666663,
+          "end": 227.02666666666664,
+          "text": " That advantage stays as the message keeps growing.",
+          "words": [
+            {
+              "start": 224.56666666666663,
+              "end": 224.78666666666663,
+              "word": " That",
+              "probability": 0.9950043559074402
+            },
+            {
+              "start": 224.78666666666663,
+              "end": 225.18666666666664,
+              "word": " advantage",
+              "probability": 0.9990792274475098
+            },
+            {
+              "start": 225.18666666666664,
+              "end": 225.54666666666665,
+              "word": " stays",
+              "probability": 0.9950729012489319
+            },
+            {
+              "start": 225.54666666666665,
+              "end": 225.92666666666665,
+              "word": " as",
+              "probability": 0.9894993305206299
+            },
+            {
+              "start": 225.92666666666665,
+              "end": 226.06666666666663,
+              "word": " the",
+              "probability": 0.9982103109359741
+            },
+            {
+              "start": 226.06666666666663,
+              "end": 226.32666666666665,
+              "word": " message",
+              "probability": 0.9962729215621948
+            },
+            {
+              "start": 226.32666666666665,
+              "end": 226.64666666666665,
+              "word": " keeps",
+              "probability": 0.9978367686271667
+            },
+            {
+              "start": 226.64666666666665,
+              "end": 227.02666666666664,
+              "word": " growing.",
+              "probability": 0.9955340623855591
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matched routed hash-partition resources",
+      "start": 227.9333333333333,
+      "segments": [
+        {
+          "start": 227.9333333333333,
+          "end": 236.4933333333333,
+          "text": " The compact hash partition also uses fewer resources, 21.9% fewer lookup tables, and about 58% fewer flip-flops.",
+          "words": [
+            {
+              "start": 227.9333333333333,
+              "end": 228.4133333333333,
+              "word": " The",
+              "probability": 0.9731408953666687
+            },
+            {
+              "start": 228.4133333333333,
+              "end": 228.8133333333333,
+              "word": " compact",
+              "probability": 0.5168654322624207
+            },
+            {
+              "start": 228.8133333333333,
+              "end": 229.0733333333333,
+              "word": " hash",
+              "probability": 0.9169902801513672
+            },
+            {
+              "start": 229.0733333333333,
+              "end": 229.51333333333332,
+              "word": " partition",
+              "probability": 0.99566650390625
+            },
+            {
+              "start": 229.51333333333332,
+              "end": 229.8533333333333,
+              "word": " also",
+              "probability": 0.9918038845062256
+            },
+            {
+              "start": 229.8533333333333,
+              "end": 230.29333333333332,
+              "word": " uses",
+              "probability": 0.996452808380127
+            },
+            {
+              "start": 230.29333333333332,
+              "end": 230.6533333333333,
+              "word": " fewer",
+              "probability": 0.9980669617652893
+            },
+            {
+              "start": 230.6533333333333,
+              "end": 231.2733333333333,
+              "word": " resources,",
+              "probability": 0.998206377029419
+            },
+            {
+              "start": 231.73333333333332,
+              "end": 231.9733333333333,
+              "word": " 21",
+              "probability": 0.9859160780906677
+            },
+            {
+              "start": 231.9733333333333,
+              "end": 232.6533333333333,
+              "word": ".9",
+              "probability": 0.9888976812362671
+            },
+            {
+              "start": 232.6533333333333,
+              "end": 232.9933333333333,
+              "word": "%",
+              "probability": 0.8396838307380676
+            },
+            {
+              "start": 232.9933333333333,
+              "end": 233.3533333333333,
+              "word": " fewer",
+              "probability": 0.9993932247161865
+            },
+            {
+              "start": 233.3533333333333,
+              "end": 233.61333333333332,
+              "word": " lookup",
+              "probability": 0.8372396230697632
+            },
+            {
+              "start": 233.61333333333332,
+              "end": 234.0733333333333,
+              "word": " tables,",
+              "probability": 0.9987831711769104
+            },
+            {
+              "start": 234.3733333333333,
+              "end": 234.4733333333333,
+              "word": " and",
+              "probability": 0.996874213218689
+            },
+            {
+              "start": 234.4733333333333,
+              "end": 234.6533333333333,
+              "word": " about",
+              "probability": 0.9897958636283875
+            },
+            {
+              "start": 234.6533333333333,
+              "end": 235.2133333333333,
+              "word": " 58",
+              "probability": 0.9984102249145508
+            },
+            {
+              "start": 235.2133333333333,
+              "end": 235.67333333333332,
+              "word": "%",
+              "probability": 0.9936936497688293
+            },
+            {
+              "start": 235.67333333333332,
+              "end": 235.95333333333332,
+              "word": " fewer",
+              "probability": 0.9998382329940796
+            },
+            {
+              "start": 235.95333333333332,
+              "end": 236.17333333333332,
+              "word": " flip",
+              "probability": 0.9959216117858887
+            },
+            {
+              "start": 236.17333333333332,
+              "end": 236.4933333333333,
+              "word": "-flops.",
+              "probability": 0.8994318246841431
+            }
+          ]
+        },
+        {
+          "start": 237.01333333333332,
+          "end": 241.4133333333333,
+          "text": " The replay memory is shared infrastructure, counted separately from those hash partition totals.",
+          "words": [
+            {
+              "start": 237.01333333333332,
+              "end": 237.0933333333333,
+              "word": " The",
+              "probability": 0.9965617060661316
+            },
+            {
+              "start": 237.0933333333333,
+              "end": 237.3733333333333,
+              "word": " replay",
+              "probability": 0.8671722412109375
+            },
+            {
+              "start": 237.3733333333333,
+              "end": 237.6933333333333,
+              "word": " memory",
+              "probability": 0.9985450506210327
+            },
+            {
+              "start": 237.6933333333333,
+              "end": 237.9733333333333,
+              "word": " is",
+              "probability": 0.9983119964599609
+            },
+            {
+              "start": 237.9733333333333,
+              "end": 238.2733333333333,
+              "word": " shared",
+              "probability": 0.9932776093482971
+            },
+            {
+              "start": 238.2733333333333,
+              "end": 238.83333333333331,
+              "word": " infrastructure,",
+              "probability": 0.9954764246940613
+            },
+            {
+              "start": 239.23333333333332,
+              "end": 239.51333333333332,
+              "word": " counted",
+              "probability": 0.9958692193031311
+            },
+            {
+              "start": 239.51333333333332,
+              "end": 239.95333333333332,
+              "word": " separately",
+              "probability": 0.9943568110466003
+            },
+            {
+              "start": 239.95333333333332,
+              "end": 240.2733333333333,
+              "word": " from",
+              "probability": 0.9977218508720398
+            },
+            {
+              "start": 240.2733333333333,
+              "end": 240.4733333333333,
+              "word": " those",
+              "probability": 0.984188437461853
+            },
+            {
+              "start": 240.4733333333333,
+              "end": 240.73333333333332,
+              "word": " hash",
+              "probability": 0.9884265661239624
+            },
+            {
+              "start": 240.73333333333332,
+              "end": 241.1333333333333,
+              "word": " partition",
+              "probability": 0.9608199596405029
+            },
+            {
+              "start": 241.1333333333333,
+              "end": 241.4133333333333,
+              "word": " totals.",
+              "probability": 0.9939036965370178
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oxide Quartz attribution and project credits",
+      "start": 241.79999999999998,
+      "segments": [
+        {
+          "start": 241.79999999999998,
+          "end": 244.95999999999998,
+          "text": " Credit to Oxide and the Quartz Contributors for the Reference Core.",
+          "words": [
+            {
+              "start": 241.79999999999998,
+              "end": 242.27999999999997,
+              "word": " Credit",
+              "probability": 0.6933096051216125
+            },
+            {
+              "start": 242.27999999999997,
+              "end": 242.48,
+              "word": " to",
+              "probability": 0.9914605617523193
+            },
+            {
+              "start": 242.48,
+              "end": 242.93999999999997,
+              "word": " Oxide",
+              "probability": 0.7390093207359314
+            },
+            {
+              "start": 242.93999999999997,
+              "end": 243.11999999999998,
+              "word": " and",
+              "probability": 0.9768370985984802
+            },
+            {
+              "start": 243.11999999999998,
+              "end": 243.23999999999998,
+              "word": " the",
+              "probability": 0.9716602563858032
+            },
+            {
+              "start": 243.23999999999998,
+              "end": 243.45999999999998,
+              "word": " Quartz",
+              "probability": 0.9128251075744629
+            },
+            {
+              "start": 243.45999999999998,
+              "end": 244.07999999999998,
+              "word": " Contributors",
+              "probability": 0.6471729576587677
+            },
+            {
+              "start": 244.07999999999998,
+              "end": 244.23999999999998,
+              "word": " for",
+              "probability": 0.9868560433387756
+            },
+            {
+              "start": 244.23999999999998,
+              "end": 244.33999999999997,
+              "word": " the",
+              "probability": 0.9949219822883606
+            },
+            {
+              "start": 244.33999999999997,
+              "end": 244.67999999999998,
+              "word": " Reference",
+              "probability": 0.7605803608894348
+            },
+            {
+              "start": 244.67999999999998,
+              "end": 244.95999999999998,
+              "word": " Core.",
+              "probability": 0.6831391453742981
+            }
+          ]
+        },
+        {
+          "start": 245.45999999999998,
+          "end": 249.48,
+          "text": " Their unchanged source and license are retained alongside the measurements and scripts.",
+          "words": [
+            {
+              "start": 245.45999999999998,
+              "end": 245.57999999999998,
+              "word": " Their",
+              "probability": 0.9865469932556152
+            },
+            {
+              "start": 245.57999999999998,
+              "end": 246.07999999999998,
+              "word": " unchanged",
+              "probability": 0.9837130308151245
+            },
+            {
+              "start": 246.07999999999998,
+              "end": 246.49999999999997,
+              "word": " source",
+              "probability": 0.8761677742004395
+            },
+            {
+              "start": 246.49999999999997,
+              "end": 246.73999999999998,
+              "word": " and",
+              "probability": 0.9961796998977661
+            },
+            {
+              "start": 246.73999999999998,
+              "end": 247.05999999999997,
+              "word": " license",
+              "probability": 0.9799646139144897
+            },
+            {
+              "start": 247.05999999999997,
+              "end": 247.32,
+              "word": " are",
+              "probability": 0.9958162903785706
+            },
+            {
+              "start": 247.32,
+              "end": 247.76,
+              "word": " retained",
+              "probability": 0.9986976385116577
+            },
+            {
+              "start": 247.76,
+              "end": 248.17999999999998,
+              "word": " alongside",
+              "probability": 0.9521563649177551
+            },
+            {
+              "start": 248.17999999999998,
+              "end": 248.6,
+              "word": " the",
+              "probability": 0.9919387698173523
+            },
+            {
+              "start": 248.6,
+              "end": 248.89999999999998,
+              "word": " measurements",
+              "probability": 0.9239193797111511
+            },
+            {
+              "start": 248.89999999999998,
+              "end": 249.2,
+              "word": " and",
+              "probability": 0.9971801042556763
+            },
+            {
+              "start": 249.2,
+              "end": 249.48,
+              "word": " scripts.",
+              "probability": 0.9888837337493896
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

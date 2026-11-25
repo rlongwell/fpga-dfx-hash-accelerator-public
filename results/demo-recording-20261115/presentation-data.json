@@ -1,0 +1,26 @@
+{
+  "kind": "presentation-data-validation",
+  "physical_benchmark_rerun": false,
+  "checks": {
+    "oxide_elastic": {
+      "dma_ms_16MiB": 169.229708,
+      "api_ms_16MiB": 205.07795600000003,
+      "partition_luts": 5856,
+      "partition_ffs": 4222
+    },
+    "compact": {
+      "dma_ms_16MiB": 71.801928,
+      "api_ms_16MiB": 107.610895,
+      "partition_luts": 4531,
+      "partition_ffs": 1774
+    }
+  },
+  "source_sha256": {
+    "results/sha3-performance-20261115/summary.json": "a028aaf59df03ff21f6fcf2051e0d9881a229d05e5dc418fe1251f6bf8246d23",
+    "results/sha3-performance-20261115/comparison.md": "38c565dd99f4cdcc5ac8edc0798ae0712f15d4e0ef687a1a19cb9043192fe581",
+    "reference/oxide/hdl/ip/vhd/sha3/sha3_256.vhd": "14b59bbe2701626197ae1a5053a769a60d9dad4b484b1a520c7cfbfc5d35615b",
+    "rtl/sha3/experiments/hash_sha3_compact.sv": "d912de412ba9d24f4bbbe0744b530e2df45143edb24efedf9045392b4b8198b9",
+    "rtl/sha3/experiments/hash_sha3_fast.sv": "c85c8cc4699c52750d512e065152840d0ae4c6684f578eeafb87fce418275431",
+    "rtl/sha3/oxide_compare/axis_bytes_elastic.sv": "c978771b5c97b3e82af669ef749493c0176a3524f1062272a91d3fc1b672625c"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "path": "docs/media/sha3-comparison-charcoal.mp4",
+      "bytes": 11453210,
+      "sha256": "4c358d8ebc7a256cf9ffcff97318e51668fc96dee82041ca2a77afa385091d5b"
+    },
+    {
+      "path": "docs/media/sha3-comparison-charcoal-clean.mp4",
+      "bytes": 11451025,
+      "sha256": "c39c58ed5f37305c899f5703344ef0f89ba7f2d26254c22f4fd44fbbb9c27a79"
+    }
+  ],
+  "audio_hashes": [
+    "SHA256=7938acd6cae952c242ace9de35c3604e9d6339ccc27f938779e37921837ec1d3",
+    "SHA256=7938acd6cae952c242ace9de35c3604e9d6339ccc27f938779e37921837ec1d3"
+  ],
+  "audio_packets_identical": true,
+  "chapters_identical": true,
+  "chapter_count": 10,
+  "duration_seconds": 203.0,
+  "frames": 6090,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_revision": "d3508d40866bcf9c3a8cead4651c8405ce9d0f9a",
+  "removed_captions": [
+    {
+      "caption": "Diagrams are illustrative. Board results are recorded measurements; standalone estimates are labeled.",
+      "first_frame": 0,
+      "end_frame_exclusive": 4830,
+      "x": 80,
+      "y": 1008,
+      "width": 1744,
+      "height": 40
+    },
+    {
+      "caption": "These are recorded physical measurements, with every digest checked against software.",
+      "first_frame": 3240,
+      "end_frame_exclusive": 3960,
+      "x": 90,
+      "y": 950,
+      "width": 1740,
+      "height": 50
+    },
+    {
+      "caption": "Physical Zybo \u00b7 scripted cursor, real actions \u00b7 8.2 kB SHA3-256 correctness check, separate from benchmark",
+      "first_frame": 4830,
+      "end_frame_exclusive": 6090,
+      "x": 0,
+      "y": 1012,
+      "width": 1920,
+      "height": 68
+    }
+  ],
+  "full_video_decode_passed": true,
+  "masked_source_vs_export_ssim": 0.999775,
+  "visual_review": {
+    "chapters_reviewed": 10,
+    "full_size_frames_seconds": [
+      8,
+      125,
+      188,
+      202.5
+    ],
+    "result": "All three requested lines absent. No visible mask seams. Diagrams, figures, credit, pointer actions and result boxes retained."
+  },
+  "source_syntax_checks": [
+    "Python py_compile: clean_video_captions.py and assemble_video_charcoal.py passed",
+    "Node --check: comparison.js passed"
+  ],
+  "board_access": "None in this edit; uses the previously recorded physical run at its original speed.",
+  "prior_master_preserved": true
+}

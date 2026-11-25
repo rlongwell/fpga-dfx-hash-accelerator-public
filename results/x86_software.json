@@ -1,0 +1,69 @@
+{
+  "scope": "x86 software hashes in RAM; no DMA/Ethernet/ARM comparison",
+  "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+  "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+  "load_average_at_start": [
+    2.4248046875,
+    2.83837890625,
+    5.19384765625
+  ],
+  "measurement_context": "After FPGA and ARM compilation completed; no project implementation jobs running. Normal user processes remain active; no CPU affinity, governor control or thermal stabilization. Not a peak-performance claim.",
+  "timestamp_utc": "2026-11-12T05:49:45Z",
+  "bytes": 16777216,
+  "repeats": 9,
+  "algorithms": {
+    "sha3": {
+      "samples_ns": [
+        54258951,
+        47831617,
+        45641201,
+        46770502,
+        46137622,
+        46642797,
+        45803509,
+        46894472,
+        45999577
+      ],
+      "median_ns": 46642797,
+      "median_MB_s": 359.6957532370968,
+      "min_ns": 45641201,
+      "max_ns": 54258951
+    },
+    "sha256": {
+      "samples_ns": [
+        39081284,
+        40133857,
+        40582367,
+        39664504,
+        38274387,
+        40870955,
+        39980550,
+        40297263,
+        41054106
+      ],
+      "median_ns": 40133857,
+      "median_MB_s": 418.0314889745085,
+      "min_ns": 38274387,
+      "max_ns": 41054106
+    },
+    "blake2s": {
+      "samples_ns": [
+        43649174,
+        41433315,
+        42740074,
+        72278965,
+        77477049,
+        53540744,
+        43273137,
+        42562290,
+        41935507
+      ],
+      "median_ns": 43273137,
+      "median_MB_s": 387.7051021283712,
+      "min_ns": 41433315,
+      "max_ns": 77477049
+    }
+  }
+}

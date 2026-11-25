@@ -1,0 +1,47 @@
+{
+  "base_commit": "f41b9a59649d68cbb0c9da081125a4ae1989b96a",
+  "recorded_job": "e0ac322556182145dce29990",
+  "full_capture_source_sha256": {
+    "demo/board_agent.py": "c231d725e2527eadb4a9d8d45ae288699afc649e4808606b98c811ce77e6789d",
+    "demo/server.py": "efb7d17762411f27774752446879ddc521465399d05559d404a9a87aaab0eabd",
+    "demo/replay.py": "ac07f96e0adecd5f1e0940b3a7b21801e41b7b0184330267ed8d4cb9bfcc3efc",
+    "demo/ssh.py": "18e8c142b24dd2378af9f8782f0e56c1eae96e32160dc5274ee1d468226c81a0",
+    "demo/web/replay.js": "fb7a37fc8669a18396788b144358ea5bf8f27724edd36ddd8c900dad670a0b22",
+    "demo/web/comparison.js": "b2a47414450e2ba0bc6e17d8c0fd5a4d65ac972d4793309a34206ae5af4be9d6",
+    "demo/web/guided-demo.js": "174ea53c00483a3d599ebdfb1747a3e926296314f06983838cf6d3f6382f9354",
+    "demo/web/app.js": "a3bd34c45a724481940342e527ded49875bdb6fafe97cc6e5b7aa1ba87b332ae",
+    "demo/web/record.js": "001793856b6ed48b2aca4a6b96e1ef967b030fbcbcdbde4a1caef2edb23170f9",
+    "demo/web/replay.css": "afe10518bb0a7edc293c60b1cf851adb7270ad9048e92bd1bce2eb0fc0afe1cf",
+    "demo/web/comparison.css": "63667b0df81ed4bc9c063cf87807a4f0475dd8362f93ba7e7090c29be3427b70",
+    "demo/web/style.css": "561cc3b04f5cd953982e4bf25c556fe7b879500e900d985ed2694f92e6d2390f",
+    "demo/web/index.html": "bfb81d7593910d8adef1e1725889157ba976fe6a4fbceca975baf81d1b7d7458"
+  },
+  "current_source_sha256": {
+    "demo/board_agent.py": "c231d725e2527eadb4a9d8d45ae288699afc649e4808606b98c811ce77e6789d",
+    "demo/server.py": "c22ce54ae9f04f6ee54d9a5772e2ac0efcf3cc53074b313c9071c0bb7c532330",
+    "demo/replay.py": "ac07f96e0adecd5f1e0940b3a7b21801e41b7b0184330267ed8d4cb9bfcc3efc",
+    "demo/ssh.py": "18e8c142b24dd2378af9f8782f0e56c1eae96e32160dc5274ee1d468226c81a0",
+    "demo/web/replay.js": "6ca5e2726ab2d4b4a63801d27fbc24d70c4db1ddaecfda2e1cac1236d255d6d6",
+    "demo/web/comparison.js": "b2a47414450e2ba0bc6e17d8c0fd5a4d65ac972d4793309a34206ae5af4be9d6",
+    "demo/web/guided-demo.js": "5c781f85a760fa61ce2b5077b4244888427db0bfdc20d88a3be19a0079a22fbc",
+    "demo/web/app.js": "323d336bad4fd5d98c9b6cdf7a0e433c8ebff376971855f6af5bac508c18b6f9",
+    "demo/web/record.js": "001793856b6ed48b2aca4a6b96e1ef967b030fbcbcdbde4a1caef2edb23170f9",
+    "demo/web/replay.css": "578add8c479750ec4bf44a2b3cf5ce111e210a2b17c76ed3bc24621a46f5e0d2",
+    "demo/web/comparison.css": "63667b0df81ed4bc9c063cf87807a4f0475dd8362f93ba7e7090c29be3427b70",
+    "demo/web/style.css": "561cc3b04f5cd953982e4bf25c556fe7b879500e900d985ed2694f92e6d2390f",
+    "demo/web/index.html": "be329a89df1f871526fda070cf8e2c9be60ba7addca9f195e87f096154696432"
+  },
+  "changed_after_physical_run": [
+    "demo/server.py",
+    "demo/web/replay.js",
+    "demo/web/guided-demo.js",
+    "demo/web/app.js",
+    "demo/web/replay.css",
+    "demo/web/index.html"
+  ],
+  "notes": [
+    "After the run: saved-job reload support, results-only recording and cosmetic copy removal.",
+    "The measured board script, SSH transport, replay runner, partials and installed static image are checksum-bound by the physical plan and batches.",
+    "The plot summarizer now accepts replay-only plans. Older sealed source hashes resolve at the base commit; old evidence is not rewritten."
+  ]
+}

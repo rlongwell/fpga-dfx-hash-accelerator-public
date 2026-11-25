@@ -1,0 +1,54 @@
+{
+  "change": "Remove duplicate digest register; output held sponge-state digest while valid, zero while invalid.",
+  "source": "rtl/sha3/oxide_no_digest/sha3_256.vhd",
+  "source_sha256": "d16b7d2befc241f45da95cb27ff398d5761b5a054cd9a6fd0f1cbbfe72404bad",
+  "identical_cycle_csvs": [
+    "db_false_gaps_false_cycles.csv",
+    "db_false_gaps_true_cycles.csv",
+    "db_true_gaps_false_cycles.csv",
+    "db_true_gaps_true_cycles.csv"
+  ],
+  "scope": "Same 100 MHz OOC methodology as baseline; standalone core only.",
+  "configurations": [
+    {
+      "double_buffer": false,
+      "routed_lut_change": -135,
+      "routed_ff_change": -265,
+      "setup_slack_change_ns": 0.126,
+      "hold_slack_change_ns": 0.071,
+      "baseline": {
+        "lut": 4504,
+        "ff": 2989,
+        "bram_tile": 0,
+        "dsp": 0
+      },
+      "derived": {
+        "lut": 4369,
+        "ff": 2724,
+        "bram_tile": 0,
+        "dsp": 0
+      },
+      "derived_timing_met": true
+    },
+    {
+      "double_buffer": true,
+      "routed_lut_change": -183,
+      "routed_ff_change": -255,
+      "setup_slack_change_ns": -0.231,
+      "hold_slack_change_ns": 0.026,
+      "baseline": {
+        "lut": 5406,
+        "ff": 4075,
+        "bram_tile": 0,
+        "dsp": 0
+      },
+      "derived": {
+        "lut": 5223,
+        "ff": 3820,
+        "bram_tile": 0,
+        "dsp": 0
+      },
+      "derived_timing_met": true
+    }
+  ]
+}

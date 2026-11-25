@@ -1,0 +1,14 @@
+{
+  "original_properties_preserved": 373,
+  "reserved_memory_map_preserved": true,
+  "added_properties": {
+    "/:core-forge,static-sha256": "6365363262656137666434366139656266663133306163653366633566376265383238636431626463353837656431336566343339363661626465333163323400",
+    "/axi/hash-ingress@80000000:compatible": "636f72652d666f7267652c67656d2d686173682d696e67726573732d312e3000",
+    "/axi/hash-ingress@80000000:reg": "8000000000040000",
+    "/axi/hash-ingress@80000000:clock-frequency": "05f5e100",
+    "/axi/hash-ingress@80000000:core-forge,requires-exclusive-gem": "",
+    "/axi/hash-ingress@80000000:status": "6f6b617900"
+  },
+  "old_sha256": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed",
+  "new_sha256": "0bb627cc2402aa7e1e860650a8c89910f1e68d17974ff5adb0d9fd68afd3efc7"
+}

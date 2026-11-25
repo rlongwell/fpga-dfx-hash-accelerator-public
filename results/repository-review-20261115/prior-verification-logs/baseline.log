@@ -1,0 +1,11 @@
+hdl/ip/vhd/sha3/sha3_256.vhd: OK
+hdl/ip/vhd/sha3/keccak_pkg.vhd: OK
+hdl/ip/vhd/sha3/docs/sha3_256.adoc: OK
+hdl/ip/vhd/axi_blocks/axist_if_2k19_pkg.vhd: OK
+hdl/ip/vhd/common/utils/calc_pkg.vhd: OK
+Generated 40 nonempty vectors; empty input is unsupported by the upstream port.
+** Note: 1290790ns+0: ALL PASS cases=40 DB=false SOURCE_GAPS=false; init/async reset recovery passed
+** Note: 1439110ns+0: ALL PASS cases=40 DB=false SOURCE_GAPS=true; init/async reset recovery passed
+** Note: 1095270ns+0: ALL PASS cases=40 DB=true SOURCE_GAPS=false; init/async reset recovery passed
+** Note: 1244720ns+0: ALL PASS cases=40 DB=true SOURCE_GAPS=true; init/async reset recovery passed
+baseline simulation passed in all four configurations.

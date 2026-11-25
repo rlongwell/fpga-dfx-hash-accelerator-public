@@ -1,0 +1,22 @@
+Command: pr_verify -full_check -file /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/pr_verify_blake2s.rpt /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/compact/routed.dcp /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/blake2s/routed.dcp
+Mon Nov 16 13:29:27 2026
+
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/compact/routed.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 435
+  Number of static tiles compared           = 7210
+  Number of static sites compared           = 1795
+  Number of static cells compared           = 9372
+  Number of static routed nodes compared    = 154114
+  Number of static routed pips compared     = 144438
+
+DCP2: /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/blake2s/routed.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 435
+  Number of static tiles compared           = 7210
+  Number of static sites compared           = 1795
+  Number of static cells compared           = 9372
+  Number of static routed nodes compared    = 154114
+  Number of static routed pips compared     = 144438
+INFO: [Vivado 12-3253] PR_VERIFY: check points /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/compact/routed.dcp and /home/rl/workspace/fpga-dfx-hash-accelerator/build/gem-direct/dfx/blake2s/routed.dcp are compatible

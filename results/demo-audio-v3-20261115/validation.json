@@ -1,0 +1,89 @@
+{
+  "result": "PASS",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "seconds": 217,
+    "frames": 6510,
+    "chapters": 10,
+    "codec": "H.264"
+  },
+  "audio": {
+    "codec": "AAC",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_seconds": 217,
+    "integrated_lufs": -15.99,
+    "true_peak_dbtp": -1.83,
+    "loudness_range_lu": 4.4,
+    "music_present_every_second": true
+  },
+  "narration": {
+    "chosen_take": 1,
+    "recognized_source_words_preserved_by_edits": 417,
+    "final_chapter_transcript_checks": {
+      "23%": true,
+      "58%": true,
+      "169": true,
+      "72": true,
+      "2.36": true,
+      "1.91": true,
+      "seven samples": true,
+      "zero block RAM": true,
+      "zero DSP": true,
+      "USB upload is excluded": true,
+      "separate from the benchmark": true,
+      "ready for another file": true,
+      "production system performance weren.t measured": true
+    },
+    "review_limit": "Automated ASR is imperfect for proper names and binary units; transcript checks are not a subjective listening assessment."
+  },
+  "picture": {
+    "reviewed_seconds": [
+      2,
+      17,
+      42,
+      68,
+      90,
+      108,
+      130,
+      151,
+      167,
+      178,
+      200,
+      213
+    ],
+    "debugging_banner_visible": false,
+    "codex_cursor_visible": false,
+    "custom_presentation_pointer_visible": true,
+    "music_credit_visible": true,
+    "physical_segment_start": 175,
+    "physical_segment_realtime_seconds": 40,
+    "additional_final_still_seconds": 2,
+    "frame_correspondence_to_v2": {
+      "frames_compared": 1200,
+      "ssim_all": 0.999769,
+      "note": "All physical frames compared at the same relative timestamps after re-encoding; no speed change or skipped action."
+    }
+  },
+  "existing_evidence_seals": [
+    {
+      "folder": "results/sha3-performance-20261115",
+      "files_verified": 132
+    },
+    {
+      "folder": "results/demo-20261115",
+      "files_verified": 15
+    },
+    {
+      "folder": "results/demo-recording-20261115",
+      "files_verified": 9
+    },
+    {
+      "folder": "results/demo-recording-v2-20261115",
+      "files_verified": 11
+    }
+  ],
+  "board_work_in_this_edit": "None; reuses the previously sealed physical capture and measurements."
+}

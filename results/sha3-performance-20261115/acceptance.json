@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "passed": true,
+  "completed_host_utc": "2026-11-15T21:41:54.250753+00:00",
+  "profile": "hash",
+  "variant": "sha3_compact",
+  "kind": "physical-zybo-performance-and-deployment",
+  "scope": "SHA3 comparison and upgraded hash profile; external Ethernet not measured; no new QEMU results",
+  "clock_mhz": 100,
+  "message_bytes": 16777216,
+  "repeats": 7,
+  "warmup": 1,
+  "physical_jobs_post_boot": 81,
+  "claim": "On a physical Zybo Z7-20 at 100 MHz, our compact SHA3-256 implementation delivered 2.36\u00d7 the DMA throughput of the pinned, double-buffered Oxide implementation with a full-rate adapter, while using 22.6% fewer LUTs and 58.0% fewer flip-flops in the hash partition. The comparison uses 16 MiB messages and the median of seven timed repetitions after warmup.",
+  "comparisons": {
+    "dma_speedup_vs_oxide": 2.356896433198841,
+    "api_speedup_vs_oxide": 1.905735994482715,
+    "LUT_reduction_percent": 22.626366120218577,
+    "FF_reduction_percent": 57.98199905258172,
+    "dma_per_LUT_factor": 3.0461234855026293
+  },
+  "installed_files": {
+    "/opt/zybo/hash/software/hash_local.py": "2f75a71a2d19e18e920f58f075eb66f0e35250f8668abdfb84902c0c97e2996c",
+    "/opt/zybo/hash/software/hash_service.py": "408dd039f9cdc30b5c275ee980470df7b93c81dd2a15a9170e6727a94aa58edb",
+    "/opt/zybo/hash/dfx_manifest.json": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3",
+    "/root/board-local-20261115.py": "cafc54ac5d17f08d472ab1ee370c6818835119509ca9e0e2f6f179187377ac08",
+    "/boot/profiles/hash/system.bit": "cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40",
+    "/boot/profiles/hash/system.dtb": "3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed"
+  },
+  "payload_sha256": "b365f07f77e113e56baad89cf8a3bd79d5130fc89c6fa6b2e6d8d024982b673d",
+  "rollback_directory": "/boot/profiles/hash/before-sha3-fast-20261115",
+  "saved_profile_unchanged": true,
+  "service_running": true,
+  "evidence_sha256": {
+    "current-physical.json": "b3dc7943a4a5f7dcbd31820417d002912f0e23bd9ebd35abf06310b0f6ef8536",
+    "oxide_elastic-physical.json": "3bf4944cf216c9f46fdedc2f28213c22a10c3a56b3ca32aeade57b4101f9da13",
+    "compact-physical.json": "e52084cdecb4ff83b1ff21525e0960bc6eec3b9400199634a939570dd901f082",
+    "compact-postboot-physical.json": "00ec9c5814000fc1893b9a07a9a62a69fcbf8eb962e0af1d55f9a58f36b6e349",
+    "promoted-local-physical.json": "b45b7dad2f30e9c8307ec96ee130ca01fc77f8004f10241ed791726b107e6440",
+    "compact-reboot.log": "ba825f74dbb8ed52efc2f0095ea4a59faa92c69fdd06ecb1a23785199a72122c",
+    "final-audit-board.log": "be2c6e069251d5d16e1bcb4b27a813c4bae6acb4180ea5691a156fe8fda7f2ad",
+    "final-status-board.log": "a6b29c28f0c51913490ffb7b9e50da87a1622624518d56611d24d2211e0cb6f1",
+    "promoted_manifest.json": "0ea0df9299508deac45af403960d484f892c723b0d029177e504bb02eb773ab3",
+    "compact/implementation.json": "08df138f448831124ec300a01f48852690120038fb3ed645dfff8a130d9db7fc",
+    "oxide_elastic/implementation.json": "0f5443913c9fc28ff3f186a884ae1e1f0274e796539cdf3f29177befa0f8eb13",
+    "oxide_elastic/runtime_compatibility.json": "a2f393e748b546049efb178c0aae2512c2112b10db8b5403b710bd026cde7aab"
+  }
+}

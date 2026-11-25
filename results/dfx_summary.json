@@ -1,0 +1,201 @@
+{
+  "part": "xc7z020clg400-1",
+  "vivado": "2024.2",
+  "clock_mhz": 100,
+  "hardware_tested": false,
+  "static_synthesis": {
+    "luts": 2390,
+    "logic_luts": 2256,
+    "lutram": 2,
+    "srls": 132,
+    "ffs": 2604,
+    "ramb36": 1,
+    "ramb18": 1,
+    "dsps": 0
+  },
+  "configurations": {
+    "sha3": {
+      "total": {
+        "luts": 7193,
+        "logic_luts": 7090,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 4281,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "static": {
+        "luts": 2177,
+        "logic_luts": 2074,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 2495,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "rp": {
+        "luts": 5016,
+        "logic_luts": 5016,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1786,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "rm_synthesis": {
+        "luts": 4994,
+        "logic_luts": 4994,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1786,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "timing": {
+        "wns_ns": 0.262,
+        "tns_ns": 0.0,
+        "whs_ns": 0.044,
+        "ths_ns": 0.0,
+        "wpws_ns": 3.75,
+        "tpws_ns": 0.0
+      },
+      "routing": {
+        "errors": 0,
+        "routable": 9658,
+        "routed": 9658
+      },
+      "bitstream_bytes": {
+        "full_bit": 4045670,
+        "partial_bit": 2400587,
+        "pcap_bin": 2400480
+      },
+      "reports": "results/dfx/sha3"
+    },
+    "sha256": {
+      "total": {
+        "luts": 3953,
+        "logic_luts": 3850,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 3744,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "static": {
+        "luts": 2177,
+        "logic_luts": 2074,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 2495,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "rp": {
+        "luts": 1776,
+        "logic_luts": 1776,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1249,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "rm_synthesis": {
+        "luts": 1754,
+        "logic_luts": 1754,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1249,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "timing": {
+        "wns_ns": 0.229,
+        "tns_ns": 0.0,
+        "whs_ns": 0.044,
+        "ths_ns": 0.0,
+        "wpws_ns": 3.75,
+        "tpws_ns": 0.0
+      },
+      "routing": {
+        "errors": 0,
+        "routable": 6832,
+        "routed": 6832
+      },
+      "bitstream_bytes": {
+        "full_bit": 4045670,
+        "partial_bit": 2400587,
+        "pcap_bin": 2400480
+      },
+      "reports": "results/dfx/sha256"
+    },
+    "blake2s": {
+      "total": {
+        "luts": 6338,
+        "logic_luts": 6235,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 4161,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "static": {
+        "luts": 2177,
+        "logic_luts": 2074,
+        "lutram": 2,
+        "srls": 101,
+        "ffs": 2495,
+        "ramb36": 1,
+        "ramb18": 1,
+        "dsps": 0
+      },
+      "rp": {
+        "luts": 4161,
+        "logic_luts": 4161,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1666,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "rm_synthesis": {
+        "luts": 4167,
+        "logic_luts": 4167,
+        "lutram": 0,
+        "srls": 0,
+        "ffs": 1666,
+        "ramb36": 0,
+        "ramb18": 0,
+        "dsps": 0
+      },
+      "timing": {
+        "wns_ns": 0.101,
+        "tns_ns": 0.0,
+        "whs_ns": 0.044,
+        "ths_ns": 0.0,
+        "wpws_ns": 3.75,
+        "tpws_ns": 0.0
+      },
+      "routing": {
+        "errors": 0,
+        "routable": 9372,
+        "routed": 9372
+      },
+      "bitstream_bytes": {
+        "full_bit": 4045670,
+        "partial_bit": 2400587,
+        "pcap_bin": 2400480
+      },
+      "reports": "results/dfx/blake2s"
+    }
+  }
+}

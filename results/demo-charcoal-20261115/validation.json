@@ -1,0 +1,119 @@
+{
+  "result": "PASS",
+  "video": {
+    "seconds": 203,
+    "frames": 6090,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "chapters": 10,
+    "full_decode": "No errors"
+  },
+  "audio": {
+    "sample_rate": 48000,
+    "channels": 2,
+    "integrated_lufs": -16.05,
+    "true_peak_dbtp": -1.6,
+    "music_in_every_second": true,
+    "minimum_music_second_dbfs": -52.704
+  },
+  "narration": {
+    "spoken_sha": "one syllable /ʃɑː/, verified by phoneme recognition",
+    "selected_take": 2,
+    "pitch_preserving_speed": 1.06,
+    "generation_controls_unchanged": true,
+    "final_asr_checks": {
+      "23%": true,
+      "58%": true,
+      "169": true,
+      "72": true,
+      "2.36": true,
+      "1.91": true,
+      "16.8 megabyte": true,
+      "8.2 kilobyte": true,
+      "zero block ram": true,
+      "zero dsp": true,
+      "ai assistance": true,
+      "usb upload is excluded": true,
+      "separate from the benchmark": true,
+      "ready for another file": true,
+      "oxide": true,
+      "quartz": true
+    },
+    "limitations": "Automated transcription and acoustic-label review, not a human listening comparison. ASR normalizes the hash name; phonemes distinguish the pronunciation."
+  },
+  "physical": {
+    "job_id": "8985bca4a27124fec651c8fd",
+    "backend": "physical-fpga-dma",
+    "algorithm": "SHA3-256",
+    "bytes": 8192,
+    "digest_match": true,
+    "local_hash_ns": 509496,
+    "core_cycles": 27073,
+    "restored_compact_sha3": true,
+    "profile_env_unchanged": true,
+    "profile": "hash",
+    "benchmark_rerun": false
+  },
+  "picture": {
+    "reviewed_seconds": [
+      10,
+      30,
+      50,
+      70,
+      90,
+      106,
+      130,
+      145,
+      159,
+      168,
+      185.5,
+      189.5,
+      200.5
+    ],
+    "browser_chrome_or_debugging_banner": false,
+    "codex_cursor": false,
+    "pointer_for_controls_only": true,
+    "result_focus_boxes": true,
+    "progressive_reveals": true,
+    "wire_flow_is_brief_and_narrated": true,
+    "physical_seconds_at_1x": 40,
+    "final_hold_seconds": 2,
+    "live_ssim": 0.999819,
+    "live_frames_compared": 1200
+  },
+  "checks": {
+    "demo_tests": 12,
+    "javascript_syntax": "PASS",
+    "python_compile": "PASS",
+    "dark_and_light_visual_review": "PASS",
+    "selected_file_survives_theme_toggle": true,
+    "settings_git_ignored": true
+  },
+  "previous_seals_verified": [
+    {
+      "folder": "results/sha3-performance-20261115",
+      "files_verified": 132
+    },
+    {
+      "folder": "results/demo-20261115",
+      "files_verified": 15
+    },
+    {
+      "folder": "results/demo-recording-20261115",
+      "files_verified": 9
+    },
+    {
+      "folder": "results/demo-recording-v2-20261115",
+      "files_verified": 11
+    },
+    {
+      "folder": "results/demo-audio-v3-20261115",
+      "files_verified": 15
+    },
+    {
+      "folder": "results/demo-neutral-20261115",
+      "files_verified": 12
+    }
+  ]
+}

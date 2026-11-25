@@ -1,0 +1,51 @@
+{
+  "variant": "fast",
+  "clock_mhz": 100,
+  "part": "xc7z020clg400-1",
+  "timing": {
+    "wns_ns": 0.035,
+    "tns_ns": 0.0,
+    "whs_ns": 0.044,
+    "ths_ns": 0.0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0
+  },
+  "routing": {
+    "errors": 0,
+    "routable": 9943,
+    "routed": 9943
+  },
+  "total": {
+    "luts": 7874,
+    "logic_luts": 7771,
+    "lutram": 2,
+    "srls": 101,
+    "ffs": 4290,
+    "ramb36": 1,
+    "ramb18": 1,
+    "dsps": 0
+  },
+  "rp": {
+    "luts": 5697,
+    "logic_luts": 5697,
+    "lutram": 0,
+    "srls": 0,
+    "ffs": 1795,
+    "ramb36": 0,
+    "ramb18": 0,
+    "dsps": 0
+  },
+  "full_bit": {
+    "source": "build/sha3-profile/fast/full.bit",
+    "sha256": "db3c5d7bc0a48846ca165d11c0d5a64c39e8fe8159b4c084c3d0136ff3d7f7cd"
+  },
+  "partial": {
+    "algorithm_id": 1,
+    "filename": "fpga-dfx-hash/0e14c2e8fc21/sha3-fast-73dc1a4127f4.bin",
+    "source": "build/sha3-profile/fast/full_pblock_hash_partial.bit.bin",
+    "sha256": "73dc1a4127f43d3992a928a59abb42546b6575c06e6e04b6527e3041eb143222"
+  },
+  "base_static_sha256": "0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9",
+  "scope": "Routed variant against original locked static; full pr_verify against all three accepted configurations",
+  "physical_tested": false
+}

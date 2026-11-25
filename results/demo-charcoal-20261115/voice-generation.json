@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "before": {
+      "model": "Select model - Eleven v4",
+      "sliders": [
+        {
+          "label": "Stability",
+          "value": "0.62"
+        },
+        {
+          "label": "Similarity",
+          "value": "0.75"
+        },
+        {
+          "label": "Clone strength",
+          "value": "0"
+        }
+      ],
+      "voice": "\n  @keyframes pvc-orb-shimmer {\n    0% { transform: translateX(-100%); }\n    100% { transform: translateX(100%); }\n  }\nJarnathan - Confident and Versatile"
+    },
+    "after": {
+      "model": "Select model - Eleven v4",
+      "sliders": [
+        {
+          "label": "Stability",
+          "value": "0.62"
+        },
+        {
+          "label": "Similarity",
+          "value": "0.75"
+        },
+        {
+          "label": "Clone strength",
+          "value": "0"
+        }
+      ],
+      "voice": "\n  @keyframes pvc-orb-shimmer {\n    0% { transform: translateX(-100%); }\n    100% { transform: translateX(100%); }\n  }\nJarnathan - Confident and Versatile"
+    }
+  },
+  "controls_unchanged": true,
+  "selected_take": 2,
+  "script": "docs/voiceover-charcoal-elevenlabs.txt",
+  "phonetic_alias": "shah three, two fifty-six",
+  "postproduction_pace": 1.06,
+  "pitch_preserving": true
+}

@@ -1,0 +1,55 @@
+{
+  "timebase": "Seconds within chapter 8, starting at movie time 132 s",
+  "method": "Whisper small.en word timings from selected take, mapped through the 1.06x voice pace and 0.6 s chapter lead-in",
+  "cues": [
+    {
+      "phrase": "Setup costs",
+      "speech_seconds": 2.2038,
+      "reveal_seconds": 2.1,
+      "difference_seconds": -0.1038
+    },
+    {
+      "phrase": "Wider input",
+      "speech_seconds": 5.2415,
+      "reveal_seconds": 5.3,
+      "difference_seconds": 0.0585
+    },
+    {
+      "phrase": "Quartz median",
+      "speech_seconds": 8.9208,
+      "reveal_seconds": 8.9,
+      "difference_seconds": -0.0208
+    },
+    {
+      "phrase": "Overlapping ranges",
+      "speech_seconds": 10.8075,
+      "reveal_seconds": 10.8,
+      "difference_seconds": -0.0075
+    },
+    {
+      "phrase": "Overhead and variation",
+      "speech_seconds": 12.8264,
+      "reveal_seconds": 12.8,
+      "difference_seconds": -0.0264
+    },
+    {
+      "phrase": "Throughput versus latency",
+      "speech_seconds": 17.1094,
+      "reveal_seconds": 17.1,
+      "difference_seconds": -0.0094
+    },
+    {
+      "phrase": "Region and image size",
+      "speech_seconds": 21.3736,
+      "reveal_seconds": 21.4,
+      "difference_seconds": 0.0264
+    },
+    {
+      "phrase": "Power and production scope",
+      "speech_seconds": 24.6377,
+      "reveal_seconds": 24.5,
+      "difference_seconds": -0.1377
+    }
+  ],
+  "max_absolute_difference_seconds": 0.1377
+}

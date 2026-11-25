@@ -1,0 +1,70 @@
+{
+  "base_commit": "a266c3bedc449b456c8f1d42f050e6da719ff676",
+  "files": [
+    {
+      "path": "demo/render_video_flow.py",
+      "bytes": 5898,
+      "sha256": "9e63ecfbe11b6aa124654ebb700934749e80b994e44533bbb19895c7e40fc448"
+    },
+    {
+      "path": "demo/video-flow-edit.json",
+      "bytes": 14137,
+      "sha256": "8f0425ffe7202a322ade76e6a0acdc35b51d28569fca76de9f75402fa8f8f61f"
+    },
+    {
+      "path": "docs/demo-flow-video.md",
+      "bytes": 1986,
+      "sha256": "1971aa58de28b233c645dc361cd4c1b2829c0afc243f05fd73fac322f41ced38"
+    },
+    {
+      "path": "docs/media/sha3-comparison-architecture.mp4",
+      "bytes": 14655428,
+      "sha256": "3f045c2b802f127929510efedadbf9ec75f49f199ef626c27b7607634d2ddba2"
+    },
+    {
+      "path": "docs/media/sha3-comparison-flow.mp4",
+      "bytes": 13632571,
+      "sha256": "701bffb743d8b57290c4ef50f5e3a2f9b2f81d68b9d713489b3836d3bb52ce04"
+    },
+    {
+      "path": "docs/media/sha3-core-comparison-live.webm",
+      "bytes": 1319917,
+      "sha256": "6f2268c94b5e044089c055122cd89ccfb87c0c9e99b50a7f38c74052b013bcda"
+    },
+    {
+      "path": "docs/media/voiceover-architecture-take-2.mp3",
+      "bytes": 2110494,
+      "sha256": "a078bd05dd80d0a4eb1489bf9bc31e95d601381482e0b26afe8cc2277ed2e8e8"
+    },
+    {
+      "path": "docs/media/voiceover-charcoal-take-2.mp3",
+      "bytes": 3056336,
+      "sha256": "b9b281caa7b8fdd87bc3d229f0610d2aad20a5596570454c18744be9f84361f7"
+    },
+    {
+      "path": "docs/media/voiceover-small-messages-take-1.mp3",
+      "bytes": 473348,
+      "sha256": "708e2f1b54e22be425e39830214987b75fc055283ac5e20d402ccc826b2ddf54"
+    },
+    {
+      "path": "docs/voiceover-architecture.txt",
+      "bytes": 3896,
+      "sha256": "b6d9be1d0fc7572945064f3e98c39e814d4c1f94c8987c20a169891cdb3aceb4"
+    },
+    {
+      "path": "results/demo-core-comparison-20261116/cursor-log.json",
+      "bytes": 2719,
+      "sha256": "482cd6ec2ef71bc0ccae716e5df41c95069650b442162751aba5970a9f675e97"
+    },
+    {
+      "path": "results/demo-core-comparison-20261116/recorded-job.json",
+      "bytes": 29727,
+      "sha256": "54555cdf593a5704f23ad86b4e0422e8303df072835429fe6f56f603a4c77c12"
+    }
+  ],
+  "external_music": {
+    "path": "2050 - Cyber Runner.mp3",
+    "sha256": "c7b36b036962fe379ee42c5d1ca18b2b36dfa3ce4dadc7b1ebe73b78f1366a94"
+  },
+  "paths_relative_to": "repository root"
+}

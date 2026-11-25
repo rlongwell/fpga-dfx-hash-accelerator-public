@@ -1,0 +1,398 @@
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Nov 15 15:31:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source reuse_resume.tcl
+# proc require_clean_drc {report_path {checks {}}} {
+#     if {[llength $checks]} {
+#         report_drc -checks $checks -file $report_path
+#     } else {
+#         report_drc -file $report_path
+#     }
+#     set bad [get_drc_violations -quiet -filter {SEVERITY == Error || SEVERITY == {Critical Warning}}]
+#     if {[llength $bad]} { error "DRC failed ($bad); see $report_path" }
+# }
+# proc require_timing {report_path} {
+#     report_timing_summary -delay_type min_max -report_unconstrained -file $report_path
+#     set fh [open $report_path r]
+#     set report [read $fh]
+#     close $fh
+#     foreach check {no_clock unconstrained_internal_endpoints} {
+#         set pattern [format {checking %s \(([0-9]+)\)} $check]
+#         if {![regexp $pattern $report unused count]} { error "Missing $check coverage in $report_path" }
+#         if {$count != 0} { error "$count $check timing violations; see $report_path" }
+#     }
+#     foreach type {max min} {
+#         set paths [get_timing_paths -quiet -delay_type $type -max_paths 1]
+#         if {![llength $paths]} { error "No $type timing paths were analyzed" }
+#         set slack [get_property SLACK [lindex $paths 0]]
+#         if {$slack < 0.0} { error "$type timing failed: slack $slack ns; see $report_path" }
+#         puts "DFX_TIMING_PASS $type slack=$slack"
+#     }
+#     # Setup/hold checks do not replace clock pulse-width checks.
+#     set pulse_checks [regexp -all -inline {PW\s*:\s*([0-9]+)\s+Failing Endpoints,\s+Worst Slack\s+([-0-9.]+)ns} $report]
+#     if {![llength $pulse_checks]} { error "Missing pulse-width timing checks; see $report_path" }
+#     foreach {match count slack} $pulse_checks {
+#         if {$count != 0 || $slack < 0.0} { error "Pulse-width timing failed; see $report_path" }
+#     }
+# }
+# proc require_routing {report_path} {
+#     report_route_status -file $report_path
+#     set fh [open $report_path r]
+#     set report [read $fh]
+#     close $fh
+#     foreach label {{nets with routing errors} {routable nets} {fully routed nets}} key {errors routable routed} {
+#         set pattern [format {# of %s[. ]*:\s*([0-9]+)} $label]
+#         if {![regexp $pattern $report unused count]} { error "Missing route status: $label in $report_path" }
+#         set $key $count
+#     }
+#     if {$errors != 0 || $routable != $routed} { error "Incomplete or invalid routing; see $report_path" }
+# }
+# if {[llength $argv] != 2} { error "usage: sha3_variant.tcl ROOT fast|oxide" }
+# set root [file normalize [lindex $argv 0]]
+# set variant [lindex $argv 1]
+# if {$variant ni {fast oxide}} { error "Unsupported variant" }
+# if {[version -short] ne "2024.2"} { error "Vivado 2024.2 required" }
+# set_param general.maxThreads 2
+# set original [file join $root build vivado dfx]
+# set expected_static 0e14c2e8fc216b0b2c72d1788f902e61124da197dd17cb213c5c1ae4752ba7f9
+# if {[lindex [exec sha256sum [file join $original sha3 full.bit]] 0] ne $expected_static} {
+#     error "This variant build requires the accepted original static image"
+# }
+# set sources [list [file join $root rtl sha3 oxide_compare axis_bytes_elastic.sv] [file join $root rtl rm sha3_${variant}.sv]]
+# if {$variant eq "oxide"} {
+#     set ref [file join $root reference oxide hdl ip vhd]
+#     set vhdl [list [file join $ref axi_blocks axist_if_2k19_pkg.vhd] \
+#         [file join $ref common utils calc_pkg.vhd] [file join $ref sha3 keccak_pkg.vhd] \
+#         [file join $ref sha3 sha3_256.vhd] [file join $root rtl sha3 oxide_compare sha3_oxide_core.vhd]]
+# } else {
+#     lappend sources [file join $root rtl sha3 experiments hash_sha3_fast.sv]
+#     set vhdl {}
+# }
+# set reference_route [file join $root build sha3-profile oxide-spread routed.dcp]
+# set recorded [concat $sources $vhdl [list [info script] $reference_route [file normalize rm_synth.dcp] [file normalize prior-synthesis.sources.sha256] \
+#     [file join $original static_locked.dcp] [file join $original sha3 routed.dcp] \
+#     [file join $original sha256 routed.dcp] [file join $original blake2s routed.dcp]]]
+# set fh [open sources.sha256 w]
+# foreach path $recorded { puts $fh [exec sha256sum $path] }
+# close $fh
+# set accepted_synth [file normalize rm_synth.dcp]
+# if {[lindex [exec sha256sum $accepted_synth] 0] ne "d9f0b2a9d1436a920cb209789f6e1f107b80f273e940ecbfe8745264e411691a"} { error "Changed synthesis checkpoint" }
+# open_checkpoint $reference_route
+Command: open_checkpoint /home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-spread/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1369.539 ; gain = 0.000 ; free physical = 3039 ; free virtual = 23338
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 1463.910 ; gain = 0.000 ; free physical = 2964 ; free virtual = 23264
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1544.629 ; gain = 2.000 ; free physical = 4726 ; free virtual = 25023
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2163.402 ; gain = 0.000 ; free physical = 4215 ; free virtual = 24512
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2163.402 ; gain = 0.000 ; free physical = 4207 ; free virtual = 24504
+Read PlaceDB: Time (s): cpu = 00:00:00.7 ; elapsed = 00:00:00.71 . Memory (MB): peak = 2165.402 ; gain = 2.000 ; free physical = 4204 ; free virtual = 24501
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2165.402 ; gain = 0.000 ; free physical = 4204 ; free virtual = 24501
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2172.426 ; gain = 7.023 ; free physical = 4193 ; free virtual = 24490
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2172.426 ; gain = 9.023 ; free physical = 4192 ; free virtual = 24489
+Restored from archive | CPU: 1.150000 secs | Memory: 18.750099 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2172.426 ; gain = 17.930 ; free physical = 4192 ; free virtual = 24489
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2172.426 ; gain = 0.000 ; free physical = 4190 ; free virtual = 24488
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2180.426 ; gain = 810.887 ; free physical = 4191 ; free virtual = 24488
+# set reference_placement [dict create]
+# foreach cell [get_cells -hier -filter {IS_PRIMITIVE == 1 && NAME =~ u_hash/core/*}] {
+#     set loc [get_property LOC $cell]
+#     set bel [get_property BEL $cell]
+#     if {$loc ne "" && $bel ne ""} {
+#         dict set reference_placement [get_property NAME $cell] [list [get_property REF_NAME $cell] $loc $bel]
+#     }
+# }
+# close_project
+# open_checkpoint [file join $original static_locked.dcp]
+Command: open_checkpoint /home/rl/workspace/fpga-dfx-hash-accelerator/build/vivado/dfx/static_locked.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4196 ; free virtual = 24493
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4195 ; free virtual = 24493
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4197 ; free virtual = 24494
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4160 ; free virtual = 24458
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4160 ; free virtual = 24458
+Read PlaceDB: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4159 ; free virtual = 24457
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4159 ; free virtual = 24457
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4156 ; free virtual = 24454
+Read Physdb Files: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.47 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4156 ; free virtual = 24454
+Restored from archive | CPU: 0.470000 secs | Memory: 6.120438 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.47 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4158 ; free virtual = 24455
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4161 ; free virtual = 24458
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2180.426 ; gain = 0.000 ; free physical = 4160 ; free virtual = 24458
+# read_checkpoint -strict -cell u_hash rm_synth.dcp
+Command: read_checkpoint -strict -cell u_hash rm_synth.dcp
+WARNING: [Vivado 12-12435] Any Tcl variable pointing to design objects become invalid when read_checkpoint is executed subsequently after open_checkpoint. The content of those variables need to be rebuilt after read_checkpoint. Otherwise this could result in unwanted behavior due to referencing objects that do not exist anymore.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4161 ; free virtual = 24459
+Wrote PlaceDB: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.3 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4157 ; free virtual = 24464
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4157 ; free virtual = 24464
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4155 ; free virtual = 24462
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4155 ; free virtual = 24463
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4155 ; free virtual = 24464
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4155 ; free virtual = 24464
+INFO: [Project 1-454] Reading design checkpoint '/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/rm_synth.dcp' for cell 'u_hash'
+INFO: [Constraints 18-13253] Total boundary pins count on instance u_hash is 434
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4169 ; free virtual = 24470
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_board.xdc]
+Finished Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_board.xdc]
+Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_early.xdc]
+Finished Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_early.xdc]
+Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/rm_synth/hash_rm.xdc] for cell 'u_hash'
+Finished Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/rm_synth/hash_rm.xdc] for cell 'u_hash'
+Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_late.xdc]
+INFO: [Vivado 12-24630] Instance: 'u_hash' is a DFX HD.RECONFIGURABLE module.
+Finished Parsing XDC File [/home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/.Xil/Vivado-1736500-msi-ubuntu/readCheckpointCellTempDcp/temp/system_top_late.xdc]
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4164 ; free virtual = 24465
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4164 ; free virtual = 24465
+Read PlaceDB: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4173 ; free virtual = 24474
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4173 ; free virtual = 24474
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4174 ; free virtual = 24474
+Read Physdb Files: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4174 ; free virtual = 24474
+Restored from archive | CPU: 0.390000 secs | Memory: 5.974808 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4174 ; free virtual = 24474
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4178 ; free virtual = 24478
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+read_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2212.441 ; gain = 32.016 ; free physical = 4178 ; free virtual = 24476
+# require_clean_drc floorplan_drc.rpt [get_drc_checks HDPR*]
+Command: report_drc -checks {HDPR-1 HDPR-2 HDPR-3 HDPR-4 HDPR-5 HDPR-6 HDPR-7 HDPR-8 HDPR-9 HDPR-10 HDPR-11 HDPR-12 HDPR-13 HDPR-14 HDPR-15 HDPR-16 HDPR-17 HDPR-18 HDPR-19 HDPR-20 HDPR-22 HDPR-23 HDPR-25 HDPR-26 HDPR-27 HDPR-28 HDPR-29 HDPR-30 HDPR-32 HDPR-33 HDPR-34 HDPR-35 HDPR-36 HDPR-37 HDPR-38 HDPR-39 HDPR-40 HDPR-41 HDPR-42 HDPR-43 HDPR-44 HDPR-45 HDPR-46 HDPR-47 HDPR-48 HDPR-49 HDPR-50 HDPR-51 HDPR-52 HDPR-54 HDPR-57 HDPR-58 HDPR-59 HDPR-60 HDPR-61 HDPR-62 HDPR-63 HDPR-64 HDPR-65 HDPR-66 HDPR-67 HDPR-68 HDPR-69 HDPR-70 HDPR-71 HDPR-72 HDPR-73 HDPR-74 HDPR-83 HDPR-84 HDPR-85 HDPR-86 HDPR-87 HDPR-88 HDPR-90 HDPR-91 HDPR-92 HDPR-93 HDPR-94 HDPR-95 HDPR-96 HDPR-97 HDPR-98 HDPR-99 HDPR-100 HDPR-103 HDPR-105 HDPR-106 HDPR-107 HDPR-108 HDPR-109 HDPR-110 HDPR-111 HDPR-112 HDPR-113 HDPR-114 HDPR-115 HDPR-116 HDPR-117 HDPR-118 HDPR-119 HDPR-120 HDPR-121 HDPR-122 HDPR-123 HDPR-124 HDPR-125 HDPR-126 HDPR-127 HDPR-128 HDPR-129 HDPR-130 HDPR-134 HDPR-135 HDPR-136 HDPR-137 HDPR-138 HDPR-139 HDPR-140 HDPR-141 HDPR-142 HDPR-143 HDPR-144 HDPR-145 HDPR-146 HDPR-147 HDPR-148 HDPR-149 HDPR-150 HDPR-151 HDPR-152 HDPR-153 HDPR-155 HDPR-156 HDPR-157 HDPRA-21 HDPRA-51 HDPRA-52 HDPRA-53 HDPRA-54 HDPRA-55 HDPRA-56 HDPRA-57 HDPRA-58 HDPRA-60 HDPRA-62 HDPRA-63 HDPRA-64 HDPRA-65 HDPRABS-1 HDPRABS-2 HDPRABS-3 HDPRSOC-1 HDPRSOC-2 HDPRSOC-3 HDPRSOC-4} -file floorplan_drc.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/rl/workspace/fpga-dfx-hash-accelerator/build/sha3-profile/oxide-elastic-reuse/floorplan_drc.rpt.
+report_drc completed successfully
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2212.441 ; gain = 0.000 ; free physical = 4178 ; free virtual = 24476
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2261.254 ; gain = 48.812 ; free physical = 4176 ; free virtual = 24475
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3812 ; free virtual = 24111
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+Phase 1 Initialization | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.84 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.91 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+Retarget | Checksum: 1573beec9
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Retarget, 737 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1573beec9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3812 ; free virtual = 24110
+Constant propagation | Checksum: 1573beec9
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 296 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3813 ; free virtual = 24111
+Phase 5 Sweep | Checksum: 12dc706de
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2604.121 ; gain = 0.000 ; free physical = 3812 ; free virtual = 24110
+Sweep | Checksum: 12dc706de
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Sweep, 27327 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 12dc706de
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3811 ; free virtual = 24110
+BUFG optimization | Checksum: 12dc706de
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 12dc706de
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3811 ; free virtual = 24110
+Shift Register Optimization | Checksum: 12dc706de
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 12dc706de
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3811 ; free virtual = 24110
+Post Processing Netlist | Checksum: 12dc706de
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 299 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3812 ; free virtual = 24110
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2612.125 ; gain = 0.000 ; free physical = 3812 ; free virtual = 24110
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3812 ; free virtual = 24111
+Phase 9 Finalization | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3812 ; free virtual = 24111
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                            737  |
+|  Constant propagation         |               0  |               0  |                                            296  |
+|  Sweep                        |               0  |               0  |                                          27327  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            299  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2612.125 ; gain = 8.004 ; free physical = 3813 ; free virtual = 24111
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2612.125 ; gain = 0.000 ; free physical = 3798 ; free virtual = 24096
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2612.125 ; gain = 0.000 ; free physical = 3798 ; free virtual = 24096
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2612.125 ; gain = 0.000 ; free physical = 3798 ; free virtual = 24096
+Ending Netlist Obfuscation Task | Checksum: 8ee178cf
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2612.125 ; gain = 0.000 ; free physical = 3798 ; free virtual = 24096
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2612.125 ; gain = 399.684 ; free physical = 3798 ; free virtual = 24096
+# set retained 0
+# foreach cell [get_cells -hier -filter {IS_PRIMITIVE == 1 && NAME =~ u_hash/core/*}] {
+#     set name [get_property NAME $cell]
+#     if {[dict exists $reference_placement $name]} {
+#         lassign [dict get $reference_placement $name] ref loc bel
+#         if {[get_property REF_NAME $cell] eq $ref} {
+#             set_property BEL $bel $cell
+#             set_property LOC $loc $cell
+#             incr retained
+#         }
+#     }
+# }
+ERROR: [Vivado 12-2285] Cannot set LOC property of instance 'u_hash/core/core/feed_reg[cnt][6]_i_2'... u_hash/core/core/feed_reg[cnt][6]_i_2. Instance u_hash/core/core/feed_reg[cnt][6]_i_2 can not be placed in A6LUT of site SLICE_X55Y82 because the bel is occupied by u_hash/core/core/FSM_sequential_feed_reg[state][1]_i_9. This could be caused by bel constraint conflict
+Resolution: When using BEL constraints, ensure the BEL constraints are defined before the LOC constraints to avoid conflicts at a given site.
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 15 15:32:32 2026...

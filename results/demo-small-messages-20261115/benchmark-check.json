@@ -1,0 +1,48 @@
+{
+  "records": [
+    {
+      "source": "results/sha3-performance-20261115/oxide_elastic-physical.json",
+      "sha256": "3bf4944cf216c9f46fdedc2f28213c22a10c3a56b3ca32aeade57b4101f9da13",
+      "label": "oxide_elastic",
+      "bytes": 64,
+      "samples_ns": [
+        190974,
+        171984,
+        213150,
+        168366,
+        161148,
+        158658,
+        161520
+      ],
+      "median_ns": 168366,
+      "min_ns": 158658,
+      "max_ns": 213150,
+      "timing_scope": "Wall time includes Python/ioctl costs. DMA reuses prefilled coherent DDR; local API includes PS copies. Reference hashing outside hardware timing. ARM uses preallocated RAM. No Ethernet or disk I/O in timed regions.",
+      "core_counter_scope": "100 MHz static shell START-to-result cycles, including starvation and DMA/software gaps; not compute-only cycles.",
+      "environment": "Normal board scheduling; no CPU affinity, governor change or thermal stabilization."
+    },
+    {
+      "source": "results/sha3-performance-20261115/compact-postboot-physical.json",
+      "sha256": "00ec9c5814000fc1893b9a07a9a62a69fcbf8eb962e0af1d55f9a58f36b6e349",
+      "label": "compact-postboot",
+      "bytes": 64,
+      "samples_ns": [
+        219390,
+        193476,
+        189012,
+        187266,
+        184398,
+        183864,
+        183720
+      ],
+      "median_ns": 187266,
+      "min_ns": 183720,
+      "max_ns": 219390,
+      "timing_scope": "Wall time includes Python/ioctl costs. DMA reuses prefilled coherent DDR; local API includes PS copies. Reference hashing outside hardware timing. ARM uses preallocated RAM. No Ethernet or disk I/O in timed regions.",
+      "core_counter_scope": "100 MHz static shell START-to-result cycles, including starvation and DMA/software gaps; not compute-only cycles.",
+      "environment": "Normal board scheduling; no CPU affinity, governor change or thermal stabilization."
+    }
+  ],
+  "ranges_overlap": true,
+  "interpretation": "Measured whole-request medians differ; exact cause not isolated. Per-request software/DMA costs and variation can outweigh a tiny streaming-time gain. These timings do not establish an intrinsic Quartz core-latency advantage."
+}

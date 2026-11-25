@@ -1,0 +1,32 @@
+{
+  "linux": {
+    "url": "https://codeload.github.com/Xilinx/linux-xlnx/tar.gz/2b7f6f70a62a52a467bed030a27c2ada879106e9",
+    "revision": "2b7f6f70a62a52a467bed030a27c2ada879106e9",
+    "ref": "xlnx_rebase_v6.6_LTS_2024.2",
+    "archive": "linux.tar.gz",
+    "sha256": "acc0dbd745328782dc67bac8c42cb02a93b9f06cd042177b92d0765af9c5dcfc",
+    "directory": "linux-xlnx-2b7f6f70a62a52a467bed030a27c2ada879106e9"
+  },
+  "uboot": {
+    "url": "https://codeload.github.com/Xilinx/u-boot-xlnx/tar.gz/7f6ec94aac7eacfec07bd45c83a6d17df4b7d383",
+    "revision": "7f6ec94aac7eacfec07bd45c83a6d17df4b7d383",
+    "ref": "xlnx_rebase_v2024.01_2024.2",
+    "archive": "uboot.tar.gz",
+    "sha256": "7926e64d7a37a44737517449617e00a6f38f5ad2a380479f30835fe2dce57b52",
+    "directory": "u-boot-xlnx-7f6ec94aac7eacfec07bd45c83a6d17df4b7d383"
+  },
+  "buildroot": {
+    "url": "https://buildroot.org/downloads/buildroot-2024.02.12.tar.xz",
+    "version": "2024.02.12",
+    "archive": "buildroot.tar.xz",
+    "sha256": "0b3aee04a6ca267343c821c6f1784d3254d649961970b13602fd19328455b4cd",
+    "directory": "buildroot-2024.02.12"
+  },
+  "toolchain": {
+    "url": "https://toolchains.bootlin.com/downloads/releases/toolchains/armv7-eabihf/tarballs/armv7-eabihf--glibc--stable-2024.05-1.tar.xz",
+    "version": "armv7-eabihf--glibc--stable-2024.05-1",
+    "archive": "toolchain.tar.xz",
+    "sha256": "608263bc9dc3eadf0962ddb1165f1c2291001190f9927dee47d464e26374462c",
+    "directory": "armv7-eabihf--glibc--stable-2024.05-1"
+  }
+}

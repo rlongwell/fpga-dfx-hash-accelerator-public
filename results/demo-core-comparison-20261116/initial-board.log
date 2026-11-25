@@ -1,0 +1,26 @@
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: root
+# zybo-profile.sh status; uname -r; /opt/zybo/hash/start.sh status; sha256sum /b
+oot/profile.env /boot/profiles/hash/system.bit /boot/profiles/hash/system.dtb /l
+ib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin; df -
+k /tmp; printf '\nDEMO_CMD_45acfab2e003f478_%s\n' "$?"
+Zybo profile: radar
+Device tree: profiles/radar/system.dtb
+Board: Digilent Zybo Z7 board
+Next boot: hash
+6.6.40-dfx-hash
+Hash service stopped
+9dc14825fb83ef1fe366b1a2a9451395d67a966a0800ad4a4a9289dc612f46fc  /boot/profile.env
+cbd8a4cf221032c15b11d6d0962ce070b221b5dd9b5081b0677742a97485ff40  /boot/profiles/hash/system.bit
+3d2809a8f625f698e720bc6254e9520ceb233d2d3c79192dcfe0933bbe6e25ed  /boot/profiles/hash/system.dtb
+240b7fbb8ce11e6162445356945a27535ddd79955ee15319dd03044b20f927e7  /lib/firmware/fpga-dfx-hash/0e14c2e8fc21/sha3-oxide_elastic-240b7fbb8ce1.bin
+Filesystem           1K-blocks      Used Available Use% Mounted on
+tmpfs                   514144        28    514116   0% /tmp
+
+DEMO_CMD_45acfab2e003f478_0
+# 
+# exit
+
+Zybo Z7-20 shared Linux. Run zybo-profile for the boot menu.
+zybo login: 

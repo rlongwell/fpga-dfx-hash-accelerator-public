@@ -1,0 +1,367 @@
+{
+  "input": "docs/media/voiceover-axi-take-2.mp3",
+  "method": "Whisper small.en; individual chapters; VAD disabled so background music cannot gate speech",
+  "chapters": [
+    {
+      "title": "Corrected stream input",
+      "start": 0,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.86,
+          "text": " A 64-bit AXI stream feeds each core.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.18,
+              "word": " A",
+              "probability": 0.928740382194519
+            },
+            {
+              "start": 0.18,
+              "end": 0.68,
+              "word": " 64",
+              "probability": 0.9791198968887329
+            },
+            {
+              "start": 0.68,
+              "end": 0.94,
+              "word": "-bit",
+              "probability": 0.9226732850074768
+            },
+            {
+              "start": 0.94,
+              "end": 1.44,
+              "word": " AXI",
+              "probability": 0.5076526775956154
+            },
+            {
+              "start": 1.44,
+              "end": 1.7,
+              "word": " stream",
+              "probability": 0.8312067985534668
+            },
+            {
+              "start": 1.7,
+              "end": 2.16,
+              "word": " feeds",
+              "probability": 0.9972572922706604
+            },
+            {
+              "start": 2.16,
+              "end": 2.52,
+              "word": " each",
+              "probability": 0.9990506768226624
+            },
+            {
+              "start": 2.52,
+              "end": 2.86,
+              "word": " core.",
+              "probability": 0.975816547870636
+            }
+          ]
+        },
+        {
+          "start": 3.5,
+          "end": 5.84,
+          "text": " In the quartz integration, a local adapter",
+          "words": [
+            {
+              "start": 3.5,
+              "end": 3.68,
+              "word": " In",
+              "probability": 0.9958925247192383
+            },
+            {
+              "start": 3.68,
+              "end": 3.84,
+              "word": " the",
+              "probability": 0.9977132081985474
+            },
+            {
+              "start": 3.84,
+              "end": 4.02,
+              "word": " quartz",
+              "probability": 0.44696199893951416
+            },
+            {
+              "start": 4.02,
+              "end": 4.58,
+              "word": " integration,",
+              "probability": 0.9942072629928589
+            },
+            {
+              "start": 5.02,
+              "end": 5.12,
+              "word": " a",
+              "probability": 0.9943591952323914
+            },
+            {
+              "start": 5.12,
+              "end": 5.38,
+              "word": " local",
+              "probability": 0.9967935681343079
+            },
+            {
+              "start": 5.38,
+              "end": 5.84,
+              "word": " adapter",
+              "probability": 0.9660883545875549
+            }
+          ]
+        },
+        {
+          "start": 5.84,
+          "end": 9.12,
+          "text": " feeds one byte per clock into two full block buffers.",
+          "words": [
+            {
+              "start": 5.84,
+              "end": 6.2,
+              "word": " feeds",
+              "probability": 0.9956602454185486
+            },
+            {
+              "start": 6.2,
+              "end": 6.58,
+              "word": " one",
+              "probability": 0.6420565247535706
+            },
+            {
+              "start": 6.58,
+              "end": 6.8,
+              "word": " byte",
+              "probability": 0.9453626871109009
+            },
+            {
+              "start": 6.8,
+              "end": 7.04,
+              "word": " per",
+              "probability": 0.9628894329071045
+            },
+            {
+              "start": 7.04,
+              "end": 7.36,
+              "word": " clock",
+              "probability": 0.9781206250190735
+            },
+            {
+              "start": 7.36,
+              "end": 7.72,
+              "word": " into",
+              "probability": 0.991415798664093
+            },
+            {
+              "start": 7.72,
+              "end": 8.1,
+              "word": " two",
+              "probability": 0.9623969793319702
+            },
+            {
+              "start": 8.1,
+              "end": 8.46,
+              "word": " full",
+              "probability": 0.9907680153846741
+            },
+            {
+              "start": 8.46,
+              "end": 8.72,
+              "word": " block",
+              "probability": 0.4870716333389282
+            },
+            {
+              "start": 8.72,
+              "end": 9.12,
+              "word": " buffers.",
+              "probability": 0.998027503490448
+            }
+          ]
+        },
+        {
+          "start": 9.7,
+          "end": 12.24,
+          "text": " One fills, while the other feeds the hash state.",
+          "words": [
+            {
+              "start": 9.7,
+              "end": 10.02,
+              "word": " One",
+              "probability": 0.9961583018302917
+            },
+            {
+              "start": 10.02,
+              "end": 10.34,
+              "word": " fills,",
+              "probability": 0.9985471367835999
+            },
+            {
+              "start": 10.54,
+              "end": 10.74,
+              "word": " while",
+              "probability": 0.9979152083396912
+            },
+            {
+              "start": 10.74,
+              "end": 10.86,
+              "word": " the",
+              "probability": 0.9973973035812378
+            },
+            {
+              "start": 10.86,
+              "end": 11.14,
+              "word": " other",
+              "probability": 0.9993057250976562
+            },
+            {
+              "start": 11.14,
+              "end": 11.46,
+              "word": " feeds",
+              "probability": 0.9908074736595154
+            },
+            {
+              "start": 11.46,
+              "end": 11.68,
+              "word": " the",
+              "probability": 0.9988992214202881
+            },
+            {
+              "start": 11.68,
+              "end": 11.9,
+              "word": " hash",
+              "probability": 0.9877602458000183
+            },
+            {
+              "start": 11.9,
+              "end": 12.24,
+              "word": " state.",
+              "probability": 0.9814764857292175
+            }
+          ]
+        },
+        {
+          "start": 13.02,
+          "end": 15.32,
+          "text": " 24 permutation rounds produce the result,",
+          "words": [
+            {
+              "start": 13.02,
+              "end": 13.34,
+              "word": " 24",
+              "probability": 0.619591474533081
+            },
+            {
+              "start": 13.34,
+              "end": 13.96,
+              "word": " permutation",
+              "probability": 0.9637670814990997
+            },
+            {
+              "start": 13.96,
+              "end": 14.36,
+              "word": " rounds",
+              "probability": 0.9943000078201294
+            },
+            {
+              "start": 14.36,
+              "end": 14.74,
+              "word": " produce",
+              "probability": 0.9939389228820801
+            },
+            {
+              "start": 14.74,
+              "end": 14.96,
+              "word": " the",
+              "probability": 0.9983054399490356
+            },
+            {
+              "start": 14.96,
+              "end": 15.32,
+              "word": " result,",
+              "probability": 0.9958856701850891
+            }
+          ]
+        },
+        {
+          "start": 15.68,
+          "end": 18.16,
+          "text": " which is copied into a separate digest register.",
+          "words": [
+            {
+              "start": 15.68,
+              "end": 15.76,
+              "word": " which",
+              "probability": 0.9986706972122192
+            },
+            {
+              "start": 15.76,
+              "end": 15.9,
+              "word": " is",
+              "probability": 0.9989645481109619
+            },
+            {
+              "start": 15.9,
+              "end": 16.24,
+              "word": " copied",
+              "probability": 0.9995064735412598
+            },
+            {
+              "start": 16.24,
+              "end": 16.6,
+              "word": " into",
+              "probability": 0.9942010045051575
+            },
+            {
+              "start": 16.6,
+              "end": 16.88,
+              "word": " a",
+              "probability": 0.9962013363838196
+            },
+            {
+              "start": 16.88,
+              "end": 17.2,
+              "word": " separate",
+              "probability": 0.9984449744224548
+            },
+            {
+              "start": 17.2,
+              "end": 17.62,
+              "word": " digest",
+              "probability": 0.8802632689476013
+            },
+            {
+              "start": 17.62,
+              "end": 18.16,
+              "word": " register.",
+              "probability": 0.9982683658599854
+            }
+          ]
+        },
+        {
+          "start": 18.16,
+          "end": 18.42,
+          "text": " Here's what's next!",
+          "words": [
+            {
+              "start": 18.16,
+              "end": 18.42,
+              "word": " Here's",
+              "probability": 0.1765897711738944
+            },
+            {
+              "start": 18.42,
+              "end": 18.42,
+              "word": " what's",
+              "probability": 0.38067101687192917
+            },
+            {
+              "start": 18.42,
+              "end": 18.42,
+              "word": " next!",
+              "probability": 0.7421407699584961
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
